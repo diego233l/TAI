@@ -557,3 +557,59 @@ d) Produce un error siempre
 = b
 > Las columnas deben ser compatibles en número y tipo.
 @ DML
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Referente a los comandos DML del lenguaje SQL, señale la respuesta correcta:
+a) El comando TRUNCATE es un comando DML.
+b) El comando SELECT es un comando DML.
+c) Permiten crear nuevas bases de datos, añadiendo y eliminando elementos.
+d) DML es el acrónimo de Data Manager Language.
+= b
+> DML = Data Manipulation Language (SELECT, INSERT, UPDATE, DELETE). CREATE, DROP, ALTER y TRUNCATE son DDL.
+@ SQL
+
+? Se desea añadir una tabla «Subsanacion» con las columnas numéricas IdSubsanacion e IdSolicitudBeca y la columna alfanumérica de 2000 caracteres TextoFundamento. ¿Cuál de las siguientes sentencias sería la correcta?
+a) CREATE TABLE Subsanacion (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));
+b) CREATE Subsanacion (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));
+c) CREATE NEWTABLE Subsanacion (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));
+d) CREATE TABLE Subsanacion AS (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));
+= a
+> La sintaxis es CREATE TABLE nombre (columna tipo, ...). «AS» se usa para crear una tabla a partir de una consulta (CREATE TABLE ... AS SELECT).
+@ SQL · DDL
+
+? ¿Qué sentencia habría que ejecutar para añadir el registro (TAI, Técnico Auxiliar de Informática) a la tabla CuerpoBecado(Codigo, Denominacion)?
+a) INSERT INTO CuerpoBecado (Codigo, Denominacion) VALUES (TAI, Técnico Auxiliar de Informática);
+b) INSERT TO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI', 'Técnico Auxiliar de Informática');
+c) ADD INTO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI', 'Técnico Auxiliar de Informática');
+d) INSERT INTO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI', 'Técnico Auxiliar de Informática');
+= d
+> Los literales de texto van entre comillas simples en SQL estándar; la sentencia es INSERT INTO ... VALUES.
+@ SQL · DML
+
+? Referente al comando DROP de SQL, es correcto decir que:
+a) DROP TABLE elimina solo las filas de la tabla, conservando su estructura.
+b) DROP TABLE solo puede ejecutarse si la tabla está vacía.
+c) DROP TABLE elimina la tabla completa: su estructura, sus datos e índices asociados.
+d) DROP es un comando DML que admite cláusula WHERE.
+= c
+> DROP es DDL y borra el objeto; las filas se eliminan con DELETE (con WHERE) o TRUNCATE (todas).
+@ SQL · DDL
+
+? Señale la respuesta INCORRECTA referente a los disparadores o triggers de una base de datos:
+a) Los eventos que se pueden asociar a un trigger son INSERT, UPDATE y DELETE.
+b) Puede decidirse que se activen antes o después de un evento determinado.
+c) Son procedimientos que se ejecutan cada vez que ocurre un evento determinado sobre una tabla determinada.
+d) Un error durante la ejecución de cualquier trigger no cancela automáticamente la operación que lo disparó; la cancelación hay que programarla.
+= d
+> Un error en un trigger provoca el fallo de la sentencia que lo disparó y se deshace su efecto (rollback de la operación).
+@ Triggers
+
+? Se espera un alto volumen de concurrencia. ¿Qué nivel de aislamiento debería configurar para que no se produzcan lecturas sucias ni lecturas no repetibles, pero sí puedan darse lecturas fantasma?
+a) READ UNCOMMITTED
+b) READ COMMITTED
+c) SERIALIZABLE
+d) REPEATABLE READ
+= d
+> READ UNCOMMITTED permite las tres anomalías; READ COMMITTED evita lecturas sucias; REPEATABLE READ evita además las no repetibles; SERIALIZABLE evita también las fantasma.
+@ Transacciones · ANSI SQL

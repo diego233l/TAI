@@ -368,3 +368,23 @@ d) Transformación digital de las empresas
 = a
 > La Década Digital 2030 persigue competencias digitales, infraestructuras seguras y sostenibles, digitalización de empresas y de los servicios públicos.
 @ Década Digital 2030
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Indique la respuesta correcta sobre el formato de firma digital CAdES:
+a) Es el formato de firma que utiliza Microsoft Office.
+b) El resultado es un fichero de texto XML; no es adecuado cuando el fichero original es muy grande.
+c) Es el formato obligatorio para firmar documentos PDF.
+d) Es apropiado para firmar ficheros grandes, especialmente si la firma contiene el documento original.
+= d
+> CAdES se basa en CMS (formato binario ASN.1). XAdES es el formato XML y PAdES el específico para PDF.
+@ Firma electrónica (CAdES/XAdES/PAdES)
+
+? Marque la respuesta correcta relacionada con el nodo eIDAS español:
+a) Permite el reconocimiento de identidades en soportes físicos emitidas por otros países.
+b) Facilita la aceptación del DNI electrónico en servicios de las administraciones de cualquier país de la OCDE.
+c) Utiliza un sistema de intercambio de mensajes conforme al estándar SAML 2.0.
+d) Para las Administraciones Públicas, la integración con el nodo eIDAS español se realiza a través de @firma.
+= c
+> El nodo eIDAS interconecta la identificación electrónica de los Estados de la UE mediante mensajes SAML 2.0; para las AAPP españolas se integra a través de Cl@ve.
+@ Reglamento eIDAS · Nodo eIDAS

@@ -692,3 +692,59 @@ d) Informar y, en su caso, contar con su conformidad, registrar la sesión y res
 = d
 > Hay que respetar la normativa de protección de datos y los derechos de los trabajadores.
 @ Control remoto
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? La creación de un señuelo atractivo para potenciales atacantes con el objetivo de aprender sus ataques y poder prevenirlos o defenderlos en el futuro se hace mediante un:
+a) Firewall de aplicación web.
+b) Proxy inverso.
+c) Honeypot.
+d) Sistema de prevención de intrusiones (IPS).
+= c
+> Un honeypot es un sistema trampa; un conjunto de ellos forma una honeynet.
+@ Seguridad
+
+? ¿Cuál de los siguientes ataques consiste en suplantar a una entidad legítima por medio de llamadas telefónicas?
+a) Vishing.
+b) Phishing.
+c) Smishing.
+d) Pharming.
+= a
+> Vishing = voice phishing. El phishing usa correo, el smishing SMS y el pharming manipula la resolución DNS.
+@ Ingeniería social
+
+? ¿Cuál de las siguientes es una herramienta de ticketing para la gestión de incidentes de seguridad en las entidades del ámbito del Esquema Nacional de Seguridad?
+a) LUCIA
+b) PILAR
+c) CARMEN
+d) INES
+= a
+> LUCIA (CCN-CERT) es el sistema de gestión de tickets de incidentes. PILAR analiza riesgos, CARMEN detecta APT e INES es el informe del estado de seguridad.
+@ CCN-CERT
+
+? Indique la respuesta correcta sobre tipos de ataque a un sistema de información:
+a) El spoofing es la captura del tráfico que circula por una red.
+b) El sniffing es la generación de tráfico utilizando un origen falseado.
+c) El barrido («escaneo») de puertos trata de obtener información básica sobre los servicios que ofrece un sistema.
+d) La denegación de servicio distribuida (DDoS) es un ataque a varios objetivos desde un solo punto.
+= c
+> Sniffing = captura de tráfico; spoofing = suplantación de origen; DDoS = ataque a un objetivo desde muchos orígenes.
+@ Amenazas
+
+? Se está analizando abrir o no el puerto 80 en un servidor web expuesto mediante HTTPS. El Centro Criptológico Nacional recomienda:
+a) Cerrar siempre el puerto 80.
+b) Exhibir una web estática en el puerto 80 indicando que esa no es la web actual.
+c) Disponer del puerto TCP/80 configurando una redirección automática de HTTP a HTTPS.
+d) Cambiar el puerto HTTPS al 8892.
+= c
+> Así los usuarios que escriben http:// llegan al sitio seguro; conviene complementarlo con HSTS.
+@ CCN · buenas prácticas
+
+? El CPD tiene una puerta con control de acceso por tarjeta inteligente y PIN que solo conocen los operadores. Un intruso entra pegado a un operador sin identificarse. Este incidente de ingeniería social en seguridad física se conoce como:
+a) Shoulder surfing.
+b) Dumpster diving.
+c) Tailgating o piggybacking.
+d) Baiting.
+= c
+> Tailgating/piggybacking es colarse tras una persona autorizada. Shoulder surfing es mirar por encima del hombro.
+@ Seguridad física

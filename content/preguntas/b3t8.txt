@@ -458,3 +458,41 @@ d) Publicar los datos de prueba
 = c
 > Es el refuerzo R4 de [mp.sw.1] del ENS.
 @ ENS
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Señale la respuesta correcta referente al término ATAG:
+a) Son un conjunto de normas que deben cumplir las herramientas de autor para ser accesibles y generar contenidos también accesibles.
+b) Son pautas que explican cómo hacer más accesible el contenido web (WCAG).
+c) Es una suite que define cómo hacer accesibles el contenido y las aplicaciones web (WAI-ARIA).
+d) Son pautas para que los agentes de usuario sean accesibles (UAAG).
+= a
+> ATAG = Authoring Tool Accessibility Guidelines; WCAG se dirige al contenido y UAAG a los agentes de usuario.
+@ WAI · ATAG
+
+? En relación con los principios del Diseño Universal, señale cuál es uno de ellos:
+a) Alta disponibilidad.
+b) Tolerancia al error.
+c) Escalabilidad horizontal.
+d) Redundancia de datos.
+= b
+> Los siete principios: uso equitativo, flexibilidad de uso, uso simple e intuitivo, información perceptible, tolerancia al error, bajo esfuerzo físico, y tamaño y espacio para el acceso y uso.
+@ Diseño universal
+
+? A este sistema le es de aplicación la normativa vigente de accesibilidad de sitios web. ¿Qué herramienta automatizada utilizaría para probar que cumple los estándares de accesibilidad?
+a) JMeter.
+b) SonarQube.
+c) Selenium IDE.
+d) TAW (Test de Accesibilidad Web).
+= d
+> TAW (o WAVE, Lighthouse, axe) analizan automáticamente la accesibilidad frente a WCAG; JMeter mide rendimiento y SonarQube la calidad de código.
+@ Accesibilidad
+
+? Con respecto a las solicitudes de información accesible y quejas, el Real Decreto 1112/2018 establece que:
+a) Recibida la solicitud, la entidad obligada deberá responder a la persona interesada en el plazo de veinte días hábiles.
+b) Deberá responder en el plazo de diez días hábiles.
+c) Deberá responder en el plazo de veinte días naturales.
+d) Deberá responder en el plazo de diez días naturales.
+= a
+> Art. 12.3 RD 1112/2018; el plazo puede suspenderse si se requiere aclaraciones al interesado (diez días hábiles).
+@ RD 1112/2018

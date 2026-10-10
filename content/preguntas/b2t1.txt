@@ -575,3 +575,23 @@ d) Los microprocesadores
 = a
 > 1.ª válvulas; 2.ª transistores; 3.ª circuitos integrados; 4.ª microprocesadores.
 @ Historia
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Indique cuál de las siguientes palabras es además un número hexadecimal válido:
+a) CAFE
+b) GAFE
+c) HOLA
+d) ZETA
+= a
+> El sistema hexadecimal usa los dígitos 0-9 y las letras A-F; G, H, L, O, Z, T no son dígitos hexadecimales.
+@ Sistemas de numeración
+
+? ¿Qué es la taxonomía de Flynn?
+a) Una clasificación de las computadoras de arquitectura paralela atendiendo al flujo de datos y de instrucciones (SISD, SIMD, MISD, MIMD).
+b) Una clasificación de patrones de diseño de objetos según su creación, estructura y comportamiento.
+c) Una clasificación de los tipos de controladores (drivers) JDBC.
+d) Una clasificación de las tecnologías que abarca el concepto de Inteligencia Artificial.
+= a
+> Flynn (1966) distingue SISD, SIMD, MISD y MIMD según haya uno o múltiples flujos de instrucciones y de datos.
+@ Arquitectura de computadores

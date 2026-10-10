@@ -413,3 +413,14 @@ d) Un estándar de arquitectura de edificios públicos
 = a
 > Concepto del TRLGDPD (art. 2): «diseño universal o diseño para todas las personas», junto con la accesibilidad universal y los ajustes razonables.
 @ RDL 1/2013 art. 2
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Según el Real Decreto Legislativo 1/2013 (Ley General de derechos de las personas con discapacidad y de su inclusión social), es discriminación directa:
+a) La que existe cuando una disposición, cláusula, criterio o práctica aparentemente neutros ocasionan una desventaja particular a una persona por razón de discapacidad.
+b) Toda conducta no deseada relacionada con la discapacidad que atente contra la dignidad de la persona o cree un entorno intimidatorio, hostil u ofensivo.
+c) La situación en que se encuentra una persona con discapacidad cuando es tratada de manera menos favorable que otra en situación análoga por motivo de o por razón de su discapacidad.
+d) La que se produce cuando una persona es objeto de un trato discriminatorio debido a su relación con otra por motivo de discapacidad.
+= c
+> Las otras opciones definen, respectivamente, la discriminación indirecta, el acoso y la discriminación por asociación.
+@ RDL 1/2013

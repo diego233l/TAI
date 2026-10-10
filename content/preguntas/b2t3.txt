@@ -512,3 +512,32 @@ d) Estándares abiertos y, de forma complementaria, estándares de uso generaliz
 = d
 > Art. 11 ENI. La NTI de Catálogo de estándares relaciona los formatos admitidos.
 @ RD 4/2010 art. 11
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Con respecto a los árboles 2-3-4, señale la respuesta correcta:
+a) Los nodos pueden tener 2, 3 o 4 hijos (2-nodo, 3-nodo o 4-nodo) y todas las hojas están al mismo nivel.
+b) Son árboles binarios de búsqueda en los que cada nodo tiene 4 claves.
+c) Un 4-nodo contiene 4 claves y 5 hijos.
+d) Las hojas pueden estar a distinta profundidad.
+= a
+> Un árbol 2-3-4 es un B-árbol de orden 4: un 2-nodo tiene 1 clave y 2 hijos, un 3-nodo 2 claves y 3 hijos, un 4-nodo 3 claves y 4 hijos, y es perfectamente equilibrado.
+@ Árboles multicamino
+
+? Señale la respuesta INCORRECTA acerca de los tipos abstractos de datos (TAD):
+a) En Java, una estructura de datos (interface) debe implementar todas las operaciones definidas en su TAD (class).
+b) Es una colección de propiedades y operaciones definidas mediante una especificación independiente de cualquier representación.
+c) Se pueden escribir usando lenguaje natural, pseudocódigo o algún lenguaje de programación.
+d) Permiten diseñar tipos propios para encapsular lógica algorítmica y dar abstracción a las capas de software de más alto nivel.
+= a
+> Está invertido: en Java el TAD se especifica con una interface y es la clase (estructura de datos) la que implementa sus operaciones.
+@ TAD
+
+? Señale la respuesta correcta referente al tipo abstracto de datos Cola:
+a) Se puede implementar usando una estructura dinámica (lista enlazada) o estática (array circular).
+b) Es un tipo especial de lista en la que se pueden insertar y eliminar elementos por cualquier extremo.
+c) Cada nodo tiene dos enlaces, uno al siguiente y otro al anterior.
+d) Se basa en el principio LIFO (last-in, first-out).
+= a
+> La cola sigue FIFO: se inserta por el final y se extrae por el frente. La estructura que permite insertar y extraer por ambos extremos es la bicola (deque); LIFO es la pila.
+@ Colas

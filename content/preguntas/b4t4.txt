@@ -485,3 +485,14 @@ d) 5 s
 = b
 > Con jitter inferior a 30 ms y pérdida inferior al 1 %.
 @ QoS
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Para atender las llamadas de las guardias se han comprado veinte móviles. Su responsable le pide realizar el enrolamiento de estos móviles. ¿En qué consiste esta tarea?
+a) En instalar manualmente un antivirus en cada móvil.
+b) En flashear el sistema operativo de cada móvil.
+c) En asignar una IP estática a cada móvil en el router.
+d) En registrar cada dispositivo en el sistema MDM (Mobile Device Management) de la organización y asociarlo a su usuario.
+= d
+> El enrolamiento incorpora el dispositivo al MDM para aplicar políticas, configuración y aplicaciones de forma centralizada.
+@ Gestión de dispositivos

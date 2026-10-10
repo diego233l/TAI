@@ -521,3 +521,23 @@ d) El Pacto de Estado contra el Cambio Climático
 = b
 > La Estrategia de Desarrollo Sostenible 2030 (Consejo de Ministros, 8 de junio de 2021) desarrolla el Plan de Acción para la implementación de la Agenda 2030 (2018).
 @ Estrategia de Desarrollo Sostenible 2030
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Señale la respuesta correcta sobre la solicitud de acceso a la información pública que recoge el artículo 17 de la Ley 19/2013, de transparencia, acceso a la información pública y buen gobierno:
+a) Deberá dirigirse al titular del órgano administrativo o entidad que posea la información.
+b) Solo se podrá presentar en castellano.
+c) Es obligatorio indicar una dirección de contacto electrónica, a efectos de comunicaciones.
+d) Es obligatorio motivar la solicitud.
+= a
+> Art. 17: se dirige al titular del órgano o entidad que posea la información; la dirección de contacto es «preferentemente electrónica»; el solicitante no está obligado a motivar; y puede dirigirse a la Administración en cualquier lengua cooficial de su territorio.
+@ Ley 19/2013 art. 17
+
+? Según el artículo 11 de la Ley 19/2013, el Portal de la Transparencia contendrá información publicada de acuerdo con prescripciones técnicas que deberán adecuarse a los principios de:
+a) Accesibilidad, interoperabilidad y seguridad.
+b) Usabilidad, interoperabilidad y reutilización.
+c) Accesibilidad, interoperabilidad y reutilización.
+d) Flexibilidad, interoperabilidad y seguridad.
+= c
+> Art. 11: accesibilidad (información estructurada), interoperabilidad (conforme al ENI) y reutilización (formatos reutilizables, Ley 37/2007).
+@ Ley 19/2013 art. 11

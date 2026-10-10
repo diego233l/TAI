@@ -485,3 +485,50 @@ d) Perl
 = b
 > PHP se ejecuta en servidor; Bash, en shells de Unix.
 @ Scripts
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? ¿Cuál de las siguientes es una diferencia entre HTML y XHTML?
+a) XHTML permite elementos no vacíos sin cerrar, mientras que HTML no.
+b) En HTML es obligatorio que los valores de los atributos vayan entre comillas, mientras que en XHTML no.
+c) HTML exige las etiquetas en minúscula y XHTML no.
+d) En XHTML el documento debe estar bien formado según XML: es obligatorio el elemento raíz <html> (con su espacio de nombres).
+= d
+> XHTML es HTML reformulado como XML: etiquetas en minúscula, todos los elementos cerrados, atributos entrecomillados y un único elemento raíz.
+@ HTML/XHTML
+
+? ¿Qué evento de HTML utilizaría para producir un efecto al situar el puntero del ratón sobre un elemento?
+a) onclick
+b) onfocus
+c) onload
+d) onmouseover
+= d
+> onmouseover se dispara al entrar el puntero en el elemento; onmouseout, al salir.
+@ JavaScript · eventos
+
+? ¿Qué atributo HTML utilizaría para impedir que el e-mail exceda los 100 caracteres al cumplimentar un campo <input>?
+a) size="100"
+b) length="100"
+c) maxlength="100"
+d) pattern="100"
+= c
+> maxlength limita el número de caracteres que se pueden escribir; size solo cambia el ancho visible.
+@ HTML · formularios
+
+? En CSS3, ¿cuál de las siguientes unidades de medida NO es relativa?
+a) cm
+b) em
+c) rem
+d) vh
+= a
+> cm, mm, in, pt y px son unidades absolutas; em, rem, %, vw y vh son relativas (a la fuente, al raíz o al viewport).
+@ CSS3
+
+? Señale la respuesta INCORRECTA. Android NDK:
+a) No permite la reutilización de código, no pudiendo usar bibliotecas de otros desarrolladores.
+b) Es un conjunto de herramientas que permiten implementar partes de las aplicaciones Android mediante C y C++.
+c) Genera librerías binarias para cada arquitectura de procesador que se invocan desde Java mediante JNI.
+d) Se recomienda su uso en aplicaciones intensivas a nivel computacional, como juegos o simulaciones físicas.
+= a
+> El NDK permite reutilizar bibliotecas C/C++ existentes.
+@ Android

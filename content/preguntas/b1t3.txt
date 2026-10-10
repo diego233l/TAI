@@ -467,3 +467,23 @@ d) De forma autónoma
 = b
 > Art. 104.1: bajo la dependencia del Gobierno, tendrán como misión proteger el libre ejercicio de los derechos y libertades y garantizar la seguridad ciudadana.
 @ CE art. 104
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? La Constitución Española de 1978, en su artículo 113, establece que:
+a) El Congreso de los Diputados puede exigir la responsabilidad política del Gobierno mediante la adopción por mayoría simple de la moción de censura.
+b) El Congreso de los Diputados puede exigir la responsabilidad civil del Gobierno mediante la adopción por mayoría absoluta de la moción de censura.
+c) El Congreso de los Diputados puede exigir la responsabilidad política del Gobierno mediante la adopción por mayoría absoluta de la moción de censura.
+d) El Congreso de los Diputados puede exigir la responsabilidad jurídica del Gobierno mediante la adopción por mayoría absoluta de la moción de censura.
+= c
+> Moción de censura (art. 113): responsabilidad política, mayoría absoluta, y debe incluir un candidato a Presidente (censura constructiva).
+@ CE art. 113
+
+? El Gobierno se rige, en su organización y funcionamiento, entre otras, por la Ley:
+a) Ley 50/1999, de 26 de noviembre.
+b) Ley 50/1997, de 27 de noviembre, del Gobierno.
+c) Ley 50/1996, de 28 de noviembre.
+d) Ley 50/1998, de 29 de noviembre.
+= b
+> La Ley 50/1997, de 27 de noviembre, del Gobierno, regula su composición, funciones y funcionamiento.
+@ Ley 50/1997

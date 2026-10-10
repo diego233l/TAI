@@ -728,3 +728,32 @@ d) Ninguno, el referéndum nunca es obligatorio
 = c
 > En el art. 168 el referéndum de ratificación es obligatorio; en el 167 es facultativo (a solicitud de 1/10 de los miembros de cualquiera de las Cámaras).
 @ CE arts. 167-168
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? ¿Cuál de los siguientes derechos recogidos en el Capítulo Segundo del Título I de la Constitución Española NO forma parte de los Derechos Fundamentales y Libertades Públicas (artículos 15 a 29)?
+a) Derecho a elegir libremente su residencia.
+b) Derecho a la producción y creación literaria, artística, científica y técnica.
+c) Derecho a sindicarse libremente.
+d) Derecho a la propiedad privada.
+= d
+> La propiedad privada (art. 33) está en la Sección 2.ª del Capítulo II («De los derechos y deberes de los ciudadanos»), fuera de los artículos 15-29. La residencia (art. 19), la creación literaria y científica (art. 20.1.b) y la libertad sindical (art. 28) sí son derechos fundamentales.
+@ CE arts. 15-29 y 33
+
+? Señale la respuesta INCORRECTA de acuerdo con el Título II, artículo 62 de la Constitución Española. Corresponde al Rey:
+a) Nombrar y separar a los miembros del Gobierno, a propuesta de su Presidente.
+b) Convocar y disolver las Cortes Generales y convocar elecciones en los términos previstos en la Constitución.
+c) Convocar a referéndum en los casos previstos en la Constitución, previa autorización de las Cortes Generales.
+d) Proponer el candidato a Presidente del Gobierno y, en su caso, nombrarlo, así como poner fin a sus funciones en los términos previstos en la Constitución.
+= c
+> El art. 62.c) CE dice simplemente «convocar a referéndum en los casos previstos en la Constitución»: no incluye la «previa autorización de las Cortes Generales». Las otras tres son atribuciones literales del artículo.
+@ CE art. 62
+
+? Según el artículo 53.3 de la Constitución Española, el reconocimiento, el respeto y la protección de los principios reconocidos en el Capítulo tercero (principios rectores de la política social y económica):
+a) Son directamente alegables ante cualquier tribunal sin necesidad de ley que los desarrolle.
+b) Vinculan únicamente al legislador y no a los jueces.
+c) Informarán la legislación positiva, la práctica judicial y la actuación de los poderes públicos.
+d) Son derechos fundamentales amparables mediante recurso de amparo.
+= c
+> Solo podrán alegarse ante la jurisdicción ordinaria de acuerdo con lo que dispongan las leyes que los desarrollen; no son amparables ante el Tribunal Constitucional.
+@ CE art. 53.3

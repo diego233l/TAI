@@ -476,3 +476,23 @@ d) ORM
 = b
 > OLTP gestiona transacciones cortas del día a día; OLAP, el análisis multidimensional.
 @ Almacenes de datos
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? ¿Cuál de los siguientes es un Sistema de Gestión de Bases de Datos Orientadas a Objetos (SGBDOO)?
+a) MySQL
+b) ObjectDB
+c) SQLite
+d) Redis
+= b
+> ObjectDB, db4o, Versant o GemStone son SGBDOO. MySQL y SQLite son relacionales; Redis es NoSQL clave-valor.
+@ BD orientadas a objetos
+
+? ¿Qué es el lenguaje OQL en el contexto de las bases de datos orientadas a objetos?
+a) Un lenguaje de consulta de datos.
+b) Un lenguaje de definición de datos.
+c) Un lenguaje de manipulación de datos.
+d) No es un lenguaje en el contexto de las bases de datos orientadas a objetos.
+= a
+> OQL (Object Query Language) es el lenguaje de consulta del estándar ODMG, de sintaxis similar a SQL.
+@ ODMG

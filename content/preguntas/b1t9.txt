@@ -764,3 +764,14 @@ d) Tres ejes: transformación digital de la AGE, proyectos de alto impacto y mod
 = d
 > El plan se enmarca en el componente 11 del Plan de Recuperación, Transformación y Resiliencia y en la agenda España Digital.
 @ Plan de Digitalización 2021-2025
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? De acuerdo con el Real Decreto 203/2021, ¿cuál de las siguientes opciones forma parte del contenido mínimo que debe tener una sede electrónica?
+a) Un enlace directo al Boletín Oficial correspondiente, en todo caso.
+b) La normativa reguladora del Registro al que se acceda a través de la sede electrónica.
+c) La relación de los Puntos de Acceso General electrónicos que la referencian.
+d) La relación de canales de acceso electrónico como instrumento de comunicación para los ciudadanos.
+= b
+> Art. 11.1.e) RD 203/2021. También incluye identificación de la sede y su titular, acto de creación, información de uso, sistemas de identificación y firma admitidos, fecha y hora oficial, incidencias técnicas y relación de servicios y actuaciones automatizadas.
+@ RD 203/2021 art. 11

@@ -548,3 +548,41 @@ d) 3 meses
 = c
 > Art. 44.2 LOTC: treinta días a partir de la notificación de la resolución recaída en el proceso judicial. Contra actos del Ejecutivo el plazo es de 20 días (art. 43.2) y contra actos parlamentarios, de 3 meses (art. 42).
 @ LO 2/1979 arts. 42-44
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Según el artículo 71 de la Constitución Española de 1978, ¿quién es el competente en las causas contra Diputados y Senadores?
+a) La Sala de lo Contencioso-Administrativo del Tribunal Supremo.
+b) La Sala de lo Penal del Tribunal Constitucional.
+c) La Sala de lo Penal del Tribunal Supremo.
+d) La Sala de lo Civil del Tribunal Supremo.
+= c
+> Art. 71.3: en las causas contra Diputados y Senadores será competente la Sala de lo Penal del Tribunal Supremo (aforamiento).
+@ CE art. 71.3
+
+? Según lo establecido en el artículo 159 de la Constitución Española, los miembros del Tribunal Constitucional serán designados por un período de:
+a) Seis años, renovándose por mitades cada tres.
+b) Cinco años, renovándose por completo.
+c) Nueve años, renovándose por terceras partes cada tres.
+d) Doce años, sin posibilidad de renovación parcial.
+= c
+> El TC tiene 12 miembros nombrados por el Rey (4 Congreso, 4 Senado, 2 Gobierno, 2 CGPJ), por nueve años, con renovación por terceras partes cada tres.
+@ CE art. 159
+
+? ¿Quién puede ser elegido Defensor del Pueblo, según la Ley Orgánica 3/1981, de 6 de abril?
+a) Solo un jurista de reconocida competencia con más de quince años de ejercicio.
+b) Cualquier ciudadano de la Unión Europea residente en España.
+c) Cualquier español mayor de edad que se encuentre en el pleno disfrute de sus derechos civiles y políticos.
+d) Únicamente quien sea o haya sido Diputado o Senador.
+= c
+> Art. 3 LO 3/1981. El Defensor del Pueblo es elegido por las Cortes Generales (mayoría de tres quintos del Congreso y del Senado) para un mandato de cinco años.
+@ LO 3/1981 art. 3
+
+? Según el Título III «De las Cortes Generales» de la Constitución Española, las Cámaras podrán:
+a) Recibir peticiones individuales y colectivas, siempre por escrito, quedando prohibida la presentación directa por manifestaciones ciudadanas.
+b) Reunirse en sesión extraordinaria a petición de la mayoría simple de los miembros de cualquiera de las Cámaras.
+c) Delegar en las Comisiones Legislativas Permanentes la aprobación de proyectos de ley relativos a los Presupuestos Generales del Estado.
+d) Nombrar conjuntamente Comisiones de Investigación cuyas conclusiones serán vinculantes para los Tribunales.
+= a
+> Art. 77.1. Las sesiones extraordinarias requieren petición del Gobierno, de la Diputación Permanente o de la mayoría absoluta (art. 73.2); los Presupuestos no son delegables (art. 75.3); y las conclusiones de las comisiones de investigación no vinculan a los Tribunales (art. 76.1).
+@ CE arts. 73, 75, 76 y 77

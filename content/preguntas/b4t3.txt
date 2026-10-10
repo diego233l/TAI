@@ -521,3 +521,41 @@ d) Los datos acaban siendo consistentes tras un tiempo; se usa el patrón saga
 = d
 > La saga encadena transacciones locales con acciones compensatorias.
 @ Microservicios
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? ¿Cuál es una ventaja del uso del protocolo IMAP en lugar de POP3?
+a) Es más sencillo que POP3.
+b) Descarga siempre los mensajes y los borra del servidor.
+c) Usa cifrado por defecto, a diferencia de POP3.
+d) Permite gestionar los mensajes en el servidor y mantenerlos sincronizados entre varios dispositivos.
+= d
+> IMAP (puerto 143/993) mantiene el correo y las carpetas en el servidor; POP3 (110/995) descarga normalmente los mensajes.
+@ Correo electrónico
+
+? Indique cuál de los siguientes NO es un protocolo de acceso al correo electrónico:
+a) POP3
+b) IMAP
+c) SMTP
+d) IMAPS
+= c
+> SMTP es el protocolo de envío y transferencia entre servidores; POP3 e IMAP se usan para que el usuario acceda a su buzón.
+@ Correo electrónico
+
+? Señale cuáles de las siguientes son tecnologías relacionadas con la contenerización y la gestión de contenedores:
+a) Docker, Kubernetes y Debian.
+b) Podman, Kubernetes y Ubuntu.
+c) VMware ESXi, Hyper-V y KVM.
+d) Docker, containerd y Podman.
+= d
+> Debian y Ubuntu son sistemas operativos. Docker, containerd y Podman son motores de contenedores; Kubernetes orquesta contenedores.
+@ Contenedores
+
+? Está estudiando implantar una arquitectura de microservicios con Kubernetes. ¿Qué protocolos pueden utilizarse en los servicios de Kubernetes?
+a) HTTP (por defecto), HTTPS y FTP.
+b) TCP (por defecto), UDP y SCTP.
+c) SSH, SFTP (por defecto) y UDP.
+d) UDP (por defecto) y TCP.
+= b
+> Un Service de Kubernetes admite los protocolos TCP (por defecto), UDP y SCTP.
+@ Kubernetes

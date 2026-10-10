@@ -476,3 +476,41 @@ d) Un sistema operativo
 = c
 > Especifica una notación; el proceso lo definen metodologías como RUP o Scrum.
 @ UML
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? En diseño y programación orientada a objetos, una relación de generalización entre clases:
+a) Describe un conjunto de enlaces que definen interconexiones semánticas entre instancias de las clases (asociación).
+b) Asume una subordinación conceptual del tipo «todo/parte» o «tiene un» (agregación/composición).
+c) Implica que la subclase hereda las propiedades, el comportamiento y las relaciones de la superclase, pudiendo añadir las suyas propias.
+d) Se representa mediante una línea discontinua con un rectángulo junto a la superclase.
+= c
+> Generalización = herencia, «es un». Se dibuja con línea continua y triángulo hueco en el extremo de la superclase.
+@ UML · Herencia
+
+? El proceso de presentación de solicitud implica la autenticación del usuario, la firma, el guardado en base de datos, la generación de un asiento registral y la de un justificante. ¿Qué diagrama UML utilizaría para representar las acciones implicadas en este flujo?
+a) Diagrama de paquetes.
+b) Diagrama de objetos.
+c) Diagrama de Entidad/Relación.
+d) Diagrama de actividad.
+= d
+> El diagrama de actividad modela flujos de trabajo y la secuencia de acciones; el de Entidad/Relación no es un diagrama UML.
+@ UML
+
+? Señale la respuesta INCORRECTA respecto al Lenguaje de Modelado Unificado (UML):
+a) Se basa en el paradigma de la orientación a objetos.
+b) Es independiente de las metodologías de análisis y diseño y de los lenguajes de programación.
+c) Muestra únicamente el modelado estático de un sistema software.
+d) Es un lenguaje basado en diagramas para especificar, visualizar, construir y documentar sistemas software.
+= c
+> UML incluye diagramas estructurales (clases, objetos, componentes…) y de comportamiento (casos de uso, actividad, secuencia, estados…).
+@ UML
+
+? Señale la respuesta INCORRECTA. El patrón de diseño «Composite»:
+a) Sirve para construir objetos complejos a partir de otros más simples y similares entre sí.
+b) Simplifica el tratamiento de los objetos, que al tener una interfaz común se tratan todos de la misma manera.
+c) Es un patrón estructural que permite componer objetos en estructuras de árbol.
+d) Se recomienda cuando se quiere añadir responsabilidades a objetos concretos de manera dinámica y transparente sin afectar a otros objetos.
+= d
+> Añadir responsabilidades dinámicamente es el objetivo del patrón Decorator.
+@ Patrones de diseño

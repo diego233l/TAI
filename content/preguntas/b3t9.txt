@@ -512,3 +512,32 @@ d) El retraso en el cronograma
 = b
 > Se «paga» refactorizando.
 @ Calidad de código
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Suponiendo que se utilizara la metodología ágil SCRUM, si durante un sprint se da cuenta de que se está aplicando una mala práctica que puede enlentecer el proyecto, ¿en qué reunión la comentará para buscar la mejora continua en los siguientes sprints?
+a) En la Daily Scrum.
+b) En la Sprint Retrospective (retrospectiva del sprint).
+c) En la Sprint Review.
+d) En la Sprint Planning.
+= b
+> La retrospectiva se celebra al final del sprint para inspeccionar cómo ha trabajado el equipo y planificar mejoras.
+@ Scrum
+
+? ¿Cuál de las siguientes opciones se utilizan para el control de versiones?
+a) Docker, Kubernetes y Podman.
+b) Jenkins, Maven y Gradle.
+c) JUnit, Selenium y Mockito.
+d) Git, Subversion y Mercurial.
+= d
+> Git, Subversion (SVN) y Mercurial son sistemas de control de versiones; Jenkins/Maven/Gradle son de integración y construcción.
+@ Control de versiones
+
+? Según Métrica v3, ¿cómo se llaman las pruebas que verifican que los componentes o subsistemas interactúan correctamente a través de sus interfaces, internas y externas, cubren la funcionalidad establecida y se ajustan a los requisitos?
+a) Pruebas del sistema.
+b) Pruebas de migración.
+c) Pruebas de integración.
+d) Pruebas unitarias.
+= c
+> Las pruebas de integración verifican la interacción entre componentes; las del sistema comprueban el sistema completo frente a los requisitos.
+@ Métrica v3 · CSI

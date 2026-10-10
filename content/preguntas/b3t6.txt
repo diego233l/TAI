@@ -422,3 +422,59 @@ d) Streaming
 = a
 > La mensajería asíncrona desacopla emisor y receptor en el tiempo.
 @ Cliente/servidor
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Señale la opción correcta sobre la arquitectura de servicios web REST:
+a) El uso de identificadores de recurso está basado en SOA.
+b) En la arquitectura REST el servicio no almacena información sobre el estado del cliente entre peticiones (sin estado).
+c) La interfaz para acceder a los recursos expuestos puede ser HTTP o FTP indistintamente.
+d) Requiere obligatoriamente mensajes XML con un contrato WSDL.
+= b
+> REST es sin estado, usa URI como identificadores de recursos y la interfaz uniforme de HTTP (GET, POST, PUT, DELETE).
+@ REST
+
+? Para que la aplicación de gestión pueda interactuar con la aplicación se expondrá una capa de servicios web. ¿Cuál de las siguientes opciones NO es válida para documentar dichos servicios?
+a) OpenAPI (Swagger).
+b) WSDL.
+c) DDL (Data Definition Language).
+d) WADL.
+= c
+> OpenAPI documenta servicios REST, WSDL los SOAP y WADL describe servicios REST en XML. DDL define estructuras de bases de datos.
+@ Servicios web
+
+? La Plataforma de Intermediación de Datos se define como una arquitectura orientada a servicios (SOA). ¿Cuáles son los componentes principales de esta arquitectura?
+a) Cliente ligero, servidor de aplicaciones y servidor de base de datos.
+b) Modelo, vista y controlador.
+c) Productor, broker de mensajes y suscriptor únicamente.
+d) Proveedor de servicios, consumidor de servicios y registro (directorio) de servicios.
+= d
+> En SOA el proveedor publica el servicio en un registro, y el consumidor lo localiza y lo invoca.
+@ SOA
+
+? La aplicación debe integrarse con GEISER, cuyos servicios web son de naturaleza SOAP. ¿Con qué firmará las peticiones generadas?
+a) Con una cookie de sesión.
+b) Con un certificado electrónico, mediante firma de los mensajes SOAP según WS-Security.
+c) Con una clave API enviada en la URL.
+d) Con un token CSRF.
+= b
+> Los servicios SOAP de las AAPP se aseguran con WS-Security: firma del mensaje con certificado electrónico (sello o certificado de aplicación).
+@ SOAP · WS-Security
+
+? ¿Qué tendrá que configurar en el backend para que las únicas peticiones HTTP de origen cruzado iniciadas desde scripts que se acepten procedan del frontend?
+a) Una redirección 301 del backend al frontend.
+b) La cabecera Content-Security-Policy: default-src *.
+c) CORS: permitir únicamente el origen del frontend (cabecera Access-Control-Allow-Origin).
+d) Una regla de caché Cache-Control: no-store.
+= c
+> CORS (Cross-Origin Resource Sharing) permite al servidor indicar qué orígenes pueden realizar peticiones cruzadas desde navegador.
+@ Seguridad web
+
+? En caso de utilizar Java para el backend, ¿qué tecnología puede utilizar para generar un cliente de servicios web SOAP?
+a) JPA.
+b) JAXB sin WSDL.
+c) JSF.
+d) JAX-WS (por ejemplo, generando las clases con wsimport a partir del WSDL).
+= d
+> JAX-WS (Jakarta XML Web Services) permite crear clientes y servicios SOAP; wsimport genera las clases a partir del WSDL.
+@ Java · SOAP

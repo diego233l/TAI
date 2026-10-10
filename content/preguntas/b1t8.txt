@@ -485,3 +485,23 @@ d) La intranet de los funcionarios
 = a
 > Art. 7 RD 203/2021: el PAGe dispone de una sede electrónica desde la que se accede a todas las sedes y sedes asociadas y puede incluir un área personalizada para el interesado.
 @ RD 203/2021 art. 7
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Señale la respuesta INCORRECTA sobre el uso obligatorio de firma por los interesados que recoge el artículo 11 de la Ley 39/2015:
+a) Formular solicitudes.
+b) Presentar declaraciones responsables o comunicaciones.
+c) Conocer el estado de la tramitación.
+d) Interponer recursos.
+= c
+> Art. 11.2: las Administraciones solo requerirán la firma para formular solicitudes, presentar declaraciones responsables o comunicaciones, interponer recursos, desistir de acciones y renunciar a derechos.
+@ Ley 39/2015 art. 11
+
+? Señale la respuesta correcta respecto a las notificaciones según la Ley 39/2015, de 1 de octubre:
+a) Toda notificación deberá ser cursada dentro del plazo de quince días desde que el acto haya sido dictado.
+b) En el domicilio, de no hallarse presente el interesado, podrá hacerse cargo cualquier persona mayor de dieciséis años que haga constar su identidad.
+c) Las notificaciones se practicarán preferentemente en papel.
+d) Cuando los interesados sean desconocidos, se ignore el lugar de la notificación o no se hubiese podido practicar, se hará mediante un anuncio publicado en el BOE.
+= d
+> Art. 44 (notificación infructuosa). Las otras son falsas: el plazo es de diez días (art. 40.2), la persona debe ser mayor de catorce años (art. 42.2) y las notificaciones son preferentemente electrónicas (art. 41.1).
+@ Ley 39/2015 arts. 40-44

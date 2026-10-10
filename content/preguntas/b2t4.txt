@@ -548,3 +548,41 @@ d) VDI
 = a
 > Bring Your Own Device. COPE: dispositivo corporativo de uso personal permitido; COBO: solo uso corporativo.
 @ Móviles
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? ¿Cuál de los siguientes conceptos permite que un proceso ejecute múltiples tareas de manera simultánea o concurrente en un sistema operativo?
+a) Multiprogramación.
+b) Multihilo (multithreading).
+c) Memoria virtual.
+d) Multiusuario.
+= b
+> Un proceso puede contener varios hilos (threads) que se ejecutan de forma concurrente compartiendo su espacio de direcciones. La multiprogramación mantiene varios procesos en memoria.
+@ Procesos e hilos
+
+? El comando sfc /scannow de Windows:
+a) Examina todos los archivos de sistema protegidos y reemplaza los dañados con una copia en caché.
+b) Repara el entorno de arranque ubicado en la partición del sistema.
+c) Muestra o establece la directiva de red de área de almacenamiento (SAN).
+d) Analiza uno o varios servidores con una directiva generada por SCW.
+= a
+> System File Checker. El arranque se repara con bootrec/bcdboot; SCW es el Asistente para configuración de seguridad.
+@ Windows
+
+? ¿Cuál es la función del kernel en un sistema operativo Unix/Linux?
+a) Facilitar la comunicación entre usuarios a través de terminales.
+b) Gestionar la interfaz gráfica.
+c) Controlar los procesos, la memoria y la administración de dispositivos.
+d) Proporcionar el intérprete de comandos al usuario.
+= c
+> El núcleo gestiona procesos, memoria, sistema de ficheros y dispositivos; la shell y el entorno gráfico son programas de usuario.
+@ Linux
+
+? ¿Cuál es una característica de los sistemas distribuidos?
+a) Falta de transparencia: un nodo no puede acceder a otros nodos ni comunicarse con ellos.
+b) Comunicación diferencial: usan nodos distintos para comunicarse a través de redes independientes entre sí.
+c) Memoria compartida física única entre todos los nodos.
+d) Escalabilidad: la capacidad de cómputo puede aumentarse añadiendo máquinas adicionales.
+= d
+> Los sistemas distribuidos buscan transparencia, escalabilidad, tolerancia a fallos y compartición de recursos; no comparten memoria física.
+@ Sistemas distribuidos

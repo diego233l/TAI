@@ -449,3 +449,32 @@ d) −2
 = b
 > En Java el resto toma el signo del dividendo: −7 = (−2)·3 + (−1). En Python el resultado es 2.
 @ Operadores
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Necesita controlar el plazo de presentación de solicitudes. Suponiendo que utiliza Java en el backend, ¿qué clase nativa puede utilizar para trabajar con una fecha y hora simultáneamente?
+a) java.time.LocalDate
+b) java.time.LocalDateTime
+c) java.time.LocalTime
+d) java.time.Period
+= b
+> LocalDateTime combina fecha y hora sin zona horaria; LocalDate solo fecha, LocalTime solo hora y Period es una cantidad de tiempo en años/meses/días.
+@ Java · java.time
+
+? Suponga el siguiente programa: Integer x=0; while x<100 do (x=x+1; print x; x=x-1;). ¿Qué hace?
+a) Imprime los números del 1 al 100.
+b) Entra en un bucle infinito que imprime 1 indefinidamente.
+c) Imprime los números del 0 al 99.
+d) No imprime nada.
+= b
+> En cada iteración x pasa a 1, se imprime y vuelve a 0, de modo que la condición x<100 siempre se cumple.
+@ Bucles
+
+? Señale la respuesta correcta en relación con las funciones y los procedimientos:
+a) El paso de parámetros por referencia envía una copia del valor del parámetro real, por lo que no se puede alterar la variable.
+b) Todo procedimiento debe ejecutar una sentencia return.
+c) Una llamada a un procedimiento puede aparecer como operando de una expresión.
+d) Los parámetros por referencia se pueden emplear como parámetros de entrada/salida.
+= d
+> Por referencia se pasa la dirección de la variable: el subprograma puede leerla y modificarla. Las funciones devuelven valor y pueden usarse en expresiones; los procedimientos no.
+@ Subprogramas

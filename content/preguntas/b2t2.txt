@@ -512,3 +512,32 @@ d) Para el archivo y conservación a largo plazo de documentos
 = d
 > PDF/A (ISO 19005) es un subconjunto de PDF autocontenido (fuentes incrustadas, sin JavaScript ni cifrado) pensado para la preservación.
 @ Formatos
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Señale cuál es una resolución válida para una pantalla:
+a) WQHD: 2560 x 1440 píxeles.
+b) Ultra HD: 4320 x 1280 píxeles.
+c) 8K UHD: 7680 x 3840 píxeles.
+d) Full HD: 1920 x 1200 píxeles.
+= a
+> WQHD = 2560x1440 (16:9). UHD 4K = 3840x2160 y 8K UHD = 7680x4320; Full HD = 1920x1080.
+@ Resoluciones de pantalla
+
+? Un controlador de dispositivo periférico (controladora de E/S):
+a) Es el componente mecánico de la unidad de entrada y salida.
+b) Es la interfaz entre la tarjeta controladora y el cable de conexión.
+c) Es la interfaz entre el adaptador y el sistema operativo exclusivamente.
+d) Es el componente electrónico de la unidad de entrada y salida.
+= d
+> La unidad de E/S se divide en un componente mecánico (el dispositivo) y uno electrónico (el controlador o tarjeta controladora).
+@ Entrada/salida
+
+? ¿Cuál es un tipo de panel de una pantalla LCD?
+a) IPS (In-Plane Switching).
+b) PSI (Plane Switching Input).
+c) TA (Twisted Alignment).
+d) LPS (Linear Pixel Scan).
+= a
+> Los paneles LCD habituales son TN (Twisted Nematic), IPS (In-Plane Switching) y VA (Vertical Alignment).
+@ Pantallas LCD

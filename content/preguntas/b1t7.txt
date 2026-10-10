@@ -449,3 +449,14 @@ d) Reglamento (UE) 2022/868
 = b
 > El Reglamento 2018/1725 regula el tratamiento por las instituciones, órganos y organismos de la Unión (supervisa el SEPD).
 @ Reglamento (UE) 2018/1725
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? ¿Qué principio relativo al tratamiento de datos personales del Reglamento (UE) 2016/679 (RGPD) se refiere a que los datos serán adecuados, pertinentes y limitados a lo necesario en relación con los fines para los que son tratados?
+a) Limitación de la finalidad.
+b) Exactitud.
+c) Minimización de datos.
+d) Limitación del plazo de conservación.
+= c
+> Art. 5.1.c) RGPD: minimización de datos. La limitación de la finalidad (5.1.b) exige fines determinados, explícitos y legítimos.
+@ RGPD art. 5.1.c

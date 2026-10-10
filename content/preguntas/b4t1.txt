@@ -422,3 +422,23 @@ d) Documentar la causa raíz y la solución en la base de conocimiento
 = d
 > Es parte de la gestión de problemas en ITIL.
 @ Gestión de incidencias
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Nos anuncian una vulnerabilidad que afecta a una determinada versión del kernel de Linux. ¿Con qué comando podemos saber qué versión del kernel tiene nuestro sistema Ubuntu?
+a) uname -r
+b) lsb_release -k
+c) kernel --version
+d) cat /etc/hostname
+= a
+> uname -r muestra la versión del núcleo en ejecución; lsb_release -a informa de la distribución.
+@ Linux
+
+? En Linux, ¿qué comando usaremos para ver la información relativa a una interfaz de red en particular, por ejemplo eth0?
+a) ip addr show eth0 (o ifconfig eth0)
+b) netstat -p eth0
+c) route show eth0
+d) arp --iface eth0 -s
+= a
+> ip addr show <interfaz> (iproute2) sustituye al clásico ifconfig <interfaz>.
+@ Linux · red

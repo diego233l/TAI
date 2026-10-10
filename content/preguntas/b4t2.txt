@@ -449,3 +449,32 @@ d) Un lenguaje de consulta
 = a
 > Ejemplos: Windows 365 y Azure Virtual Desktop.
 @ VDI
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Señale la respuesta correcta referente a los sistemas de almacenamiento SAN y NAS:
+a) SAN ofrece acceso a nivel de fichero y NAS a nivel de bloque.
+b) Ambos solo pueden conectarse mediante Fibre Channel.
+c) NAS ofrece acceso a nivel de fichero (NFS, SMB) y SAN ofrece acceso a nivel de bloque (Fibre Channel, iSCSI).
+d) NAS no puede compartirse en una red local.
+= c
+> En SAN el servidor ve un volumen como disco local; en NAS accede a carpetas compartidas por red.
+@ Almacenamiento
+
+? Señale la respuesta correcta sobre los backups:
+a) Los backups son manuales y los snapshots son programables.
+b) Los backups pueden almacenarse en localizaciones y medios distintos.
+c) Los backups utilizan poca capacidad de almacenamiento.
+d) Los backups son una representación instantánea del estado de un sistema en un momento específico.
+= b
+> La representación instantánea es un snapshot. Un backup es una copia independiente de los datos, que puede almacenarse en otro sitio o medio.
+@ Copias de seguridad
+
+? La regla 3-2-1 de las copias de seguridad consiste en:
+a) Conservar 3 copias de los datos, en 2 medios diferentes, con 1 copia almacenada en un lugar interno a la organización.
+b) Conservar 3 copias de los datos, en 2 medios diferentes, con 1 copia almacenada en un lugar externo a la organización.
+c) Conservar 3 copias de los datos, en 2 medios iguales, con 1 copia almacenada en un lugar externo a la organización.
+d) Conservar 3 copias de los datos, en 2 medios iguales, con 1 copia almacenada en un lugar interno a la organización.
+= b
+> 3 copias, 2 soportes distintos y 1 fuera de las instalaciones (offsite).
+@ Copias de seguridad

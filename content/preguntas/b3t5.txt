@@ -359,3 +359,59 @@ d) Funcional puro exclusivamente
 = a
 > Se asocian manejadores (listeners/handlers) a los eventos del usuario.
 @ Interfaces
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Indique la respuesta correcta sobre JPA:
+a) El lenguaje de consulta orientado a objetos de JPA es JPSQL.
+b) JPA no permite definir relaciones uno a muchos entre entidades.
+c) Una de sus ventajas es que no necesita utilizar un proveedor de JPA.
+d) Normalmente, una entidad representa una tabla de la base de datos relacional y cada instancia de la entidad corresponde a una fila.
+= d
+> JPA es una especificación: necesita un proveedor (Hibernate, EclipseLink…). Su lenguaje de consulta es JPQL y soporta @OneToMany, @ManyToOne, @ManyToMany y @OneToOne.
+@ JPA
+
+? ¿Qué ORM podría utilizar, en función de la solución de backend escogida?
+a) Spring Data en .NET e Hibernate en Java.
+b) Entity Framework en Java y Hibernate en .NET.
+c) Dapper en Java y JDBC en .NET.
+d) Entity Framework en .NET e Hibernate en Java.
+= d
+> Entity Framework Core es el ORM de .NET; Hibernate (u otro proveedor JPA) en Java. Spring Data es de Java.
+@ ORM
+
+? En un entorno de desarrollo Java, ¿qué utilizaría para mapear elementos XML a clases?
+a) JPA.
+b) JNDI.
+c) JMS.
+d) JAXB (Jakarta XML Binding).
+= d
+> JAXB realiza el marshalling/unmarshalling entre XML y objetos Java mediante anotaciones o a partir de un esquema XSD.
+@ Java · XML
+
+? ¿Qué es .NET MAUI?
+a) Una plataforma para desarrollar aplicaciones móviles que solo se ejecuta en Android.
+b) Un marco multiplataforma para crear aplicaciones móviles y de escritorio nativas con C# y XAML.
+c) Un servidor web ligero para ASP.NET Core.
+d) Un ORM para bases de datos relacionales en .NET.
+= b
+> .NET MAUI (Multi-platform App UI) evoluciona Xamarin.Forms: Android, iOS, macOS y Windows con una única base de código.
+@ .NET
+
+? Se quiere utilizar la librería iText de .NET para generar un documento PDF. ¿Con qué comando instalaría el paquete NuGet?
+a) npm install itext
+b) pip install itext
+c) dotnet add package itext
+d) mvn install itext
+= c
+> Los paquetes NuGet se instalan con la CLI de .NET (dotnet add package) o con Install-Package en la consola del administrador de paquetes.
+@ .NET · NuGet
+
+? En el ámbito de ASP.NET Core, señale la respuesta correcta respecto a Razor:
+a) Es un ORM para acceso a datos.
+b) Es una sintaxis de marcado que permite incrustar código C# en páginas HTML para generar aplicaciones web.
+c) Es un servidor web independiente de Kestrel.
+d) Es un lenguaje de estilos equivalente a CSS.
+= b
+> Razor se usa en Razor Pages y vistas MVC (.cshtml) y en componentes de Blazor.
+@ ASP.NET Core

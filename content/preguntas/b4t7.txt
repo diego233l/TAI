@@ -719,3 +719,59 @@ d) nslookup
 = b
 > ipconfig /all muestra la configuración IP.
 @ Diagnóstico
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? ¿Qué protocolo hay que utilizar para obtener una dirección física a partir de una dirección lógica?
+a) RARP.
+b) DNS.
+c) ARP (Address Resolution Protocol).
+d) DHCP.
+= c
+> ARP resuelve IP→MAC. RARP hace la resolución inversa; DNS resuelve nombres a IP.
+@ TCP/IP
+
+? ¿Cuál es la respuesta correcta con respecto al modelo TCP/IP?
+a) Tiene cinco capas: Acceso a red, Internet, Transporte, Sesión y Aplicación.
+b) Tiene siete capas, igual que OSI.
+c) Tiene tres capas: Red, Transporte y Aplicación.
+d) Tiene cuatro capas: Acceso a red, Internet, Transporte y Aplicación.
+= d
+> El modelo TCP/IP clásico tiene 4 capas; algunos autores desdoblan la primera para llegar a 5 (física y enlace).
+@ TCP/IP
+
+? Señale la respuesta correcta respecto a la versión actual del estándar OSI:
+a) La capa de transporte se ocupa del enrutamiento, el reenvío y el direccionamiento a través de una red.
+b) Las capas son: Física, de red, de transporte, de sesión, de presentación y de aplicación.
+c) La versión actual del estándar es ISO/IEC 7498-1:1994.
+d) La capa de sesión se divide en las subcapas MAC y LLC.
+= c
+> El enrutamiento es de la capa de red; las subcapas MAC y LLC son de la capa de enlace de datos; y el modelo tiene siete capas (falta la de enlace).
+@ OSI
+
+? Relativa al direccionamiento IPv4, indique la respuesta INCORRECTA:
+a) 192.168.123.71 pertenece a la red 192.168.123.64/26.
+b) Con máscara 255.255.255.192 cada subred tiene 62 equipos útiles.
+c) 192.168.0.0/16 es un rango de direcciones privadas.
+d) Las direcciones 192.168.123.71 y 192.168.123.133 con máscara 255.255.255.192 se encuentran en la misma red.
+= d
+> Con /26 los bloques son de 64: .71 está en 192.168.123.64/26 (.64-.127) y .133 en 192.168.123.128/26 (.128-.191).
+@ Direccionamiento IPv4
+
+? ¿Qué puerto utiliza Telnet?
+a) 22/TCP
+b) 25/TCP
+c) 21/TCP
+d) 23/TCP
+= d
+> SSH 22, SMTP 25, FTP 21 (control), Telnet 23.
+@ Puertos
+
+? La norma IEEE 802.11 se refiere a:
+a) Ethernet por cable.
+b) Bluetooth.
+c) Las redes de área local inalámbricas (Wi-Fi).
+d) Redes de área metropolitana WiMAX.
+= c
+> 802.3 es Ethernet, 802.15 Bluetooth/PAN y 802.16 WiMAX.
+@ IEEE 802

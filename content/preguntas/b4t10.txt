@@ -485,3 +485,32 @@ d) El hub repite la señal por todos los puertos (un único dominio de colisión
 = d
 > El switch separa dominios de colisión y mejora el rendimiento y la seguridad.
 @ Dispositivos
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? El protocolo de IEEE para Rapid Spanning Tree Protocol es:
+a) IEEE 802.1w
+b) IEEE 802.1D
+c) IEEE 802.1Q
+d) IEEE 802.1X
+= a
+> 802.1D es STP original, 802.1w RSTP (hoy integrado en 802.1D-2004), 802.1Q VLAN y 802.1X control de acceso por puerto.
+@ Conmutación
+
+? ¿Qué topología de red consiste en conectar todos los nodos directamente a un nodo central?
+a) Anillo
+b) Estrella
+c) Bus
+d) Malla
+= b
+> En la topología en estrella cada nodo se conecta a un concentrador o conmutador central.
+@ Topologías
+
+? Indique la respuesta INCORRECTA respecto a PoE (Power over Ethernet):
+a) Existen dos tipos: PoE activo y PoE pasivo.
+b) Permite que los conmutadores transmitan energía y datos simultáneamente por un cable Ethernet.
+c) El PoE pasivo no se adhiere a ningún estándar IEEE.
+d) El último estándar de PoE activo es el IEEE 802.3at.
+= d
+> 802.3af (PoE) y 802.3at (PoE+) han sido superados por 802.3bt (PoE++, hasta 90 W), de 2018.
+@ PoE

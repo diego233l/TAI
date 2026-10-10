@@ -548,3 +548,23 @@ d) Manchester
 = d
 > Asegura transiciones en cada bit para la sincronización.
 @ Codificación
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? ¿Cuál de las siguientes categorías de cable Ethernet tiene 10.000 Mbps como tope de velocidad de transferencia?
+a) Categoría 5
+b) Categoría 5e
+c) Categoría 8
+d) Categoría 6a
+= d
+> Cat 5: 100 Mbps; Cat 5e: 1 Gbps; Cat 6a: 10 Gbps a 100 m; Cat 8: 25/40 Gbps.
+@ Cableado
+
+? Señale cuál de las siguientes tecnologías NO es una tecnología LPWAN:
+a) LoRaWAN
+b) Zigbee
+c) Sigfox
+d) NB-IoT
+= b
+> LPWAN (Low Power Wide Area Network) es de largo alcance y bajo consumo: LoRaWAN, Sigfox, NB-IoT. Zigbee es una red de área personal de corto alcance.
+@ IoT

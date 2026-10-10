@@ -512,3 +512,32 @@ d) Es solo para correo
 = b
 > Es la base de HTTP/3.
 @ HTTP
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Sobre los tipos de transferencia de archivos en el servicio FTP, es correcto decir que:
+a) El modo ASCII es el adecuado para ficheros ejecutables.
+b) FTP solo permite el modo binario.
+c) El modo ASCII conserva siempre los bytes sin conversión.
+d) El modo binario (image) debe usarse para ficheros no textuales, como ejecutables o imágenes, y el modo ASCII para texto.
+= d
+> El modo ASCII adapta los saltos de línea entre sistemas y corrompería ficheros binarios.
+@ FTP
+
+? ¿Qué código de respuesta HTTP se devuelve si el usuario que hace la petición NO tiene autorización para obtener la información?
+a) 401 Unauthorized
+b) 403 Forbidden
+c) 404 Not Found
+d) 500 Internal Server Error
+= b
+> 403: el servidor entiende al usuario pero no le permite acceder. 401 indica que falta autenticación válida.
+@ HTTP
+
+? Indique la respuesta correcta sobre el IETF (Internet Engineering Task Force):
+a) Es responsable de las funciones administrativas de la raíz del DNS y del direccionamiento IP (IANA).
+b) Es el Foro de Gobernanza de Internet.
+c) Es un organismo creador de estándares de Internet (RFC).
+d) Administra el sistema de nombres de dominio y las direcciones IP (ICANN).
+= c
+> IANA/ICANN gestionan nombres y direcciones; el IETF elabora los estándares técnicos.
+@ Organismos de Internet

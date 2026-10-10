@@ -395,3 +395,41 @@ d) La documentación de entidades, atributos, tipos, restricciones y reglas de l
 = d
 > También se llama catálogo cuando lo mantiene el SGBD.
 @ Documentación
+
+// Preguntas de examen (ene-2026): enunciados reales; opciones y respuestas contrastadas con la normativa/fuentes
+
+? Señale la respuesta correcta sobre la normalización de bases de datos en Métrica v3:
+a) Un atributo tiene dependencia funcional completa de otro si, y solo si, depende de él a través de otro atributo.
+b) Una entidad está en 2FN si está en 1FN y todos los atributos que no forman parte de las claves candidatas tienen dependencia funcional completa respecto de estas.
+c) Una relación en 3FN estará también en 2FN, pero no en 1FN.
+d) Una entidad está en 1FN si tiene grupos repetitivos, es decir, un atributo puede tomar varios valores de un dominio simple.
+= b
+> Métrica v3: 1FN = sin grupos repetitivos; 2FN = 1FN + dependencia funcional completa de los atributos no clave; 3FN = 2FN + sin dependencias transitivas. Por tanto 3FN implica 2FN y 1FN.
+@ Métrica v3 · Normalización
+
+? De acuerdo con Métrica v3, en el Modelo Entidad/Relación Extendido, ¿cuál es el término que representa la participación en la relación de cada una de las entidades afectadas?
+a) Tipo de correspondencia.
+b) Grado de la relación.
+c) Cardinalidad.
+d) Dominio.
+= c
+> La cardinalidad expresa el número mínimo y máximo de ocurrencias de una entidad que participan en la relación; el tipo de correspondencia se refiere a la cardinalidad máxima (1:1, 1:N, N:M).
+@ Métrica v3 · MERE
+
+? Según «Técnicas y Prácticas» de Métrica v3, si se quisiera optimizar el modelo físico de datos para reducir o simplificar el número de accesos a la base de datos, ¿cuál de las siguientes acciones se aplicaría?
+a) Combinar entidades si los accesos son frecuentes en transacciones distintas.
+b) Introducir elementos redundantes.
+c) Normalizar las tablas en Forma Normal de Boyce-Codd.
+d) Eliminar todos los índices.
+= b
+> La desnormalización controlada (redundancia) reduce accesos y uniones a costa de espacio y de mantener la consistencia; normalizar hace lo contrario.
+@ Métrica v3 · Modelo físico
+
+? ¿Cuál es la característica diferenciadora de las claves foráneas en una base de datos relacional?
+a) Es un atributo que no tiene relación con otras tablas.
+b) Es un atributo que referencia la clave primaria de otra tabla.
+c) Es un atributo que se utiliza solo para consultas.
+d) Es un atributo que puede tener valores duplicados, pero nunca nulos.
+= b
+> La clave foránea garantiza la integridad referencial: sus valores deben existir como clave primaria (o candidata) en la tabla referenciada, o ser nulos si se permite.
+@ Modelo relacional
