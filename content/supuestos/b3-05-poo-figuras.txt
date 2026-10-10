@@ -1,0 +1,137 @@
+@title POO y UML: jerarquía de figuras geométricas
+@block b3
+@topics b3t4,b3t2
+@enunciado
+Se programa en Java una jerarquía de figuras:
+
+```java
+abstract class Figura {
+    protected String nombre;
+    Figura(String nombre) { this.nombre = nombre; }
+    abstract double area();
+    public String toString() { return nombre + ":" + area(); }
+}
+class Rectangulo extends Figura {
+    protected double b, h;
+    Rectangulo(double b, double h) { super("Rect"); this.b = b; this.h = h; }
+    double area() { return b * h; }
+}
+class Cuadrado extends Rectangulo {
+    Cuadrado(double l) { super(l, l); this.nombre = "Cuad"; }
+}
+class Circulo extends Figura {
+    private double r;
+    Circulo(double r) { super("Circ"); this.r = r; }
+    double area() { return 3 * r * r; }          // se usa 3 como aproximación de π
+}
+public class Main {
+    public static void main(String[] args) {
+        Figura[] fs = { new Rectangulo(2, 3), new Cuadrado(4), new Circulo(2) };
+        double total = 0;
+        for (Figura f : fs) { System.out.println(f); total += f.area(); }
+        System.out.println(total);
+    }
+}
+```
+
+Además existe una clase `Dibujo` que contiene una lista de `Figura`; las figuras se crean fuera del dibujo y pueden existir sin él.
+@fin
+
+? ¿Qué imprime el programa?
+a) Rect:6.0, Cuad:16.0, Circ:12.0 y 34.0
+b) Rect:6, Cuad:16, Circ:12 y 34
+c) Figura:6.0, Figura:16.0, Figura:12.0 y 34.0
+d) No compila
+= a
+> toString() de Figura invoca area(), que se resuelve dinámicamente en la subclase real (polimorfismo). Como area() devuelve double, se imprimen 6.0, 16.0 y 12.0; el total es 34.0.
+@ Polimorfismo
+
+? ¿Qué ocurriría si se escribiera `Figura f = new Figura("x");`?
+a) Se crearía un objeto con area() vacío
+b) Error de compilación: Figura es abstracta y no puede instanciarse
+c) Lanzaría una excepción en ejecución
+d) Funcionaría con el constructor de Figura
+= b
+> Una clase abstracta no se puede instanciar directamente; solo se instancian sus subclases concretas.
+@ Clases abstractas
+
+? ¿Qué mecanismo permite que en el bucle for cada figura calcule su área con su propia fórmula?
+a) Sobrecarga de métodos
+b) Encapsulamiento
+c) Enlace dinámico (polimorfismo por sobrescritura)
+d) Composición
+= c
+> La llamada f.area() se resuelve en tiempo de ejecución según la clase real del objeto, no según el tipo declarado de la variable.
+@ Polimorfismo
+
+? En el diagrama de clases UML, ¿cómo se representa la relación entre Cuadrado y Rectangulo?
+a) Con una línea con rombo relleno junto a Rectangulo
+b) Con una flecha discontinua sin triángulo
+c) Con una línea con rombo vacío junto a Cuadrado
+d) Con una línea con triángulo vacío apuntando a Rectangulo (generalización)
+= d
+> La herencia se modela como generalización: triángulo vacío en el extremo de la superclase.
+@ UML
+
+? Respecto a la relación entre Dibujo y Figura, que pueden existir de forma independiente, la relación UML correcta es:
+a) Composición (rombo relleno en el extremo de Dibujo)
+b) Agregación (rombo vacío en el extremo de Dibujo)
+c) Generalización
+d) Realización
+= b
+> En una agregación las partes tienen vida propia. En la composición las partes mueren con el todo.
+@ UML
+
+? ¿Por qué el atributo r de Circulo no es accesible directamente desde una hipotética subclase de Circulo?
+a) Porque es protected
+b) Porque es static
+c) Porque es private
+d) Porque es abstract
+= c
+> private restringe el acceso a la propia clase; protected (como b y h en Rectangulo) permite el acceso a las subclases.
+@ Encapsulamiento
+
+? ¿Qué principio SOLID se vulnera si Cuadrado heredara de Rectangulo y redefiniera los setters de ancho y alto para mantenerlos iguales, haciendo que el código que usa Rectangulo se comporte de forma inesperada?
+a) Principio de responsabilidad única
+b) Principio de inversión de dependencias
+c) Principio de sustitución de Liskov
+d) Principio de segregación de interfaces
+= c
+> Un subtipo debe poder sustituir a su tipo base sin alterar el comportamiento esperado; el ejemplo clásico es el cuadrado-rectángulo.
+@ SOLID
+
+? Si se añadiera a Rectangulo un método `double area(double factor)` además de `area()`, ¿qué se estaría haciendo?
+a) Sobrecarga (mismo nombre, distinta firma)
+b) Sobrescritura
+c) Herencia múltiple
+d) Encapsulamiento
+= a
+> La sobrescritura exige la misma firma que el método heredado; aquí cambia la lista de parámetros.
+@ Polimorfismo
+
+? Se quiere que la creación de figuras se delegue en una clase que decide qué subclase instanciar según un parámetro («circulo», «cuadrado»). ¿Qué patrón de diseño es el más adecuado?
+a) Singleton
+b) Observer
+c) Facade
+d) Factory Method (o Simple Factory)
+= d
+> Los patrones de fábrica encapsulan la creación de objetos y desacoplan al cliente de las clases concretas.
+@ Patrones de diseño
+
+? Se quiere intercambiar en tiempo de ejecución el algoritmo con el que se calcula el área (por ejemplo, con distintas aproximaciones de π). ¿Qué patrón encaja mejor?
+a) Singleton
+b) Adapter
+c) Prototype
+d) Strategy
+= d
+> Strategy encapsula familias de algoritmos intercambiables detrás de una interfaz común.
+@ Patrones de diseño
+
+? ¿Cómo se destaca una clase abstracta como Figura en un diagrama de clases UML?
+a) Con el nombre subrayado
+b) Con un rombo relleno
+c) Con visibilidad # en el nombre
+d) Con el nombre en cursiva (o con el estereotipo «abstract»)
+= d
+> Las operaciones abstractas como area() también se escriben en cursiva.
+@ UML
