@@ -253,11 +253,11 @@ d) Set-Cookie
 @ Caché HTTP
 
 ? En el contexto de los intermediarios HTTP, ¿cuál es la función de un proxy inverso situado delante de los servidores web?
-a) Un proxy que actúa por los clientes para acceder a Internet
-b) Un tipo de cortafuegos de capa 2
-c) Un cliente de correo
-d) Un servidor situado delante de los servidores de aplicación que recibe las peticiones de los clientes (balanceo, TLS, caché)
-= d
+a) Un servidor situado delante de los servidores de aplicación que recibe las peticiones de los clientes (balanceo, TLS, caché)
+b) Un proxy que actúa por los clientes para acceder a Internet
+c) Un tipo de cortafuegos de capa 2
+d) Un cliente de correo
+= a
 > El proxy directo (forward) actúa en nombre de los clientes, por ejemplo Squid.
 @ Intermediarios
 
@@ -489,9 +489,9 @@ d) IPsec
 ? ¿Qué hace el mecanismo STARTTLS en protocolos como SMTP o IMAP?
 a) Una versión de TLS
 b) Un certificado
-c) Una cabecera HTTP
-d) Un comando que convierte una conexión en claro (por ejemplo SMTP o IMAP) en una conexión cifrada con TLS
-= d
+c) Un comando que convierte una conexión en claro (por ejemplo SMTP o IMAP) en una conexión cifrada con TLS
+d) Una cabecera HTTP
+= c
 > Evita usar un puerto distinto para la versión cifrada.
 @ TLS
 

@@ -1,0 +1,24 @@
+Defensa en profundidad y segmentación :: Varias capas, mínimo privilegio, default deny; VLAN/subredes con filtrado entre ellas limitan el movimiento lateral.
+Zero Trust :: Nunca confiar, siempre verificar (NIST 800-207); microsegmentación; ZTNA (acceso por aplicación); SASE/SSE.
+ENS: comunicaciones :: mp.com.1 perímetro seguro; mp.com.2 confidencialidad; mp.com.3 integridad y autenticidad; mp.com.4 separación de flujos; mp.s.4 denegación de servicio; op.mon.1 detección de intrusión.
+Política de cortafuegos :: Denegar por defecto; reglas ordenadas, gana la primera coincidencia; regla final de denegación.
+Tipos de cortafuegos :: Filtrado de paquetes sin estado (capas 3-4); con estado (tabla de conexiones); pasarela de aplicación/proxy (capa 7); NGFW (DPI, aplicaciones, usuarios, IPS); WAF (HTTP); UTM.
+Cortafuegos de red y de host :: Red: perimetral o interno. Host: Windows Defender Firewall, iptables/nftables, ufw, firewalld.
+DMZ :: Red intermedia con servidores públicos (web, correo, DNS público, proxy inverso); un compromiso no da acceso directo a la red interna.
+Arquitecturas DMZ :: Cortafuegos con tres interfaces o doble cortafuegos (screened subnet) de distintos fabricantes; Internet → interna prohibido.
+Honeypot y servidor bastión :: Honeypot: señuelo. Bastión: equipo reforzado expuesto con servicios mínimos.
+IDS e IPS :: IDS detecta y alerta (copia del tráfico: SPAN/TAP). IPS bloquea (en línea). NIDS/NIPS de red; HIDS/HIPS de host.
+Métodos de detección :: Firmas (conocidos), anomalías (desconocidos, más falsos positivos), heurística y reputación. Falso positivo: alerta sin ataque; falso negativo: ataque no detectado.
+Herramientas de detección :: Snort y Suricata (IDS/IPS), Zeek (análisis), OSSEC/Wazuh (HIDS), fail2ban.
+SIEM, SOC y EDR :: SIEM correla eventos; SOC lo opera; EDR/XDR/NDR detectan y responden en endpoint, extendido y red.
+Protección DoS :: Rate limiting, SYN cookies, scrubbing, CDN con anycast, RTBH y filtrado anti-spoofing (BCP 38/uRPF).
+VPN :: Túnel cifrado y autenticado sobre red pública. Tipos: acceso remoto (cliente-a-sitio) y sitio a sitio; full tunnel y split tunneling.
+IPsec :: AH (protocolo 51, sin cifrado) y ESP (50, cifrado). Modos transporte (entre extremos) y túnel (entre gateways). IKE UDP 500/4500 (NAT-T); SA; PSK o certificados; PFS.
+VPN SSL/TLS y WireGuard :: OpenVPN UDP 1194; atraviesan NAT/cortafuegos con facilidad. WireGuard: UDP 51820, Curve25519 y ChaCha20-Poly1305.
+Otros protocolos VPN :: L2TP/IPsec (UDP 1701); SSTP (TCP 443); PPTP (TCP 1723 + GRE, obsoleto e inseguro); túneles SSH.
+VPN MPLS :: Aísla el tráfico de cada cliente, pero no lo cifra por defecto.
+Buenas prácticas de VPN :: MFA, PFS, algoritmos modernos, always-on, segmentación tras la VPN, parcheo del concentrador, registro y desactivar protocolos obsoletos.
+Acceso remoto seguro :: RD Gateway, servidor de salto (bastion host), ZTNA y SD-WAN.
+Seguridad del puesto :: Antimalware/EDR, parches, cortafuegos personal, cifrado de disco, Secure Boot/TPM, MFA, bloqueo, sin privilegios de administrador.
+Control de aplicaciones y navegación :: Listas blancas (AppLocker, WDAC), bloqueo de macros, control de USB, DLP, proxy con filtrado, DNS seguro, antiphishing.
+ENS en el puesto :: op.exp.6 código dañino; mp.s.3 navegación web; mp.eq.1-4 equipos; mp.per.3 concienciación; mp.per.4 formación; CLARA comprueba configuraciones.

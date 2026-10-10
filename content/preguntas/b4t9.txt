@@ -1,0 +1,487 @@
+// Tema 32 (B4·T9) · Seguridad en redes, seguridad perimetral, VPN y seguridad del puesto de usuario
+
+? ¿Qué principio de arquitectura de seguridad afirma «nunca confiar, siempre verificar»?
+a) Defensa perimetral clásica
+b) Zero Trust (confianza cero)
+c) Seguridad por oscuridad
+d) Mínima exposición
+= b
+> NIST SP 800-207: ningún usuario o dispositivo es de confianza por su ubicación en la red.
+@ Principios
+
+? ¿Para qué se segmenta una red en VLAN y subredes con filtrado entre ellas?
+a) Aumentar el ancho de banda
+b) Evitar el uso de cortafuegos
+c) Eliminar la necesidad de contraseñas
+d) Limitar el movimiento lateral de un atacante y reducir la superficie de ataque
+= d
+> El ENS recoge la separación de flujos en [mp.com.4].
+@ Principios
+
+? ¿Qué medida del ENS exige un sistema de protección perimetral que separe la red interna del exterior y por el que pase todo el tráfico?
+a) [mp.com.2] Protección de la confidencialidad
+b) [mp.com.1] Perímetro seguro
+c) [mp.eq.1]
+d) [mp.s.1]
+= b
+> Todos los flujos a través del perímetro deben estar autorizados previamente.
+@ ENS
+
+? ¿Qué medida del ENS trata de la separación de flujos de información en la red?
+a) [mp.com.4]
+b) [mp.com.1]
+c) [mp.com.3]
+d) [mp.s.4]
+= a
+> [mp.com.3] es la protección de la integridad y de la autenticidad.
+@ ENS
+
+? ¿Qué medida del ENS regula la protección frente a la denegación de servicio?
+a) [mp.s.4]
+b) [mp.s.1]
+c) [mp.s.3]
+d) [op.mon.1]
+= a
+> [op.mon.1] regula la detección de intrusión.
+@ ENS
+
+? ¿Qué política de filtrado se recomienda en un cortafuegos?
+a) Denegar por defecto y permitir explícitamente lo necesario
+b) Permitir todo y bloquear lo conocido como malo
+c) No tener reglas
+d) Permitir todo el tráfico interno
+= a
+> Reduce la superficie de ataque; la última regla suele ser «deny any any».
+@ Cortafuegos
+
+? En un cortafuegos con listas de reglas ordenadas, ¿qué regla se aplica a un paquete?
+a) La primera que coincida
+b) La última que coincida
+c) Todas las coincidentes
+d) La más restrictiva siempre
+= a
+> Por eso importa el orden de las reglas.
+@ Cortafuegos
+
+? ¿Qué diferencia fundamental tiene un cortafuegos con estado (stateful) respecto a uno sin estado?
+a) Solo filtra por MAC
+b) Solo trabaja en capa 7
+c) No usa reglas
+d) Mantiene una tabla de conexiones y acepta automáticamente las respuestas a conexiones permitidas
+= d
+> El filtro de paquetes sin estado evalúa cada paquete de forma aislada.
+@ Cortafuegos
+
+? ¿A qué niveles OSI suele operar un filtrado de paquetes tradicional?
+a) 1 y 2
+b) 3 y 4
+c) 5 y 6
+d) Solo el 7
+= b
+> Filtra por dirección IP, puerto y protocolo.
+@ Cortafuegos
+
+? ¿Qué es un cortafuegos de nueva generación (NGFW)?
+a) Un cortafuegos que añade inspección profunda de paquetes, identificación de aplicaciones y usuarios, IPS y otras funciones de capa 7
+b) Un cortafuegos solo para IPv6
+c) Un cortafuegos solo de capa 2
+d) Un antivirus
+= a
+> Puede inspeccionar TLS y usar inteligencia de amenazas.
+@ Cortafuegos
+
+? ¿Qué es un WAF?
+a) Un cortafuegos de red inalámbrica
+b) Un cortafuegos de aplicaciones web que protege frente a ataques como inyección SQL o XSS
+c) Un cortafuegos de capa 2
+d) Un filtro de correo
+= b
+> ModSecurity es un WAF de código abierto.
+@ Cortafuegos
+
+? ¿Qué caracteriza a un UTM?
+a) Es un cortafuegos de host
+b) Es un tipo de VPN
+c) Integra en un solo equipo cortafuegos, IPS, antivirus, filtrado web y VPN
+d) Es un SIEM
+= c
+> Es habitual en pequeñas y medianas organizaciones.
+@ Cortafuegos
+
+? ¿Qué es una DMZ?
+a) Una red de invitados
+b) Una VLAN de gestión
+c) Una red de almacenamiento
+d) Una red intermedia aislada de la interna donde se ubican los servidores accesibles desde Internet
+= d
+> Un compromiso en la DMZ no da acceso directo a la red interna.
+@ DMZ
+
+? ¿Qué servidores se ubican típicamente en una DMZ?
+a) Servidores web públicos, correo, DNS público y proxy inverso
+b) Controladores de dominio
+c) Bases de datos internas
+d) Estaciones de trabajo
+= a
+> Los datos sensibles deben residir en la red interna.
+@ DMZ
+
+? ¿Qué arquitectura de DMZ utiliza dos cortafuegos, uno frente a Internet y otro frente a la red interna?
+a) Cortafuegos de una pata
+b) Host bastión único
+c) Doble cortafuegos (screened subnet)
+d) Router de filtrado simple
+= c
+> Se recomienda diversidad de fabricantes.
+@ DMZ
+
+? ¿Qué tráfico debería estar prohibido en una arquitectura DMZ típica?
+a) Internet hacia la red interna directamente
+b) Internet hacia los servicios publicados en la DMZ
+c) La red interna hacia Internet con salida controlada
+d) Los administradores hacia la DMZ por canal seguro
+= a
+> Las conexiones iniciadas desde Internet solo deben llegar a la DMZ.
+@ DMZ
+
+? ¿Qué es un honeypot?
+a) Un tipo de cortafuegos
+b) Un sistema señuelo que simula ser un objetivo vulnerable para detectar o estudiar ataques
+c) Un antivirus
+d) Un servidor de respaldo
+= b
+> Un honeynet es una red de honeypots.
+@ Detección
+
+? ¿Cuál es la diferencia principal entre un IDS y un IPS?
+a) El IDS bloquea y el IPS solo alerta
+b) Son idénticos
+c) El IPS solo funciona en hosts
+d) El IDS detecta y alerta; el IPS, situado en línea, además bloquea el tráfico malicioso
+= d
+> El IDS suele recibir una copia del tráfico (SPAN o TAP).
+@ Detección
+
+? ¿Cómo se conecta normalmente un IDS de red para analizar el tráfico?
+a) En línea, entre dos redes
+b) Solo en el servidor DNS
+c) No analiza tráfico
+d) A un puerto SPAN o TAP que recibe una copia del tráfico
+= d
+> Un IPS se coloca en línea.
+@ Detección
+
+? ¿Cómo se denomina la detección de intrusiones basada en patrones conocidos de ataque?
+a) Detección por anomalías
+b) Detección heurística de comportamiento
+c) Detección por firmas
+d) Detección por reputación
+= c
+> No detecta ataques desconocidos (zero-day), pero genera pocos falsos positivos.
+@ Detección
+
+? ¿Qué ventaja y qué inconveniente presenta la detección basada en anomalías?
+a) Detecta solo ataques conocidos y no genera falsos positivos
+b) No requiere entrenamiento y tiene precisión total
+c) Puede detectar ataques desconocidos, pero genera más falsos positivos
+d) No se puede aplicar en redes
+= c
+> Se basa en el comportamiento normal aprendido.
+@ Detección
+
+? ¿Qué es un falso positivo en un IDS?
+a) Un ataque no detectado
+b) Un ataque bloqueado correctamente
+c) Una alerta generada ante tráfico legítimo
+d) Una regla desactivada
+= c
+> El falso negativo es el ataque que no se detecta.
+@ Detección
+
+? ¿Cuál de las siguientes herramientas es un IDS/IPS de código abierto?
+a) Suricata
+b) Wireshark
+c) Nmap
+d) Ansible
+= a
+> Snort es otra; Zeek es un analizador de tráfico.
+@ Detección
+
+? ¿Qué herramienta es un HIDS de código abierto?
+a) Snort
+b) Suricata
+c) OSSEC / Wazuh
+d) Squid
+= c
+> Los HIDS analizan registros, integridad de ficheros y comportamiento de un host.
+@ Detección
+
+? ¿Qué es un SIEM?
+a) Un tipo de cortafuegos
+b) Un antivirus
+c) Un protocolo
+d) Un sistema que recopila y correlaciona eventos y registros de muchas fuentes para detectar incidentes
+= d
+> Ejemplos: Splunk, QRadar, Microsoft Sentinel, Wazuh.
+@ Detección
+
+? ¿Qué es un SOC?
+a) Un sistema operativo
+b) Un tipo de VPN
+c) El centro de operaciones de seguridad donde un equipo monitoriza y responde a incidentes
+d) Un cable
+= c
+> Opera herramientas como SIEM, EDR y NDR.
+@ Detección
+
+? ¿Qué es EDR?
+a) Detección y respuesta en el endpoint
+b) Un tipo de cortafuegos de red
+c) Un protocolo VPN
+d) Un servicio DNS
+= a
+> XDR amplía la correlación a red, correo y nube.
+@ Detección
+
+? ¿Qué técnica mitiga los ataques de suplantación de IP de origen en el borde de una red (anti-spoofing)?
+a) Aumentar el TTL
+b) Desactivar DNS
+c) Usar HTTP
+d) Filtrado de entrada según BCP 38 / uRPF
+= d
+> Descarta paquetes cuya IP de origen no es posible por esa interfaz.
+@ Perímetro
+
+? ¿Qué son los servicios de scrubbing frente a DDoS?
+a) Sistemas de copia de seguridad
+b) Centros que limpian el tráfico malicioso y devuelven el legítimo al cliente
+c) Antivirus
+d) Cortafuegos de host
+= b
+> Se combinan con CDN y anycast.
+@ Perímetro
+
+? ¿Qué es una VPN?
+a) Una red privada que utiliza túneles cifrados y autenticados sobre una red pública
+b) Una red completamente aislada físicamente
+c) Un tipo de cortafuegos
+d) Un protocolo de correo
+= a
+> Proporciona confidencialidad, integridad y autenticación.
+@ VPN
+
+? ¿Qué tipo de VPN conecta dos sedes mediante gateways permanentes?
+a) Acceso remoto
+b) Cliente a sitio
+c) Sitio a sitio
+d) De usuario móvil
+= c
+> La de acceso remoto conecta a un usuario individual.
+@ VPN
+
+? ¿Qué es el split tunneling?
+a) Enviar por la VPN solo el tráfico destinado a la red corporativa y el resto directamente a Internet
+b) Dividir una VPN en dos túneles cifrados
+c) Un tipo de cifrado
+d) Un método de autenticación
+= a
+> Reduce carga, pero baja el control y aumenta el riesgo.
+@ VPN
+
+? ¿Qué protocolos componen principalmente IPsec?
+a) SSL y TLS
+b) AH (autenticación e integridad) y ESP (confidencialidad, integridad y autenticación)
+c) PPTP y L2TP
+d) SSH y SCP
+= b
+> IKE negocia las asociaciones de seguridad.
+@ IPsec
+
+? ¿Qué número de protocolo IP corresponde a ESP?
+a) 51
+b) 50
+c) 47
+d) 89
+= b
+> AH es el 51; GRE, el 47.
+@ IPsec
+
+? ¿Qué protocolo IPsec NO proporciona cifrado?
+a) AH
+b) ESP
+c) IKE con cifrado
+d) ESP con AES
+= a
+> AH solo autentica y protege la integridad; tampoco funciona con NAT.
+@ IPsec
+
+? ¿Qué diferencia hay entre el modo transporte y el modo túnel de IPsec?
+a) El modo transporte encapsula todo el paquete
+b) El modo túnel no cifra
+c) En transporte se protege la carga útil entre extremos; en túnel se encapsula y protege todo el paquete IP, típico entre gateways
+d) No hay diferencia
+= c
+> El modo túnel oculta las direcciones internas.
+@ IPsec
+
+? ¿Qué puertos UDP usa IKE?
+a) 500 y 4500 (NAT-T)
+b) 53 y 123
+c) 1194 y 1701
+d) 161 y 162
+= a
+> 4500 se usa para atravesar NAT.
+@ IPsec
+
+? ¿Qué es una asociación de seguridad (SA) en IPsec?
+a) Un acuerdo unidireccional entre extremos con los algoritmos, claves y parámetros para proteger el tráfico
+b) Un certificado
+c) Un cortafuegos
+d) Un túnel GRE
+= a
+> Se identifican con un SPI.
+@ IPsec
+
+? ¿Qué aporta PFS (Perfect Forward Secrecy) en IPsec/IKE?
+a) Cada renovación de claves usa un intercambio Diffie-Hellman nuevo, de modo que comprometer una clave no afecta a las anteriores
+b) Más velocidad
+c) Compresión del tráfico
+d) Eliminación de certificados
+= a
+> Evita el descifrado retroactivo del tráfico.
+@ IPsec
+
+? ¿Qué es una PSK en una VPN IPsec?
+a) Un certificado de CA
+b) Un protocolo de cifrado
+c) Un tipo de túnel
+d) Una clave precompartida entre los extremos para autenticarse
+= d
+> Los certificados son preferibles en despliegues grandes.
+@ IPsec
+
+? ¿Qué puerto usa por defecto OpenVPN?
+a) TCP 22
+b) UDP 500
+c) UDP 1194
+d) TCP 1723
+= c
+> También puede configurarse en TCP 443.
+@ VPN
+
+? ¿Qué ventaja tienen las VPN SSL/TLS frente a IPsec?
+a) Son siempre más rápidas
+b) Atraviesan con facilidad cortafuegos y NAT al usar el puerto 443 y no exigen un cliente complejo
+c) No cifran
+d) No requieren autenticación
+= b
+> IPsec es más adecuado para unir redes completas.
+@ VPN
+
+? ¿Qué es WireGuard?
+a) Un cortafuegos
+b) Un IDS
+c) Un protocolo VPN moderno y ligero que usa criptografía fija (Curve25519, ChaCha20-Poly1305) sobre UDP
+d) Un servidor proxy
+= c
+> Su código es mucho más reducido que el de IPsec u OpenVPN.
+@ VPN
+
+? ¿Qué protocolo de VPN se considera obsoleto e inseguro?
+a) IPsec IKEv2
+b) WireGuard
+c) PPTP
+d) OpenVPN
+= c
+> Usa TCP 1723 y GRE.
+@ VPN
+
+? ¿Por qué L2TP se combina con IPsec?
+a) Porque IPsec no puede ir solo
+b) Porque L2TP por sí solo no ofrece cifrado
+c) Porque L2TP es más rápido
+d) Porque L2TP sustituye a IKE
+= b
+> L2TP/IPsec utiliza UDP 1701 y 500/4500.
+@ VPN
+
+? ¿Cuál es una limitación de seguridad de las VPN MPLS contratadas a un operador?
+a) Aíslan el tráfico, pero por defecto no lo cifran
+b) Cifran siempre con AES-256
+c) Son visibles en Internet
+d) No separan clientes
+= a
+> Si se requiere confidencialidad extremo a extremo, debe añadirse cifrado (IPsec).
+@ VPN
+
+? ¿Qué es un servidor de salto (bastion host) en el acceso remoto de administración?
+a) Un equipo reforzado y auditado a través del cual los administradores acceden a sistemas internos
+b) Un cortafuegos de host
+c) Un servidor DNS
+d) Un servidor web
+= a
+> Centraliza el acceso, el registro y la autenticación multifactor.
+@ Acceso remoto
+
+? ¿Qué mejora introduce ZTNA frente a la VPN tradicional?
+a) Da acceso total a la red interna
+b) Elimina la autenticación
+c) Cifra menos
+d) Concede acceso por aplicación a usuarios y dispositivos verificados, en lugar de acceso a toda la red
+= d
+> Aplica los principios de Zero Trust.
+@ Acceso remoto
+
+? ¿Qué es la lista blanca de aplicaciones (application allowlisting)?
+a) Bloquear solo las aplicaciones maliciosas conocidas
+b) Un antivirus basado en firmas
+c) Una copia de seguridad
+d) Permitir ejecutar solo el software autorizado en el puesto (por ejemplo, con AppLocker o WDAC)
+= d
+> Reduce el riesgo de malware desconocido.
+@ Puesto de usuario
+
+? ¿Qué medida protege los datos de un portátil si es robado?
+a) Salvapantallas
+b) Cambio del fondo
+c) Antivirus
+d) Cifrado de disco completo
+= d
+> BitLocker, FileVault o LUKS, junto con el TPM.
+@ Puesto de usuario
+
+? ¿Qué herramienta del CCN permite comprobar la configuración de seguridad de sistemas frente a las guías CCN-STIC?
+a) INES
+b) CLARA
+c) LUCIA
+d) PILAR
+= b
+> PILAR analiza riesgos; INES informa del estado de seguridad; LUCIA gestiona ciberincidentes.
+@ ENS
+
+? ¿Qué medidas del ENS tratan la concienciación y la formación del personal?
+a) [mp.eq.1] y [mp.eq.2]
+b) [op.acc.1] y [op.acc.2]
+c) [mp.if.1] y [mp.if.2]
+d) [mp.per.3] y [mp.per.4]
+= d
+> Son clave para reducir los riesgos de ingeniería social.
+@ ENS
+
+? ¿Qué medida del ENS regula la protección frente a código dañino?
+a) [op.exp.6]
+b) [op.exp.4]
+c) [mp.s.3]
+d) [op.acc.3]
+= a
+> [mp.s.3] regula la protección de la navegación web.
+@ ENS
+
+? ¿Qué medida del ENS regula la protección de la navegación web?
+a) [mp.s.1]
+b) [mp.s.3]
+c) [mp.s.2]
+d) [mp.com.1]
+= b
+> [mp.s.1] es el correo electrónico y [mp.s.2], los servicios y aplicaciones web.
+@ ENS
