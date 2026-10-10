@@ -1,0 +1,487 @@
+// Tema 27 (B4·T4) · Administración de redes de área local: usuarios, dispositivos, monitorización y control de tráfico
+
+? ¿Qué puertos UDP utilizan el servidor y el cliente DHCP?
+a) 53 y 123
+b) 67 y 68
+c) 161 y 162
+d) 20 y 21
+= b
+> El servidor escucha en el 67 y el cliente en el 68.
+@ DHCP
+
+? ¿Cuál es la secuencia correcta del proceso de asignación DHCP?
+a) Request, Discover, Offer, Acknowledge
+b) Offer, Discover, Acknowledge, Request
+c) Acknowledge, Request, Offer, Discover
+d) Discover, Offer, Request, Acknowledge
+= d
+> DORA.
+@ DHCP
+
+? ¿Qué mecanismo permite a un servidor DHCP atender a clientes de varias subredes?
+a) NAT
+b) Agente de retransmisión (relay / ip helper)
+c) STP
+d) PAT
+= b
+> El relay reenvía las difusiones DHCP como unidifusión al servidor.
+@ DHCP
+
+? Si un cliente Windows no obtiene respuesta DHCP, ¿qué dirección se autoasigna?
+a) 10.0.0.1
+b) Una dirección APIPA en 169.254.0.0/16
+c) 192.168.0.1
+d) 127.0.0.1
+= b
+> Es direccionamiento local de enlace, sin puerta de enlace.
+@ DHCP
+
+? ¿Qué es una reserva DHCP?
+a) Asociar siempre la misma IP a una dirección MAC concreta
+b) Reservar ancho de banda
+c) Bloquear el servidor
+d) Cifrar el tráfico DHCP
+= a
+> Se usa para impresoras o servidores que requieren IP estable sin configurarla manualmente.
+@ DHCP
+
+? ¿Qué función cumple DHCP snooping en un conmutador?
+a) Permitir las ofertas DHCP solo desde puertos de confianza, frente a servidores DHCP falsos
+b) Aumentar la velocidad de los puertos
+c) Cifrar el tráfico
+d) Crear VLAN
+= a
+> También construye una tabla IP-MAC usada por DAI.
+@ DHCP
+
+? ¿Qué registro DNS asocia un nombre a una dirección IPv6?
+a) A
+b) AAAA
+c) CNAME
+d) PTR
+= b
+> El registro A es para IPv4.
+@ DNS
+
+? ¿Qué registro DNS define un alias de un nombre canónico?
+a) NS
+b) SOA
+c) CNAME
+d) MX
+= c
+> No puede coexistir con otros registros en el mismo nombre.
+@ DNS
+
+? ¿Qué registro DNS delimita una zona y contiene datos como el servidor primario y el número de serie?
+a) SOA
+b) NS
+c) TXT
+d) SRV
+= a
+> Start of Authority.
+@ DNS
+
+? ¿Qué registro DNS utiliza Active Directory para localizar controladores de dominio y servicios?
+a) PTR
+b) HINFO
+c) CNAME
+d) SRV
+= d
+> Son los registros _ldap._tcp, _kerberos._tcp, etc.
+@ DNS
+
+? ¿Qué tipo de servidor DNS responde con información de sus propias zonas?
+a) Recursivo
+b) Reenviador
+c) Raíz
+d) Autoritativo
+= d
+> El recursivo resuelve consultas de clientes consultando a otros servidores y cachea.
+@ DNS
+
+? ¿Qué protocolo DNS se usa para las transferencias de zona (AXFR)?
+a) TCP 53
+b) UDP 53
+c) UDP 123
+d) TCP 389
+= a
+> Deben restringirse a servidores secundarios autorizados.
+@ DNS
+
+? ¿Qué garantiza DNSSEC?
+a) Integridad y autenticidad del origen de las respuestas DNS mediante firmas
+b) Confidencialidad de las consultas
+c) Mayor velocidad
+d) Anonimato
+= a
+> No cifra el tráfico; DoH y DoT sí lo hacen.
+@ DNS
+
+? ¿Qué puerto usa NTP?
+a) UDP 161
+b) UDP 123
+c) TCP 25
+d) UDP 514
+= b
+> Una desviación horaria superior a 5 minutos rompe Kerberos por defecto.
+@ NTP
+
+? ¿Qué es un bosque (forest) en Active Directory?
+a) Una unidad organizativa
+b) El conjunto de uno o más árboles de dominios que comparten esquema y catálogo global; es el límite de seguridad
+c) Un tipo de grupo
+d) Una directiva
+= b
+> El dominio es la unidad de replicación y administración.
+@ Active Directory
+
+? ¿Cuántos roles FSMO existen en total en un bosque de Active Directory de un único dominio?
+a) 3
+b) 2
+c) 7
+d) 5
+= d
+> Maestro de esquema, maestro de nombres de dominio, emulador de PDC, maestro de RID y maestro de infraestructura.
+@ Active Directory
+
+? ¿Cuáles son los roles FSMO que existen una sola vez por bosque?
+a) Emulador de PDC y maestro de RID
+b) Maestro de infraestructura y emulador de PDC
+c) Maestro de esquema y maestro de nombres de dominio
+d) Maestro de RID y maestro de esquema
+= c
+> Los otros tres existen una vez por dominio.
+@ Active Directory
+
+? ¿Qué rol FSMO emula al antiguo PDC y es el origen de la hora en el dominio y de cambios urgentes de contraseña?
+a) Emulador de PDC
+b) Maestro de RID
+c) Maestro de esquema
+d) Maestro de infraestructura
+= a
+> Es también el destino preferente de los cambios de GPO.
+@ Active Directory
+
+? ¿Qué rol FSMO asigna bloques de identificadores relativos (RID) a los controladores de dominio para crear SID?
+a) Maestro de RID
+b) Maestro de infraestructura
+c) Maestro de nombres de dominio
+d) Emulador de PDC
+= a
+> Sin RID disponibles no se pueden crear nuevos objetos de seguridad.
+@ Active Directory
+
+? ¿Qué protocolo de autenticación utiliza por defecto Active Directory en dominios modernos?
+a) NTLM
+b) RADIUS
+c) Kerberos
+d) PAP
+= c
+> NTLM se mantiene como alternativa heredada.
+@ Active Directory
+
+? En Kerberos, ¿qué se obtiene primero del KDC tras autenticarse?
+a) Un ticket de servicio directamente
+b) Un certificado X.509
+c) Un token JWT
+d) Un TGT (Ticket Granting Ticket)
+= d
+> Con el TGT se solicitan tickets de servicio (TGS) para cada recurso.
+@ Kerberos
+
+? ¿Qué tolerancia de diferencia horaria admite Kerberos por defecto en AD?
+a) 5 minutos
+b) 30 segundos
+c) 1 hora
+d) 24 horas
+= a
+> Por eso NTP es crítico.
+@ Kerberos
+
+? ¿Qué estrategia de asignación de permisos recomienda Microsoft en dominios (AGDLP)?
+a) Permisos directos a cuentas de usuario
+b) Cuentas → permisos → grupos
+c) Cuentas → grupos globales → grupos locales de dominio → permisos
+d) Grupos universales → cuentas → permisos
+= c
+> Facilita la administración y la auditoría.
+@ Active Directory
+
+? ¿Qué puerto TCP utiliza el catálogo global de Active Directory?
+a) 389
+b) 636
+c) 445
+d) 3268
+= d
+> 3269 para LDAP sobre SSL del catálogo global.
+@ Active Directory
+
+? ¿Qué es Microsoft Entra ID?
+a) Un servidor DNS
+b) El servicio de identidad en la nube de Microsoft (antes Azure AD)
+c) Un sistema de ficheros
+d) Un cortafuegos
+= b
+> Se integra con AD local mediante Entra Connect.
+@ Directorio
+
+? En LDAP, ¿qué es un DN?
+a) Un tipo de ataque
+b) Un puerto
+c) Un cifrado
+d) El nombre distinguido que identifica de forma única una entrada del directorio
+= d
+> Ejemplo: uid=ana,ou=personal,dc=ejemplo,dc=es.
+@ LDAP
+
+? ¿Qué puerto usa LDAP sobre TLS (LDAPS)?
+a) 389
+b) 88
+c) 3268
+d) 636
+= d
+> LDAP sin cifrar usa el 389.
+@ LDAP
+
+? Según NIST SP 800-63B, ¿qué política de contraseñas se recomienda?
+a) Priorizar la longitud, no exigir caducidad periódica sin motivo y rechazar contraseñas comprometidas
+b) Exigir cambios cada 30 días
+c) Limitar la longitud máxima a 8 caracteres
+d) Prohibir los gestores de contraseñas
+= a
+> La complejidad forzada y la caducidad frecuente generan contraseñas débiles.
+@ Identidades
+
+? ¿Qué significa JML en la gestión de identidades?
+a) Java, Mail, LDAP
+b) Just Multiple Logins
+c) Join Master Login
+d) Joiners, Movers, Leavers: altas, cambios y bajas de personal
+= d
+> Cada fase debe ajustar los privilegios para mantener el mínimo necesario.
+@ Identidades
+
+? ¿Qué medida del ENS regula la segregación de funciones y tareas?
+a) [op.acc.1]
+b) [op.acc.3]
+c) [op.acc.6]
+d) [mp.eq.2]
+= b
+> [op.acc.4] regula el proceso de gestión de derechos de acceso.
+@ ENS
+
+? ¿Qué es PAM en el ámbito de la seguridad?
+a) Gestión de accesos privilegiados
+b) Protocolo de acceso a medios
+c) Panel de administración de memoria
+d) Política de acceso móvil
+= a
+> Custodia credenciales de administración, controla y registra sesiones privilegiadas.
+@ Identidades
+
+? ¿Qué estándar permite controlar el acceso a la red cableada o inalámbrica autenticando al dispositivo o usuario antes de darle acceso?
+a) IEEE 802.1X
+b) IEEE 802.3
+c) IEEE 802.11a
+d) IEEE 802.1D
+= a
+> Intervienen el solicitante (supplicant), el autenticador y un servidor RADIUS.
+@ NAC
+
+? En 802.1X, ¿qué elemento actúa como autenticador?
+a) El cliente
+b) El servidor RADIUS
+c) El servidor DHCP
+d) El conmutador o punto de acceso
+= d
+> El servidor de autenticación es el RADIUS.
+@ NAC
+
+? ¿Qué hace port security en un conmutador?
+a) Cifra el tráfico
+b) Reparte direcciones IP
+c) Limita las direcciones MAC permitidas en un puerto
+d) Crea VLAN
+= c
+> Ante una violación puede descartar, restringir o deshabilitar el puerto.
+@ Dispositivos
+
+? ¿Por qué es preferible SSH a Telnet para administrar dispositivos de red?
+a) SSH es más rápido
+b) Telnet usa UDP
+c) SSH cifra la sesión y las credenciales; Telnet envía todo en texto claro
+d) SSH no requiere autenticación
+= c
+> Telnet usa el puerto 23 y SSH el 22.
+@ Dispositivos
+
+? ¿Qué es una red de gestión fuera de banda (OOB)?
+a) Una red de invitados
+b) Una red independiente de la de producción dedicada a administrar los dispositivos
+c) Una VPN pública
+d) Una red de almacenamiento
+= b
+> Permite administrar aunque falle la red de producción.
+@ Dispositivos
+
+? ¿Qué mejora SNMPv3 respecto a SNMPv1/v2c?
+a) Más velocidad
+b) Uso de TCP
+c) Más OID
+d) Autenticación y cifrado
+= d
+> v1/v2c transmiten la community string en claro.
+@ SNMP
+
+? ¿Qué puerto UDP utiliza el gestor para recibir los TRAP de SNMP?
+a) 161
+b) 162
+c) 514
+d) 123
+= b
+> Los agentes escuchan consultas en el 161.
+@ SNMP
+
+? ¿Qué es una MIB en SNMP?
+a) Una base de información de gestión con los objetos monitorizables, identificados por OID
+b) Un protocolo
+c) Un tipo de cable
+d) Un cliente
+= a
+> Cada variable (por ejemplo, ifInOctets) tiene un OID.
+@ SNMP
+
+? ¿Qué diferencia hay entre una operación GET y un TRAP en SNMP?
+a) TRAP es una consulta del gestor
+b) GET lo envía el agente sin petición
+c) GET es una consulta del gestor al agente; TRAP es una notificación asíncrona del agente al gestor
+d) Son iguales
+= c
+> INFORM es un trap con confirmación.
+@ SNMP
+
+? ¿Qué proporciona NetFlow / IPFIX?
+a) Cifrado del tráfico
+b) Balanceo de carga
+c) Asignación de IP
+d) Información sobre los flujos de tráfico (origen, destino, puertos, volumen)
+= d
+> sFlow es una alternativa basada en muestreo.
+@ Monitorización
+
+? ¿Qué permite el port mirroring (SPAN) en un conmutador?
+a) Copiar el tráfico de uno o varios puertos a otro puerto para su análisis
+b) Duplicar el ancho de banda
+c) Crear VLAN
+d) Agregar enlaces
+= a
+> Sirve para conectar un analizador o un IDS.
+@ Monitorización
+
+? ¿Qué herramienta mide el ancho de banda entre dos extremos de una red?
+a) iperf
+b) ping
+c) nslookup
+d) arp
+= a
+> ping mide la latencia y la pérdida de paquetes.
+@ Monitorización
+
+? ¿Qué mide el jitter?
+a) La pérdida de paquetes
+b) La variación de la latencia entre paquetes
+c) El ancho de banda máximo
+d) La disponibilidad
+= b
+> Es crítico en voz y vídeo en tiempo real.
+@ Monitorización
+
+? ¿Cuál de las siguientes es una herramienta de monitorización de redes de código abierto?
+a) Wireshark
+b) Zabbix
+c) Photoshop
+d) Jenkins
+= b
+> Nagios, Cacti y LibreNMS son otras. Wireshark analiza paquetes.
+@ Monitorización
+
+? ¿Qué filtro de captura BPF de tcpdump selecciona el tráfico TCP del puerto 443?
+a) tcp port 443
+b) port=tcp443
+c) filter https
+d) tcp.443
+= a
+> Los filtros BPF se escriben como expresiones, por ejemplo tcp port 443 and host 10.0.0.5.
+@ Monitorización
+
+? ¿Cuántos bits ocupa el campo DSCP en la cabecera IP?
+a) 3
+b) 8
+c) 6
+d) 4
+= c
+> 802.1p (CoS) usa 3 bits en la etiqueta VLAN.
+@ QoS
+
+? ¿Qué valor DSCP se utiliza habitualmente para marcar el tráfico de voz?
+a) CS0 (0)
+b) AF11
+c) CS1
+d) EF (46)
+= d
+> Expedited Forwarding.
+@ QoS
+
+? ¿Qué diferencia hay entre policing y shaping?
+a) Shaping descarta el exceso
+b) Policing descarta o remarca el exceso de tráfico; shaping lo almacena en un búfer y lo retrasa
+c) Policing almacena el exceso
+d) Son lo mismo
+= b
+> El shaping suaviza la tasa pero añade retardo.
+@ QoS
+
+? ¿Qué mecanismo de colas da prioridad estricta a la voz?
+a) FIFO
+b) WRED
+c) LLQ (Low Latency Queuing)
+d) CRC
+= c
+> WRED es un mecanismo de control de congestión.
+@ QoS
+
+? ¿Qué estándar IEEE define la agregación de enlaces (LACP)?
+a) 802.1Q
+b) 802.1X
+c) 802.3ad
+d) 802.11ac
+= c
+> Actualmente integrado en 802.1AX.
+@ Control de tráfico
+
+? ¿Qué estándar define el etiquetado de VLAN en enlaces troncales Ethernet?
+a) IEEE 802.1Q
+b) IEEE 802.3ad
+c) IEEE 802.11
+d) IEEE 802.1X
+= a
+> Añade 4 bytes a la trama, con VLAN ID de 12 bits.
+@ Control de tráfico
+
+? ¿Qué protocolo evita bucles de capa 2 en redes conmutadas?
+a) STP
+b) OSPF
+c) DHCP
+d) NAT
+= a
+> RSTP (802.1w) converge más rápido.
+@ Control de tráfico
+
+? ¿Qué retardo unidireccional máximo se recomienda para una buena calidad de voz sobre IP?
+a) 1 s
+b) 150 ms
+c) 500 ms
+d) 5 s
+= b
+> Con jitter inferior a 30 ms y pérdida inferior al 1 %.
+@ QoS

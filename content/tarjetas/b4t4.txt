@@ -1,0 +1,26 @@
+Puertos de servicios LAN :: DHCP 67/68; DNS 53; NTP 123; LDAP 389/636; Kerberos 88; SMB 445; SNMP 161/162; Syslog 514; RADIUS 1812/1813.
+DHCP :: DORA: Discover, Offer, Request, Acknowledge. Lease, ámbitos, exclusiones, reservas; relay (ip helper); DHCP snooping; APIPA 169.254.0.0/16.
+Opciones DHCP :: 3 puerta de enlace; 6 DNS; 15 sufijo DNS; 66/67 arranque PXE.
+DNS: registros :: A, AAAA, CNAME (alias), MX, NS, PTR, SOA, TXT, SRV (usado por AD).
+DNS: servidores y seguridad :: Autoritativo, recursivo/caché, reenviador; zonas directa e inversa; AXFR por TCP 53 restringido; DNSSEC firma (no cifra).
+Active Directory :: Dominio, árbol, bosque (límite de seguridad), OU, sitios, DC multimaestro, catálogo global (3268), NTDS.dit y SYSVOL.
+Roles FSMO :: Por bosque: maestro de esquema y maestro de nombres de dominio. Por dominio: emulador de PDC, maestro de RID y maestro de infraestructura.
+AGDLP :: Cuentas → grupos globales → grupos locales de dominio → permisos.
+Kerberos :: TGT del KDC y tickets de servicio (TGS); tolerancia horaria de 5 minutos; NTLM heredado.
+Entra ID y LDAP :: Entra ID: identidad en la nube (antes Azure AD). LDAP: DN (uid=…,ou=…,dc=…); 389 y LDAPS 636.
+Ciclo de vida de identidades :: JML (joiners, movers, leavers); mínimo privilegio; segregación de funciones; cuentas nominales; PAM; SSO y federación.
+Contraseñas (NIST 800-63B) :: Priorizar longitud, sin caducidad periódica sin motivo, rechazar comprometidas, bloqueo y MFA.
+ENS control de acceso :: op.acc.1 identificación; op.acc.2 requisitos; op.acc.3 segregación; op.acc.4 gestión de derechos; op.acc.5/6 autenticación.
+Gestión de dispositivos de red :: Inventario/CMDB, copias de configuración (RANCID, Oxidized), Ansible, firmware, SSH (no Telnet), red OOB, TACACS+/RADIUS, SNMPv3.
+802.1X :: Supplicant, authenticator (conmutador/AP) y servidor RADIUS (EAP); NAC; asigna VLAN.
+Seguridad de acceso en conmutadores :: Port security (MAC por puerto), DHCP snooping, DAI, segmentación con VLAN.
+Wi-Fi corporativo :: WLC, SSID de invitados separado, WPA2/WPA3-Enterprise (802.1X).
+SNMP :: Gestor (NMS) y agentes; MIB con OID; GET, GETNEXT, GETBULK, SET; TRAP (162) e INFORM; v3 con autenticación y cifrado.
+Flujos y captura :: NetFlow/IPFIX/sFlow; port mirroring (SPAN) y TAP; Wireshark y tcpdump (filtros BPF: tcp port 443).
+Herramientas de monitorización :: Nagios, Zabbix, PRTG, Cacti, LibreNMS, Prometheus + Grafana.
+Métricas de red :: Disponibilidad, latencia (RTT), jitter, pérdida, throughput, utilización, errores CRC.
+Diagnóstico de red :: ping, traceroute/tracert/mtr, iperf (ancho de banda), netstat/ss, arp, ip, nslookup/dig, nmap.
+QoS :: Clasificación y marcado (DSCP 6 bits; 802.1p CoS 3 bits), colas (FIFO, prioridad, WFQ/CBWFQ, LLQ para voz), WRED, limitación.
+Policing y shaping :: Policing descarta o remarca el exceso. Shaping lo almacena y retrasa.
+Requisitos de voz sobre IP :: Retardo unidireccional ≲ 150 ms, jitter ≲ 30 ms, pérdida < 1 %; DSCP EF (46).
+Control de tráfico en capa 2 :: LACP (802.3ad), STP/RSTP (PortFast, BPDU guard), VLAN 802.1Q.
