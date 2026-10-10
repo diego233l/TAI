@@ -1,0 +1,301 @@
+{
+ "convocatoria": {
+  "ref": "BOE-A-2025-26262",
+  "fecha": "2025-12-22",
+  "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262",
+  "cuerpo": "Cuerpo de Técnicos Auxiliares de Informática de la Administración del Estado (C1)",
+  "nota": "Programa del Anexo V (ingreso libre). Contrasta siempre con la convocatoria que se publique para tu proceso."
+ },
+ "examen": {
+  "parte1": {
+   "preguntas": 80,
+   "reserva": 5,
+   "puntos": 50,
+   "minimo_puntos": 25
+  },
+  "parte2": {
+   "preguntas": 20,
+   "reserva": 5,
+   "puntos": 50,
+   "minimo_puntos": 25,
+   "bloques": [
+    "b3",
+    "b4"
+   ]
+  },
+  "minutos": 120,
+  "penalizacion": "1/3",
+  "minimo_directa_pct": 30,
+  "distribucion_parte1": {
+   "b1": 22,
+   "b2": 12,
+   "b3": 22,
+   "b4": 24
+  }
+ },
+ "bloques": [
+  {
+   "id": "b1",
+   "num": "I",
+   "title": "Organización del Estado y Administración electrónica",
+   "practico": false,
+   "topics": [
+    {
+     "id": "b1t1",
+     "num": 1,
+     "global": 1,
+     "title": "La Constitución Española de 1978. Derechos y deberes fundamentales. Su garantía y suspensión. La Corona: funciones constitucionales del Rey.",
+     "short": "Constitución: derechos y deberes, garantías y Corona"
+    },
+    {
+     "id": "b1t2",
+     "num": 2,
+     "global": 2,
+     "title": "Las Cortes Generales: atribuciones del Congreso de los Diputados y del Senado. El Tribunal Constitucional: composición y atribuciones. El Defensor del Pueblo.",
+     "short": "Cortes Generales, Tribunal Constitucional y Defensor del Pueblo"
+    },
+    {
+     "id": "b1t3",
+     "num": 3,
+     "global": 3,
+     "title": "El Gobierno: composición, nombramiento y cese. Las funciones del Gobierno. Relaciones entre el Gobierno y las Cortes Generales.",
+     "short": "El Gobierno"
+    },
+    {
+     "id": "b1t4",
+     "num": 4,
+     "global": 4,
+     "title": "El texto refundido del Estatuto Básico del Empleo Público y demás normativa de aplicación: derechos y deberes, formas de provisión de puestos, promoción interna y carrera profesional; situaciones administrativas, incompatibilidades y régimen sancionador. La Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno. La Agenda 2030 y los Objetivos de Desarrollo Sostenible.",
+     "short": "EBEP, transparencia (Ley 19/2013) y Agenda 2030"
+    },
+    {
+     "id": "b1t5",
+     "num": 5,
+     "global": 5,
+     "title": "Políticas de igualdad y contra la violencia de género. Políticas de igualdad de trato y no discriminación de las personas LGTBI. Discapacidad y dependencia: régimen jurídico.",
+     "short": "Igualdad, violencia de género, LGTBI, discapacidad y dependencia"
+    },
+    {
+     "id": "b1t6",
+     "num": 6,
+     "global": 6,
+     "title": "La sociedad de la información. Identidad y firma electrónica: régimen jurídico. El DNI electrónico. La Agenda Digital para España.",
+     "short": "Sociedad de la información, firma electrónica y DNIe"
+    },
+    {
+     "id": "b1t7",
+     "num": 7,
+     "global": 7,
+     "title": "La protección de datos personales y su régimen jurídico: principios, derechos y obligaciones. Derechos digitales.",
+     "short": "Protección de datos y derechos digitales"
+    },
+    {
+     "id": "b1t8",
+     "num": 8,
+     "global": 8,
+     "title": "Acceso electrónico de los ciudadanos a los servicios públicos y normativa de desarrollo. La gestión electrónica de los procedimientos administrativos: registros, notificaciones y uso de medios electrónicos. Esquema Nacional de Seguridad y de Interoperabilidad. Normas técnicas de Interoperabilidad.",
+     "short": "Administración electrónica, ENS e ENI"
+    },
+    {
+     "id": "b1t9",
+     "num": 9,
+     "global": 9,
+     "title": "Instrumentos para el acceso electrónico a las Administraciones públicas: sedes electrónicas, canales y puntos de acceso, identificación y autenticación. Infraestructuras y servicios comunes en materia de administración electrónica.",
+     "short": "Sedes, canales e infraestructuras comunes"
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "num": "II",
+   "title": "Tecnología básica",
+   "practico": false,
+   "topics": [
+    {
+     "id": "b2t1",
+     "num": 1,
+     "global": 10,
+     "title": "Informática básica. Representación y comunicación de la información: elementos constitutivos de un sistema de información. Características y funciones. Arquitectura de ordenadores. Componentes internos de los equipos microinformáticos.",
+     "short": "Informática básica y arquitectura de ordenadores"
+    },
+    {
+     "id": "b2t2",
+     "num": 2,
+     "global": 11,
+     "title": "Periféricos: conectividad y administración. Elementos de impresión. Elementos de almacenamiento. Elementos de visualización y digitalización.",
+     "short": "Periféricos"
+    },
+    {
+     "id": "b2t3",
+     "num": 3,
+     "global": 12,
+     "title": "Tipos abstractos y Estructuras de datos. Organizaciones de ficheros. Algoritmos. Formatos de información y ficheros.",
+     "short": "Estructuras de datos, ficheros y algoritmos"
+    },
+    {
+     "id": "b2t4",
+     "num": 4,
+     "global": 13,
+     "title": "Sistemas operativos. Características y elementos constitutivos. Sistemas Windows. Sistemas Unix y Linux. Sistemas operativos para dispositivos móviles.",
+     "short": "Sistemas operativos"
+    },
+    {
+     "id": "b2t5",
+     "num": 5,
+     "global": 14,
+     "title": "Sistemas de gestión de bases de datos relacionales, orientados a objetos y NoSQL: características y componentes.",
+     "short": "Sistemas gestores de bases de datos"
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "num": "III",
+   "title": "Desarrollo de sistemas",
+   "practico": true,
+   "topics": [
+    {
+     "id": "b3t1",
+     "num": 1,
+     "global": 15,
+     "title": "Modelado de datos, metodologías y reglas. Entidades, atributos y relaciones. Diseño de bases de datos. Diseño lógico y físico. El modelo lógico relacional. Normalización.",
+     "short": "Modelado de datos y normalización"
+    },
+    {
+     "id": "b3t2",
+     "num": 2,
+     "global": 16,
+     "title": "Lenguajes de programación. Representación de tipos de datos. Operadores. Instrucciones condicionales. Bucles y recursividad. Procedimientos, funciones y parámetros. Vectores y registros. Estructura de un programa.",
+     "short": "Lenguajes de programación"
+    },
+    {
+     "id": "b3t3",
+     "num": 3,
+     "global": 17,
+     "title": "Lenguajes de interrogación de bases de datos. Estándar ANSI SQL. Procedimientos almacenados. Eventos y disparadores.",
+     "short": "SQL, procedimientos almacenados y disparadores"
+    },
+    {
+     "id": "b3t4",
+     "num": 4,
+     "global": 18,
+     "title": "Diseño y programación orientada a objetos. Elementos y componentes software: objetos, clases, herencia, métodos, sobrecarga. Ventajas e inconvenientes. Patrones de diseño y lenguaje de modelado unificado (UML).",
+     "short": "Programación orientada a objetos y UML"
+    },
+    {
+     "id": "b3t5",
+     "num": 5,
+     "global": 19,
+     "title": "Arquitectura Java EE/Jakarta EE y plataforma.NET: componentes, persistencia y seguridad. Características, elementos, lenguajes y funciones en ambos entornos. Desarrollo de interfaces.",
+     "short": "Java EE / Jakarta EE y .NET"
+    },
+    {
+     "id": "b3t6",
+     "num": 6,
+     "global": 20,
+     "title": "Arquitectura de sistemas cliente/servidor y multicapas: componentes y operación. Arquitecturas de servicios web y protocolos asociados.",
+     "short": "Cliente/servidor, multicapa y servicios web"
+    },
+    {
+     "id": "b3t7",
+     "num": 7,
+     "global": 21,
+     "title": "Aplicaciones web. Desarrollo web front-end y en servidor, multiplataforma y multidispositivo. Lenguajes: HTML, XML y sus derivaciones. Navegadores y lenguajes de programación web. Lenguajes de script.",
+     "short": "Aplicaciones web: HTML, XML y scripts"
+    },
+    {
+     "id": "b3t8",
+     "num": 8,
+     "global": 22,
+     "title": "Accesibilidad, diseño universal y usabilidad. Acceso y usabilidad de las tecnologías, productos y servicios relacionados con la sociedad de la información. Confidencialidad y disponibilidad de la información en puestos de usuario final. Conceptos de seguridad en el desarrollo de los sistemas.",
+     "short": "Accesibilidad, usabilidad y seguridad en el desarrollo"
+    },
+    {
+     "id": "b3t9",
+     "num": 9,
+     "global": 23,
+     "title": "Repositorios: estructura y actualización. Generación de código y documentación. Metodologías de desarrollo. Pruebas. Programas para control de versiones. Plataformas de desarrollo colaborativo de software.",
+     "short": "Repositorios, metodologías, pruebas y control de versiones"
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "num": "IV",
+   "title": "Sistemas y comunicaciones",
+   "practico": true,
+   "topics": [
+    {
+     "id": "b4t1",
+     "num": 1,
+     "global": 24,
+     "title": "Administración del Sistema operativo y software de base. Actualización, mantenimiento y reparación del sistema operativo.",
+     "short": "Administración del sistema operativo"
+    },
+    {
+     "id": "b4t2",
+     "num": 2,
+     "global": 25,
+     "title": "Administración de bases de datos. Sistemas de almacenamiento y su virtualización. Políticas, sistemas y procedimientos de backup y su recuperación. Backup de sistemas físicos y virtuales. Virtualización de sistemas y virtualización de puestos de usuario.",
+     "short": "Bases de datos, almacenamiento, backup y virtualización"
+    },
+    {
+     "id": "b4t3",
+     "num": 3,
+     "global": 26,
+     "title": "Administración de servidores de correo electrónico sus protocolos. Administración de contenedores y microservicios.",
+     "short": "Correo electrónico, contenedores y microservicios"
+    },
+    {
+     "id": "b4t4",
+     "num": 4,
+     "global": 27,
+     "title": "Administración de redes de área local. Gestión de usuarios. Gestión de dispositivos. Monitorización y control de tráfico.",
+     "short": "Administración de redes de área local"
+    },
+    {
+     "id": "b4t5",
+     "num": 5,
+     "global": 28,
+     "title": "Conceptos de seguridad de los sistemas de información. Seguridad física. Seguridad lógica. Amenazas y vulnerabilidades. Técnicas criptográficas y protocolos seguros. Mecanismos de firma digital. Infraestructura física de un CPD: acondicionamiento y equipamiento. Sistemas de gestión de incidencias. Control remoto de puestos de usuario.",
+     "short": "Seguridad de los sistemas, criptografía y CPD"
+    },
+    {
+     "id": "b4t6",
+     "num": 6,
+     "global": 29,
+     "title": "Comunicaciones. Medios de transmisión. Modos de comunicación. Equipos terminales y equipos de interconexión y conmutación. Redes de comunicaciones. Redes de conmutación y redes de difusión. Comunicaciones móviles e inalámbricas.",
+     "short": "Comunicaciones: medios, equipos y redes"
+    },
+    {
+     "id": "b4t7",
+     "num": 7,
+     "global": 30,
+     "title": "El modelo TCP/IP y el modelo de referencia de interconexión de sistemas abiertos (OSI) de ISO. Protocolos TCP/IP.",
+     "short": "Modelos TCP/IP y OSI"
+    },
+    {
+     "id": "b4t8",
+     "num": 8,
+     "global": 31,
+     "title": "Internet: arquitectura de red. Origen, evolución y estado actual. Principales servicios. Protocolos HTTP, HTTPS y SSL/TLS.",
+     "short": "Internet, HTTP/HTTPS y SSL/TLS"
+    },
+    {
+     "id": "b4t9",
+     "num": 9,
+     "global": 32,
+     "title": "Seguridad y protección en redes de comunicaciones. Seguridad perimetral. Acceso remoto seguro a redes. Redes privadas virtuales (VPN). Seguridad en el puesto del usuario.",
+     "short": "Seguridad en redes, perimetral y VPN"
+    },
+    {
+     "id": "b4t10",
+     "num": 10,
+     "global": 33,
+     "title": "Redes locales. Tipología. Técnicas de transmisión. Métodos de acceso. Dispositivos de interconexión.",
+     "short": "Redes locales"
+    }
+   ]
+  }
+ ]
+}

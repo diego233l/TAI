@@ -1,0 +1,6 @@
+# Los datos de usuario viven fuera del repositorio (/var/lib/tai), pero por si acaso:
+*.sqlite
+*.sqlite-*
+*.db
+.htpasswd
+.DS_Store
