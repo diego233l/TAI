@@ -1,0 +1,424 @@
+// Tema 20 (B3·T6) · Arquitecturas cliente/servidor y multicapa. Servicios web y protocolos asociados
+
+? En el modelo cliente/servidor, ¿quién inicia la comunicación?
+a) El cliente
+b) El servidor
+c) Ambos simultáneamente
+d) El middleware
+= a
+> El servidor permanece a la escucha de peticiones; el cliente las inicia.
+@ Cliente/servidor
+
+? ¿Cuál es la secuencia de llamadas de sockets típica en un servidor TCP?
+a) socket, bind, listen, accept
+b) socket, connect, send
+c) bind, socket, accept, listen
+d) listen, socket, connect
+= a
+> El cliente usa socket y connect.
+@ Sockets
+
+? En una arquitectura de tres capas, ¿cuáles son las capas?
+a) Presentación, lógica de negocio y datos
+b) Cliente, red y servidor
+c) Hardware, sistema operativo y aplicación
+d) Modelo, vista y controlador
+= a
+> MVC es un patrón de diseño de la capa de presentación, no una arquitectura de tres capas.
+@ Multicapa
+
+? ¿Cuál es una ventaja de las arquitecturas multicapa frente a las de dos capas?
+a) Menos latencia siempre
+b) Separación de responsabilidades y escalabilidad independiente por capa
+c) Menor complejidad
+d) Menos servidores
+= b
+> A cambio añaden complejidad y latencia.
+@ Multicapa
+
+? ¿Qué diferencia hay entre capas (layers) y niveles (tiers)?
+a) Son sinónimos
+b) Las capas son una organización lógica; los niveles son el despliegue físico
+c) Los niveles son lógicos y las capas físicas
+d) Las capas solo existen en bases de datos
+= b
+> Una arquitectura de tres capas puede desplegarse en uno, dos o tres niveles.
+@ Multicapa
+
+? ¿Qué caracteriza a un cliente ligero (thin client) en una aplicación web clásica?
+a) Casi toda la lógica reside en el servidor y el navegador solo presenta
+b) El cliente tiene toda la lógica
+c) No hay servidor
+d) Solo funciona sin red
+= a
+> El cliente pesado (rich/fat client) ejecuta gran parte de la lógica localmente.
+@ Cliente/servidor
+
+? ¿Qué es un balanceador de carga de capa 7?
+a) Reparte las peticiones según el contenido de la petición HTTP (URL, cabeceras)
+b) Solo reparte por dirección MAC
+c) Cifra el tráfico
+d) Genera copias de seguridad
+= a
+> El de capa 4 decide por IP y puerto.
+@ Escalabilidad
+
+? ¿Por qué las aplicaciones sin estado (stateless) escalan mejor?
+a) Cualquier instancia puede atender cualquier petición sin depender de datos de sesión locales
+b) Porque no usan red
+c) Porque no necesitan base de datos
+d) Porque usan siempre UDP
+= a
+> El estado se guarda en el cliente (tokens) o en un almacén compartido (Redis, BD).
+@ Escalabilidad
+
+? ¿Qué es un proxy inverso (reverse proxy)?
+a) Un cliente que accede a internet de forma anónima
+b) Un cortafuegos de nivel 2
+c) Un tipo de base de datos
+d) Un servidor que recibe las peticiones de los clientes y las reenvía a servidores internos
+= d
+> Puede balancear carga, terminar TLS y cachear contenido (Nginx, HAProxy).
+@ Escalabilidad
+
+? ¿Qué es el middleware?
+a) El hardware de red
+b) Un sistema operativo
+c) Software que facilita la comunicación e integración entre aplicaciones distribuidas
+d) Un editor de código
+= c
+> Ejemplos: RPC, ORB, brokers de mensajes, ESB.
+@ Middleware
+
+? ¿Qué caracteriza a una arquitectura de microservicios?
+a) Servicios pequeños, autónomos y desplegables de forma independiente, que se comunican mediante APIs
+b) Una única aplicación monolítica desplegada en un solo artefacto
+c) Uso exclusivo de SOAP
+d) Un único equipo de desarrollo para todo
+= a
+> Aportan flexibilidad y escalado independiente, pero complican la operación y la consistencia de datos.
+@ Microservicios
+
+? ¿Qué es un API Gateway?
+a) Un tipo de base de datos NoSQL
+b) Un punto de entrada único que enruta, autentica y limita las peticiones hacia los servicios
+c) Un formato de mensaje
+d) Un lenguaje de programación
+= b
+> Centraliza aspectos transversales: seguridad, rate limiting, enrutado y monitorización.
+@ Microservicios
+
+? ¿En qué lenguaje se basan los mensajes SOAP?
+a) JSON
+b) XML
+c) YAML
+d) CSV
+= b
+> SOAP define un sobre (Envelope) XML con cabecera opcional y cuerpo.
+@ SOAP
+
+? ¿Qué elementos son obligatorios en un mensaje SOAP?
+a) Envelope y Body
+b) Header y Fault
+c) Header y Body
+d) Solo Body
+= a
+> Header es opcional; Fault aparece solo en caso de error.
+@ SOAP
+
+? ¿Para qué sirve WSDL?
+a) Para transportar los datos del servicio
+b) Para cifrar mensajes SOAP
+c) Para describir un servicio web (operaciones, mensajes, binding y localización) en XML
+d) Para balancear la carga
+= c
+> A partir del WSDL pueden generarse automáticamente los clientes.
+@ WSDL
+
+? ¿Qué tecnología se concibió como directorio para publicar y localizar servicios web?
+a) UDDI
+b) SAML
+c) OAuth
+d) JWT
+= a
+> Su uso ha decaído; el descubrimiento se hace hoy con catálogos de APIs y OpenAPI.
+@ UDDI
+
+? ¿Qué estándar WS-* proporciona seguridad a nivel de mensaje (firma y cifrado XML) en SOAP?
+a) WS-Addressing
+b) WS-Policy
+c) WS-Transaction
+d) WS-Security
+= d
+> Se aplica al mensaje y no solo al canal, por lo que protege aunque pase por intermediarios.
+@ SOAP
+
+? ¿Quién definió el estilo arquitectónico REST?
+a) Tim Berners-Lee
+b) Roy Fielding
+c) Linus Torvalds
+d) James Gosling
+= b
+> En su tesis doctoral del año 2000.
+@ REST
+
+? ¿Cuál de las siguientes NO es una restricción de REST?
+a) Cliente-servidor
+b) Sin estado
+c) Interfaz uniforme
+d) Contrato WSDL obligatorio
+= d
+> REST no exige contrato WSDL. Las restricciones son: cliente-servidor, sin estado, caché, interfaz uniforme, sistema en capas y código bajo demanda (opcional).
+@ REST
+
+? ¿Qué significa HATEOAS?
+a) Que el servidor mantiene sesiones
+b) Que las respuestas incluyen enlaces que guían al cliente en las acciones posibles
+c) Que solo se usa XML
+d) Que no se cachean las respuestas
+= b
+> Hypermedia As The Engine Of Application State, nivel 3 del modelo de Richardson.
+@ REST
+
+? ¿Qué método HTTP es seguro e idempotente?
+a) GET
+b) POST
+c) PATCH
+d) DELETE
+= a
+> DELETE y PUT son idempotentes pero no seguros. POST no es idempotente.
+@ HTTP
+
+? ¿Qué significa que un método HTTP sea idempotente?
+a) Que nunca modifica datos
+b) Que no tiene cuerpo
+c) Que no usa TLS
+d) Que repetir la misma petición produce el mismo estado final en el servidor
+= d
+> PUT y DELETE son idempotentes; POST no.
+@ HTTP
+
+? ¿Qué método HTTP se usa normalmente para crear un nuevo recurso cuando el servidor decide su URI?
+a) POST
+b) GET
+c) HEAD
+d) TRACE
+= a
+> PUT se usa para crear o reemplazar en una URI conocida por el cliente.
+@ HTTP
+
+? ¿Qué código HTTP se devuelve al crear correctamente un recurso?
+a) 200
+b) 204
+c) 302
+d) 201
+= d
+> 201 Created suele incluir la cabecera Location con la URI del recurso nuevo.
+@ HTTP
+
+? ¿Qué código HTTP indica que el recurso solicitado no existe?
+a) 400
+b) 401
+c) 404
+d) 403
+= c
+> 400: petición incorrecta; 401: falta autenticación; 403: prohibido.
+@ HTTP
+
+? ¿Cuál es la diferencia entre los códigos 401 y 403?
+a) 401: no autenticado; 403: autenticado pero sin permiso
+b) 401: no encontrado; 403: error del servidor
+c) Son equivalentes
+d) 401: redirección; 403: éxito
+= a
+> 401 Unauthorized (falta o es inválida la autenticación); 403 Forbidden (se rechaza el acceso).
+@ HTTP
+
+? ¿Qué código HTTP indica que no hay contenido que devolver pero la operación fue correcta?
+a) 200
+b) 204
+c) 304
+d) 404
+= b
+> Es típico en respuestas a DELETE o PUT.
+@ HTTP
+
+? ¿Qué familia de códigos HTTP corresponde a errores del servidor?
+a) 2xx
+b) 3xx
+c) 4xx
+d) 5xx
+= d
+> 4xx errores del cliente; 3xx redirecciones; 2xx éxito; 1xx informativos.
+@ HTTP
+
+? ¿Qué código HTTP se devuelve cuando un cliente supera el límite de peticiones permitido?
+a) 408
+b) 503
+c) 429
+d) 418
+= c
+> 429 Too Many Requests, usado en el rate limiting.
+@ HTTP
+
+? ¿Qué código HTTP se devuelve si una pasarela no recibe a tiempo la respuesta del servidor upstream?
+a) 502
+b) 503
+c) 504
+d) 500
+= c
+> 504 Gateway Timeout; 502 Bad Gateway indica respuesta inválida del upstream.
+@ HTTP
+
+? En el modelo de madurez de Richardson, el nivel 3 incorpora:
+a) Recursos
+b) Verbos HTTP
+c) HATEOAS (hipermedia)
+d) Un único endpoint
+= c
+> Nivel 0: un endpoint; 1: recursos; 2: verbos y códigos de estado; 3: hipermedia.
+@ REST
+
+? ¿Qué es OpenAPI (Swagger)?
+a) Una especificación para describir APIs REST de forma estándar
+b) Un servidor de aplicaciones
+c) Un lenguaje de programación
+d) Un protocolo de cifrado
+= a
+> Permite generar documentación, clientes y servidores.
+@ REST
+
+? ¿Cuál es una característica de GraphQL?
+a) Un único endpoint donde el cliente especifica los campos que necesita
+b) Cada recurso tiene su propia URL fija
+c) Usa XML obligatoriamente
+d) Solo permite lectura
+= a
+> Evita el exceso y la falta de datos en las respuestas (over/under-fetching).
+@ GraphQL
+
+? ¿Sobre qué protocolo de transporte y con qué formato de serialización trabaja gRPC?
+a) HTTP/1.0 y XML
+b) SMTP y JSON
+c) FTP y CSV
+d) HTTP/2 y Protocol Buffers
+= d
+> Admite streaming bidireccional y es muy eficiente.
+@ gRPC
+
+? ¿Qué proporciona WebSocket?
+a) Una petición única unidireccional
+b) Un sistema de ficheros
+c) Un protocolo de correo
+d) Un canal bidireccional full-duplex persistente sobre TCP entre cliente y servidor
+= d
+> Se inicia con un handshake HTTP Upgrade; URIs ws:// y wss://.
+@ WebSocket
+
+? ¿Qué protocolo ligero de mensajería publicación/suscripción se usa habitualmente en IoT?
+a) SMTP
+b) MQTT
+c) IMAP
+d) FTP
+= b
+> Está pensado para dispositivos con recursos limitados y redes poco fiables.
+@ Mensajería
+
+? ¿Qué es OAuth 2.0?
+a) Un algoritmo de cifrado simétrico
+b) Un protocolo de transferencia de ficheros
+c) Un marco de autorización delegada que permite a una aplicación obtener acceso limitado a recursos en nombre del usuario
+d) Un formato de mensajes SOAP
+= c
+> OpenID Connect añade autenticación sobre OAuth 2.0.
+@ Seguridad
+
+? ¿Qué flujo OAuth 2.0 se recomienda para aplicaciones públicas (SPA y móviles) junto con PKCE?
+a) Resource Owner Password Credentials
+b) Implicit
+c) Authorization Code
+d) Client Credentials
+= c
+> PKCE protege el código de autorización frente a interceptación. Implicit y Password están desaconsejados.
+@ Seguridad
+
+? ¿Qué flujo OAuth 2.0 se utiliza para comunicación entre servicios sin intervención de un usuario?
+a) Client Credentials
+b) Authorization Code
+c) Implicit
+d) Device Code
+= a
+> La aplicación se autentica con sus propias credenciales para obtener un token.
+@ Seguridad
+
+? ¿Cómo se estructura un JWT?
+a) Un fichero XML firmado
+b) Un fichero binario cifrado
+c) Un par usuario:contraseña
+d) Cabecera.Carga.Firma, codificados en Base64URL y separados por puntos
+= d
+> Un JWT firmado no es necesariamente cifrado: su contenido puede leerse.
+@ Seguridad
+
+? ¿Qué protocolo de identidad federada basado en XML se usa en SSO corporativo y en Cl@ve?
+a) SAML 2.0
+b) JWT
+c) OAuth 2.0
+d) Kerberos
+= a
+> OpenID Connect es la alternativa basada en OAuth y JSON.
+@ Seguridad
+
+? ¿Qué autenticación HTTP envía usuario y contraseña codificados en Base64 en cada petición y solo es aceptable sobre TLS?
+a) Bearer
+b) Basic
+c) Digest
+d) NTLM
+= b
+> Base64 no es cifrado; sin TLS las credenciales quedarían expuestas.
+@ Seguridad
+
+? ¿Qué esquema utiliza la plataforma de intermediación de datos de las Administraciones Públicas para intercambiar datos mediante servicios web?
+a) SCSP (Sustitución de Certificados en Soporte Papel)
+b) SMTP
+c) LDAP
+d) Telnet
+= a
+> Basado en mensajes SOAP firmados, evita pedir certificados en papel al ciudadano.
+@ AAPP
+
+? ¿Qué lista recoge los principales riesgos de seguridad específicos de las APIs?
+a) OWASP API Security Top 10
+b) ISO 9001
+c) RFC 2616
+d) PCI-DSS
+= a
+> Incluye autorización a nivel de objeto, autenticación rota, exposición excesiva de datos y falta de límites de recursos.
+@ Seguridad
+
+? En una comparación entre SOAP y REST, ¿qué afirmación es correcta?
+a) REST solo admite XML
+b) SOAP es un estilo arquitectónico
+c) REST exige WSDL
+d) SOAP usa XML y WSDL, mientras que REST es un estilo que suele usar JSON sobre HTTP
+= d
+> SOAP es un protocolo con contrato estricto; REST es más ligero y flexible.
+@ SOAP/REST
+
+? ¿Qué tipo de balanceo reparte las peticiones por turnos entre los servidores?
+a) Round robin
+b) Hashing de contenido
+c) Backup frío
+d) Failover pasivo
+= a
+> Otros algoritmos: menos conexiones, ponderado, IP hash.
+@ Escalabilidad
+
+? ¿Qué patrón de comunicación utiliza un servicio que se limita a recibir una petición y devolver una respuesta de forma bloqueante?
+a) Síncrono (petición/respuesta)
+b) Asíncrono con cola
+c) Publicación/suscripción
+d) Streaming
+= a
+> La mensajería asíncrona desacopla emisor y receptor en el tiempo.
+@ Cliente/servidor

@@ -1,0 +1,33 @@
+Cliente/servidor :: El cliente solicita y el servidor presta el servicio; el cliente inicia la comunicación.
+Sockets TCP :: Servidor: socket, bind, listen, accept. Cliente: socket, connect.
+Arquitecturas por capas :: 2 capas (cliente ↔ datos); 3 capas (presentación, lógica de negocio, datos); n capas.
+Capas y niveles :: Capas: organización lógica. Niveles (tiers): despliegue físico.
+Cliente ligero y pesado :: Ligero: lógica en el servidor (navegador). Pesado: lógica en el cliente.
+Balanceador de carga :: Capa 4: IP y puerto. Capa 7: contenido HTTP. Algoritmos: round robin, menos conexiones, ponderado, IP hash.
+Reverse proxy :: Recibe peticiones y las reenvía a servidores internos; balancea, termina TLS y cachea (Nginx, HAProxy).
+Aplicación stateless :: No guarda sesión local; escala mejor; el estado va en tokens o en un almacén compartido.
+Middleware :: Software intermedio de integración: RPC, ORB, MOM, ESB.
+SOA y microservicios :: SOA: servicios interoperables y ESB. Microservicios: pequeños, autónomos, con API Gateway.
+SOAP :: Protocolo XML: Envelope (obligatorio) con Header (opcional) y Body (obligatorio); Fault para errores; sobre HTTP o SMTP.
+WSDL y UDDI :: WSDL describe el servicio (types, message, portType, binding, service). UDDI: directorio (en desuso).
+WS-Security :: Firma y cifrado XML a nivel de mensaje en SOAP.
+REST :: Estilo arquitectónico de Roy Fielding (2000): cliente-servidor, sin estado, caché, interfaz uniforme, capas, código bajo demanda opcional.
+HATEOAS :: Las respuestas incluyen enlaces que guían las acciones posibles; nivel 3 de Richardson.
+Modelo de Richardson :: Nivel 0 un endpoint; 1 recursos; 2 verbos y códigos HTTP; 3 hipermedia.
+Métodos HTTP :: GET seguro e idempotente; POST no idempotente; PUT y DELETE idempotentes; PATCH parcial; HEAD y OPTIONS seguros.
+Códigos HTTP de éxito y redirección :: 200 OK; 201 Created; 204 No Content; 301/302 redirección; 304 Not Modified.
+Códigos HTTP de error de cliente :: 400 Bad Request; 401 no autenticado; 403 prohibido; 404 no encontrado; 405 método no permitido; 409 conflicto; 415; 429 demasiadas peticiones.
+Códigos HTTP de error de servidor :: 500 interno; 502 Bad Gateway; 503 Service Unavailable; 504 Gateway Timeout.
+OpenAPI :: Especificación (Swagger) para describir APIs REST.
+GraphQL :: Un único endpoint; el cliente elige los campos; evita over/under-fetching.
+gRPC :: HTTP/2 + Protocol Buffers; streaming bidireccional.
+WebSocket :: Canal bidireccional full-duplex persistente sobre TCP (RFC 6455); ws:// y wss://.
+SSE y webhooks :: SSE: flujo unidireccional servidor → cliente. Webhooks: llamadas HTTP de retorno por eventos.
+Mensajería :: RabbitMQ (AMQP), Kafka, MQTT (IoT).
+OAuth 2.0 :: Autorización delegada; Authorization Code con PKCE para SPA y móviles; Client Credentials entre servicios; OpenID Connect añade autenticación.
+JWT :: cabecera.carga.firma en Base64URL; firmado, no necesariamente cifrado.
+SAML 2.0 :: Identidad federada y SSO en XML; usado por Cl@ve.
+HTTP Basic :: usuario:contraseña en Base64 en cada petición; solo con TLS.
+OWASP API Security Top 10 :: Lista de riesgos específicos de APIs (autorización a nivel de objeto, autenticación rota, exposición excesiva…).
+SCSP :: Sustitución de Certificados en Soporte Papel: intermediación de datos entre Administraciones con SOAP firmado.
+SOAP frente a REST :: SOAP: protocolo XML con WSDL y WS-Security. REST: estilo con JSON sobre HTTP, sin estado, TLS + OAuth.
