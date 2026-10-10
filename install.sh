@@ -46,12 +46,20 @@ fi
 # 2. PHP-FPM y extensión SQLite -------------------------------------------------
 PHP_SOCK="${PHP_SOCK:-$(ls /run/php/php*-fpm.sock 2>/dev/null | sort -V | tail -1 || true)}"
 [ -n "$PHP_SOCK" ] || die "no encuentro el socket de PHP-FPM en /run/php/ (instala php-fpm o usa PHP_SOCK=...)."
-PHPV="$(basename "$PHP_SOCK" | sed -E 's/^php([0-9.]+)-fpm\.sock$/\1/')"
-say "PHP-FPM: $PHP_SOCK"
-if ! "php$PHPV" -m 2>/dev/null | grep -qi '^pdo_sqlite$'; then
+# Versión de PHP: del nombre del socket (php8.3-fpm.sock), de su destino si es un
+# enlace genérico (php-fpm.sock) o del binario php-fpmX.Y instalado.
+ver() { sed -nE 's/^[^0-9]*([0-9]+\.[0-9]+).*/\1/p' | head -1; }
+PHPV="$(basename "$(readlink -f "$PHP_SOCK")" | ver)"
+[ -n "$PHPV" ] || PHPV="$(basename "$PHP_SOCK" | ver)"
+[ -n "$PHPV" ] || PHPV="$(ls /usr/sbin/php-fpm[0-9]* 2>/dev/null | sort -V | tail -1 | xargs -r basename | ver)"
+[ -n "$PHPV" ] || die "no puedo determinar la versión de PHP-FPM; instala phpX.Y-sqlite3 a mano y usa PHP_SOCK=..."
+say "PHP-FPM: $PHP_SOCK (PHP $PHPV)"
+FPMBIN="$(command -v "php-fpm$PHPV" || command -v "php$PHPV" || true)"
+if [ -n "$FPMBIN" ] && ! "$FPMBIN" -m 2>/dev/null | grep -qi '^pdo_sqlite$'; then
     command -v apt-get >/dev/null || die "falta la extensión pdo_sqlite de PHP $PHPV."
     say "Instalando php$PHPV-sqlite3"
-    DEBIAN_FRONTEND=noninteractive apt-get install -y -qq "php$PHPV-sqlite3" >/dev/null
+    DEBIAN_FRONTEND=noninteractive apt-get install -y -qq "php$PHPV-sqlite3" >/dev/null \
+        || die "no pude instalar php$PHPV-sqlite3; instálalo a mano y vuelve a ejecutar."
 fi
 
 # 3. Puerto libre ---------------------------------------------------------------
