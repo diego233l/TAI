@@ -1,0 +1,41 @@
+WWW :: Ideada por Tim Berners-Lee en el CERN (1989-91); pilares URL, HTTP y HTML. W3C desde 1994; WHATWG mantiene el HTML Living Standard.
+URL :: esquema://usuario@host:puerto/ruta?consulta#fragmento. El fragmento no se envía al servidor.
+HTTP sin estado :: El estado se mantiene con cookies, sesiones o tokens.
+SPA y MPA :: SPA: una página con datos por AJAX. MPA: recarga páginas completas. SSR en servidor; CSR en cliente.
+PWA :: Aplicación web progresiva: service workers, manifiesto, instalable y uso sin conexión.
+HTML :: Lenguaje de marcado, no de programación. HTML5 (2014); Living Standard.
+Estructura HTML5 :: <!DOCTYPE html>, <html lang>, <head> (meta charset, title, link, script) y <body>.
+Elementos semánticos HTML5 :: header, nav, main, section, article, aside, footer, figure.
+Formularios HTML :: GET envía en la URL; POST en el cuerpo. Atributos required, pattern, min, max, placeholder.
+Atributo alt :: En <img>, descripción para accesibilidad (WCAG).
+APIs de HTML5 :: Web Storage, IndexedDB, Geolocation, Web Workers, WebSocket, Service Workers, Fetch, History.
+localStorage y sessionStorage :: localStorage persiste; sessionStorage dura la sesión de la pestaña; ninguno se envía al servidor.
+Formas de aplicar CSS :: En línea (style), interno (<style>) y externo (<link>; recomendado).
+Especificidad CSS :: style en línea > #id > .clase > elemento; !important anula; a igual especificidad gana la última.
+Modelo de caja :: Contenido → padding → borde → margen; box-sizing: border-box incluye padding y borde.
+Flexbox y Grid :: Flexbox: maquetación unidimensional. Grid: bidimensional.
+Diseño responsive :: Meta viewport, media queries, unidades relativas, enfoque mobile first.
+JavaScript :: ECMAScript (ECMA-262); tipado dinámico; prototipos; ES2015 añadió let/const, clases, módulos y promesas.
+DOM :: Árbol de nodos del documento; textContent (seguro) frente a innerHTML (riesgo de XSS).
+AJAX :: Peticiones asíncronas sin recargar (fetch / XMLHttpRequest); suele usar JSON.
+async/await :: Código asíncrono con apariencia secuencial sobre promesas; JS tiene un solo hilo y bucle de eventos.
+== y === :: == compara con conversión de tipos; === compara valor y tipo.
+var, let y const :: var: ámbito de función. let y const: ámbito de bloque.
+Node.js y TypeScript :: Node.js: JS en servidor con motor V8 y npm. TypeScript: tipado estático que se transpila a JS.
+Angular, React y Vue :: Angular (Google, TypeScript, framework). React (Meta, biblioteca, virtual DOM, JSX). Vue.
+PHP :: Embebido en HTML; variables con $; superglobales $_GET, $_POST, $_SESSION; PDO; PHP-FPM con Nginx.
+Servidores web :: Apache HTTP Server, Nginx, IIS; Tomcat para servlets.
+Atributos de cookie :: Secure (solo HTTPS), HttpOnly (no accesible a JS), SameSite (mitiga CSRF), Max-Age/Expires.
+Cabeceras HTTP :: Content-Type, Accept, Host, User-Agent, Cookie, Set-Cookie, Location, Cache-Control, ETag, Authorization.
+Rendimiento web :: Minificación, gzip/Brotli, caché HTTP, CDN, lazy loading, HTTP/2.
+XML :: Metalenguaje extensible del W3C (1998) para intercambiar datos estructurados.
+Bien formado :: Un elemento raíz, etiquetas cerradas y anidadas, atributos entre comillas, distingue mayúsculas, caracteres especiales escapados.
+XML válido :: Bien formado y conforme a una DTD o esquema XSD (XSD tiene tipos de datos y namespaces).
+XPath, XSLT y XQuery :: XPath selecciona nodos; XSLT transforma documentos; XQuery consulta.
+DOM, SAX y StAX :: DOM: árbol completo en memoria. SAX: eventos secuenciales, bajo consumo. StAX: extracción por demanda.
+Derivaciones de XML :: XHTML, SVG, MathML, RSS/Atom, SOAP, WSDL, KML, XBRL, XAdES, ODF/OOXML, Facturae.
+Motores de navegador :: Blink (Chrome, Edge) con V8; Gecko (Firefox); WebKit (Safari).
+Same-origin policy :: Mismo esquema, host y puerto; CORS permite excepciones.
+CSP y HSTS :: CSP restringe orígenes de contenidos y mitiga XSS. HSTS fuerza HTTPS.
+Apps multiplataforma :: Híbridas (Cordova/Ionic), React Native, Flutter frente a nativas.
+Lenguajes de script :: Bash, PowerShell, Python, Perl, JavaScript, PHP; interpretados y orientados a automatización.

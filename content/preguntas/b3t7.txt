@@ -1,0 +1,487 @@
+// Tema 21 (B3·T7) · Aplicaciones web: HTML, CSS, JavaScript, XML y lenguajes de script
+
+? ¿Quién ideó la World Wide Web en el CERN?
+a) Vint Cerf
+b) Marc Andreessen
+c) Bill Gates
+d) Tim Berners-Lee
+= d
+> Berners-Lee propuso la Web en 1989; los pilares son URL, HTTP y HTML.
+@ Web
+
+? ¿Qué organización estandariza HTML, CSS, XML y DOM?
+a) W3C
+b) IETF
+c) IEEE
+d) ISO exclusivamente
+= a
+> El World Wide Web Consortium se fundó en 1994. La WHATWG mantiene el HTML Living Standard.
+@ Web
+
+? En la URL https://usuario@ejemplo.es:8443/ruta/recurso?id=5#seccion, ¿qué parte NO se envía al servidor?
+a) La ruta
+b) El fragmento (#seccion)
+c) La consulta (id=5)
+d) El puerto
+= b
+> El fragmento lo procesa el navegador.
+@ URL
+
+? HTTP es un protocolo:
+a) Sin estado
+b) Con estado de sesión intrínseco
+c) De transporte orientado a conexión de capa 4
+d) Exclusivo de correo
+= a
+> Cada petición es independiente; el estado se mantiene con cookies, sesiones o tokens.
+@ HTTP
+
+? ¿Cuál es la diferencia entre una aplicación SPA y una MPA?
+a) La SPA solo funciona sin JavaScript
+b) La MPA no usa HTML
+c) Son idénticas
+d) La SPA carga una sola página y actualiza dinámicamente el contenido con peticiones asíncronas; la MPA recarga páginas completas
+= d
+> Angular, React o Vue se usan habitualmente para SPA.
+@ Aplicaciones web
+
+? ¿Qué es una PWA?
+a) Un tipo de base de datos
+b) Un lenguaje de maquetación
+c) Una aplicación web progresiva que usa service workers y manifiesto para ofrecer funcionamiento sin conexión e instalación
+d) Un protocolo de correo
+= c
+> Combina lo mejor de las aplicaciones web y nativas.
+@ Aplicaciones web
+
+? ¿HTML es un lenguaje de programación?
+a) Sí, de alto nivel
+b) No, es un lenguaje de marcado
+c) Sí, de scripting
+d) Sí, orientado a objetos
+= b
+> Describe la estructura y semántica del contenido; no contiene lógica de control.
+@ HTML
+
+? ¿Qué declaración debe aparecer al principio de un documento HTML5?
+a) <!DOCTYPE html>
+b) <?xml version="1.0"?>
+c) <html5>
+d) <!HTML>
+= a
+> Activa el modo estándar del navegador.
+@ HTML
+
+? ¿Cuál de los siguientes es un elemento semántico de HTML5?
+a) <div>
+b) <span>
+c) <b>
+d) <article>
+= d
+> Los semánticos aportan significado: header, nav, main, section, article, aside, footer.
+@ HTML
+
+? ¿Para qué es especialmente importante el atributo alt de la etiqueta <img>?
+a) Para la accesibilidad: describe la imagen a lectores de pantalla
+b) Para acelerar la carga
+c) Para cambiar el formato
+d) Para evitar la caché
+= a
+> Es un requisito de las pautas WCAG para imágenes con contenido informativo.
+@ HTML
+
+? ¿Qué diferencia hay entre los métodos GET y POST en un formulario HTML?
+a) GET los envía en el cuerpo
+b) GET envía los datos en la URL; POST los envía en el cuerpo de la petición
+c) POST los envía en la URL
+d) No hay diferencia
+= b
+> GET no debe usarse para datos sensibles.
+@ HTML
+
+? ¿Qué atributo HTML5 impide enviar un formulario si el campo está vacío?
+a) readonly
+b) hidden
+c) required
+d) autofocus
+= c
+> La validación nativa se complementa siempre con validación en servidor.
+@ HTML
+
+? ¿Cuál es la diferencia entre localStorage y sessionStorage?
+a) Ambos se borran al cerrar la pestaña
+b) sessionStorage es persistente
+c) localStorage se envía al servidor en cada petición
+d) localStorage persiste tras cerrar el navegador; sessionStorage se limita a la sesión de la pestaña
+= d
+> Ni uno ni otro se envían automáticamente al servidor, a diferencia de las cookies.
+@ HTML5
+
+? ¿Qué API de HTML5 permite ejecutar código JavaScript en segundo plano sin bloquear la interfaz?
+a) Geolocation
+b) Web Workers
+c) Drag and Drop
+d) History
+= b
+> Los workers no acceden al DOM.
+@ HTML5
+
+? ¿Cuál es la mejor forma de aplicar CSS a varias páginas de un sitio?
+a) Estilos en línea (atributo style)
+b) Una hoja de estilos externa enlazada con <link>
+c) Etiquetas <font>
+d) JavaScript
+= b
+> Facilita el mantenimiento y permite la caché.
+@ CSS
+
+? ¿Cuál es el orden de especificidad de los selectores CSS de mayor a menor?
+a) Elemento, clase, identificador, estilo en línea
+b) Clase, identificador, elemento, estilo en línea
+c) Estilo en línea, identificador, clase, elemento
+d) Identificador, estilo en línea, elemento, clase
+= c
+> Una regla con !important anula a las demás.
+@ CSS
+
+? ¿Qué selector CSS selecciona todos los elementos con class="aviso"?
+a) .aviso
+b) #aviso
+c) aviso
+d) *aviso
+= a
+> # selecciona por id; . por clase.
+@ CSS
+
+? En el modelo de caja de CSS, de dentro hacia fuera, el orden es:
+a) Contenido, padding, borde, margen
+b) Contenido, margen, padding, borde
+c) Margen, borde, padding, contenido
+d) Padding, contenido, borde, margen
+= a
+> box-sizing: border-box hace que el ancho incluya padding y borde.
+@ CSS
+
+? ¿Qué propiedad de CSS permite crear maquetaciones unidimensionales flexibles?
+a) display: grid
+b) display: flex
+c) float: none
+d) position: sticky
+= b
+> Grid es bidimensional.
+@ CSS
+
+? ¿Qué mecanismo CSS permite aplicar estilos distintos según el tamaño de la pantalla?
+a) Media queries
+b) Pseudoclases
+c) Variables
+d) Selectores de atributo
+= a
+> @media (max-width: 600px) { … }
+@ CSS
+
+? ¿Qué metaetiqueta es necesaria para que un diseño responsive se adapte correctamente en un móvil?
+a) <meta charset="utf-8">
+b) <meta http-equiv="refresh">
+c) <meta name="robots">
+d) <meta name="viewport" content="width=device-width, initial-scale=1">
+= d
+> Sin ella, el móvil renderiza como si tuviera una pantalla de escritorio.
+@ CSS
+
+? ¿Qué estándar define el lenguaje JavaScript?
+a) ISO 8859
+b) ECMAScript (ECMA-262)
+c) POSIX
+d) RFC 2616
+= b
+> ES2015 (ES6) introdujo let/const, clases, módulos y promesas.
+@ JavaScript
+
+? ¿Qué es el DOM?
+a) Un servidor de aplicaciones
+b) Un lenguaje de consulta
+c) Una representación en árbol de nodos del documento que los scripts pueden manipular
+d) Un formato de imagen
+= c
+> Document Object Model.
+@ JavaScript
+
+? ¿Qué diferencia hay entre == y === en JavaScript?
+a) === convierte tipos
+b) Son equivalentes
+c) == compara con conversión de tipos; === compara valor y tipo sin conversión
+d) == compara referencias
+= c
+> Se recomienda usar === para evitar sorpresas, como 0 == '' (verdadero).
+@ JavaScript
+
+? ¿Qué riesgo de seguridad conlleva asignar a innerHTML contenido proporcionado por el usuario sin sanearlo?
+a) SQL Injection
+b) Desbordamiento de búfer
+c) Cross-Site Scripting (XSS)
+d) Denegación de servicio por red
+= c
+> Es preferible textContent o sanear la entrada.
+@ JavaScript
+
+? ¿Qué técnica permite pedir datos al servidor sin recargar la página?
+a) Un formulario con GET
+b) Una redirección 301
+c) AJAX (fetch / XMLHttpRequest)
+d) Un iframe obligatoriamente
+= c
+> Suele intercambiar JSON.
+@ JavaScript
+
+? ¿Qué palabras clave permiten escribir código asíncrono con apariencia secuencial en JavaScript?
+a) try / finally
+b) static / final
+c) var / let
+d) async / await
+= d
+> Se apoyan en las promesas.
+@ JavaScript
+
+? ¿Cuál es la diferencia entre var y let en JavaScript?
+a) var tiene ámbito de bloque
+b) let permite redeclarar la variable en el mismo ámbito
+c) Son idénticas
+d) var tiene ámbito de función; let tiene ámbito de bloque
+= d
+> const declara constantes con ámbito de bloque.
+@ JavaScript
+
+? ¿Qué es Node.js?
+a) Un entorno de ejecución de JavaScript en el servidor basado en el motor V8
+b) Un navegador
+c) Una base de datos
+d) Un framework de CSS
+= a
+> Su gestor de paquetes es npm.
+@ JavaScript
+
+? ¿Qué aporta TypeScript a JavaScript?
+a) Un motor de ejecución propio
+b) Una base de datos
+c) Eliminación del DOM
+d) Tipado estático opcional; el código se transpila a JavaScript
+= d
+> Lo desarrolló Microsoft y lo usa Angular.
+@ JavaScript
+
+? ¿Qué framework de JavaScript ha sido desarrollado por Google y está escrito en TypeScript?
+a) Angular
+b) React
+c) jQuery
+d) Express
+= a
+> React lo mantiene Meta (con virtual DOM y JSX); Vue es independiente.
+@ Frameworks
+
+? ¿Qué lenguaje se incrusta habitualmente en HTML en el servidor y usa variables que empiezan por $?
+a) PHP
+b) JavaScript
+c) Java
+d) Go
+= a
+> Superglobales como $_GET, $_POST y $_SESSION.
+@ Servidor
+
+? ¿Qué atributo de una cookie impide que sea leída por JavaScript, mitigando el robo por XSS?
+a) HttpOnly
+b) Secure
+c) SameSite
+d) Domain
+= a
+> Secure obliga a HTTPS; SameSite limita el envío entre sitios (mitiga CSRF).
+@ Cookies
+
+? ¿Qué atributo de cookie ayuda a mitigar los ataques CSRF?
+a) HttpOnly
+b) Path
+c) SameSite
+d) Expires
+= c
+> Valores: Strict, Lax y None.
+@ Cookies
+
+? ¿Qué es PHP-FPM?
+a) Un framework de PHP
+b) Un gestor de procesos FastCGI para ejecutar PHP detrás de un servidor web como Nginx
+c) Un editor
+d) Una base de datos
+= b
+> Nginx delega los scripts PHP en PHP-FPM.
+@ Servidor
+
+? ¿Qué cabecera HTTP indica el tipo MIME del cuerpo de la respuesta?
+a) Accept
+b) Content-Type
+c) Host
+d) Location
+= b
+> Accept indica los tipos que acepta el cliente.
+@ HTTP
+
+? ¿Qué es XML?
+a) Un lenguaje de programación compilado
+b) Un formato de imagen
+c) Un protocolo de red
+d) Un metalenguaje de marcas extensible para describir e intercambiar datos estructurados
+= d
+> Las etiquetas son definidas por el usuario.
+@ XML
+
+? ¿Cuál de las siguientes condiciones NO es necesaria para que un documento XML esté bien formado?
+a) Un único elemento raíz
+b) Etiquetas cerradas y correctamente anidadas
+c) Que cumpla una DTD o XSD
+d) Atributos entre comillas
+= c
+> Cumplir un esquema es lo que lo hace válido, no solo bien formado.
+@ XML
+
+? ¿Qué distingue un documento XML válido de uno bien formado?
+a) Que tiene menos de 1000 líneas
+b) Que está firmado
+c) Que además cumple las reglas de una DTD o esquema XSD
+d) Que no tiene atributos
+= c
+> Un documento válido siempre está bien formado, pero no al revés.
+@ XML
+
+? ¿Qué ventaja tiene XML Schema (XSD) frente a una DTD?
+a) Es más antiguo
+b) No permite restricciones
+c) Soporta tipos de datos y espacios de nombres, y se escribe en XML
+d) Solo describe atributos
+= c
+> La DTD no tiene tipos de datos complejos.
+@ XML
+
+? ¿Qué lenguaje se utiliza para seleccionar nodos de un documento XML?
+a) XSLT
+b) CSS
+c) XPath
+d) SQL
+= c
+> XSLT transforma documentos usando XPath.
+@ XML
+
+? ¿Qué devuelve la expresión XPath //precio?
+a) Solo el precio hijo directo de la raíz
+b) Los atributos precio
+c) El primer elemento del documento
+d) Todos los elementos precio del documento, en cualquier nivel
+= d
+> // busca en todos los descendientes. /a/b selecciona hijos directos.
+@ XML
+
+? ¿Qué tecnología se utiliza para transformar un XML en HTML?
+a) XSD
+b) XSLT
+c) DTD
+d) JSON-LD
+= b
+> Es un lenguaje declarativo basado en plantillas.
+@ XML
+
+? ¿Cuál es la diferencia fundamental entre los analizadores DOM y SAX?
+a) SAX carga todo el árbol
+b) DOM carga el árbol completo en memoria; SAX procesa el documento de forma secuencial mediante eventos
+c) DOM no permite acceso aleatorio
+d) Son idénticos
+= b
+> SAX consume menos memoria, pero es de solo lectura y avance.
+@ XML
+
+? ¿Cuál de los siguientes lenguajes es una derivación de XML para gráficos vectoriales?
+a) PNG
+b) JPEG
+c) SVG
+d) GIF
+= c
+> Otros derivados: XHTML, MathML, RSS, SOAP, WSDL, KML.
+@ XML
+
+? ¿Qué mecanismo de XML evita colisiones entre nombres de elementos de distintos vocabularios?
+a) CDATA
+b) Espacios de nombres (xmlns)
+c) Entidades
+d) Comentarios
+= b
+> Se declaran con xmlns:prefijo="URI".
+@ XML
+
+? ¿Qué es una sección CDATA en XML?
+a) Un atributo obligatorio
+b) Un bloque de texto que el analizador no interpreta como marcado
+c) Un comentario
+d) Una declaración de tipo de documento
+= b
+> Permite incluir caracteres como < y & sin escapar.
+@ XML
+
+? ¿Qué motor de renderizado utilizan Chrome y Edge?
+a) Gecko
+b) WebKit exclusivamente
+c) Blink
+d) Trident
+= c
+> Firefox usa Gecko; Safari, WebKit.
+@ Navegadores
+
+? ¿Qué define la política del mismo origen (same-origin policy)?
+a) Que un script solo puede acceder a recursos con el mismo esquema, host y puerto
+b) Que todas las páginas de un sitio deben tener el mismo estilo
+c) Que solo se admiten cookies de primera parte
+d) Que se prohíben los iframes
+= a
+> CORS permite excepciones controladas.
+@ Seguridad web
+
+? ¿Qué cabecera HTTP restringe los orígenes desde los que se pueden cargar scripts y otros recursos, mitigando el XSS?
+a) Cache-Control
+b) Accept-Language
+c) ETag
+d) Content-Security-Policy
+= d
+> CSP se configura en el servidor.
+@ Seguridad web
+
+? ¿Qué cabecera HTTP indica al navegador que debe usar siempre HTTPS con un sitio?
+a) Content-Type
+b) Strict-Transport-Security (HSTS)
+c) Referer
+d) Upgrade-Insecure
+= b
+> Protege frente a ataques de degradación (SSL stripping).
+@ Seguridad web
+
+? ¿Qué tipo de aplicación móvil se desarrolla con tecnologías web y se empaqueta para su distribución en tiendas?
+a) Nativa
+b) De consola
+c) Híbrida (Cordova/Ionic)
+d) Embebida
+= c
+> Las nativas usan el lenguaje y SDK de cada plataforma; React Native y Flutter son multiplataforma.
+@ Multiplataforma
+
+? ¿Qué es un lenguaje de script?
+a) Un lenguaje de bajo nivel
+b) Un lenguaje interpretado que automatiza tareas, generalmente sin compilación previa
+c) Un formato de datos
+d) Un sistema operativo
+= b
+> Ejemplos: Bash, PowerShell, Python, JavaScript, PHP.
+@ Scripts
+
+? ¿Qué lenguaje de script se utiliza principalmente en el navegador del cliente?
+a) PHP
+b) JavaScript
+c) Bash
+d) Perl
+= b
+> PHP se ejecuta en servidor; Bash, en shells de Unix.
+@ Scripts
