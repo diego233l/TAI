@@ -1,0 +1,514 @@
+// Tema 23 (B3·T9) · Repositorios, control de versiones, metodologías, pruebas y desarrollo colaborativo
+
+? ¿Cuál de los siguientes es un sistema de control de versiones centralizado?
+a) Git
+b) Mercurial
+c) Subversion (SVN)
+d) Bazaar distribuido
+= c
+> En SVN existe un repositorio central con números de revisión globales; Git y Mercurial son distribuidos.
+@ Control de versiones
+
+? ¿Qué ventaja principal ofrece un sistema de control de versiones distribuido como Git?
+a) Cada desarrollador dispone de una copia completa del historial y puede trabajar sin conexión
+b) Solo hay un repositorio y no admite ramas
+c) Impide el trabajo en paralelo
+d) No permite recuperar versiones anteriores
+= a
+> Las ramas son baratas y las operaciones habituales son locales.
+@ Git
+
+? En Git, ¿cuál es el flujo básico para registrar un cambio y publicarlo?
+a) git push → git commit → git add
+b) git commit → git add → git pull
+c) git add → git commit → git push
+d) git clone → git add → git fetch
+= c
+> add prepara en el área de staging, commit crea la instantánea local y push la envía al remoto.
+@ Git
+
+? ¿Qué hace «git fetch»?
+a) Descarga e integra los cambios en la rama actual
+b) Envía commits al remoto
+c) Descarga los cambios del remoto sin integrarlos en la rama actual
+d) Crea una rama nueva
+= c
+> git pull equivale a fetch + merge (o rebase).
+@ Git
+
+? ¿Qué hace «git pull»?
+a) git fetch seguido de git merge (o rebase) de los cambios remotos
+b) Envía cambios al remoto
+c) Deshace el último commit
+d) Borra la rama local
+= a
+> Puede generar conflictos que hay que resolver.
+@ Git
+
+? ¿Para qué sirve el área de preparación (staging area o index) de Git?
+a) Para almacenar copias de seguridad
+b) Para seleccionar qué cambios formarán parte del próximo commit
+c) Para publicar al servidor
+d) Para compilar el proyecto
+= b
+> Se alimenta con git add.
+@ Git
+
+? ¿Qué diferencia hay entre git merge y git rebase?
+a) merge integra ramas creando (normalmente) un commit de fusión; rebase reaplica commits sobre otra base, produciendo historial lineal
+b) rebase crea siempre un commit de fusión
+c) merge reescribe todos los commits
+d) Son idénticos
+= a
+> No debe hacerse rebase de ramas ya publicadas y compartidas.
+@ Git
+
+? ¿Qué comando deshace un commit ya publicado creando un nuevo commit inverso, sin reescribir el historial?
+a) git reset --hard
+b) git rebase -i
+c) git stash
+d) git revert
+= d
+> reset --hard descarta cambios y mueve la rama; es peligroso en ramas compartidas.
+@ Git
+
+? ¿Qué hace «git stash»?
+a) Borra los cambios
+b) Guarda temporalmente los cambios sin confirmar para recuperarlos después
+c) Publica la rama
+d) Crea una etiqueta
+= b
+> Es útil para cambiar de rama sin hacer commit.
+@ Git
+
+? ¿Qué es un conflicto de fusión (merge conflict)?
+a) Un error de red
+b) Un fallo de compilación
+c) Un commit sin mensaje
+d) Una situación en la que Git no puede integrar automáticamente cambios que afectan a las mismas líneas
+= d
+> Hay que resolverlo manualmente y confirmar el resultado.
+@ Git
+
+? ¿Qué es HEAD en Git?
+a) El primer commit del repositorio
+b) El servidor remoto
+c) Un puntero al commit o rama actualmente activa
+d) Una etiqueta de versión
+= c
+> En el estado «detached HEAD» apunta directamente a un commit.
+@ Git
+
+? ¿Para qué sirve el fichero .gitignore?
+a) Para indicar los ficheros y patrones que Git no debe versionar
+b) Para borrar ficheros del repositorio
+c) Para configurar el remoto
+d) Para firmar commits
+= a
+> Típicamente: compilados, dependencias descargadas, credenciales y ficheros temporales.
+@ Git
+
+? ¿Qué flujo de trabajo utiliza las ramas main, develop, feature/*, release/* y hotfix/*?
+a) GitHub Flow
+b) Trunk-based development
+c) Git Flow
+d) Forking workflow
+= c
+> GitHub Flow es más simple: ramas cortas y pull request a main.
+@ Git
+
+? ¿Qué es un pull request (o merge request)?
+a) Una orden de descarga
+b) Una etiqueta de versión
+c) Una propuesta de integración de cambios de una rama en otra que permite revisión de código y discusión
+d) Un tipo de commit
+= c
+> Se asocia a comprobaciones de CI y a ramas protegidas.
+@ Colaboración
+
+? Según el versionado semántico, un cambio incompatible con versiones anteriores incrementa:
+a) MINOR
+b) PATCH
+c) BUILD
+d) MAJOR
+= d
+> Formato MAJOR.MINOR.PATCH: MINOR para funcionalidad compatible; PATCH para correcciones.
+@ SemVer
+
+? ¿Cuál de las siguientes es una plataforma de desarrollo colaborativo que incluye CI/CD integrada y puede autoalojarse?
+a) Maven Central
+b) GitLab
+c) SourceForge exclusivamente
+d) Docker Hub
+= b
+> GitHub, Bitbucket y Azure DevOps también ofrecen gestión de repositorios, issues y pipelines.
+@ Plataformas
+
+? ¿Qué es la integración continua (CI)?
+a) Desplegar manualmente una vez al año
+b) Integrar los sistemas de dos empresas
+c) Integrar los cambios con frecuencia en la rama principal con compilación y pruebas automáticas en cada cambio
+d) Hacer copias de seguridad diarias
+= c
+> Detecta pronto los errores de integración.
+@ CI/CD
+
+? ¿Cuál es la diferencia entre entrega continua y despliegue continuo?
+a) Son lo mismo
+b) La entrega continua despliega automáticamente
+c) El despliegue continuo no usa pruebas
+d) En el despliegue continuo cada cambio validado llega a producción automáticamente; en la entrega continua el paso a producción requiere aprobación manual
+= d
+> En ambos casos el software está siempre en estado desplegable.
+@ CI/CD
+
+? ¿Cuál de las siguientes herramientas es un servidor de automatización para CI/CD?
+a) Jenkins
+b) JMeter
+c) Selenium
+d) Javadoc
+= a
+> JMeter sirve para pruebas de carga; Selenium para pruebas web; Javadoc para documentación.
+@ CI/CD
+
+? ¿Qué estrategia de despliegue dirige primero un pequeño porcentaje de usuarios a la nueva versión?
+a) Big bang
+b) Blue/green
+c) Cold backup
+d) Canary
+= d
+> Blue/green mantiene dos entornos y conmuta el tráfico entre ellos.
+@ CI/CD
+
+? ¿Qué entorno se utiliza para ensayar el despliegue con una configuración lo más parecida posible a producción?
+a) Desarrollo local
+b) Sandbox del desarrollador
+c) Copia de seguridad
+d) Preproducción (staging)
+= d
+> Es donde suelen ejecutarse las últimas pruebas, incluidas las de aceptación.
+@ CI/CD
+
+? ¿Qué es MDA (Model Driven Architecture)?
+a) Un lenguaje de programación
+b) Un sistema de control de versiones
+c) Una metodología ágil
+d) Un enfoque de la OMG en el que los modelos son el elemento central y se transforman en código
+= d
+> Se relaciona con UML y la generación de código a partir de modelos.
+@ Generación de código
+
+? ¿Qué herramienta genera documentación HTML de la API a partir de comentarios en el código Java?
+a) Javadoc
+b) Doxygen para C++ exclusivamente
+c) Selenium
+d) JUnit
+= a
+> Los comentarios /** … */ con @param, @return y @throws se transforman en documentación.
+@ Documentación
+
+? ¿Qué estándar permite describir y documentar APIs REST para generar documentación y clientes?
+a) WSDL
+b) UML
+c) DTD
+d) OpenAPI
+= d
+> Antes se conocía como Swagger.
+@ Documentación
+
+? ¿Qué modelo de ciclo de vida define fases secuenciales y es poco flexible ante cambios de requisitos?
+a) Cascada
+b) Scrum
+c) Espiral
+d) Kanban
+= a
+> Cada fase debe terminar antes de comenzar la siguiente.
+@ Metodologías
+
+? En el modelo en V, las pruebas de aceptación se corresponden con la fase de:
+a) Requisitos
+b) Diseño detallado
+c) Codificación
+d) Mantenimiento
+= a
+> Pruebas unitarias ↔ diseño detallado; integración ↔ diseño de arquitectura; sistema ↔ análisis; aceptación ↔ requisitos.
+@ Metodologías
+
+? ¿Qué característica distingue al modelo en espiral de Boehm?
+a) El análisis de riesgos en cada iteración
+b) La ausencia de iteraciones
+c) El desarrollo sin documentación
+d) El uso exclusivo de prototipos desechables
+= a
+> Combina prototipado con el modelo en cascada y gestión explícita del riesgo.
+@ Metodologías
+
+? ¿Cuáles son las cuatro fases de RUP/UP?
+a) Análisis, Diseño, Implementación y Pruebas
+b) Inicio, Elaboración, Construcción y Transición
+c) Requisitos, Diseño, Código y Despliegue
+d) Planificar, Hacer, Verificar y Actuar
+= b
+> RUP está dirigido por casos de uso, centrado en la arquitectura y es iterativo e incremental.
+@ Metodologías
+
+? Según el Manifiesto Ágil, se valora más:
+a) Software funcionando que documentación exhaustiva
+b) Procesos y herramientas que individuos e interacciones
+c) Negociación contractual que colaboración con el cliente
+d) Seguir un plan que responder al cambio
+= a
+> Sin menospreciar los elementos de la derecha, se valoran más los de la izquierda.
+@ Ágil
+
+? ¿Cuál es la duración máxima de un Sprint según la Guía Scrum?
+a) Una semana
+b) Un mes
+c) Dos semanas
+d) Tres meses
+= b
+> Los sprints son de duración fija, de un mes o menos.
+@ Scrum
+
+? ¿Cuál es la duración máxima del Daily Scrum?
+a) 15 minutos
+b) 30 minutos
+c) 1 hora
+d) 2 horas
+= a
+> Es un evento de sincronización de los Developers para el siguiente trabajo del Sprint.
+@ Scrum
+
+? ¿Quién es responsable de maximizar el valor del producto y gestionar el Product Backlog en Scrum?
+a) El Scrum Master
+b) El jefe de proyecto
+c) El cliente directamente
+d) El Product Owner
+= d
+> El Scrum Master facilita el uso de Scrum y ayuda a eliminar impedimentos.
+@ Scrum
+
+? ¿Cuál de los siguientes NO es un evento de Scrum?
+a) Sprint Review
+b) Sprint Retrospective
+c) Daily Scrum
+d) Product Backlog
+= d
+> El Product Backlog es un artefacto, no un evento.
+@ Scrum
+
+? ¿Qué compromiso de Scrum asociado al Incremento describe el estado de calidad que debe alcanzar?
+a) Sprint Goal
+b) Product Goal
+c) Definición de Hecho (Definition of Done)
+d) Velocidad
+= c
+> Es el compromiso del Incremento.
+@ Scrum
+
+? ¿Qué es Kanban?
+a) Un método que gestiona el flujo de trabajo mediante un tablero y límites de trabajo en curso (WIP)
+b) Un lenguaje de programación
+c) Un tipo de prueba
+d) Una herramienta de control de versiones
+= a
+> No impone iteraciones de duración fija.
+@ Ágil
+
+? ¿Qué práctica de eXtreme Programming (XP) implica que dos desarrolladores trabajen juntos en un mismo puesto?
+a) Refactorización
+b) Integración continua
+c) Programación en parejas
+d) Propiedad colectiva del código
+= c
+> Mejora la calidad y la transferencia de conocimiento.
+@ XP
+
+? Una historia de usuario se formula habitualmente como:
+a) Si <condición> entonces <acción>
+b) Dado <contexto> mientras <evento>
+c) Un diagrama UML de clases
+d) Como <rol> quiero <funcionalidad> para <beneficio>
+= d
+> Se acompaña de criterios de aceptación.
+@ Ágil
+
+? ¿Cuáles son los tres procesos principales de MÉTRICA versión 3?
+a) PSI, DSI y MSI
+b) ASI, DSI y CSI
+c) EVS, IAS y MSI
+d) GP, SEG y CAL
+= a
+> Planificación, Desarrollo y Mantenimiento de Sistemas de Información.
+@ MÉTRICA v3
+
+? ¿Cuál de las siguientes NO es una interfaz de MÉTRICA v3?
+a) Gestión de proyectos
+b) Seguridad
+c) Aseguramiento de la calidad
+d) Explotación de infraestructuras
+= d
+> Las interfaces son: gestión de proyectos, seguridad, aseguramiento de la calidad y gestión de la configuración.
+@ MÉTRICA v3
+
+? Dentro del proceso de desarrollo de MÉTRICA v3, ¿qué proceso corresponde al análisis del sistema de información?
+a) EVS
+b) ASI
+c) CSI
+d) IAS
+= b
+> EVS: estudio de viabilidad; ASI: análisis; DSI: diseño; CSI: construcción; IAS: implantación y aceptación.
+@ MÉTRICA v3
+
+? ¿Qué niveles de madurez define CMMI?
+a) Bajo, Medio y Alto
+b) Inicial, Gestionado, Definido, Gestionado cuantitativamente y En optimización
+c) Bronce, Plata y Oro
+d) A, AA y AAA
+= b
+> Son cinco niveles (1 a 5).
+@ Calidad
+
+? ¿Qué norma ISO/IEC define el modelo de calidad del producto software con características como adecuación funcional, mantenibilidad o portabilidad?
+a) ISO/IEC 27001
+b) ISO 9241
+c) ISO/IEC 25010
+d) ISO/IEC 20000
+= c
+> Incluye ocho características: adecuación funcional, eficiencia de desempeño, compatibilidad, usabilidad, fiabilidad, seguridad, mantenibilidad y portabilidad.
+@ Calidad
+
+? ¿Qué diferencia hay entre verificación y validación?
+a) Verificación: ¿construimos bien el producto?; validación: ¿construimos el producto correcto?
+b) Son sinónimos
+c) Verificación es solo para hardware
+d) Validación se hace sin usuarios nunca
+= a
+> La validación comprueba que el producto satisface las necesidades del usuario.
+@ Pruebas
+
+? ¿Cuál de las siguientes es una prueba de caja negra?
+a) Partición de equivalencia
+b) Cobertura de sentencias
+c) Cobertura de caminos
+d) Complejidad ciclomática
+= a
+> Las técnicas de caja blanca se basan en la estructura interna del código.
+@ Pruebas
+
+? En una prueba de valores límite para un campo edad que acepta de 18 a 65 años, ¿qué valores son más adecuados?
+a) 1, 50 y 100
+b) 17, 18, 19, 64, 65 y 66
+c) 0 y 200
+d) Solo 40
+= b
+> Se prueban los extremos y sus vecinos inmediatos.
+@ Pruebas
+
+? ¿Cuál es la complejidad ciclomática de McCabe de un programa con 3 sentencias de decisión simples?
+a) 3
+b) 5
+c) 2
+d) 4
+= d
+> V(G) = decisiones + 1 = 4.
+@ Pruebas
+
+? ¿Qué mide la cobertura de decisiones (ramas)?
+a) Que cada línea se haya ejecutado al menos una vez
+b) La velocidad de ejecución
+c) El número de pruebas manuales
+d) Que cada decisión haya tomado tanto el valor verdadero como el falso al menos una vez
+= d
+> Es más exigente que la cobertura de sentencias.
+@ Pruebas
+
+? ¿Qué es una prueba de regresión?
+a) Probar solo funcionalidades nuevas
+b) Probar el rendimiento bajo carga extrema
+c) Probar la seguridad con un atacante
+d) Comprobar tras un cambio que no se ha roto la funcionalidad existente
+= d
+> Se automatiza para ejecutarse en cada integración.
+@ Pruebas
+
+? ¿Qué tipo de prueba somete el sistema a una carga superior a la prevista para observar cuándo y cómo falla?
+a) Prueba de humo
+b) Prueba unitaria
+c) Prueba de estrés
+d) Prueba de aceptación alfa
+= c
+> La prueba de carga comprueba el comportamiento con la carga esperada.
+@ Pruebas
+
+? ¿Qué es una prueba de humo (smoke test)?
+a) Una prueba de seguridad
+b) Una prueba exhaustiva de todos los caminos
+c) Una verificación rápida y básica de que las funciones críticas funcionan tras una compilación o despliegue
+d) Una prueba de usabilidad
+= c
+> Decide si merece la pena continuar con pruebas más profundas.
+@ Pruebas
+
+? ¿Qué caracteriza al TDD (Test-Driven Development)?
+a) Escribir el código y probar al final
+b) Escribir primero la prueba que falla, luego el código mínimo para pasarla y después refactorizar
+c) Probar solo manualmente
+d) Eliminar las pruebas unitarias
+= b
+> Ciclo rojo-verde-refactorizar.
+@ Pruebas
+
+? ¿Qué sintaxis usa BDD (con Gherkin) para describir escenarios?
+a) If-Then-Else
+b) Try-Catch-Finally
+c) Select-From-Where
+d) Given-When-Then
+= d
+> Cucumber ejecuta escenarios escritos en lenguaje natural.
+@ Pruebas
+
+? En la pirámide de pruebas, ¿qué tipo de pruebas debería haber en mayor número?
+a) De extremo a extremo (E2E)
+b) Unitarias
+c) Manuales exploratorias
+d) De aceptación
+= b
+> Son rápidas y baratas; las E2E son lentas y frágiles, por lo que se limitan.
+@ Pruebas
+
+? ¿Qué herramienta se utiliza para automatizar pruebas funcionales de aplicaciones web a través del navegador?
+a) JMeter
+b) Gradle
+c) Jenkins
+d) Selenium
+= d
+> JMeter es de carga y rendimiento.
+@ Pruebas
+
+? ¿Qué herramienta analiza estáticamente la calidad del código, detectando code smells, vulnerabilidades y cobertura?
+a) SonarQube
+b) Wireshark
+c) Postman
+d) Docker
+= a
+> Se integra en los pipelines de CI.
+@ Pruebas
+
+? ¿Qué es la refactorización?
+a) Añadir nuevas funcionalidades
+b) Mejorar la estructura interna del código sin cambiar su comportamiento externo
+c) Eliminar las pruebas
+d) Traducir el código a otro lenguaje
+= b
+> Se apoya en pruebas automáticas para garantizar que no se rompe nada.
+@ Calidad de código
+
+? ¿Qué es la deuda técnica?
+a) La deuda económica del proyecto
+b) El coste futuro de mantenimiento derivado de adoptar soluciones rápidas o de baja calidad
+c) Las licencias impagadas
+d) El retraso en el cronograma
+= b
+> Se «paga» refactorizando.
+@ Calidad de código

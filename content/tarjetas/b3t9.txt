@@ -1,0 +1,37 @@
+Repositorios :: De código fuente (Git, SVN), de artefactos (Nexus, Artifactory, Maven Central, npm, Docker Hub) y de metadatos/modelos.
+VCS centralizado y distribuido :: Centralizado: CVS, SVN (revisiones globales, trunk/branches/tags). Distribuido: Git, Mercurial (copia completa del historial).
+Áreas de Git :: Directorio de trabajo, staging/index y repositorio (.git). add → commit → push.
+fetch y pull :: fetch: descarga sin integrar. pull: fetch + merge (o rebase).
+merge y rebase :: merge integra con fusión (conflictos posibles). rebase reaplica commits para historial lineal; no usar en ramas compartidas.
+revert y reset :: revert crea un commit inverso (seguro). reset mueve HEAD y puede reescribir historial (--soft, --mixed, --hard).
+Otros comandos Git :: stash (guardar temporal), cherry-pick, tag, blame, bisect, switch/checkout, log, diff, status.
+HEAD, origin y .gitignore :: HEAD: puntero al commit/rama actual. origin: remoto habitual. .gitignore: patrones que no se versionan.
+Flujos de trabajo Git :: Git Flow (main, develop, feature, release, hotfix), GitHub Flow, trunk-based, forking.
+Pull request :: Propuesta de integración con revisión de código y comprobaciones de CI; ramas protegidas.
+SemVer :: MAJOR.MINOR.PATCH: cambios incompatibles / funcionalidad compatible / correcciones.
+Plataformas colaborativas :: GitHub, GitLab (CI/CD, autoalojable), Bitbucket, Azure DevOps, Gitea; forja del CTT en el sector público.
+CI, entrega continua y despliegue continuo :: CI: integrar y probar a menudo. Entrega continua: siempre desplegable, paso a producción manual. Despliegue continuo: automático.
+Entornos y estrategias de despliegue :: Desarrollo, pruebas/QA, preproducción, producción. Blue/green, canary y rolling.
+Herramientas DevOps :: Jenkins, GitLab CI, GitHub Actions; Docker, Kubernetes; Terraform, Ansible; Maven, Gradle, npm, NuGet.
+Generación de código :: MDA/MDD (OMG), CASE, scaffolding, plantillas, OpenAPI, DSL; los asistentes de IA exigen revisión.
+Generación de documentación :: Javadoc, Doxygen, JSDoc, Sphinx, OpenAPI/Swagger, docs as code.
+Cascada y modelo en V :: Cascada: fases secuenciales. V: cada fase de desarrollo tiene su prueba (aceptación ↔ requisitos; sistema ↔ análisis; integración ↔ diseño; unitarias ↔ diseño detallado).
+Espiral y RUP :: Espiral (Boehm): análisis de riesgos por iteración. RUP: casos de uso, iterativo; fases Inicio, Elaboración, Construcción y Transición.
+Manifiesto Ágil (2001) :: Individuos e interacciones, software funcionando, colaboración con el cliente y respuesta al cambio, sobre procesos, documentación, contratos y planes.
+Roles de Scrum :: Product Owner (valor y Product Backlog), Scrum Master (facilita), Developers.
+Eventos de Scrum :: Sprint (máx. un mes), Sprint Planning, Daily Scrum (15 min), Sprint Review y Sprint Retrospective.
+Artefactos de Scrum :: Product Backlog, Sprint Backlog e Incremento; compromisos: Product Goal, Sprint Goal y Definition of Done.
+Kanban y XP :: Kanban: tablero con límites de WIP, flujo continuo. XP: parejas, TDD, integración continua, refactorización, entregas pequeñas.
+Historia de usuario :: Como <rol> quiero <funcionalidad> para <beneficio>; criterios de aceptación; puntos de historia; velocidad; burn-down.
+MÉTRICA v3 :: Procesos PSI, DSI (EVS, ASI, DSI, CSI, IAS) y MSI; interfaces de gestión de proyectos, seguridad, aseguramiento de la calidad y gestión de la configuración.
+CMMI e ISO 25010 :: CMMI: 5 niveles (Inicial, Gestionado, Definido, Gestionado cuantitativamente, En optimización). ISO 25010: calidad del producto en 8 características.
+Verificación y validación :: Verificación: ¿construimos bien el producto? Validación: ¿construimos el producto correcto?
+Niveles de prueba :: Unitarias (JUnit, NUnit, pytest), integración, sistema y aceptación (UAT, alfa/beta).
+Tipos de prueba :: Regresión (nada roto), humo (build básico), carga, estrés, volumen, resistencia, seguridad, usabilidad, exploratorias.
+Caja negra :: Partición de equivalencia, análisis de valores límite, tablas de decisión, transición de estados.
+Valores límite :: Para 18-65: probar 17, 18, 19, 64, 65 y 66.
+Caja blanca :: Cobertura de sentencias, decisiones, condiciones y caminos; complejidad ciclomática V(G) = decisiones + 1.
+TDD y BDD :: TDD: rojo, verde, refactorizar. BDD: Gherkin Given-When-Then (Cucumber).
+Pirámide de pruebas :: Muchas unitarias, menos de integración, pocas E2E.
+Herramientas de pruebas :: Selenium (web), JMeter (carga), Postman (API), SonarQube (calidad estática y cobertura).
+Refactorización y deuda técnica :: Refactorizar mejora la estructura sin cambiar el comportamiento. Deuda técnica: coste futuro de soluciones rápidas.

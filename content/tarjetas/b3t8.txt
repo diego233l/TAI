@@ -4,7 +4,7 @@ Ajustes razonables :: Adaptaciones necesarias en un caso particular sin carga de
 Siete principios del diseño universal :: Uso equitativo, flexibilidad, simple e intuitivo, información perceptible, tolerancia al error, bajo esfuerzo físico y tamaño y espacio apropiados.
 Accesibilidad frente a usabilidad :: Accesibilidad: que todas las personas puedan usarlo. Usabilidad: lo fácil, eficiente y satisfactorio que resulta.
 Normativa de accesibilidad TIC :: RDL 1/2013; RD 1494/2007; RD 1112/2018 (webs y apps públicas); Directiva (UE) 2019/882; Ley 11/2023 (exigible desde el 28-6-2025); UNE-EN 301 549.
-WCAG :: W3C-WAI. 2.0 (2008, ISO/IEC 40500), 2.1 (2018), 2.2 (2023). Niveles A, AA (AAP) y AAA.
+WCAG :: W3C-WAI. 2.0 (2008, ISO/IEC 40500), 2.1 (2018), 2.2 (2023). Niveles A, AA (exigido a las AAPP) y AAA.
 Principios POUR :: Perceptible, Operable, Comprensible y Robusto.
 Contraste mínimo AA :: 4,5:1 texto normal; 3:1 texto grande; AAA 7:1.
 Criterios WCAG habituales :: Alt en imágenes, subtítulos, no usar solo el color, teclado con foco visible, texto ampliable al 200 %, máximo tres destellos por segundo, etiquetas y lang.
