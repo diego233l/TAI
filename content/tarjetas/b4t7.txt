@@ -1,0 +1,33 @@
+Capas OSI :: 7 Aplicación, 6 Presentación, 5 Sesión, 4 Transporte, 3 Red, 2 Enlace de datos, 1 Física.
+PDU por capa :: Aplicación/presentación/sesión: datos; Transporte: segmento (TCP) o datagrama (UDP); Red: paquete; Enlace: trama; Física: bits.
+Funciones de capas :: Presentación: codificación, compresión, cifrado. Sesión: gestión de sesiones. Transporte: extremo a extremo. Red: direccionamiento lógico y encaminamiento. Enlace: MAC y CRC.
+Equipos por capa :: Hub/repetidor: 1. Switch: 2. Router y conmutador L3: 3. Pasarela, firewall: 4-7.
+Modelo TCP/IP :: 4 capas: Acceso a la red, Internet, Transporte, Aplicación (equivale a enlace+física, red, transporte, sesión+presentación+aplicación).
+Cabecera IPv4 :: 20-60 bytes; TTL; protocolo (1 ICMP, 6 TCP, 17 UDP, 41 IPv6, 50 ESP, 51 AH, 89 OSPF); checksum de cabecera; longitud total hasta 65 535.
+MTU y fragmentación :: Ethernet 1500 bytes; la fragmentación se reensambla en el destino; PMTUD con DF.
+Clases IPv4 :: A 1-126 (/8); B 128-191 (/16); C 192-223 (/24); D 224-239 multicast; E experimental; 127.0.0.0/8 loopback.
+Direcciones privadas y especiales :: 10.0.0.0/8; 172.16.0.0/12; 192.168.0.0/16; 169.254.0.0/16 link-local; 100.64.0.0/10 CGNAT; 224.0.0.0/4 multicast.
+Hosts por prefijo :: 2^(32−p) − 2. /24: 254; /25: 126; /26: 62; /27: 30; /28: 14; /29: 6; /30: 2; /23: 510; /16: 65 534.
+Máscaras :: /25 .128; /26 .192; /27 .224; /28 .240; /29 .248; /30 .252; /23 255.255.254.0.
+Cálculo de subredes :: Bloque = 256 − octeto de la máscara; red = múltiplo del bloque; difusión = siguiente red − 1.
+Ejemplos de subnetting :: 192.168.10.77/26 → red .64, difusión .127. 172.16.45.200/20 → red 172.16.32.0, difusión 172.16.47.255. 500 hosts → /23.
+CIDR y VLSM :: CIDR: prefijos sin clases y agregación. VLSM: máscaras de distinta longitud en una misma red.
+IPv6: formato :: 128 bits, 8 grupos de 16 bits en hexadecimal; :: solo una vez; 2001:db8::ff00:42:8329.
+IPv6: cabecera y tipos :: Cabecera fija de 40 bytes sin checksum; unicast global 2000::/3; link-local fe80::/10; ULA fc00::/7; multicast ff00::/8; loopback ::1. Sin broadcast.
+IPv6: NDP y SLAAC :: NDP (ICMPv6: RS, RA, NS, NA, Redirect) sustituye a ARP. SLAAC (sin estado) y DHCPv6; subred típica /64; solo el origen fragmenta.
+Transición a IPv6 :: Doble pila, túneles (6in4, Teredo) y NAT64/DNS64.
+ICMP :: Protocolo 1: echo request (8)/reply (0), destino inalcanzable (3), tiempo excedido (11, usado por traceroute), redirect (5).
+ARP :: Resuelve IP a MAC en la LAN por difusión; caché (arp -a); vulnerable a ARP spoofing (mitiga DAI).
+TCP :: Orientado a conexión y fiable; three-way handshake SYN, SYN-ACK, ACK; cierre FIN/ACK o RST; ventana deslizante; cabecera 20-60 bytes.
+UDP :: Sin conexión, sin garantías; cabecera 8 bytes; DNS, DHCP, NTP, SNMP, VoIP, QUIC.
+SYN flood :: Conexiones TCP a medio abrir; se mitiga con SYN cookies.
+Rangos de puertos :: 0-1023 bien conocidos; 1024-49151 registrados; 49152-65535 dinámicos. Socket = IP + puerto + protocolo.
+Puertos esenciales (1) :: FTP 20/21; SSH 22; Telnet 23; SMTP 25; DNS 53; DHCP 67/68; TFTP 69; HTTP 80; POP3 110; NTP 123.
+Puertos esenciales (2) :: IMAP 143; SNMP 161/162; LDAP 389; HTTPS 443; SMB 445; Syslog 514; submission 587; LDAPS 636; IMAPS 993; POP3S 995.
+Puertos de bases de datos y acceso :: SQL Server 1433; Oracle 1521; MySQL 3306; RDP 3389; PostgreSQL 5432; VNC 5900.
+FTP activo y pasivo :: Activo: el servidor abre la conexión de datos (puerto 20). Pasivo: el cliente abre control y datos (mejor con NAT).
+Tabla de rutas :: Longest prefix match; ruta por defecto 0.0.0.0/0; estática o dinámica.
+RIP y OSPF :: RIP: vector de distancia, saltos (máx. 15), UDP 520. OSPF: estado de enlace, Dijkstra, áreas con área 0, IP 89, 224.0.0.5/6.
+BGP :: Vector de ruta entre sistemas autónomos; TCP 179; protocolo de Internet.
+Distancia administrativa :: Conectada 0; estática 1; eBGP 20; EIGRP 90; OSPF 110; RIP 120.
+NAT y PAT :: NAT estático, dinámico y PAT/overload (muchos privados a una pública por puerto); rompe la transparencia extremo a extremo.

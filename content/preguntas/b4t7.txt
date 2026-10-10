@@ -1,0 +1,721 @@
+// Tema 30 (B4·T7) · Modelos OSI y TCP/IP. Protocolos TCP/IP, direccionamiento, transporte y encaminamiento
+
+? ¿Cuántas capas tiene el modelo de referencia OSI?
+a) 7
+b) 4
+c) 5
+d) 9
+= a
+> Física, enlace de datos, red, transporte, sesión, presentación y aplicación.
+@ OSI
+
+? ¿Qué capa del modelo OSI se ocupa del direccionamiento lógico y del encaminamiento?
+a) Enlace de datos
+b) Transporte
+c) Sesión
+d) Red
+= d
+> En TCP/IP corresponde a la capa Internet (IP).
+@ OSI
+
+? ¿Cuál es la unidad de datos (PDU) de la capa de enlace de datos?
+a) Paquete
+b) Segmento
+c) Trama (frame)
+d) Bit
+= c
+> Bits: capa física; paquete: red; segmento/datagrama: transporte.
+@ OSI
+
+? ¿Cuál es la PDU de la capa de transporte en TCP?
+a) Paquete
+b) Trama
+c) Mensaje
+d) Segmento
+= d
+> En UDP se denomina datagrama.
+@ OSI
+
+? ¿Qué capa OSI se encarga de la codificación, compresión y cifrado de los datos?
+a) Sesión
+b) Aplicación
+c) Presentación
+d) Transporte
+= c
+> En TCP/IP estas funciones se integran en la capa de aplicación.
+@ OSI
+
+? ¿Qué capa OSI establece, gestiona y finaliza las sesiones de comunicación entre aplicaciones?
+a) Presentación
+b) Sesión
+c) Transporte
+d) Red
+= b
+> También gestiona puntos de sincronización.
+@ OSI
+
+? ¿En qué capa OSI actúa un conmutador (switch) de capa 2?
+a) Red
+b) Física
+c) Enlace de datos
+d) Transporte
+= c
+> Reenvía tramas según la dirección MAC.
+@ OSI
+
+? ¿En qué capa OSI actúa un router?
+a) Enlace de datos
+b) Red
+c) Física
+d) Aplicación
+= b
+> Encamina paquetes según la dirección IP.
+@ OSI
+
+? ¿En qué capa OSI actúa un hub (concentrador)?
+a) Enlace de datos
+b) Red
+c) Transporte
+d) Física
+= d
+> Repite la señal eléctrica por todos los puertos.
+@ OSI
+
+? ¿A qué capa OSI pertenece la dirección MAC?
+a) Red
+b) Transporte
+c) Enlace de datos
+d) Física
+= c
+> Es el direccionamiento físico de capa 2; la IP es de capa 3.
+@ OSI
+
+? ¿Cuántas capas tiene el modelo TCP/IP clásico?
+a) 7
+b) 5
+c) 3
+d) 4
+= d
+> Acceso a la red, Internet, transporte y aplicación (o 5 si se separan física y enlace).
+@ TCP/IP
+
+? ¿Con qué capas OSI se corresponde la capa de aplicación del modelo TCP/IP?
+a) Solo aplicación
+b) Aplicación, presentación y sesión
+c) Transporte y sesión
+d) Red y transporte
+= b
+> La capa Internet equivale a la de red; el acceso a la red, a enlace y física.
+@ TCP/IP
+
+? ¿Qué es la encapsulación?
+a) El proceso por el que cada capa añade su cabecera a los datos recibidos de la capa superior
+b) El cifrado de datos
+c) La compresión de datos
+d) La fragmentación en la capa física
+= a
+> En el destino se realiza el proceso inverso (desencapsulación).
+@ Conceptos
+
+? ¿Cuántos bits tiene una dirección IPv4?
+a) 64
+b) 32
+c) 128
+d) 48
+= b
+> Una dirección MAC tiene 48 bits; una IPv6, 128.
+@ IPv4
+
+? ¿Qué clase de dirección IPv4 tiene un primer octeto entre 192 y 223?
+a) Clase C
+b) Clase A
+c) Clase B
+d) Clase D
+= a
+> Clase A: 1-126; B: 128-191; D: multicast (224-239).
+@ IPv4
+
+? ¿Cuál de las siguientes es una dirección IPv4 privada según el RFC 1918?
+a) 172.32.0.1
+b) 192.169.1.1
+c) 11.0.0.1
+d) 172.20.5.10
+= d
+> 172.16.0.0/12 abarca de 172.16.0.0 a 172.31.255.255.
+@ IPv4
+
+? ¿Qué rango IPv4 se asigna automáticamente (APIPA/link-local) cuando no hay DHCP?
+a) 169.254.0.0/16
+b) 127.0.0.0/8
+c) 10.0.0.0/8
+d) 192.168.0.0/16
+= a
+> 127.0.0.0/8 es la red de loopback.
+@ IPv4
+
+? ¿A qué se destina el rango 100.64.0.0/10?
+a) Al loopback
+b) Al multicast
+c) Al CGNAT (NAT de nivel de operador)
+d) A la autoconfiguración
+= c
+> Evita solapamientos con direcciones privadas del cliente.
+@ IPv4
+
+? ¿Cuál es la longitud máxima de un datagrama IPv4?
+a) 65 535 bytes
+b) 1500 bytes
+c) 32 768 bytes
+d) 4 GB
+= a
+> El campo longitud total tiene 16 bits. La MTU de Ethernet es de 1500 bytes.
+@ IPv4
+
+? ¿Para qué sirve el campo TTL de la cabecera IPv4?
+a) Para indicar el tipo de servicio
+b) Para identificar el protocolo
+c) Para limitar la vida del paquete: cada router lo decrementa y lo descarta cuando llega a 0
+d) Para detectar errores de datos
+= c
+> Evita bucles de encaminamiento; traceroute lo aprovecha.
+@ IPv4
+
+? ¿Qué valor del campo protocolo de IPv4 identifica a TCP?
+a) 6
+b) 1
+c) 17
+d) 41
+= a
+> ICMP: 1; UDP: 17; IPv6 encapsulado: 41.
+@ IPv4
+
+? ¿Qué valor del campo protocolo de IPv4 identifica a ICMP?
+a) 6
+b) 17
+c) 89
+d) 1
+= d
+> OSPF usa el 89.
+@ IPv4
+
+? ¿Qué campo de la cabecera IPv4 permite detectar errores en la propia cabecera?
+a) TTL
+b) Checksum de cabecera
+c) Identificación
+d) IHL
+= b
+> IPv6 elimina este campo.
+@ IPv4
+
+? ¿Cuál es la MTU habitual de una red Ethernet?
+a) 576 bytes
+b) 9000 bytes siempre
+c) 65 535 bytes
+d) 1500 bytes
+= d
+> Las tramas jumbo llegan a unos 9000 bytes.
+@ IPv4
+
+? ¿Cuántas direcciones de host utilizables tiene una subred /27?
+a) 30
+b) 32
+c) 62
+d) 14
+= a
+> 2⁵ − 2 = 30.
+@ Subnetting
+
+? ¿Cuál es la máscara de subred de un prefijo /26?
+a) 255.255.255.224
+b) 255.255.255.128
+c) 255.255.255.240
+d) 255.255.255.192
+= d
+> /25: .128; /26: .192; /27: .224; /28: .240.
+@ Subnetting
+
+? ¿Cuántos hosts útiles admite una red /24?
+a) 254
+b) 256
+c) 255
+d) 252
+= a
+> 2⁸ − 2 = 254.
+@ Subnetting
+
+? ¿Cuál es la dirección de red de 192.168.10.77/26?
+a) 192.168.10.64
+b) 192.168.10.0
+c) 192.168.10.76
+d) 192.168.10.128
+= a
+> Bloques de 64: 0, 64, 128, 192. 77 pertenece al bloque que empieza en 64.
+@ Subnetting
+
+? ¿Cuál es la dirección de difusión de 192.168.10.77/26?
+a) 192.168.10.255
+b) 192.168.10.127
+c) 192.168.10.78
+d) 192.168.10.191
+= b
+> Siguiente red (128) menos 1.
+@ Subnetting
+
+? ¿Cuál es la dirección de red de 172.16.45.200/20?
+a) 172.16.40.0
+b) 172.16.45.0
+c) 172.16.0.0
+d) 172.16.32.0
+= d
+> Máscara 255.255.240.0: bloque de 16 en el tercer octeto; 45 pertenece al bloque 32-47.
+@ Subnetting
+
+? ¿Cuál es el prefijo mínimo necesario para alojar 500 hosts en una subred?
+a) /24
+b) /22
+c) /25
+d) /23
+= d
+> /24 da 254 hosts; /23 da 510.
+@ Subnetting
+
+? ¿Cuántas subredes /26 se obtienen al dividir una red /24?
+a) 2
+b) 4
+c) 8
+d) 64
+= b
+> Cada /26 tiene 64 direcciones: 0, 64, 128 y 192.
+@ Subnetting
+
+? ¿Cuántas subredes /30 caben en una red /24?
+a) 64
+b) 32
+c) 128
+d) 16
+= a
+> 256 / 4 = 64.
+@ Subnetting
+
+? ¿Cuál es el rango de hosts útiles de la red 10.0.5.32/27?
+a) 10.0.5.33 - 10.0.5.62
+b) 10.0.5.32 - 10.0.5.63
+c) 10.0.5.33 - 10.0.5.63
+d) 10.0.5.34 - 10.0.5.61
+= a
+> Bloque de 32: red .32, difusión .63; hosts .33-.62.
+@ Subnetting
+
+? ¿Qué máscara corresponde a un /23?
+a) 255.255.254.0
+b) 255.255.252.0
+c) 255.255.255.0
+d) 255.254.0.0
+= a
+> /22: 255.255.252.0.
+@ Subnetting
+
+? ¿Cuántas direcciones totales (incluidas red y difusión) hay en un bloque /29?
+a) 6
+b) 8
+c) 4
+d) 16
+= b
+> Hosts útiles: 6.
+@ Subnetting
+
+? ¿Qué es VLSM?
+a) Una técnica de cifrado
+b) El uso de máscaras de subred de distinta longitud dentro de una misma red para ajustar el tamaño de cada subred
+c) Un protocolo de routing
+d) Un tipo de NAT
+= b
+> Optimiza el uso del espacio de direcciones.
+@ Subnetting
+
+? ¿A qué se refiere CIDR?
+a) A un protocolo de transporte
+b) A un direccionamiento sin clases basado en prefijos de longitud variable y agregación de rutas
+c) A un cifrado de red
+d) A un servicio DHCP
+= b
+> Ejemplo: 192.0.2.0/24.
+@ IPv4
+
+? ¿Cuántos bits tiene una dirección IPv6?
+a) 64
+b) 96
+c) 128
+d) 256
+= c
+> Se escribe en 8 grupos de 16 bits en hexadecimal.
+@ IPv6
+
+? ¿Cuál es la forma abreviada correcta de 2001:0db8:0000:0000:0000:ff00:0042:8329?
+a) 2001:db8:0:ff00:42:8329
+b) 2001:db8::ff:42:8329
+c) 2001:db8::ff00:42:8329
+d) 2001:db8::ff00::8329
+= c
+> :: solo puede usarse una vez y sustituye ceros consecutivos.
+@ IPv6
+
+? ¿Qué prefijo identifica las direcciones IPv6 link-local?
+a) fc00::/7
+b) fe80::/10
+c) 2000::/3
+d) ff00::/8
+= b
+> fc00::/7 son ULA; 2000::/3, unicast global; ff00::/8, multicast.
+@ IPv6
+
+? ¿Cuál es la longitud de la cabecera base de IPv6?
+a) 20 bytes
+b) 60 bytes
+c) 128 bytes
+d) 40 bytes
+= d
+> Es fija, con cabeceras de extensión encadenadas.
+@ IPv6
+
+? ¿Qué mecanismo sustituye a ARP en IPv6?
+a) RARP
+b) NDP (Neighbor Discovery Protocol) sobre ICMPv6
+c) DHCPv6
+d) IGMP
+= b
+> Utiliza mensajes RS, RA, NS, NA y Redirect.
+@ IPv6
+
+? ¿Existe broadcast en IPv6?
+a) Sí, con ff02::1 únicamente
+b) No, se sustituye por multicast
+c) Sí, como en IPv4
+d) Solo en link-local
+= b
+> Existe también anycast.
+@ IPv6
+
+? ¿Qué es SLAAC?
+a) Un protocolo de routing
+b) La autoconfiguración de direcciones IPv6 sin estado a partir del prefijo anunciado por el router
+c) Un servidor DHCP
+d) Un túnel
+= b
+> DHCPv6 es la alternativa con estado.
+@ IPv6
+
+? ¿Qué tamaño de prefijo se recomienda para una subred IPv6 de LAN?
+a) /48
+b) /32
+c) /64
+d) /128
+= c
+> /48 o /56 suelen asignarse a sitios.
+@ IPv6
+
+? ¿Qué mecanismo permite la coexistencia de IPv4 e IPv6 en un mismo equipo?
+a) NAT estático
+b) Doble pila (dual stack)
+c) VLAN
+d) PAT
+= b
+> También existen túneles y NAT64.
+@ IPv6
+
+? ¿Quién realiza la fragmentación en IPv6?
+a) Solo el origen; los routers no fragmentan
+b) Cualquier router
+c) El destino
+d) No existe
+= a
+> Se apoya en PMTUD y la cabecera de extensión de fragmento.
+@ IPv6
+
+? ¿Qué mensaje ICMP utiliza el comando ping?
+a) Destination unreachable
+b) Time exceeded
+c) Echo request / echo reply
+d) Redirect
+= c
+> Tipos 8 y 0.
+@ ICMP
+
+? ¿Qué mensaje ICMP permite a traceroute descubrir los routers intermedios?
+a) Tiempo excedido (tipo 11)
+b) Echo reply
+c) Redirect
+d) Source quench
+= a
+> Los paquetes se envían con TTL creciente.
+@ ICMP
+
+? ¿Para qué sirve el protocolo ARP?
+a) Para resolver nombres en IP
+b) Para asignar IP automáticamente
+c) Para encaminar paquetes
+d) Para resolver direcciones IP en direcciones MAC de la red local
+= d
+> Usa difusión para preguntar y respuesta unicast.
+@ ARP
+
+? ¿Qué ataque consiste en envenenar la caché ARP para interceptar el tráfico de una LAN?
+a) SYN flood
+b) DNS cache poisoning
+c) SQL injection
+d) ARP spoofing
+= d
+> Se mitiga con Dynamic ARP Inspection.
+@ ARP
+
+? ¿Qué característica distingue a TCP de UDP?
+a) UDP es fiable
+b) TCP no usa puertos
+c) TCP es orientado a conexión y fiable; UDP es sin conexión y no garantiza la entrega
+d) UDP usa tres vías
+= c
+> UDP tiene menor sobrecarga y latencia.
+@ Transporte
+
+? ¿Cuál es la secuencia de establecimiento de una conexión TCP?
+a) ACK, SYN, SYN-ACK
+b) SYN, ACK, FIN
+c) SYN-ACK, SYN, ACK
+d) SYN, SYN-ACK, ACK
+= d
+> Es el saludo en tres vías (three-way handshake).
+@ TCP
+
+? ¿Qué indicador TCP se utiliza para cerrar abruptamente una conexión?
+a) RST
+b) FIN
+c) SYN
+d) PSH
+= a
+> FIN inicia el cierre ordenado.
+@ TCP
+
+? ¿Qué ataque aprovecha el establecimiento de conexiones TCP dejando muchas a medio abrir?
+a) ARP spoofing
+b) Smurf
+c) XSS
+d) SYN flood
+= d
+> Se mitiga con SYN cookies y límites de conexiones.
+@ TCP
+
+? ¿Qué mecanismo de TCP regula la cantidad de datos que el emisor puede enviar sin confirmación?
+a) TTL
+b) Checksum
+c) MTU
+d) Ventana deslizante
+= d
+> El receptor anuncia su ventana de recepción.
+@ TCP
+
+? ¿Cuál es el tamaño de la cabecera UDP?
+a) 8 bytes
+b) 20 bytes
+c) 16 bytes
+d) 40 bytes
+= a
+> Contiene puertos origen y destino, longitud y checksum.
+@ UDP
+
+? ¿Cuál de los siguientes servicios utiliza normalmente UDP?
+a) HTTP/1.1
+b) DNS (consultas) y DHCP
+c) SMTP
+d) SSH
+= b
+> QUIC (HTTP/3) también va sobre UDP.
+@ UDP
+
+? ¿Qué rango de puertos se denomina «bien conocidos»?
+a) 1024-49151
+b) 49152-65535
+c) 1-255
+d) 0-1023
+= d
+> Los 1024-49151 son registrados y el resto, dinámicos o efímeros.
+@ Puertos
+
+? ¿Qué puerto usa HTTPS por defecto?
+a) 80
+b) 443
+c) 8080
+d) 8443
+= b
+> HTTP usa el 80.
+@ Puertos
+
+? ¿Qué puertos utiliza FTP?
+a) 22 y 23
+b) 25 y 110
+c) 21 (control) y 20 (datos en modo activo)
+d) 69 únicamente
+= c
+> TFTP usa el UDP 69.
+@ Puertos
+
+? ¿En qué modo FTP abre el cliente las conexiones de control y de datos, siendo más compatible con NAT y cortafuegos?
+a) Modo activo
+b) Modo pasivo
+c) Modo anónimo
+d) Modo seguro
+= b
+> En el modo activo es el servidor quien abre la conexión de datos hacia el cliente.
+@ FTP
+
+? ¿Qué puerto usa SMB/CIFS?
+a) 139
+b) 3389
+c) 445
+d) 111
+= c
+> NetBIOS sobre TCP usa 137-139.
+@ Puertos
+
+? ¿Qué puerto usa el protocolo SNMP para consultas?
+a) UDP 162
+b) TCP 25
+c) UDP 123
+d) UDP 161
+= d
+> Los traps llegan al 162.
+@ Puertos
+
+? ¿Qué puerto usa Syslog tradicionalmente?
+a) UDP 514
+b) TCP 22
+c) UDP 69
+d) TCP 389
+= a
+> También puede usarse TCP y TLS (6514).
+@ Puertos
+
+? ¿Qué puerto usa NTP?
+a) UDP 53
+b) UDP 123
+c) TCP 110
+d) UDP 161
+= b
+> Es crítico en Kerberos y en la correlación de logs.
+@ Puertos
+
+? ¿Qué puerto usa LDAP sin cifrar?
+a) 636
+b) 88
+c) 389
+d) 3268
+= c
+> LDAPS usa el 636.
+@ Puertos
+
+? ¿Qué puerto utiliza por defecto MySQL?
+a) 3306
+b) 1433
+c) 5432
+d) 1521
+= a
+> SQL Server: 1433; PostgreSQL: 5432; Oracle: 1521.
+@ Puertos
+
+? ¿Qué es un socket?
+a) Un tipo de cable
+b) La combinación de dirección IP, puerto y protocolo que identifica un extremo de una comunicación
+c) Un conector eléctrico
+d) Un protocolo de aplicación
+= b
+> Una conexión TCP se identifica por la 4-tupla IP:puerto origen y destino.
+@ Transporte
+
+? En el encaminamiento, ¿qué ruta se elige cuando varias coinciden con la dirección de destino?
+a) La más específica (longest prefix match)
+b) La que tenga el prefijo más corto
+c) La primera de la tabla
+d) La ruta por defecto siempre
+= a
+> La ruta por defecto 0.0.0.0/0 se usa si no coincide ninguna otra.
+@ Encaminamiento
+
+? ¿Cuál es la métrica de RIP?
+a) El ancho de banda
+b) El coste calculado con el ancho de banda de referencia
+c) El retardo
+d) El número de saltos
+= d
+> El máximo es 15; 16 indica inalcanzable.
+@ Encaminamiento
+
+? ¿Qué tipo de protocolo de encaminamiento es OSPF?
+a) De estado de enlace
+b) De vector de distancia
+c) De vector de ruta
+d) Estático
+= a
+> Usa el algoritmo de Dijkstra y áreas, con el área 0 como troncal.
+@ Encaminamiento
+
+? ¿Qué número de protocolo IP utiliza OSPF?
+a) 6
+b) 89
+c) 17
+d) 179
+= b
+> No usa TCP ni UDP: va directamente sobre IP.
+@ Encaminamiento
+
+? ¿Qué protocolo de encaminamiento se usa entre sistemas autónomos en Internet?
+a) OSPF
+b) RIP
+c) BGP
+d) EIGRP
+= c
+> BGP-4 usa TCP 179 y encamina por políticas (vector de ruta).
+@ Encaminamiento
+
+? ¿Qué protocolo de encaminamiento tiene una distancia administrativa por defecto de 110?
+a) RIP
+b) OSPF
+c) EIGRP
+d) Ruta estática
+= b
+> RIP: 120; EIGRP interno: 90; estática: 1; conectada: 0.
+@ Encaminamiento
+
+? ¿Qué algoritmo emplean los protocolos de estado de enlace para calcular las rutas?
+a) Bellman-Ford
+b) Dijkstra (SPF)
+c) Floyd-Warshall
+d) Kruskal
+= b
+> Los de vector de distancia (RIP) usan Bellman-Ford.
+@ Encaminamiento
+
+? ¿Qué es PAT (NAT con sobrecarga)?
+a) Traducir una dirección privada a una pública fija
+b) Un tipo de VLAN
+c) Un protocolo de encaminamiento
+d) Traducir muchas direcciones privadas a una sola pública diferenciándolas por el número de puerto
+= d
+> Es el NAT habitual en los routers domésticos.
+@ NAT
+
+? ¿Qué inconveniente presenta NAT?
+a) Rompe la conectividad extremo a extremo y complica protocolos que incluyen direcciones en los datos
+b) Aumenta el número de direcciones IPv4
+c) Elimina la necesidad de cortafuegos
+d) Cifra el tráfico
+= a
+> IPv6 elimina la necesidad de NAT por escasez de direcciones.
+@ NAT
+
+? ¿Qué comando de Windows muestra la tabla de caché ARP?
+a) ipconfig /all
+b) arp -a
+c) tracert
+d) nslookup
+= b
+> ipconfig /all muestra la configuración IP.
+@ Diagnóstico
