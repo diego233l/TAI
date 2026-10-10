@@ -1,0 +1,26 @@
+Estándares IEEE 802 :: 802.1D STP; 802.1w RSTP; 802.1s MSTP; 802.1Q VLAN; 802.1p prioridad; 802.1X control de acceso; 802.1ad Q-in-Q; 802.2 LLC; 802.3 Ethernet; 802.5 Token Ring; 802.11 Wi-Fi; 802.15 PAN; 802.16 WiMAX.
+Subcapas de enlace :: LLC (802.2) y MAC.
+Dirección MAC :: 48 bits (6 bytes); primeros 3 bytes: OUI (fabricante); FF:FF:FF:FF:FF:FF = difusión.
+Trama Ethernet II :: Preámbulo+SFD (8), MAC destino (6), MAC origen (6), EtherType (2), datos 46-1500, FCS CRC-32 (4). Mínimo 64 bytes; máximo 1518 (1522 con 802.1Q).
+EtherType :: 0x0800 IPv4; 0x86DD IPv6; 0x0806 ARP; 0x8100 VLAN.
+Ethernet a 10 y 100 Mbit/s :: 10BASE5 coaxial 500 m; 10BASE2 coaxial 185 m; 10BASE-T Cat 3, 100 m; 100BASE-TX Cat 5, 2 pares.
+Ethernet a 1 Gbit/s y más :: 1000BASE-T Cat 5e, 4 pares; 1000BASE-SX/LX fibra; 2,5G/5GBASE-T (802.3bz); 10GBASE-T Cat 6A a 100 m; 10GBASE-SR/LR/ER.
+Autonegociación y Auto-MDIX :: Acuerdan velocidad y dúplex (desajuste → colisiones tardías); Auto-MDIX adapta cable directo o cruzado.
+PoE :: 802.3af 15,4 W; 802.3at (PoE+) 30 W; 802.3bt 60/90 W. PSE suministra; PD recibe.
+CSMA/CD :: Ethernet half-dúplex: escucha, transmite, detecta colisión, jam y backoff exponencial binario; trama mínima 64 bytes (512 bits).
+Full-dúplex conmutado :: Sin colisiones; control de flujo con PAUSE (802.3x).
+CSMA/CA :: Wi-Fi: evita colisiones con esperas aleatorias, ACK y RTS/CTS opcional.
+Paso de testigo :: Token Ring (802.5), Token Bus (802.4) y FDDI (doble anillo de fibra, 100 Mbit/s): deterministas, sin colisiones.
+Codificación en Ethernet :: Manchester (10BASE-T); 4B/5B + MLT-3 (100BASE-TX); PAM-5 (1000BASE-T); 8B/10B (1000BASE-X); 64B/66B (10G).
+Switch :: Capa 2: aprende MAC (tabla CAM), filtra, reenvía e inunda; un dominio de colisión por puerto; un dominio de difusión salvo VLAN.
+Switch L3 y SVI :: Enruta entre VLAN con interfaces virtuales (SVI) a velocidad de cableado.
+Hub frente a switch :: Hub: repite a todos los puertos (un dominio de colisión). Switch: reenvía solo al puerto de destino.
+STP (802.1D) :: Evita bucles; puente raíz = menor Bridge ID (prioridad 32768 + MAC); puertos raíz, designados y bloqueados; BPDU; estados blocking, listening, learning, forwarding; 30-50 s.
+RSTP y MSTP :: RSTP (802.1w): convergencia rápida; roles root, designated, alternate, backup. MSTP (802.1s): instancias de VLAN. PVST+ de Cisco: un árbol por VLAN.
+Protecciones STP :: PortFast, BPDU Guard, Root Guard, Loop Guard.
+LACP :: 802.3ad / 802.1AX: agrega varios enlaces físicos en uno lógico (EtherChannel).
+VLAN :: Segmentación lógica en dominios de difusión; comunicación entre VLAN requiere capa 3 (router-on-a-stick o SVI).
+802.1Q :: Etiqueta de 4 bytes: TPID 0x8100, PCP 3 bits, DEI 1 bit, VID 12 bits (4094 VLAN utilizables); VLAN nativa sin etiquetar.
+Puertos de acceso y troncales :: Acceso: una VLAN sin etiqueta. Troncal: varias VLAN etiquetadas. Q-in-Q: 802.1ad.
+Ataques en la LAN :: MAC flooding (port security), VLAN hopping (no usar VLAN nativa para datos), ARP spoofing (DAI), DHCP falso (DHCP snooping).
+Diseño de LAN :: Tres capas: acceso, distribución, núcleo (o núcleo colapsado). CPD: spine-leaf y VXLAN (VNI 24 bits, UDP 4789).

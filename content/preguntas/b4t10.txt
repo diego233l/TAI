@@ -1,0 +1,487 @@
+// Tema 33 (B4·T10) · Redes locales: tipología, técnicas de transmisión, métodos de acceso y dispositivos de interconexión
+
+? ¿Qué estándar IEEE define Ethernet?
+a) 802.11
+b) 802.5
+c) 802.3
+d) 802.15
+= c
+> 802.11 es Wi-Fi; 802.5, Token Ring; 802.15, redes personales.
+@ IEEE 802
+
+? ¿Qué estándar IEEE define el etiquetado de VLAN en enlaces troncales?
+a) 802.1D
+b) 802.1X
+c) 802.1Q
+d) 802.3ad
+= c
+> 802.1D es STP; 802.1X, control de acceso por puertos; 802.3ad, agregación de enlaces.
+@ IEEE 802
+
+? ¿Qué estándar IEEE define el protocolo de árbol de expansión rápido (RSTP)?
+a) 802.1s
+b) 802.1w
+c) 802.1p
+d) 802.1ad
+= b
+> 802.1s es MSTP; 802.1p, prioridad de tráfico; 802.1ad, Q-in-Q.
+@ IEEE 802
+
+? ¿Qué estándar IEEE define la alimentación a través del cable Ethernet con hasta 30 W (PoE+)?
+a) 802.3af
+b) 802.3bt
+c) 802.3ab
+d) 802.3at
+= d
+> 802.3af: 15,4 W; 802.3at: 30 W; 802.3bt: 60/90 W.
+@ IEEE 802
+
+? ¿Qué subcapas componen la capa de enlace de datos en el modelo IEEE 802?
+a) LAN y WAN
+b) PHY y MAC
+c) IP y TCP
+d) LLC y MAC
+= d
+> LLC es 802.2 y común a todas las tecnologías; MAC es específica.
+@ IEEE 802
+
+? ¿Cuántos bits tiene una dirección MAC?
+a) 48
+b) 32
+c) 64
+d) 128
+= a
+> Se escribe en 6 bytes en hexadecimal; los 3 primeros identifican al fabricante (OUI).
+@ Ethernet
+
+? ¿Qué dirección MAC es la de difusión (broadcast)?
+a) 00:00:00:00:00:00
+b) 01:00:5E:00:00:01
+c) 00:FF:00:FF:00:FF
+d) FF:FF:FF:FF:FF:FF
+= d
+> Todos los equipos de la LAN procesan la trama.
+@ Ethernet
+
+? ¿Qué parte de la dirección MAC identifica al fabricante?
+a) Los 3 últimos bytes
+b) Los 3 primeros bytes (OUI)
+c) El primer bit
+d) El último byte
+= b
+> Los 3 últimos bytes los asigna el fabricante a cada interfaz.
+@ Ethernet
+
+? ¿Cuál es el tamaño mínimo de una trama Ethernet (sin preámbulo)?
+a) 46 bytes
+b) 64 bytes
+c) 128 bytes
+d) 1518 bytes
+= b
+> Los datos mínimos son 46 bytes; hay relleno si es necesario.
+@ Ethernet
+
+? ¿Cuál es el tamaño máximo de una trama Ethernet II estándar (sin etiqueta VLAN)?
+a) 1500 bytes
+b) 1522 bytes
+c) 9000 bytes
+d) 1518 bytes
+= d
+> La MTU (carga útil) es de 1500 bytes; con etiqueta 802.1Q, la trama llega a 1522.
+@ Ethernet
+
+? ¿Qué campo de la trama Ethernet II indica el protocolo de la capa superior?
+a) EtherType
+b) FCS
+c) Preámbulo
+d) MAC origen
+= a
+> 0x0800 = IPv4, 0x86DD = IPv6, 0x0806 = ARP, 0x8100 = VLAN.
+@ Ethernet
+
+? ¿Qué valor de EtherType identifica IPv4?
+a) 0x86DD
+b) 0x0806
+c) 0x0800
+d) 0x8100
+= c
+> 0x86DD es IPv6; 0x0806, ARP.
+@ Ethernet
+
+? ¿Qué algoritmo calcula el FCS de una trama Ethernet?
+a) CRC-32
+b) MD5
+c) SHA-256
+d) Paridad simple
+= a
+> Detecta errores; una trama con error se descarta.
+@ Ethernet
+
+? ¿Qué medio utiliza el estándar 100BASE-TX?
+a) Fibra multimodo
+b) Par trenzado Cat 5 con 2 pares
+c) Coaxial fino
+d) Par trenzado Cat 3 con 4 pares
+= b
+> Es Fast Ethernet; 1000BASE-T usa 4 pares.
+@ Ethernet
+
+? ¿Cuántos pares de cable utiliza 1000BASE-T?
+a) 2
+b) 1
+c) 8
+d) 4
+= d
+> Transmite en los cuatro pares simultáneamente en ambos sentidos (full-duplex).
+@ Ethernet
+
+? ¿Qué estándar Ethernet permite 10 Gbit/s sobre par trenzado a 100 m?
+a) 1000BASE-T
+b) 10GBASE-SR
+c) 10BASE-T
+d) 10GBASE-T con Cat 6A
+= d
+> 10GBASE-SR utiliza fibra multimodo.
+@ Ethernet
+
+? ¿Qué estándar Ethernet utiliza fibra monomodo y alcanza 10 km a 10 Gbit/s?
+a) 10GBASE-LR
+b) 10GBASE-SR
+c) 10GBASE-T
+d) 1000BASE-SX
+= a
+> 10GBASE-ER alcanza 40 km.
+@ Ethernet
+
+? ¿Cuál era la longitud máxima de segmento de 10BASE2 (coaxial fino)?
+a) 500 m
+b) 185 m
+c) 100 m
+d) 2 km
+= b
+> 10BASE5 (coaxial grueso): 500 m.
+@ Ethernet
+
+? ¿Qué sucede si un puerto de un conmutador está configurado en full-dúplex y el equipo conectado en half-dúplex?
+a) Funciona perfectamente
+b) Colisiones tardías y bajo rendimiento por desajuste dúplex
+c) La velocidad se duplica
+d) El puerto se apaga siempre
+= b
+> Se evita con la autonegociación activa en ambos extremos.
+@ Ethernet
+
+? ¿Qué es Auto-MDIX?
+a) Una VLAN automática
+b) Un protocolo de routing
+c) Un tipo de PoE
+d) La capacidad de un puerto de detectar y adaptarse automáticamente a cables directos o cruzados
+= d
+> Elimina la necesidad de cables cruzados.
+@ Ethernet
+
+? ¿Cómo se llama el equipo que suministra alimentación en una conexión PoE?
+a) PSE (Power Sourcing Equipment)
+b) PD (Powered Device)
+c) AP
+d) NIC
+= a
+> El PD es el dispositivo alimentado, por ejemplo un teléfono IP.
+@ PoE
+
+? ¿Qué método de acceso al medio utiliza Ethernet half-dúplex clásica?
+a) CSMA/CA
+b) Paso de testigo
+c) CSMA/CD
+d) TDMA
+= c
+> CSMA/CA es de Wi-Fi.
+@ Acceso al medio
+
+? En CSMA/CD, ¿qué ocurre cuando se detecta una colisión?
+a) Se descarta el medio
+b) Se cambia de canal
+c) Se envía una señal de bloqueo (jam) y se reintenta tras un tiempo aleatorio (backoff exponencial binario)
+d) Se reinicia el switch
+= c
+> El número de intentos máximo es 16.
+@ Acceso al medio
+
+? ¿Por qué Ethernet exige un tamaño mínimo de trama de 64 bytes en half-dúplex?
+a) Para ahorrar ancho de banda
+b) Para cifrar la trama
+c) Para evitar la fragmentación IP
+d) Para garantizar que el emisor detecte una colisión antes de terminar de transmitir la trama
+= d
+> 512 bits equivalen al slot time de 51,2 µs a 10 Mbit/s.
+@ Acceso al medio
+
+? ¿Por qué en las redes Ethernet conmutadas full-dúplex no se usa CSMA/CD?
+a) Porque es más lento
+b) Porque está prohibido
+c) Porque cada enlace es punto a punto y no existen colisiones
+d) Porque usan token
+= c
+> Cada puerto de un switch es un dominio de colisión independiente.
+@ Acceso al medio
+
+? ¿Qué método de acceso utiliza Token Ring?
+a) Paso de testigo (token passing)
+b) CSMA/CD
+c) CSMA/CA
+d) ALOHA
+= a
+> Es determinista: solo transmite quien posee el testigo.
+@ Acceso al medio
+
+? ¿Qué característica distingue a los métodos de paso de testigo respecto a CSMA/CD?
+a) Son deterministas y no tienen colisiones
+b) Son aleatorios
+c) No tienen retardo
+d) Funcionan solo en bus
+= a
+> Útiles con aplicaciones que requieren tiempo máximo garantizado de acceso.
+@ Acceso al medio
+
+? ¿Qué tecnología LAN/MAN utilizaba doble anillo de fibra óptica a 100 Mbit/s con paso de testigo?
+a) Ethernet
+b) ATM
+c) Frame Relay
+d) FDDI
+= d
+> Alcanzaba hasta 200 km y se usó como troncal.
+@ Acceso al medio
+
+? ¿Qué codificación de línea se usa en 10BASE-T?
+a) PAM-5
+b) Manchester
+c) 64B/66B
+d) NRZ-I
+= b
+> 1000BASE-T usa PAM-5; 10G usa 64B/66B.
+@ Transmisión
+
+? ¿Qué es el CAM de un conmutador?
+a) La memoria de configuración
+b) El firmware
+c) El buffer de salida
+d) La tabla donde se asocian direcciones MAC con puertos
+= d
+> Content Addressable Memory.
+@ Switch
+
+? ¿Qué hace un conmutador cuando recibe una trama de difusión?
+a) La reenvía por todos los puertos excepto por el de entrada
+b) La descarta
+c) La envía solo al puerto del router
+d) La devuelve
+= a
+> Los routers y las VLAN limitan el dominio de difusión.
+@ Switch
+
+? ¿Qué es un switch de capa 3?
+a) Un conmutador capaz de enrutar entre VLAN usando direcciones IP
+b) Un conmutador sin puertos
+c) Un hub avanzado
+d) Un firewall
+= a
+> Utiliza interfaces virtuales (SVI) y hardware dedicado.
+@ Switch
+
+? ¿Qué es un SVI en un conmutador de capa 3?
+a) Un puerto físico
+b) Un cable
+c) Una interfaz virtual con dirección IP asociada a una VLAN
+d) Un protocolo
+= c
+> Es la puerta de enlace de la VLAN.
+@ Switch
+
+? ¿Para qué sirve el protocolo STP?
+a) Para asignar direcciones IP
+b) Para cifrar el tráfico
+c) Para evitar bucles de capa 2 en topologías con enlaces redundantes
+d) Para encaminar paquetes
+= c
+> Bloquea los enlaces redundantes y los reactiva si falla el activo.
+@ STP
+
+? En STP, ¿cómo se elige el puente raíz?
+a) El de mayor Bridge ID
+b) El más antiguo
+c) El de menor Bridge ID (prioridad + MAC)
+d) El que tenga más puertos
+= c
+> La prioridad por defecto es 32768.
+@ STP
+
+? ¿Cuáles son los estados clásicos de un puerto STP (802.1D)?
+a) Up, down y idle
+b) Discarding, learning y forwarding
+c) Listening, sending y receiving
+d) Blocking, listening, learning y forwarding
+= d
+> RSTP usa discarding, learning y forwarding.
+@ STP
+
+? ¿Qué tiempo aproximado de convergencia tiene STP clásico (802.1D)?
+a) 30-50 segundos
+b) 1-2 segundos
+c) Inmediato
+d) 5 minutos
+= a
+> RSTP converge en pocos segundos o menos.
+@ STP
+
+? ¿Qué ventaja principal tiene RSTP respecto a STP?
+a) Una convergencia mucho más rápida
+b) Cifrado del tráfico
+c) Más VLAN
+d) Routing integrado
+= a
+> Introduce roles alternate y backup para conmutar rápidamente.
+@ STP
+
+? ¿Qué función cumple PortFast?
+a) Aumentar la velocidad del puerto
+b) Cifrar el puerto
+c) Pasar inmediatamente a estado de reenvío los puertos de acceso conectados a equipos finales
+d) Crear VLAN
+= c
+> Se combina con BPDU Guard.
+@ STP
+
+? ¿Qué hace BPDU Guard?
+a) Deshabilita un puerto de acceso si recibe BPDU, evitando que se conecten conmutadores no autorizados
+b) Bloquea todo el tráfico de datos
+c) Cifra las BPDU
+d) Elige el puente raíz
+= a
+> Protege la topología STP.
+@ STP
+
+? ¿Qué es LACP?
+a) Un protocolo de routing
+b) El protocolo estándar (802.3ad / 802.1AX) para agrupar varios enlaces físicos en un enlace lógico
+c) Un tipo de VLAN
+d) Un protocolo de seguridad
+= b
+> Ofrece más ancho de banda y redundancia; STP lo ve como un único enlace.
+@ Agregación
+
+? ¿Qué es una VLAN?
+a) Una red inalámbrica
+b) Un tipo de cable
+c) Una segmentación lógica de una LAN en dominios de difusión independientes
+d) Un protocolo
+= c
+> Mejora el rendimiento y la seguridad y facilita la gestión.
+@ VLAN
+
+? ¿Cuántos bits tiene el identificador de VLAN (VID) del estándar 802.1Q?
+a) 12
+b) 8
+c) 16
+d) 4
+= a
+> Permite 4096 valores, de los que 4094 son utilizables.
+@ VLAN
+
+? ¿Cuántos bytes añade la etiqueta 802.1Q a la trama Ethernet?
+a) 4
+b) 2
+c) 8
+d) 6
+= a
+> Incluye TPID (0x8100), PCP, DEI y VID.
+@ VLAN
+
+? ¿Qué es la VLAN nativa en un troncal 802.1Q?
+a) La VLAN de voz
+b) La VLAN de gestión
+c) La VLAN cuyo tráfico circula sin etiquetar por el troncal
+d) La VLAN con mayor ancho de banda
+= c
+> No se recomienda usarla para datos de usuarios.
+@ VLAN
+
+? ¿Qué se necesita para que equipos de VLAN distintas se comuniquen?
+a) Un hub
+b) Un dispositivo de capa 3 (router o conmutador L3)
+c) Un repetidor
+d) Un puente
+= b
+> Se configura router-on-a-stick o SVI.
+@ VLAN
+
+? ¿Qué tipo de puerto transporta tráfico de varias VLAN etiquetado?
+a) Puerto de acceso
+b) Puerto de consola
+c) Puerto troncal (trunk)
+d) Puerto de gestión
+= c
+> Un puerto de acceso pertenece a una sola VLAN sin etiqueta.
+@ VLAN
+
+? ¿Qué ataque consiste en saturar la tabla CAM de un conmutador con direcciones MAC falsas para que actúe como hub?
+a) VLAN hopping
+b) MAC flooding
+c) ARP poisoning
+d) Smurf
+= b
+> Se mitiga con port security.
+@ Seguridad LAN
+
+? ¿Qué ataque permite acceder a una VLAN distinta mediante doble etiquetado 802.1Q?
+a) MAC flooding
+b) VLAN hopping
+c) DHCP starvation
+d) Teardrop
+= b
+> Se mitiga evitando usar la VLAN nativa para datos y configurando los puertos de acceso de forma explícita.
+@ Seguridad LAN
+
+? ¿Qué función cumple DHCP snooping?
+a) Asigna IP
+b) Cifra DHCP
+c) Crea VLAN
+d) Bloquea ofertas DHCP de puertos no confiables para evitar servidores DHCP falsos
+= d
+> También construye una tabla IP-MAC usada por DAI.
+@ Seguridad LAN
+
+? En el modelo jerárquico de tres capas, ¿qué capa conecta a los usuarios finales?
+a) Distribución
+b) Núcleo
+c) Perímetro
+d) Acceso
+= d
+> Distribución: agregación y políticas. Núcleo: conmutación rápida.
+@ Diseño
+
+? ¿Qué topología de centro de datos conecta cada conmutador leaf con todos los spine?
+a) Bus
+b) Spine-leaf
+c) Anillo
+d) Árbol clásico de tres capas
+= b
+> Proporciona latencia predecible y gran ancho de banda este-oeste.
+@ Diseño
+
+? ¿Qué es VXLAN?
+a) Un tipo de VLAN de 12 bits
+b) Un cable
+c) Un protocolo de routing
+d) Un protocolo overlay que encapsula tramas de capa 2 sobre UDP (puerto 4789) con un identificador de red de 24 bits
+= d
+> Permite más de 16 millones de segmentos lógicos.
+@ Diseño
+
+? ¿Qué diferencia hay entre un hub y un switch?
+a) El switch repite a todos los puertos
+b) El hub aprende MAC
+c) Son iguales
+d) El hub repite la señal por todos los puertos (un único dominio de colisión); el switch reenvía solo al puerto de destino
+= d
+> El switch separa dominios de colisión y mejora el rendimiento y la seguridad.
+@ Dispositivos
