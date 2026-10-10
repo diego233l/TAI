@@ -1,0 +1,44 @@
+BD y SGBD :: BD: datos relacionados y compartidos. SGBD: software que define, crea, mantiene, consulta y controla el acceso a la BD.
+Arquitectura ANSI/SPARC :: Tres niveles: externo (vistas), conceptual (esquema global) e interno (almacenamiento físico).
+Independencia lógica y física :: Lógica: cambiar el esquema conceptual sin afectar a vistas ni programas. Física: cambiar el almacenamiento sin afectar al esquema conceptual.
+DDL, DML, DCL y TCL :: DDL: CREATE/ALTER/DROP. DML: SELECT/INSERT/UPDATE/DELETE. DCL: GRANT/REVOKE. TCL: COMMIT/ROLLBACK/SAVEPOINT.
+Componentes del SGBD :: Catálogo, procesador de consultas (optimizador), gestor de almacenamiento y buffer, de transacciones, de concurrencia y de recuperación.
+Modelo relacional :: Propuesto por E. F. Codd en 1970. Relación = tabla; tupla = fila; atributo = columna.
+Grado y cardinalidad :: Grado: nº de atributos. Cardinalidad: nº de tuplas.
+Tipos de clave :: Superclave, clave candidata (mínima), primaria, alternativas y foránea.
+Integridad :: De entidad (PK no nula), referencial (FK nula o existente) y de dominio.
+Álgebra relacional :: Selección σ (filas), proyección π (columnas), unión, intersección, diferencia, producto cartesiano, join y división.
+NULL :: Valor desconocido o inaplicable; lógica trivalente (usar IS NULL).
+ACID :: Atomicidad (todo o nada), Consistencia, aIslamiento y Durabilidad.
+WAL y recuperación :: El log se escribe antes que los datos. REDO rehace lo confirmado; UNDO deshace lo no confirmado; checkpoints.
+Tipos de fallo :: De transacción, de sistema (pérdida de memoria) y de medio (pérdida de disco: copia + logs).
+Niveles de aislamiento :: READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE.
+Anomalías de concurrencia :: Lectura sucia (datos sin confirmar), lectura no repetible (dato modificado) y fantasma (filas nuevas).
+Qué evita cada nivel :: READ COMMITTED evita lecturas sucias. REPEATABLE READ evita además las no repetibles. SERIALIZABLE evita también fantasmas.
+Bloqueo en dos fases (2PL) :: Adquisición y liberación de bloqueos en fases separadas; garantiza serializabilidad; no evita deadlock.
+MVCC :: Control multiversión: los lectores no bloquean a los escritores (PostgreSQL, Oracle).
+Interbloqueo en BD :: Se detecta con un grafo de espera; se aborta una transacción víctima.
+Tipos de índice :: B-tree/B+tree (igualdad y rangos), hash (igualdad), bitmap (baja cardinalidad), texto completo, espaciales.
+Índice agrupado :: Define el orden físico de las filas; solo uno por tabla.
+Coste de los índices :: Aceleran lecturas pero penalizan INSERT/UPDATE/DELETE y ocupan espacio.
+Optimizador :: Elige el plan de menor coste según estadísticas; algoritmos de join: nested loop, hash join, merge join; EXPLAIN muestra el plan.
+Vista y vista materializada :: Vista: consulta guardada. Materializada: resultado almacenado y refrescado.
+Replicación y sharding :: Replicación: copias en varios nodos. Sharding: reparto horizontal de filas entre nodos.
+2PC :: Commit en dos fases: preparación y confirmación coordinadas en transacciones distribuidas.
+PostgreSQL :: Código abierto, objeto-relacional, MVCC, extensible (PostGIS), lenguaje PL/pgSQL.
+MySQL y MariaDB :: Motor InnoDB (ACID, FK, bloqueo por fila). MariaDB es un fork de MySQL.
+Lenguajes procedimentales :: Oracle: PL/SQL. SQL Server: T-SQL. PostgreSQL: PL/pgSQL.
+SQLite :: Base de datos embebida sin servidor en un único fichero.
+SGBDOO :: Objetos persistentes con OID, herencia y encapsulación; estándar ODMG (ODL, OQL).
+SGBD objeto-relacional :: Extiende SQL con tipos definidos por el usuario, colecciones y herencia de tablas (SQL:1999).
+Impedance mismatch :: Desajuste entre el modelo de objetos y el relacional; se mitiga con ORM (Hibernate/JPA, Entity Framework).
+Teorema CAP :: Solo se pueden garantizar dos de tres: Consistencia, Disponibilidad y tolerancia a Particiones.
+BASE :: Basically Available, Soft state, Eventual consistency.
+Clave-valor :: Redis (en memoria), DynamoDB, Memcached, Riak.
+Documentales :: MongoDB (BSON), CouchDB, Couchbase.
+Columnares :: Cassandra (AP, sin maestro, CQL), HBase (CP, sobre HDFS), Bigtable.
+Grafos :: Neo4j (Cypher), ArangoDB, Amazon Neptune.
+NewSQL :: SQL + ACID + escalado horizontal: CockroachDB, Google Spanner, TiDB.
+OLTP y OLAP :: OLTP: transacciones cortas. OLAP: análisis multidimensional (estrella, copo de nieve, cubos).
+ETL :: Extracción, transformación y carga de datos hacia el almacén de datos.
+Data warehouse y data lake :: Warehouse: datos estructurados y depurados. Lake: datos en bruto de cualquier formato.

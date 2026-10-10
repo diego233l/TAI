@@ -1,0 +1,478 @@
+// Tema 14 (B2·T5) · Sistemas gestores de bases de datos relacionales, orientados a objetos y NoSQL
+
+? ¿Qué es un SGBD?
+a) Un conjunto de datos relacionados almacenados en un fichero
+b) El lenguaje SQL exclusivamente
+c) El software que permite definir, crear, mantener, consultar y controlar el acceso a una base de datos
+d) Un dispositivo de almacenamiento
+= c
+> La BD son los datos; el SGBD es el software que los gestiona.
+@ Conceptos
+
+? En la arquitectura ANSI/SPARC, el nivel que describe cómo se almacenan físicamente los datos es el:
+a) Externo
+b) Interno
+c) Conceptual
+d) Lógico de usuario
+= b
+> Externo: vistas de usuario. Conceptual: esquema global. Interno: almacenamiento físico.
+@ ANSI/SPARC
+
+? La capacidad de modificar el esquema conceptual sin tener que cambiar las vistas externas ni los programas se denomina independencia:
+a) Lógica
+b) Física
+c) Semántica
+d) Referencial
+= a
+> La independencia física permite cambiar el almacenamiento sin afectar al esquema conceptual.
+@ ANSI/SPARC
+
+? ¿A qué lenguaje pertenece la sentencia GRANT?
+a) DDL
+b) DML
+c) DCL
+d) TCL
+= c
+> DCL (Data Control Language): GRANT y REVOKE.
+@ Lenguajes
+
+? ¿Qué sentencias forman el lenguaje de control de transacciones (TCL)?
+a) CREATE y DROP
+b) SELECT e INSERT
+c) COMMIT, ROLLBACK y SAVEPOINT
+d) GRANT y REVOKE
+= c
+> TCL gestiona las transacciones.
+@ Lenguajes
+
+? ¿Qué componente del SGBD almacena los metadatos (descripciones de tablas, usuarios, índices)?
+a) El buffer pool
+b) El diccionario de datos o catálogo
+c) El optimizador
+d) El log de transacciones
+= b
+> El catálogo describe la estructura de la BD y se consulta con las propias herramientas del SGBD.
+@ Componentes
+
+? ¿Qué componente del procesador de consultas decide el plan de ejecución de menor coste?
+a) El analizador léxico
+b) El optimizador
+c) El gestor de buffer
+d) El planificador de CPU
+= b
+> Utiliza estadísticas y modelos de coste para escoger accesos e índices.
+@ Optimización
+
+? ¿Quién formuló el modelo relacional?
+a) Peter Chen
+b) Michael Stonebraker
+c) E. F. Codd
+d) Ted Nelson
+= c
+> Codd lo propuso en 1970. Chen propuso el modelo entidad-relación (1976).
+@ Modelo relacional
+
+? En el modelo relacional, el número de atributos de una relación se denomina:
+a) Cardinalidad
+b) Grado
+c) Dominio
+d) Esquema
+= b
+> Grado = nº de columnas; cardinalidad = nº de filas (tuplas).
+@ Modelo relacional
+
+? ¿Qué establece la regla de integridad de entidad?
+a) Toda clave foránea debe ser distinta de la primaria
+b) Cada tabla debe tener al menos un índice
+c) La clave primaria no puede tomar valores nulos
+d) Los dominios deben ser numéricos
+= c
+> La integridad referencial exige que cada clave foránea sea nula o coincida con una clave primaria existente.
+@ Integridad
+
+? ¿Qué operación del álgebra relacional se corresponde con elegir columnas de una relación?
+a) Selección (σ)
+b) Producto cartesiano
+c) Proyección (π)
+d) División
+= c
+> La selección elige filas; la proyección, columnas.
+@ Álgebra relacional
+
+? ¿Qué lógica emplea SQL para evaluar condiciones con valores NULL?
+a) Bivaluada (verdadero/falso)
+b) Difusa
+c) Probabilística
+d) Trivalente (verdadero/falso/desconocido)
+= d
+> Una comparación con NULL da UNKNOWN; por eso se usa IS NULL.
+@ Modelo relacional
+
+? ¿Qué significan las siglas ACID?
+a) Acceso, Concurrencia, Integridad, Disponibilidad
+b) Atomicidad, Consistencia, Aislamiento, Durabilidad
+c) Atomicidad, Concurrencia, Integridad, Disponibilidad
+d) Almacenamiento, Consistencia, Índices, Datos
+= b
+> Son las propiedades que garantizan la fiabilidad de las transacciones.
+@ Transacciones
+
+? La propiedad de atomicidad de una transacción garantiza que:
+a) Los datos siempre están cifrados
+b) Las transacciones concurrentes nunca se solapan
+c) Los datos se guardan en disco SSD
+d) Se ejecuta completamente o no se ejecuta en absoluto
+= d
+> Si falla una operación, se deshacen todas (ROLLBACK).
+@ Transacciones
+
+? ¿Qué propiedad ACID garantiza que los cambios de una transacción confirmada no se pierdan ante un fallo?
+a) Atomicidad
+b) Consistencia
+c) Durabilidad
+d) Aislamiento
+= c
+> La durabilidad se logra mediante el log de transacciones (WAL) y el almacenamiento en disco.
+@ Transacciones
+
+? ¿Qué es el protocolo WAL (write-ahead logging)?
+a) Escribir primero en la caché L1
+b) Escribir en el log los cambios antes de aplicarlos a los datos en disco
+c) Una técnica de cifrado de tablas
+d) Un modo de replicación sincrónica
+= b
+> Permite rehacer (REDO) o deshacer (UNDO) transacciones tras un fallo.
+@ Recuperación
+
+? Tras un fallo del sistema, ¿qué se hace con las transacciones confirmadas cuyos cambios no llegaron a disco?
+a) UNDO
+b) REDO
+c) Se eliminan
+d) Se reinician desde cero siempre
+= b
+> REDO rehace lo confirmado; UNDO deshace lo no confirmado.
+@ Recuperación
+
+? ¿Qué anomalía se produce cuando una transacción lee datos modificados por otra que aún no ha confirmado?
+a) Lectura no repetible
+b) Lectura fantasma
+c) Actualización perdida
+d) Lectura sucia
+= d
+> Ocurre en READ UNCOMMITTED; READ COMMITTED la evita.
+@ Aislamiento
+
+? ¿Qué anomalía se produce cuando una transacción repite una consulta y obtiene filas nuevas insertadas por otra transacción confirmada?
+a) Lectura sucia
+b) Lectura no repetible
+c) Lectura fantasma
+d) Deadlock
+= c
+> Solo SERIALIZABLE evita los fantasmas según el estándar.
+@ Aislamiento
+
+? ¿Qué nivel de aislamiento SQL evita las lecturas sucias y las no repetibles, pero (según el estándar) permite fantasmas?
+a) READ UNCOMMITTED
+b) READ COMMITTED
+c) SERIALIZABLE
+d) REPEATABLE READ
+= d
+> Es el siguiente nivel a READ COMMITTED. SERIALIZABLE evita las tres anomalías.
+@ Aislamiento
+
+? ¿Qué nivel de aislamiento ofrece el mayor grado de protección frente a anomalías de concurrencia?
+a) READ UNCOMMITTED
+b) SERIALIZABLE
+c) READ COMMITTED
+d) REPEATABLE READ
+= b
+> SERIALIZABLE equivale a ejecutar las transacciones en serie, con coste en rendimiento.
+@ Aislamiento
+
+? ¿Qué garantiza el protocolo de bloqueo en dos fases (2PL)?
+a) La ausencia total de interbloqueos
+b) La serializabilidad de las transacciones
+c) El cifrado de las filas
+d) La replicación síncrona
+= b
+> Fase de adquisición y fase de liberación de bloqueos; no evita el deadlock.
+@ Concurrencia
+
+? ¿Qué ventaja ofrece el control de concurrencia multiversión (MVCC)?
+a) Elimina el uso de log
+b) Los lectores no bloquean a los escritores ni viceversa
+c) Impide cualquier actualización
+d) Reduce a cero el uso de disco
+= b
+> PostgreSQL y Oracle mantienen versiones de las filas para lecturas consistentes.
+@ Concurrencia
+
+? ¿Cómo se detecta un interbloqueo entre transacciones en un SGBD?
+a) Con checksums
+b) Con el comando VACUUM
+c) Con la caché de consultas
+d) Mediante un grafo de espera; si hay un ciclo se aborta una transacción víctima
+= d
+> El SGBD elige una víctima y hace ROLLBACK para liberar los bloqueos.
+@ Concurrencia
+
+? ¿Qué estructura de índice es la predeterminada en la mayoría de SGBD relacionales y sirve para igualdad y rangos?
+a) Hash
+b) Bitmap
+c) B-tree / B+tree
+d) Trie
+= c
+> Los árboles B+ son equilibrados y eficientes en disco.
+@ Índices
+
+? ¿Qué tipo de índice es más adecuado para columnas de baja cardinalidad en almacenes de datos?
+a) B-tree
+b) Hash
+c) Bitmap
+d) Texto completo
+= c
+> Un bitmap por valor distinto permite combinar condiciones con operaciones de bits.
+@ Índices
+
+? ¿Qué inconveniente tiene crear muchos índices en una tabla?
+a) Ralentizan las lecturas
+b) Impiden las claves primarias
+c) Eliminan la integridad referencial
+d) Penalizan las operaciones de escritura (INSERT/UPDATE/DELETE) y consumen espacio
+= d
+> Cada modificación debe actualizar todos los índices afectados.
+@ Índices
+
+? ¿Cuántos índices agrupados (clustered) puede tener una tabla?
+a) Dos
+b) Uno
+c) Tantos como columnas
+d) Ninguno
+= b
+> El índice agrupado define el orden físico de las filas, por lo que solo puede haber uno.
+@ Índices
+
+? ¿Cuál de los siguientes es un algoritmo de reunión (join) empleado por los optimizadores?
+a) Hash join
+b) Quick join
+c) Bubble join
+d) Heap join
+= a
+> Los habituales son nested loop, hash join y merge join.
+@ Optimización
+
+? ¿Qué hace el comando EXPLAIN en la mayoría de SGBD?
+a) Elimina datos duplicados
+b) Muestra el plan de ejecución de una consulta
+c) Hace una copia de seguridad
+d) Crea un índice automáticamente
+= b
+> Permite analizar accesos, índices y costes.
+@ Optimización
+
+? ¿Qué es una vista materializada?
+a) Una vista cuyo resultado se almacena físicamente y se refresca periódicamente
+b) Una vista sin consulta
+c) Una tabla temporal
+d) Un índice especial
+= a
+> Mejora el rendimiento de consultas costosas, a cambio de datos potencialmente desactualizados.
+@ Vistas
+
+? ¿Qué técnica de alta disponibilidad mantiene copias de los datos en varios servidores?
+a) Fragmentación de página
+b) Desfragmentación
+c) Compresión
+d) Replicación
+= d
+> Puede ser sincrónica o asincrónica, maestro-esclavo o multimaestro.
+@ Alta disponibilidad
+
+? ¿Qué es el sharding?
+a) Cifrar las columnas sensibles
+b) Hacer copias en cinta
+c) Dividir horizontalmente los datos entre varios servidores
+d) Unir varias tablas
+= c
+> Reparte las filas entre nodos según una clave de partición para escalar horizontalmente.
+@ Escalabilidad
+
+? ¿Qué protocolo coordina una transacción distribuida garantizando que todos los nodos confirmen o aborten?
+a) Commit en dos fases (2PC)
+b) Bloqueo en dos fases (2PL)
+c) Rollback en cascada
+d) TCP three-way handshake
+= a
+> 2PC tiene fase de preparación y fase de confirmación, coordinadas por un coordinador.
+@ Transacciones distribuidas
+
+? ¿Qué SGBD relacional es de código abierto y se considera objeto-relacional?
+a) Oracle Database
+b) Microsoft SQL Server
+c) IBM Db2
+d) PostgreSQL
+= d
+> PostgreSQL soporta tipos definidos por el usuario, herencia de tablas y extensibilidad.
+@ Productos
+
+? ¿Cuál es el motor de almacenamiento transaccional por defecto de MySQL/MariaDB?
+a) InnoDB
+b) MyISAM
+c) MEMORY
+d) CSV
+= a
+> InnoDB soporta transacciones ACID, claves foráneas y bloqueo a nivel de fila.
+@ Productos
+
+? ¿Qué es SQLite?
+a) Una base de datos embebida sin servidor que almacena todo en un único fichero
+b) Un SGBD distribuido
+c) Un servicio en la nube
+d) Un lenguaje de programación
+= a
+> Es muy usada en aplicaciones móviles y de escritorio.
+@ Productos
+
+? ¿Qué lenguaje procedimental utiliza Oracle Database?
+a) T-SQL
+b) PL/pgSQL
+c) PL/SQL
+d) SQL/PSM únicamente
+= c
+> T-SQL es de SQL Server; PL/pgSQL, de PostgreSQL.
+@ Productos
+
+? ¿Cómo se denomina el problema de que el modelo de objetos de la programación no encaje con el modelo relacional de tablas?
+a) Desajuste de impedancia (impedance mismatch)
+b) Cuello de botella de Von Neumann
+c) Anomalía de Belady
+d) Efecto fantasma
+= a
+> Los ORM como Hibernate o Entity Framework intentan mitigarlo.
+@ SGBDOO
+
+? ¿Qué estándar define el modelo de objetos, ODL y OQL para bases de datos orientadas a objetos?
+a) ODMG
+b) ODBC
+c) JDBC
+d) SQL-92
+= a
+> Object Data Management Group.
+@ SGBDOO
+
+? ¿Qué caracteriza a un SGBD objeto-relacional frente a uno relacional clásico?
+a) Elimina el uso de SQL
+b) No admite transacciones
+c) Almacena únicamente documentos XML
+d) Añade tipos definidos por el usuario, tipos estructurados y colecciones, y herencia de tablas
+= d
+> Se formalizó en SQL:1999 (SQL3).
+@ SGBDOR
+
+? ¿Qué propiedad NO forma parte del teorema CAP?
+a) Consistencia
+b) Durabilidad
+c) Disponibilidad
+d) Tolerancia a particiones
+= b
+> CAP: Consistency, Availability, Partition tolerance. La durabilidad es de ACID.
+@ NoSQL
+
+? Según el teorema CAP, ante una partición de red un sistema distribuido debe sacrificar:
+a) Tolerancia a particiones y consistencia a la vez
+b) Nada, puede garantizar las tres
+c) Consistencia o disponibilidad
+d) Durabilidad
+= c
+> En presencia de particiones hay que elegir entre ofrecer respuestas consistentes (CP) o seguir disponible (AP).
+@ NoSQL
+
+? ¿Qué significa el acrónimo BASE?
+a) Basic Atomic Secure Engine
+b) Backup, Archive, Store, Export
+c) Binary Access Storage Engine
+d) Basically Available, Soft state, Eventual consistency
+= d
+> Es la filosofía de muchos sistemas NoSQL, con consistencia eventual.
+@ NoSQL
+
+? ¿Qué tipo de base de datos NoSQL es Redis?
+a) Documental
+b) Grafos
+c) Columnar
+d) Clave-valor en memoria
+= d
+> Redis ofrece estructuras de datos (strings, listas, conjuntos, hashes) y persistencia opcional (RDB/AOF).
+@ NoSQL
+
+? ¿Qué formato de documento utiliza internamente MongoDB?
+a) CSV
+b) YAML
+c) BSON
+d) XLSX
+= c
+> BSON es una representación binaria de JSON con más tipos.
+@ NoSQL
+
+? ¿Qué base de datos NoSQL es de familia de columnas, sin nodo maestro y con lenguaje CQL?
+a) Cassandra
+b) Neo4j
+c) Redis
+d) CouchDB
+= a
+> Apache Cassandra: arquitectura peer-to-peer, orientada a disponibilidad (AP), con consistencia ajustable.
+@ NoSQL
+
+? ¿Cuál es el lenguaje de consulta de Neo4j?
+a) SPARQL
+b) CQL
+c) Cypher
+d) OQL
+= c
+> Neo4j es una base de datos de grafos de propiedades.
+@ NoSQL
+
+? ¿Para qué tipo de datos es especialmente apropiada una base de datos de grafos?
+a) Tablas de gran tamaño con pocas relaciones
+b) Cachés de sesión
+c) Relaciones complejas entre entidades (redes sociales, recomendaciones, detección de fraude)
+d) Ficheros binarios
+= c
+> Recorrer relaciones es mucho más eficiente que realizar múltiples joins.
+@ NoSQL
+
+? ¿Qué diferencia hay entre escalado horizontal y vertical?
+a) Horizontal: añadir más nodos; vertical: aumentar los recursos de una máquina
+b) Horizontal: aumentar la CPU; vertical: añadir nodos
+c) Son equivalentes
+d) Horizontal solo aplica a discos
+= a
+> Las bases NoSQL se diseñaron principalmente para escalar horizontalmente.
+@ NoSQL
+
+? ¿Qué es NewSQL?
+a) Bases de datos relacionales con ACID y escalabilidad horizontal (p. ej. CockroachDB, Spanner)
+b) El sustituto del lenguaje SQL
+c) Una versión de MySQL
+d) Un tipo de índice
+= a
+> Pretende combinar las garantías relacionales con la escalabilidad de NoSQL.
+@ NoSQL
+
+? ¿Qué proceso permite poblar un almacén de datos desde los sistemas operacionales?
+a) OLTP
+b) CRUD
+c) DDL
+d) ETL (extracción, transformación y carga)
+= d
+> Los almacenes de datos suelen usar esquemas en estrella o copo de nieve.
+@ Almacenes de datos
+
+? ¿Qué sistemas están orientados a consultas analíticas sobre grandes volúmenes de datos históricos?
+a) OLTP
+b) OLAP
+c) CRUD
+d) ORM
+= b
+> OLTP gestiona transacciones cortas del día a día; OLAP, el análisis multidimensional.
+@ Almacenes de datos
