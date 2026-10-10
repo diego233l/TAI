@@ -1,0 +1,523 @@
+// Tema 26 (B4·T3) · Servidores de correo electrónico y protocolos. Contenedores y microservicios
+
+? ¿Qué componente del sistema de correo se encarga de transferir los mensajes entre servidores mediante SMTP?
+a) MUA
+b) MDA
+c) MTA
+d) MAPI
+= c
+> MTA (Mail Transfer Agent): Postfix, Exim, Sendmail, Exchange. El MUA es el cliente; el MDA entrega en el buzón.
+@ Correo
+
+? ¿Qué puerto usa SMTP para la transferencia de correo entre servidores?
+a) 25
+b) 110
+c) 143
+d) 587
+= a
+> El 587 se usa para el envío autenticado desde clientes (submission).
+@ SMTP
+
+? ¿Qué puerto se recomienda para que los clientes envíen correo autenticado al servidor (submission)?
+a) 25
+b) 587
+c) 110
+d) 993
+= b
+> Con STARTTLS y autenticación. El 465 es SMTPS (TLS implícito).
+@ SMTP
+
+? ¿Qué puertos usan por defecto POP3 e IMAP sin cifrar?
+a) 25 y 587
+b) 993 y 995
+c) 80 y 443
+d) 110 y 143
+= d
+> Con TLS implícito: POP3S 995 e IMAPS 993.
+@ Protocolos de correo
+
+? ¿Qué protocolo mantiene los mensajes en el servidor y permite sincronizar carpetas entre varios dispositivos?
+a) POP3
+b) SMTP
+c) IMAP
+d) SNMP
+= c
+> POP3 descarga los mensajes al cliente (y por defecto los elimina del servidor).
+@ Protocolos de correo
+
+? ¿Qué puerto usa IMAP sobre TLS implícito?
+a) 995
+b) 465
+c) 587
+d) 993
+= d
+> 995 corresponde a POP3S.
+@ Protocolos de correo
+
+? En una conversación SMTP, ¿qué comando precede al envío del contenido del mensaje?
+a) DATA
+b) QUIT
+c) EHLO
+d) VRFY
+= a
+> El contenido termina con una línea que contiene solo un punto.
+@ SMTP
+
+? ¿Qué indica un código de respuesta SMTP 550?
+a) Éxito
+b) Error permanente: buzón no disponible o mensaje rechazado
+c) Error temporal
+d) Inicio de datos
+= b
+> 4xx son errores temporales; 5xx, permanentes.
+@ SMTP
+
+? ¿Qué indica un código SMTP 4xx (por ejemplo, 451)?
+a) Error permanente
+b) Error temporal: el remitente puede reintentar más tarde
+c) Éxito
+d) Autenticación requerida siempre
+= b
+> El greylisting utiliza este mecanismo.
+@ SMTP
+
+? ¿Qué código SMTP indica que el servidor está listo para recibir el contenido del mensaje tras DATA?
+a) 250
+b) 221
+c) 354
+d) 550
+= c
+> 250 es OK; 221 cierre del canal.
+@ SMTP
+
+? ¿Qué extensión del correo permite adjuntos y contenidos no ASCII?
+a) POP
+b) MIME
+c) NNTP
+d) SNMP
+= b
+> Multipurpose Internet Mail Extensions; codifica adjuntos en base64 o quoted-printable.
+@ MIME
+
+? ¿Qué cabecera de un mensaje se añade en cada servidor por el que pasa y sirve para trazar su recorrido?
+a) Subject
+b) Reply-To
+c) Received
+d) Date
+= c
+> Se lee de abajo arriba para seguir el camino del mensaje.
+@ Cabeceras
+
+? ¿Qué destinatarios no aparecen en las cabeceras visibles del mensaje?
+a) Los de Cc
+b) Los de To
+c) Los incluidos en Bcc (copia oculta)
+d) El remitente
+= c
+> El sobre SMTP (RCPT TO) puede incluirlos aunque no figuren en las cabeceras.
+@ Cabeceras
+
+? ¿Qué registro DNS indica qué servidores reciben el correo de un dominio?
+a) A
+b) CNAME
+c) SRV
+d) MX
+= d
+> Cada MX tiene una prioridad; se prueba primero el de menor valor numérico.
+@ DNS
+
+? Si un dominio tiene dos registros MX, uno con prioridad 10 y otro con prioridad 20, ¿cuál se intenta primero?
+a) El de prioridad 20
+b) Ambos a la vez siempre
+c) Aleatoriamente
+d) El de prioridad 10
+= d
+> Menor valor equivale a mayor prioridad.
+@ DNS
+
+? ¿Para qué sirve el registro DNS PTR en el correo?
+a) Para definir los servidores de correo
+b) Para la resolución inversa (IP a nombre), que muchos servidores comprueban como medida antispam
+c) Para firmar mensajes
+d) Para almacenar la política DMARC
+= b
+> La IP del servidor emisor debe resolver a un nombre coherente.
+@ DNS
+
+? ¿Qué es SPF?
+a) Un registro DNS que lista las direcciones IP autorizadas a enviar correo en nombre del dominio
+b) Un algoritmo de cifrado de buzones
+c) Una firma digital de cabeceras
+d) Un protocolo de acceso a buzones
+= a
+> Se publica como registro TXT y se evalúa frente al MAIL FROM/HELO.
+@ SPF/DKIM/DMARC
+
+? ¿Qué es DKIM?
+a) Un mecanismo de firma criptográfica de los mensajes cuya clave pública se publica en el DNS
+b) Un protocolo para descargar el correo
+c) Una lista negra de IP
+d) Una política de cuarentena
+= a
+> Garantiza la integridad y el origen del dominio firmante.
+@ SPF/DKIM/DMARC
+
+? ¿Dónde se publica la clave pública de DKIM?
+a) En un registro TXT en selector._domainkey.dominio
+b) En un registro MX
+c) En el servidor web
+d) En un registro PTR
+= a
+> El selector permite rotar claves.
+@ SPF/DKIM/DMARC
+
+? ¿Qué es DMARC?
+a) Una política publicada en DNS que indica qué hacer con el correo que falla SPF y DKIM alineados, y solicita informes
+b) Un protocolo de transferencia
+c) Un antivirus
+d) Un cliente de correo
+= a
+> Valores de política: none, quarantine, reject.
+@ SPF/DKIM/DMARC
+
+? ¿Qué política DMARC indica que los mensajes que fallen la comprobación deben rechazarse?
+a) p=none
+b) p=quarantine
+c) p=allow
+d) p=reject
+= d
+> none solo monitoriza; quarantine los envía a spam.
+@ SPF/DKIM/DMARC
+
+? ¿Qué problema de SPF aparece con el reenvío de correo?
+a) El reenvío cifra el mensaje
+b) La IP que reenvía no está en el SPF del dominio original, por lo que puede fallar la comprobación
+c) El reenvío elimina el DKIM siempre
+d) Ninguno
+= b
+> ARC y SRS ayudan a mitigar el problema.
+@ SPF/DKIM/DMARC
+
+? ¿Qué es STARTTLS?
+a) Un protocolo de correo
+b) Una firma digital
+c) Un tipo de buzón
+d) Un comando que convierte una conexión en texto claro en una conexión cifrada con TLS
+= d
+> El cifrado oportunista protege el canal pero no extremo a extremo.
+@ Seguridad correo
+
+? ¿Qué estándares permiten cifrar y firmar el correo extremo a extremo?
+a) S/MIME y PGP/OpenPGP
+b) SPF y DKIM
+c) STARTTLS y POP3S
+d) DMARC y ARC
+= a
+> S/MIME usa certificados X.509; PGP usa claves y confianza distribuida.
+@ Seguridad correo
+
+? ¿Qué es un open relay?
+a) Un servidor de respaldo
+b) Un servidor de correo que retransmite mensajes de cualquier origen a cualquier destino, siendo explotable para spam
+c) Un protocolo de acceso
+d) Un tipo de buzón
+= b
+> Debe evitarse restringiendo la retransmisión a redes y usuarios autenticados.
+@ Seguridad correo
+
+? ¿Qué es el greylisting?
+a) Rechazar temporalmente el correo de un remitente desconocido esperando que reintente, lo que descarta a muchos emisores de spam
+b) Bloquear definitivamente a un remitente
+c) Cifrar el correo
+d) Eliminar adjuntos
+= a
+> Los servidores legítimos reintentan; muchos bots no.
+@ Antispam
+
+? ¿Qué son las listas DNSBL/RBL?
+a) Listas negras consultadas por DNS con IP asociadas a envío de spam
+b) Listas de correo de usuarios
+c) Registros de firma
+d) Copias de seguridad
+= a
+> Se consultan por DNS en tiempo real.
+@ Antispam
+
+? ¿Qué herramienta de software libre se emplea como motor antispam en servidores de correo?
+a) SpamAssassin
+b) Wireshark
+c) Nmap
+d) Selenium
+= a
+> Rspamd es otra alternativa. ClamAV es antivirus.
+@ Antispam
+
+? ¿Qué fichero de Postfix define parámetros como myhostname, mydomain o mynetworks?
+a) main.cf
+b) dovecot.conf
+c) named.conf
+d) resolv.conf
+= a
+> master.cf define los procesos y servicios.
+@ Postfix
+
+? ¿Qué comando muestra la cola de correo de Postfix?
+a) top
+b) netstat
+c) dig
+d) mailq (o postqueue -p)
+= d
+> Los registros suelen estar en /var/log/mail.log.
+@ Postfix
+
+? ¿Qué es Dovecot?
+a) Un MTA
+b) Un cliente de correo
+c) Un antivirus
+d) Un servidor IMAP/POP3 (y autenticación SASL) para entrega de buzones a clientes
+= d
+> Postfix suele delegarle la autenticación.
+@ Correo
+
+? ¿Qué es un DAG en Exchange Server?
+a) Database Availability Group: conjunto de servidores que replican bases de datos de buzones para alta disponibilidad
+b) Un tipo de buzón
+c) Un registro DNS
+d) Un protocolo
+= a
+> Permite conmutación por error automática entre copias de bases de datos.
+@ Exchange
+
+? Según el ENS, la medida [mp.s.1] regula:
+a) La protección de la navegación web
+b) El bloqueo del puesto de trabajo
+c) El registro de la actividad
+d) La protección del correo electrónico
+= d
+> Exige protección frente a spam, código dañino y código móvil, protección de la información de encaminamiento y normas de uso.
+@ ENS
+
+? ¿Cuál es una diferencia fundamental entre un contenedor y una máquina virtual?
+a) El contenedor incluye su propio hipervisor
+b) El contenedor comparte el núcleo del sistema anfitrión; la VM incluye su propio sistema operativo completo
+c) La VM es siempre más ligera
+d) No hay diferencia
+= b
+> Por eso los contenedores arrancan en segundos y consumen menos, pero aíslan menos.
+@ Contenedores
+
+? ¿Qué mecanismos del núcleo Linux hacen posible el aislamiento de los contenedores?
+a) Namespaces y cgroups
+b) SELinux y AppArmor únicamente
+c) LVM y RAID
+d) Netfilter y DNS
+= a
+> Los namespaces aíslan la visión de recursos; los cgroups limitan su uso.
+@ Contenedores
+
+? ¿Para qué se utilizan los cgroups?
+a) Limitar y medir los recursos (CPU, memoria, E/S) de grupos de procesos
+b) Aislar la red
+c) Cifrar ficheros
+d) Gestionar usuarios
+= a
+> Los namespaces aíslan; los cgroups controlan.
+@ Contenedores
+
+? ¿Qué es una imagen de contenedor?
+a) Una captura de pantalla
+b) Un contenedor en ejecución
+c) Una plantilla inmutable, formada por capas, a partir de la cual se crean contenedores
+d) Una máquina virtual
+= c
+> El contenedor es la instancia en ejecución con una capa de escritura efímera.
+@ Docker
+
+? ¿Qué se pierde por defecto al eliminar un contenedor Docker si no se han usado volúmenes?
+a) La imagen
+b) El registro
+c) Los datos escritos en su capa de escritura
+d) El Dockerfile
+= c
+> Para datos persistentes se usan volúmenes o bind mounts.
+@ Docker
+
+? ¿Qué instrucción de un Dockerfile define la imagen base?
+a) FROM
+b) RUN
+c) CMD
+d) EXPOSE
+= a
+> RUN ejecuta comandos durante la construcción; CMD define el comando por defecto de arranque.
+@ Docker
+
+? ¿Qué hace la opción -p 8080:80 en docker run?
+a) Publica el puerto 8080 del contenedor en el 80 del host
+b) Limita la memoria
+c) Publica el puerto 80 del contenedor en el puerto 8080 del host
+d) Monta un volumen
+= c
+> El formato es host:contenedor.
+@ Docker
+
+? ¿Para qué sirve Docker Compose?
+a) Para construir imágenes en la nube
+b) Para orquestar clústeres de cientos de nodos
+c) Para definir y ejecutar aplicaciones multicontenedor mediante un fichero YAML
+d) Para escanear vulnerabilidades
+= c
+> Kubernetes está pensado para orquestar clústeres grandes.
+@ Docker
+
+? ¿Qué es Podman?
+a) Un orquestador
+b) Un registro de imágenes
+c) Un motor de contenedores compatible con OCI que funciona sin daemon y puede ejecutarse sin privilegios (rootless)
+d) Un hipervisor
+= c
+> Comparte sintaxis con Docker.
+@ Contenedores
+
+? ¿Cuál es una buena práctica de seguridad en contenedores?
+a) Incluir las contraseñas en la imagen
+b) Usar siempre la etiqueta latest
+c) Ejecutar contenedores privilegiados por defecto
+d) No ejecutar los procesos como root dentro del contenedor y usar imágenes mínimas y verificadas
+= d
+> También escanear vulnerabilidades y firmar imágenes.
+@ Seguridad contenedores
+
+? ¿Qué es Kubernetes?
+a) Un lenguaje de programación
+b) Una plataforma de orquestación de contenedores
+c) Un sistema de ficheros
+d) Un motor de base de datos
+= b
+> Gestiona despliegue, escalado, autorrecuperación y actualizaciones de aplicaciones en contenedores.
+@ Kubernetes
+
+? ¿Cuál es la unidad mínima de despliegue en Kubernetes?
+a) Deployment
+b) Nodo
+c) Namespace
+d) Pod
+= d
+> Un pod agrupa uno o más contenedores que comparten red y almacenamiento.
+@ Kubernetes
+
+? ¿Qué componente de Kubernetes almacena el estado del clúster en un almacén clave-valor?
+a) etcd
+b) kubelet
+c) kube-proxy
+d) Ingress
+= a
+> kube-apiserver es la puerta de entrada de la API.
+@ Kubernetes
+
+? ¿Qué componente de Kubernetes decide en qué nodo se ejecuta cada pod?
+a) kubelet
+b) etcd
+c) kube-proxy
+d) kube-scheduler
+= d
+> El kubelet es el agente que ejecuta los pods en cada nodo.
+@ Kubernetes
+
+? ¿Qué objeto de Kubernetes gestiona las actualizaciones progresivas (rolling update) y el rollback de un conjunto de pods?
+a) Service
+b) Deployment
+c) ConfigMap
+d) Namespace
+= b
+> Un Deployment gestiona ReplicaSets.
+@ Kubernetes
+
+? ¿Qué tipo de Service de Kubernetes solo es accesible dentro del clúster?
+a) NodePort
+b) LoadBalancer
+c) Ingress
+d) ClusterIP
+= d
+> NodePort expone un puerto en cada nodo; LoadBalancer usa el balanceador del proveedor.
+@ Kubernetes
+
+? ¿Cómo se almacenan por defecto los Secrets de Kubernetes?
+a) Codificados en base64 (no cifrados) salvo que se active el cifrado en reposo
+b) Cifrados con AES siempre
+c) En texto en los logs
+d) En el nodo con cifrado hardware
+= a
+> Hay que activar el cifrado en reposo de etcd y controlar el acceso con RBAC.
+@ Kubernetes
+
+? ¿Qué herramienta es el gestor de paquetes de Kubernetes, basado en charts?
+a) Compose
+b) Helm
+c) Terraform
+d) Ansible
+= b
+> Terraform y Ansible son herramientas de infraestructura como código.
+@ Kubernetes
+
+? ¿Qué comando de kubectl aplica un manifiesto YAML al clúster?
+a) kubectl build
+b) kubectl apply -f fichero.yaml
+c) kubectl run-image
+d) kubectl push
+= b
+> Kubernetes es declarativo: se describe el estado deseado.
+@ Kubernetes
+
+? En Kubernetes, ¿qué sondas (probes) existen?
+a) Alive, ready y done
+b) Health, speed y load
+c) Start, stop y pause
+d) Liveness, readiness y startup
+= d
+> Readiness decide si el pod recibe tráfico; liveness, si debe reiniciarse.
+@ Kubernetes
+
+? ¿Qué caracteriza a una arquitectura de microservicios respecto a un monolito?
+a) Una única base de datos para todo
+b) Despliegue conjunto obligatorio
+c) Servicios autónomos desplegables de forma independiente, cada uno con su propio almacenamiento de datos
+d) Un único lenguaje obligatorio
+= c
+> A cambio, aumenta la complejidad operativa y de consistencia.
+@ Microservicios
+
+? ¿Qué patrón evita que un servicio siga llamando a otro que está fallando, protegiendo al sistema de fallos en cascada?
+a) Singleton
+b) Circuit breaker
+c) Observer
+d) Facade
+= b
+> Se complementa con reintentos, timeouts y bulkheads.
+@ Microservicios
+
+? ¿Qué es un service mesh?
+a) Un tipo de base de datos
+b) Un formato de mensajes
+c) Un firewall perimetral
+d) Una capa de infraestructura que gestiona la comunicación entre servicios (seguridad mTLS, tráfico y observabilidad) mediante proxies
+= d
+> Ejemplos: Istio y Linkerd.
+@ Microservicios
+
+? ¿Qué pila se utiliza habitualmente para recoger métricas y visualizarlas en entornos de contenedores?
+a) Jenkins y Maven
+b) Postfix y Dovecot
+c) Prometheus y Grafana
+d) Nginx y PHP
+= c
+> Las trazas distribuidas se gestionan con Jaeger, Zipkin u OpenTelemetry.
+@ Observabilidad
+
+? ¿Qué es la consistencia eventual y qué patrón se usa en microservicios para coordinar transacciones distribuidas?
+a) Los datos son siempre consistentes; se usa 2PC obligatoriamente
+b) No hay consistencia; se usa Singleton
+c) Los datos se pierden; se usa Facade
+d) Los datos acaban siendo consistentes tras un tiempo; se usa el patrón saga
+= d
+> La saga encadena transacciones locales con acciones compensatorias.
+@ Microservicios

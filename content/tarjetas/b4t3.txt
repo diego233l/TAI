@@ -1,0 +1,33 @@
+Componentes del correo :: MUA (cliente), MSA (envío, 587), MTA (transferencia, 25: Postfix, Exim, Exchange), MDA (entrega) y servidor de acceso (Dovecot).
+Puertos de correo :: SMTP 25; submission 587; SMTPS 465; POP3 110/995; IMAP 143/993.
+SMTP :: Comandos EHLO, MAIL FROM, RCPT TO, DATA, RSET, VRFY, QUIT. Códigos 2xx éxito; 354 inicio de datos; 4xx temporal; 5xx permanente (550).
+POP3 frente a IMAP :: POP3 descarga (por defecto borra del servidor). IMAP mantiene en servidor y sincroniza carpetas y estados.
+MIME y cabeceras :: MIME permite adjuntos y no ASCII (base64, quoted-printable). Received traza el recorrido; Bcc no aparece; el sobre SMTP difiere de las cabeceras.
+Buzones :: mbox (un fichero por buzón) y Maildir (un fichero por mensaje).
+DNS del correo :: MX con prioridad (menor valor = primero), A/AAAA, PTR (inversa) y TXT (SPF, DKIM, DMARC).
+SPF :: TXT con las IP autorizadas a enviar por el dominio; -all rechazo; ~all softfail; se rompe con el reenvío.
+DKIM :: Firma de cabeceras y cuerpo; clave pública en TXT selector._domainkey.dominio; integridad y origen.
+DMARC :: Política p=none/quarantine/reject según SPF y DKIM alineados; informes rua y ruf; _dmarc.dominio.
+ARC, MTA-STS, DANE :: ARC conserva la autenticación en reenvíos. MTA-STS y DANE obligan a TLS entre servidores.
+STARTTLS y cifrado extremo a extremo :: STARTTLS cifra el canal. S/MIME (X.509) y PGP cifran y firman extremo a extremo.
+Open relay :: Servidor que retransmite correo de cualquiera: evitar con mynetworks y autenticación.
+Antispam y antivirus :: SPF/DKIM/DMARC, DNSBL/RBL, greylisting, SpamAssassin, Rspamd, ClamAV, sandbox, DLP, cuarentena.
+Postfix y Dovecot :: Postfix: main.cf (myhostname, mydomain, mynetworks, relayhost), master.cf, mailq. Dovecot: IMAP/POP3 y SASL.
+Exchange :: Roles Mailbox y Edge Transport; DAG para alta disponibilidad; Exchange Online/Microsoft 365.
+ENS mp.s.1 :: Protección del correo: contenido, anexos y encaminamiento; spam, código dañino y código móvil; normas de uso.
+Contenedor frente a VM :: El contenedor comparte el núcleo del anfitrión: ligero y rápido, con menor aislamiento.
+Namespaces y cgroups :: Namespaces aíslan la visión de recursos; cgroups limitan y miden CPU, memoria y E/S.
+Imagen y contenedor :: Imagen: plantilla inmutable en capas. Contenedor: instancia con capa de escritura efímera. Registros: Docker Hub, GHCR, Harbor.
+OCI, containerd, runc, Podman :: OCI estandariza imágenes y runtimes; Podman es rootless y sin daemon.
+Dockerfile :: FROM, RUN, COPY/ADD, ENV, WORKDIR, EXPOSE, USER, CMD/ENTRYPOINT.
+Comandos de Docker :: build, run (-d, -p host:contenedor, -v, --name), ps, images, logs, exec, stop, rm, pull, push.
+Persistencia y redes en Docker :: Volúmenes y bind mounts; redes bridge, host, none y overlay.
+Docker Compose :: Aplicaciones multicontenedor en docker-compose.yml (services, volumes, networks).
+Seguridad de contenedores :: Imágenes mínimas, escaneo (Trivy), no root, FS de solo lectura, límites, sin secretos en la imagen, firma, CIS Docker Benchmark.
+Arquitectura de Kubernetes :: Control plane: kube-apiserver, etcd, kube-scheduler, controller-manager. Nodos: kubelet, kube-proxy, runtime.
+Objetos de Kubernetes :: Pod (mínimo), ReplicaSet, Deployment (rolling update y rollback), StatefulSet, DaemonSet, Job/CronJob.
+Redes y configuración en Kubernetes :: Service (ClusterIP, NodePort, LoadBalancer), Ingress, ConfigMap, Secret (base64), PV/PVC/StorageClass, Namespace, RBAC, NetworkPolicy, HPA.
+Herramientas de Kubernetes :: kubectl (get, describe, apply -f, logs, exec, scale, rollout), Helm (charts), OpenShift, Rancher, EKS/AKS/GKE; sondas liveness, readiness y startup.
+Microservicios :: Servicios autónomos desplegables por separado, con su propia BD; REST/gRPC/mensajería.
+Patrones de microservicios :: API Gateway, service discovery, service mesh (Istio), circuit breaker, retry, bulkhead, saga, CQRS, 12 factores.
+Observabilidad :: Logs (ELK/EFK, Loki), métricas (Prometheus + Grafana) y trazas (Jaeger, Zipkin, OpenTelemetry).
