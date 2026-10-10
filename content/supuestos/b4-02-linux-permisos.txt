@@ -1,6 +1,6 @@
 @title Administración Linux: permisos, cron y LVM
 @block b4
-@topics b4t3,b4t4
+@topics b4t1,b4t5
 @enunciado
 En un servidor Linux se muestra el siguiente listado y la configuración de usuarios:
 

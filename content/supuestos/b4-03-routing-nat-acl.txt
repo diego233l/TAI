@@ -1,0 +1,130 @@
+@title Encaminamiento, NAT y ACL en el router de la sede
+@block b4
+@topics b4t7,b4t9
+@enunciado
+El router de una sede tiene la siguiente tabla de encaminamiento (IPv4):
+
+| Destino | Siguiente salto | Origen |
+|---|---|---|
+| 10.0.0.0/8 | 172.16.0.2 | Estática |
+| 10.1.0.0/16 | 172.16.0.3 | OSPF |
+| 10.1.2.0/24 | 172.16.0.4 | Estática |
+| 192.168.1.0/24 | Conectada (LAN) | Conectada |
+| 0.0.0.0/0 | 172.16.0.1 | Estática (ruta por defecto) |
+
+La LAN 192.168.1.0/24 sale a Internet con NAT dinámico con sobrecarga (PAT) usando la única IP pública del router. Se aplica además esta lista de control de acceso en la interfaz de entrada de la LAN:
+
+```
+access-list 101 permit tcp 192.168.1.0 0.0.0.255 any eq 80
+access-list 101 permit tcp 192.168.1.0 0.0.0.255 any eq 443
+access-list 101 permit udp 192.168.1.0 0.0.0.255 any eq 53
+```
+@fin
+
+? ¿Por qué siguiente salto se encamina un paquete con destino 10.1.2.77?
+a) 172.16.0.4
+b) 172.16.0.3
+c) 172.16.0.2
+d) 172.16.0.1
+= a
+> Se aplica la coincidencia con el prefijo más largo (longest prefix match): 10.1.2.0/24 es la ruta más específica que contiene a 10.1.2.77.
+@ Encaminamiento
+
+? ¿Por qué siguiente salto se encamina un paquete con destino 10.1.3.5?
+a) 172.16.0.3
+b) 172.16.0.4
+c) 172.16.0.2
+d) 172.16.0.1
+= a
+> 10.1.3.5 no pertenece a 10.1.2.0/24 pero sí a 10.1.0.0/16 (más específica que 10.0.0.0/8).
+@ Encaminamiento
+
+? ¿Por dónde sale un paquete con destino 10.9.9.9?
+a) 172.16.0.3
+b) 172.16.0.2
+c) 172.16.0.1
+d) Se descarta
+= b
+> Solo coincide con 10.0.0.0/8 (y con la ruta por defecto, de prefijo /0, que es la menos específica).
+@ Encaminamiento
+
+? ¿Por dónde sale un paquete con destino 8.8.8.8?
+a) Por 172.16.0.2
+b) Se descarta, porque no hay ruta
+c) Por la LAN
+d) Por la ruta por defecto, 172.16.0.1
+= d
+> Ninguna ruta específica contiene 8.8.8.8, de modo que se usa la ruta por defecto 0.0.0.0/0.
+@ Encaminamiento
+
+? Si dos rutas llegan al router al mismo destino, una por OSPF y otra estática, y ambas con la misma longitud de prefijo, ¿cuál se instala por defecto en la tabla?
+a) La estática, por tener menor distancia administrativa (1 frente a 110)
+b) La OSPF, porque es dinámica
+c) Ambas con balanceo
+d) La de mayor métrica
+= a
+> Con igual prefijo, el router elige la de menor distancia administrativa; la métrica solo desempata entre rutas del mismo protocolo.
+@ Encaminamiento
+
+? ¿Qué ocurre con un paquete HTTPS (TCP/443) de la LAN hacia un servidor externo?
+a) Lo deniega la ACL
+b) Se traduce solo el puerto destino
+c) No se traduce porque es cifrado
+d) Lo permite la línea 2 de la ACL y el NAT traduce la IP origen por la IP pública del router
+= d
+> TCP/443 está permitido por la segunda línea. Con PAT se sustituye la IP privada de origen por la pública y se distingue cada conexión por el puerto origen.
+@ NAT
+
+? Un equipo de la LAN intenta conectarse por SSH (TCP/22) a un servidor externo. ¿Qué sucede?
+a) Pasa, porque no está prohibido expresamente
+b) La ACL lo bloquea por la denegación implícita final (deny any)
+c) Pasa, pero sin NAT
+d) Se redirige al puerto 443
+= b
+> Toda ACL termina con un «deny any» implícito: lo que no se permite expresamente, se descarta.
+@ ACL
+
+? ¿Por qué la ACL de ejemplo permite UDP/53?
+a) Para permitir DHCP
+b) Para permitir las consultas DNS de los equipos de la LAN
+c) Para permitir NTP
+d) Para permitir el correo
+= b
+> DNS usa UDP/53 para las consultas habituales (y TCP/53 para transferencias de zona y respuestas grandes).
+@ DNS
+
+? ¿Qué máscara wildcard utiliza la ACL para identificar la red 192.168.1.0/24?
+a) 0.0.0.255
+b) 255.255.255.0
+c) 0.0.255.255
+d) 255.255.255.255
+= a
+> La wildcard es la inversa de la máscara: bit 0 = debe coincidir y bit 1 = se ignora. La inversa de 255.255.255.0 es 0.0.0.255.
+@ ACL
+
+? Se quiere dividir 10.1.2.0/24 en cuatro subredes iguales. ¿Qué máscara se usa y cuántos equipos admite cada una?
+a) /25 y 126 equipos
+b) /26 y 64 equipos
+c) /26 (255.255.255.192) y 62 equipos
+d) /27 y 30 equipos
+= c
+> Para 4 subredes se toman 2 bits: /24 + 2 = /26. Cada subred tiene 64 direcciones, descontando red y difusión quedan 62. Son 10.1.2.0, .64, .128 y .192.
+@ Subredes
+
+? ¿Cuál es la dirección de difusión (broadcast) de la red 10.1.2.0/24?
+a) 10.1.2.0
+b) 10.1.255.255
+c) 10.1.2.255
+d) 255.255.255.255
+= c
+> Con todos los bits de host a 1: 10.1.2.255.
+@ Direccionamiento
+
+? ¿Qué tipo de ruta es la 0.0.0.0/0?
+a) Ruta por defecto, que se usa cuando no coincide ninguna más específica
+b) Ruta de bucle local
+c) Ruta de difusión
+d) Ruta multicast
+= a
+> Es la ruta menos específica posible (prefijo /0): coincide con cualquier destino.
+@ Encaminamiento
