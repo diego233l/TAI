@@ -1,0 +1,550 @@
+// Tema 29 (B4·T6) · Comunicaciones: medios, modos, equipos, redes, comunicaciones móviles e inalámbricas
+
+? ¿Qué relación existe entre la velocidad de modulación en baudios y la velocidad de transmisión en bit/s?
+a) bit/s = baudios ÷ bits por símbolo
+b) bit/s = baudios × número de bits por símbolo
+c) Son siempre iguales
+d) bit/s = baudios²
+= b
+> Con 4 niveles por símbolo (2 bits), 1000 baudios equivalen a 2000 bit/s.
+@ Fundamentos
+
+? ¿Qué teorema establece la capacidad máxima de un canal con ruido en función de su ancho de banda y de la relación señal/ruido?
+a) Nyquist
+b) Shannon-Hartley
+c) Fourier
+d) Pitágoras
+= b
+> C = B·log₂(1 + S/N). Nyquist se refiere al canal sin ruido y al muestreo.
+@ Fundamentos
+
+? ¿Qué frecuencia de muestreo se usa en la digitalización PCM de la voz telefónica?
+a) 4000 muestras por segundo
+b) 8000 muestras por segundo
+c) 44 100 muestras por segundo
+d) 16 000 muestras por segundo
+= b
+> Con 8 bits por muestra resultan 64 kbit/s (G.711).
+@ Fundamentos
+
+? ¿Qué velocidad tiene un canal digital PCM de voz (DS0)?
+a) 56 kbit/s
+b) 64 kbit/s
+c) 128 kbit/s
+d) 2 Mbit/s
+= b
+> 8000 muestras/s × 8 bits.
+@ Fundamentos
+
+? ¿Cuántos decibelios supone aproximadamente duplicar la potencia de una señal?
+a) 6 dB
+b) 3 dB
+c) 10 dB
+d) 20 dB
+= b
+> 10·log₁₀(2) ≈ 3 dB. Multiplicar por 10 supone 10 dB.
+@ Fundamentos
+
+? ¿Qué fenómeno consiste en la interferencia que un par de hilos induce en otro cercano?
+a) Atenuación
+b) Reflexión
+c) Diafonía (crosstalk)
+d) Eco
+= c
+> El trenzado de los pares la reduce.
+@ Fundamentos
+
+? ¿Qué técnica de multiplexación permite transmitir varias señales por una misma fibra utilizando distintas longitudes de onda?
+a) FDM eléctrica
+b) TDM
+c) WDM
+d) CDMA
+= c
+> DWDM utiliza muchas longitudes de onda muy próximas.
+@ Multiplexación
+
+? ¿Qué modo de comunicación permite transmitir en ambos sentidos a la vez?
+a) Símplex
+b) Dúplex (full-duplex)
+c) Semidúplex
+d) Unicast
+= b
+> En semidúplex se alterna el sentido.
+@ Modos
+
+? ¿Qué forma de transmisión envía cada carácter con bits de inicio y parada?
+a) Síncrona
+b) Asíncrona
+c) Paralela
+d) Isócrona
+= b
+> La síncrona transmite bloques con sincronización por reloj.
+@ Modos
+
+? ¿Qué tipo de difusión envía un paquete a un grupo concreto de destinatarios?
+a) Unicast
+b) Multicast
+c) Broadcast
+d) Loopback
+= b
+> Broadcast: a todos; unicast: a uno; anycast: al más cercano de un grupo.
+@ Modos
+
+? En la conmutación de circuitos:
+a) Los paquetes se encaminan de forma independiente
+b) No se reserva ningún recurso
+c) Se establece un camino dedicado durante toda la comunicación
+d) Solo se usa en redes IP
+= c
+> Es el modelo de la red telefónica tradicional.
+@ Conmutación
+
+? ¿Qué diferencia fundamental hay entre datagramas y circuitos virtuales en conmutación de paquetes?
+a) Los datagramas establecen siempre una ruta fija
+b) Los circuitos virtuales no usan paquetes
+c) No hay diferencia
+d) En datagramas cada paquete se encamina independientemente; en circuitos virtuales todos siguen una ruta establecida previamente
+= d
+> IP es de datagramas; X.25, Frame Relay y ATM usan circuitos virtuales.
+@ Conmutación
+
+? ¿Cuál es la longitud máxima de un enlace de par trenzado Ethernet entre el conmutador y el equipo?
+a) 100 m
+b) 55 m
+c) 185 m
+d) 500 m
+= a
+> 90 m de cableado horizontal más 10 m de latiguillos.
+@ Par trenzado
+
+? ¿Qué categoría de cable de par trenzado permite 10GBASE-T hasta 100 m?
+a) Cat 6A
+b) Cat 5e
+c) Cat 5
+d) Cat 3
+= a
+> Cat 6 solo alcanza 55 m en 10GBASE-T.
+@ Par trenzado
+
+? ¿Qué categoría es la mínima recomendada para Gigabit Ethernet (1000BASE-T)?
+a) Cat 3
+b) Cat 5e
+c) Cat 5
+d) Cat 1
+= b
+> Cat 5e (100 MHz) cumple 1000BASE-T con 4 pares.
+@ Par trenzado
+
+? ¿Qué ventaja ofrece el cable apantallado (STP/FTP) frente al UTP?
+a) Mayor longitud máxima
+b) Mayor protección frente a interferencias electromagnéticas
+c) Menor coste
+d) Mayor flexibilidad
+= b
+> Requiere una correcta puesta a tierra.
+@ Par trenzado
+
+? ¿Qué impedancia característica tiene el cable coaxial utilizado en televisión y redes HFC?
+a) 75 ohmios
+b) 50 ohmios
+c) 100 ohmios
+d) 120 ohmios
+= a
+> El coaxial de 50 Ω se usó en Ethernet 10BASE2/10BASE5 y radiofrecuencia. El par trenzado Ethernet tiene 100 Ω.
+@ Coaxial
+
+? ¿Cuál es una ventaja de la fibra óptica frente al cobre?
+a) Menor coste de la electrónica
+b) Mayor facilidad de empalme
+c) Alimentación eléctrica incorporada
+d) Inmunidad a interferencias electromagnéticas y gran ancho de banda y alcance
+= d
+> Su inconveniente principal es el coste y la fragilidad.
+@ Fibra óptica
+
+? ¿Qué diámetro de núcleo/revestimiento tiene habitualmente la fibra monomodo?
+a) 50/125 µm
+b) 62,5/125 µm
+c) 100/140 µm
+d) 9/125 µm
+= d
+> La multimodo es de 50/125 µm (OM2-OM4) o 62,5/125 µm (OM1).
+@ Fibra óptica
+
+? ¿Qué tipo de fibra se emplea para enlaces de larga distancia (decenas de km) con láser en 1310/1550 nm?
+a) Multimodo OM3
+b) Monomodo
+c) Multimodo OM1
+d) Coaxial
+= b
+> Multimodo se usa en distancias de cientos de metros.
+@ Fibra óptica
+
+? ¿Qué longitud de onda emplean habitualmente los transceptores multimodo?
+a) 1550 nm
+b) 850 nm
+c) 1310 nm solo
+d) 405 nm
+= b
+> Con LED o VCSEL.
+@ Fibra óptica
+
+? ¿Qué categoría de fibra multimodo alcanza 10 Gbit/s hasta 400 m?
+a) OM1
+b) OM2
+c) OM4
+d) OM3
+= c
+> OM3 alcanza 300 m a 10 Gbit/s.
+@ Fibra óptica
+
+? ¿Qué conectores de fibra óptica son típicos de los racks actuales?
+a) RJ-45 y RJ-11
+b) LC y SC
+c) BNC y F
+d) VGA y DVI
+= b
+> MPO/MTP es el conector multifibra de alta densidad.
+@ Fibra óptica
+
+? ¿Qué normas regulan el cableado estructurado?
+a) ISO 27001 y 9001
+b) IEEE 802.3 y 802.11
+c) ISO/IEC 11801 y TIA/EIA-568
+d) RFC 791 y 793
+= c
+> IEEE 802.3 define Ethernet.
+@ Cableado estructurado
+
+? En el cableado estructurado, ¿qué subsistema conecta el distribuidor de planta con los puestos de trabajo?
+a) Vertical (backbone)
+b) Campus
+c) Área de trabajo exclusivamente
+d) Horizontal
+= d
+> El vertical une las plantas del edificio; el de campus, los edificios.
+@ Cableado estructurado
+
+? ¿A qué altura orbitan los satélites geoestacionarios (GEO)?
+a) ≈ 35 786 km
+b) ≈ 550 km
+c) ≈ 20 000 km
+d) ≈ 1 000 km
+= a
+> Mantienen su posición respecto a la Tierra, con un retardo elevado.
+@ Satélite
+
+? ¿Qué ventaja principal tienen los satélites LEO frente a los GEO?
+a) Mayor cobertura por satélite
+b) Menor número de satélites necesarios
+c) Menor latencia
+d) Mayor altura
+= c
+> Requieren constelaciones de muchos satélites.
+@ Satélite
+
+? ¿Qué capa OSI opera un repetidor?
+a) Capa 1 (física)
+b) Capa 2
+c) Capa 3
+d) Capa 7
+= a
+> Regenera la señal sin interpretar tramas.
+@ Equipos
+
+? ¿Qué dispositivo reenvía tramas según la tabla de direcciones MAC aprendida?
+a) Hub
+b) Repetidor
+c) Conmutador (switch)
+d) Router
+= c
+> El hub repite la señal por todos los puertos.
+@ Equipos
+
+? ¿Cuántos dominios de colisión tiene un switch de 24 puertos?
+a) 24
+b) 1
+c) 2
+d) 48
+= a
+> Cada puerto es un dominio de colisión; los hubs forman un único dominio.
+@ Equipos
+
+? ¿Qué dispositivo separa dominios de difusión (broadcast) en una red?
+a) Router
+b) Hub
+c) Repetidor
+d) Switch sin VLAN
+= a
+> Las VLAN también los segmentan en un switch.
+@ Equipos
+
+? ¿Qué hace un conmutador cuando recibe una trama con una dirección MAC de destino desconocida?
+a) La descarta
+b) La envía solo al router
+c) La devuelve al origen
+d) La inunda (flooding) por todos los puertos excepto el de entrada
+= d
+> También inunda las tramas de difusión.
+@ Equipos
+
+? ¿Qué método de conmutación comprueba el CRC de la trama completa antes de reenviarla?
+a) Cut-through
+b) Store-and-forward
+c) Fragment-free
+d) Bypass
+= b
+> Cut-through reenvía tras leer el destino, con menos latencia pero sin comprobar errores.
+@ Equipos
+
+? ¿Cuántos enlaces necesita una red en malla completa de n nodos?
+a) n − 1
+b) n
+c) 2n
+d) n(n − 1)/2
+= d
+> Con 5 nodos: 10 enlaces.
+@ Topologías
+
+? ¿Qué topología LAN es la dominante en Ethernet moderno?
+a) Bus
+b) Anillo
+c) Estrella (con conmutador central)
+d) Malla completa
+= c
+> Cada equipo se conecta al conmutador mediante un enlace punto a punto.
+@ Topologías
+
+? En una topología en estrella, ¿qué ocurre si falla el nodo central?
+a) Se pierde la comunicación de toda la red
+b) Solo falla un equipo
+c) No pasa nada
+d) La red se convierte en anillo
+= a
+> Es su principal punto único de fallo.
+@ Topologías
+
+? ¿Qué tipo de red cubre un campus o una ciudad?
+a) MAN (red metropolitana)
+b) PAN
+c) LAN siempre
+d) WAN mundial únicamente
+= a
+> PAN: personal; LAN: local; WAN: extensa.
+@ Redes
+
+? ¿Qué tecnología WAN utiliza celdas de 53 bytes?
+a) ATM
+b) Frame Relay
+c) X.25
+d) MPLS
+= a
+> Se identifica con VPI/VCI.
+@ WAN
+
+? ¿Qué identificador usa Frame Relay para los circuitos virtuales?
+a) DLCI
+b) VPI/VCI
+c) MAC
+d) Etiqueta MPLS
+= a
+> ATM usa VPI/VCI.
+@ WAN
+
+? ¿Qué tecnología conmuta paquetes mediante etiquetas y es base de las VPN de los operadores?
+a) X.25
+b) MPLS
+c) RDSI
+d) ADSL
+= b
+> Permite ingeniería de tráfico y VPN de capa 2 y 3.
+@ WAN
+
+? ¿Cuál es la velocidad de una línea E1?
+a) 1,544 Mbit/s
+b) 2,048 Mbit/s
+c) 155,52 Mbit/s
+d) 34 Mbit/s
+= b
+> 32 canales de 64 kbit/s (30 de voz/datos y 2 de señalización/sincronismo). T1: 1,544 Mbit/s.
+@ WAN
+
+? ¿Qué velocidad tiene el nivel STM-1 de SDH?
+a) 155,52 Mbit/s
+b) 622 Mbit/s
+c) 51,84 Mbit/s
+d) 2,5 Gbit/s
+= a
+> STM-4: 622 Mbit/s; STM-16: 2,5 Gbit/s; STM-64: 10 Gbit/s.
+@ WAN
+
+? ¿Qué tecnología de acceso usa el par de cobre telefónico con un DSLAM en la central?
+a) FTTH
+b) HFC
+c) ADSL
+d) PON
+= c
+> ADSL es asimétrico: mayor velocidad de bajada que de subida.
+@ Acceso
+
+? ¿Qué es una red PON?
+a) Una red de cobre
+b) Una red inalámbrica
+c) Una red óptica pasiva que usa splitters sin electrónica activa entre la central (OLT) y el usuario (ONT)
+d) Una red satelital
+= c
+> GPON ofrece 2,5 Gbit/s de bajada y 1,25 Gbit/s de subida.
+@ Acceso
+
+? ¿Qué elemento de una red FTTH se instala en el domicilio del abonado?
+a) OLT
+b) DSLAM
+c) Splitter de cabecera
+d) ONT
+= d
+> La OLT está en la central del operador.
+@ Acceso
+
+? ¿Qué técnica de acceso múltiple utiliza GSM?
+a) CDMA exclusivamente
+b) TDMA/FDMA
+c) OFDMA
+d) CSMA/CA
+= b
+> UMTS usa W-CDMA y LTE, OFDMA en bajada.
+@ Móviles
+
+? ¿Qué generación de telefonía móvil introdujo la red completamente IP (EPC) y el acceso OFDMA en bajada?
+a) 2G
+b) 3G
+c) 1G
+d) 4G (LTE)
+= d
+> La voz se transporta con VoLTE.
+@ Móviles
+
+? ¿Qué generación de telefonía móvil utiliza UMTS con W-CDMA?
+a) 3G
+b) 2G
+c) 4G
+d) 5G
+= a
+> HSPA y HSPA+ son sus evoluciones.
+@ Móviles
+
+? ¿Cuáles son los tres casos de uso principales de 5G?
+a) eMBB, URLLC y mMTC
+b) SMS, MMS y voz
+c) VoLTE, HSPA y EDGE
+d) FTTH, HFC y ADSL
+= a
+> Banda ancha móvil mejorada, comunicaciones ultrafiables de baja latencia e IoT masivo.
+@ Móviles
+
+? ¿Qué es el network slicing en 5G?
+a) Dividir la antena en sectores
+b) Un tipo de cifrado
+c) Un protocolo de roaming
+d) Crear múltiples redes lógicas virtuales sobre una misma infraestructura física, adaptadas a distintos servicios
+= d
+> Permite diferenciar calidad de servicio por caso de uso.
+@ Móviles
+
+? ¿Qué es el handover?
+a) El uso de una red de otro operador
+b) Un tipo de modulación
+c) La reutilización de frecuencias
+d) El traspaso de una comunicación de una celda a otra sin interrumpirla
+= d
+> El roaming es el uso de redes de otros operadores o países.
+@ Móviles
+
+? ¿Qué identifica de forma única al terminal móvil?
+a) IMSI
+b) IMEI
+c) MSISDN
+d) SSID
+= b
+> IMSI identifica al abonado (SIM); MSISDN es el número de teléfono.
+@ Móviles
+
+? ¿A qué estándar IEEE 802.11 corresponde Wi-Fi 5?
+a) 802.11n
+b) 802.11ax
+c) 802.11g
+d) 802.11ac
+= d
+> Wi-Fi 4: 802.11n; Wi-Fi 6: 802.11ax; Wi-Fi 7: 802.11be.
+@ Wi-Fi
+
+? ¿Qué novedad introdujo Wi-Fi 6E?
+a) El uso de la banda de 6 GHz
+b) Solo la banda de 2,4 GHz
+c) El cifrado WEP
+d) La eliminación de OFDMA
+= a
+> Wi-Fi 6 (802.11ax) añadió OFDMA y 1024-QAM.
+@ Wi-Fi
+
+? ¿Qué técnica de acceso al medio utiliza Wi-Fi?
+a) CSMA/CA
+b) CSMA/CD
+c) Token passing
+d) TDMA puro
+= a
+> Ethernet half-duplex clásica usaba CSMA/CD.
+@ Wi-Fi
+
+? ¿Qué canales de 20 MHz de la banda de 2,4 GHz no se solapan?
+a) 1, 2 y 3
+b) 2, 4 y 6
+c) 3, 7 y 10
+d) 1, 6 y 11
+= d
+> Evita interferencias entre puntos de acceso cercanos.
+@ Wi-Fi
+
+? ¿Qué protocolo de seguridad Wi-Fi se considera roto y no debe usarse?
+a) WPA2
+b) WPA3
+c) 802.1X
+d) WEP
+= d
+> WPA2 usa AES-CCMP; WPA3 usa SAE.
+@ Wi-Fi
+
+? ¿Qué mejora introduce WPA3 en las redes personales respecto a WPA2-PSK?
+a) Elimina el cifrado
+b) SAE, que protege frente a ataques de diccionario offline
+c) Usa WEP
+d) Usa menos autenticación
+= b
+> OWE cifra las redes abiertas; el modo Enterprise de 192 bits mejora la seguridad.
+@ Wi-Fi
+
+? ¿Qué estándar IEEE corresponde a Bluetooth?
+a) 802.15.1
+b) 802.11
+c) 802.3
+d) 802.16
+= a
+> Zigbee es 802.15.4 y WiMAX, 802.16.
+@ Inalámbricas
+
+? ¿Qué tecnología de IoT de largo alcance y bajo consumo trabaja en bandas sin licencia con modulación de espectro ensanchado?
+a) Wi-Fi 6
+b) Bluetooth clásico
+c) LoRaWAN
+d) GSM
+= c
+> NB-IoT emplea la red celular licenciada.
+@ Inalámbricas
+
+? ¿Qué codificación de línea se usa en Ethernet 10BASE-T?
+a) NRZ
+b) 8B/10B
+c) 64B/66B
+d) Manchester
+= d
+> Asegura transiciones en cada bit para la sincronización.
+@ Codificación

@@ -1,0 +1,31 @@
+Baudios y bit/s :: bit/s = baudios × bits por símbolo.
+Capacidad de canal :: Nyquist (sin ruido): C = 2B·log₂M. Shannon-Hartley (con ruido): C = B·log₂(1 + S/N).
+Decibelios :: dB = 10·log₁₀(S/N); 3 dB = doble de potencia; 10 dB = ×10.
+Impedimentos de transmisión :: Atenuación, distorsión, ruido (térmico, impulsivo), diafonía (crosstalk).
+PCM de voz :: 8000 muestras/s × 8 bits = 64 kbit/s (DS0, G.711); Nyquist: fs ≥ 2·fmax.
+Modulación digital :: ASK, FSK, PSK y QAM (16, 64, 256, 1024…); más bits por símbolo exige mejor S/N.
+Multiplexación :: FDM (frecuencia), TDM (tiempo), WDM/DWDM (longitud de onda), CDMA (códigos).
+Modos de comunicación :: Símplex, semidúplex, dúplex; serie/paralelo; asíncrona (start/stop)/síncrona; unicast, multicast, broadcast, anycast.
+Tipos de conmutación :: Circuitos (ruta dedicada), mensajes y paquetes (datagramas independientes o circuitos virtuales).
+Par trenzado :: UTP, STP, FTP, S/FTP; RJ-45; T568A/B; 100 m máximo (90 m + 10 m de latiguillos).
+Categorías de cobre :: Cat 5e 100 MHz (1000BASE-T); Cat 6 250 MHz (10G a 55 m); Cat 6A 500 MHz (10G a 100 m); Cat 7 600 MHz; Cat 8 2000 MHz (25/40G a 30 m).
+Coaxial :: 50 Ω (datos y radiofrecuencia) y 75 Ω (TV y HFC).
+Fibra monomodo y multimodo :: Monomodo 9/125 µm, láser 1310/1550 nm, decenas de km. Multimodo 50/125 µm, 850 nm: OM3 10G a 300 m; OM4 10G a 400 m.
+Conectores de fibra :: LC, SC, ST, MPO/MTP; transceptores SFP/SFP+/QSFP.
+Cableado estructurado :: ISO/IEC 11801 y TIA/EIA-568; subsistemas campus, vertical, horizontal y área de trabajo.
+Satélites :: GEO ≈ 35 786 km (RTT ≈ 500-600 ms); MEO; LEO ≈ 500-1200 km (baja latencia, constelaciones).
+Equipos por capa OSI :: Repetidor/hub: capa 1. Puente/switch: capa 2. Router: capa 3. Pasarela: capas altas.
+Switch :: Aprende MAC; filtra, reenvía o inunda; un dominio de colisión por puerto; store-and-forward (comprueba CRC), cut-through, fragment-free.
+Dominios :: Colisión: uno por puerto de switch. Difusión: los separan routers y VLAN.
+Topologías :: Bus, anillo, estrella, árbol, malla (completa: n(n−1)/2 enlaces), híbrida.
+WAN heredadas :: X.25 (circuito virtual), Frame Relay (DLCI), ATM (celdas de 53 bytes, VPI/VCI), MPLS (etiquetas).
+Jerarquías de transporte :: E1 2,048 Mbit/s (32×64 kbit/s); T1 1,544; SDH STM-1 155,52 / STM-4 622 / STM-16 2,5G / STM-64 10G; OTN; DWDM.
+Acceso de banda ancha :: ADSL (8 Mbit/s; ADSL2+ 24) con DSLAM; VDSL2; HFC (DOCSIS); FTTH con PON: GPON 2,5/1,25 Gbit/s, XGS-PON 10G; OLT, splitter y ONT.
+Generaciones móviles :: 1G analógica; 2G GSM (TDMA/FDMA, GPRS, EDGE); 3G UMTS W-CDMA (HSPA); 4G LTE (todo IP, OFDMA); 5G NR (eMBB, URLLC, mMTC).
+5G :: Network slicing, MIMO masivo, beamforming; bandas 700 MHz, 3,5 GHz y mmWave 26 GHz; NSA/SA.
+Arquitectura celular :: Celdas, estación base (BTS/NodeB/eNodeB/gNodeB), reutilización de frecuencias, handover, roaming; IMSI (abonado), IMEI (terminal), MSISDN (número), eSIM.
+Estándares Wi-Fi :: b 11 Mbit/s 2,4 GHz; a 54 Mbit/s 5 GHz; g 54 Mbit/s 2,4 GHz; n (Wi-Fi 4) 600 Mbit/s; ac (Wi-Fi 5) 5 GHz; ax (Wi-Fi 6/6E, OFDMA, 6 GHz); be (Wi-Fi 7, 320 MHz, MLO).
+Acceso al medio Wi-Fi :: CSMA/CA con RTS/CTS opcional; modos infraestructura y ad hoc; SSID, BSSID, ESS; canales 1, 6 y 11 sin solape en 2,4 GHz.
+Seguridad Wi-Fi :: WEP (roto), WPA (TKIP), WPA2 (AES-CCMP), WPA3 (SAE, OWE, 192 bits Enterprise); 802.1X.
+Otras inalámbricas :: Bluetooth 802.15.1; Zigbee 802.15.4; LoRaWAN y NB-IoT (IoT); NFC; RFID; WiMAX 802.16; UWB.
+Codificación de línea :: NRZ, Manchester (10BASE-T), 4B/5B, 8B/10B, 64B/66B.
