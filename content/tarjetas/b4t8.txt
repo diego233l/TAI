@@ -1,0 +1,29 @@
+Hitos de Internet :: ARPANET 1969; TCP/IP 1 enero 1983 (flag day) y DNS; NSFNET 1986; WWW 1989-91 (Berners-Lee, CERN); W3C 1994; ICANN 1998; HTTP/2 2015; TLS 1.3 2018; HTTP/3 2022.
+Organizaciones de Internet :: IETF (RFC), IAB, ISOC, W3C, ICANN/IANA; RIR: RIPE NCC (Europa), ARIN, APNIC, LACNIC, AFRINIC.
+Sistema autónomo :: Conjunto de redes con política de encaminamiento común, con ASN; BGP entre AS.
+Peering y tránsito :: Peering: intercambio entre iguales, normalmente gratuito. Tránsito: se paga para llegar al resto de Internet. ISP Tier 1: solo peering.
+IXP y CDN :: IXP: punto neutro de intercambio (ESPANIX, CATNIX). CDN: servidores distribuidos que acercan el contenido (Akamai, Cloudflare).
+DNS en Internet :: Raíz (13 identidades, anycast), TLD (gTLD .com/.org; ccTLD .es), dominios de segundo nivel; FQDN; resolución recursiva e iterativa.
+Servicios de Internet :: Web, correo, DNS, ficheros (FTP, SFTP), SSH, VoIP, streaming, redes sociales, comercio y administración electrónica, nube, IoT.
+Intranet, extranet y VPN :: Intranet: red privada con tecnología de Internet. Extranet: abierta a socios. VPN: acceso seguro a redes privadas.
+HTTP :: Capa de aplicación, petición/respuesta, sin estado; puerto 80 (HTTPS 443).
+Versiones de HTTP :: 1.0 (1996); 1.1 (conexiones persistentes, Host obligatorio); 2 (binario, multiplexación, HPACK); 3 (QUIC sobre UDP 443).
+Mensaje HTTP :: Petición: línea de petición, cabeceras, línea en blanco, cuerpo. Respuesta: línea de estado, cabeceras, cuerpo.
+Métodos HTTP :: Seguros: GET, HEAD, OPTIONS. Idempotentes: GET, HEAD, PUT, DELETE, OPTIONS. CONNECT abre túneles (proxy HTTPS).
+Códigos HTTP :: 1xx informativos; 2xx éxito; 3xx redirección (301 permanente, 302/307 temporal, 304 no modificado); 4xx cliente; 5xx servidor.
+Cabeceras HTTP clave :: Host, User-Agent, Accept, Content-Type, Content-Length, Cookie/Set-Cookie, Authorization, Location, Cache-Control, ETag, HSTS, CSP.
+Caché HTTP :: max-age; no-cache (almacena pero revalida); no-store (no almacenar); public/private; ETag/If-None-Match y Last-Modified/If-Modified-Since → 304.
+Proxies :: Forward proxy actúa por los clientes (Squid). Reverse proxy delante de los servidores (balanceo, TLS, caché). Hosts virtuales por Host y SNI.
+SSL y TLS :: SSL 2.0/3.0 y TLS 1.0/1.1 obsoletos (RFC 8996). TLS 1.2 (RFC 5246) vigente. TLS 1.3 (RFC 8446) recomendado.
+Servicios de TLS :: Confidencialidad, integridad y autenticación (servidor con certificado X.509; cliente opcional: mTLS).
+Handshake TLS 1.2 :: ClientHello → ServerHello, Certificate, ServerKeyExchange, ServerHelloDone → ClientKeyExchange, ChangeCipherSpec, Finished → ChangeCipherSpec, Finished (2 RTT).
+TLS 1.3 :: 1 RTT (0-RTT en reanudación); solo AEAD (AES-GCM, ChaCha20-Poly1305); ECDHE/DHE efímero → PFS; elimina RC4, 3DES, CBC, SHA-1, RSA kex, compresión y renegociación; cifra el certificado.
+PFS :: El compromiso de la clave privada a largo plazo no permite descifrar sesiones pasadas.
+Suite de cifrado :: Intercambio de claves + autenticación + cifrado + hash, p. ej. TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384.
+Certificados :: DV, OV, EV; wildcard (*.dominio) y SAN; cadena servidor → intermedia → raíz; se valida nombre, caducidad, firma y revocación.
+Let's Encrypt, CT y CAA :: Let's Encrypt: ACME, 90 días, gratuito. Certificate Transparency: registros públicos. CAA: qué CA pueden emitir.
+Refuerzos de TLS :: HSTS (con preload), OCSP stapling, certificate pinning, redirección a HTTPS, desactivar protocolos y suites débiles.
+Ataques a TLS :: Heartbleed (OpenSSL 2014), POODLE (SSL 3.0), BEAST, CRIME/BREACH, FREAK, Logjam, downgrade, SSL stripping.
+Otros usos de TLS :: STARTTLS, SMTPS, IMAPS, LDAPS, FTPS, DTLS (UDP), QUIC; terminación TLS en balanceador o proxy inverso.
+SNI y ALPN :: SNI indica el nombre del servidor (varios certificados por IP). ALPN negocia el protocolo de aplicación (h2, http/1.1).
+Herramientas TLS :: openssl s_client, Qualys SSL Labs, testssl.sh, curl -v.

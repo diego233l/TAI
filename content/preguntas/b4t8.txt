@@ -1,0 +1,514 @@
+// Tema 31 (B4·T8) · Internet: arquitectura, origen y servicios. HTTP, HTTPS y SSL/TLS
+
+? ¿Cuál fue la primera red de conmutación de paquetes que dio origen a Internet?
+a) NSFNET
+b) CSNET
+c) BITNET
+d) ARPANET
+= d
+> ARPANET (1969) conectó inicialmente cuatro nodos universitarios y fue financiada por el Departamento de Defensa de EE. UU.
+@ Historia
+
+? ¿En qué fecha ARPANET adoptó oficialmente el conjunto de protocolos TCP/IP, sustituyendo a NCP?
+a) 1 de enero de 1983
+b) 1 de enero de 1969
+c) 1 de enero de 1991
+d) 1 de enero de 1995
+= a
+> Se conoce como el «flag day» de TCP/IP.
+@ Historia
+
+? ¿Quién creó la World Wide Web en el CERN?
+a) Vint Cerf
+b) Tim Berners-Lee
+c) Bob Kahn
+d) Jon Postel
+= b
+> Cerf y Kahn diseñaron TCP/IP; Postel gestionó la IANA y los RFC durante décadas.
+@ Historia
+
+? ¿Qué organismo desarrolla los estándares técnicos de Internet mediante documentos RFC?
+a) ICANN
+b) W3C
+c) IETF
+d) ITU únicamente
+= c
+> El W3C estandariza tecnologías web (HTML, CSS); ICANN gestiona nombres y números.
+@ Organizaciones
+
+? ¿Qué organización coordina el sistema de nombres de dominio y la asignación de direcciones IP a nivel global (a través de la IANA)?
+a) IETF
+b) W3C
+c) IEEE
+d) ICANN
+= d
+> Creada en 1998.
+@ Organizaciones
+
+? ¿Qué Registro Regional de Internet (RIR) gestiona las direcciones IP en Europa?
+a) ARIN
+b) RIPE NCC
+c) APNIC
+d) LACNIC
+= b
+> ARIN: Norteamérica; APNIC: Asia-Pacífico; LACNIC: Latinoamérica; AFRINIC: África.
+@ Organizaciones
+
+? ¿Qué es un sistema autónomo (AS) en Internet?
+a) Un servidor DNS raíz
+b) Un tipo de cable submarino
+c) Un navegador
+d) Un conjunto de redes bajo una misma administración técnica con una política de encaminamiento común, identificado por un ASN
+= d
+> Entre AS se utiliza el protocolo BGP.
+@ Arquitectura
+
+? ¿Qué diferencia existe entre peering y tránsito?
+a) El peering se paga siempre
+b) El tránsito es gratuito siempre
+c) Son lo mismo
+d) En el peering dos redes intercambian su tráfico (normalmente sin coste); en el tránsito una red paga a otra para acceder al resto de Internet
+= d
+> Los ISP Tier 1 no pagan tránsito: alcanzan toda Internet mediante peering.
+@ Arquitectura
+
+? ¿Qué es un IXP?
+a) Un punto neutro donde múltiples redes intercambian tráfico directamente
+b) Un servidor de correo
+c) Un registrador de dominios
+d) Un cortafuegos
+= a
+> En España, ESPANIX (Madrid) y CATNIX (Barcelona).
+@ Arquitectura
+
+? ¿Qué transporta la mayor parte del tráfico intercontinental de Internet?
+a) Satélites geoestacionarios
+b) Enlaces de microondas
+c) Cables submarinos de fibra óptica
+d) Cobre
+= c
+> Los satélites suponen una fracción pequeña.
+@ Arquitectura
+
+? ¿Qué es una CDN?
+a) Una red privada virtual
+b) Una red de servidores distribuidos que acercan el contenido a los usuarios, reduciendo latencia y carga del origen
+c) Un tipo de DNS
+d) Una base de datos
+= b
+> Ejemplos: Akamai y Cloudflare.
+@ Arquitectura
+
+? ¿Cuántas identidades de servidores raíz DNS existen?
+a) 7
+b) 26
+c) 13
+d) 512
+= c
+> Etiquetadas de la A a la M, con cientos de instancias replicadas mediante anycast.
+@ DNS
+
+? ¿Qué tipo de dominio es .es?
+a) Dominio genérico (gTLD)
+b) Dominio de primer nivel de código de país (ccTLD)
+c) Dominio de segundo nivel
+d) Subdominio
+= b
+> .com, .org y .net son gTLD.
+@ DNS
+
+? ¿Qué es un FQDN?
+a) Una dirección IP
+b) Un tipo de registro DNS
+c) Un puerto
+d) El nombre de dominio completo que incluye todos los niveles hasta la raíz, por ejemplo www.ejemplo.es.
+= d
+> Acaba conceptualmente con un punto que representa la raíz.
+@ DNS
+
+? En la resolución iterativa de DNS:
+a) El servidor resuelve todo por el cliente
+b) No intervienen servidores
+c) Solo se consulta al servidor raíz
+d) El servidor consultado responde con la mejor información que tiene o con una referencia al siguiente servidor
+= d
+> En la recursiva, el resolvedor resuelve la consulta completa por el cliente.
+@ DNS
+
+? ¿Cuál es el puerto por defecto de HTTP?
+a) 443
+b) 80
+c) 8080
+d) 21
+= b
+> HTTPS usa el 443.
+@ HTTP
+
+? ¿Qué significa que HTTP sea un protocolo sin estado?
+a) Cada petición es independiente y el servidor no conserva información de las anteriores
+b) No usa TCP
+c) No tiene errores
+d) No tiene cabeceras
+= a
+> El estado se mantiene con cookies, sesiones o tokens.
+@ HTTP
+
+? ¿Qué mejora introdujo HTTP/1.1 respecto a HTTP/1.0 en cuanto a conexiones?
+a) Uso de UDP
+b) Conexiones persistentes por defecto (keep-alive)
+c) Cifrado obligatorio
+d) Eliminación de las cabeceras
+= b
+> Evita abrir una conexión TCP por cada recurso.
+@ HTTP
+
+? ¿Qué cabecera es obligatoria en HTTP/1.1 y permite alojar varios sitios en la misma IP?
+a) User-Agent
+b) Host
+c) Accept
+d) Referer
+= b
+> Es la base de los hosts virtuales.
+@ HTTP
+
+? ¿Qué característica distingue a HTTP/2?
+a) Usa UDP
+b) Es binario y multiplexa varias peticiones sobre una misma conexión, con compresión de cabeceras
+c) Es en texto plano sin multiplexación
+d) Elimina TCP
+= b
+> HTTP/3 pasa a QUIC sobre UDP.
+@ HTTP
+
+? ¿Qué protocolo de transporte utiliza HTTP/3?
+a) TCP
+b) QUIC sobre UDP
+c) SCTP
+d) ICMP
+= b
+> Evita el bloqueo de cabecera de línea de TCP y integra TLS 1.3.
+@ HTTP
+
+? ¿Qué estructura tiene una petición HTTP?
+a) Cuerpo, línea de petición y cabeceras
+b) Línea de petición, cabeceras, línea en blanco y cuerpo opcional
+c) Solo URL
+d) Cabecera binaria fija
+= b
+> Ejemplo de línea de petición: GET /index.html HTTP/1.1.
+@ HTTP
+
+? ¿Qué método HTTP solicita solo las cabeceras de la respuesta, sin cuerpo?
+a) HEAD
+b) GET
+c) OPTIONS
+d) TRACE
+= a
+> Es útil para comprobar la existencia o modificación de recursos.
+@ HTTP
+
+? ¿Qué método HTTP permite establecer un túnel, usado por los proxies para HTTPS?
+a) PUT
+b) CONNECT
+c) PATCH
+d) OPTIONS
+= b
+> El proxy abre una conexión TCP con el destino y retransmite los bytes cifrados.
+@ HTTP
+
+? ¿Qué código HTTP indica una redirección permanente?
+a) 301
+b) 302
+c) 304
+d) 307
+= a
+> 302 y 307 son temporales; 304 indica que el recurso no ha cambiado.
+@ HTTP
+
+? ¿Qué código HTTP devuelve el servidor cuando el recurso en caché del cliente sigue siendo válido?
+a) 200 OK
+b) 304 Not Modified
+c) 204 No Content
+d) 301 Moved Permanently
+= b
+> Se produce tras una petición condicional con If-None-Match o If-Modified-Since.
+@ HTTP
+
+? ¿Qué directiva de Cache-Control indica que la respuesta no debe almacenarse en ninguna caché?
+a) no-cache
+b) max-age=0
+c) no-store
+d) public
+= c
+> no-cache permite almacenar, pero obliga a revalidar antes de reutilizar.
+@ Caché HTTP
+
+? ¿Qué cabecera permite validar una copia en caché comparando un identificador de versión del recurso?
+a) Host
+b) Content-Length
+c) ETag (con If-None-Match)
+d) Set-Cookie
+= c
+> Last-Modified con If-Modified-Since cumple la misma función con fechas.
+@ Caché HTTP
+
+? En el contexto de los intermediarios HTTP, ¿cuál es la función de un proxy inverso situado delante de los servidores web?
+a) Un proxy que actúa por los clientes para acceder a Internet
+b) Un tipo de cortafuegos de capa 2
+c) Un cliente de correo
+d) Un servidor situado delante de los servidores de aplicación que recibe las peticiones de los clientes (balanceo, TLS, caché)
+= d
+> El proxy directo (forward) actúa en nombre de los clientes, por ejemplo Squid.
+@ Intermediarios
+
+? ¿Qué es HTTPS?
+a) HTTP sobre SSH
+b) HTTP sobre UDP
+c) HTTP sobre TLS
+d) Un nuevo método HTTP
+= c
+> Usa el puerto TCP 443 por defecto.
+@ HTTPS
+
+? ¿Qué servicios de seguridad proporciona TLS?
+a) Solo disponibilidad
+b) Solo no repudio
+c) Confidencialidad, integridad y autenticación
+d) Solo anonimato
+= c
+> No protege los datos en el servidor ni garantiza la fiabilidad del contenido.
+@ TLS
+
+? ¿Qué versiones de SSL/TLS se consideran obsoletas y desaconsejadas (RFC 8996)?
+a) SSL 2.0, SSL 3.0, TLS 1.0 y TLS 1.1
+b) TLS 1.2 y 1.3
+c) Solo TLS 1.3
+d) Ninguna
+= a
+> TLS 1.2 sigue siendo aceptable con suites seguras; TLS 1.3 es la recomendada.
+@ TLS
+
+? ¿Qué RFC define TLS 1.3?
+a) RFC 5246
+b) RFC 8446
+c) RFC 2246
+d) RFC 7540
+= b
+> RFC 5246 es TLS 1.2; RFC 7540, HTTP/2.
+@ TLS
+
+? ¿Cuántos viajes de ida y vuelta (RTT) necesita el handshake completo de TLS 1.3?
+a) 1
+b) 2
+c) 3
+d) 0 siempre
+= a
+> TLS 1.2 necesita 2 RTT; TLS 1.3 admite además reanudación 0-RTT.
+@ TLS
+
+? ¿Qué protege la Perfect Forward Secrecy (PFS)?
+a) Que no se pierdan paquetes
+b) Que el certificado no caduque
+c) Que el compromiso de la clave privada a largo plazo del servidor no permita descifrar sesiones pasadas
+d) Que el servidor sea anónimo
+= c
+> Se logra con intercambio de claves efímero (ECDHE/DHE). TLS 1.3 lo hace obligatorio.
+@ TLS
+
+? ¿Qué elimina TLS 1.3 respecto a TLS 1.2?
+a) El cifrado simétrico
+b) Algoritmos débiles como RC4, 3DES, CBC, SHA-1, RSA como intercambio de claves, compresión y renegociación
+c) Los certificados
+d) El handshake
+= b
+> Solo admite cifrado autenticado (AEAD).
+@ TLS
+
+? ¿Qué algoritmos de cifrado autenticado (AEAD) se usan en TLS 1.3?
+a) AES-GCM y ChaCha20-Poly1305
+b) DES y RC4
+c) MD5 y SHA-1
+d) RSA y DSA
+= a
+> RSA y DSA no son algoritmos de cifrado de datos de sesión.
+@ TLS
+
+? ¿Cómo se realiza la autenticación del servidor en TLS?
+a) Con una contraseña compartida
+b) Con la IP del servidor
+c) Mediante un certificado X.509 firmado por una CA de confianza
+d) No se autentica
+= c
+> El cliente comprueba la cadena, la validez, el nombre y la revocación.
+@ TLS
+
+? ¿Qué es mTLS?
+a) TLS móvil
+b) TLS sin certificado
+c) Multiplexación TLS
+d) TLS con autenticación mutua: el cliente también presenta un certificado
+= d
+> Se usa entre servicios y en accesos de alta seguridad.
+@ TLS
+
+? ¿Qué extensión de TLS permite que el cliente indique el nombre del servidor al que se conecta, permitiendo varios certificados en una misma IP?
+a) SNI (Server Name Indication)
+b) ALPN
+c) OCSP
+d) HSTS
+= a
+> ALPN negocia el protocolo de aplicación (h2, http/1.1).
+@ TLS
+
+? ¿Qué tipo de certificado cubre un dominio y todos sus subdominios de primer nivel, como *.ejemplo.es?
+a) EV
+b) Wildcard
+c) Autofirmado
+d) De cliente
+= b
+> Un certificado SAN permite varios nombres distintos.
+@ Certificados
+
+? ¿Qué tipo de certificado exige una verificación más rigurosa de la identidad de la organización?
+a) EV (Extended Validation)
+b) DV (Domain Validation)
+c) Autofirmado
+d) Wildcard
+= a
+> DV solo valida el control del dominio.
+@ Certificados
+
+? ¿Qué es un certificado autofirmado?
+a) Un certificado de una CA raíz
+b) Uno firmado por la propia entidad a la que identifica, que no se verifica en una cadena de confianza pública
+c) Un certificado EV
+d) Un certificado de cliente
+= b
+> Los navegadores muestran una advertencia salvo que se importe como de confianza.
+@ Certificados
+
+? ¿Qué proyecto emite certificados gratuitos de forma automatizada mediante el protocolo ACME?
+a) DigiCert
+b) FNMT
+c) Let's Encrypt
+d) ICANN
+= c
+> Sus certificados duran 90 días y se renuevan automáticamente.
+@ Certificados
+
+? ¿Qué es la Certificate Transparency?
+a) Un cifrado
+b) Un sistema de registros públicos y auditables de los certificados emitidos
+c) Una lista de revocación
+d) Un tipo de certificado
+= b
+> Permite detectar certificados emitidos indebidamente para un dominio.
+@ Certificados
+
+? ¿Para qué sirven los registros DNS CAA?
+a) Para indicar qué autoridades de certificación pueden emitir certificados para el dominio
+b) Para definir servidores de correo
+c) Para firmar zonas
+d) Para alias
+= a
+> Las CA deben comprobarlos antes de emitir.
+@ Certificados
+
+? ¿Qué cabecera HTTP obliga al navegador a utilizar siempre HTTPS con un dominio durante un tiempo determinado?
+a) Content-Security-Policy
+b) X-Frame-Options
+c) Referrer-Policy
+d) Strict-Transport-Security
+= d
+> Mitiga el SSL stripping. La lista preload lo aplica desde la primera visita.
+@ Seguridad TLS
+
+? ¿Qué mejora ofrece OCSP stapling?
+a) El servidor adjunta una respuesta OCSP firmada reciente, evitando que el cliente consulte a la CA
+b) Cifra el certificado
+c) Renueva el certificado
+d) Bloquea el tráfico
+= a
+> Mejora el rendimiento y la privacidad.
+@ Seguridad TLS
+
+? ¿Qué vulnerabilidad de OpenSSL de 2014 permitía leer porciones de memoria del servidor?
+a) POODLE
+b) BEAST
+c) Shellshock
+d) Heartbleed
+= d
+> Afectaba a la extensión heartbeat de TLS.
+@ Seguridad TLS
+
+? ¿Qué ataque explotaba SSL 3.0 con relleno CBC para descifrar información?
+a) POODLE
+b) Heartbleed
+c) Smurf
+d) Teardrop
+= a
+> Motivó la prohibición de SSL 3.0.
+@ Seguridad TLS
+
+? ¿Qué es el SSL stripping?
+a) Un ataque en el que se fuerza a la víctima a comunicarse en HTTP en lugar de HTTPS
+b) El cifrado de TLS
+c) La renovación de certificados
+d) Un tipo de certificado
+= a
+> HSTS lo mitiga.
+@ Seguridad TLS
+
+? ¿Qué es un ataque de degradación (downgrade)?
+a) Reducir el ancho de banda
+b) Eliminar certificados
+c) Disminuir la prioridad de un proceso
+d) Forzar el uso de una versión o suite de cifrado más débil
+= d
+> TLS 1.3 incorpora protecciones frente a downgrade.
+@ Seguridad TLS
+
+? ¿Qué comando de OpenSSL permite probar una conexión TLS a un servidor y ver su certificado?
+a) openssl s_client -connect servidor:443
+b) openssl genrsa
+c) openssl enc
+d) openssl dgst
+= a
+> Es la herramienta clásica de diagnóstico.
+@ Herramientas
+
+? ¿Qué protocolo adapta TLS al transporte UDP?
+a) STARTTLS
+b) SSH
+c) DTLS
+d) IPsec
+= c
+> Se usa en WebRTC y VPN sobre UDP.
+@ TLS
+
+? ¿Qué hace el mecanismo STARTTLS en protocolos como SMTP o IMAP?
+a) Una versión de TLS
+b) Un certificado
+c) Una cabecera HTTP
+d) Un comando que convierte una conexión en claro (por ejemplo SMTP o IMAP) en una conexión cifrada con TLS
+= d
+> Evita usar un puerto distinto para la versión cifrada.
+@ TLS
+
+? ¿Qué es la terminación TLS?
+a) Descifrar el tráfico TLS en un balanceador o proxy inverso y reenviar el tráfico internamente
+b) Cerrar la conexión TLS
+c) Revocar un certificado
+d) Eliminar un certificado
+= a
+> El tráfico interno puede volver a cifrarse (TLS de extremo a extremo).
+@ TLS
+
+? ¿Qué mejora introduce QUIC respecto a TCP + TLS?
+a) Elimina el cifrado
+b) Integra transporte y TLS 1.3 sobre UDP, reduce la latencia de conexión y evita el bloqueo de cabecera entre flujos
+c) Usa solo IPv4
+d) Es solo para correo
+= b
+> Es la base de HTTP/3.
+@ HTTP

@@ -596,10 +596,10 @@ d) TCP 389
 
 ? ¿Qué protocolo de transporte y puerto emplea NTP para sincronizar los relojes de los equipos?
 a) UDP 53
-b) UDP 123
-c) TCP 110
+b) TCP 110
+c) UDP 123
 d) UDP 161
-= b
+= c
 > Es crítico en Kerberos y en la correlación de logs.
 @ Puertos
 
