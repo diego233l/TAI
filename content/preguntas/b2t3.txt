@@ -1,0 +1,514 @@
+// Tema 12 (B2·T3) · Tipos abstractos y estructuras de datos. Organizaciones de ficheros. Algoritmos. Formatos de información
+
+? ¿Qué es un tipo abstracto de datos (TAD)?
+a) Una implementación concreta de una estructura en un lenguaje
+b) Un tipo primitivo del lenguaje
+c) Un fichero binario
+d) Una especificación de valores y operaciones independiente de su implementación
+= d
+> El TAD define qué operaciones se pueden hacer, no cómo se implementan (encapsulación y ocultación de información).
+@ TAD
+
+? ¿Qué política de acceso sigue una pila?
+a) LIFO
+b) FIFO
+c) Por prioridad
+d) Aleatoria
+= a
+> En una pila el último elemento insertado es el primero en salir (Last In, First Out).
+@ Pilas
+
+? Si se ejecuta push(1), push(2), pop(), push(3), pop(), ¿qué elemento queda en la pila?
+a) 2
+b) 3
+c) 1
+d) Ninguno
+= c
+> Pila: [1] → [1,2] → pop saca 2 → [1] → push 3 → [1,3] → pop saca 3 → [1].
+@ Pilas
+
+? ¿Qué estructura es la más adecuada para gestionar una cola de trabajos de impresión por orden de llegada?
+a) Pila
+b) Cola (FIFO)
+c) Árbol AVL
+d) Grafo
+= b
+> La cola sirve primero al elemento que llegó antes.
+@ Colas
+
+? ¿Cuál es la complejidad de acceder a un elemento de un array por su índice?
+a) O(1)
+b) O(log n)
+c) O(n)
+d) O(n²)
+= a
+> Los elementos contiguos permiten calcular la dirección directamente: acceso en tiempo constante.
+@ Arrays
+
+? ¿Qué ventaja tiene una lista enlazada frente a un array?
+a) Acceso aleatorio por índice en O(1)
+b) Inserción y borrado eficientes (O(1)) conocido el nodo, sin desplazar elementos
+c) Menor consumo de memoria por elemento
+d) Mejor localidad de caché
+= b
+> En una lista no hay que desplazar elementos, pero el acceso por posición es O(n) y cada nodo gasta memoria en punteros.
+@ Listas
+
+? En una tabla hash, la situación en la que dos claves distintas generan la misma posición se llama:
+a) Desbordamiento
+b) Colisión
+c) Rehashing
+d) Interpolación
+= b
+> Las colisiones se resuelven por encadenamiento o direccionamiento abierto (sondeo lineal, cuadrático, doble hash).
+@ Tablas hash
+
+? ¿Cuál es la complejidad media de buscar un elemento en una tabla hash bien dimensionada?
+a) O(log n)
+b) O(n)
+c) O(1)
+d) O(n log n)
+= c
+> Tiempo constante en promedio; el peor caso es O(n) si todas las claves colisionan.
+@ Tablas hash
+
+? ¿Qué estructura se usa para implementar eficientemente una cola de prioridad?
+a) Pila
+b) Montículo (heap)
+c) Lista circular simple
+d) Tabla hash
+= b
+> El heap permite insertar y extraer el máximo/mínimo en O(log n).
+@ Colas de prioridad
+
+? En un árbol, ¿cómo se llama un nodo sin hijos?
+a) Hoja
+b) Raíz
+c) Rama interna
+d) Subárbol
+= a
+> Las hojas no tienen descendientes; la raíz no tiene padre.
+@ Árboles
+
+? ¿Cuál es el máximo número de nodos de un árbol binario de altura 3 (altura contada en aristas desde la raíz hasta la hoja más profunda)?
+a) 7
+b) 8
+c) 15
+d) 16
+= c
+> Máximo 2^(h+1) − 1 = 2⁴ − 1 = 15 (1 + 2 + 4 + 8).
+@ Árboles binarios
+
+? El recorrido inorden de un árbol binario de búsqueda produce las claves:
+a) En orden ascendente
+b) En orden descendente
+c) En orden de inserción
+d) En orden aleatorio
+= a
+> Izquierdo → raíz → derecho recorre las claves de menor a mayor.
+@ ABB
+
+? Dado un árbol con raíz A, hijo izquierdo B, hijo derecho C, y B con hijos D (izquierdo) y E (derecho), ¿cuál es su recorrido en preorden?
+a) D B E A C
+b) A B D E C
+c) D E B C A
+d) A B C D E
+= b
+> Preorden: raíz, subárbol izquierdo, subárbol derecho.
+@ Recorridos
+
+? Con el mismo árbol (raíz A; B con hijos D y E; C), el recorrido en postorden es:
+a) D B E A C
+b) A B D E C
+c) D E B C A
+d) A C B E D
+= c
+> Postorden: subárbol izquierdo, subárbol derecho y raíz.
+@ Recorridos
+
+? ¿Qué recorrido de un árbol utiliza una cola?
+a) Preorden
+b) Inorden
+c) Por niveles (anchura)
+d) Postorden
+= c
+> El recorrido en anchura (BFS) se implementa con una cola; el de profundidad usa pila o recursión.
+@ Recorridos
+
+? ¿Cuál es la complejidad de buscar en un árbol binario de búsqueda totalmente degenerado (cada nodo con un solo hijo)?
+a) O(1)
+b) O(log n)
+c) O(n²)
+d) O(n)
+= d
+> Un ABB degenerado equivale a una lista enlazada.
+@ ABB
+
+? ¿Qué condición mantiene un árbol AVL?
+a) Todas las hojas están al mismo nivel
+b) La diferencia de alturas entre los subárboles de cada nodo es como máximo 1
+c) Los nodos son siempre rojos o negros
+d) Cada nodo tiene exactamente dos hijos
+= b
+> El AVL se reequilibra con rotaciones simples o dobles. Los árboles B mantienen todas las hojas al mismo nivel; los rojo-negro usan colores.
+@ AVL
+
+? ¿Qué tipo de árbol es la base de la mayoría de los índices de bases de datos?
+a) Árbol binario simple
+b) Trie
+c) Árbol B / B+
+d) Árbol de expansión
+= c
+> Los árboles B/B+ son multicamino y equilibrados, y minimizan los accesos a disco.
+@ Árboles B
+
+? ¿Qué característica distingue al árbol B+ del árbol B?
+a) Solo admite claves numéricas
+b) Todos los datos se almacenan en las hojas, que se enlazan entre sí
+c) No está equilibrado
+d) Cada nodo tiene exactamente dos claves
+= b
+> Esto facilita las consultas por rango y los recorridos secuenciales.
+@ Árboles B+
+
+? ¿Qué es un montículo (heap) máximo?
+a) Un ABB donde el hijo izquierdo es siempre mayor
+b) Un array ordenado de menor a mayor
+c) Un árbol binario completo en el que cada nodo es mayor o igual que sus hijos
+d) Un grafo conexo
+= c
+> En el max-heap la raíz es el máximo; se emplea en heapsort y en colas de prioridad.
+@ Heap
+
+? ¿Cómo se denomina un grafo dirigido sin ciclos?
+a) DAG
+b) Árbol binario
+c) Grafo completo
+d) Multigrafo
+= a
+> Directed Acyclic Graph. Admite ordenación topológica.
+@ Grafos
+
+? ¿Qué representación de grafos es más eficiente en espacio para grafos dispersos?
+a) Matriz de adyacencia
+b) Lista de adyacencia
+c) Matriz de incidencia siempre
+d) Tabla hash de vértices con matriz completa
+= b
+> La lista de adyacencia ocupa O(V+E); la matriz de adyacencia ocupa O(V²).
+@ Grafos
+
+? ¿Qué estructura de datos se usa para implementar un recorrido en anchura (BFS) de un grafo?
+a) Pila
+b) Cola
+c) Montículo
+d) Árbol B
+= b
+> BFS explora por capas con una cola; DFS usa pila (o recursión).
+@ Grafos
+
+? ¿Qué algoritmo calcula los caminos mínimos desde un vértice origen en un grafo con pesos no negativos?
+a) Kruskal
+b) Prim
+c) Dijkstra
+d) Floyd-Warshall únicamente
+= c
+> Dijkstra requiere pesos no negativos. Bellman-Ford admite pesos negativos; Floyd-Warshall calcula todos los pares.
+@ Grafos
+
+? ¿Qué algoritmos obtienen un árbol de expansión de coste mínimo?
+a) Dijkstra y Bellman-Ford
+b) BFS y DFS
+c) Kruskal y Prim
+d) Quicksort y Heapsort
+= c
+> Kruskal (ordena aristas y evita ciclos) y Prim (crece desde un vértice) son algoritmos voraces.
+@ Grafos
+
+? ¿Qué notación asintótica expresa una cota superior del tiempo de ejecución?
+a) Ω
+b) O
+c) Θ
+d) ω
+= b
+> O(f) acota por arriba (peor caso); Ω por abajo; Θ es cota ajustada.
+@ Complejidad
+
+? ¿Cuál de las siguientes complejidades crece más rápido?
+a) O(n log n)
+b) O(n²)
+c) O(n³)
+d) O(2ⁿ)
+= d
+> El crecimiento exponencial supera al polinómico para n suficientemente grande.
+@ Complejidad
+
+? ¿Qué complejidad temporal tiene la búsqueda binaria?
+a) O(log n)
+b) O(1)
+c) O(n)
+d) O(n log n)
+= a
+> Cada comparación descarta la mitad de los elementos; requiere datos ordenados y acceso directo.
+@ Búsqueda
+
+? ¿Cuál es el peor caso del algoritmo quicksort?
+a) O(n)
+b) O(n log n)
+c) O(2ⁿ)
+d) O(n²)
+= d
+> Ocurre con pivotes muy desequilibrados (por ejemplo, datos ya ordenados con pivote en un extremo). El caso medio es O(n log n).
+@ Ordenación
+
+? ¿Qué algoritmo de ordenación garantiza O(n log n) en todos los casos y es estable, a costa de memoria auxiliar?
+a) Quicksort
+b) Heapsort
+c) Mergesort
+d) Burbuja
+= c
+> Mergesort divide y vence, mezcla las mitades ordenadas y usa O(n) de memoria extra.
+@ Ordenación
+
+? ¿Qué significa que un algoritmo de ordenación sea estable?
+a) Que nunca falla
+b) Que mantiene el orden relativo de los elementos con claves iguales
+c) Que consume memoria constante
+d) Que su tiempo no depende de la entrada
+= b
+> Burbuja, inserción y mergesort son estables; selección, quicksort y heapsort no lo son (en sus versiones habituales).
+@ Ordenación
+
+? ¿Cuál es la cota inferior de complejidad para ordenar n elementos mediante comparaciones?
+a) Ω(n)
+b) Ω(n log n)
+c) Ω(n²)
+d) Ω(log n)
+= b
+> Un árbol de decisión de n! hojas necesita altura log₂(n!) ≈ n log n.
+@ Ordenación
+
+? ¿Qué algoritmo de ordenación es lineal para claves enteras en un rango acotado?
+a) Quicksort
+b) Heapsort
+c) Counting sort
+d) Burbuja
+= c
+> Counting, radix y bucket no comparan elementos y logran O(n+k).
+@ Ordenación
+
+? ¿Cuál de los siguientes algoritmos tiene mejor caso O(n) cuando la entrada ya está ordenada?
+a) Selección
+b) Inserción
+c) Mergesort
+d) Heapsort
+= b
+> Inserción solo compara cada elemento con su predecesor si ya está ordenado.
+@ Ordenación
+
+? ¿Qué condiciones debe tener toda función recursiva para terminar?
+a) Un caso base y avanzar hacia él en cada llamada recursiva
+b) No tener parámetros
+c) Usar solo variables globales
+d) Llamarse a sí misma incondicionalmente
+= a
+> Sin caso base se produce recursión infinita y desbordamiento de pila.
+@ Recursividad
+
+? ¿Qué técnica convierte el cálculo recursivo ingenuo de Fibonacci de O(2ⁿ) a O(n)?
+a) Búsqueda binaria
+b) Quicksort
+c) Memoización o programación dinámica
+d) Hashing
+= c
+> Almacenar resultados de subproblemas solapados evita recalcularlos.
+@ Programación dinámica
+
+? ¿Qué técnica de diseño de algoritmos resuelve un problema dividiéndolo en subproblemas independientes y combinando las soluciones?
+a) Divide y vencerás
+b) Voraz
+c) Fuerza bruta
+d) Backtracking
+= a
+> Ejemplos: mergesort, quicksort, búsqueda binaria.
+@ Diseño de algoritmos
+
+? ¿A qué técnica pertenece el problema de las n reinas?
+a) Voraz
+b) Vuelta atrás (backtracking)
+c) Divide y vencerás
+d) Memoización exclusivamente
+= b
+> Se construye la solución paso a paso y se retrocede al detectar una restricción incumplida.
+@ Diseño de algoritmos
+
+? ¿Qué técnica elige en cada paso la opción localmente óptima, como hacen Kruskal o Huffman?
+a) Backtracking
+b) Fuerza bruta
+c) Divide y vencerás
+d) Voraz (greedy)
+= d
+> Los algoritmos voraces no reconsideran decisiones; son óptimos en ciertos problemas.
+@ Diseño de algoritmos
+
+? En ficheros, ¿qué es el factor de bloqueo?
+a) El tiempo de acceso a disco
+b) El número de ficheros por directorio
+c) El número de registros que caben en un bloque
+d) La compresión aplicada al fichero
+= c
+> Se calcula como tamaño de bloque / tamaño de registro (parte entera).
+@ Ficheros
+
+? ¿Qué organización de ficheros es más adecuada para recorrer todos los registros de principio a fin?
+a) Directa por hash
+b) Indexada densa
+c) Secuencial
+d) Árbol B únicamente
+= c
+> La organización secuencial es eficiente para tratamiento por lotes, pero mala para accesos aleatorios.
+@ Ficheros
+
+? En una organización directa (hash), ¿qué problema aparece cuando dos claves se transforman en la misma dirección?
+a) Fragmentación externa
+b) Inversión de prioridad
+c) Colisión
+d) Interbloqueo
+= c
+> Se tratan con zonas de desbordamiento o direccionamiento abierto.
+@ Ficheros
+
+? ¿Qué es un índice denso?
+a) El que tiene una entrada por cada registro del fichero de datos
+b) El que tiene una entrada por bloque
+c) El que no necesita ordenarse
+d) El que se almacena en memoria RAM exclusivamente
+= a
+> El disperso (no denso) contiene una entrada por bloque y requiere datos ordenados.
+@ Ficheros
+
+? ¿Qué organización combina un fichero de datos ordenado con un índice y una zona de desbordamiento?
+a) Secuencial indexada (ISAM)
+b) Secuencial pura
+c) Directa por hash
+d) Invertida
+= a
+> ISAM (Indexed Sequential Access Method) permite acceso secuencial y directo.
+@ Ficheros
+
+? ¿Qué formato de datos admite objetos, arrays, cadenas, números, booleanos y null, pero no comentarios?
+a) XML
+b) JSON
+c) YAML
+d) CSV
+= b
+> JSON (RFC 8259) es un formato de intercambio ligero. YAML sí admite comentarios.
+@ Formatos
+
+? ¿Cuándo se dice que un documento XML está «bien formado»?
+a) Cuando cumple las reglas sintácticas de XML (una raíz, etiquetas anidadas y cerradas…)
+b) Cuando valida contra un esquema XSD
+c) Cuando está firmado
+d) Cuando ocupa menos de 1 MB
+= a
+> «Válido» significa además que cumple una DTD o esquema (XSD).
+@ XML
+
+? ¿Qué lenguaje se usa para transformar documentos XML a otros formatos?
+a) XPath
+b) XSD
+c) XSLT
+d) XQuery únicamente
+= c
+> XSLT transforma XML; XPath selecciona nodos; XSD describe la estructura.
+@ XML
+
+? ¿Cuál es el formato de documento ofimático estandarizado como ISO/IEC 26300?
+a) OOXML
+b) RTF
+c) DOC binario
+d) ODF (OpenDocument)
+= d
+> ODF: ODT, ODS, ODP. OOXML (DOCX, XLSX, PPTX) es ISO/IEC 29500.
+@ Formatos ofimáticos
+
+? ¿Qué formato es ISO/IEC 29500?
+a) ODF
+b) PDF
+c) OOXML
+d) PDF/A
+= c
+> Office Open XML. PDF es ISO 32000 y PDF/A, ISO 19005.
+@ Formatos ofimáticos
+
+? Los ficheros .docx, .xlsx y .pptx son en realidad:
+a) Ficheros binarios propietarios sin estructura
+b) Paquetes ZIP que contienen XML y recursos
+c) Ficheros de texto plano
+d) Imágenes comprimidas
+= b
+> Un OOXML es un contenedor ZIP con partes XML; por eso empiezan por «PK».
+@ Formatos ofimáticos
+
+? ¿Qué es Base64?
+a) Un algoritmo de cifrado simétrico
+b) Un algoritmo de compresión sin pérdida
+c) Una codificación de binario a texto que representa 3 bytes con 4 caracteres
+d) Un formato de imagen
+= c
+> No ofrece confidencialidad. Aumenta el tamaño en torno a un 33 %.
+@ Codificaciones
+
+? ¿Qué formato de imagen utiliza compresión con pérdida?
+a) PNG
+b) GIF
+c) TIFF sin compresión
+d) JPEG
+= d
+> JPEG descarta información de color/detalle; PNG y GIF no pierden información (GIF limita a 256 colores).
+@ Formatos de imagen
+
+? ¿Qué formato de archivo agrupa varios ficheros pero por sí mismo no comprime?
+a) ZIP
+b) 7z
+c) GZIP
+d) TAR
+= d
+> TAR solo empaqueta; se combina con gzip (tar.gz) para comprimir.
+@ Archivado
+
+? ¿Qué es Parquet?
+a) Un formato de audio sin pérdida
+b) Un lenguaje de consultas
+c) Un protocolo de red
+d) Un formato de almacenamiento columnar para análisis de datos
+= d
+> Parquet y ORC son formatos columnares de ecosistema big data (Hadoop, Spark).
+@ Formatos de datos
+
+? ¿Qué firma electrónica avanzada se aplica a documentos XML?
+a) CAdES
+b) PAdES
+c) XAdES
+d) S/MIME
+= c
+> XAdES (XML), CAdES (CMS) y PAdES (PDF).
+@ Formatos de firma
+
+? Un fichero que comienza por los bytes «%PDF» es, con mayor probabilidad, un:
+a) Ejecutable de Windows
+b) Fichero ZIP
+c) Imagen PNG
+d) Documento PDF
+= d
+> Los primeros bytes («número mágico») identifican el formato: PE empieza por «MZ», ZIP por «PK» y PNG por 89 50 4E 47.
+@ Formatos
+
+? El Esquema Nacional de Interoperabilidad exige, para el intercambio de información, el uso preferente de:
+a) Formatos propietarios del proveedor
+b) Solo estándares de uso generalizado
+c) Formatos binarios no documentados
+d) Estándares abiertos y, de forma complementaria, estándares de uso generalizado
+= d
+> Art. 11 ENI. La NTI de Catálogo de estándares relaciona los formatos admitidos.
+@ RD 4/2010 art. 11

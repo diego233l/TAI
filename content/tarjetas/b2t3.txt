@@ -1,0 +1,45 @@
+TAD :: Especificación de valores y operaciones independiente de la implementación (encapsulación).
+Pila :: LIFO: push, pop, top. Usos: llamadas, recursión, deshacer, expresiones postfijas.
+Cola :: FIFO: enqueue, dequeue. Usos: planificación, buffers, impresión.
+Cola de prioridad :: Sale el de mayor prioridad; se implementa con un heap (O(log n)).
+Array frente a lista enlazada :: Array: acceso O(1), inserción O(n). Lista: inserción O(1) conocido el nodo, acceso O(n).
+Tabla hash :: Función hash; acceso O(1) medio; colisiones por encadenamiento o direccionamiento abierto.
+Altura y nodos de un árbol binario :: Máximo 2^(h+1) − 1 nodos; en el nivel k, 2ᵏ.
+Recorridos de árboles :: Preorden (R-I-D), inorden (I-R-D), postorden (I-D-R), por niveles con cola.
+ABB :: Izquierda menores, derecha mayores; inorden = claves ordenadas; búsqueda O(log n) equilibrado, O(n) degenerado.
+AVL :: Diferencia de alturas de subárboles ≤ 1; rotaciones simples y dobles.
+Árbol B y B+ :: Multicamino equilibrado, hojas al mismo nivel; base de los índices. En B+ los datos están en hojas enlazadas.
+Heap (montículo) :: Árbol binario completo; max-heap o min-heap; base de heapsort y colas de prioridad.
+Grafo :: G = (V, E); dirigido o no, ponderado, conexo. DAG = dirigido acíclico.
+Representación de grafos :: Matriz de adyacencia O(V²); lista de adyacencia O(V+E).
+BFS y DFS :: BFS: anchura, cola. DFS: profundidad, pila o recursión.
+Algoritmos de grafos :: Dijkstra (pesos ≥ 0), Bellman-Ford (negativos), Floyd-Warshall (todos los pares), Kruskal y Prim (AEM), orden topológico (DAG).
+Notación asintótica :: O cota superior; Ω cota inferior; Θ cota ajustada.
+Órdenes de complejidad :: O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n³) < O(2ⁿ) < O(n!).
+Burbuja, selección e inserción :: O(n²) medio; burbuja e inserción estables; selección no estable; inserción mejor caso O(n).
+Mergesort :: O(n log n) siempre; estable; memoria auxiliar O(n).
+Quicksort :: O(n log n) medio; O(n²) peor caso; no estable; in situ.
+Heapsort :: O(n log n); no estable; in situ.
+Ordenación lineal :: Counting, radix y bucket: O(n+k), no comparativos.
+Cota de la ordenación por comparaciones :: Ω(n log n).
+Búsqueda :: Secuencial O(n); binaria O(log n) con datos ordenados; hash O(1) medio.
+Recursividad :: Caso base + caso recursivo; usa la pila de llamadas. Fibonacci ingenuo O(2ⁿ); con memoización O(n).
+Técnicas de diseño :: Divide y vencerás, voraz, programación dinámica, backtracking, ramificación y poda, fuerza bruta.
+Campo, registro y fichero :: Campo: dato elemental. Registro: conjunto de campos. Fichero: conjunto de registros. Factor de bloqueo: registros por bloque.
+Organización secuencial :: Registros uno tras otro; eficiente para procesar todo; mala para acceso aleatorio.
+Organización directa :: Posición calculada con la clave (hash); acceso rápido; problema de colisiones.
+Índice denso y disperso :: Denso: una entrada por registro. Disperso: una por bloque (datos ordenados).
+ISAM y VSAM :: Secuencial indexada: datos ordenados + índice + zona de desbordamiento; VSAM usa árbol B.
+CSV :: Valores separados por comas (en España suele usarse punto y coma).
+JSON :: RFC 8259: objetos, arrays, cadenas, números, booleanos y null; sin comentarios.
+XML bien formado y válido :: Bien formado: sintaxis correcta. Válido: además cumple DTD o XSD. XSLT transforma; XPath selecciona.
+YAML :: Basado en indentación; superconjunto de JSON; admite comentarios.
+ODF y OOXML :: ODF ISO/IEC 26300 (ODT, ODS, ODP). OOXML ISO/IEC 29500 (DOCX, XLSX, PPTX, contenedores ZIP).
+PDF y PDF/A :: PDF = ISO 32000. PDF/A = ISO 19005 para archivo a largo plazo.
+Formatos de imagen :: JPEG con pérdida; PNG y TIFF sin pérdida; GIF 256 colores; SVG vectorial.
+ZIP, TAR y GZIP :: ZIP y GZIP comprimen; TAR solo agrupa (tar.gz = agrupa y comprime).
+Números mágicos :: %PDF, PK (ZIP/DOCX), FF D8 (JPEG), 89 50 4E 47 (PNG), 7F 45 4C 46 (ELF), MZ (PE).
+Base64 :: Codifica 3 bytes en 4 caracteres ASCII (+33 %); no es cifrado.
+Firmas XAdES, CAdES y PAdES :: Para XML, CMS (binario) y PDF respectivamente.
+Parquet, ORC y Avro :: Formatos de serialización/almacenamiento para big data (Parquet y ORC columnares).
+Estándares abiertos (ENI art. 11) :: Preferentes; de uso generalizado de forma complementaria; NTI de Catálogo de estándares.

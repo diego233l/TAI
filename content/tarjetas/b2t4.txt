@@ -1,0 +1,46 @@
+Funciones del SO :: Gestión de procesos, memoria, E/S y ficheros; seguridad y protección; interfaz de usuario; contabilidad.
+Tipos de núcleo :: Monolítico (Linux, con módulos), microkernel (Minix, QNX), híbrido (Windows NT, XNU de macOS).
+Modo usuario y modo kernel :: Los programas piden servicios al núcleo mediante llamadas al sistema (system calls).
+Proceso e hilo :: Proceso: programa en ejecución con su PCB y espacio propio. Hilo: unidad de ejecución que comparte los recursos del proceso.
+Estados de un proceso :: Nuevo, listo, en ejecución, bloqueado/espera y terminado.
+Algoritmos de planificación :: FCFS, SJF/SRTF (mínimo tiempo medio de espera), Round Robin (quantum), prioridades (inanición → aging), colas multinivel con realimentación.
+Condiciones de Coffman :: Exclusión mutua, retención y espera, no expropiación y espera circular.
+Tratamiento del interbloqueo :: Prevención, evitación (algoritmo del banquero), detección y recuperación.
+Semáforo :: Variable con operaciones P (wait) y V (signal) para exclusión mutua y sincronización (Dijkstra).
+Paginación y segmentación :: Paginación: bloques de tamaño fijo, sin fragmentación externa. Segmentación: bloques lógicos de tamaño variable.
+Reemplazo de páginas :: FIFO (anomalía de Belady), LRU, óptimo (teórico), reloj. Thrashing: exceso de fallos de página.
+Fragmentación :: Interna: espacio sin usar dentro de la unidad asignada. Externa: huecos libres no contiguos.
+Journaling :: Registro previo de operaciones para recuperar la consistencia del sistema de ficheros (NTFS, ext4, XFS).
+FAT32 y exFAT :: FAT32: fichero máximo 4 GiB − 1 B. exFAT: ficheros grandes en medios extraíbles.
+NTFS :: ACL, cifrado EFS, compresión, cuotas, journaling, enlaces simbólicos/duros.
+ext4 :: Sistema de ficheros por defecto de muchas distribuciones Linux; journaling y extents.
+Requisitos de Windows 11 :: UEFI con Secure Boot, TPM 2.0, 4 GB de RAM, 64 GB de disco, CPU de 64 bits compatible.
+Fin de soporte de Windows 10 :: 14 de octubre de 2025.
+Registro de Windows :: HKLM (máquina), HKCU (usuario actual), HKCR, HKU, HKCC. Editor: regedit.
+Herramientas de Windows :: taskmgr, eventvwr, services.msc, gpedit.msc, diskmgmt.msc, perfmon, msconfig; sfc /scannow; DISM; chkdsk.
+PowerShell :: Shell y lenguaje orientado a objetos (.NET); cmdlets Verbo-Sustantivo (Get-Process).
+Seguridad en Windows :: UAC, BitLocker (TPM), EFS, Microsoft Defender, Windows Hello, AppLocker, Secure Boot.
+Permisos NTFS :: Se acumulan; Denegar prevalece; en recursos compartidos prevalece el más restrictivo entre compartición y NTFS.
+Despliegue y actualización en Windows :: Windows Update, WSUS, MECM/SCCM, Intune, Autopilot. WSL: Linux sobre Windows.
+FHS :: /etc configuración; /var datos variables y logs; /home usuarios; /root superusuario; /dev dispositivos; /proc y /sys virtuales; /boot núcleo; /tmp temporales.
+Arranque de Linux :: BIOS/UEFI → GRUB2 → núcleo + initramfs → systemd (PID 1) → targets.
+Niveles de ejecución SysV :: 0 apagar; 1 monousuario; 3 multiusuario texto; 5 gráfico; 6 reinicio.
+systemctl :: start, stop, restart, enable (arranque automático), disable, status; journalctl para logs.
+Ficheros de usuarios :: /etc/passwd (cuentas), /etc/shadow (hashes, solo root), /etc/group; UID 0 = root; visudo edita /etc/sudoers.
+Permisos en octal :: r=4, w=2, x=1. 754 = rwxr-xr--; 644 = rw-r--r--; 755 = rwxr-xr-x.
+umask :: Se resta de 666 (ficheros) y 777 (directorios). umask 022 → 644 y 755.
+Permisos especiales :: SUID 4000 (ejecuta como propietario), SGID 2000, sticky bit 1000 (solo el propietario borra en /tmp).
+Permisos en directorios :: x: entrar; r: listar; w: crear o borrar entradas.
+Comandos de texto :: cat, less, head, tail -f, grep, wc, sort, uniq, cut, awk, sed, diff.
+Comandos de disco :: df -h (sistemas de ficheros), du -sh (directorios), mount, umount, lsblk, fdisk, mkfs, fsck.
+Procesos en Linux :: ps aux, top, htop, kill -15 (SIGTERM), kill -9 (SIGKILL), nice (−20 a 19), nohup, jobs, bg, fg.
+Redirecciones :: > sobrescribe; >> añade; < entrada; 2> errores; | tubería; tee.
+Enlaces :: Duro: mismo inodo (no entre sistemas de ficheros ni directorios). Simbólico: contiene la ruta destino.
+cron :: minuto hora día-mes mes día-semana; */5 * * * * = cada 5 minutos.
+Gestores de paquetes :: Debian/Ubuntu: apt, dpkg (.deb). Red Hat: dnf, yum, rpm. SUSE: zypper. Arch: pacman.
+MAC en Linux :: SELinux (Red Hat) y AppArmor (Ubuntu, SUSE).
+Android :: Núcleo Linux; AOSP; ART; APK/AAB; sandbox por aplicación; Google Play.
+iOS :: Darwin/XNU; código cerrado; App Store; sandbox; Secure Enclave.
+Root y jailbreak :: Eliminan las restricciones del sistema móvil y reducen su seguridad.
+MDM / UEM :: Gestión centralizada de dispositivos: inscripción, políticas, borrado remoto, cifrado (Intune, Workspace ONE).
+Modelos de dispositivos corporativos :: BYOD (personal), COPE (corporativo con uso personal), COBO (solo corporativo).

@@ -1,0 +1,550 @@
+// Tema 13 (B2·T4) · Sistemas operativos: conceptos, Windows, Unix/Linux y móviles
+
+? ¿Qué mecanismo utilizan los programas en modo usuario para solicitar servicios al núcleo?
+a) Los accesos directos al hardware
+b) Las llamadas al sistema (system calls)
+c) Los saltos a la BIOS
+d) Los registros de la MMU
+= b
+> Las system calls cambian a modo privilegiado de forma controlada.
+@ Núcleo
+
+? ¿Qué tipo de núcleo es el de Linux?
+a) Monolítico con módulos cargables
+b) Microkernel puro
+c) Exokernel
+d) Híbrido con subsistemas en modo usuario
+= a
+> Linux es monolítico, pero permite cargar y descargar módulos (controladores). Windows NT y XNU son híbridos.
+@ Núcleo
+
+? ¿Qué diferencia fundamental existe entre un proceso y un hilo?
+a) Un hilo siempre es un proceso independiente
+b) Los procesos comparten memoria entre sí por defecto
+c) No hay diferencia
+d) Los hilos de un proceso comparten espacio de direcciones y recursos
+= d
+> Los hilos son más ligeros porque comparten memoria, ficheros abiertos y recursos del proceso.
+@ Procesos
+
+? ¿Cuál es la secuencia lógica de estados de un proceso que se crea, se ejecuta y termina?
+a) Listo, nuevo, terminado, ejecución
+b) Nuevo, listo, en ejecución, terminado (con posibles bloqueos)
+c) Bloqueado, nuevo, terminado
+d) En ejecución, nuevo, listo
+= b
+> Estados: nuevo, listo, en ejecución, bloqueado/espera y terminado.
+@ Procesos
+
+? ¿Qué algoritmo de planificación asigna a cada proceso un quantum de tiempo y es expulsivo?
+a) FCFS
+b) SJF no expulsivo
+c) Prioridades estáticas sin envejecimiento
+d) Round Robin
+= d
+> Round Robin reparte la CPU en cuantos de tiempo, de forma circular.
+@ Planificación
+
+? ¿Qué algoritmo de planificación minimiza el tiempo medio de espera (si se conocen las duraciones)?
+a) FCFS
+b) Round Robin
+c) LIFO
+d) SJF (primero el trabajo más corto)
+= d
+> SJF es óptimo en tiempo medio de espera, pero puede provocar inanición de los trabajos largos.
+@ Planificación
+
+? ¿Qué problema puede provocar un planificador por prioridades estricta y cómo se mitiga?
+a) Fragmentación; con compactación
+b) Hiperpaginación; con swap
+c) Inanición; se mitiga con el envejecimiento (aging)
+d) Colisiones; con hashing
+= c
+> Los procesos de baja prioridad pueden no ejecutarse nunca; el aging aumenta gradualmente su prioridad.
+@ Planificación
+
+? ¿Cuál de las siguientes NO es una condición de Coffman para el interbloqueo?
+a) Exclusión mutua
+b) Expropiación (preemption) de recursos
+c) Retención y espera
+d) Espera circular
+= b
+> Para que haya deadlock debe darse la NO expropiación (los recursos no se pueden quitar). Las cuatro: exclusión mutua, retención y espera, no expropiación y espera circular.
+@ Interbloqueo
+
+? ¿Qué algoritmo evita el interbloqueo comprobando que el sistema permanece en un estado seguro?
+a) Round Robin
+b) LRU
+c) El algoritmo del banquero
+d) Dijkstra
+= c
+> El algoritmo del banquero (Dijkstra) concede recursos solo si existe una secuencia segura.
+@ Interbloqueo
+
+? ¿Qué es un semáforo en el contexto de la concurrencia?
+a) Un tipo de interrupción
+b) Una variable protegida que controla el acceso a recursos compartidos mediante operaciones P y V (wait/signal)
+c) Un registro de la CPU
+d) Un algoritmo de reemplazo de páginas
+= b
+> Fueron propuestos por Dijkstra para lograr exclusión mutua y sincronización.
+@ Sincronización
+
+? ¿Cuál es el problema que aparece cuando un proceso pasa la mayor parte del tiempo gestionando fallos de página?
+a) Inanición
+b) Condición de carrera
+c) Hiperpaginación (thrashing)
+d) Fragmentación externa
+= c
+> Ocurre cuando los procesos no tienen suficientes marcos y el sistema apenas progresa.
+@ Memoria
+
+? ¿Qué algoritmo de reemplazo de páginas puede sufrir la anomalía de Belady?
+a) LRU
+b) Óptimo
+c) Segunda oportunidad con bits
+d) FIFO
+= d
+> Con FIFO, aumentar el número de marcos puede aumentar los fallos de página. LRU y el óptimo son algoritmos de pila y no la sufren.
+@ Memoria
+
+? En un sistema paginado, ¿qué tipo de fragmentación puede aparecer?
+a) Interna en la última página de cada proceso
+b) Solo externa
+c) Ninguna en absoluto
+d) Solo en disco
+= a
+> La paginación elimina la fragmentación externa, pero la última página puede quedar parcialmente vacía.
+@ Memoria
+
+? ¿Qué característica tiene el sistema de ficheros FAT32 respecto al tamaño de fichero?
+a) Máximo 2 TiB
+b) Máximo 4 GiB menos 1 byte
+c) Ilimitado
+d) Máximo 640 KiB
+= b
+> FAT32 limita los ficheros a 4 GiB − 1 B. exFAT elimina esta restricción práctica.
+@ Sistemas de ficheros
+
+? ¿Qué sistema de ficheros de Windows ofrece ACL, cifrado EFS, compresión y cuotas?
+a) FAT32
+b) exFAT
+c) ISO 9660
+d) NTFS
+= d
+> NTFS es el sistema de ficheros estándar de Windows para volúmenes del sistema.
+@ NTFS
+
+? ¿Qué técnica permite recuperar la consistencia de un sistema de ficheros tras un fallo registrando previamente las operaciones?
+a) Swapping
+b) Striping
+c) Journaling
+d) Caching de escritura diferida
+= c
+> NTFS, ext4 y XFS son sistemas de ficheros con journaling.
+@ Sistemas de ficheros
+
+? ¿Cuáles son los requisitos mínimos de seguridad para instalar Windows 11 en un equipo?
+a) BIOS heredada y TPM 1.0
+b) UEFI con Secure Boot y TPM 2.0
+c) Solo 2 GB de RAM
+d) Un procesador de 32 bits
+= b
+> Windows 11 exige UEFI con Secure Boot, TPM 2.0, 4 GB de RAM, 64 GB de almacenamiento y CPU de 64 bits compatible.
+@ Windows
+
+? ¿Qué rama del Registro de Windows contiene la configuración específica del usuario que ha iniciado sesión?
+a) HKEY_LOCAL_MACHINE
+b) HKEY_CLASSES_ROOT
+c) HKEY_CURRENT_USER
+d) HKEY_CURRENT_CONFIG
+= c
+> HKCU almacena preferencias del usuario actual; HKLM la configuración de la máquina.
+@ Windows
+
+? ¿Qué herramienta de Windows se usa para comprobar y reparar los ficheros protegidos del sistema?
+a) sfc /scannow
+b) chkdsk
+c) ipconfig /flushdns
+d) gpupdate
+= a
+> System File Checker. DISM repara la imagen de Windows; chkdsk revisa el disco.
+@ Windows
+
+? ¿Qué es PowerShell?
+a) Un antivirus
+b) Un editor de registro
+c) Un hipervisor
+d) Un intérprete de comandos y lenguaje de scripting orientado a objetos basado en .NET
+= d
+> Sus cmdlets siguen el esquema Verbo-Sustantivo y transmiten objetos por la tubería.
+@ Windows
+
+? ¿Cuál de las siguientes es un cmdlet válido de PowerShell para listar procesos?
+a) ListProcess
+b) ps -ef
+c) Get-Process
+d) Show-Task
+= c
+> Get-Process devuelve objetos de proceso. Existe el alias ps, pero el cmdlet es Get-Process.
+@ Windows
+
+? ¿Qué componente de Windows solicita confirmación o credenciales cuando un programa requiere privilegios administrativos?
+a) BitLocker
+b) UAC
+c) Hyper-V
+d) WSUS
+= b
+> User Account Control. BitLocker cifra volúmenes; WSUS distribuye actualizaciones.
+@ Windows
+
+? ¿Qué tecnología de Windows cifra volúmenes completos usando, normalmente, el chip TPM?
+a) EFS
+b) BitLocker
+c) AppLocker
+d) Windows Hello
+= b
+> EFS cifra ficheros individuales; BitLocker, el volumen completo.
+@ Windows
+
+? ¿Qué servicio de Microsoft permite aprobar y distribuir actualizaciones de Windows en una red corporativa?
+a) WSL
+b) WSUS
+c) DISM
+d) RDP
+= b
+> Windows Server Update Services; también se usan MECM/SCCM e Intune.
+@ Windows
+
+? Si un usuario es miembro de dos grupos y uno tiene permiso «Denegar» sobre un recurso NTFS y otro «Permitir», el resultado es:
+a) Permitir
+b) Se aplica el del primer grupo alfabéticamente
+c) Se aplica el más antiguo
+d) Denegar, porque Denegar prevalece
+= d
+> Los permisos se acumulan, pero las denegaciones explícitas tienen precedencia.
+@ Windows
+
+? Cuando un recurso se comparte en red, el acceso efectivo del usuario es:
+a) El permiso de compartición únicamente
+b) El permiso NTFS únicamente
+c) La combinación más restrictiva entre el permiso de compartición y el NTFS
+d) La combinación menos restrictiva
+= c
+> Si la compartición da «Lectura» y NTFS «Control total», el usuario solo podrá leer en red.
+@ Windows
+
+? ¿Qué directorio de Linux contiene los ficheros de configuración del sistema?
+a) /etc
+b) /bin
+c) /var
+d) /dev
+= a
+> /etc agrupa la configuración. /var contiene datos variables (logs); /dev, los dispositivos.
+@ Linux
+
+? ¿Dónde se almacenan normalmente los registros (logs) del sistema en Linux?
+a) /etc/log
+b) /usr/log
+c) /var/log
+d) /boot/log
+= c
+> /var/log contiene syslog, auth.log, messages, etc.
+@ Linux
+
+? ¿Qué contiene el directorio /proc en Linux?
+a) Programas de usuario
+b) Copias de seguridad
+c) Los ficheros temporales
+d) Un sistema de ficheros virtual con información de procesos y del núcleo
+= d
+> /proc y /sys exponen información del kernel y de los procesos como ficheros virtuales.
+@ Linux
+
+? ¿Qué proceso tiene siempre el PID 1 en un sistema Linux moderno?
+a) bash
+b) systemd (o init)
+c) kthreadd
+d) cron
+= b
+> Es el primer proceso de espacio de usuario y padre de los demás.
+@ Linux
+
+? ¿Qué comando de systemd arranca un servicio inmediatamente?
+a) systemctl enable nombre
+b) systemctl mask nombre
+c) systemctl daemon-reload
+d) systemctl start nombre
+= d
+> start lo arranca ahora; enable lo habilita en el arranque.
+@ Linux
+
+? ¿Qué comando de systemd permite que un servicio se inicie automáticamente en el arranque?
+a) systemctl start
+b) systemctl status
+c) systemctl reload
+d) systemctl enable
+= d
+> enable crea los enlaces necesarios en el target correspondiente.
+@ Linux
+
+? ¿Qué fichero almacena los hashes de las contraseñas de los usuarios en Linux?
+a) /etc/passwd
+b) /etc/shadow
+c) /etc/group
+d) /etc/hosts
+= b
+> /etc/shadow solo es legible por root; /etc/passwd contiene datos de cuenta legibles por todos.
+@ Linux
+
+? ¿Qué permisos tiene un fichero con modo octal 754?
+a) rwxr-xr--
+b) rwxrwxr--
+c) rw-r-xr--
+d) r-xr-xr--
+= a
+> 7 = rwx (propietario), 5 = r-x (grupo), 4 = r-- (otros).
+@ Permisos
+
+? ¿Qué modo octal corresponde a rw-r--r--?
+a) 600
+b) 664
+c) 755
+d) 644
+= d
+> rw- = 6; r-- = 4; r-- = 4.
+@ Permisos
+
+? ¿Qué efecto tiene la máscara umask 022 al crear un directorio nuevo?
+a) 644
+b) 700
+c) 755
+d) 777
+= c
+> Los directorios parten de 777; restando 022 queda 755. Los ficheros parten de 666 → 644.
+@ Permisos
+
+? ¿Qué hace el bit SUID en un ejecutable?
+a) Impide su ejecución
+b) Lo hace invisible
+c) Se ejecuta con los privilegios de su propietario
+d) Obliga a que se ejecute como root siempre
+= c
+> Es el caso de /usr/bin/passwd. El SGID aplica el grupo propietario; el sticky bit protege borrados en directorios.
+@ Permisos
+
+? ¿Para qué sirve el sticky bit en un directorio como /tmp?
+a) Para impedir que se creen ficheros
+b) Para que solo el propietario de un fichero (o root) pueda borrarlo o renombrarlo
+c) Para cifrar el contenido
+d) Para ejecutar los ficheros como root
+= b
+> Se muestra como «t» en los permisos (drwxrwxrwt).
+@ Permisos
+
+? ¿Qué permiso es necesario sobre un directorio para poder entrar en él (cd) y acceder a sus ficheros?
+a) r
+b) w
+c) x
+d) s
+= c
+> x permite atravesar el directorio; r, listar su contenido; w, crear o borrar entradas.
+@ Permisos
+
+? ¿Qué comando cambia el propietario y el grupo de un fichero?
+a) chmod
+b) chattr
+c) umask
+d) chown
+= d
+> chown usuario:grupo fichero. chmod cambia permisos.
+@ Linux
+
+? ¿Qué comando muestra el espacio libre y usado de los sistemas de ficheros montados?
+a) du
+b) ls -l
+c) free
+d) df -h
+= d
+> df informa por sistema de ficheros; du calcula el uso de ficheros/directorios; free muestra la memoria.
+@ Linux
+
+? ¿Qué comando muestra el espacio utilizado por un directorio y su contenido?
+a) df
+b) du -sh
+c) mount
+d) lsblk
+= b
+> du (disk usage) con -s resume y -h usa unidades legibles.
+@ Linux
+
+? ¿Qué señal envía por defecto el comando kill sin opciones?
+a) SIGKILL (9)
+b) SIGTERM (15)
+c) SIGHUP (1)
+d) SIGSTOP (19)
+= b
+> SIGTERM solicita terminar de forma ordenada; SIGKILL (-9) fuerza la terminación y no puede ser capturada.
+@ Linux
+
+? ¿Qué rango de valores admite el valor «nice» de un proceso en Linux?
+a) 0 a 255
+b) −128 a 127
+c) −20 a 19
+d) 1 a 100
+= c
+> −20 es la prioridad más alta y 19 la más baja.
+@ Linux
+
+? ¿Cuál es la diferencia entre un enlace duro y uno simbólico?
+a) El duro apunta al mismo inodo; el simbólico es un fichero que contiene la ruta destino
+b) El simbólico apunta al mismo inodo y el duro a una ruta
+c) Son idénticos
+d) El duro solo funciona entre sistemas de ficheros distintos
+= a
+> Los enlaces duros no cruzan sistemas de ficheros ni se permiten sobre directorios; los simbólicos sí.
+@ Linux
+
+? ¿Qué hace el comando «ls -l | grep txt > salida.log»?
+a) Filtra salida.log con grep
+b) Borra los ficheros txt
+c) Muestra el contenido de salida.log
+d) Lista y filtra las líneas con «txt», guardando el resultado en salida.log
+= d
+> | enlaza la salida de ls con grep; > redirige la salida a un fichero (sobrescribiéndolo).
+@ Linux
+
+? ¿Qué operador de redirección añade la salida al final de un fichero sin sobrescribirlo?
+a) >
+b) <
+c) >>
+d) |
+= c
+> > sobrescribe, >> añade, < toma la entrada de un fichero, | encadena comandos.
+@ Linux
+
+? ¿Qué valor de código de retorno ($?) indica ejecución correcta de un comando en Linux?
+a) 1
+b) −1
+c) 0
+d) 255
+= c
+> Cualquier valor distinto de 0 indica error o situación especial.
+@ Linux
+
+? En un crontab, ¿qué significa la expresión «*/5 * * * *»?
+a) Cada 5 minutos
+b) Cada 5 horas
+c) El día 5 de cada mes
+d) A las 5:00
+= a
+> Campos: minuto, hora, día del mes, mes y día de la semana.
+@ Linux
+
+? ¿Qué gestor de paquetes se usa en Debian y Ubuntu?
+a) rpm
+b) pacman
+c) zypper
+d) apt (dpkg)
+= d
+> Paquetes .deb con apt/dpkg. Red Hat y derivadas usan rpm/dnf/yum; Arch, pacman; SUSE, zypper.
+@ Linux
+
+? ¿Qué sistema de control de acceso obligatorio (MAC) se emplea habitualmente en distribuciones basadas en Red Hat?
+a) AppArmor
+b) PAM
+c) ACL de POSIX
+d) SELinux
+= d
+> SELinux (desarrollado con la NSA). AppArmor es habitual en Ubuntu y SUSE.
+@ Linux
+
+? ¿Qué carga el cargador de arranque GRUB2 en el arranque de Linux?
+a) El navegador
+b) El núcleo y, normalmente, el initramfs
+c) El entorno gráfico
+d) El registro de Windows
+= b
+> Luego el núcleo monta el sistema raíz y lanza systemd.
+@ Linux
+
+? ¿Qué fichero describe los sistemas de ficheros que deben montarse en el arranque en Linux?
+a) /etc/fstab
+b) /etc/hosts
+c) /boot/grub.cfg únicamente
+d) /proc/mounts como configuración
+= a
+> /etc/fstab lista dispositivos, puntos de montaje, tipo, opciones y orden de comprobación.
+@ Linux
+
+? ¿Qué comando muestra las últimas líneas de un fichero y sigue mostrando las nuevas conforme se añaden?
+a) head -n 10
+b) tail -f
+c) cat -n
+d) less -x
+= b
+> tail -f se usa para seguir logs en tiempo real.
+@ Linux
+
+? ¿Con qué herramienta se edita de forma segura el fichero /etc/sudoers?
+a) vi directamente con otro usuario
+b) nano sin comprobación
+c) gedit
+d) visudo
+= d
+> visudo bloquea el fichero y comprueba la sintaxis antes de guardar.
+@ Linux
+
+? ¿Qué núcleo utiliza Android?
+a) Darwin/XNU
+b) Windows NT
+c) FreeBSD
+d) Un núcleo Linux modificado
+= d
+> Android se basa en Linux; iOS en Darwin/XNU.
+@ Móviles
+
+? ¿Cómo se denomina el entorno de ejecución de aplicaciones en Android moderno?
+a) JVM de Oracle exclusivamente
+b) CLR de .NET
+c) Dalvik exclusivamente
+d) ART (Android Runtime)
+= d
+> ART sustituyó a Dalvik y compila las aplicaciones anticipadamente (AOT) y bajo demanda (JIT).
+@ Móviles
+
+? ¿Qué mecanismo de Android aísla cada aplicación asignándole su propio identificador de usuario?
+a) Sandbox de aplicaciones
+b) BitLocker
+c) Secure Boot de Windows
+d) Spooler
+= a
+> Cada app se ejecuta en un proceso aislado y los permisos sensibles se piden al usuario.
+@ Móviles
+
+? ¿Qué se conoce como «jailbreak» en dispositivos iOS?
+a) Eliminar las restricciones del sistema para ejecutar software no autorizado, comprometiendo su seguridad
+b) Cifrar el dispositivo
+c) Actualizar el sistema
+d) Restaurar de fábrica
+= a
+> El equivalente en Android es el rooting. Ambos debilitan el modelo de seguridad.
+@ Móviles
+
+? ¿Qué es un MDM/UEM?
+a) Un sistema de gestión centralizada de dispositivos móviles y otros puestos (inscripción, políticas, borrado remoto)
+b) Un protocolo de red inalámbrica
+c) Un sistema de ficheros
+d) Una arquitectura de CPU
+= a
+> Ejemplos: Microsoft Intune y VMware Workspace ONE.
+@ Móviles
+
+? Un modelo en el que el empleado usa su dispositivo personal para tareas de trabajo se denomina:
+a) BYOD
+b) COBO
+c) COPE
+d) VDI
+= a
+> Bring Your Own Device. COPE: dispositivo corporativo de uso personal permitido; COBO: solo uso corporativo.
+@ Móviles
