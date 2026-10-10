@@ -594,7 +594,7 @@ d) TCP 389
 > También puede usarse TCP y TLS (6514).
 @ Puertos
 
-? ¿Qué puerto usa NTP?
+? ¿Qué protocolo de transporte y puerto emplea NTP para sincronizar los relojes de los equipos?
 a) UDP 53
 b) UDP 123
 c) TCP 110
