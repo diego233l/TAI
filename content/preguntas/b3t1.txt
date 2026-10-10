@@ -1,0 +1,397 @@
+// Tema 15 (B3·T1) · Modelado de datos, diseño de bases de datos y normalización
+
+? ¿Cuál es el orden correcto de las fases clásicas del diseño de una base de datos?
+a) Análisis de requisitos, diseño conceptual, diseño lógico, diseño físico
+b) Diseño físico, diseño lógico, diseño conceptual
+c) Diseño lógico, análisis de requisitos, diseño físico, diseño conceptual
+d) Implementación, diseño conceptual, análisis de requisitos
+= a
+> Se parte de los requisitos, se obtiene el esquema conceptual (E/R), después el lógico (relacional) y por último el físico (dependiente del SGBD).
+@ Diseño de BD
+
+? El diseño conceptual de una base de datos es independiente de:
+a) El problema real
+b) Los requisitos de usuario
+c) Las reglas de negocio
+d) El SGBD y el modelo de datos concreto
+= d
+> Se expresa con modelos como E/R o diagramas de clases y no depende del producto ni del modelo lógico.
+@ Diseño de BD
+
+? ¿Qué se decide en el diseño físico de una base de datos?
+a) Las entidades y sus relaciones del dominio
+b) Índices, tipos de datos, particionado y almacenamiento en el SGBD concreto
+c) Los requisitos funcionales del usuario
+d) Las dependencias funcionales del dominio
+= b
+> El diseño físico depende del SGBD e incluye parámetros de rendimiento y almacenamiento.
+@ Diseño físico
+
+? ¿Quién propuso el modelo entidad-relación?
+a) E. F. Codd
+b) Grady Booch
+c) Peter Chen
+d) Ralph Kimball
+= c
+> Peter Chen, 1976. Codd propuso el modelo relacional (1970); Kimball, el modelado dimensional.
+@ Modelo E/R
+
+? En el modelo E/R, una entidad débil es aquella que:
+a) No puede identificarse únicamente por sus propios atributos y depende de otra entidad para ello
+b) No tiene atributos
+c) Tiene cardinalidad 1:1
+d) Es una relación entre tres entidades
+= a
+> Por ejemplo, la línea de pedido depende del pedido; su clave incluye la clave del pedido.
+@ Modelo E/R
+
+? Un atributo que puede calcularse a partir de otros (por ejemplo, la edad a partir de la fecha de nacimiento) se denomina:
+a) Compuesto
+b) Derivado
+c) Multivaluado
+d) Identificador
+= b
+> En el paso a tablas normalmente no se almacena y se calcula.
+@ Modelo E/R
+
+? Un atributo «teléfono» que puede tener varios valores para un mismo empleado es:
+a) Compuesto
+b) Multivaluado
+c) Derivado
+d) Clave
+= b
+> En el modelo relacional requiere una tabla aparte (1FN).
+@ Modelo E/R
+
+? Una relación entre una entidad consigo misma, como «un empleado dirige a otros empleados», es:
+a) Ternaria
+b) Reflexiva (unaria)
+c) Débil
+d) Jerárquica 1:1 obligatoriamente
+= b
+> Las relaciones reflexivas se implementan con una FK a la misma tabla (o tabla intermedia si es N:M).
+@ Modelo E/R
+
+? ¿Cómo se transforma una relación N:M entre dos entidades en el modelo relacional?
+a) Añadiendo una clave foránea en cualquiera de las tablas
+b) Creando una tabla intermedia cuya clave primaria combina las claves de ambas entidades
+c) Fusionando las dos tablas
+d) Ignorándola en el esquema lógico
+= b
+> La tabla intermedia puede incluir atributos propios de la relación.
+@ Paso a relacional
+
+? En una relación 1:N entre DEPARTAMENTO y EMPLEADO (un departamento tiene muchos empleados), la clave foránea se coloca en:
+a) La tabla DEPARTAMENTO
+b) La tabla EMPLEADO
+c) En ambas tablas
+d) En una tabla nueva obligatoriamente
+= b
+> La FK se coloca en el lado N y referencia la PK del lado 1.
+@ Paso a relacional
+
+? ¿Qué cardinalidad (mínima, máxima) expresa «un empleado debe pertenecer exactamente a un departamento»?
+a) (0,1)
+b) (0,N)
+c) (1,N)
+d) (1,1)
+= d
+> Mínimo 1 (participación total) y máximo 1.
+@ Cardinalidades
+
+? Una participación total de una entidad en una relación implica que:
+a) La cardinalidad mínima es 0
+b) La relación es siempre 1:1
+c) Todo ejemplar de la entidad participa al menos una vez en la relación (mínimo 1)
+d) La entidad es débil
+= c
+> La participación parcial equivale a mínimo 0.
+@ Cardinalidades
+
+? ¿Cómo se implementa un atributo multivaluado en el modelo relacional?
+a) Con una tabla adicional que contiene la clave de la entidad y el valor del atributo
+b) Concatenando los valores en una columna
+c) Repitiendo la columna varias veces
+d) No puede implementarse
+= a
+> Los atributos deben ser atómicos (1FN).
+@ Paso a relacional
+
+? En la transformación de una jerarquía de generalización (supertipo y subtipos), ¿cuál es una opción válida?
+a) Una única tabla para todos los tipos con un atributo discriminador
+b) Una tabla por cada subtipo, sin supertipo
+c) Una tabla para el supertipo y otra por subtipo con la misma clave
+d) Todas las anteriores son opciones de transformación válidas
+= d
+> Las tres opciones tienen ventajas e inconvenientes en integridad, redundancia y número de joins.
+@ Paso a relacional
+
+? ¿Qué es una dependencia funcional X → Y?
+a) Que X e Y tienen el mismo tipo
+b) Que Y es una clave foránea de X
+c) Que X contiene a Y
+d) Que cada valor de X determina un único valor de Y
+= d
+> Si dos filas tienen el mismo valor de X, deben tener el mismo valor de Y.
+@ Dependencias
+
+? Una dependencia funcional parcial aparece cuando:
+a) Un atributo no clave depende de otro atributo no clave
+b) Un atributo no clave depende solo de una parte de la clave primaria compuesta
+c) Todos los atributos dependen de la clave completa
+d) La tabla tiene una única columna
+= b
+> Su eliminación conduce a la 2FN.
+@ Dependencias
+
+? Una dependencia funcional transitiva se da cuando:
+a) Un atributo no clave depende de otro atributo no clave que a su vez depende de la clave
+b) Un atributo depende de una parte de la clave
+c) La clave es compuesta
+d) Existe un atributo multivaluado
+= a
+> Si A → B y B → C (B no clave), entonces C depende transitivamente de A. Su eliminación conduce a la 3FN.
+@ Dependencias
+
+? ¿Qué propiedad enuncia que si Y es subconjunto de X entonces X → Y?
+a) Aumentación
+b) Transitividad
+c) Reflexividad
+d) Pseudotransitividad
+= c
+> Son los axiomas de Armstrong: reflexividad, aumentación y transitividad.
+@ Axiomas de Armstrong
+
+? ¿Cuál es el objetivo principal de la normalización?
+a) Maximizar siempre el rendimiento de las consultas
+b) Reducir la redundancia y evitar anomalías de inserción, borrado y actualización
+c) Reducir el número de tablas
+d) Eliminar las claves foráneas
+= b
+> A costa, a veces, de un mayor número de uniones en las consultas.
+@ Normalización
+
+? Una tabla está en primera forma normal (1FN) cuando:
+a) No existen dependencias parciales
+b) No hay dependencias transitivas
+c) Todos sus atributos son atómicos (sin grupos repetitivos ni multivaluados)
+d) Cada determinante es clave candidata
+= c
+> La 1FN exige valores indivisibles y ausencia de grupos repetitivos.
+@ Normalización
+
+? Una tabla en 1FN está en 2FN si:
+a) Ningún atributo no clave depende parcialmente de una clave candidata
+b) No tiene atributos multivaluados
+c) No tiene dependencias transitivas
+d) Todo determinante es clave
+= a
+> La 2FN solo puede violarse con claves compuestas.
+@ Normalización
+
+? ¿Qué tablas están siempre en 2FN si están en 1FN?
+a) Las que tienen claves compuestas
+b) Las de clave primaria simple (un solo atributo)
+c) Las que tienen atributos multivaluados
+d) Ninguna
+= b
+> Con clave simple no hay dependencias parciales posibles.
+@ Normalización
+
+? Una tabla está en 3FN cuando:
+a) Está en 1FN y tiene claves simples
+b) Todos los atributos son claves
+c) Está en 2FN y no tiene dependencias transitivas de atributos no clave respecto de la clave
+d) No tiene claves foráneas
+= c
+> La 3FN: cada atributo no clave depende de la clave, de toda la clave y nada más que de la clave.
+@ Normalización
+
+? ¿Qué condición define la forma normal de Boyce-Codd (FNBC)?
+a) Todo determinante de una dependencia funcional es clave candidata
+b) No existen atributos nulos
+c) Toda columna es clave
+d) No hay dependencias multivaluadas
+= a
+> BCNF es más estricta que la 3FN: permite dependencias solo si el determinante es superclave.
+@ Normalización
+
+? ¿Qué forma normal elimina las dependencias multivaluadas?
+a) 2FN
+b) 3FN
+c) 1FN
+d) 4FN
+= d
+> La cuarta forma normal exige estar en FNBC y no tener dependencias multivaluadas no triviales.
+@ Normalización
+
+? Dada PEDIDO_LINEA(idPedido, idProducto, nombreProducto, cantidad) con clave primaria (idPedido, idProducto), el atributo nombreProducto:
+a) Cumple la 2FN
+b) Viola la 1FN
+c) Viola la 2FN porque depende solo de idProducto
+d) Viola la 3FN únicamente
+= c
+> idProducto → nombreProducto es una dependencia parcial. Se separa en una tabla PRODUCTO.
+@ Normalización
+
+? Dada EMPLEADO(idEmp, nombre, idDpto, nombreDpto), con idEmp clave, la dependencia idDpto → nombreDpto indica que:
+a) Se viola la 1FN
+b) Se viola la 2FN
+c) Se viola la 3FN por dependencia transitiva
+d) Se cumple la FNBC
+= c
+> idEmp → idDpto → nombreDpto. Se resuelve creando DEPARTAMENTO(idDpto, nombreDpto).
+@ Normalización
+
+? Una tabla con columna «telefonos» que contiene «91111, 92222» viola:
+a) La 2FN
+b) La 3FN
+c) La 1FN
+d) La FNBC únicamente
+= c
+> Los valores no son atómicos.
+@ Normalización
+
+? ¿Cuándo se realiza una desnormalización controlada?
+a) Nunca, es un error de diseño
+b) Para eliminar claves primarias
+c) Para mejorar el rendimiento de ciertas consultas, aceptando cierta redundancia
+d) Para cumplir la 1FN
+= c
+> Es habitual en el diseño físico y en almacenes de datos.
+@ Desnormalización
+
+? Una descomposición con «reunión sin pérdida» garantiza que:
+a) Se conservan todas las dependencias funcionales siempre
+b) Al reunir las tablas descompuestas se recupera exactamente la relación original, sin tuplas espurias
+c) Se reducen las tablas a una sola
+d) Se eliminan todos los índices
+= b
+> Es la propiedad esencial de una buena descomposición.
+@ Normalización
+
+? ¿Qué anomalía se produce cuando no se puede insertar un dato (por ejemplo, un departamento) hasta que exista otro dato no relacionado (un empleado)?
+a) De actualización
+b) De inserción
+c) De borrado
+d) De lectura
+= b
+> Es consecuencia de mezclar en una tabla hechos independientes.
+@ Anomalías
+
+? ¿Qué anomalía implica perder información no relacionada al eliminar una fila?
+a) De borrado
+b) De inserción
+c) De actualización
+d) De concurrencia
+= a
+> Por ejemplo, borrar el último empleado de un departamento elimina también los datos del departamento.
+@ Anomalías
+
+? ¿Qué anomalía obliga a modificar un mismo dato en muchas filas?
+a) De inserción
+b) De borrado
+c) De actualización
+d) De integridad referencial
+= c
+> Genera inconsistencias si se olvida alguna fila.
+@ Anomalías
+
+? ¿Qué notación de diagramas E/R representa las relaciones con «patas de gallo» para indicar la cardinalidad N?
+a) Chen
+b) Crow's Foot (pata de gallo)
+c) Gantt
+d) Nassi-Shneiderman
+= b
+> Es la notación habitual de herramientas como ERwin o MySQL Workbench.
+@ Notaciones
+
+? En UML, ¿qué diagrama se utiliza para representar clases y sus asociaciones, y puede servir como modelo conceptual de datos?
+a) Diagrama de clases
+b) Diagrama de secuencia
+c) Diagrama de casos de uso
+d) Diagrama de despliegue
+= a
+> Las multiplicidades de las asociaciones equivalen a las cardinalidades del E/R.
+@ UML
+
+? ¿Qué modelo se utiliza en el modelado dimensional de Kimball?
+a) Modelo de red
+b) Esquema en estrella con tablas de hechos y de dimensiones
+c) Modelo jerárquico
+d) 5FN estricta
+= b
+> Es la base de los data marts y almacenes de datos para análisis.
+@ Modelado dimensional
+
+? ¿Qué metodología de la Administración española utiliza el modelo entidad-relación en sus actividades de análisis y diseño de sistemas de información?
+a) PRINCE2
+b) Scrum
+c) MÉTRICA v3
+d) COBIT
+= c
+> MÉTRICA versión 3 define procesos de planificación, desarrollo y mantenimiento de sistemas de información.
+@ Metodologías
+
+? ¿Qué restricción de SQL se utiliza para implementar una regla de negocio de valor, como «el importe debe ser mayor que cero»?
+a) PRIMARY KEY
+b) CHECK
+c) FOREIGN KEY
+d) DEFAULT
+= b
+> CHECK limita los valores de una columna o fila; otras reglas complejas se implementan con disparadores.
+@ Reglas de negocio
+
+? ¿Cuál es el efecto de definir una clave foránea con ON DELETE CASCADE?
+a) Impide borrar la fila padre si tiene hijos
+b) Pone a NULL las claves foráneas
+c) Ignora la integridad referencial
+d) Borra automáticamente las filas hijas al borrar la fila padre
+= d
+> Alternativas: RESTRICT/NO ACTION, SET NULL, SET DEFAULT.
+@ Integridad referencial
+
+? Un identificador compuesto por varios atributos en una entidad débil suele incluir:
+a) Solo un atributo propio
+b) La clave de la entidad fuerte de la que depende más un discriminador propio
+c) Un número aleatorio
+d) Ninguna clave
+= b
+> La clave de la entidad débil es la combinación de la clave de la fuerte y el discriminador.
+@ Entidades débiles
+
+? En una relación 1:1 con participación total en una de las entidades, la clave foránea se suele colocar en:
+a) La tabla de la entidad con participación parcial
+b) La tabla de la entidad con participación total
+c) En una tercera tabla siempre
+d) En ninguna
+= b
+> Así se evita la aparición de nulos al ser obligatoria la relación.
+@ Paso a relacional
+
+? Una relación ternaria (tres entidades) se transforma, en general, en:
+a) Tres claves foráneas en la tabla de una de las entidades
+b) Se divide siempre en tres relaciones binarias equivalentes
+c) Una tabla con las claves de las tres entidades
+d) Se elimina
+= c
+> La clave de la tabla depende de las cardinalidades de la relación.
+@ Paso a relacional
+
+? Si una tabla tiene una clave candidata simple y está en 3FN, ¿en qué otra forma normal está seguro?
+a) En FNBC
+b) Solo en 2FN
+c) En 5FN
+d) En ninguna otra
+= a
+> Con una única clave candidata (y en 3FN) todo determinante es clave, por lo que se cumple la FNBC.
+@ Normalización
+
+? ¿Qué es un diccionario de datos en la fase de diseño?
+a) Un listado de palabras clave de SQL
+b) Una tabla del sistema operativo
+c) Una herramienta de copia de seguridad
+d) La documentación de entidades, atributos, tipos, restricciones y reglas de la base de datos
+= d
+> También se llama catálogo cuando lo mantiene el SGBD.
+@ Documentación

@@ -1,0 +1,451 @@
+// Tema 16 (B3·T2) · Lenguajes de programación: tipos, operadores, control, subprogramas, vectores y estructura
+
+? ¿A qué generación de lenguajes pertenece SQL?
+a) Primera generación
+b) Cuarta generación
+c) Segunda generación
+d) Tercera generación
+= b
+> Los lenguajes de cuarta generación (4GL) son de muy alto nivel y declarativos, como SQL o los generadores de informes.
+@ Generaciones
+
+? ¿Qué paradigma de programación predomina en Haskell, Lisp o F#?
+a) Funcional
+b) Imperativo
+c) Orientado a objetos
+d) Lógico
+= a
+> En el paradigma funcional los programas se construyen con funciones y se evitan los efectos secundarios.
+@ Paradigmas
+
+? ¿Qué paradigma representa Prolog?
+a) Funcional
+b) Orientado a eventos
+c) Lógico
+d) Estructurado
+= c
+> Prolog se basa en hechos y reglas lógicas y en la resolución mediante inferencia.
+@ Paradigmas
+
+? Un lenguaje de tipado dinámico es aquel en el que:
+a) Los tipos se comprueban en tiempo de compilación
+b) No existen tipos
+c) Solo se admiten enteros
+d) Los tipos de las variables se comprueban en tiempo de ejecución
+= d
+> Python y JavaScript son de tipado dinámico; Java y C#, de tipado estático.
+@ Tipado
+
+? ¿Cómo se ejecuta normalmente un programa Java?
+a) Se compila a código nativo específico para cada procesador y se ejecuta directamente
+b) Se interpreta línea a línea desde el código fuente sin compilar
+c) Se traduce a CIL y lo ejecuta el CLR
+d) Se compila a bytecode que ejecuta la JVM
+= d
+> La JVM interpreta o compila con JIT el bytecode. El CIL y el CLR corresponden a .NET.
+@ Traducción
+
+? ¿Cuál es la fase del compilador que divide el código fuente en tokens?
+a) Análisis sintáctico
+b) Análisis léxico
+c) Análisis semántico
+d) Generación de código
+= b
+> Léxico (tokens) → sintáctico (árbol) → semántico (tipos y ámbitos) → generación y optimización de código.
+@ Compiladores
+
+? ¿Qué componente se encarga de combinar los módulos objeto y bibliotecas para generar el ejecutable?
+a) El depurador
+b) El enlazador (linker)
+c) El preprocesador
+d) El cargador (loader)
+= b
+> El cargador es el que sitúa el programa ejecutable en memoria para su ejecución.
+@ Compiladores
+
+? ¿Qué lenguaje es un superconjunto tipado de JavaScript que se compila a JavaScript?
+a) Kotlin
+b) TypeScript
+c) Dart
+d) CoffeeScript
+= b
+> TypeScript añade tipado estático opcional a JavaScript.
+@ Lenguajes
+
+? ¿Cuál es el rango del tipo int en Java?
+a) −32.768 a 32.767
+b) −2⁶³ a 2⁶³ − 1
+c) 0 a 2³² − 1
+d) −2³¹ a 2³¹ − 1
+= d
+> int ocupa 32 bits con signo (complemento a 2). short: 16 bits; long: 64 bits.
+@ Tipos de datos
+
+? ¿Qué tamaño tiene el tipo char en Java?
+a) 8 bits
+b) 32 bits
+c) 16 bits
+d) 64 bits
+= c
+> char es un valor Unicode de 16 bits (UTF-16).
+@ Tipos de datos
+
+? ¿Cuál es el resultado de la expresión entera 7 / 2 en Java o C?
+a) 3,5
+b) 3
+c) 4
+d) 3,0
+= b
+> La división entre enteros es entera y trunca la parte decimal.
+@ Operadores
+
+? ¿Cuál es el valor de 7 % 3 en C o Java?
+a) 2
+b) 0
+c) 1
+d) 3
+= c
+> 7 = 2·3 + 1. El operador % devuelve el resto.
+@ Operadores
+
+? ¿Cuál es el resultado de −7 / 2 en Java (división entera)?
+a) −4
+b) −3,5
+c) −3
+d) 3
+= c
+> En Java y C la división entera trunca hacia cero. En Python, −7 // 2 es −4.
+@ Operadores
+
+? ¿Qué devuelve la conversión explícita (int) 3.7 en Java o C?
+a) 4
+b) 3,7
+c) 3
+d) Error de compilación
+= c
+> El casting a int trunca la parte decimal (no redondea).
+@ Conversión
+
+? Con evaluación en cortocircuito, en la expresión (x != 0 && 10 / x > 1), cuando x vale 0:
+a) Se produce una división por cero
+b) El resultado es verdadero
+c) No se evalúa la segunda parte y el resultado es falso
+d) Es un error de sintaxis
+= c
+> En A && B, si A es falso, B no se evalúa.
+@ Operadores
+
+? ¿Cuál es la diferencia entre i++ e ++i?
+a) No hay diferencia
+b) ++i devuelve el valor anterior
+c) i++ devuelve el valor anterior y luego incrementa; ++i incrementa y devuelve el nuevo valor
+d) i++ solo se usa en bucles
+= c
+> Con i = 5, x = i++ deja x = 5 e i = 6; con x = ++i, x = 6 e i = 6.
+@ Operadores
+
+? ¿Qué valor tiene x tras int x = 5; x += 3; x *= 2;?
+a) 13
+b) 16
+c) 11
+d) 10
+= b
+> 5 + 3 = 8; 8 × 2 = 16.
+@ Operadores
+
+? ¿Qué hace el operador x << 2 sobre un entero positivo sin desbordamiento?
+a) Lo divide entre 4
+b) Lo multiplica por 2
+c) Lo multiplica por 4
+d) Lo eleva al cuadrado
+= c
+> Cada desplazamiento a la izquierda multiplica por 2.
+@ Operadores
+
+? ¿Cuál es el resultado de 0.1 + 0.2 == 0.3 en la mayoría de los lenguajes con coma flotante binaria?
+a) Verdadero
+b) Error de compilación
+c) Falso, por errores de representación
+d) Depende solo del sistema operativo
+= c
+> Por eso se comparan reales con una tolerancia (épsilon).
+@ Tipos de datos
+
+? ¿Qué teorema indica que todo programa puede escribirse con secuencia, selección e iteración?
+a) Teorema de Shannon
+b) Teorema CAP
+c) Teorema de Pitágoras
+d) Teorema de Böhm-Jacopini
+= d
+> Fundamenta la programación estructurada, que prescinde de GOTO.
+@ Programación estructurada
+
+? ¿Qué diferencia hay entre while y do-while?
+a) while se ejecuta al menos una vez
+b) No hay diferencia
+c) do-while no admite condición
+d) do-while evalúa la condición al final, por lo que se ejecuta al menos una vez
+= d
+> while puede no ejecutarse ninguna vez.
+@ Control
+
+? ¿Qué ocurre en un switch de C o Java si un case no termina con break?
+a) Se produce un error de compilación
+b) Se sale del switch automáticamente
+c) La ejecución continúa en el siguiente case (fall-through)
+d) Se reinicia el switch
+= c
+> Puede usarse intencionadamente para agrupar casos, pero suele ser fuente de errores.
+@ Control
+
+? ¿Qué valor final tiene s tras s = 0; for (i = 1; i <= 4; i++) s += i;?
+a) 4
+b) 6
+c) 10
+d) 24
+= c
+> 1 + 2 + 3 + 4 = 10.
+@ Trazas
+
+? ¿Con qué valor termina i tras i = 10; while (i > 0) i -= 3;?
+a) −2
+b) 0
+c) 1
+d) −3
+= a
+> 10 → 7 → 4 → 1 → −2. Se detiene cuando i ya no es mayor que cero.
+@ Trazas
+
+? ¿Cuántas veces se ejecuta el cuerpo del bucle for (i = 0; i < 5; i++)?
+a) 4
+b) 5
+c) 6
+d) Infinitas
+= b
+> i toma los valores 0, 1, 2, 3 y 4.
+@ Trazas
+
+? ¿Qué instrucción finaliza inmediatamente un bucle?
+a) break
+b) continue
+c) skip
+d) pass
+= a
+> continue salta a la siguiente iteración.
+@ Control
+
+? ¿Qué diferencia fundamental hay entre un procedimiento y una función?
+a) El procedimiento devuelve siempre un entero
+b) La función no admite parámetros
+c) No existe diferencia en ningún lenguaje
+d) La función devuelve un valor; el procedimiento no
+= d
+> En C o Java un procedimiento se declara como void.
+@ Subprogramas
+
+? En el paso de parámetros por valor:
+a) La modificación del parámetro dentro del subprograma altera la variable original
+b) Se pasa la dirección de memoria
+c) Solo se admiten constantes
+d) Se pasa una copia del valor y el original no se modifica
+= d
+> Con el paso por referencia sí se modifica el original.
+@ Parámetros
+
+? ¿Cómo se pasan los parámetros en Java?
+a) Siempre por valor (en objetos se copia la referencia)
+b) Siempre por referencia
+c) Los primitivos por valor y los objetos por referencia pura
+d) Depende de la palabra clave ref
+= a
+> Una función puede modificar el estado de un objeto recibido, pero no reasignar la referencia original del llamante.
+@ Parámetros
+
+? ¿Qué es la sobrecarga de funciones?
+a) Llamar a una función muchas veces
+b) Definir varias funciones con el mismo nombre y distinta lista de parámetros
+c) Heredar de una clase
+d) Una función que se llama a sí misma
+= b
+> Se resuelve en compilación según el número y tipo de argumentos.
+@ Subprogramas
+
+? ¿Qué elemento es imprescindible en una función recursiva para que termine?
+a) Un caso base
+b) Un bucle for
+c) Una variable global
+d) Un puntero
+= a
+> Sin caso base se produciría una recursión infinita y desbordamiento de pila.
+@ Recursividad
+
+? ¿Cuál es el valor de factorial(4) con la definición recursiva factorial(n) = n × factorial(n−1) y factorial(0) = 1?
+a) 10
+b) 16
+c) 120
+d) 24
+= d
+> 4 × 3 × 2 × 1 = 24.
+@ Recursividad
+
+? ¿Cuántos movimientos mínimos requiere resolver las Torres de Hanoi con n discos?
+a) n²
+b) 2n
+c) 2ⁿ − 1
+d) n!
+= c
+> Con 3 discos, 7 movimientos.
+@ Recursividad
+
+? ¿Cuál es el valor de mcd(48, 18) con el algoritmo de Euclides?
+a) 6
+b) 3
+c) 9
+d) 12
+= a
+> mcd(48,18) = mcd(18,12) = mcd(12,6) = mcd(6,0) = 6.
+@ Recursividad
+
+? ¿Dónde se almacenan los marcos de las llamadas recursivas?
+a) En el montículo (heap)
+b) En el disco
+c) En la pila de ejecución (stack)
+d) En el registro de Windows
+= c
+> Una recursión excesiva puede provocar un desbordamiento de pila (stack overflow).
+@ Recursividad
+
+? En un array de 10 elementos en Java, ¿cuál es el índice del último elemento?
+a) 8
+b) 9
+c) 10
+d) 11
+= b
+> Los índices van de 0 a 9.
+@ Arrays
+
+? ¿Qué sucede en Java al acceder a una posición fuera de los límites de un array?
+a) Se lanza ArrayIndexOutOfBoundsException
+b) Devuelve null
+c) Devuelve 0
+d) Se amplía el array
+= a
+> En C el comportamiento es indefinido y puede corromper memoria.
+@ Arrays
+
+? ¿Qué estructura permite agrupar campos de distintos tipos bajo un mismo nombre?
+a) Array
+b) Registro (struct)
+c) Pila
+d) Cola
+= b
+> El array contiene elementos del mismo tipo.
+@ Registros
+
+? ¿Cómo se delimitan los bloques de código en Python?
+a) Con llaves { }
+b) Con begin ... end
+c) Con punto y coma
+d) Con la indentación
+= d
+> La indentación es sintácticamente significativa en Python.
+@ Python
+
+? ¿Cuál es el punto de entrada de una aplicación Java de consola?
+a) El constructor de cualquier clase
+b) El método public static void main(String[] args)
+c) El método run() obligatoriamente
+d) El primer método declarado
+= b
+> Debe estar en una clase y ser público y estático.
+@ Java
+
+? ¿Cuándo se ejecuta el bloque finally de un try/catch/finally?
+a) Siempre, se produzca o no excepción
+b) Solo si se lanza una excepción
+c) Solo si no se lanza ninguna excepción
+d) Nunca
+= a
+> Se usa para liberar recursos (cerrar ficheros, conexiones).
+@ Excepciones
+
+? ¿Qué convención de nomenclatura se usa habitualmente para los nombres de clases en Java?
+a) PascalCase
+b) snake_case
+c) MAYÚSCULAS_CON_GUIONES
+d) kebab-case
+= a
+> Métodos y variables en camelCase; constantes en MAYÚSCULAS.
+@ Buenas prácticas
+
+? ¿Qué lenguaje gestiona la memoria manualmente con malloc y free?
+a) C
+b) Java
+c) Python
+d) C#
+= a
+> Java, C# y Python tienen recolector de basura.
+@ Memoria
+
+? ¿Qué lenguaje se diseñó con el objetivo de garantizar seguridad de memoria sin recolector de basura?
+a) PHP
+b) Rust
+c) Perl
+d) JavaScript
+= b
+> Rust usa propiedad (ownership) y préstamos (borrowing) verificados en compilación.
+@ Lenguajes
+
+? ¿Qué lenguaje se utiliza ampliamente en sistemas administrativos y bancarios heredados de mainframe?
+a) Swift
+b) Go
+c) COBOL
+d) Kotlin
+= c
+> COBOL sigue en uso en grandes sistemas de gestión.
+@ Lenguajes
+
+? ¿Qué representación gráfica de algoritmos usa estructuras anidadas sin flechas?
+a) Diagrama de flujo (ordinograma)
+b) Diagrama Nassi-Shneiderman
+c) Diagrama de Gantt
+d) Diagrama de Venn
+= b
+> Los diagramas N-S (estructurogramas) refuerzan la programación estructurada.
+@ Algoritmos
+
+? ¿Qué es una función pura?
+a) Una función que devuelve siempre el mismo resultado para los mismos argumentos y no tiene efectos secundarios
+b) Una función sin parámetros
+c) Una función recursiva
+d) Una función que modifica variables globales
+= a
+> Facilita las pruebas y la paralelización; es central en la programación funcional.
+@ Programación funcional
+
+? ¿Qué es una clausura (closure)?
+a) Una clase cerrada
+b) Una función junto con el entorno de variables en el que fue creada
+c) Un bucle infinito
+d) Una excepción no controlada
+= b
+> Permite que una función conserve acceso a variables de su ámbito léxico aunque este haya terminado.
+@ Programación funcional
+
+? ¿Cuál es el resultado de la operación booleana !(true && false) || false?
+a) true
+b) false
+c) Error
+d) null
+= a
+> true && false = false; !false = true; true || false = true.
+@ Operadores
+
+? ¿Qué se obtiene al evaluar -7 % 3 en Java?
+a) 2
+b) −1
+c) 1
+d) −2
+= b
+> En Java el resto toma el signo del dividendo: −7 = (−2)·3 + (−1). En Python el resultado es 2.
+@ Operadores

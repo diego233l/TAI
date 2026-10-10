@@ -1,0 +1,36 @@
+Fases del diseño de BD :: Análisis de requisitos → conceptual (E/R) → lógico (relacional) → físico (índices, particiones) → implementación y mantenimiento.
+Diseño conceptual, lógico y físico :: Conceptual: independiente del SGBD y del modelo. Lógico: depende del modelo relacional. Físico: depende del SGBD.
+Reglas de negocio :: Políticas del dominio; se implementan con PK, FK, UNIQUE, CHECK, NOT NULL y disparadores.
+MÉTRICA v3 :: Metodología de la AGE para sistemas de información; usa E/R en ASI y DSI; procesos PSI, DSI (EVS, ASI, DSI, CSI, IAS) y MSI.
+Modelo E/R :: Peter Chen, 1976: entidades, atributos, interrelaciones y cardinalidades.
+Entidad fuerte y débil :: Fuerte: identificador propio. Débil: depende de otra para identificarse (clave = clave de la fuerte + discriminador).
+Tipos de atributo :: Simple/compuesto, monovaluado/multivaluado, derivado e identificador.
+Grado de una relación :: Unaria (reflexiva), binaria, ternaria, n-aria.
+Cardinalidad :: 1:1, 1:N, N:M; mínima/máxima (0,1), (1,1), (0,N), (1,N). Participación total = mínimo 1; parcial = mínimo 0.
+E/R extendido :: Generalización/especialización (total/parcial, disjunta/solapada) y agregación.
+Notaciones de diagramas :: Chen (rombos), pata de gallo (crow's foot), IDEF1X, UML (diagrama de clases).
+Entidad → tabla :: El identificador pasa a clave primaria; el atributo compuesto se descompone en columnas.
+Atributo multivaluado → tabla :: Nueva tabla con FK a la entidad y el valor.
+Relación 1:N → FK :: La clave foránea va en la tabla del lado N.
+Relación N:M → tabla intermedia :: PK compuesta por las claves de ambas entidades, más atributos de la relación.
+Relación 1:1 :: FK en una tabla (mejor en la de participación total) o fusión de tablas.
+Jerarquías is-a :: Tres opciones: una tabla única con discriminador, una tabla por subtipo, o tabla de supertipo y de cada subtipo.
+Diseño físico :: Tipos de datos, índices, particionado, ubicación de ficheros, desnormalización controlada y copias de seguridad.
+Dependencia funcional :: X → Y: cada valor de X determina un único valor de Y.
+DF parcial y transitiva :: Parcial: depende de parte de la clave. Transitiva: A → B y B → C con B no clave.
+Axiomas de Armstrong :: Reflexividad, aumentación y transitividad.
+Anomalías :: De inserción, de borrado y de actualización; causadas por redundancia.
+1FN :: Atributos atómicos; sin grupos repetitivos ni multivaluados.
+2FN :: 1FN y sin dependencias parciales de atributos no clave respecto de una clave candidata.
+3FN :: 2FN y sin dependencias transitivas. «La clave, toda la clave y nada más que la clave».
+FNBC (BCNF) :: Todo determinante es clave candidata.
+4FN y 5FN :: 4FN: sin dependencias multivaluadas no triviales. 5FN: sin dependencias de reunión no implicadas por las claves.
+2FN y claves simples :: Una tabla en 1FN con clave primaria simple está siempre en 2FN.
+Descomposición correcta :: Reunión sin pérdida (sin tuplas espurias) y, si es posible, conservación de dependencias.
+Descomposición en 3FN y FNBC :: En 3FN siempre es posible sin pérdida y conservando DF; en FNBC no siempre se conservan las DF.
+Desnormalización :: Introducir redundancia de forma controlada para mejorar el rendimiento de consultas (diseño físico, almacenes de datos).
+Modelado dimensional :: Kimball: tablas de hechos y dimensiones (estrella, copo de nieve).
+ON DELETE CASCADE :: Borra las filas hijas al borrar la fila padre. Otras acciones: RESTRICT/NO ACTION, SET NULL, SET DEFAULT.
+CHECK :: Restricción que limita los valores permitidos en una columna o fila.
+Diccionario de datos :: Documentación de entidades, atributos, tipos, restricciones y reglas (catálogo cuando lo mantiene el SGBD).
+Herramientas CASE de modelado :: ERwin, PowerDesigner, MySQL Workbench, DBeaver, Enterprise Architect.

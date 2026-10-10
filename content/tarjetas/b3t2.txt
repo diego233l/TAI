@@ -1,0 +1,33 @@
+Generaciones de lenguajes :: 1GL máquina; 2GL ensamblador; 3GL alto nivel (C, Java); 4GL muy alto nivel (SQL); 5GL lógico/restricciones (Prolog).
+Paradigmas :: Imperativo/procedural, estructurado, orientado a objetos, funcional, lógico, declarativo, orientado a eventos, concurrente.
+Tipado :: Estático (compilación: Java, C, C#) o dinámico (ejecución: Python, JavaScript); fuerte o débil según permita conversiones implícitas.
+Compilador, intérprete e híbrido :: Compilador: traduce todo antes de ejecutar. Intérprete: traduce y ejecuta línea a línea. Java: bytecode + JVM (JIT). C#: CIL + CLR.
+Fases del compilador :: Léxico (tokens), sintáctico (árbol), semántico, código intermedio, optimización, código final. Linker enlaza; loader carga.
+TypeScript :: Superconjunto tipado de JavaScript que se compila a JavaScript.
+Tipos primitivos de Java :: byte 8, short 16, int 32 (−2³¹…2³¹−1), long 64, float 32, double 64, char 16 (UTF-16), boolean.
+Casting :: (int) 3.7 → 3; trunca. La conversión implícita (int → double) ensancha.
+Coma flotante :: 0.1 + 0.2 != 0.3; comparar con tolerancia.
+Pila y montículo :: Pila: locales y llamadas. Heap: objetos dinámicos; recolector de basura en Java, C# y Python; manual en C.
+División entera :: 7 / 2 = 3; 7 % 2 = 1. En Java y C, −7 / 2 = −3 y −7 % 3 = −1. En Python, −7 // 2 = −4 y −7 % 3 = 2.
+Cortocircuito :: En A && B no se evalúa B si A es falso; en A || B no se evalúa B si A es verdadero.
+i++ frente a ++i :: i++ usa el valor y luego incrementa; ++i incrementa y luego usa el valor.
+Desplazamiento de bits :: x << n multiplica por 2ⁿ; x >> n divide entre 2ⁿ.
+Programación estructurada :: Böhm-Jacopini: secuencia, selección e iteración; sin GOTO (Dijkstra).
+while, do-while y for :: while evalúa antes (puede no ejecutarse); do-while evalúa después (al menos una vez); for: número conocido de iteraciones.
+break y continue :: break sale del bucle; continue pasa a la siguiente iteración. En switch, sin break hay fall-through.
+Procedimiento y función :: Procedimiento (void): no devuelve valor. Función: devuelve valor con return.
+Paso de parámetros :: Por valor (copia) o por referencia (alias). Java: siempre por valor (en objetos, copia de la referencia).
+Sobrecarga :: Mismo nombre con distinta lista de parámetros.
+Recursividad :: Caso base + caso recursivo; usa la pila (stack overflow si es excesiva).
+Recursividad típica :: factorial(n) = n·factorial(n−1); Hanoi 2ⁿ − 1 movimientos; Euclides mcd(a,b) = mcd(b, a mod b).
+Arrays :: Mismo tipo; índice desde 0; n elementos → índices 0…n−1; fuera de rango: excepción en Java, indefinido en C.
+Registro (struct) :: Agrupa campos de distintos tipos.
+Estructura de un programa :: Importaciones, declaraciones, subprogramas y main. Java: public static void main(String[] args). Python: indentación.
+Excepciones :: try/catch/finally/throw; finally se ejecuta siempre.
+Convenciones de nombres :: camelCase (métodos, variables), PascalCase (clases), snake_case (Python/C), MAYÚSCULAS (constantes).
+Rust :: Seguridad de memoria sin recolector de basura (ownership y borrowing).
+COBOL :: Lenguaje de sistemas administrativos y bancarios en mainframe.
+Pseudocódigo y diagramas :: Pseudocódigo, ordinogramas (flujo) y Nassi-Shneiderman (estructurogramas).
+Función pura :: Mismo resultado para los mismos argumentos y sin efectos secundarios.
+Closure :: Función con el entorno de variables donde se creó.
+Funciones de orden superior :: map, filter y reduce reciben o devuelven funciones.
