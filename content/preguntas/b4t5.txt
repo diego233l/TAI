@@ -1,0 +1,694 @@
+// Tema 28 (B4·T5) · Seguridad de los sistemas de información, criptografía, firma digital, CPD, incidencias y control remoto
+
+? ¿Cuáles son las tres propiedades de la tríada clásica de la seguridad de la información?
+a) Autenticidad, trazabilidad y no repudio
+b) Cifrado, firma y hash
+c) Prevención, detección y respuesta
+d) Confidencialidad, integridad y disponibilidad
+= d
+> El ENS añade autenticidad y trazabilidad (D-A-I-C-T).
+@ Conceptos
+
+? ¿Cómo se calcula habitualmente el riesgo?
+a) Probabilidad de ocurrencia × impacto
+b) Amenazas + vulnerabilidades
+c) Activos − salvaguardas
+d) Impacto ÷ coste
+= a
+> El riesgo residual es el que queda tras aplicar salvaguardas.
+@ Conceptos
+
+? ¿Cuál de las siguientes NO es una opción de tratamiento del riesgo?
+a) Multiplicar
+b) Mitigar
+c) Transferir
+d) Aceptar
+= a
+> Las opciones son mitigar (reducir), transferir (compartir), evitar y aceptar.
+@ Conceptos
+
+? ¿Qué es MAGERIT?
+a) Un algoritmo de cifrado
+b) La metodología de análisis y gestión de riesgos de los sistemas de información de las Administraciones Públicas españolas
+c) Un protocolo de red
+d) Una herramienta de copia de seguridad
+= b
+> Consta de tres libros: método, catálogo de elementos y guía de técnicas. PILAR es la herramienta del CCN.
+@ Gestión de riesgos
+
+? ¿Qué herramienta del CCN soporta el análisis y la gestión de riesgos siguiendo MAGERIT?
+a) LUCIA
+b) PILAR
+c) INES
+d) CLARA
+= b
+> LUCIA gestiona ciberincidentes e INES informa sobre el estado de la seguridad.
+@ Gestión de riesgos
+
+? ¿Qué norma ISO especifica los requisitos de un Sistema de Gestión de Seguridad de la Información (SGSI)?
+a) ISO 9001
+b) ISO/IEC 27001
+c) ISO 22301
+d) ISO/IEC 12207
+= b
+> ISO/IEC 27002 es la guía de controles y 22301 se refiere a la continuidad de negocio.
+@ Normas
+
+? ¿Cuántos controles contiene el Anexo A de ISO/IEC 27001:2022?
+a) 114
+b) 93
+c) 133
+d) 27
+= b
+> La versión de 2013 tenía 114 controles; la de 2022, 93 agrupados en cuatro temas.
+@ Normas
+
+? ¿Qué principio consiste en disponer de varias capas independientes de protección?
+a) Seguridad por oscuridad
+b) Defensa en profundidad
+c) Mínimo privilegio
+d) Segregación de funciones
+= b
+> Evita que el fallo de una sola medida comprometa el sistema.
+@ Conceptos
+
+? ¿Qué elemento de control de acceso físico impide que dos personas pasen con una sola autenticación al ser un pequeño recinto con dos puertas que no se abren a la vez?
+a) Cámara CCTV
+b) Detector de humo
+c) Cerradura simple
+d) Esclusa (mantrap)
+= d
+> Evita el «tailgating» o acceso por seguimiento.
+@ Seguridad física
+
+? ¿Qué medida del ENS regula el registro de entrada y salida de equipamiento?
+a) [mp.if.1]
+b) [mp.if.4]
+c) [mp.if.7]
+d) [mp.eq.3]
+= c
+> [mp.if.1] regula áreas separadas con control de acceso; [mp.if.2], la identificación de las personas.
+@ ENS
+
+? ¿Qué medida del ENS exige que los locales mantengan unas condiciones adecuadas de temperatura y humedad?
+a) [mp.if.5] Protección frente a incendios
+b) [mp.if.3] Acondicionamiento de los locales
+c) [mp.if.6] Protección frente a inundaciones
+d) [mp.if.2] Identificación de las personas
+= b
+> También incluye la protección del cableado.
+@ ENS
+
+? ¿Qué combinación de factores constituye autenticación multifactor genuina?
+a) Contraseña y pregunta secreta
+b) Dos contraseñas distintas
+c) Contraseña y código de un solo uso enviado al móvil
+d) PIN y contraseña
+= c
+> Deben pertenecer a categorías distintas: conocimiento, posesión e inherencia.
+@ Autenticación
+
+? ¿Cuál es un factor de inherencia?
+a) Una tarjeta inteligente
+b) Un PIN
+c) Un token OTP
+d) La huella dactilar
+= d
+> Inherencia: lo que se es (biometría). Posesión: lo que se tiene. Conocimiento: lo que se sabe.
+@ Autenticación
+
+? ¿Qué modelo de control de acceso concede permisos según las funciones o roles de los usuarios?
+a) DAC
+b) MAC
+c) RBAC
+d) ABAC
+= c
+> En DAC el propietario decide; en MAC, una política central con etiquetas; en ABAC, atributos.
+@ Control de acceso
+
+? ¿Qué modelo de control de acceso utiliza etiquetas de seguridad y una política central que los usuarios no pueden alterar?
+a) DAC
+b) MAC
+c) RBAC
+d) Lista blanca
+= b
+> SELinux es una implementación de MAC.
+@ Control de acceso
+
+? ¿Qué diferencia hay entre un virus y un gusano?
+a) El virus se propaga por sí mismo
+b) Son lo mismo
+c) El gusano se propaga por sí mismo a través de la red; el virus necesita adjuntarse a un fichero o programa
+d) El gusano solo afecta a hardware
+= c
+> El troyano se hace pasar por software legítimo.
+@ Malware
+
+? ¿Qué tipo de malware cifra los archivos de la víctima y exige un pago para recuperarlos?
+a) Spyware
+b) Adware
+c) Ransomware
+d) Rootkit
+= c
+> Las copias de seguridad inmutables son la mejor defensa.
+@ Malware
+
+? ¿Qué es un rootkit?
+a) Un tipo de cortafuegos
+b) Un conjunto de herramientas que oculta la presencia de un atacante o malware en el sistema
+c) Un gestor de contraseñas
+d) Una herramienta de copia
+= b
+> Puede operar a nivel de kernel o firmware.
+@ Malware
+
+? ¿Qué es el spear phishing?
+a) Un ataque masivo y genérico
+b) Un ataque de phishing dirigido a una persona u organización concreta con información personalizada
+c) Un ataque por SMS
+d) Un ataque de denegación de servicio
+= b
+> El whaling se dirige a altos cargos; el vishing, por voz; el smishing, por SMS.
+@ Ingeniería social
+
+? ¿Qué ataque consiste en probar un número reducido de contraseñas comunes contra muchas cuentas para evitar el bloqueo?
+a) Fuerza bruta clásica contra una cuenta
+b) Credential stuffing
+c) Rainbow table
+d) Password spraying
+= d
+> El credential stuffing reutiliza pares usuario/contraseña filtrados de otros servicios.
+@ Ataques
+
+? ¿Qué defensa neutraliza las tablas arcoíris (rainbow tables) en el almacenamiento de contraseñas?
+a) Usar MD5
+b) Añadir una sal única a cada contraseña antes de aplicar el hash
+c) Cifrar con ROT13
+d) Eliminar el hash
+= b
+> Además se usan funciones lentas como bcrypt o Argon2.
+@ Ataques
+
+? ¿Qué es un ataque man-in-the-middle?
+a) Un ataque contra el servidor DNS
+b) Un virus del arranque
+c) El atacante se interpone entre dos partes para interceptar o alterar sus comunicaciones
+d) Un ataque físico
+= c
+> TLS con validación de certificados mitiga estos ataques.
+@ Ataques
+
+? ¿Qué es un ataque de denegación de servicio distribuida (DDoS)?
+a) Saturar un servicio con tráfico procedente de muchos orígenes para dejarlo inaccesible
+b) Robar datos de una base de datos
+c) Cifrar ficheros
+d) Suplantar a un usuario
+= a
+> Afecta a la disponibilidad.
+@ Ataques
+
+? ¿Qué es un ataque de amplificación (por ejemplo, con DNS o NTP)?
+a) Aumentar el ancho de banda del atacante
+b) Cifrar el tráfico
+c) Duplicar los registros DNS
+d) Enviar peticiones pequeñas con la IP de la víctima suplantada a servidores que responden con mucho más tráfico dirigido a la víctima
+= d
+> Se mitiga con filtrado anti-spoofing y configuraciones restrictivas.
+@ Ataques
+
+? ¿Qué es una vulnerabilidad zero-day?
+a) Una vulnerabilidad desconocida para el fabricante o sin parche disponible que ya puede ser explotada
+b) Una vulnerabilidad corregida hace cero días
+c) Un virus del día cero
+d) Un ataque de cero paquetes
+= a
+> Se mitiga con defensa en profundidad y detección de comportamiento.
+@ Vulnerabilidades
+
+? ¿Qué mide CVSS?
+a) La probabilidad de explotación en porcentaje
+b) El coste de reparación
+c) El número de equipos afectados
+d) La gravedad de una vulnerabilidad en una escala de 0 a 10
+= d
+> CVE identifica; CWE clasifica la debilidad.
+@ Vulnerabilidades
+
+? ¿Qué es MITRE ATT&CK?
+a) Un antivirus
+b) Una base de conocimiento de tácticas y técnicas utilizadas por los adversarios
+c) Un algoritmo de cifrado
+d) Una norma ISO
+= b
+> Se usa en detección, caza de amenazas y ejercicios de red team.
+@ Amenazas
+
+? En criptografía simétrica:
+a) Se utilizan dos claves distintas
+b) Solo se firma
+c) No se necesita clave
+d) Se utiliza la misma clave para cifrar y descifrar
+= d
+> Su reto es la distribución segura de la clave.
+@ Criptografía
+
+? ¿Qué algoritmo simétrico es el estándar actual de cifrado de bloques de 128 bits?
+a) DES
+b) AES
+c) RSA
+d) SHA-256
+= b
+> DES (56 bits) y 3DES están obsoletos; RSA es asimétrico; SHA-256 es un hash.
+@ Criptografía
+
+? ¿Qué longitud de clave tiene el algoritmo DES?
+a) 128 bits
+b) 192 bits
+c) 256 bits
+d) 56 bits
+= d
+> Es insuficiente hoy día. AES admite 128, 192 y 256.
+@ Criptografía
+
+? ¿Cuál de estos modos de operación de cifrado de bloques NO se recomienda porque bloques iguales producen cifrados iguales?
+a) ECB
+b) CBC
+c) CTR
+d) GCM
+= a
+> GCM proporciona además autenticación (cifrado autenticado).
+@ Criptografía
+
+? ¿Qué algoritmo asimétrico se basa en la dificultad de factorizar números enteros grandes?
+a) RSA
+b) AES
+c) SHA-3
+d) ChaCha20
+= a
+> Se recomiendan al menos 2048 bits.
+@ Criptografía
+
+? ¿Qué ventaja tiene la criptografía de curva elíptica (ECC) frente a RSA?
+a) Ofrece un nivel de seguridad equivalente con claves mucho más cortas
+b) Es simétrica
+c) No necesita claves
+d) Es resistente a ordenadores cuánticos
+= a
+> Una clave ECC de 256 bits equivale aproximadamente a RSA de 3072. Ni ECC ni RSA resisten a un ordenador cuántico suficientemente grande.
+@ Criptografía
+
+? ¿Para qué se utiliza el algoritmo de Diffie-Hellman?
+a) Para acordar una clave compartida a través de un canal inseguro
+b) Para cifrar volúmenes de datos
+c) Para calcular hashes
+d) Para comprimir datos
+= a
+> Es la base del intercambio de claves en TLS (DHE/ECDHE).
+@ Criptografía
+
+? ¿Cuál es el mecanismo del cifrado híbrido?
+a) Cifrar el mensaje con una clave simétrica de sesión y proteger esa clave con la clave pública del destinatario
+b) Cifrar todo con RSA
+c) Usar dos claves simétricas
+d) Cifrar con hash
+= a
+> Combina el rendimiento del simétrico con la distribución de claves del asimétrico.
+@ Criptografía
+
+? Para enviar un mensaje confidencial a Ana usando criptografía asimétrica, se cifra con:
+a) La clave pública de Ana
+b) La clave privada de Ana
+c) La clave privada del remitente
+d) Una clave pública cualquiera
+= a
+> Solo la clave privada de Ana puede descifrarlo.
+@ Criptografía
+
+? Para firmar un documento digitalmente, el firmante utiliza:
+a) Su clave pública
+b) La clave pública del receptor
+c) La clave privada del receptor
+d) Su clave privada
+= d
+> Cualquiera puede verificar con la clave pública del firmante.
+@ Firma digital
+
+? Una función hash criptográfica se caracteriza por ser:
+a) Reversible con la clave
+b) De longitud variable en la salida
+c) Aleatoria
+d) Irreversible, determinista y resistente a colisiones
+= d
+> Un cambio mínimo en la entrada altera completamente el resumen (efecto avalancha).
+@ Hash
+
+? ¿Cuáles de estos algoritmos de hash se consideran inseguros por colisiones prácticas?
+a) SHA-256 y SHA-512
+b) SHA-3
+c) MD5 y SHA-1
+d) Argon2
+= c
+> SHA-2 y SHA-3 siguen vigentes.
+@ Hash
+
+? ¿Qué es un HMAC?
+a) Un hash sin clave
+b) Un código de autenticación de mensaje basado en una función hash y una clave secreta
+c) Un cifrado de disco
+d) Un certificado
+= b
+> Garantiza integridad y autenticidad entre partes que comparten la clave.
+@ Hash
+
+? ¿Qué aporta una firma digital?
+a) Solo confidencialidad
+b) Solo disponibilidad
+c) Anonimato
+d) Autenticidad, integridad y no repudio, pero no confidencialidad
+= d
+> Para confidencialidad hay que cifrar además.
+@ Firma digital
+
+? ¿Qué contiene un certificado X.509?
+a) La clave privada del titular
+b) La clave pública, la identidad del titular, el emisor, el periodo de validez y la firma de la CA
+c) Las contraseñas del usuario
+d) El historial de navegación
+= b
+> La clave privada nunca forma parte del certificado.
+@ PKI
+
+? ¿Qué mecanismo permite consultar en línea y en tiempo real el estado de revocación de un certificado?
+a) OCSP
+b) CRL
+c) SPF
+d) OAuth
+= a
+> La CRL es una lista que se descarga periódicamente.
+@ PKI
+
+? ¿Qué es un sello de tiempo (RFC 3161)?
+a) Una prueba firmada por una TSA de que unos datos existían en un instante determinado
+b) Un certificado de servidor
+c) Una contraseña temporal
+d) Un registro DNS
+= a
+> Es clave para la validación a largo plazo de firmas.
+@ PKI
+
+? ¿Qué tipo de firma electrónica tiene efecto equivalente al de la firma manuscrita en la UE?
+a) La firma electrónica cualificada
+b) La firma electrónica simple
+c) La firma avanzada sin certificado cualificado
+d) La firma escaneada
+= a
+> Se basa en un certificado cualificado y un dispositivo cualificado de creación de firma.
+@ eIDAS
+
+? ¿Qué formato de firma avanzada se aplica a documentos PDF?
+a) XAdES
+b) CAdES
+c) JAdES
+d) PAdES
+= d
+> Los niveles son B, T, LT y LTA.
+@ eIDAS
+
+? ¿Qué nivel de firma AdES incluye los datos de validación y sellos de tiempo para su conservación a largo plazo?
+a) B
+b) LTA
+c) T
+d) Simple
+= b
+> B: básico; T: con sello de tiempo; LT: con datos de validación; LTA: con archivo a largo plazo.
+@ eIDAS
+
+? ¿Qué diferencia hay entre SFTP y FTPS?
+a) SFTP funciona sobre SSH; FTPS es FTP sobre TLS
+b) Son lo mismo
+c) SFTP usa TLS
+d) FTPS usa SSH
+= a
+> Los puertos y la configuración de cortafuegos son distintos.
+@ Protocolos seguros
+
+? ¿Qué puerto usa SSH por defecto?
+a) 22
+b) 23
+c) 21
+d) 443
+= a
+> Telnet usa el 23 y FTP, el 21.
+@ Protocolos seguros
+
+? ¿Qué mide el indicador PUE de un centro de datos?
+a) La temperatura media
+b) La potencia de los SAI
+c) La relación entre la energía total consumida por el CPD y la consumida por los equipos TI
+d) El número de servidores por rack
+= c
+> Cuanto más cerca de 1, más eficiente; valores típicos entre 1,2 y 1,6.
+@ CPD
+
+? ¿Cuál es el rango de temperatura recomendado por ASHRAE para la entrada de aire de los equipos TI?
+a) 5 a 10 °C
+b) 30 a 40 °C
+c) 10 a 15 °C
+d) 18 a 27 °C
+= d
+> Una refrigeración excesiva desperdicia energía; un calor excesivo reduce la vida de los equipos.
+@ CPD
+
+? ¿Qué es la contención de pasillos frío/caliente?
+a) Aislar la red del CPD
+b) Un sistema de extinción
+c) Un tipo de rack
+d) Separar físicamente el aire frío de impulsión del aire caliente de retorno para mejorar la eficiencia de la refrigeración
+= d
+> Evita mezclar el aire y reduce el consumo de climatización.
+@ CPD
+
+? ¿Qué tipo de SAI ofrece la mejor protección, alimentando siempre la carga desde el inversor mediante doble conversión?
+a) Offline (standby)
+b) Online (doble conversión)
+c) Line-interactive
+d) Estático sin batería
+= b
+> Es el habitual en CPD; el offline conmuta a batería al detectar el fallo.
+@ CPD
+
+? ¿Qué significa una redundancia N+1 en un CPD?
+a) Se dispone de un componente adicional de reserva por encima de la capacidad necesaria
+b) Se duplica todo el sistema
+c) No hay redundancia
+d) Hay tres líneas independientes
+= a
+> 2N duplica completamente el sistema.
+@ CPD
+
+? ¿Qué sistema de extinción de incendios es más adecuado en una sala de servidores ocupada, sin dañar los equipos?
+a) Gases limpios (FM-200, Novec 1230) o inertes (Inergen)
+b) Rociadores de agua convencionales
+c) Espuma
+d) Extintor de polvo en la sala
+= a
+> El CO₂ no es adecuado en zonas ocupadas por su toxicidad.
+@ CPD
+
+? ¿Cuál es la principal característica de un CPD Tier III del Uptime Institute?
+a) Ninguna redundancia
+b) Tolerancia total a fallos
+c) Mantenimiento concurrente: se puede mantener cualquier componente sin parar el servicio
+d) Un único camino de alimentación
+= c
+> Disponibilidad aproximada del 99,982 %. Tier IV es tolerante a fallos (99,995 %).
+@ CPD
+
+? ¿Cuál es la disponibilidad aproximada de un CPD Tier IV?
+a) 99,671 %
+b) 99,995 %
+c) 99,741 %
+d) 99,982 %
+= b
+> Tier I: 99,671 %; Tier II: 99,741 %; Tier III: 99,982 %.
+@ CPD
+
+? ¿Qué es un sitio «hot» en un plan de recuperación ante desastres?
+a) Un local vacío sin equipos
+b) Un centro alternativo con equipos y datos sincronizados listo para asumir el servicio casi de inmediato
+c) Un CPD con alta temperatura
+d) Una copia en cinta
+= b
+> Warm: parcialmente equipado; cold: solo instalaciones básicas.
+@ Continuidad
+
+? ¿Qué es un BCP?
+a) El plan de continuidad de negocio
+b) Un protocolo de red
+c) Un backup en cinta
+d) Una base de datos
+= a
+> El DRP es el plan de recuperación ante desastres tecnológicos.
+@ Continuidad
+
+? ¿Qué medidas del ENS regulan la continuidad?
+a) [op.cont.1] a [op.cont.4]: análisis de impacto, plan de continuidad, pruebas periódicas y medios alternativos
+b) [mp.eq.1] a [mp.eq.4]
+c) [op.acc.1] a [op.acc.6]
+d) [mp.sw.1] y [mp.sw.2]
+= a
+> Se complementan con las copias de seguridad ([mp.info.6]).
+@ ENS
+
+? En ITIL, ¿qué es un problema?
+a) Cualquier interrupción del servicio
+b) Una petición de un usuario
+c) Un cambio programado
+d) La causa raíz de uno o más incidentes
+= d
+> El incidente se resuelve restaurando el servicio; el problema se gestiona para evitar su repetición.
+@ ITIL
+
+? ¿Cómo se determina habitualmente la prioridad de un incidente?
+a) Por orden alfabético
+b) Combinando impacto y urgencia
+c) Por el cargo de quien lo notifica únicamente
+d) Al azar
+= b
+> El impacto mide el alcance del daño; la urgencia, el tiempo disponible.
+@ Incidencias
+
+? ¿Qué diferencia hay entre escalado funcional y jerárquico?
+a) Funcional: a un grupo con más conocimiento técnico; jerárquico: a un nivel superior de dirección
+b) Funcional: a la dirección; jerárquico: a especialistas
+c) Son lo mismo
+d) Ninguno existe en ITIL
+= a
+> Ambos se aplican según el SLA y la gravedad.
+@ Incidencias
+
+? ¿Qué mide el MTTR?
+a) El tiempo medio entre fallos
+b) El tiempo de respuesta de red
+c) El tiempo medio de reparación o resolución
+d) El coste mensual
+= c
+> MTBF es el tiempo medio entre fallos.
+@ Incidencias
+
+? ¿Qué es el FCR (First Call Resolution)?
+a) El tiempo de llamada
+b) El porcentaje de incidencias resueltas en el primer contacto con el usuario
+c) La primera copia de seguridad
+d) Una norma ISO
+= b
+> Es un indicador de la eficacia del nivel 1 de soporte.
+@ Incidencias
+
+? ¿Qué diferencia un SLA de un OLA?
+a) El OLA se pacta con el cliente
+b) Son lo mismo
+c) El SLA es interno
+d) El SLA se pacta con el cliente; el OLA es un acuerdo entre áreas internas de la organización
+= d
+> El UC (contrato de apoyo) se establece con proveedores externos.
+@ ITIL
+
+? Según NIST SP 800-61, ¿cuál es la secuencia del ciclo de respuesta a incidentes?
+a) Preparación; detección y análisis; contención, erradicación y recuperación; actividad posterior al incidente
+b) Detección, apagado, borrado, olvido
+c) Contención, preparación, análisis
+d) Recuperación, preparación, detección
+= a
+> Las lecciones aprendidas alimentan la preparación.
+@ Incidentes de seguridad
+
+? ¿Qué se debe preservar al gestionar un incidente de seguridad para un posible proceso legal?
+a) Nada, hay que borrar todo
+b) Las evidencias con cadena de custodia
+c) Solo la contraseña del administrador
+d) Los equipos nuevos
+= b
+> Se capturan imágenes forenses y se documenta cada manipulación.
+@ Incidentes de seguridad
+
+? ¿En qué plazo debe notificarse a la AEPD una brecha de seguridad de datos personales, si procede?
+a) 24 horas
+b) 7 días
+c) 72 horas desde que se tiene constancia
+d) 30 días
+= c
+> Art. 33 RGPD; la notificación a los interesados procede si hay alto riesgo.
+@ Incidentes de seguridad
+
+? ¿Cuál es el plazo de alerta temprana que establece la Directiva NIS2 para incidentes significativos?
+a) 72 horas
+b) 7 días
+c) 24 horas
+d) 1 mes
+= c
+> Después, notificación del incidente a las 72 horas e informe final en un mes.
+@ Incidentes de seguridad
+
+? ¿Qué puerto TCP usa por defecto el escritorio remoto RDP?
+a) 3389
+b) 5900
+c) 22
+d) 443
+= a
+> VNC usa 5900 y SSH, 22.
+@ Control remoto
+
+? ¿Qué es NLA en RDP?
+a) Un cifrado de disco
+b) Un protocolo de transferencia
+c) Autenticación a nivel de red: el usuario se autentica antes de establecer la sesión completa
+d) Un tipo de VPN
+= c
+> Reduce la exposición ante ataques previos a la autenticación.
+@ Control remoto
+
+? ¿Qué recomendación de seguridad es fundamental con RDP?
+a) Abrir el puerto 3389 en el cortafuegos perimetral
+b) Usar contraseñas cortas
+c) Deshabilitar el registro
+d) No exponerlo directamente a internet; utilizar VPN o pasarela con MFA
+= d
+> Es un vector habitual de ransomware.
+@ Control remoto
+
+? ¿Qué protocolo remoto de escritorio usa RFB y el puerto 5900?
+a) VNC
+b) RDP
+c) SSH
+d) SPICE
+= a
+> No cifra por defecto; se recomienda túnel SSH o VPN.
+@ Control remoto
+
+? ¿Cómo está formado el «paquete mágico» de Wake-on-LAN?
+a) La IP repetida 16 veces
+b) Un hash de la MAC
+c) Un paquete ICMP
+d) 6 bytes FF seguidos de 16 repeticiones de la MAC del equipo
+= d
+> Se envía normalmente por difusión UDP al puerto 9 (o 7).
+@ Control remoto
+
+? ¿Qué permiten las tecnologías IPMI/BMC (iDRAC, iLO)?
+a) Cifrar discos
+b) Administrar un servidor fuera de banda, incluso apagado o con el sistema operativo caído
+c) Balancear carga
+d) Monitorizar el correo
+= b
+> Se recomienda aislar su red de gestión y actualizar el firmware.
+@ Control remoto
+
+? ¿Qué debe considerarse al realizar una asistencia remota sobre el equipo de un empleado?
+a) Entrar sin avisar
+b) Usar siempre la cuenta de administrador de dominio
+c) No dejar registro
+d) Informar y, en su caso, contar con su conformidad, registrar la sesión y respetar el mínimo privilegio
+= d
+> Hay que respetar la normativa de protección de datos y los derechos de los trabajadores.
+@ Control remoto

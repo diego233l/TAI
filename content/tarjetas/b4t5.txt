@@ -1,0 +1,40 @@
+Tríada CID :: Confidencialidad, integridad y disponibilidad; el ENS añade autenticidad y trazabilidad (D-A-I-C-T).
+Riesgo :: Probabilidad × impacto. Tratamiento: mitigar, transferir, evitar o aceptar. Residual: tras las salvaguardas.
+MAGERIT y PILAR :: MAGERIT v3: método, catálogo de elementos y guía de técnicas. PILAR: herramienta del CCN.
+ISO 27001 y familia :: 27001: SGSI (Anexo A 2022: 93 controles). 27002: controles. 27005: riesgos. 22301: continuidad. 31000: riesgos.
+Defensa en profundidad :: Múltiples capas independientes de protección; mínimo privilegio; segregación de funciones.
+Seguridad física :: Perímetro, control de acceso (tarjeta, biometría, esclusa), CCTV, visitas, incendios, energía, climatización, cableado, destrucción de soportes.
+ENS mp.if :: 1 áreas separadas y con control de acceso; 2 identificación de personas; 3 acondicionamiento; 4 energía; 5 incendios; 6 inundaciones; 7 registro de entrada y salida de equipamiento.
+Factores de autenticación :: Conocimiento (contraseña), posesión (token) e inherencia (biometría); MFA = al menos dos categorías distintas.
+Control de acceso :: DAC (propietario), MAC (política central con etiquetas; SELinux), RBAC (roles), ABAC (atributos).
+Malware :: Virus (adjunto), gusano (se propaga solo), troyano, ransomware, spyware, keylogger, rootkit, botnet, backdoor.
+Ingeniería social :: Phishing, spear phishing (dirigido), whaling (altos cargos), vishing (voz), smishing (SMS).
+Ataques a credenciales :: Fuerza bruta, diccionario, password spraying, credential stuffing, rainbow tables (se neutralizan con sal), pass-the-hash.
+DoS y DDoS :: Saturación de un servicio; SYN flood, UDP flood y amplificación/reflexión (DNS, NTP).
+Zero-day y APT :: Zero-day: vulnerabilidad sin parche conocida. APT: ataque persistente avanzado.
+CVE, CWE y CVSS :: CVE identifica la vulnerabilidad; CWE la debilidad; CVSS la gravedad de 0 a 10; NVD es la base.
+Cyber Kill Chain y ATT&CK :: Kill Chain: reconocimiento, armamento, entrega, explotación, instalación, C2, acciones. MITRE ATT&CK: tácticas y técnicas.
+Cifrado simétrico :: Misma clave; AES (bloque de 128 bits; claves 128/192/256); DES 56 bits obsoleto; ChaCha20; ECB no recomendable; GCM autenticado.
+Cifrado asimétrico :: Par de claves: RSA (≥ 2048), ECC (256 bits ≈ RSA 3072), Diffie-Hellman (acuerdo de claves), DSA.
+Cifrado híbrido :: Clave simétrica de sesión protegida con la clave pública del destinatario (TLS, PGP, S/MIME).
+Confidencialidad y firma :: Confidencialidad: cifrar con la clave pública del receptor. Firma: con la clave privada del emisor.
+Hash :: Irreversible, determinista, resistente a colisiones; SHA-2 y SHA-3 vigentes; MD5 y SHA-1 rotos; HMAC con clave; contraseñas: bcrypt, scrypt, Argon2, PBKDF2 con sal.
+Criptografía poscuántica :: NIST 2024: ML-KEM (Kyber), ML-DSA (Dilithium) y SLH-DSA.
+Firma digital :: Hash cifrado con la clave privada del firmante: autenticidad, integridad y no repudio (no confidencialidad).
+Certificado X.509 :: Clave pública, titular, emisor, validez, extensiones y firma de la CA. Revocación: CRL y OCSP.
+PKI y sello de tiempo :: CA raíz y subordinadas, RA, VA. Sello de tiempo (RFC 3161, TSA) prueba la existencia en un instante.
+Firma electrónica (eIDAS) :: Simple, avanzada y cualificada (equivale a la manuscrita). Formatos XAdES, CAdES, PAdES, JAdES; niveles B, T, LT y LTA.
+Protocolos seguros :: SSH 22 (SFTP, SCP); TLS/HTTPS 443; FTPS (FTP sobre TLS); IPsec; S/MIME y PGP; DNSSEC; WPA3; LDAPS; SNMPv3.
+Equipamiento del CPD :: Rack de 19" (42U típico; 1U = 44,45 mm), suelo técnico, cableado estructurado (UTP Cat 6A, fibra OM3/OM4/OS2), PDU, tierra.
+Climatización y eficiencia :: CRAC/CRAH, contención de pasillos, free cooling; ASHRAE 18-27 °C; PUE = energía total / energía TI (ideal → 1).
+Energía del CPD :: SAI online (doble conversión), line-interactive, offline; grupo electrógeno; redundancia N, N+1, 2N, 2N+1.
+Incendios en el CPD :: Detección por aspiración (VESDA); gases limpios (FM-200, Novec 1230) o inertes (Inergen); CO₂ no en zonas ocupadas.
+Tiers del Uptime Institute :: I básico 99,671 %; II redundante 99,741 %; III mantenimiento concurrente 99,982 %; IV tolerante a fallos 99,995 %. TIA-942 y EN 50600.
+Sitios de respaldo :: Hot (listo y sincronizado), warm (parcial), cold (solo instalación); BCP y DRP; RTO y RPO; ENS op.cont.1-4.
+ITIL: términos :: Incidente (interrupción), problema (causa raíz), error conocido, petición de servicio, cambio; Service Desk (SPOC).
+Prioridad de incidentes :: Impacto × urgencia; escalado funcional (especialistas) y jerárquico (dirección); SLA con cliente, OLA internos.
+Indicadores ITSM :: MTTR, MTBF, FCR, cumplimiento de SLA. Herramientas: GLPI, Znuny, Jira Service Management, ServiceNow.
+Incidentes de seguridad :: NIST 800-61: preparación; detección y análisis; contención, erradicación y recuperación; actividad posterior. Evidencias con cadena de custodia.
+Plazos de notificación :: Brecha de datos personales a la AEPD: 72 horas (art. 33 RGPD). NIS2: alerta temprana 24 h, notificación 72 h, informe final 1 mes.
+Control remoto :: RDP 3389 con NLA (no exponer a internet); VNC 5900; SSH; Quick Assist, TeamViewer, AnyDesk.
+Wake-on-LAN e IPMI :: Paquete mágico: 6 bytes FF + 16 veces la MAC (UDP 9 o 7). IPMI/BMC (iDRAC, iLO): gestión fuera de banda.
