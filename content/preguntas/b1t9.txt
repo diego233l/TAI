@@ -775,3 +775,12 @@ d) La relación de canales de acceso electrónico como instrumento de comunicaci
 = b
 > Art. 11.1.e) RD 203/2021. También incluye identificación de la sede y su titular, acto de creación, información de uso, sistemas de identificación y firma admitidos, fecha y hora oficial, incidencias técnicas y relación de servicios y actuaciones automatizadas.
 @ RD 203/2021 art. 11
+
+? Según las prescripciones técnicas del sistema Cl@ve (Resolución de 14 de diciembre de 2015), señale la respuesta correcta:
+a) Proporciona tres modalidades de identificación electrónica basadas en claves concertadas.
+b) Ofrece tres niveles de garantía de registro.
+c) Está dirigido exclusivamente a ciudadanos de nacionalidad española.
+d) Permite también el acceso a servicios de firma electrónica mediante certificados electrónicos centralizados.
+= d
+> Cl@ve ofrece dos modalidades de identificación (Cl@ve ocasional/PIN y Cl@ve permanente), dos niveles de garantía de registro (básico y avanzado), está dirigido a ciudadanos españoles y extranjeros que cumplan los requisitos, y permite firma con certificados centralizados emitidos por la DGP.
+@ Examen TAI (ene-2026) · Cl@ve

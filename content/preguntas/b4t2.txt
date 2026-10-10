@@ -478,3 +478,12 @@ d) Conservar 3 copias de los datos, en 2 medios iguales, con 1 copia almacenada 
 = b
 > 3 copias, 2 soportes distintos y 1 fuera de las instalaciones (offsite).
 @ Copias de seguridad
+
+? Se necesita saber qué usuarios acceden a la base de datos de la biblioteca (MySQL) y desde qué host o IP. En la consola de administración se ejecutará:
+a) SELECT user FROM mysql.user;
+b) SELECT * FROM all_users;
+c) sudo mysql -u root -p
+d) SELECT user, host FROM mysql.user;
+= d
+> La tabla mysql.user contiene las cuentas y la columna host indica desde dónde pueden conectar. Muestra las cuentas autorizadas; las conexiones activas se ven con SHOW PROCESSLIST. all_users es una vista de Oracle y la última opción solo abre la consola.
+@ Examen TAI (ene-2026) · MySQL

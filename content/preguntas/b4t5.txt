@@ -748,3 +748,12 @@ d) Baiting.
 = c
 > Tailgating/piggybacking es colarse tras una persona autorizada. Shoulder surfing es mirar por encima del hombro.
 @ Seguridad física
+
+? La herramienta del CCN-CERT que proporciona visibilidad y control sobre la red (control de acceso a la red) es:
+a) CARMEN
+b) EMMA
+c) PILAR
+d) LUCIA
+= b
+> EMMA ofrece visibilidad y control de la capa de acceso (descubrimiento y autenticación de activos, segmentación, cumplimiento, BYOD, invitados). CARMEN analiza tráfico para detectar anomalías e intrusiones, PILAR analiza riesgos y LUCIA gestiona tickets de incidentes.
+@ Examen TAI (ene-2026) · CCN-CERT

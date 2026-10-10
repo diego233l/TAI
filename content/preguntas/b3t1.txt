@@ -433,3 +433,21 @@ d) Es un atributo que puede tener valores duplicados, pero nunca nulos.
 = b
 > La clave foránea garantiza la integridad referencial: sus valores deben existir como clave primaria (o candidata) en la tabla referenciada, o ser nulos si se permite.
 @ Modelo relacional
+
+? Según Métrica v3, en el Modelo Entidad/Relación Extendido, ¿qué mecanismo permite relacionar dos tipos de entidades que normalmente son de dominios independientes pero coyunturalmente se asocian?
+a) Agregación.
+b) Generalización.
+c) Asociación.
+d) Especialización.
+= c
+> En Métrica v3 la asociación relaciona entidades de dominios independientes; la agregación construye un nuevo tipo de entidad como composición de otros y de su relación; la generalización/especialización organiza jerarquías de tipos.
+@ Examen TAI (ene-2026) · Métrica v3 · MERE
+
+? Una solicitud de beca puede incluir varios ficheros adjuntos (identidad, matrícula, notas) y cada fichero pertenece a una sola solicitud. ¿Qué correspondencia hay entre SolicitudBeca y FicheroAdjunto y dónde se coloca la clave foránea?
+a) Uno a uno (1:1), con la clave foránea en SolicitudBeca.
+b) Muchos a muchos (N:M), con la clave foránea en SolicitudBeca.
+c) Uno a muchos (1:N), con la clave foránea hacia SolicitudBeca en la tabla FicheroAdjunto.
+d) Uno a muchos (1:N), con la clave foránea hacia FicheroAdjunto en SolicitudBeca.
+= c
+> En una relación 1:N la clave foránea va en el lado «muchos». Ejercicio de repaso general: la correspondencia concreta del examen depende de su modelo de datos.
+@ Examen TAI (ene-2026) · Modelo relacional

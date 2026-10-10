@@ -532,3 +532,12 @@ d) Se recomienda su uso en aplicaciones intensivas a nivel computacional, como j
 = a
 > El NDK permite reutilizar bibliotecas C/C++ existentes.
 @ Android
+
+? Señale la respuesta correcta sobre SwiftUI:
+a) Xcode es un IDE con herramientas destinadas exclusivamente al desarrollo para iOS.
+b) Es un framework que facilita la creación de interfaces de aplicaciones para los dispositivos de Apple (iOS, iPadOS, macOS, watchOS y tvOS).
+c) Xcode Cloud no existe.
+d) SwiftUI solo permite desarrollar aplicaciones para iPhone.
+= b
+> SwiftUI usa una sintaxis declarativa en Swift y comparte código entre plataformas Apple. Xcode abarca todas ellas y Xcode Cloud es su servicio de integración y entrega continuas.
+@ Examen TAI (ene-2026) · Apple

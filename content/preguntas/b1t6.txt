@@ -388,3 +388,21 @@ d) Para las Administraciones Públicas, la integración con el nodo eIDAS españ
 = c
 > El nodo eIDAS interconecta la identificación electrónica de los Estados de la UE mediante mensajes SAML 2.0; para las AAPP españolas se integra a través de Cl@ve.
 @ Reglamento eIDAS · Nodo eIDAS
+
+? Según la legislación vigente, ¿cuál es la vigencia máxima de los certificados electrónicos reconocidos incorporados al Documento Nacional de Identidad?
+a) No podrá ser superior a tres años.
+b) No podrá ser superior a seis años.
+c) No podrá ser superior a cuatro años.
+d) No podrá ser superior a cinco años.
+= d
+> Art. 12.1 del Real Decreto 1553/2005: con independencia de la validez del DNI, la vigencia de los certificados reconocidos incorporados no podrá ser superior a cinco años. Al extinguirse puede solicitarse otro certificado manteniendo la misma tarjeta, con presencia física del titular.
+@ Examen TAI (ene-2026) · RD 1553/2005 art. 12
+
+? ¿Qué establece el artículo 1 de la Ley 56/2007, de Medidas de Impulso de la Sociedad de la Información, sobre los formatos estructurados de las facturas electrónicas?
+a) Que la factura electrónica solo se utilizará en contratación, quedando excluida de la justificación de ayudas y subvenciones.
+b) Que solo podrán emitirse en castellano.
+c) Que quedan limitados a las facturas entre empresarios, sin incluir al sector público.
+d) Que permitirán su visualización y emisión en las distintas lenguas oficiales existentes, para garantizar los derechos de los usuarios.
+= d
+> La facturación electrónica en la contratación con el sector público estatal es obligatoria en los términos de la Ley de Contratos, y los formatos estructurados deben permitir visualización y emisión en las lenguas oficiales.
+@ Examen TAI (ene-2026) · Ley 56/2007 art. 1
