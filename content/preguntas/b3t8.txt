@@ -1,0 +1,460 @@
+// Tema 22 (B3·T8) · Accesibilidad, diseño universal, usabilidad y seguridad en el desarrollo
+
+? Según el Real Decreto Legislativo 1/2013, el «diseño universal o diseño para todas las personas» consiste en:
+a) Diseñar productos especiales para cada tipo de discapacidad
+b) Concebir desde el origen entornos, productos y servicios utilizables por todas las personas en la mayor extensión posible, sin necesidad de adaptación ni diseño especializado
+c) Adaptar los entornos una vez construidos
+d) Limitar el uso de productos de apoyo
+= b
+> No excluye los productos de apoyo para grupos particulares de personas con discapacidad cuando lo necesiten.
+@ RDL 1/2013 art. 2
+
+? Según el RDL 1/2013, la accesibilidad universal presupone la estrategia de:
+a) Ajustes razonables exclusivamente
+b) Diseño universal o diseño para todas las personas
+c) Acción positiva
+d) Normalización
+= b
+> Y se entiende sin perjuicio de los ajustes razonables que deban adoptarse.
+@ RDL 1/2013 art. 2
+
+? ¿Qué son los ajustes razonables según el RDL 1/2013?
+a) Reformas generales de toda la sociedad
+b) Medidas que siempre suponen un coste elevado
+c) Modificaciones y adaptaciones necesarias y adecuadas que no impongan una carga desproporcionada o indebida, cuando se requieran en un caso particular
+d) Ayudas económicas
+= c
+> Su denegación constituye discriminación por razón de discapacidad.
+@ RDL 1/2013 art. 2
+
+? ¿Cuál de los siguientes NO es uno de los siete principios del diseño universal?
+a) Uso equitativo
+b) Tolerancia al error
+c) Obsolescencia programada
+d) Bajo esfuerzo físico
+= c
+> Los siete: uso equitativo, flexibilidad, uso simple e intuitivo, información perceptible, tolerancia al error, bajo esfuerzo físico y tamaño y espacio apropiados.
+@ Diseño universal
+
+? ¿Qué tienen en común los principios WCAG denominados POUR?
+a) Público, Obligatorio, Universal y Reutilizable
+b) Portable, Optimizado, Útil y Rápido
+c) Privado, Opcional, Universal y Rígido
+d) Perceptible, Operable, Comprensible y Robusto
+= d
+> Son los cuatro principios en los que se basan las pautas WCAG.
+@ WCAG
+
+? ¿Qué niveles de conformidad define WCAG?
+a) I, II y III
+b) A, AA y AAA
+c) Básico, Medio y Alto
+d) Bronce, Plata y Oro
+= b
+> Las Administraciones Públicas españolas deben cumplir el nivel AA (RD 1112/2018 y UNE-EN 301 549).
+@ WCAG
+
+? ¿Qué norma ISO corresponde a WCAG 2.0?
+a) ISO/IEC 27001
+b) ISO/IEC 40500
+c) ISO 9241-11
+d) ISO/IEC 19505
+= b
+> WCAG 2.0 es la norma ISO/IEC 40500:2012.
+@ WCAG
+
+? ¿Cuál es la relación mínima de contraste que exige WCAG nivel AA para texto normal?
+a) 3:1
+b) 7:1
+c) 10:1
+d) 4,5:1
+= d
+> Para texto grande, 3:1; el nivel AAA exige 7:1.
+@ WCAG
+
+? ¿Qué se necesita para que el contenido no textual (imágenes) sea accesible?
+a) Más contraste
+b) Mayor resolución
+c) Alternativas textuales
+d) Compresión sin pérdida
+= c
+> En HTML, el atributo alt. Los vídeos requieren subtítulos y transcripción.
+@ WCAG
+
+? ¿Qué exige WCAG respecto al uso del color?
+a) No usar solo el color para transmitir información
+b) No usar color
+c) Usar siempre rojo para errores
+d) Usar colores saturados
+= a
+> Debe complementarse con texto, iconos o patrones.
+@ WCAG
+
+? ¿Qué debe poder hacerse según WCAG sin necesidad de ratón?
+a) Solo navegar entre enlaces
+b) Solo rellenar formularios
+c) Nada, el ratón es obligatorio
+d) Operar toda la funcionalidad con el teclado, con foco visible
+= d
+> También se evitan las «trampas de teclado».
+@ WCAG
+
+? ¿Cuántos destellos por segundo, como máximo, debe tener un contenido para no provocar crisis epilépticas según WCAG?
+a) Más de 10
+b) Tres como máximo
+c) Veinte
+d) No hay límite
+= b
+> Se evita el contenido que parpadee más de tres veces por segundo.
+@ WCAG
+
+? ¿Cuál es la finalidad de WAI-ARIA?
+a) Definir un lenguaje de estilos
+b) Comprimir imágenes
+c) Autenticar usuarios
+d) Proporcionar roles y atributos para hacer accesibles contenidos dinámicos y componentes de interfaz
+= d
+> ARIA complementa HTML cuando no existe un elemento semántico equivalente.
+@ WAI-ARIA
+
+? ¿Qué pautas del W3C-WAI se dirigen a las herramientas de creación de contenido (editores)?
+a) UAAG
+b) WCAG
+c) WSDL
+d) ATAG
+= d
+> UAAG se refiere a agentes de usuario (navegadores); WCAG, al contenido.
+@ WAI
+
+? ¿Qué norma técnica europea sirve de referencia para los requisitos de accesibilidad de las TIC y se aplica en el RD 1112/2018?
+a) UNE-EN 301 549
+b) ISO 27001
+c) RFC 2616
+d) IEEE 802.11
+= a
+> Incorpora las pautas WCAG para contenidos web.
+@ Normativa
+
+? ¿Qué directiva europea establece los requisitos de accesibilidad de productos y servicios (Acta Europea de Accesibilidad)?
+a) Directiva (UE) 2019/882
+b) Directiva (UE) 2016/2102
+c) Directiva 95/46/CE
+d) Directiva 2016/680
+= a
+> La Directiva 2016/2102 se refiere a webs y aplicaciones móviles del sector público.
+@ Normativa
+
+? ¿Qué ley española traspone la Directiva 2019/882 sobre accesibilidad de productos y servicios?
+a) Ley 11/2023, de 8 de mayo
+b) Ley 11/2007
+c) Ley 39/2015
+d) Ley 25/2013
+= a
+> Sus obligaciones son exigibles desde el 28 de junio de 2025.
+@ Normativa
+
+? ¿Qué regula el Real Decreto 1494/2007?
+a) La firma electrónica
+b) La protección de datos
+c) La factura electrónica
+d) Las condiciones básicas para el acceso de las personas con discapacidad a las tecnologías, productos y servicios relacionados con la sociedad de la información y medios de comunicación social
+= d
+> Desarrolla el mandato de la Ley 51/2003 (LIONDAU), hoy integrada en el RDL 1/2013.
+@ Normativa
+
+? ¿Cuál de las siguientes herramientas es un lector de pantalla libre para Windows?
+a) JAWS
+b) VoiceOver
+c) TalkBack
+d) NVDA
+= d
+> JAWS es comercial; VoiceOver es de Apple y TalkBack de Android.
+@ Tecnologías de apoyo
+
+? ¿Qué dispositivo permite a una persona con ceguera leer en braille el contenido de la pantalla?
+a) Línea braille
+b) Pulsador
+c) Ampliador
+d) Teclado alternativo
+= a
+> Se conecta al lector de pantalla.
+@ Tecnologías de apoyo
+
+? ¿Qué limitación tienen las herramientas de evaluación automática de accesibilidad?
+a) Detectan todos los problemas
+b) No pueden evaluar HTML
+c) Solo funcionan sin JavaScript
+d) Solo detectan una parte de los problemas; se necesita revisión manual experta y pruebas con usuarios
+= d
+> Por ejemplo, una herramienta puede verificar que existe alt, pero no que sea adecuado.
+@ Evaluación
+
+? Según ISO 9241-11, la usabilidad se mide en términos de:
+a) Eficacia, eficiencia y satisfacción
+b) Seguridad, disponibilidad e integridad
+c) Rapidez, coste y calidad
+d) Accesibilidad, interoperabilidad y portabilidad
+= a
+> Siempre referidos a usuarios, objetivos y contexto de uso específicos.
+@ Usabilidad
+
+? ¿Qué norma ISO define el diseño centrado en el usuario?
+a) ISO 27002
+b) ISO 12207
+c) ISO 9241-210
+d) ISO 25010
+= c
+> Describe un proceso iterativo basado en la comprensión de usuarios y tareas.
+@ Usabilidad
+
+? ¿Cuál de las siguientes es una de las 10 heurísticas de Nielsen?
+a) Cifrado extremo a extremo
+b) Visibilidad del estado del sistema
+c) Compresión de datos
+d) Acceso por biometría
+= b
+> Otras: prevención de errores, reconocimiento antes que recuerdo, consistencia y estándares, control y libertad del usuario.
+@ Usabilidad
+
+? ¿Qué método consiste en que expertos revisen una interfaz contrastándola con principios reconocidos?
+a) Evaluación heurística
+b) Card sorting
+c) Test A/B
+d) Eye tracking
+= a
+> El card sorting sirve para organizar la información según el modelo mental de los usuarios.
+@ Usabilidad
+
+? Según Nielsen, ¿cuántos usuarios bastan en un test de usabilidad para detectar aproximadamente el 85 % de los problemas?
+a) 1
+b) 20
+c) 100
+d) 5
+= d
+> Es preferible realizar varias iteraciones con grupos pequeños.
+@ Usabilidad
+
+? ¿Qué mide la escala SUS?
+a) La percepción de usabilidad de un sistema mediante un cuestionario estandarizado
+b) El tiempo de respuesta de un servidor
+c) El número de errores de código
+d) El consumo de energía
+= a
+> System Usability Scale: 10 preguntas con puntuación de 0 a 100.
+@ Usabilidad
+
+? ¿Qué enuncia la ley de Hick?
+a) El tiempo para alcanzar un objetivo depende de su distancia y tamaño
+b) El tiempo de decisión aumenta con el número de opciones disponibles
+c) La memoria de trabajo admite 7±2 elementos
+d) Todo sistema es perfectible
+= b
+> La ley de Fitts relaciona distancia y tamaño con el tiempo de apuntado; Miller, la memoria de trabajo.
+@ Usabilidad
+
+? ¿Qué técnica se emplea para conocer cómo agrupan los usuarios los contenidos y diseñar la arquitectura de la información?
+a) Fuzzing
+b) Test de penetración
+c) Card sorting
+d) Profiling
+= c
+> Los participantes agrupan tarjetas que representan contenidos.
+@ Usabilidad
+
+? ¿Qué medida del ENS exige que los puestos de trabajo permanezcan despejados?
+a) [mp.sw.1]
+b) [mp.eq.1] Puesto de trabajo despejado
+c) [op.acc.1]
+d) [mp.com.1]
+= b
+> [mp.eq.2] regula el bloqueo del puesto de trabajo por inactividad y [mp.eq.3] la protección de dispositivos portátiles.
+@ ENS
+
+? Según el ENS, el bloqueo del puesto de trabajo por inactividad:
+a) Requiere una nueva autenticación del usuario para reanudar la actividad
+b) Cierra siempre la sesión del usuario
+c) Elimina los datos locales
+d) Solo se aplica a servidores
+= a
+> El refuerzo R1 añade la cancelación de sesiones pasado un tiempo superior.
+@ ENS
+
+? ¿Qué medida de seguridad protege la información almacenada en un portátil que puede ser extraviado?
+a) Aumentar la RAM
+b) Cambiar el fondo de pantalla
+c) Desactivar el antivirus
+d) Cifrado de disco
+= d
+> BitLocker, FileVault o LUKS; junto a inventario y borrado remoto.
+@ Puesto de trabajo
+
+? ¿Qué principio recomienda no conceder a los usuarios derechos de administrador local salvo necesidad?
+a) Redundancia
+b) Mínimo privilegio
+c) Defensa perimetral
+d) No repudio
+= b
+> Reduce el impacto del malware y de los errores.
+@ Puesto de trabajo
+
+? Para mejorar la disponibilidad de los datos de los usuarios, se recomienda:
+a) Guardarlos solo en el escritorio local
+b) Guardarlos en memorias USB sin cifrar
+c) Guardarlos en carpetas de red o servidores con copias de seguridad en lugar de solo en el disco local
+d) No hacer copias
+= c
+> Las redirecciones de carpetas y los almacenamientos corporativos facilitan copias y recuperación.
+@ Puesto de trabajo
+
+? ¿Qué es DLP?
+a) Prevención de fuga de datos
+b) Descarga local de programas
+c) Doble lenguaje de programación
+d) Dispositivo de lectura de puertos
+= a
+> Controla que la información sensible no salga de la organización por correo, USB o nube.
+@ Puesto de trabajo
+
+? ¿Qué es un SSDLC?
+a) Un ciclo de vida de desarrollo de software que integra la seguridad en todas las fases
+b) Un tipo de disco SSD
+c) Un protocolo de red
+d) Un lenguaje de programación
+= a
+> DevSecOps lo incorpora a la integración y entrega continuas.
+@ Seguridad en desarrollo
+
+? ¿Qué técnica analiza el código fuente sin ejecutarlo para detectar vulnerabilidades?
+a) DAST
+b) Fuzzing
+c) SAST
+d) Pentesting
+= c
+> DAST prueba la aplicación en ejecución; SCA analiza dependencias.
+@ Seguridad en desarrollo
+
+? ¿Qué técnica prueba la aplicación en ejecución desde el exterior para encontrar vulnerabilidades?
+a) SAST
+b) DAST
+c) SCA
+d) Linting
+= b
+> Se asemeja al comportamiento de un atacante.
+@ Seguridad en desarrollo
+
+? ¿Qué es SCA (Software Composition Analysis)?
+a) Un tipo de cifrado
+b) Un modelo de red
+c) Una prueba de rendimiento
+d) El análisis de las dependencias y componentes de terceros para detectar vulnerabilidades conocidas y licencias
+= d
+> Un SBOM es el inventario de componentes de software.
+@ Seguridad en desarrollo
+
+? ¿Qué modelo de amenazas clasifica las amenazas en Suplantación, Manipulación, Repudio, Revelación de información, Denegación de servicio y Elevación de privilegios?
+a) SOLID
+b) STRIDE
+c) CAP
+d) ACID
+= b
+> STRIDE se usa en el modelado de amenazas durante el diseño.
+@ Seguridad en desarrollo
+
+? ¿Cuál de los siguientes es un riesgo de la lista OWASP Top 10?
+a) Falta de memoria caché
+b) Uso excesivo de CSS
+c) Broken Access Control (control de acceso roto)
+d) Diseño responsive
+= c
+> Otros: fallos criptográficos, inyección, diseño inseguro, configuración incorrecta, componentes vulnerables.
+@ OWASP
+
+? ¿Qué defensa es la más eficaz contra la inyección SQL?
+a) Consultas parametrizadas
+b) Ocultar mensajes de error únicamente
+c) Utilizar mayúsculas
+d) Limitar la longitud de los campos
+= a
+> Es la medida principal; la validación y los mínimos privilegios la complementan.
+@ OWASP
+
+? ¿Qué defensa mitiga el XSS?
+a) Cifrar la base de datos
+b) Codificación de la salida y Content-Security-Policy
+c) Usar GET en todos los formularios
+d) Aumentar el tamaño de las cookies
+= b
+> También ayudan las cookies HttpOnly.
+@ OWASP
+
+? ¿Qué ataque fuerza al navegador de un usuario autenticado a realizar una acción no deseada en un sitio de confianza?
+a) SQL injection
+b) Ransomware
+c) Phishing exclusivamente
+d) CSRF
+= d
+> Se mitiga con tokens anti-CSRF y cookies SameSite.
+@ OWASP
+
+? ¿Qué algoritmo es adecuado para almacenar contraseñas?
+a) MD5
+b) Argon2, bcrypt, scrypt o PBKDF2 con sal
+c) SHA-1 sin sal
+d) Base64
+= b
+> Deben ser algoritmos lentos y con sal; Base64 no es un hash.
+@ Seguridad en desarrollo
+
+? En la validación de entradas, la estrategia recomendada es:
+a) Lista negra de caracteres peligrosos solo en el cliente
+b) Lista blanca (permitir solo lo esperado) y validación en el servidor
+c) No validar si hay cortafuegos
+d) Validar solo en JavaScript
+= b
+> La validación en cliente mejora la experiencia, pero no es una medida de seguridad.
+@ Seguridad en desarrollo
+
+? ¿Qué identifica un CVE?
+a) Un tipo de debilidad de software
+b) Una vulnerabilidad pública concreta (identificador común)
+c) Una puntuación de gravedad
+d) Un algoritmo de cifrado
+= b
+> CWE clasifica tipos de debilidades; CVSS puntúa la gravedad de 0 a 10.
+@ Seguridad en desarrollo
+
+? Según la medida [mp.sw.1] del ENS, el desarrollo de aplicaciones debe hacerse:
+a) Directamente en producción
+b) En un sistema diferente y separado del de producción
+c) Con datos reales siempre
+d) Sin metodología
+= b
+> No debe haber herramientas ni datos de desarrollo en producción, ni datos de producción en desarrollo.
+@ ENS
+
+? ¿Qué exige [mp.sw.2] antes de pasar una aplicación a producción?
+a) Solo documentar el manual de usuario
+b) Eliminar los registros de auditoría
+c) Comprobar que se cumplen los criterios de aceptación de seguridad y que no se deteriora la seguridad de otros componentes
+d) Desplegar sin pruebas
+= c
+> Los refuerzos incluyen pruebas en preproducción y auditoría de código fuente.
+@ ENS
+
+? ¿Qué artículo del RGPD recoge la protección de datos desde el diseño y por defecto?
+a) Artículo 25
+b) Artículo 5
+c) Artículo 32
+d) Artículo 83
+= a
+> El art. 32 regula la seguridad del tratamiento y el 5, los principios.
+@ RGPD art. 25
+
+? ¿Qué medida es preferible para los datos usados en pruebas antes de la implantación de un sistema?
+a) Usar siempre datos reales de producción
+b) No realizar pruebas
+c) No usar datos reales; y si es necesario, garantizar el nivel de seguridad correspondiente
+d) Publicar los datos de prueba
+= c
+> Es el refuerzo R4 de [mp.sw.1] del ENS.
+@ ENS

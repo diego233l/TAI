@@ -1,0 +1,30 @@
+Accesibilidad universal (RDL 1/2013) :: Condición de entornos, productos y servicios para ser comprensibles, utilizables y practicables por todas las personas de la forma más autónoma y natural posible; presupone el diseño universal.
+Diseño universal :: Concebir desde el origen productos y entornos utilizables por todas las personas en la mayor extensión posible, sin adaptación ni diseño especializado; no excluye productos de apoyo.
+Ajustes razonables :: Adaptaciones necesarias en un caso particular sin carga desproporcionada; denegarlos es discriminación.
+Siete principios del diseño universal :: Uso equitativo, flexibilidad, simple e intuitivo, información perceptible, tolerancia al error, bajo esfuerzo físico y tamaño y espacio apropiados.
+Accesibilidad frente a usabilidad :: Accesibilidad: que todas las personas puedan usarlo. Usabilidad: lo fácil, eficiente y satisfactorio que resulta.
+Normativa de accesibilidad TIC :: RDL 1/2013; RD 1494/2007; RD 1112/2018 (webs y apps públicas); Directiva (UE) 2019/882; Ley 11/2023 (exigible desde el 28-6-2025); UNE-EN 301 549.
+WCAG :: W3C-WAI. 2.0 (2008, ISO/IEC 40500), 2.1 (2018), 2.2 (2023). Niveles A, AA (AAP) y AAA.
+Principios POUR :: Perceptible, Operable, Comprensible y Robusto.
+Contraste mínimo AA :: 4,5:1 texto normal; 3:1 texto grande; AAA 7:1.
+Criterios WCAG habituales :: Alt en imágenes, subtítulos, no usar solo el color, teclado con foco visible, texto ampliable al 200 %, máximo tres destellos por segundo, etiquetas y lang.
+WCAG 2.2 :: Añade objetivos táctiles de al menos 24×24 px, foco no oculto, ayuda consistente y autenticación accesible.
+WAI-ARIA, ATAG, UAAG :: ARIA: roles y atributos para contenido dinámico. ATAG: herramientas de autor. UAAG: agentes de usuario.
+Tecnologías de apoyo :: Lectores de pantalla (JAWS, NVDA, VoiceOver, TalkBack), ampliadores, líneas braille, reconocimiento de voz, pulsadores, seguimiento ocular.
+Evaluación de accesibilidad :: Herramientas automáticas (WAVE, Lighthouse, axe) + revisión manual experta + pruebas con usuarios.
+Usabilidad (ISO 9241-11) :: Eficacia, eficiencia y satisfacción en un contexto de uso. ISO 9241-210: diseño centrado en el usuario.
+Heurísticas de Nielsen :: Estado del sistema, mundo real, control y libertad, consistencia, prevención de errores, reconocimiento antes que recuerdo, flexibilidad, minimalismo, recuperación de errores, ayuda.
+Métodos de usabilidad :: Evaluación heurística, test con usuarios (5 usuarios ≈ 85 %), recorrido cognitivo, card sorting, eye tracking, test A/B, SUS.
+Leyes de interacción :: Fitts: distancia y tamaño del objetivo. Hick: más opciones, más tiempo de decisión. Miller: 7±2 elementos.
+Puesto de usuario en el ENS :: mp.eq.1 puesto despejado; mp.eq.2 bloqueo por inactividad; mp.eq.3 dispositivos portátiles; mp.eq.4 otros dispositivos conectados.
+Protección del puesto :: Cifrado de disco, mínimo privilegio, MFA, control de USB, DLP, antivirus/EDR, parches, almacenamiento en servidor y copias.
+SSDLC / DevSecOps :: Seguridad en todas las fases: requisitos, modelado de amenazas (STRIDE), codificación segura, pruebas y despliegue.
+STRIDE :: Suplantación, Manipulación, Repudio, Revelación de información, Denegación de servicio, Elevación de privilegios.
+SAST, DAST, SCA :: SAST: análisis estático del código. DAST: prueba dinámica en ejecución. SCA: dependencias y licencias (SBOM).
+OWASP Top 10 (2021) :: Control de acceso roto, fallos criptográficos, inyección, diseño inseguro, configuración incorrecta, componentes vulnerables, autenticación, integridad, registro y monitorización, SSRF.
+Contramedidas web :: SQLi: consultas parametrizadas. XSS: codificación de salida y CSP. CSRF: tokens y SameSite. Sesiones y contraseñas: hash con sal (Argon2, bcrypt, PBKDF2) y MFA.
+Validación de entradas :: En servidor y con lista blanca; no basta validar en el cliente.
+CVE, CWE y CVSS :: CVE: vulnerabilidad concreta. CWE: tipo de debilidad. CVSS: gravedad de 0 a 10.
+mp.sw.1 (ENS) :: Desarrollo separado de producción; refuerzos de mínimo privilegio, metodología segura, seguridad desde el diseño, datos de prueba y lista de componentes.
+mp.sw.2 (ENS) :: Aceptación y puesta en servicio: criterios de seguridad, pruebas en preproducción y auditoría de código.
+RGPD art. 25 :: Protección de datos desde el diseño y por defecto. Art. 32: seguridad del tratamiento.
