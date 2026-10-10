@@ -24,7 +24,7 @@ Requisitos: nginx, PHP-FPM y git. Con el instalador:
 
 ```sh
 git clone -b <rama> https://github.com/diego233l/TAI.git /opt/apps/tai
-sudo /opt/apps/tai/install.sh              # puerto 8082; otro: sudo PORT=8090 /opt/apps/tai/install.sh
+sudo /opt/apps/tai/install.sh              # primer puerto libre desde el 8082; o fíjalo: sudo PORT=8090 ...
 ```
 
 `install.sh` detecta el socket de PHP-FPM, instala `phpX.Y-sqlite3` si falta, crea

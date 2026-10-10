@@ -8,10 +8,11 @@
 # no reinicia nada (solo `nginx -s reload` tras validar la configuración) y, si algo
 # falla, deshace su propio cambio de nginx.
 #
-# Variables opcionales: PORT (8082), APP_DIR (/opt/apps/tai), DATA_DIR (/var/lib/tai),
+# Variables opcionales: PORT (por defecto el primer libre desde 8082), APP_DIR (/opt/apps/tai), DATA_DIR (/var/lib/tai),
 # PHP_SOCK (se detecta), WEB_USER (www-data).
 set -euo pipefail
 
+PORT_FIXED="${PORT:-}"
 PORT="${PORT:-8082}"
 APP_DIR="${APP_DIR:-/opt/apps/tai}"
 DATA_DIR="${DATA_DIR:-/var/lib/tai}"
@@ -54,10 +55,16 @@ if ! "php$PHPV" -m 2>/dev/null | grep -qi '^pdo_sqlite$'; then
 fi
 
 # 3. Puerto libre ---------------------------------------------------------------
-own_conf=0
-[ -e "$CONF_LINK" ] && own_conf=1
-if [ "$own_conf" -eq 0 ] && ss -ltn 2>/dev/null | awk '{print $4}' | grep -Eq "[:.]$PORT\$"; then
-    die "el puerto $PORT ya está en uso por otro servicio. Elige otro: PORT=8090 sudo -E $0"
+# Si ya hay un tai.conf propio, se reutiliza su puerto; si no, y no se fijó PORT,
+# se toma el primer puerto libre desde el 8082.
+busy() { ss -ltn 2>/dev/null | awk '{print $4}' | grep -Eq "[:.]$1\$"; }
+if [ -e "$CONF_LINK" ]; then
+    [ -n "$PORT_FIXED" ] || PORT="$(grep -Eo 'listen +[0-9]+' "$CONF_LINK" | head -1 | grep -Eo '[0-9]+')"
+elif [ -n "$PORT_FIXED" ]; then
+    ! busy "$PORT" || die "el puerto $PORT ya está en uso. Elige otro: PORT=8090 sudo -E $0"
+else
+    while busy "$PORT"; do PORT=$((PORT + 1)); [ "$PORT" -le 8199 ] || die "no hay puertos libres entre 8082 y 8199."; done
+    say "Puerto $PORT (los anteriores están ocupados)"
 fi
 
 # 4. Datos fuera del repositorio ------------------------------------------------
