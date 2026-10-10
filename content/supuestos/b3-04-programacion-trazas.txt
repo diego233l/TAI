@@ -1,0 +1,144 @@
+@title Programación: trazas de código Java
+@block b3
+@topics b3t2,b3t4
+@enunciado
+Se dispone del siguiente programa en Java (compila y se ejecuta sin errores):
+
+```java
+public class Prueba {
+    static int mcd(int a, int b) { return b == 0 ? a : mcd(b, a % b); }
+    static int f(int n) { return n <= 1 ? n : f(n - 1) + f(n - 2); }
+    static void incrementa(int x, int[] v) { x++; v[0]++; }
+
+    public static void main(String[] args) {
+        int[] a = {5, 3, 8, 1};
+        int s = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] % 2 == 1) s += a[i];
+        }
+        System.out.println("s=" + s);                        // (1)
+        System.out.println(mcd(84, 36));                     // (2)
+        System.out.println(f(7));                            // (3)
+        int x = 10; int[] v = {10};
+        incrementa(x, v);
+        System.out.println(x + "," + v[0]);                  // (4)
+        int i = 0, c = 0;
+        do { c += i; i += 3; } while (i < 10);
+        System.out.println(c + " " + i);                     // (5)
+        int p = 7, q = 2;
+        System.out.println(p / q + " " + p % q + " " + (double) p / q);   // (6)
+        System.out.println(p > 5 || p / (q - 2) > 0);        // (7)
+        for (int j = 0; j < a.length - 1; j++) {
+            if (a[j] > a[j + 1]) { int t = a[j]; a[j] = a[j + 1]; a[j + 1] = t; }
+        }
+        System.out.println(java.util.Arrays.toString(a));    // (8)
+        System.out.println("1" + 2 + 3);                     // (9)
+        System.out.println(1 + 2 + "3");                     // (10)
+        int k = 5;
+        int r = k++ + ++k;
+        System.out.println(r + " " + k);                     // (11)
+    }
+}
+```
+
+Las líneas numeradas como comentario indican cada impresión. Los valores de `a` en (8) son los del array **tal y como está en ese punto** (no se ha modificado antes).
+@fin
+
+? ¿Qué imprime la instrucción (1)?
+a) s=9
+b) s=17
+c) s=8
+d) s=0
+= a
+> Se suman los elementos impares del array: 5 + 3 + 1 = 9.
+@ Bucles y arrays
+
+? ¿Qué imprime la instrucción (2)?
+a) 12
+b) 6
+c) 36
+d) 84
+= a
+> Algoritmo de Euclides: mcd(84,36) → mcd(36,12) → mcd(12,0) = 12.
+@ Recursividad
+
+? ¿Qué imprime la instrucción (3)?
+a) 8
+b) 13
+c) 21
+d) 7
+= b
+> f es la sucesión de Fibonacci: 0, 1, 1, 2, 3, 5, 8, 13… con f(7) = 13.
+@ Recursividad
+
+? ¿Cuál es la complejidad temporal de la función f tal y como está escrita?
+a) Exponencial, O(2ⁿ)
+b) Lineal, O(n)
+c) Logarítmica, O(log n)
+d) Constante, O(1)
+= a
+> Cada llamada genera dos llamadas recursivas con solapamiento de subproblemas. La memoización la reduciría a O(n).
+@ Complejidad
+
+? ¿Qué imprime la instrucción (4)?
+a) 11,11
+b) 10,10
+c) 11,10
+d) 10,11
+= d
+> Java pasa siempre por valor: x es una copia (no cambia) y v es una copia de la referencia al mismo array, que sí se modifica.
+@ Paso de parámetros
+
+? ¿Qué imprime la instrucción (5)?
+a) 18 12
+b) 9 9
+c) 18 9
+d) 12 12
+= a
+> Iteraciones del do-while: (c=0,i=3), (c=3,i=6), (c=9,i=9), (c=18,i=12). Al llegar a i=12 la condición i < 10 es falsa.
+@ Bucles
+
+? ¿Qué imprime la instrucción (6)?
+a) 3 1 3.5
+b) 3.5 1 3.5
+c) 3 1 3
+d) 3 1 4
+= a
+> Con enteros, 7 / 2 = 3 y 7 % 2 = 1. El cast (double) p se aplica antes de dividir, así que 7.0 / 2 = 3.5.
+@ Operadores
+
+? ¿Qué imprime la instrucción (7)?
+a) true
+b) false
+c) Lanza una ArithmeticException
+d) No compila
+= a
+> p > 5 es verdadero y el operador || evalúa en cortocircuito: no se calcula p / (q − 2), que sería una división entera por cero.
+@ Operadores
+
+? ¿Qué imprime la instrucción (8)?
+a) [3, 5, 1, 8]
+b) [1, 3, 5, 8]
+c) [5, 3, 8, 1]
+d) [3, 5, 8, 1]
+= a
+> Es una pasada del método de la burbuja: (5,3)→3,5; (5,8) sin cambio; (8,1)→1,8. Resultado [3, 5, 1, 8]; para ordenar todo harían falta más pasadas.
+@ Ordenación
+
+? ¿Qué imprimen las instrucciones (9) y (10)?
+a) 15 y 33
+b) 123 y 33
+c) 123 y 123
+d) 15 y 15
+= b
+> "1" + 2 + 3 concatena de izquierda a derecha → "123". En 1 + 2 + "3" primero se suman los enteros (3) y después se concatena → "33".
+@ Operadores
+
+? ¿Qué imprime la instrucción (11)?
+a) 11 7
+b) 12 6
+c) 12 7
+d) 10 7
+= c
+> k++ devuelve 5 y deja k=6; ++k incrementa a 7 y devuelve 7. r = 5 + 7 = 12 y k = 7.
+@ Operadores

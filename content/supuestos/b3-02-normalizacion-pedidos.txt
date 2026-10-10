@@ -1,0 +1,116 @@
+@title Normalización: de una tabla de pedidos a 3FN
+@block b3
+@topics b3t1,b3t3
+@enunciado
+Una empresa guarda todos sus pedidos en una única tabla:
+
+```
+PEDIDO_LINEA(id_pedido, fecha_pedido, id_cliente, nombre_cliente, ciudad_cliente,
+             id_producto, desc_producto, precio_unitario, cantidad)
+```
+
+La clave primaria es **(id_pedido, id_producto)**. Las reglas del negocio son:
+
+- Un pedido tiene una única fecha y pertenece a un único cliente.
+- Un cliente tiene un único nombre y una única ciudad.
+- Un producto tiene una descripción y un precio unitario únicos.
+- En cada línea de pedido se indica la cantidad pedida de un producto.
+
+Contenido de ejemplo:
+
+| id_pedido | fecha_pedido | id_cliente | nombre_cliente | ciudad_cliente | id_producto | desc_producto | precio_unitario | cantidad |
+|---|---|---|---|---|---|---|---|---|
+| 100 | 2025-03-01 | C1 | Ana | Madrid | P1 | Teclado | 20 | 2 |
+| 100 | 2025-03-01 | C1 | Ana | Madrid | P2 | Ratón | 10 | 1 |
+| 101 | 2025-03-02 | C2 | Luis | Sevilla | P1 | Teclado | 20 | 5 |
+@fin
+
+? ¿Cuál de las siguientes dependencias funcionales es una dependencia parcial respecto de la clave primaria?
+a) (id_pedido, id_producto) → cantidad
+b) id_cliente → nombre_cliente
+c) id_producto → desc_producto
+d) id_pedido → id_cliente
+= c
+> id_producto depende solo de una parte de la clave compuesta, por lo que desc_producto (y precio_unitario) tienen una dependencia parcial. id_pedido → id_cliente también es parcial; id_cliente → nombre_cliente es transitiva; (id_pedido, id_producto) → cantidad es completa.
+@ Dependencias funcionales
+
+? ¿Qué atributos dependen únicamente de id_pedido (parte de la clave)?
+a) nombre_cliente y ciudad_cliente directamente
+b) cantidad y precio_unitario
+c) desc_producto y cantidad
+d) fecha_pedido e id_cliente
+= d
+> Un pedido tiene una única fecha y un único cliente. El nombre y la ciudad del cliente dependen de id_cliente, es decir, transitivamente de id_pedido.
+@ Dependencias funcionales
+
+? ¿En qué forma normal más alta está la tabla PEDIDO_LINEA tal como está definida?
+a) 2FN
+b) 3FN
+c) FNBC
+d) 1FN
+= d
+> Todos los atributos son atómicos (1FN), pero existen dependencias parciales respecto de la clave compuesta, por lo que no está en 2FN.
+@ Formas normales
+
+? ¿Qué anomalía de inserción presenta el diseño actual?
+a) No se pueden registrar pedidos con más de una línea
+b) No se puede dar de alta un producto nuevo hasta que forme parte de algún pedido
+c) No se pueden repetir clientes
+d) No se pueden consultar los pedidos
+= b
+> Como la clave incluye id_pedido, no existe fila posible para un producto que aún no está en ningún pedido. Pasa lo mismo con un cliente sin pedidos.
+@ Anomalías
+
+? Si el cliente C1 cambia de ciudad, ¿qué problema aparece en el diseño actual?
+a) Hay que modificar todas las filas de sus pedidos y se pueden producir inconsistencias si se omite alguna
+b) Se pierden los pedidos del cliente
+c) La clave primaria deja de ser única
+d) No se puede actualizar nunca
+= a
+> Es una anomalía de actualización por redundancia: la ciudad se repite en cada línea de cada pedido del cliente.
+@ Anomalías
+
+? Al pasar a 2FN, ¿cuál de las siguientes descomposiciones es correcta?
+a) PEDIDO_LINEA(id_pedido, cantidad) y el resto en una tabla sin clave
+b) LINEA(id_pedido, id_producto, desc_producto) y PRODUCTO(id_producto, cantidad)
+c) CLIENTE(id_cliente, cantidad) y PRODUCTO(id_producto, fecha_pedido)
+d) LINEA(id_pedido, id_producto, cantidad), PEDIDO(id_pedido, fecha_pedido, id_cliente, nombre_cliente, ciudad_cliente), PRODUCTO(id_producto, desc_producto, precio_unitario)
+= d
+> Se eliminan las dependencias parciales: los atributos que dependen solo de id_pedido van a PEDIDO y los que dependen solo de id_producto, a PRODUCTO. En LINEA queda lo que depende de la clave completa.
+@ Formas normales
+
+? Tras la descomposición a 2FN, la tabla PEDIDO(id_pedido, fecha_pedido, id_cliente, nombre_cliente, ciudad_cliente) todavía no está en 3FN porque:
+a) tiene una clave compuesta
+b) tiene atributos multivaluados
+c) nombre_cliente y ciudad_cliente dependen de id_cliente, que no es la clave de PEDIDO (dependencia transitiva)
+d) fecha_pedido depende de id_cliente
+= c
+> id_pedido → id_cliente → nombre_cliente, ciudad_cliente: dependencia transitiva. Se resuelve con CLIENTE(id_cliente, nombre_cliente, ciudad_cliente).
+@ Formas normales
+
+? ¿Cuántas tablas tiene el esquema final en 3FN?
+a) 4: CLIENTE, PRODUCTO, PEDIDO y LINEA_PEDIDO
+b) 2
+c) 3
+d) 5
+= a
+> CLIENTE(id_cliente, nombre, ciudad); PRODUCTO(id_producto, desc, precio); PEDIDO(id_pedido, fecha, id_cliente); LINEA_PEDIDO(id_pedido, id_producto, cantidad).
+@ Formas normales
+
+? En el esquema final, ¿qué claves foráneas tiene la tabla LINEA_PEDIDO?
+a) id_cliente hacia CLIENTE
+b) id_pedido hacia PEDIDO e id_producto hacia PRODUCTO
+c) Ninguna
+d) id_producto hacia CLIENTE
+= b
+> Su clave primaria es (id_pedido, id_producto) y cada componente referencia a su tabla de origen.
+@ Diseño relacional
+
+? Con el esquema final, ¿qué consulta devuelve el importe total de cada pedido?
+a) SELECT l.id_pedido, SUM(l.cantidad * p.precio_unitario) FROM LINEA_PEDIDO l JOIN PRODUCTO p ON p.id_producto = l.id_producto GROUP BY l.id_pedido
+b) SELECT id_pedido, SUM(precio_unitario) FROM PEDIDO GROUP BY id_pedido
+c) SELECT id_pedido, cantidad FROM PRODUCTO
+d) SELECT SUM(cantidad) FROM CLIENTE
+= a
+> Hay que unir las líneas con los productos para obtener el precio, multiplicar por la cantidad y agrupar por pedido. Para el pedido 100 del ejemplo: 2 × 20 + 1 × 10 = 50.
+@ SQL

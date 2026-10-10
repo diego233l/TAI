@@ -1,0 +1,138 @@
+@title SQL: empleados, departamentos, agrupaciones y subconsultas
+@block b3
+@topics b3t3
+@enunciado
+Una Administración mantiene estas dos tablas (las claves primarias son `id`; `EMPLEADO.id_dpto` y `EMPLEADO.id_jefe` son claves ajenas, pudiendo valer `NULL`):
+
+```
+DEPARTAMENTO(id, nombre, ciudad)
+EMPLEADO(id, nombre, salario, id_dpto, id_jefe, fecha_alta)
+```
+
+| DEPARTAMENTO.id | nombre | ciudad |
+|---|---|---|
+| 1 | Informática | Madrid |
+| 2 | Contabilidad | Madrid |
+| 3 | RRHH | Sevilla |
+| 4 | Calidad | Valencia |
+
+| EMPLEADO.id | nombre | salario | id_dpto | id_jefe |
+|---|---|---|---|---|
+| 1 | Ana | 3000 | 1 | NULL |
+| 2 | Luis | 2500 | 1 | 1 |
+| 3 | Marta | 2800 | 1 | 1 |
+| 4 | Pedro | 2200 | 2 | NULL |
+| 5 | Eva | 2000 | 2 | 4 |
+| 6 | Juan | 1800 | 3 | NULL |
+| 7 | Sara | 2500 | NULL | 1 |
+
+El salario medio de la tabla EMPLEADO es 2400.
+@fin
+
+? ¿Qué empleados devuelve `SELECT nombre FROM EMPLEADO WHERE salario > (SELECT AVG(salario) FROM EMPLEADO);`?
+a) Ana, Marta
+b) Ana, Luis, Marta, Pedro y Sara
+c) Solo Ana
+d) Ana, Luis, Marta y Sara
+= d
+> La media es 2400. Superan esa cifra Ana (3000), Marta (2800), Luis (2500) y Sara (2500).
+@ Subconsultas
+
+? ¿Qué devuelve `SELECT d.nombre, COUNT(e.id) FROM DEPARTAMENTO d LEFT JOIN EMPLEADO e ON e.id_dpto = d.id GROUP BY d.nombre;`?
+a) Informática 3, Contabilidad 2, RRHH 1, Calidad 1
+b) Informática 3, Contabilidad 2, RRHH 1, Calidad 0
+c) Informática 3, Contabilidad 2, RRHH 1 (sin Calidad)
+d) Informática 4, Contabilidad 2, RRHH 1, Calidad 0
+= b
+> El LEFT JOIN conserva Calidad, que no tiene empleados; COUNT(e.id) ignora los NULL de la parte derecha y devuelve 0. Con COUNT(*) saldría 1.
+@ JOIN
+
+? ¿Cuántas filas devuelve `SELECT * FROM EMPLEADO e JOIN DEPARTAMENTO d ON d.id = e.id_dpto;`?
+a) 7
+b) 4
+c) 6
+d) 28
+= c
+> Es un INNER JOIN: Sara no tiene departamento (NULL) y no encuentra coincidencia, por lo que quedan 6 filas.
+@ JOIN
+
+? ¿Qué departamentos devuelve `SELECT d.nombre FROM DEPARTAMENTO d JOIN EMPLEADO e ON e.id_dpto = d.id GROUP BY d.nombre HAVING COUNT(*) >= 2;`?
+a) Solo Informática
+b) Informática y Contabilidad
+c) Informática, Contabilidad y RRHH
+d) Ninguno
+= b
+> HAVING filtra los grupos: Informática (3) y Contabilidad (2). RRHH tiene 1.
+@ GROUP BY
+
+? ¿Qué devuelve `SELECT e.nombre, j.nombre FROM EMPLEADO e JOIN EMPLEADO j ON j.id = e.id_jefe;`?
+a) Cuatro filas: Luis-Ana, Marta-Ana, Eva-Pedro y Sara-Ana
+b) Siete filas
+c) Tres filas: Ana, Pedro y Juan
+d) Un producto cartesiano de 49 filas
+= a
+> Es una autorreunión que empareja cada empleado con su jefe. Ana, Pedro y Juan no tienen jefe (NULL) y no aparecen.
+@ JOIN
+
+? ¿Qué devuelve `SELECT nombre FROM DEPARTAMENTO WHERE id NOT IN (SELECT id_dpto FROM EMPLEADO);`?
+a) Calidad
+b) Ninguna fila
+c) Calidad y RRHH
+d) Se produce un error de sintaxis
+= b
+> La subconsulta contiene un NULL (el departamento de Sara). Para cualquier id, «id NOT IN (…, NULL)» nunca es verdadero, por lo que el resultado es vacío. Con NOT EXISTS sí se obtendría Calidad.
+@ NULL
+
+? ¿Cuál es la consulta correcta para obtener los departamentos sin empleados?
+a) SELECT nombre FROM DEPARTAMENTO d WHERE NOT EXISTS (SELECT 1 FROM EMPLEADO e WHERE e.id_dpto = d.id)
+b) SELECT nombre FROM DEPARTAMENTO WHERE id = NULL
+c) SELECT nombre FROM DEPARTAMENTO WHERE id <> ALL (SELECT id_dpto FROM EMPLEADO)
+d) SELECT nombre FROM DEPARTAMENTO WHERE COUNT(id) = 0
+= a
+> NOT EXISTS no se ve afectada por los NULL. Las opciones b y d son incorrectas (= NULL nunca es verdadero y COUNT no puede usarse así en WHERE); la c, como NOT IN, falla con el NULL.
+@ NULL
+
+? ¿Qué devuelve `SELECT d.nombre, SUM(e.salario) FROM DEPARTAMENTO d JOIN EMPLEADO e ON e.id_dpto = d.id GROUP BY d.nombre HAVING SUM(e.salario) > 5000;`?
+a) Informática 8300 y Contabilidad 4200
+b) Informática 10800
+c) Ninguna fila
+d) Informática 8300
+= d
+> Informática suma 3000 + 2500 + 2800 = 8300; Contabilidad, 4200; RRHH, 1800. Solo el primero supera 5000.
+@ GROUP BY
+
+? ¿Qué devuelve `SELECT COUNT(*), COUNT(id_dpto), COUNT(DISTINCT id_dpto) FROM EMPLEADO;`?
+a) 7, 6, 3
+b) 7, 7, 4
+c) 6, 6, 3
+d) 7, 6, 4
+= a
+> COUNT(*) cuenta las 7 filas; COUNT(id_dpto) ignora el NULL de Sara (6); COUNT(DISTINCT id_dpto) cuenta los departamentos distintos con empleados: 1, 2 y 3.
+@ Agregación
+
+? Con `RANK() OVER (ORDER BY salario DESC)`, ¿qué posición tiene Pedro (salario 2200)? ¿Y con DENSE_RANK()?
+a) RANK = 4 y DENSE_RANK = 4
+b) RANK = 5 y DENSE_RANK = 5
+c) RANK = 4 y DENSE_RANK = 5
+d) RANK = 5 y DENSE_RANK = 4
+= d
+> Por delante de Pedro hay cuatro empleados (Ana, Marta, y Luis y Sara empatados con 2500). RANK deja huecos tras el empate (posiciones 1, 2, 3, 3, 5…) y DENSE_RANK no (1, 2, 3, 3, 4…).
+@ Funciones de ventana
+
+? Se quiere impedir que a través de una vista de los empleados de Madrid se puedan insertar o modificar filas que dejen de pertenecer a Madrid. ¿Qué cláusula se añade a CREATE VIEW?
+a) WITH GRANT OPTION
+b) WITH CHECK OPTION
+c) WITH RECURSIVE
+d) WITH NO DATA
+= b
+> WITH CHECK OPTION comprueba que las filas insertadas o actualizadas por la vista cumplan su condición WHERE.
+@ Vistas
+
+? Se necesita registrar en una tabla de auditoría el salario anterior y el nuevo cada vez que se modifica un empleado. ¿Qué objeto es el más adecuado?
+a) Un procedimiento almacenado que el usuario debe recordar llamar
+b) Un índice sobre la columna salario
+c) Un disparador AFTER UPDATE FOR EACH ROW sobre EMPLEADO que use OLD y NEW
+d) Una vista materializada
+= c
+> Un trigger se ejecuta automáticamente ante el UPDATE y accede a los valores OLD (anteriores) y NEW (nuevos) de cada fila.
+@ Disparadores

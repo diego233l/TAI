@@ -1,0 +1,103 @@
+@title Modelo entidad-relación y paso a tablas: hospital
+@block b3
+@topics b3t1
+@enunciado
+Se diseña la base de datos de un hospital a partir de estos requisitos:
+
+1. De cada **paciente** se guarda el DNI (identificador), nombre, fecha de nacimiento y **uno o varios teléfonos**. La **edad** se obtiene a partir de la fecha de nacimiento.
+2. De cada **médico** se guarda el número de colegiado (identificador), nombre y especialidad.
+3. Un paciente puede tener **muchas citas** con distintos médicos y un médico atiende **muchas citas**. De cada cita interesan la **fecha, la hora y el motivo**. Un mismo paciente no tiene dos citas con el mismo médico a la misma fecha y hora.
+4. El hospital tiene **habitaciones** identificadas por su número y con una planta. Cada habitación tiene **camas**, que se identifican por un número de cama **dentro de la habitación** (la cama 1 existe en todas las habitaciones).
+5. Un paciente ingresado ocupa **una cama** y una cama aloja como máximo **un paciente** a la vez. No todos los pacientes están ingresados ni todas las camas están ocupadas.
+6. Los médicos pueden ser **titulares** o **residentes**; los residentes tienen además un **tutor**, que es otro médico.
+@fin
+
+? ¿Qué cardinalidad tiene la relación entre PACIENTE y MEDICO a través de las citas?
+a) 1:N
+b) 1:1
+c) N:1
+d) N:M
+= d
+> Un paciente puede tener muchas citas con distintos médicos y un médico atiende a muchos pacientes: relación muchos a muchos.
+@ Cardinalidad
+
+? ¿Cómo se transforma la relación N:M entre PACIENTE y MEDICO en el modelo relacional?
+a) Añadiendo el DNI del paciente a la tabla MEDICO
+b) Añadiendo el colegiado a la tabla PACIENTE
+c) Fusionando PACIENTE y MEDICO en una sola tabla
+d) En una tabla CITA con las claves de ambos y los atributos de la cita
+= d
+> Toda relación N:M genera una tabla intermedia cuya clave se compone de las claves de las entidades relacionadas más, aquí, la fecha y la hora.
+@ Paso a relacional
+
+? ¿Cuál es una clave primaria adecuada para la tabla CITA?
+a) (dni_paciente)
+b) (colegiado)
+c) (motivo)
+d) (dni_paciente, colegiado, fecha, hora)
+= d
+> Un paciente puede tener varias citas con el mismo médico en distintos momentos, pero no dos a la misma fecha y hora. Por eso la clave debe incluir fecha y hora.
+@ Claves
+
+? ¿Cómo se representa en el modelo relacional el atributo multivaluado «teléfono» de PACIENTE?
+a) Con una tabla TELEFONO(dni_paciente, telefono) con clave foránea a PACIENTE
+b) Con una columna «telefonos» con los números separados por comas
+c) Con tantas columnas telefono1, telefono2… como se necesiten en PACIENTE
+d) Con una columna en MEDICO
+= a
+> Un atributo multivaluado viola la 1FN si se almacena en una sola columna; se resuelve con una tabla propia cuya clave suele ser (dni_paciente, telefono).
+@ Atributos multivaluados
+
+? ¿Qué debe hacerse con el atributo derivado «edad» de PACIENTE?
+a) No almacenarlo y calcularlo a partir de fecha_nacimiento cuando se necesite
+b) Almacenarlo siempre y actualizarlo a mano
+c) Convertirlo en clave primaria
+d) Moverlo a la tabla CITA
+= a
+> Un atributo derivado se calcula; almacenarlo genera redundancia y valores obsoletos.
+@ Atributos derivados
+
+? ¿Qué tipo de entidad es CAMA?
+a) Entidad fuerte
+b) Relación ternaria
+c) Entidad débil, que depende de HABITACION para identificarse
+d) Atributo multivaluado de PACIENTE
+= c
+> Su identificador (número de cama) solo es único dentro de una habitación. Es una entidad débil en dependencia de identificación.
+@ Entidades débiles
+
+? ¿Cuál es la clave primaria de la tabla CAMA?
+a) (num_habitacion, num_cama)
+b) (num_cama)
+c) (num_habitacion)
+d) (dni_paciente)
+= a
+> La clave de la entidad débil incluye la clave de la fuerte (num_habitacion, que además es clave foránea) más su discriminador (num_cama).
+@ Entidades débiles
+
+? ¿Cómo se implementa la relación «un paciente ocupa una cama» (1:1 con participación parcial en ambos lados)?
+a) Con una clave foránea única en PACIENTE (num_habitacion, num_cama) que admite NULL
+b) Con una tabla de ingresos obligatoria con cuatro claves
+c) Duplicando la tabla CAMA en PACIENTE
+d) No puede implementarse
+= a
+> La clave foránea compuesta (num_habitacion, num_cama) se declara UNIQUE para garantizar un paciente por cama, y admite NULL para los pacientes no ingresados.
+@ Paso a relacional
+
+? ¿Cómo se representa que un residente tiene un tutor, que es otro médico?
+a) Con una relación reflexiva: una columna tutor (colegiado del tutor) en MEDICO que es clave foránea a la misma tabla
+b) Con una nueva tabla TUTOR sin relación con MEDICO
+c) Duplicando la tabla MEDICO
+d) Con un atributo multivaluado
+= a
+> Es una relación reflexiva 1:N: un tutor puede serlo de varios residentes. La columna tutor es NULL en los titulares.
+@ Relaciones reflexivas
+
+? ¿Cuántas tablas tiene, como mínimo, el esquema relacional resultante si la jerarquía titular/residente se resuelve con una única tabla MEDICO con un atributo tipo?
+a) 6: PACIENTE, TELEFONO, MEDICO, CITA, HABITACION y CAMA
+b) 4
+c) 5
+d) 8
+= a
+> PACIENTE, TELEFONO (multivaluado), MEDICO (con tipo y tutor), CITA (N:M), HABITACION y CAMA (débil). El ingreso se resuelve con claves foráneas en PACIENTE.
+@ Paso a relacional
