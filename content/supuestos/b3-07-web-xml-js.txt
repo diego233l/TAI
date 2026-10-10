@@ -1,0 +1,154 @@
+@title Tecnologías web: XML, XPath, JavaScript y CSS
+@block b3
+@topics b3t6,b3t7
+@enunciado
+Un portal de tramitación expone sus expedientes en este documento XML:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<expedientes>
+  <expediente id="E1" estado="abierto">
+    <titulo>Contrato de suministro</titulo>
+    <importe>12000</importe>
+    <tramites>
+      <tramite>Registro</tramite>
+      <tramite>Informe jurídico</tramite>
+    </tramites>
+  </expediente>
+  <expediente id="E2" estado="cerrado">
+    <titulo>Subvención cultural</titulo>
+    <importe>5000</importe>
+    <tramites><tramite>Registro</tramite></tramites>
+  </expediente>
+  <expediente id="E3" estado="abierto">
+    <titulo>Obras menores</titulo>
+    <importe>800</importe>
+    <tramites/>
+  </expediente>
+</expedientes>
+```
+
+El front-end del portal contiene además este código:
+
+```javascript
+console.log(0 == '0', 0 === '0', null == undefined);   // (A)
+console.log(1 + '1', '3' - 1);                          // (B)
+console.log([10, 9, 1].sort());                         // (C)
+{ var x = 1; let y = 1; }
+console.log(typeof x, typeof y);                        // (D)
+```
+
+```css
+#menu a      { color: red; }
+.nav a:hover { color: blue; }
+a            { color: green; }
+```
+@fin
+
+? ¿Qué devuelve la expresión XPath `//expediente[@estado='abierto']/titulo`?
+a) Los elementos titulo de E1 y E3 («Contrato de suministro» y «Obras menores»)
+b) Solo el de E1
+c) Los atributos estado de E1 y E3
+d) Los tres títulos
+= a
+> `//expediente` selecciona expedientes en cualquier nivel; el predicado `[@estado='abierto']` filtra por el atributo y `/titulo` devuelve el hijo titulo.
+@ XPath
+
+? ¿Cuánto vale `count(//tramite)`?
+a) 2
+b) 3
+c) 4
+d) 1
+= b
+> Hay dos trámites en E1, uno en E2 y ninguno en E3 (`<tramites/>` está vacío): 3 en total.
+@ XPath
+
+? ¿Qué identificador devuelve `/expedientes/expediente[2]/@id`?
+a) E1
+b) E2
+c) E3
+d) cerrado
+= b
+> Los índices XPath empiezan en 1, por lo que `expediente[2]` es el segundo expediente (E2) y `@id` su atributo.
+@ XPath
+
+? ¿Qué devuelve `//expediente[importe>1000]/@id`?
+a) Solo E1
+b) E1, E2 y E3
+c) Ningún valor
+d) E1 y E2
+= d
+> Los importes 12000 y 5000 superan 1000; el de E3 (800) no.
+@ XPath
+
+? ¿Qué devuelve `sum(//importe)`?
+a) 17800
+b) 12000
+c) 5000
+d) 18800
+= a
+> 12000 + 5000 + 800 = 17800.
+@ XPath
+
+? ¿Qué afirmación sobre el documento XML es correcta?
+a) No está bien formado porque `<tramites/>` es un elemento vacío
+b) No es válido XML porque los atributos deben ir sin comillas
+c) Está bien formado: tiene un único elemento raíz, las etiquetas están anidadas y los atributos entrecomillados
+d) Solo es válido si se declara un DOCTYPE
+= c
+> Un elemento vacío puede escribirse `<tramites/>`. El DOCTYPE o un esquema solo se necesitan para la validez (no para estar bien formado).
+@ XML
+
+? Se quiere comprobar que el documento cumple una estructura concreta (tipos de datos, obligatoriedad, cardinalidad de elementos). ¿Qué tecnología es la más adecuada?
+a) XPath
+b) XSD (XML Schema)
+c) CSS
+d) XSLT
+= b
+> XML Schema (XSD) define estructura y tipos de datos y permite validar un documento. XSLT transforma documentos y XPath los consulta.
+@ XML
+
+? ¿Qué imprime la línea (A) del código JavaScript?
+a) true true true
+b) true false true
+c) false false false
+d) true false false
+= b
+> `==` realiza coerción de tipos (0 == '0' es true), `===` no (false), y `null == undefined` es true.
+@ JavaScript
+
+? ¿Qué imprime la línea (B)?
+a) 2 2
+b) 11 2
+c) 11 31
+d) 2 4
+= b
+> `+` con una cadena concatena (1 + '1' = '11'), mientras que `-` convierte a número ('3' - 1 = 2).
+@ JavaScript
+
+? ¿Qué imprime la línea (C)?
+a) [1, 9, 10]
+b) [10, 9, 1]
+c) [1, 10, 9]
+d) [9, 10, 1]
+= c
+> `sort()` sin función comparadora ordena como cadenas (orden lexicográfico): "1" < "10" < "9". Para ordenar numéricamente hay que pasar `(a, b) => a - b`.
+@ JavaScript
+
+? ¿Qué imprime la línea (D)?
+a) number number
+b) undefined undefined
+c) number undefined
+d) undefined number
+= c
+> `var` tiene ámbito de función y escapa del bloque (x vale 1); `let` tiene ámbito de bloque, por lo que y no existe fuera y `typeof y` devuelve «undefined».
+@ JavaScript
+
+? Un enlace `<a>` está dentro de `<div id="menu" class="nav">`. ¿De qué color se mostrará con el ratón encima?
+a) Azul
+b) Verde
+c) Rojo
+d) El del navegador por defecto
+= c
+> La especificidad de `#menu a` (1,0,1) supera a la de `.nav a:hover` (0,2,1) y a la de `a` (0,0,1); gana el rojo aunque la regla del hover sea posterior.
+@ CSS
