@@ -1,0 +1,37 @@
+Puertos de SGBD :: Oracle 1521; SQL Server 1433; MySQL/MariaDB 3306; PostgreSQL 5432; MongoDB 27017; Redis 6379.
+Mantenimiento de BD :: Estadísticas (ANALYZE), reindexado, VACUUM (PostgreSQL), DBCC CHECKDB (SQL Server), bloqueos, logs, parches.
+Oracle: instancia y base de datos :: Instancia: SGA/PGA + procesos (DBWR, LGWR, CKPT, SMON, PMON, ARCn). Base de datos: datafiles, redo logs, control files.
+Oracle: copias :: ARCHIVELOG para copias en caliente y PITR; RMAN; Data Pump (expdp/impdp); Data Guard; RAC.
+SQL Server :: Bases master, model, msdb, tempdb; modelos de recuperación Simple, Full, Bulk-logged; SQL Server Agent; Always On.
+MySQL y PostgreSQL :: MySQL: mysqldump, binlog. PostgreSQL: pg_dump, pg_basebackup + WAL, pg_hba.conf.
+RPO y RTO :: RPO: máxima pérdida de datos tolerable (tiempo). RTO: tiempo máximo para restablecer el servicio.
+Tipos de copia :: Completa; incremental (desde la última copia de cualquier tipo); diferencial (desde la última completa).
+Restauración :: Incremental: completa + todos los incrementales. Diferencial: completa + último diferencial.
+Copias lógicas y físicas, en caliente y en frío :: Lógica: exportación SQL. Física: ficheros. Hot: con la BD en servicio. Cold: BD parada.
+PITR :: Restaurar la copia completa y reaplicar logs hasta un instante.
+Regla 3-2-1 :: 3 copias, 2 tipos de soporte, 1 fuera de las instalaciones; 3-2-1-1-0 añade 1 inmutable/offline y 0 errores en verificación.
+Copias inmutables :: WORM/object lock/air gap; protegen frente a ransomware.
+Buenas prácticas de backup :: Automatizar, cifrar, definir retención (GFS), probar restauraciones, separar credenciales, proteger el catálogo.
+Snapshot frente a backup :: El snapshot reside en el mismo sistema y no protege ante su fallo; no sustituye al backup.
+VSS :: Servicio de instantáneas de Windows para copias consistentes de aplicaciones en uso.
+Backup de VMs :: A nivel de hipervisor, sin agente; CBT (VMware) o RCT (Hyper-V); restauración instantánea y granular (Veeam, Commvault, NetBackup, Bacula).
+Bare-metal restore :: Restauración completa del sistema en hardware vacío o distinto.
+Deduplicación :: Almacena una sola copia de bloques o ficheros repetidos.
+Cinta LTO y VTL :: LTO: bajo coste, archivo y air gap; VTL: biblioteca de cintas virtual.
+DAS, NAS y SAN :: DAS directo; NAS nivel de fichero (NFS 2049, SMB 445); SAN nivel de bloque (Fibre Channel, iSCSI 3260).
+Conceptos SAN :: LUN, LUN masking, zoning (WWN), HBA, multipath (MPIO).
+Eficiencia de almacenamiento :: Thin provisioning, deduplicación, compresión, clones, snapshots, tiering (NVMe/SSD, SAS, NL-SAS).
+SDS y HCI :: SDS: Ceph, GlusterFS, vSAN. HCI: cómputo, almacenamiento y red en nodos estándar escalables.
+Virtualización del almacenamiento :: Pools de capacidad presentados como volúmenes lógicos; migraciones sin parada.
+Replicación síncrona y asíncrona :: Síncrona: RPO≈0 con latencia. Asíncrona: RPO>0.
+Hipervisores :: Tipo 1 (bare-metal): ESXi, Hyper-V, KVM, Xen, Proxmox. Tipo 2 (hosted): VirtualBox, VMware Workstation, Parallels.
+Virtualización asistida por hardware :: Intel VT-x y AMD-V; paravirtualización y virtualización completa.
+Funciones de clúster virtual :: vMotion/Live Migration, HA (reinicio automático), DRS (balanceo), snapshots, clones y plantillas.
+Formatos de disco virtual :: VMDK (VMware), VHD/VHDX (Hyper-V), QCOW2 (KVM), VDI; OVF/OVA para portabilidad.
+P2V y V2V :: Convertir servidores físicos a virtuales y migrar entre plataformas virtuales.
+Riesgos de la virtualización :: VM sprawl, concentración de fallos, VM escape, licencias, dependencia del hipervisor.
+Modelos de nube (NIST) :: IaaS, PaaS, SaaS; público, privado, híbrido y comunitario; ENS [op.nub.1].
+VDI :: Escritorios virtuales en el CPD (persistentes o no persistentes): VMware Horizon, Citrix, Azure Virtual Desktop, Windows 365.
+VDI frente a RDS :: VDI: una VM por usuario. RDS: sesiones compartidas en un servidor.
+Protocolos de presentación remota :: RDP (Microsoft), ICA/HDX (Citrix), PCoIP y Blast (VMware), SPICE.
+Ventajas e inconvenientes del VDI :: Gestión central, seguridad, BYOD y teletrabajo frente a coste, dependencia de red, licencias y GPU. Boot storm: pico de IOPS al arrancar.

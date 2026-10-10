@@ -1,0 +1,451 @@
+// Tema 25 (B4·T2) · Administración de BD, almacenamiento, backup, virtualización de sistemas y de puestos
+
+? ¿Qué puerto utiliza por defecto PostgreSQL?
+a) 1433
+b) 1521
+c) 5432
+d) 3306
+= c
+> SQL Server: 1433; Oracle: 1521; MySQL/MariaDB: 3306; MongoDB: 27017.
+@ Administración de BD
+
+? ¿Qué puerto TCP usa por defecto el listener de Oracle?
+a) 1433
+b) 1521
+c) 5432
+d) 3306
+= b
+> Es el puerto estándar de Oracle Net.
+@ Administración de BD
+
+? En PostgreSQL, ¿para qué sirve el comando VACUUM?
+a) Recuperar el espacio ocupado por filas muertas (versiones obsoletas) y mantener las estadísticas
+b) Crear una copia de seguridad
+c) Cifrar las tablas
+d) Crear índices
+= a
+> Es consecuencia del modelo MVCC. VACUUM ANALYZE actualiza además las estadísticas.
+@ PostgreSQL
+
+? ¿Qué fichero controla qué hosts y usuarios pueden conectarse a PostgreSQL y con qué método de autenticación?
+a) postgresql.log
+b) my.cnf
+c) tnsnames.ora
+d) pg_hba.conf
+= d
+> Host-Based Authentication.
+@ PostgreSQL
+
+? En Oracle, ¿qué componentes forman la instancia?
+a) Las estructuras de memoria (SGA/PGA) y los procesos de fondo
+b) Los ficheros de datos, redo logs y ficheros de control
+c) Solo el listener
+d) Solo los tablespaces
+= a
+> La base de datos son los ficheros; la instancia, memoria y procesos.
+@ Oracle
+
+? ¿Qué proceso de fondo de Oracle escribe los bloques modificados en los ficheros de datos?
+a) LGWR
+b) PMON
+c) DBWR
+d) SMON
+= c
+> LGWR escribe el redo log; PMON limpia procesos fallidos; SMON recupera la instancia.
+@ Oracle
+
+? ¿Qué modo debe activarse en Oracle para poder realizar copias en caliente y recuperación a un punto en el tiempo?
+a) NOARCHIVELOG
+b) READ ONLY
+c) RESTRICTED SESSION
+d) ARCHIVELOG
+= d
+> Permite archivar los redo logs.
+@ Oracle
+
+? ¿Qué herramienta de Oracle se utiliza para gestionar copias de seguridad y recuperación?
+a) SQL*Loader únicamente
+b) NetBackup solo
+c) tnsping
+d) RMAN
+= d
+> Recovery Manager. Data Pump (expdp/impdp) hace exportaciones lógicas.
+@ Oracle
+
+? ¿Qué modelo de recuperación de SQL Server permite recuperar a un punto en el tiempo registrando todas las transacciones en el log?
+a) Simple
+b) Bulk-logged siempre sin log
+c) Snapshot
+d) Full
+= d
+> En Simple, el log se trunca automáticamente y no permite PITR.
+@ SQL Server
+
+? ¿Qué registro permite en MySQL la recuperación a un punto en el tiempo y la replicación?
+a) slow query log
+b) general log
+c) binlog (registro binario)
+d) error log
+= c
+> Se aplica sobre una copia completa para llevar la base al instante deseado.
+@ MySQL
+
+? ¿Qué mide el RPO?
+a) El tiempo máximo para restaurar el servicio
+b) La máxima pérdida de datos tolerable, expresada en tiempo
+c) El coste de la recuperación
+d) El tamaño de la copia
+= b
+> El RTO es el tiempo máximo de recuperación del servicio.
+@ Copias
+
+? Si una organización realiza copia cada 24 horas, ¿cuál es su RPO máximo aproximado?
+a) 1 hora
+b) 24 horas
+c) 0
+d) 7 días
+= b
+> Podrían perderse hasta 24 horas de datos.
+@ Copias
+
+? ¿Qué tipo de copia guarda los cambios realizados desde la última copia completa?
+a) Incremental
+b) Completa
+c) Sintética
+d) Diferencial
+= d
+> La incremental guarda los cambios desde la última copia de cualquier tipo.
+@ Copias
+
+? ¿Qué se necesita para restaurar con copias incrementales tras un fallo el viernes (completa el domingo)?
+a) Solo el último incremental
+b) Solo la completa
+c) La completa del domingo y todos los incrementales hasta el viernes
+d) La completa y el último diferencial
+= c
+> Con diferenciales basta la completa y el último diferencial.
+@ Copias
+
+? ¿Qué copia es la más rápida de realizar y la más lenta de restaurar?
+a) Completa
+b) Diferencial
+c) Espejo
+d) Incremental
+= d
+> Es la que menos copia, pero hay que encadenar muchos conjuntos.
+@ Copias
+
+? ¿Qué enuncia la regla de copias 3-2-1?
+a) 3 copias en el mismo disco, 2 en la nube, 1 en cinta
+b) 3 copias de los datos, en 2 tipos de soporte distintos y 1 fuera de las instalaciones
+c) 3 días de retención, 2 de verificación y 1 de prueba
+d) 3 servidores, 2 redes y 1 firewall
+= b
+> La variante 3-2-1-1-0 añade una copia inmutable/offline y cero errores en la verificación.
+@ Copias
+
+? ¿Qué protección frente a ransomware aportan las copias inmutables?
+a) Evitan el cifrado de los equipos
+b) Eliminan la necesidad de antivirus
+c) Cifran los ficheros del usuario
+d) No pueden modificarse ni borrarse durante el periodo de retención, aunque el atacante tenga credenciales
+= d
+> Se implementan con WORM, object lock o copias desconectadas.
+@ Copias
+
+? ¿Por qué es imprescindible probar periódicamente las restauraciones?
+a) Para reducir el tamaño de la copia
+b) Para cumplir con el ancho de banda
+c) Porque una copia que no se ha verificado puede no ser recuperable
+d) Para borrar copias antiguas
+= c
+> Es la única forma de validar la integridad de la copia y los procedimientos.
+@ Copias
+
+? ¿Qué diferencia fundamental hay entre un snapshot y una copia de seguridad?
+a) Son lo mismo
+b) La copia reside siempre en el mismo disco
+c) El snapshot suele residir en el mismo sistema de almacenamiento y no protege ante su fallo; la copia está separada
+d) El snapshot es offline
+= c
+> Los snapshots son útiles para recuperaciones rápidas, pero no sustituyen al backup.
+@ Copias
+
+? ¿Qué servicio de Windows permite crear copias consistentes de aplicaciones y volúmenes en uso?
+a) DFS
+b) VSS (Volume Shadow Copy Service)
+c) WSUS
+d) FSRM
+= b
+> Coordina a las aplicaciones (writers) para quiescer los datos.
+@ Copias
+
+? ¿Qué es el seguimiento de bloques cambiados (CBT) en copias de VMs?
+a) Cifrado de bloques
+b) Registro de los bloques modificados desde la última copia para realizar copias incrementales rápidas
+c) Compresión de bloques
+d) Replicación síncrona
+= b
+> VMware lo llama CBT y Hyper-V, RCT.
+@ Backup de VMs
+
+? ¿Qué ventaja tiene realizar la copia de una VM a nivel de hipervisor?
+a) Es más lenta
+b) No permite restauración granular
+c) Solo funciona con VMs apagadas
+d) No requiere agente en cada VM y captura la imagen completa de la máquina
+= d
+> Permite además restaurar la VM entera, discos o ficheros individuales.
+@ Backup de VMs
+
+? ¿Qué es el bare-metal restore?
+a) La restauración de un solo fichero
+b) La restauración de un correo
+c) La restauración completa de un sistema en un hardware vacío (o distinto)
+d) La restauración de una base de datos
+= c
+> Se hace desde una imagen del sistema.
+@ Copias
+
+? ¿Qué es la deduplicación?
+a) Eliminar bloques o ficheros duplicados guardando una sola copia y referencias a ella
+b) Duplicar los datos para mayor seguridad
+c) Cifrar los datos
+d) Dividir los discos
+= a
+> Reduce el espacio necesario en copias y almacenamiento primario.
+@ Almacenamiento
+
+? ¿Qué arquitectura de almacenamiento ofrece acceso a nivel de fichero mediante NFS o SMB?
+a) NAS
+b) SAN
+c) DAS
+d) JBOD
+= a
+> SAN ofrece acceso a nivel de bloque.
+@ Almacenamiento
+
+? ¿Qué protocolo permite acceso a bloques de almacenamiento sobre redes IP/Ethernet estándar?
+a) NFS
+b) FTP
+c) iSCSI
+d) SMB
+= c
+> Usa el puerto TCP 3260.
+@ Almacenamiento
+
+? En una red de almacenamiento Fibre Channel, ¿qué es el zoning?
+a) La segmentación lógica del tejido que define qué puertos (WWN) pueden comunicarse entre sí
+b) La asignación de IP
+c) La compresión de datos
+d) La replicación
+= a
+> El LUN masking controla qué servidores ven cada LUN en la cabina.
+@ SAN
+
+? ¿Qué es una LUN?
+a) Un tipo de cable
+b) Una dirección MAC
+c) Un volumen lógico presentado por la cabina de almacenamiento a un servidor
+d) Un tipo de RAID
+= c
+> Logical Unit Number.
+@ SAN
+
+? ¿Para qué se usa el multipath (MPIO)?
+a) Para disponer de varias rutas hacia el almacenamiento, aportando redundancia y balanceo
+b) Para multiplicar la capacidad
+c) Para cifrar el tráfico
+d) Para comprimir las LUN
+= a
+> Evita puntos únicos de fallo en el camino servidor-switch-cabina.
+@ SAN
+
+? ¿Qué es el thin provisioning?
+a) Reservar todo el espacio al crear el volumen
+b) Reducir el tamaño de los discos
+c) Asignar el espacio físico bajo demanda a medida que se escribe, permitiendo sobreasignar capacidad lógica
+d) Comprimir los discos
+= c
+> Requiere monitorizar la capacidad real para no agotarla.
+@ Almacenamiento
+
+? ¿Qué es la virtualización del almacenamiento?
+a) Instalar un sistema operativo virtual
+b) Abstraer la capacidad física de distintos dispositivos en pools que se presentan como volúmenes lógicos
+c) Cifrar los discos
+d) Usar solo SSD
+= b
+> Facilita migraciones sin parada y una gestión centralizada.
+@ Almacenamiento
+
+? ¿Qué es la hiperconvergencia (HCI)?
+a) Un tipo de RAID
+b) Un protocolo de red
+c) Un formato de disco
+d) Integrar cómputo, almacenamiento y red virtualizados en nodos estándar gestionados como un conjunto
+= d
+> Se escala añadiendo nodos (Nutanix, vSAN).
+@ Almacenamiento
+
+? Entre la replicación síncrona y asíncrona, ¿cuál garantiza un RPO cercano a cero?
+a) Síncrona
+b) Asíncrona
+c) Ninguna
+d) Ambas por igual
+= a
+> A costa de la latencia y de distancias limitadas.
+@ Almacenamiento
+
+? ¿Qué es un hipervisor de tipo 1?
+a) Uno que se ejecuta sobre un sistema operativo anfitrión
+b) Un emulador de consolas
+c) Un contenedor
+d) Un hipervisor que se ejecuta directamente sobre el hardware (bare-metal)
+= d
+> ESXi, Hyper-V, KVM, Xen y Proxmox VE son ejemplos.
+@ Virtualización
+
+? ¿Cuál de los siguientes es un hipervisor de tipo 2?
+a) VirtualBox
+b) VMware ESXi
+c) Xen
+d) Microsoft Hyper-V
+= a
+> Se ejecuta como aplicación sobre un sistema operativo anfitrión.
+@ Virtualización
+
+? ¿Qué extensiones de CPU facilitan la virtualización asistida por hardware?
+a) SSE y AVX
+b) Intel VT-x y AMD-V
+c) PCIe y NVMe
+d) SATA y SAS
+= b
+> Permiten que el hipervisor ejecute invitados con menor sobrecarga.
+@ Virtualización
+
+? ¿Qué permite vMotion / Live Migration?
+a) Convertir una VM en contenedor
+b) Copiar una VM apagada
+c) Mover una VM en ejecución de un host a otro sin interrupción apreciable del servicio
+d) Borrar una VM
+= c
+> Requiere almacenamiento compartido (o migración de almacenamiento) y red adecuada.
+@ Virtualización
+
+? ¿Qué función reinicia automáticamente las VM de un host que falla en otros hosts del clúster?
+a) HA (alta disponibilidad)
+b) DRS
+c) Snapshot
+d) Clonado
+= a
+> DRS equilibra la carga entre hosts.
+@ Virtualización
+
+? ¿Qué formato de disco virtual es propio de VMware?
+a) VHDX
+b) QCOW2
+c) VMDK
+d) VDI
+= c
+> VHD/VHDX es de Hyper-V; QCOW2 de KVM/QEMU; VDI, de VirtualBox.
+@ Virtualización
+
+? ¿Qué formato permite empaquetar una máquina virtual de forma portable entre plataformas?
+a) OVF/OVA
+b) ISO
+c) ZIP
+d) TAR
+= a
+> Open Virtualization Format.
+@ Virtualización
+
+? ¿Qué es P2V?
+a) Convertir un servidor físico en una máquina virtual
+b) Mover una VM entre hosts
+c) Clonar una VM
+d) Apagar una VM
+= a
+> V2V convierte entre formatos o plataformas virtuales.
+@ Virtualización
+
+? ¿Qué riesgo es característico de la virtualización?
+a) Mayor consumo de energía siempre
+b) Imposibilidad de hacer copias
+c) Ausencia de aislamiento
+d) VM sprawl (proliferación descontrolada de VMs) y concentración de fallos en el host
+= d
+> Otros: VM escape, licencias y dependencia del hipervisor.
+@ Virtualización
+
+? Según el NIST, ¿cuál es el modelo de servicio en la nube que proporciona infraestructura (máquinas virtuales, almacenamiento y red)?
+a) PaaS
+b) SaaS
+c) DaaS
+d) IaaS
+= d
+> PaaS ofrece plataforma de desarrollo y ejecución; SaaS, aplicaciones.
+@ Nube
+
+? ¿Qué es VDI?
+a) Un formato de disco
+b) Infraestructura de escritorios virtuales alojados en el centro de datos y a los que se accede remotamente
+c) Un tipo de VPN
+d) Un protocolo de correo
+= b
+> Citrix, VMware Horizon y Azure Virtual Desktop son ejemplos.
+@ VDI
+
+? ¿Qué diferencia hay entre un VDI persistente y uno no persistente?
+a) En el persistente cada usuario conserva su VM y cambios; en el no persistente la VM se regenera desde una imagen maestra
+b) El persistente se borra al cerrar sesión
+c) El no persistente conserva todos los cambios
+d) No hay diferencia
+= a
+> Los no persistentes simplifican el mantenimiento, pero requieren gestionar perfiles de usuario.
+@ VDI
+
+? ¿Qué protocolo de presentación remota usa Citrix?
+a) PCoIP
+b) RDP
+c) SPICE
+d) ICA/HDX
+= d
+> PCoIP y Blast son de VMware; RDP, de Microsoft.
+@ VDI
+
+? ¿Cuál es una ventaja de seguridad de la virtualización de puestos de usuario?
+a) No requiere autenticación
+b) No necesita parches
+c) Los datos permanecen en el centro de datos, no en el equipo del usuario
+d) Elimina la necesidad de red
+= c
+> Facilita también el teletrabajo y BYOD.
+@ VDI
+
+? ¿Qué es un «boot storm» en un entorno VDI?
+a) El pico de actividad de almacenamiento cuando muchos escritorios arrancan simultáneamente
+b) Un virus de arranque
+c) Un fallo de la BIOS
+d) Un ataque DDoS
+= a
+> Obliga a dimensionar el almacenamiento en IOPS.
+@ VDI
+
+? ¿Qué diferencia hay entre VDI y RDS (servicios de escritorio remoto)?
+a) Son idénticos
+b) RDS da una VM por usuario
+c) VDI no utiliza red
+d) VDI da a cada usuario una VM independiente; RDS comparte un servidor entre varios usuarios con sesiones
+= d
+> RDS es más eficiente en recursos, pero con menos aislamiento.
+@ VDI
+
+? ¿Qué es DaaS?
+a) Escritorio como servicio: escritorios virtuales ofrecidos desde la nube por un proveedor
+b) Almacenamiento de datos
+c) Un sistema de directorio
+d) Un lenguaje de consulta
+= a
+> Ejemplos: Windows 365 y Azure Virtual Desktop.
+@ VDI
