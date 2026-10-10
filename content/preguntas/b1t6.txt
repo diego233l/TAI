@@ -1,0 +1,370 @@
+// Tema 6 · Sociedad de la información, firma electrónica, DNIe, Agenda Digital
+
+? ¿Qué norma regula los servicios de la sociedad de la información y el comercio electrónico en España?
+a) Ley 9/2014, de 9 de mayo
+b) Ley 56/2007
+c) Ley 34/2002, de 11 de julio (LSSI-CE)
+d) Ley 11/2022
+= c
+> La LSSI-CE (Ley 34/2002) regula el régimen jurídico de los servicios de la sociedad de la información y la contratación por vía electrónica. La Ley 11/2022 es la Ley General de Telecomunicaciones (sustituye a la Ley 9/2014).
+@ Ley 34/2002
+
+? ¿Qué obligación de información general impone el artículo 10 de la LSSI-CE al prestador de servicios?
+a) Informar solo a los órganos competentes y no a los destinatarios
+b) Publicar sus cuentas anuales
+c) Proporcionar un teléfono gratuito de atención
+d) Disponer de medios que permitan acceder por medios electrónicos, de forma permanente, fácil, directa y gratuita, a su nombre o denominación, domicilio, correo electrónico y datos registrales
+= d
+> Art. 10.1 LSSI-CE: nombre o denominación social, residencia o domicilio, dirección de correo electrónico, datos de inscripción en el Registro Mercantil, autorización administrativa, NIF, precios, etc.
+@ Ley 34/2002 art. 10
+
+? ¿Qué regula el artículo 21 de la LSSI-CE?
+a) Prohíbe el envío de comunicaciones publicitarias o promocionales por correo electrónico no solicitadas o expresamente autorizadas
+b) Obliga a tener un servicio de atención telefónica
+c) Regula las cookies
+d) Impone la factura electrónica
+= a
+> Art. 21: salvo relación contractual previa respecto a productos o servicios similares de la propia empresa, y siempre ofreciendo una forma sencilla y gratuita de oponerse. Las cookies se regulan en el art. 22.2.
+@ Ley 34/2002 art. 21
+
+? Según el artículo 22.2 de la LSSI-CE, el uso de cookies y dispositivos similares requiere:
+a) Ninguna información previa
+b) Autorización de la AEPD
+c) Registro previo del sitio web
+d) El consentimiento del usuario tras haberle facilitado información clara y completa sobre su utilización y finalidad (salvo las técnicamente necesarias)
+= d
+> Art. 22.2 LSSI-CE.
+@ Ley 34/2002 art. 22.2
+
+? ¿Cuáles son las cuantías de las multas por infracciones graves de la LSSI-CE?
+a) Hasta 30.000 euros
+b) De 30.001 a 150.000 euros
+c) De 150.001 a 600.000 euros
+d) De 600.001 a 1.000.000 euros
+= b
+> Art. 39: leves hasta 30.000 €; graves de 30.001 a 150.000 €; muy graves de 150.001 a 600.000 €.
+@ Ley 34/2002 art. 39
+
+? ¿Cuál es el importe máximo de la multa por infracciones muy graves de la LSSI-CE?
+a) 30.000 euros
+b) 150.000 euros
+c) 600.000 euros
+d) 1.000.000 de euros
+= c
+> Art. 39.1.a: multa de 150.001 hasta 600.000 euros.
+@ Ley 34/2002 art. 39
+
+? ¿Qué prestadores de servicios de intermediación no son responsables de los contenidos de terceros mientras no tengan conocimiento efectivo de su ilicitud, según la LSSI-CE?
+a) Solo los proveedores de acceso a Internet
+b) Ninguno de ellos
+c) Solo los proveedores de alojamiento
+d) Operadores de redes y proveedores de acceso, copia temporal, alojamiento o almacenamiento de datos y enlaces a contenidos
+= d
+> Arts. 14 (mera transmisión), 15 (caching), 16 (hosting) y 17 (enlaces e instrumentos de búsqueda) de la LSSI-CE.
+@ Ley 34/2002 arts. 14-17
+
+? ¿Qué artículo de la LSSI-CE regula la responsabilidad de los prestadores de servicios de alojamiento o almacenamiento de datos?
+a) Artículo 16
+b) Artículo 14
+c) Artículo 15
+d) Artículo 17
+= a
+> Art. 14: operadores de redes y proveedores de acceso; art. 15: copia temporal; art. 16: alojamiento o almacenamiento; art. 17: enlaces e instrumentos de búsqueda.
+@ Ley 34/2002 art. 16
+
+? ¿Cuál es la norma que sustituyó a la Ley 9/2014 General de Telecomunicaciones?
+a) Ley 56/2007
+b) Ley 25/2007
+c) Ley 11/2022, de 28 de junio
+d) Real Decreto 424/2005
+= c
+> La Ley 11/2022, General de Telecomunicaciones.
+@ Ley 11/2022
+
+? ¿Cuándo aprobó el Consejo de Ministros la Agenda Digital para España?
+a) 1 de enero de 2010
+b) 30 de abril de 2020
+c) 5 de julio de 2022
+d) 15 de febrero de 2013
+= d
+> La Agenda Digital para España se aprobó el 15 de febrero de 2013, como hoja de ruta de la Agenda Digital para Europa. «España Digital 2025» es de 2020 y su actualización «España Digital 2026», de julio de 2022.
+@ Agenda Digital para España
+
+? ¿Cuántos grandes objetivos incluye la Agenda Digital para España (2013)?
+a) 3
+b) 4
+c) 6
+d) 10
+= c
+> Seis grandes objetivos, 106 líneas de actuación y nueve planes específicos.
+@ Agenda Digital para España
+
+? ¿Cuál de los siguientes es uno de los seis objetivos de la Agenda Digital para España?
+a) Privatizar los servicios de telecomunicaciones
+b) Reducir el comercio electrónico
+c) Eliminar la factura electrónica
+d) Mejorar la e-Administración y adoptar soluciones digitales para una prestación eficiente de los servicios públicos
+= d
+> Objetivos: redes y conectividad; economía digital; e-Administración; confianza digital; I+D+i en industrias de futuro; inclusión digital y formación de profesionales TIC.
+@ Agenda Digital para España
+
+? ¿Qué es la Carta de Derechos Digitales (2021)?
+a) Un marco de referencia no normativo para los derechos en el entorno digital
+b) Una ley orgánica
+c) Un reglamento europeo
+d) Un convenio del Consejo de Europa
+= a
+> Se presentó en julio de 2021 como carta de referencia, sin carácter normativo. Los derechos digitales con rango legal están en el Título X de la LOPDGDD.
+@ Carta de Derechos Digitales
+
+? ¿Qué Reglamento europeo regula la identificación electrónica y los servicios de confianza para las transacciones electrónicas en el mercado interior?
+a) Reglamento (UE) 2016/679
+b) Reglamento (UE) 2018/1724
+c) Reglamento (UE) 2022/2065
+d) Reglamento (UE) nº 910/2014 (eIDAS)
+= d
+> El Reglamento eIDAS 910/2014. El 2016/679 es el RGPD; el 2018/1724 crea la Pasarela Digital Única y el 2022/2065 es el DSA.
+@ Reglamento (UE) 910/2014
+
+? ¿Qué Reglamento europeo modificó el eIDAS para crear el marco europeo de identidad digital y la cartera europea de identidad digital?
+a) Reglamento (UE) 2024/1183
+b) Reglamento (UE) 2019/1157
+c) Reglamento (UE) 2022/868
+d) Reglamento (UE) 2024/1689
+= a
+> El Reglamento (UE) 2024/1183 (eIDAS 2), en vigor desde el 20 de mayo de 2024. El 2024/1689 es el reglamento de Inteligencia Artificial.
+@ Reglamento (UE) 2024/1183
+
+? ¿Qué ley española regula determinados aspectos de los servicios electrónicos de confianza como complemento del Reglamento eIDAS?
+a) Ley 59/2003
+b) Ley 39/2015
+c) Ley 25/2013
+d) Ley 6/2020, de 11 de noviembre
+= d
+> La Ley 6/2020 deroga la Ley 59/2003, de firma electrónica.
+@ Ley 6/2020
+
+? ¿Qué ley de firma electrónica fue derogada por la Ley 6/2020?
+a) Ley 11/2007, de 22 de junio
+b) Ley 30/1992
+c) Ley 59/2003, de 19 de diciembre
+d) Ley 34/2002
+= c
+> La Ley 6/2020 derogó expresamente la Ley 59/2003, de firma electrónica.
+@ Ley 6/2020
+
+? ¿Qué tipo de firma electrónica tiene un efecto jurídico equivalente al de una firma manuscrita?
+a) La firma electrónica cualificada
+b) La firma electrónica simple
+c) La firma electrónica avanzada no cualificada
+d) Cualquier firma con contraseña
+= a
+> Art. 25.2 eIDAS: una firma electrónica cualificada tendrá un efecto jurídico equivalente al de una firma manuscrita.
+@ Reglamento (UE) 910/2014 art. 25
+
+? Para que una firma electrónica sea «cualificada» debe ser una firma avanzada creada mediante:
+a) Un dispositivo cualificado de creación de firmas y basada en un certificado cualificado de firma electrónica
+b) Un programa gratuito de código abierto
+c) Una contraseña robusta
+d) Un certificado no cualificado
+= a
+> La firma cualificada es una firma avanzada creada mediante un dispositivo cualificado de creación de firmas electrónicas y basada en un certificado cualificado.
+@ Reglamento (UE) 910/2014
+
+? ¿Cuál de los siguientes NO es un requisito de la firma electrónica avanzada?
+a) Estar vinculada al firmante de manera única
+b) Permitir la identificación del firmante
+c) Estar creada mediante un dispositivo cualificado de creación de firma
+d) Estar vinculada a los datos firmados de modo que cualquier modificación ulterior sea detectable
+= c
+> El dispositivo cualificado es un requisito de la firma cualificada, no de la avanzada. La avanzada exige control exclusivo del firmante «con un alto nivel de confianza» (no necesariamente un dispositivo cualificado).
+@ Reglamento (UE) 910/2014 art. 26
+
+? ¿Qué es un sello electrónico?
+a) Una firma electrónica de personas físicas
+b) Una marca de tiempo
+c) Un certificado de sitio web
+d) Datos en formato electrónico anejos a otros datos que garantizan el origen y la integridad de éstos, emitido por una persona jurídica
+= d
+> El sello electrónico lo crea una persona jurídica (por ejemplo, una Administración) y garantiza origen e integridad. El sello de tiempo vincula datos a un instante concreto.
+@ Reglamento (UE) 910/2014
+
+? ¿Qué vigencia máxima tienen los certificados cualificados según el artículo 4.2 de la Ley 6/2020?
+a) 5 años
+b) 2 años
+c) 3 años
+d) 10 años
+= a
+> Art. 4.2: el período de vigencia de los certificados cualificados no será superior a cinco años.
+@ Ley 6/2020 art. 4.2
+
+? ¿Cómo se extinguen los certificados electrónicos según el artículo 4.1 de la Ley 6/2020?
+a) Por caducidad a la expiración de su período de vigencia o mediante revocación por los prestadores
+b) Solo por caducidad
+c) Solo por revocación judicial
+d) Nunca se extinguen
+= a
+> Art. 4.1 Ley 6/2020.
+@ Ley 6/2020 art. 4
+
+? ¿Qué exige, con carácter general, la identificación de una persona física que solicita un certificado cualificado (art. 7 Ley 6/2020)?
+a) Solo un formulario por Internet
+b) Su personación ante los encargados de verificarla, acreditada mediante DNI, pasaporte u otros medios admitidos en Derecho
+c) Una declaración responsable
+d) Una videollamada siempre
+= b
+> Art. 7.1: personación, aunque puede prescindirse de ella si la firma en la solicitud ha sido legitimada en presencia notarial (y, reglamentariamente, otros métodos de identificación remota).
+@ Ley 6/2020 art. 7
+
+? ¿Qué cantidad mínima de garantía económica deben mantener los prestadores cualificados de servicios electrónicos de confianza (art. 9 Ley 6/2020)?
+a) 300.000 euros
+b) 5.000.000 de euros
+c) No exige ninguna garantía
+d) 1.500.000 euros, más 500.000 euros por cada tipo adicional de servicio cualificado, salvo prestadores públicos
+= d
+> Art. 9: seguro de responsabilidad civil por importe mínimo de 1.500.000 euros, excepto si el prestador es del sector público; se suman 500.000 euros por cada servicio adicional.
+@ Ley 6/2020 art. 9
+
+? ¿Qué documento regula el actual Documento Nacional de Identidad tras la derogación del Real Decreto 1553/2005?
+a) Real Decreto 414/2015
+b) Real Decreto 255/2025, de 1 de abril
+c) Ley Orgánica 4/2015
+d) Real Decreto 869/2013
+= b
+> El RD 255/2025 regula el DNI en sus versiones física y digital y deroga el RD 1553/2005.
+@ RD 255/2025
+
+? ¿Qué órgano expide el Documento Nacional de Identidad?
+a) La FNMT-RCM
+b) El Ministerio de Justicia
+c) El Registro Civil
+d) El Ministerio del Interior, a través de la Dirección General de la Policía
+= d
+> Art. 2 RD 255/2025: documento personal e intransferible emitido por el Ministerio del Interior, a través de la Dirección General de la Policía.
+@ RD 255/2025 art. 2
+
+? ¿Desde qué edad es obligatorio obtener el DNI para los residentes en España?
+a) 12 años
+b) 16 años
+c) 18 años
+d) 14 años
+= d
+> Art. 4.2 RD 255/2025: obligatoria para los mayores de catorce años residentes en España.
+@ RD 255/2025 art. 4
+
+? ¿Qué validez tiene el DNI de una persona de 40 años, según el RD 255/2025?
+a) 5 años
+b) 15 años
+c) Permanente
+d) 10 años
+= d
+> Art. 7: 2 años (menores de 5), 5 años (de 5 a menos de 30), 10 años (de 30 a menos de 70) y más de 10 años (a partir de 70, consignando una fecha).
+@ RD 255/2025 art. 7
+
+? ¿Qué validez tiene el DNI expedido a una persona de 20 años?
+a) 5 años
+b) 2 años
+c) 10 años
+d) 15 años
+= a
+> Art. 7.1.b RD 255/2025: cinco años si ha cumplido los cinco y no ha alcanzado los treinta.
+@ RD 255/2025 art. 7
+
+? ¿Qué plazo de validez tienen los certificados electrónicos contenidos en el DNI según el RD 255/2025?
+a) 30 meses
+b) 2 años
+c) 5 años
+d) Igual que el DNI
+= b
+> Art. 11.3 RD 255/2025: el plazo de validez de los certificados electrónicos contenidos en el DNI será de dos años.
+@ RD 255/2025 art. 11.3
+
+? ¿Con cuánta antelación a su caducidad puede tramitarse la renovación del DNI?
+a) 180 días
+b) 30 días
+c) 90 días
+d) 1 año
+= a
+> Art. 8.2 RD 255/2025: dentro de los últimos 180 días de su vigencia.
+@ RD 255/2025 art. 8
+
+? ¿Qué contiene el chip del DNI según el RD 255/2025?
+a) Solo el número de DNI
+b) El historial médico
+c) Los certificados electrónicos cualificados de identificación y firma, la fotografía, los datos personales y dos impresiones dactilares
+d) Las multas de tráfico
+= c
+> Art. 11.2 RD 255/2025.
+@ RD 255/2025 art. 11
+
+? ¿Qué valor tiene el DNI según el artículo 3 del RD 255/2025?
+a) Es el único documento con suficiente valor por sí solo para acreditar a todos los efectos la identidad y datos personales de su titular
+b) Es un documento complementario del pasaporte
+c) Solo tiene valor en España
+d) Carece de valor probatorio
+= a
+> Art. 3.1 RD 255/2025. Además permite la identificación electrónica y la firma electrónica de documentos.
+@ RD 255/2025 art. 3
+
+? ¿Qué mecanismo europeo permitirá a ciudadanos y residentes disponer de una identidad digital en una aplicación móvil reconocida en toda la UE?
+a) El Pasaporte Digital de la UE
+b) La Tarjeta Sanitaria Europea
+c) Cl@ve
+d) La Cartera Europea de Identidad Digital (EUDI Wallet)
+= d
+> Prevista en el Reglamento (UE) 2024/1183 (eIDAS 2).
+@ Reglamento (UE) 2024/1183
+
+? ¿Qué formato de firma avanzada se usa para documentos PDF?
+a) XAdES
+b) CAdES
+c) JAdES
+d) PAdES
+= d
+> PAdES (PDF Advanced Electronic Signatures). XAdES se basa en XML, CAdES en CMS/binario y JAdES en JSON.
+@ ETSI
+
+? ¿Qué formato de firma electrónica avanzada se basa en XML?
+a) XAdES
+b) PAdES
+c) CAdES
+d) ASiC
+= a
+> XAdES (XML Advanced Electronic Signatures). ASiC es un contenedor.
+@ ETSI
+
+? Un «sello de tiempo electrónico» sirve para:
+a) Firmar documentos en nombre de una empresa
+b) Cifrar un documento
+c) Vincular otros datos electrónicos a un instante concreto, demostrando que existían en ese momento
+d) Autenticar un sitio web
+= c
+> Es un servicio de confianza (TSA) que prueba la existencia de datos en un momento dado.
+@ Reglamento (UE) 910/2014
+
+? ¿Cuál de estos es un servicio de confianza regulado por el Reglamento eIDAS?
+a) Servicio de correo no solicitado
+b) Servicio de nube pública
+c) Servicio de entrega electrónica certificada
+d) Servicio de VPN
+= c
+> Servicios de confianza: firma, sello y sello de tiempo electrónicos, entrega electrónica certificada y autenticación de sitios web (el eIDAS 2 añade otros como el archivo electrónico y los libros mayores electrónicos).
+@ Reglamento (UE) 910/2014
+
+? ¿Cuántos niveles de seguridad define el Reglamento eIDAS para los sistemas de identificación electrónica?
+a) Dos: básico y alto
+b) Cuatro: básico, medio, alto y crítico
+c) Tres: bajo, sustancial y alto
+d) Cinco
+= c
+> Art. 8 eIDAS: nivel de seguridad bajo, sustancial y alto.
+@ Reglamento (UE) 910/2014 art. 8
+
+? ¿Qué eje de la Agenda Digital Europea 2030 («Década Digital») NO se corresponde con sus objetivos principales?
+a) Eliminación de las redes de fibra óptica
+b) Ciudadanos con competencias digitales
+c) Infraestructuras digitales seguras y sostenibles
+d) Transformación digital de las empresas
+= a
+> La Década Digital 2030 persigue competencias digitales, infraestructuras seguras y sostenibles, digitalización de empresas y de los servicios públicos.
+@ Década Digital 2030

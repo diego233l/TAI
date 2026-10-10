@@ -1,0 +1,36 @@
+RGPD: número y aplicación :: Reglamento (UE) 2016/679; aplicable desde el 25-mayo-2018.
+LOPDGDD :: Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.
+Norma penal de protección de datos :: LO 7/2021 (transpone la Directiva (UE) 2016/680).
+Art. 18.4 CE :: La ley limitará el uso de la informática para garantizar el honor y la intimidad.
+Dato personal :: Información sobre una persona física identificada o identificable.
+Responsable vs. encargado :: Responsable: decide fines y medios. Encargado: trata datos por cuenta del responsable.
+Seudonimización vs. anonimización :: Seudonimizado = sigue siendo dato personal. Anonimizado = deja de serlo.
+Exclusiones del RGPD :: Actividades exclusivamente personales o domésticas y tratamientos penales (Directiva 2016/680).
+Principios (art. 5 RGPD) :: Licitud, lealtad y transparencia; finalidad; minimización; exactitud; plazo de conservación; integridad y confidencialidad; responsabilidad proactiva.
+Bases de licitud (art. 6) :: Consentimiento, contrato, obligación legal, intereses vitales, interés público/poderes públicos, interés legítimo.
+Base de licitud típica de las AAPP :: Interés público/ejercicio de poderes públicos y obligación legal (no interés legítimo).
+Consentimiento válido :: Libre, específico, informado e inequívoco; acción afirmativa; retirable en cualquier momento.
+Edad de consentimiento :: RGPD: 16 años (mínimo 13 por ley nacional). España (LOPDGDD art. 7): 14 años.
+Categorías especiales (art. 9) :: Origen étnico/racial, opiniones políticas, convicciones religiosas/filosóficas, afiliación sindical, genéticos, biométricos identificativos, salud, vida/orientación sexual.
+Derechos (RGPD arts. 15-22) :: Acceso, rectificación, supresión, limitación, portabilidad, oposición y no ser objeto de decisiones automatizadas.
+Plazo para responder a los derechos (art. 12.3) :: 1 mes, prorrogable 2 meses más; gratuito (salvo infundadas o excesivas).
+Portabilidad (art. 20) :: Formato estructurado, de uso común y lectura mecánica; por consentimiento o contrato; tratamiento automatizado.
+Derecho de oposición a la mercadotecnia directa :: Se atiende siempre.
+Protección de datos desde el diseño y por defecto :: Art. 25 RGPD.
+Registro de actividades (art. 30) :: Obligatorio salvo menos de 250 empleados (con excepciones). Las entidades públicas publican su inventario (art. 31 LOPDGDD).
+Seguridad (art. 32) :: Seudonimización, cifrado, confidencialidad, integridad, disponibilidad y resiliencia.
+Notificación de brechas (art. 33) :: A la autoridad de control sin dilación y, de ser posible, en 72 horas. A los afectados si hay alto riesgo (art. 34).
+EIPD (art. 35) :: Alto riesgo: perfiles con efectos jurídicos, categorías especiales a gran escala, observación sistemática a gran escala de zona pública. Consulta previa (art. 36) si persiste el riesgo.
+DPD obligatorio :: Autoridades u organismos públicos (salvo tribunales), observación habitual y sistemática a gran escala, categorías especiales a gran escala. LOPDGDD (art. 34) añade más supuestos.
+Funciones del DPD (art. 39) :: Informar y asesorar, supervisar el cumplimiento, asesorar sobre EIPD, cooperar con la autoridad y punto de contacto.
+Transferencias internacionales :: Decisión de adecuación (art. 45), garantías adecuadas (cláusulas tipo, BCR; art. 46) o excepciones (art. 49).
+AEPD :: Autoridad administrativa independiente; se relaciona con el Gobierno por el Ministerio de Justicia.
+CEPD :: Comité Europeo de Protección de Datos: jefes de las autoridades de control + SEPD.
+Multas del RGPD :: Hasta 10 M€ o 2 % (obligaciones del responsable, DPD…) y hasta 20 M€ o 4 % (principios, consentimiento, derechos, transferencias).
+Prescripción de infracciones (LOPDGDD) :: Muy graves 3 años; graves 2 años; leves 1 año.
+Prescripción de sanciones (art. 78) :: ≤ 40.000 €: 1 año; 40.001-300.000 €: 2 años; > 300.000 €: 3 años.
+Sector público (art. 77 LOPDGDD) :: Sin multa: resolución declarando la infracción y medidas correctoras.
+Videovigilancia (art. 22 LOPDGDD) :: Supresión en un mes; si se conservan, a disposición de la autoridad en 72 h; dispositivo informativo visible.
+Derechos digitales: Título X LOPDGDD :: Arts. 79-97: neutralidad, acceso universal, seguridad digital, educación digital, menores, rectificación, ámbito laboral (87-91), olvido (93-94), portabilidad (95), testamento digital (96).
+Ámbito laboral y derechos digitales :: Art. 87 intimidad y dispositivos; 88 desconexión digital; 89 videovigilancia; 90 geolocalización; 91 negociación colectiva.
+ENS y protección de datos :: DA 1.ª LOPDGDD: el ENS incluye las medidas de seguridad para tratamientos de datos personales en el sector público.

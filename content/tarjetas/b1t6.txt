@@ -1,0 +1,30 @@
+LSSI-CE :: Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico.
+Art. 10 LSSI-CE :: Información general: acceso permanente, fácil, directo y gratuito a nombre, domicilio, e-mail, datos registrales, NIF…
+Art. 21 LSSI-CE :: Prohibido el envío de comunicaciones comerciales por e-mail no solicitadas o autorizadas (salvo relación contractual previa y productos similares).
+Art. 22.2 LSSI-CE :: Cookies: consentimiento tras información clara y completa (salvo técnicamente necesarias).
+Responsabilidad de intermediarios (LSSI-CE) :: Art. 14 acceso/transmisión, 15 caching, 16 hosting, 17 enlaces y buscadores. Sin responsabilidad si no hay conocimiento efectivo.
+Multas de la LSSI-CE :: Leves hasta 30.000 €; graves 30.001-150.000 €; muy graves 150.001-600.000 €.
+Ley General de Telecomunicaciones vigente :: Ley 11/2022 (sustituye a la Ley 9/2014).
+Agenda Digital para España :: 15-feb-2013; 6 objetivos; 106 líneas de actuación; 9 planes específicos.
+Objetivos de la Agenda Digital para España :: Redes; economía digital; e-Administración; confianza digital; I+D+i; inclusión digital y formación TIC.
+España Digital 2025 / 2026 :: Julio 2020 / actualización julio 2022; ~10 ejes y ~50 medidas; Plan de Recuperación (Next Generation EU).
+Carta de Derechos Digitales :: 2021; marco de referencia no normativo.
+eIDAS :: Reglamento (UE) 910/2014: identificación electrónica y servicios de confianza.
+eIDAS 2 :: Reglamento (UE) 2024/1183: Cartera Europea de Identidad Digital (EUDI Wallet); en vigor 20-may-2024.
+Ley de servicios electrónicos de confianza :: Ley 6/2020, de 11 de noviembre; deroga la Ley 59/2003 de firma electrónica.
+Firma electrónica avanzada: requisitos :: Vinculada al firmante de manera única; lo identifica; control exclusivo del firmante; detecta modificaciones posteriores.
+Firma electrónica cualificada :: Avanzada + dispositivo cualificado de creación de firma + certificado cualificado. Equivale a la firma manuscrita (art. 25.2 eIDAS).
+Sello electrónico :: Garantiza origen e integridad; lo emite una persona jurídica.
+Sello de tiempo electrónico :: Vincula datos a un instante concreto.
+Niveles de seguridad eIDAS :: Bajo, sustancial y alto.
+Vigencia máxima de certificados cualificados (Ley 6/2020) :: 5 años.
+Identificación para un certificado cualificado :: Personación (DNI, pasaporte…) o legitimación notarial; también métodos de identificación remota reconocidos.
+Seguro de los prestadores cualificados (art. 9) :: 1.500.000 € + 500.000 € por cada servicio cualificado adicional (salvo sector público).
+Formatos de firma avanzada :: XAdES (XML), CAdES (CMS), PAdES (PDF), ASiC (contenedor).
+Norma vigente del DNI :: Real Decreto 255/2025, de 1 de abril (deroga el RD 1553/2005). DNI físico y digital.
+Expide el DNI :: Ministerio del Interior, Dirección General de la Policía.
+DNI obligatorio :: Mayores de 14 años residentes en España.
+Validez del DNI (art. 7) :: <5 años: 2 años; 5-29: 5 años; 30-69: 10 años; ≥70: más de 10 años con fecha.
+Validez de los certificados del DNI :: 2 años.
+Renovación del DNI :: Se puede tramitar en los últimos 180 días de vigencia.
+Contenido del chip del DNI :: Certificados cualificados de identificación y firma, fotografía, datos personales y dos huellas dactilares.

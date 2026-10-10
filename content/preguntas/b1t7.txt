@@ -1,0 +1,451 @@
+// Tema 7 · Protección de datos personales: RGPD, LOPDGDD y derechos digitales
+
+? ¿En qué fecha es aplicable el Reglamento (UE) 2016/679 (RGPD)?
+a) 24 de mayo de 2016
+b) 25 de mayo de 2018
+c) 6 de diciembre de 2018
+d) 1 de enero de 2019
+= b
+> El RGPD entró en vigor a los veinte días de su publicación (24-5-2016) y es aplicable desde el 25 de mayo de 2018 (art. 99).
+@ RGPD art. 99
+
+? ¿Cuál es el título completo de la Ley Orgánica 3/2018?
+a) Ley Orgánica de Regulación del Tratamiento Automatizado de los Datos de Carácter Personal
+b) Ley Orgánica de Protección de Datos de Carácter Personal
+c) Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales
+d) Ley Orgánica de Seguridad de la Información
+= c
+> LO 3/2018, de 5 de diciembre (LOPDGDD). La LORTAD (5/1992) y la LOPD (15/1999) son normas anteriores derogadas.
+@ LO 3/2018
+
+? ¿Qué se entiende por dato personal en el RGPD?
+a) Solo el nombre y apellidos
+b) Toda información sobre una persona física identificada o identificable
+c) Los datos de las personas jurídicas
+d) Solo los datos de salud
+= b
+> Art. 4.1 RGPD. Los datos de personas jurídicas no están protegidos por el RGPD.
+@ RGPD art. 4.1
+
+? ¿Quién es el «responsable del tratamiento»?
+a) Quien trata datos personales por cuenta del encargado
+b) Quien, solo o junto con otros, determina los fines y medios del tratamiento
+c) El delegado de protección de datos
+d) La autoridad de control
+= b
+> Art. 4.7 RGPD. El encargado del tratamiento (art. 4.8) trata los datos por cuenta del responsable.
+@ RGPD art. 4.7
+
+? ¿Qué es la seudonimización?
+a) El tratamiento de datos de manera que ya no puedan atribuirse a un interesado sin utilizar información adicional que figure por separado
+b) La eliminación irreversible de todo identificador
+c) El cifrado de las comunicaciones
+d) La copia de seguridad de los datos
+= a
+> Art. 4.5 RGPD. Los datos seudonimizados siguen siendo datos personales; los anonimizados no lo son.
+@ RGPD art. 4.5
+
+? ¿A qué NO se aplica el RGPD (art. 2)?
+a) A las empresas privadas
+b) Al tratamiento efectuado por una persona física en el ejercicio de actividades exclusivamente personales o domésticas
+c) A las Administraciones Públicas
+d) A los ficheros automatizados
+= b
+> Art. 2.2.c RGPD. Tampoco se aplica a las autoridades competentes con fines penales (Directiva (UE) 2016/680, transpuesta por la LO 7/2021).
+@ RGPD art. 2
+
+? ¿Cuál NO es uno de los principios del artículo 5 del RGPD?
+a) Maximización del tratamiento
+b) Minimización de datos
+c) Limitación del plazo de conservación
+d) Exactitud
+= a
+> Los principios son: licitud, lealtad y transparencia; limitación de la finalidad; minimización; exactitud; limitación del plazo de conservación; integridad y confidencialidad; y responsabilidad proactiva.
+@ RGPD art. 5
+
+? ¿Qué significa el principio de «responsabilidad proactiva» (accountability)?
+a) Que el interesado debe vigilar el uso de sus datos
+b) Que el responsable debe cumplir los principios y ser capaz de demostrarlo
+c) Que las sanciones se imponen de oficio
+d) Que el encargado responde solo en caso de dolo
+= b
+> Art. 5.2 RGPD.
+@ RGPD art. 5.2
+
+? ¿Cuál de estas NO es una base jurídica de licitud del art. 6 del RGPD?
+a) El consentimiento del interesado
+b) La ejecución de un contrato en el que el interesado es parte
+c) La mera conveniencia comercial del responsable sin ponderación
+d) El cumplimiento de una misión de interés público o el ejercicio de poderes públicos
+= c
+> El art. 6.1 admite: consentimiento, contrato, obligación legal, intereses vitales, misión de interés público/poderes públicos e interés legítimo (con ponderación, no aplicable a las autoridades públicas en el ejercicio de sus funciones).
+@ RGPD art. 6
+
+? ¿Qué base de licitud utilizan habitualmente las Administraciones Públicas en el ejercicio de sus funciones?
+a) El cumplimiento de una misión de interés público o el ejercicio de poderes públicos, y la obligación legal
+b) El interés legítimo
+c) El consentimiento siempre
+d) Los intereses vitales
+= a
+> Art. 6.1.c y e RGPD; el interés legítimo no puede ser invocado por las autoridades públicas en el ejercicio de sus funciones (art. 6.1 in fine).
+@ RGPD art. 6
+
+? ¿Cómo debe ser el consentimiento según el RGPD?
+a) Libre, específico, informado e inequívoco, mediante una declaración o una clara acción afirmativa
+b) Tácito
+c) Verbal y revocable solo por escrito
+d) Genérico para todos los tratamientos futuros
+= a
+> Art. 4.11 y considerando 32. El interesado puede retirarlo en cualquier momento (art. 7.3), siendo tan fácil retirarlo como darlo.
+@ RGPD arts. 4.11 y 7
+
+? ¿Desde qué edad pueden los menores prestar su consentimiento para el tratamiento de sus datos en España?
+a) 13 años
+b) 16 años
+c) 14 años
+d) 18 años
+= c
+> Art. 7 LOPDGDD: mayor de catorce años. El RGPD (art. 8) fija 16, con posibilidad de rebajarlo hasta 13.
+@ LOPDGDD art. 7
+
+? ¿Qué edad mínima puede fijar un Estado miembro por ley para el consentimiento de un menor en servicios de la sociedad de la información, según el RGPD?
+a) 10 años
+b) 12 años
+c) 13 años
+d) 14 años
+= c
+> Art. 8.1 RGPD: no inferior a 13 años. España la fijó en 14 (art. 7 LOPDGDD).
+@ RGPD art. 8
+
+? ¿Cuál de los siguientes datos pertenece a las categorías especiales del artículo 9 del RGPD?
+a) El domicilio fiscal
+b) El correo electrónico profesional
+c) Los datos relativos a la salud
+d) El número de teléfono
+= c
+> Son categorías especiales: origen étnico o racial, opiniones políticas, convicciones religiosas o filosóficas, afiliación sindical, datos genéticos, datos biométricos para identificación unívoca, datos de salud, y datos de vida sexual u orientación sexual.
+@ RGPD art. 9
+
+? ¿Qué datos biométricos son categoría especial?
+a) Cualquier dato de imagen
+b) Solo las huellas dactilares de menores
+c) Ninguno
+d) Los dirigidos a identificar de manera unívoca a una persona física
+= d
+> Art. 9.1 RGPD.
+@ RGPD art. 9
+
+? ¿Cuál es el plazo de respuesta a las solicitudes de ejercicio de derechos del interesado (art. 12.3 RGPD)?
+a) 10 días hábiles
+b) Un mes, prorrogable otros dos meses si es necesario
+c) 15 días naturales
+d) Tres meses improrrogables
+= b
+> Art. 12.3 RGPD: sin dilación indebida y, en cualquier caso, en el plazo de un mes, prorrogable por otros dos meses teniendo en cuenta la complejidad y el número de solicitudes.
+@ RGPD art. 12.3
+
+? ¿Qué derecho permite recibir los datos personales en un formato estructurado, de uso común y lectura mecánica y transmitirlos a otro responsable?
+a) Portabilidad
+b) Acceso
+c) Rectificación
+d) Limitación
+= a
+> Art. 20 RGPD: aplicable cuando el tratamiento se basa en el consentimiento o en un contrato y se efectúa por medios automatizados.
+@ RGPD art. 20
+
+? ¿Qué derecho del RGPD se conoce como «derecho al olvido»?
+a) Derecho de acceso
+b) Derecho de oposición
+c) Derecho de supresión
+d) Derecho de limitación
+= c
+> Art. 17 RGPD: derecho de supresión («el derecho al olvido»).
+@ RGPD art. 17
+
+? ¿Qué derecho tiene el interesado frente al tratamiento con fines de mercadotecnia directa?
+a) Solo el de rectificación
+b) Ninguno si hay contrato
+c) El derecho de oposición, que debe atenderse siempre
+d) El de portabilidad
+= c
+> Art. 21.2 RGPD: cuando los datos se traten con fines de mercadotecnia directa, el interesado tendrá derecho a oponerse en todo momento.
+@ RGPD art. 21
+
+? ¿Qué regula el artículo 22 del RGPD?
+a) La portabilidad
+b) El registro de actividades
+c) Las decisiones individuales automatizadas, incluida la elaboración de perfiles
+d) Las transferencias internacionales
+= c
+> Derecho a no ser objeto de una decisión basada únicamente en el tratamiento automatizado, incluida la elaboración de perfiles, que produzca efectos jurídicos o le afecte significativamente.
+@ RGPD art. 22
+
+? ¿Qué es la «información por capas» del artículo 11 de la LOPDGDD?
+a) Presentar la información en inglés y español
+b) Informar solo en la segunda comunicación
+c) Un tipo de cifrado
+d) Informar primero de forma básica (identidad del responsable, finalidad y derechos) y dar acceso al resto de información de manera sencilla
+= d
+> Art. 11 LOPDGDD: la primera capa incluye identidad del responsable, finalidad y posibilidad de ejercer derechos; la segunda, el resto de información.
+@ LOPDGDD art. 11
+
+? ¿Qué principio recoge el artículo 25 del RGPD?
+a) Registro de actividades
+b) Evaluación de impacto
+c) Protección de datos desde el diseño y por defecto
+d) Delegado de protección de datos
+= c
+> Art. 25 RGPD: privacidad desde el diseño y por defecto.
+@ RGPD art. 25
+
+? ¿Qué organizaciones están, en principio, exentas de llevar el registro de actividades de tratamiento (art. 30.5 RGPD)?
+a) Las que empleen a menos de 250 personas, salvo que el tratamiento entrañe riesgo, no sea ocasional o incluya categorías especiales
+b) Todas las pymes sin excepción
+c) Las Administraciones Públicas
+d) Las que traten menos de 100 registros
+= a
+> Art. 30.5. Las entidades públicas del art. 77.1 LOPDGDD deben además publicar su inventario de actividades de tratamiento (art. 31 LOPDGDD).
+@ RGPD art. 30
+
+? ¿En qué plazo debe notificarse una violación de la seguridad de los datos a la autoridad de control?
+a) En 24 horas
+b) En 7 días
+c) Sin dilación indebida y, de ser posible, a más tardar 72 horas desde que se tenga constancia
+d) En un mes
+= c
+> Art. 33.1 RGPD, salvo que sea improbable que constituya un riesgo para los derechos y libertades de las personas. Si se retrasa, debe indicarse el motivo.
+@ RGPD art. 33
+
+? ¿Cuándo debe comunicarse una violación de seguridad a los interesados (art. 34 RGPD)?
+a) Cuando entrañe un alto riesgo para sus derechos y libertades
+b) Siempre
+c) Nunca
+d) Solo si hay datos de menores
+= a
+> Art. 34.1 RGPD.
+@ RGPD art. 34
+
+? ¿Qué debe hacer el encargado del tratamiento ante una violación de la seguridad?
+a) Notificarla a la AEPD en 72 horas
+b) Ocultarla si es leve
+c) Notificarla sin dilación indebida al responsable
+d) Informar a los medios de comunicación
+= c
+> Art. 33.2 RGPD.
+@ RGPD art. 33.2
+
+? ¿Cuándo es obligatoria la evaluación de impacto relativa a la protección de datos (art. 35)?
+a) Siempre que se traten datos personales
+b) Cuando sea probable que el tratamiento entrañe un alto riesgo para los derechos y libertades de las personas físicas
+c) Solo en el sector público
+d) Solo cuando lo pida el interesado
+= b
+> Art. 35.1 RGPD; en particular en perfilado con efectos jurídicos, tratamiento a gran escala de categorías especiales y observación sistemática a gran escala de zonas de acceso público.
+@ RGPD art. 35
+
+? ¿Qué debe hacer el responsable si, tras la evaluación de impacto, el tratamiento sigue entrañando un alto riesgo?
+a) Continuar sin más
+b) Eliminar los datos
+c) Pedir autorización al interesado
+d) Consultar a la autoridad de control antes de proceder al tratamiento
+= d
+> Art. 36 RGPD: consulta previa.
+@ RGPD art. 36
+
+? ¿Quién está obligado a designar un delegado de protección de datos?
+a) Toda empresa
+b) Solo las entidades con más de 250 trabajadores
+c) Solo las entidades financieras
+d) Las autoridades u organismos públicos (salvo tribunales en su función judicial), y quienes realicen observación habitual y sistemática a gran escala o tratamiento a gran escala de categorías especiales
+= d
+> Art. 37.1 RGPD, ampliado por el art. 34 LOPDGDD (colegios profesionales, centros docentes y universidades, operadores de comunicaciones, entidades de crédito, aseguradoras…).
+@ RGPD art. 37; LOPDGDD art. 34
+
+? ¿Cuál NO es una función del delegado de protección de datos (art. 39 RGPD)?
+a) Resolver los recursos contra las sanciones de la AEPD
+b) Informar y asesorar al responsable y al encargado
+c) Supervisar el cumplimiento del RGPD
+d) Actuar como punto de contacto con la autoridad de control
+= a
+> Funciones: informar y asesorar, supervisar el cumplimiento, asesorar sobre la EIPD, cooperar con la autoridad de control y actuar como punto de contacto.
+@ RGPD art. 39
+
+? ¿Cuál es la cuantía máxima de las multas por infracción de los principios básicos del tratamiento, el consentimiento, los derechos de los interesados o las transferencias internacionales (art. 83.5 RGPD)?
+a) 20 millones de euros o el 4 % del volumen de negocio anual global
+b) 10 millones de euros o el 2 % del volumen de negocio anual global
+c) 5 millones de euros
+d) 1 millón de euros
+= a
+> Art. 83.5: hasta 20 millones de euros o, tratándose de una empresa, el 4 % como máximo del volumen de negocio total anual global del ejercicio anterior, optándose por la de mayor cuantía.
+@ RGPD art. 83.5
+
+? ¿Cuál es la multa máxima por infracción de obligaciones del responsable y del encargado, del DPD o de certificación (art. 83.4 RGPD)?
+a) 10 millones de euros o el 2 % del volumen de negocio anual global
+b) 20 millones de euros o el 4 %
+c) 2 millones de euros
+d) 100.000 euros
+= a
+> Art. 83.4 RGPD.
+@ RGPD art. 83.4
+
+? ¿Qué es la AEPD?
+a) Un órgano del Ministerio de Justicia sin independencia
+b) Un tribunal especial
+c) Una autoridad administrativa independiente de ámbito estatal con personalidad jurídica propia que supervisa la aplicación de la LOPDGDD y del RGPD
+d) Una agencia de la Comisión Europea
+= c
+> Art. 44 LOPDGDD. Se relaciona con el Gobierno a través del Ministerio de Justicia.
+@ LOPDGDD art. 44
+
+? ¿Qué órgano de la UE está formado por el jefe de cada autoridad de control y el Supervisor Europeo de Protección de Datos?
+a) El Comité Europeo de Protección de Datos
+b) El Consejo de la UE
+c) Europol
+d) La Comisión Europea
+= a
+> El CEPD garantiza la aplicación coherente del RGPD (art. 68).
+@ RGPD art. 68
+
+? ¿Qué es el «mecanismo de coherencia»?
+a) Un plan de formación
+b) Un registro de sanciones
+c) Un tipo de certificación
+d) El sistema por el que las autoridades de control cooperan entre sí y con la Comisión para garantizar una aplicación coherente del RGPD
+= d
+> Arts. 63 y ss. RGPD. La «ventanilla única» designa una autoridad de control principal en los tratamientos transfronterizos.
+@ RGPD art. 63
+
+? ¿Qué decisión permite la transferencia de datos a un tercer país sin necesidad de garantías adicionales?
+a) La orden de la AEPD
+b) El consentimiento tácito
+c) La decisión del responsable
+d) La decisión de adecuación de la Comisión Europea
+= d
+> Art. 45 RGPD. En su defecto, garantías adecuadas del art. 46 (cláusulas tipo, BCR…) o excepciones del art. 49.
+@ RGPD art. 45
+
+? ¿Qué son las normas corporativas vinculantes (BCR)?
+a) Un tipo de multa
+b) Sanciones del CEPD
+c) Garantías adecuadas para transferencias dentro de un grupo empresarial
+d) Contratos de encargo
+= c
+> Art. 47 RGPD: normas corporativas vinculantes que se aplican a los miembros de un grupo empresarial.
+@ RGPD art. 47
+
+? Según la LOPDGDD (art. 22), ¿en qué plazo máximo deben suprimirse las imágenes de videovigilancia salvo que deban conservarse para acreditar actos contra personas, bienes o instalaciones?
+a) 24 horas
+b) 7 días
+c) Tres meses
+d) Un mes
+= d
+> Art. 22.3 LOPDGDD: un mes desde su captación; si se conservan, se ponen a disposición de la autoridad competente en un plazo máximo de 72 horas desde que se tenga conocimiento.
+@ LOPDGDD art. 22
+
+? ¿Cómo debe informarse de la existencia de un sistema de videovigilancia (art. 22.4 LOPDGDD)?
+a) No hace falta informar
+b) Por carta a cada afectado
+c) Solo en la web
+d) Mediante un dispositivo informativo en lugar suficientemente visible
+= d
+> Identificando al menos la existencia del tratamiento, la identidad del responsable y la posibilidad de ejercitar los derechos.
+@ LOPDGDD art. 22
+
+? ¿En qué plazo prescriben las infracciones muy graves de la LOPDGDD?
+a) 1 año
+b) 2 años
+c) 5 años
+d) 3 años
+= d
+> Art. 72: muy graves, 3 años; art. 73: graves, 2 años; art. 74: leves, 1 año.
+@ LOPDGDD arts. 72-74
+
+? ¿En qué plazo prescriben las sanciones impuestas por un importe superior a 300.000 euros?
+a) 1 año
+b) 2 años
+c) 3 años
+d) 5 años
+= c
+> Art. 78 LOPDGDD: hasta 40.000 €, un año; de 40.001 a 300.000 €, dos años; más de 300.000 €, tres años.
+@ LOPDGDD art. 78
+
+? ¿Qué sanción económica se impone a las Administraciones Públicas cuando infringen la normativa de protección de datos (art. 77 LOPDGDD)?
+a) Multa de hasta 20 millones de euros
+b) No se les impone multa: la autoridad dicta una resolución declarando la infracción y estableciendo las medidas que proceda adoptar
+c) La suspensión del tratamiento durante un año
+d) La destitución de su responsable
+= b
+> Art. 77.2 LOPDGDD: apercibimiento (resolución declarando la infracción) y medidas correctoras; con propuesta de actuaciones disciplinarias cuando proceda.
+@ LOPDGDD art. 77
+
+? ¿Qué regula el Título X de la LOPDGDD?
+a) Las sanciones
+b) La garantía de los derechos digitales
+c) La AEPD
+d) Las transferencias internacionales
+= b
+> Arts. 79 a 97: derechos en la era digital, neutralidad de Internet, acceso universal, seguridad digital, educación digital, desconexión digital, derecho al olvido, testamento digital, etc.
+@ LOPDGDD Título X
+
+? ¿Qué artículo de la LOPDGDD recoge el derecho a la desconexión digital en el ámbito laboral?
+a) Artículo 87
+b) Artículo 89
+c) Artículo 90
+d) Artículo 88
+= d
+> Art. 87: intimidad y uso de dispositivos digitales en el ámbito laboral; art. 88: desconexión digital; art. 89: videovigilancia en el trabajo; art. 90: geolocalización.
+@ LOPDGDD art. 88
+
+? ¿Qué derecho digital regula el artículo 96 de la LOPDGDD?
+a) Derecho al olvido en redes sociales
+b) Neutralidad de Internet
+c) Derecho al testamento digital
+d) Educación digital
+= c
+> Art. 96: derecho al testamento digital. Art. 94: olvido en redes sociales; art. 80: neutralidad; art. 83: educación digital.
+@ LOPDGDD art. 96
+
+? ¿Qué derecho regula el artículo 93 de la LOPDGDD?
+a) Derecho al olvido en redes sociales
+b) Derecho de portabilidad
+c) Derecho de rectificación en Internet
+d) Derecho al olvido en búsquedas de Internet
+= d
+> Art. 93: olvido en búsquedas de Internet; art. 94: en servicios de redes sociales y equivalentes; art. 95: portabilidad en redes sociales; art. 85: rectificación en Internet.
+@ LOPDGDD art. 93
+
+? ¿Qué norma regula la protección de datos tratados con fines de prevención, investigación y enjuiciamiento de infracciones penales?
+a) Ley Orgánica 3/2018
+b) Ley Orgánica 7/2021, de 26 de mayo
+c) Ley 34/2002
+d) Ley 19/2013
+= b
+> Transpone la Directiva (UE) 2016/680.
+@ LO 7/2021
+
+? ¿Qué pueden solicitar los herederos de una persona fallecida respecto a sus datos (art. 3 LOPDGDD)?
+a) Acceder a los datos y solicitar su rectificación o supresión, salvo prohibición expresa del fallecido
+b) Nada
+c) Solo su copia
+d) Únicamente su supresión
+= a
+> Art. 3.1 LOPDGDD.
+@ LOPDGDD art. 3
+
+? ¿Qué Esquema debe aplicarse en el sector público para adoptar medidas de seguridad en el tratamiento de datos personales (DA 1.ª LOPDGDD)?
+a) El Esquema Nacional de Interoperabilidad
+b) La norma ISO 9001
+c) El Esquema Nacional de Seguridad
+d) El Código Penal
+= c
+> DA 1.ª LOPDGDD: el ENS incluirá las medidas que deban implantarse en caso de tratamiento de datos personales; los responsables del art. 77.1 deben aplicarlas.
+@ LOPDGDD DA 1.ª
+
+? ¿Cuál es el nombre de la regulación europea sobre protección de datos de las instituciones y órganos de la UE?
+a) Reglamento (UE) 2016/679
+b) Reglamento (UE) 2018/1725
+c) Directiva (UE) 2016/680
+d) Reglamento (UE) 2022/868
+= b
+> El Reglamento 2018/1725 regula el tratamiento por las instituciones, órganos y organismos de la Unión (supervisa el SEPD).
+@ Reglamento (UE) 2018/1725
