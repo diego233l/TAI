@@ -1,0 +1,137 @@
+@title Administración Linux: permisos, cron y LVM
+@block b4
+@topics b4t3,b4t4
+@enunciado
+En un servidor Linux se muestra el siguiente listado y la configuración de usuarios:
+
+```
+$ ls -l /srv/datos
+drwxr-x---  2 ana   rrhh   4096 mar  3 10:12 nominas
+-rw-r-----  1 ana   rrhh   1820 mar  3 10:15 informe.txt
+-rwxr-xr--  1 luis  ti     932  mar  3 10:20 copia.sh
+-rwsr-xr-x  1 root  root   54000 mar 3 10:21 utilidad
+drwxrwxrwt  5 root  root   4096 mar  3 10:30 /tmp
+
+$ id luis
+uid=1002(luis) gid=1002(luis) groups=1002(luis),1010(rrhh)
+$ id pepe
+uid=1003(pepe) gid=1003(pepe) groups=1003(pepe),1011(ti)
+```
+
+La máscara de creación (umask) de todos los usuarios es 022. Además, el administrador tiene este fichero de cron:
+
+```
+30 2 * * 1-5  /srv/datos/copia.sh
+*/15 * * * *  /usr/local/bin/monitor
+```
+
+El volumen lógico `/dev/vg0/datos` (LVM) está montado en `/srv/datos` con sistema de ficheros ext4 y hay espacio libre en el grupo de volúmenes `vg0`.
+@fin
+
+? ¿Qué permisos en octal tiene el fichero `informe.txt`?
+a) 604
+b) 750
+c) 460
+d) 640
+= d
+> rw- (6) para el propietario, r-- (4) para el grupo y --- (0) para el resto: 640.
+@ Permisos
+
+? ¿Qué puede hacer el usuario luis con `informe.txt`?
+a) Leerlo, pero no modificarlo
+b) Leerlo y modificarlo
+c) Nada
+d) Solo ejecutarlo
+= a
+> luis pertenece al grupo rrhh, propietario de grupo del fichero, que tiene permiso r-- (solo lectura).
+@ Permisos
+
+? ¿Qué puede hacer el usuario pepe con `informe.txt`?
+a) Leerlo
+b) Nada: no es propietario ni pertenece al grupo rrhh y «otros» no tiene permisos
+c) Leerlo y escribirlo
+d) Borrarlo siempre
+= b
+> Se aplican los permisos de «otros» (---). Además, para acceder al fichero necesitaría atravesar el directorio, y /srv/datos y sus ficheros tienen permisos propios.
+@ Permisos
+
+? ¿Puede pepe ejecutar `copia.sh`?
+a) Sí, porque pertenece al grupo ti, que tiene r-x
+b) No, porque el propietario es luis
+c) Solo si es root
+d) Sí, pero únicamente si antes lo modifica
+= a
+> Los permisos de copia.sh son rwxr-xr--: el grupo ti tiene lectura y ejecución. Como pepe pertenece a ti, puede leerlo y ejecutarlo, pero no modificarlo.
+@ Permisos
+
+? ¿Qué significa la «s» en `-rwsr-xr-x` de `utilidad`?
+a) Bit sticky: solo el propietario puede borrar
+b) Bit SGID: hereda el grupo del directorio
+c) Bit SUID: el programa se ejecuta con los privilegios de su propietario (root)
+d) El fichero es un enlace simbólico
+= c
+> SUID hace que el proceso adopte el UID efectivo del propietario del ejecutable. En octal sería 4755. Es un riesgo de seguridad si el programa es vulnerable.
+@ SUID/SGID
+
+? ¿Qué indica la «t» final de los permisos de `/tmp` (`drwxrwxrwt`)?
+a) Sticky bit: en el directorio solo el propietario del fichero (o de la carpeta, o root) puede borrar o renombrar sus ficheros
+b) Que es un directorio temporal que se borra al apagar
+c) Que está cifrado
+d) Que solo root puede escribir
+= a
+> En octal /tmp es 1777. Todos pueden crear ficheros, pero solo borrar los suyos.
+@ Permisos especiales
+
+? Con umask 022, ¿qué permisos tendrá un fichero nuevo y un directorio nuevo?
+a) Fichero 755 y directorio 755
+b) Fichero 644 y directorio 755
+c) Fichero 666 y directorio 777
+d) Fichero 022 y directorio 022
+= b
+> La umask se resta de 666 (ficheros) y 777 (directorios): 666 − 022 = 644 y 777 − 022 = 755.
+@ umask
+
+? ¿A qué hora se ejecuta `copia.sh` según la línea `30 2 * * 1-5`?
+a) A las 02:30 todos los días
+b) Cada 30 minutos de 2 a 5
+c) A las 02:30 los días 1 a 5 de cada mes
+d) A las 02:30 de lunes a viernes
+= d
+> Los campos son: minuto (30), hora (2), día del mes (*), mes (*) y día de la semana (1-5 = lunes a viernes).
+@ cron
+
+? ¿Con qué frecuencia se ejecuta `/usr/local/bin/monitor` según `*/15 * * * *`?
+a) Cada 15 horas
+b) Una vez al día a las 15:00
+c) Cada 15 segundos
+d) Cada 15 minutos
+= d
+> `*/15` en el campo de minutos significa cada 15 minutos (0, 15, 30 y 45 de cada hora).
+@ cron
+
+? Se necesita ampliar `/srv/datos` en 10 GB sin desmontar el volumen. ¿Qué comando es el adecuado?
+a) pvcreate /dev/vg0/datos
+b) mkfs.ext4 /dev/vg0/datos
+c) fdisk /dev/vg0
+d) lvextend -r -L +10G /dev/vg0/datos
+= d
+> `lvextend -L +10G` amplía el volumen lógico y la opción `-r` redimensiona el sistema de ficheros (resize2fs) en caliente. mkfs destruiría los datos.
+@ LVM
+
+? Dentro de la jerarquía de LVM, ¿cuál es el orden correcto de creación desde el disco hasta el sistema de ficheros?
+a) Volumen lógico, grupo de volúmenes, volumen físico
+b) Grupo de volúmenes, volumen físico, mkfs
+c) Volumen físico (pvcreate), grupo de volúmenes (vgcreate), volumen lógico (lvcreate) y sistema de ficheros (mkfs)
+d) mkfs, pvcreate, vgcreate, lvcreate
+= c
+> PV → VG → LV → sistema de ficheros → montaje.
+@ LVM
+
+? ¿Qué comando localiza en todo el sistema los ficheros con el bit SUID activado, útil en una auditoría?
+a) ls -l /bin
+b) chmod -s /
+c) grep -r suid /
+d) find / -perm -4000 -type f 2>/dev/null
+= d
+> `-perm -4000` busca ficheros con ese bit activo; redirigir stderr evita el ruido por directorios sin acceso.
+@ Auditoría
