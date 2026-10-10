@@ -1,0 +1,97 @@
+@title Redes: plan de direccionamiento con subredes de igual tamaño
+@block b4
+@topics b4t7,b4t10
+@enunciado
+Una administración dispone del bloque privado `172.16.0.0/16` y quiere dividirlo en **8 subredes del mismo tamaño** (una por edificio), numeradas desde la 0:
+
+| Subred | Rango de red |
+|---|---|
+| 0 | 172.16.0.0 |
+| 1 | 172.16.32.0 |
+| 2 | 172.16.64.0 |
+| 3 | 172.16.96.0 |
+| … | … |
+
+Los routers usan la **primera dirección utilizable** de cada subred como puerta de enlace. Los equipos del edificio 3 están en la subred 3. No se utiliza ninguna técnica especial de ahorro de direcciones (se aplica el criterio clásico de reservar red y broadcast).
+@fin
+
+? ¿Qué prefijo y máscara tiene cada una de las 8 subredes?
+a) /18 y 255.255.192.0
+b) /19 y 255.255.224.0
+c) /20 y 255.255.240.0
+d) /19 y 255.255.248.0
+= b
+> Para 8 subredes se necesitan 3 bits (2³ = 8), por lo que /16 + 3 = /19. La máscara es 255.255.224.0 (tercer octeto: 11100000 = 224).
+@ Subnetting
+
+? ¿Cuántos hosts utilizables admite cada subred?
+a) 8 192
+b) 8 190
+c) 4 094
+d) 16 382
+= b
+> Quedan 32 − 19 = 13 bits de host: 2¹³ = 8 192 direcciones, menos red y broadcast = 8 190.
+@ Subnetting
+
+? ¿A qué subred pertenece el equipo con la dirección 172.16.100.7?
+a) 172.16.64.0/19
+b) 172.16.96.0/19
+c) 172.16.100.0/19
+d) 172.16.128.0/19
+= b
+> Se hace un AND con la máscara: 100 = 01100100 y 224 = 11100000 → 01100000 = 96. La red es 172.16.96.0/19.
+@ Subnetting
+
+? ¿Cuál es la dirección de broadcast de la subred 3 (172.16.96.0/19)?
+a) 172.16.96.255
+b) 172.16.127.255
+c) 172.16.128.255
+d) 172.16.111.255
+= b
+> El bloque es de 2⁵ = 32 en el tercer octeto: de 96 a 127. El broadcast tiene todos los bits de host a 1: 172.16.127.255.
+@ Subnetting
+
+? ¿Cuál es la última dirección utilizable de la subred 3?
+a) 172.16.127.255
+b) 172.16.127.254
+c) 172.16.127.253
+d) 172.16.96.254
+= b
+> La última utilizable es la anterior al broadcast: 172.16.127.254.
+@ Subnetting
+
+? ¿Qué dirección debe configurarse como puerta de enlace en la subred 2 (172.16.64.0/19)?
+a) 172.16.64.0
+b) 172.16.64.1
+c) 172.16.95.254
+d) 172.16.95.255
+= b
+> La primera dirección utilizable es la que sigue a la de red: 172.16.64.1.
+@ Subnetting
+
+? Los equipos 172.16.95.250 y 172.16.96.3 usan la máscara 255.255.224.0. ¿Pueden comunicarse sin pasar por un router?
+a) Sí, porque pertenecen a la misma red
+b) Sí, porque ambos son de la red 172.16.0.0/16
+c) No, pertenecen a subredes distintas (172.16.64.0/19 y 172.16.96.0/19)
+d) No, porque la máscara es incorrecta
+= c
+> 95 = 01011111 → AND 224 = 64 (subred 172.16.64.0/19); 96 → subred 172.16.96.0/19. Subredes distintas: el tráfico entre ambas necesita un dispositivo de capa 3.
+@ Subnetting
+
+? ¿Cuál es la máscara wildcard (inversa) de una red /19?
+a) 0.0.31.255
+b) 0.0.15.255
+c) 0.0.63.255
+d) 255.255.31.0
+= a
+> La wildcard es la inversa de la máscara 255.255.224.0: 0.0.31.255 (usada, por ejemplo, en ACL de Cisco).
+@ Subnetting
+
+? Si en lugar de 8 subredes iguales se necesitara una subred para 50 equipos, ¿qué prefijo mínimo (máscara más restrictiva) habría que usar?
+a) /25
+b) /26
+c) /27
+d) /28
+= b
+> Para 50 hosts hacen falta 52 direcciones (con red y broadcast): 2⁶ = 64 → 6 bits de host → /26 (62 hosts útiles). Un /27 solo da 30.
+@ Subnetting / VLSM

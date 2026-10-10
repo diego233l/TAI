@@ -144,10 +144,23 @@ final class Quiz
                 $mode = 'estudio';
             }
             $topics = self::resolveTopics($cfg);
-            $pool = array_values(array_filter(
-                self::topicPool($topics),
-                fn($q) => self::matches($origen, $state[$q['id']] ?? null, $today)
-            ));
+            if (!empty($cfg['qids']) && is_array($cfg['qids'])) {
+                // lista explícita (p. ej. «repetir falladas»): solo preguntas de tema, sin filtro de origen
+                $pool = [];
+                foreach (array_slice($cfg['qids'], 0, 400) as $qid) {
+                    $q = Content::question((string)$qid);
+                    if ($q && !isset($q['sup']) && !empty($q['topic'])) {
+                        $pool[] = $q;
+                    }
+                }
+                $topics = array_values(array_unique(array_column($pool, 'topic')));
+                $origen = 'todas';
+            } else {
+                $pool = array_values(array_filter(
+                    self::topicPool($topics),
+                    fn($q) => self::matches($origen, $state[$q['id']] ?? null, $today)
+                ));
+            }
             if (!$pool) {
                 throw new ApiError(409, match ($origen) {
                     'nuevas' => 'No quedan preguntas nuevas con esos filtros.',
@@ -168,6 +181,7 @@ final class Quiz
             }
             $title = match (true) {
                 $kind === 'repaso' => 'Repaso del día',
+                !empty($cfg['qids']) => 'Repetición de falladas',
                 count($topics) === 1 => 'Test: ' . (Content::topic($topics[0])['short'] ?? $topics[0]),
                 !empty($cfg['blocks']) && count($cfg['blocks']) === 1 => 'Test del Bloque ' . (Content::topic($topics[0])['blockNum'] ?? ''),
                 default => 'Test mixto',

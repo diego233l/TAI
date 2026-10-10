@@ -1,0 +1,37 @@
+// Formato: anverso :: reverso
+Nº de artículos de la CE y fecha de referéndum :: 169 artículos. Referéndum 6-dic-1978; sanción 27-dic; BOE 29-dic-1978.
+Valores superiores del ordenamiento (art. 1.1) :: Libertad, justicia, igualdad y pluralismo político.
+Forma política del Estado (art. 1.3) :: Monarquía parlamentaria.
+Garantías del art. 9.3 :: Legalidad, jerarquía normativa, publicidad de las normas, irretroactividad de las sancionadoras no favorables, seguridad jurídica, responsabilidad e interdicción de la arbitrariedad.
+Edad de mayoría (art. 12) :: 18 años.
+Derechos del art. 23 solo para españoles :: Participación política y acceso a funciones públicas (salvo sufragio municipal por reciprocidad).
+Sección 1.ª del Cap. II (arts. 15-29) :: Derechos fundamentales y libertades públicas (amparo + preferencia y sumariedad).
+Sección 2.ª del Cap. II (arts. 30-38) :: Derechos y deberes de los ciudadanos.
+Capítulo III del Título I (arts. 39-52) :: Principios rectores de la política social y económica (sin amparo).
+Plazo máximo de detención preventiva (art. 17.2) :: 72 horas, y siempre el tiempo estrictamente necesario.
+Procedimiento del art. 17.4 :: Habeas corpus: puesta inmediata a disposición judicial de toda persona detenida ilegalmente.
+Entrar en un domicilio sin consentimiento (art. 18.2) :: Resolución judicial, salvo flagrante delito.
+Art. 18.4 CE :: La ley limitará el uso de la informática para garantizar honor e intimidad.
+Reunión (art. 21) :: Pacífica y sin armas; sin autorización previa; comunicación previa en lugares de tránsito público y manifestaciones.
+Asociaciones prohibidas (art. 22.5) :: Las secretas y las de carácter paramilitar.
+Disolución de una asociación (art. 22.4) :: Solo por resolución judicial motivada.
+Art. 24 :: Tutela judicial efectiva; sin indefensión; juez ordinario predeterminado; presunción de inocencia.
+Art. 25.2 :: Penas privativas de libertad orientadas a la reeducación y reinserción social; sin trabajos forzados.
+Enseñanza básica (art. 27.4) :: Obligatoria y gratuita.
+Art. 31.1 :: Sistema tributario justo: igualdad y progresividad, sin alcance confiscatorio.
+Art. 53.2 :: Amparo ante el TC para el art. 14, la Sección 1.ª y la objeción de conciencia (art. 30).
+Art. 54 :: Defensor del Pueblo, alto comisionado de las Cortes Generales.
+Art. 55.1: derechos suspendibles (excepción o sitio) :: 17, 18.2 y 18.3, 19, 20.1.a y d, 20.5, 21, 28.2 y 37.2. En excepción no se suspende el 17.3.
+Estado de alarma :: Lo declara el Gobierno (decreto en Consejo de Ministros), 15 días; prórroga con autorización del Congreso.
+Estado de excepción :: Gobierno con autorización previa del Congreso; 30 días prorrogables por otros 30.
+Estado de sitio :: Mayoría absoluta del Congreso a propuesta exclusiva del Gobierno.
+Reforma ordinaria (art. 167) :: 3/5 de cada Cámara; referéndum si lo pide 1/10 de los miembros de cualquier Cámara en 15 días.
+Reforma agravada (art. 168) :: 2/3 de cada Cámara, disolución de las Cortes, ratificación 2/3 y referéndum obligatorio. Afecta al Título Preliminar, Sección 1.ª del Cap. II y Título II.
+Reformas de la CE :: 1992 (art. 13.2), 2011 (art. 135) y 2024 (art. 49).
+Art. 56: el Rey es… :: Jefe del Estado, símbolo de su unidad y permanencia; arbitra y modera; inviolable y no sujeto a responsabilidad.
+Sucesión a la Corona (art. 57) :: Línea anterior a las posteriores; grado más próximo; varón a mujer; mayor edad. Dinastía de Juan Carlos I.
+Número de personas de una Regencia nombrada por las Cortes :: Una, tres o cinco.
+Funciones del Rey (art. 62) en una frase :: Sancionar y promulgar, convocar/disolver Cortes, convocar referéndum, proponer y nombrar Presidente, nombrar ministros, expedir decretos, ser informado y presidir el Consejo de Ministros, mando supremo FFAA, derecho de gracia (sin indultos generales), Alto Patronazgo de las Reales Academias.
+Art. 63 :: Acredita embajadores, manifiesta el consentimiento para obligarse por tratados, y con autorización de las Cortes declara la guerra y hace la paz.
+Refrendo (art. 64) :: Presidente del Gobierno y ministros competentes; el Presidente del Congreso refrenda la propuesta/nombramiento del Presidente del Gobierno y la disolución del art. 99.
+Único acto del Rey sin refrendo :: Nombrar y relevar libremente a los miembros civiles y militares de su Casa (art. 65.2).

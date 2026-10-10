@@ -1,0 +1,730 @@
+// Tema 1 · Constitución Española de 1978. Derechos y deberes fundamentales. Garantía y suspensión. La Corona.
+
+? ¿Cuántos artículos tiene la Constitución Española de 1978?
+a) 159
+b) 169
+c) 179
+d) 189
+= b
+> La CE consta de un Preámbulo, 169 artículos, 4 disposiciones adicionales, 9 transitorias, 1 derogatoria y 1 final.
+@ CE, estructura
+
+? ¿Qué Título de la Constitución regula «De la Corona»?
+a) Título I
+b) Título II
+c) Título III
+d) Título IV
+= b
+> El Título II (arts. 56 a 65) regula la Corona. El Título I son los derechos y deberes fundamentales y el III las Cortes Generales.
+@ CE, Título II
+
+? Según el artículo 1.1 de la CE, ¿cuáles son los valores superiores del ordenamiento jurídico?
+a) Libertad, justicia, igualdad y pluralismo político
+b) Libertad, igualdad, fraternidad y solidaridad
+c) Justicia, paz, seguridad y pluralismo político
+d) Libertad, justicia, igualdad y solidaridad
+= a
+> Art. 1.1: «España se constituye en un Estado social y democrático de Derecho, que propugna como valores superiores de su ordenamiento jurídico la libertad, la justicia, la igualdad y el pluralismo político».
+@ CE art. 1.1
+
+? ¿Cuál es la forma política del Estado español según la Constitución?
+a) República parlamentaria
+b) Monarquía constitucional
+c) Monarquía parlamentaria
+d) Monarquía absoluta
+= c
+> Art. 1.3: «La forma política del Estado español es la Monarquía parlamentaria».
+@ CE art. 1.3
+
+? ¿Dónde reside la soberanía nacional según el artículo 1.2 de la Constitución?
+a) En las Cortes Generales
+b) En el Rey
+c) En el Gobierno
+d) En el pueblo español
+= d
+> Art. 1.2: «La soberanía nacional reside en el pueblo español, del que emanan los poderes del Estado».
+@ CE art. 1.2
+
+? ¿Qué artículo de la CE establece que el castellano es la lengua española oficial del Estado?
+a) Artículo 2
+b) Artículo 3
+c) Artículo 4
+d) Artículo 5
+= b
+> El art. 3 declara el castellano lengua oficial del Estado (con el deber de conocerla) y las demás lenguas españolas oficiales en sus CCAA según los Estatutos.
+@ CE art. 3
+
+? Según el artículo 5 de la Constitución, la capital del Estado es:
+a) Toledo
+b) Madrid
+c) Barcelona
+d) La que determine una ley orgánica
+= b
+> Art. 5: «La capital del Estado es la villa de Madrid».
+@ CE art. 5
+
+? ¿Cuál de los siguientes principios NO está garantizado expresamente por el artículo 9.3 de la CE?
+a) Principio de legalidad
+b) Publicidad de las normas
+c) Irretroactividad de las disposiciones sancionadoras no favorables
+d) Igualdad de oportunidades
+= d
+> El art. 9.3 garantiza legalidad, jerarquía normativa, publicidad de las normas, irretroactividad de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales, seguridad jurídica, responsabilidad e interdicción de la arbitrariedad. La igualdad de oportunidades no figura en esa lista.
+@ CE art. 9.3
+
+? Según el artículo 8 de la CE, ¿qué instituciones integran las Fuerzas Armadas?
+a) Ejército de Tierra, Armada, Ejército del Aire y Guardia Civil
+b) Ejército de Tierra, la Armada y el Ejército del Aire
+c) Ejército de Tierra, Armada y Fuerzas de Seguridad del Estado
+d) Ejército de Tierra, Armada, Ejército del Aire y Unidad Militar de Emergencias
+= b
+> Art. 8.1: «Las Fuerzas Armadas, constituidas por el Ejército de Tierra, la Armada y el Ejército del Aire…».
+@ CE art. 8
+
+? ¿Qué artículo de la CE proclama que la dignidad de la persona es fundamento del orden político y de la paz social?
+a) Artículo 9
+b) Artículo 10
+c) Artículo 14
+d) Artículo 15
+= b
+> Art. 10.1: la dignidad de la persona, los derechos inviolables que le son inherentes, el libre desarrollo de la personalidad, el respeto a la ley y a los derechos de los demás son fundamento del orden político y de la paz social.
+@ CE art. 10.1
+
+? Las normas relativas a los derechos fundamentales y libertades que la Constitución reconoce se interpretarán de conformidad con:
+a) El Convenio Europeo de Derechos Humanos exclusivamente
+b) La Declaración Universal de Derechos Humanos y los tratados y acuerdos internacionales sobre las mismas materias ratificados por España
+c) La jurisprudencia del Tribunal Supremo
+d) Las leyes orgánicas que los desarrollen
+= b
+> Art. 10.2 CE.
+@ CE art. 10.2
+
+? ¿A qué edad son mayores de edad los españoles según la Constitución?
+a) 16 años
+b) 18 años
+c) 21 años
+d) La que fije el Código Civil
+= b
+> Art. 12: «Los españoles son mayores de edad a los dieciocho años».
+@ CE art. 12
+
+? Según el artículo 11.2 de la CE, ¿qué ocurre con la nacionalidad de los españoles de origen?
+a) Pueden ser privados de ella por sentencia firme
+b) Pueden perderla si adquieren otra nacionalidad
+c) Ningún español de origen podrá ser privado de su nacionalidad
+d) Solo pueden perderla si residen en el extranjero más de diez años
+= c
+> Art. 11.2: «Ningún español de origen podrá ser privado de su nacionalidad».
+@ CE art. 11.2
+
+? ¿Qué derechos del Título I corresponden, en principio, solo a los españoles (salvo reciprocidad en elecciones municipales)?
+a) Los del artículo 14
+b) Los del artículo 17
+c) Los del artículo 23
+d) Los del artículo 27
+= c
+> Art. 13.2: solo los españoles son titulares de los derechos del art. 23 (participación política), salvo lo que se establezca por tratado o ley, por criterios de reciprocidad, para el sufragio activo y pasivo en las elecciones municipales.
+@ CE art. 13.2
+
+? ¿Qué delitos quedan excluidos de la extradición según la CE?
+a) Los delitos políticos, sin que se consideren tales los actos de terrorismo
+b) Todos los delitos cometidos fuera de España
+c) Los delitos de terrorismo
+d) Los delitos castigados con pena inferior a un año
+= a
+> Art. 13.3 CE.
+@ CE art. 13.3
+
+? ¿Cuál de las siguientes afirmaciones sobre el artículo 14 de la CE es correcta?
+a) Reconoce la igualdad solo por razón de sexo
+b) Es un derecho de la Sección 2.ª del Capítulo II
+c) Proclama la igualdad de los españoles ante la ley, sin discriminación por nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social
+d) Solo es tutelable ante los tribunales ordinarios
+= c
+> El art. 14 está fuera de las secciones (inicio del Capítulo II) y es tutelable también por amparo constitucional (art. 53.2).
+@ CE art. 14
+
+? ¿Qué sección del Capítulo II del Título I recoge los «derechos fundamentales y libertades públicas»?
+a) Sección 1.ª (arts. 15 a 29)
+b) Sección 1.ª (arts. 14 a 38)
+c) Sección 2.ª (arts. 30 a 38)
+d) Capítulo III (arts. 39 a 52)
+= a
+> La Sección 1.ª (arts. 15-29) contiene los derechos fundamentales y libertades públicas; la Sección 2.ª (arts. 30-38) los derechos y deberes de los ciudadanos.
+@ CE Título I, Cap. II
+
+? ¿Qué dispone el artículo 15 de la CE sobre la pena de muerte?
+a) Está prohibida sin excepciones
+b) Queda abolida, salvo lo que puedan disponer las leyes penales militares para tiempos de guerra
+c) Solo puede aplicarse por delitos de terrorismo
+d) Solo el Tribunal Supremo puede imponerla
+= b
+> Art. 15 in fine: «Queda abolida la pena de muerte, salvo lo que puedan disponer las leyes penales militares para tiempos de guerra».
+@ CE art. 15
+
+? Según el artículo 16 de la CE, ¿qué ocurre con las declaraciones sobre la ideología, religión o creencias?
+a) Pueden exigirse en procedimientos judiciales
+b) Nadie podrá ser obligado a declarar sobre su ideología, religión o creencias
+c) Deben constar en el DNI
+d) Solo se pueden exigir a los funcionarios públicos
+= b
+> Art. 16.2 CE.
+@ CE art. 16.2
+
+? ¿Cuál es el plazo máximo de la detención preventiva según el artículo 17.2 de la CE?
+a) 24 horas
+b) 48 horas
+c) 72 horas
+d) 5 días
+= c
+> La detención preventiva dura lo estrictamente necesario y, en todo caso, un máximo de 72 horas, tras las cuales el detenido debe ser puesto en libertad o a disposición judicial.
+@ CE art. 17.2
+
+? ¿Qué procedimiento regula el artículo 17.4 de la CE para la puesta inmediata a disposición judicial de toda persona detenida ilegalmente?
+a) Amparo ordinario
+b) Habeas corpus
+c) Interdicto de retener
+d) Querella
+= b
+> Art. 17.4: «La ley regulará un procedimiento de “habeas corpus” para producir la inmediata puesta a disposición judicial de toda persona detenida ilegalmente».
+@ CE art. 17.4
+
+? Según el artículo 18.2 de la CE, la entrada y registro en el domicilio sin consentimiento del titular requiere:
+a) Orden de la autoridad gubernativa
+b) Resolución judicial, salvo en caso de flagrante delito
+c) Autorización del Ministerio Fiscal
+d) Orden de la Policía Judicial
+= b
+> Art. 18.2: ninguna entrada o registro sin consentimiento del titular o resolución judicial, salvo en caso de flagrante delito.
+@ CE art. 18.2
+
+? ¿Cuándo se puede intervenir las comunicaciones postales, telegráficas y telefónicas?
+a) Cuando lo ordene el Ministerio del Interior
+b) Cuando lo autorice el Ministerio Fiscal
+c) Mediante resolución judicial
+d) Nunca, es un derecho absoluto
+= c
+> Art. 18.3: se garantiza el secreto de las comunicaciones, salvo resolución judicial.
+@ CE art. 18.3
+
+? ¿Qué artículo de la Constitución anticipa la limitación del uso de la informática para garantizar el honor y la intimidad (base de la protección de datos)?
+a) Artículo 18.4
+b) Artículo 20.4
+c) Artículo 105
+d) Artículo 53.3
+= a
+> Art. 18.4: «La ley limitará el uso de la informática para garantizar el honor y la intimidad personal y familiar de los ciudadanos y el pleno ejercicio de sus derechos».
+@ CE art. 18.4
+
+? En materia de libertad de expresión, el artículo 20 de la CE establece que el ejercicio de estos derechos:
+a) Puede restringirse mediante censura previa en casos de seguridad nacional
+b) No puede restringirse mediante ningún tipo de censura previa
+c) Requiere autorización administrativa
+d) Solo corresponde a los medios de comunicación acreditados
+= b
+> Art. 20.2: «El ejercicio de estos derechos no puede restringirse mediante ningún tipo de censura previa».
+@ CE art. 20.2
+
+? ¿Quién puede acordar el secuestro de publicaciones, grabaciones y otros medios de información?
+a) El Gobierno
+b) El Ministerio de Interior
+c) Solo una resolución judicial
+d) El Consejo General del Poder Judicial
+= c
+> Art. 20.5: sólo podrá acordarse el secuestro en virtud de resolución judicial.
+@ CE art. 20.5
+
+? Para ejercer el derecho de reunión en lugares de tránsito público y manifestaciones, el artículo 21 exige:
+a) Autorización previa de la autoridad gubernativa
+b) Comunicación previa a la autoridad
+c) Autorización judicial
+d) Ninguna formalidad
+= b
+> No se necesita autorización previa, pero en lugares de tránsito público y manifestaciones se dará comunicación previa a la autoridad, que solo podrá prohibirlas por razones fundadas de alteración del orden público con peligro para personas o bienes.
+@ CE art. 21
+
+? ¿Qué tipo de asociaciones prohíbe expresamente el artículo 22 de la CE?
+a) Las que persigan fines políticos
+b) Las secretas y las de carácter paramilitar
+c) Las que reciban subvenciones públicas
+d) Las constituidas por extranjeros
+= b
+> Art. 22.5: «Se prohíben las asociaciones secretas y las de carácter paramilitar».
+@ CE art. 22.5
+
+? Las asociaciones solo podrán ser disueltas o suspendidas en sus actividades:
+a) Por acuerdo del Consejo de Ministros
+b) En virtud de resolución judicial motivada
+c) Por decisión del Ministerio del Interior
+d) Por acuerdo de las Cortes Generales
+= b
+> Art. 22.4 CE.
+@ CE art. 22.4
+
+? ¿Qué reconoce el artículo 23.2 de la CE?
+a) El derecho a acceder en condiciones de igualdad a las funciones y cargos públicos, con los requisitos que señalen las leyes
+b) El derecho a la tutela judicial efectiva
+c) El derecho a sindicarse
+d) El derecho de petición
+= a
+> El art. 23.1 reconoce la participación en asuntos públicos y el 23.2 el acceso en condiciones de igualdad a funciones y cargos públicos (con los principios de mérito y capacidad del art. 103.3).
+@ CE art. 23.2
+
+? ¿Qué derecho reconoce el artículo 24 de la CE?
+a) El derecho a la educación
+b) El derecho a la tutela efectiva de los jueces y tribunales
+c) El derecho de asociación
+d) El derecho a la propiedad privada
+= b
+> Art. 24.1: «Todas las personas tienen derecho a obtener la tutela efectiva de los jueces y tribunales en el ejercicio de sus derechos e intereses legítimos, sin que, en ningún caso, pueda producirse indefensión».
+@ CE art. 24.1
+
+? ¿Qué derecho NO está contemplado en el artículo 24.2 de la CE?
+a) Derecho al juez ordinario predeterminado por la ley
+b) Derecho a la presunción de inocencia
+c) Derecho a un proceso público sin dilaciones indebidas
+d) Derecho a la asistencia jurídica gratuita para todos los ciudadanos sin condiciones
+= d
+> El art. 24.2 recoge juez predeterminado, defensa y asistencia de letrado, ser informado de la acusación, proceso público sin dilaciones indebidas y con garantías, medios de prueba, no declarar contra sí mismo ni confesarse culpable y presunción de inocencia. La justicia gratuita para quienes acrediten insuficiencia de recursos se regula en el art. 119.
+@ CE art. 24.2
+
+? Según el artículo 25.2 de la CE, las penas privativas de libertad y las medidas de seguridad estarán orientadas hacia:
+a) La retribución del daño causado
+b) La reeducación y reinserción social
+c) La disuasión general
+d) El aislamiento del condenado
+= b
+> Art. 25.2: «…estarán orientadas hacia la reeducación y reinserción social y no podrán consistir en trabajos forzados».
+@ CE art. 25.2
+
+? ¿Qué establece el artículo 25.3 respecto a las sanciones de la Administración civil?
+a) Pueden implicar privación de libertad de hasta 72 horas
+b) No podrá imponer sanciones que, directa o subsidiariamente, impliquen privación de libertad
+c) Solo podrá imponer sanciones económicas
+d) Requieren siempre autorización judicial previa
+= b
+> Art. 25.3 CE.
+@ CE art. 25.3
+
+? ¿Qué prohíbe el artículo 26 de la CE?
+a) Los tribunales de honor en el ámbito de la Administración civil y de las organizaciones profesionales
+b) Los tribunales militares
+c) Los tribunales de excepción en todo caso
+d) Los jurados populares
+= a
+> Art. 26: se prohíben los Tribunales de Honor en el ámbito de la Administración civil y de las organizaciones profesionales.
+@ CE art. 26
+
+? Según el artículo 27 de la CE, la enseñanza básica es:
+a) Obligatoria y gratuita
+b) Obligatoria pero no gratuita
+c) Gratuita pero no obligatoria
+d) Obligatoria hasta los 18 años
+= a
+> Art. 27.4: «La enseñanza básica es obligatoria y gratuita». El art. 27.10 reconoce la autonomía universitaria.
+@ CE art. 27.4
+
+? ¿Qué colectivo no puede ejercer el derecho de sindicación según el artículo 28 de la CE?
+a) Los funcionarios públicos
+b) Los jueces, magistrados y fiscales (por ley, mientras estén en activo)
+c) Los trabajadores autónomos
+d) Los empleados públicos laborales
+= b
+> El art. 28.1 permite a la ley limitar o exceptuar el derecho a las FFAA y los cuerpos sometidos a disciplina militar; para jueces, magistrados y fiscales lo prohíbe el art. 127.1 (mientras estén en activo).
+@ CE art. 28.1 y 127.1
+
+? El derecho a la huelga de los trabajadores para la defensa de sus intereses está reconocido en:
+a) Artículo 28.2 de la CE
+b) Artículo 37.2 de la CE
+c) Artículo 35.1 de la CE
+d) Artículo 29.1 de la CE
+= a
+> Art. 28.2: «Se reconoce el derecho a la huelga de los trabajadores para la defensa de sus intereses». El art. 37.2 reconoce el derecho a adoptar medidas de conflicto colectivo.
+@ CE art. 28.2
+
+? El derecho de petición individual y colectiva, por escrito, se regula en:
+a) El artículo 29
+b) El artículo 30
+c) El artículo 31
+d) El artículo 54
+= a
+> Art. 29.1: «Todos los españoles tendrán el derecho de petición individual y colectiva, por escrito, en la forma y con los efectos que determine la ley».
+@ CE art. 29
+
+? ¿Qué principios debe inspirar el sistema tributario según el artículo 31 de la CE?
+a) Igualdad y progresividad, sin alcance confiscatorio
+b) Proporcionalidad y generalidad, sin alcance confiscatorio
+c) Legalidad y reserva de ley exclusivamente
+d) Eficiencia y simplicidad
+= a
+> Art. 31.1: sistema tributario justo inspirado en los principios de igualdad y progresividad que, en ningún caso, tendrá alcance confiscatorio.
+@ CE art. 31.1
+
+? ¿Cuál es el deber que, además de derecho, establece expresamente el artículo 35 de la CE?
+a) El deber de defender a España
+b) El deber de trabajar
+c) El deber de contribuir al sostenimiento de los gastos públicos
+d) El deber de educarse
+= b
+> Art. 35.1: «Todos los españoles tienen el deber de trabajar y el derecho al trabajo…».
+@ CE art. 35.1
+
+? ¿Qué derecho reconoce el artículo 38 de la CE?
+a) La libertad de empresa en el marco de la economía de mercado
+b) La propiedad privada
+c) La negociación colectiva
+d) La libertad de cátedra
+= a
+> Art. 38: se reconoce la libertad de empresa en el marco de la economía de mercado.
+@ CE art. 38
+
+? ¿Qué artículos componen el Capítulo III del Título I, «De los principios rectores de la política social y económica»?
+a) Artículos 30 a 38
+b) Artículos 39 a 52
+c) Artículos 53 y 54
+d) Artículos 14 a 29
+= b
+> El Capítulo III abarca los arts. 39 a 52 (familia, salud, medio ambiente, vivienda, etc.).
+@ CE Título I, Cap. III
+
+? El derecho a disfrutar de una vivienda digna y adecuada está recogido en el Capítulo III como principio rector en el artículo:
+a) 43
+b) 45
+c) 47
+d) 49
+= c
+> Art. 47: derecho a disfrutar de una vivienda digna y adecuada. El 43 es la salud, el 45 el medio ambiente y el 49 las personas con discapacidad.
+@ CE art. 47
+
+? ¿Ante quién puede recabarse, además de ante los tribunales ordinarios por un procedimiento preferente y sumario, la tutela de los derechos del artículo 14 y la Sección 1.ª del Capítulo II?
+a) El Tribunal Supremo
+b) El Tribunal Constitucional, mediante recurso de amparo
+c) El Defensor del Pueblo con carácter vinculante
+d) El Consejo de Estado
+= b
+> Art. 53.2: procedimiento basado en los principios de preferencia y sumariedad y, en su caso, recurso de amparo ante el TC (también para la objeción de conciencia del art. 30).
+@ CE art. 53.2
+
+? ¿Qué derecho es tutelable mediante recurso de amparo además de los del artículo 14 y la Sección 1.ª?
+a) El derecho a la vivienda (art. 47)
+b) La objeción de conciencia (art. 30)
+c) El derecho de propiedad (art. 33)
+d) La libertad de empresa (art. 38)
+= b
+> El art. 53.2 extiende el amparo a la objeción de conciencia reconocida en el art. 30.
+@ CE art. 53.2
+
+? Los principios rectores del Capítulo III solo podrán ser alegados ante la jurisdicción ordinaria:
+a) Siempre, de forma directa
+b) De acuerdo con lo que dispongan las leyes que los desarrollen
+c) Mediante recurso de amparo
+d) A través del Defensor del Pueblo
+= b
+> Art. 53.3 CE.
+@ CE art. 53.3
+
+? ¿Cómo se denomina la figura que regula el artículo 54 de la CE?
+a) Consejo de Estado
+b) Tribunal de Cuentas
+c) Defensor del Pueblo
+d) Fiscal General del Estado
+= c
+> Art. 54: el Defensor del Pueblo, alto comisionado de las Cortes Generales, designado por éstas para la defensa de los derechos comprendidos en el Título I.
+@ CE art. 54
+
+? ¿En qué casos pueden suspenderse los derechos reconocidos en los artículos 17, 18.2 y 18.3, 19, 20.1.a y d, 20.5, 21, 28.2 y 37.2?
+a) Cuando se declare el estado de alarma
+b) Cuando se acuerde la declaración del estado de excepción o de sitio
+c) Cuando lo decida el Presidente del Gobierno
+d) Siempre que lo autorice el Defensor del Pueblo
+= b
+> Art. 55.1 CE. El estado de alarma no permite suspender derechos (solo limitarlos).
+@ CE art. 55.1
+
+? En caso de declaración del estado de excepción, ¿qué apartado del artículo 17 no puede suspenderse?
+a) El apartado 2 (plazo de 72 horas)
+b) El apartado 3 (asistencia de abogado al detenido)
+c) El apartado 4 (habeas corpus)
+d) El apartado 1 (libertad y seguridad)
+= b
+> El art. 55.1 exceptúa el art. 17.3 para el supuesto de declaración de estado de excepción.
+@ CE art. 55.1
+
+? ¿Qué derechos pueden suspenderse de forma individual para personas determinadas en relación con investigaciones de bandas armadas o elementos terroristas, según el art. 55.2 CE?
+a) Los de los artículos 17.2, 18.2 y 18.3
+b) Los del artículo 14
+c) Los del artículo 24
+d) Los del artículo 25
+= a
+> Una ley orgánica puede determinarlo, con intervención judicial y control parlamentario. La utilización injustificada o abusiva es delito.
+@ CE art. 55.2
+
+? ¿Quién declara el estado de alarma y por cuánto tiempo máximo, sin necesidad de prórroga?
+a) El Congreso, 30 días
+b) El Gobierno mediante decreto acordado en Consejo de Ministros, 15 días
+c) El Rey, 15 días
+d) El Gobierno con autorización previa del Congreso, 30 días
+= b
+> Art. 116.2: el Gobierno, por decreto acordado en Consejo de Ministros, por un plazo máximo de 15 días, dando cuenta al Congreso; sin su autorización no puede prorrogarse.
+@ CE art. 116.2
+
+? ¿Cuál es la duración máxima inicial del estado de excepción?
+a) 15 días
+b) 30 días, prorrogable por otro plazo igual
+c) 60 días
+d) La que determine el Gobierno
+= b
+> Art. 116.3: no podrá exceder de 30 días, prorrogable por otro plazo igual con los mismos requisitos; requiere previa autorización del Congreso.
+@ CE art. 116.3
+
+? ¿Quién declara el estado de sitio?
+a) El Gobierno por decreto
+b) El Rey a propuesta del Presidente del Gobierno
+c) La mayoría absoluta del Congreso de los Diputados, a propuesta exclusiva del Gobierno
+d) El Senado por mayoría de tres quintos
+= c
+> Art. 116.4 CE. El Congreso determina su ámbito territorial, duración y condiciones.
+@ CE art. 116.4
+
+? ¿Qué ocurre con el Congreso de los Diputados mientras están declarados los estados de alarma, excepción o sitio?
+a) Puede disolverse previa autorización del Rey
+b) No puede procederse a su disolución
+c) Se suspenden sus sesiones
+d) Sus funciones las asume el Gobierno
+= b
+> Art. 116.5: no podrá procederse a la disolución del Congreso mientras estén declarados alguno de estos estados, quedando automáticamente convocadas las Cámaras si no estuvieran en periodo de sesiones.
+@ CE art. 116.5
+
+? ¿Qué mayoría se requiere en cada Cámara para aprobar un proyecto de reforma constitucional por el procedimiento ordinario del artículo 167?
+a) Mayoría simple
+b) Mayoría absoluta
+c) Tres quintos
+d) Dos tercios
+= c
+> Art. 167.1: mayoría de tres quintos de cada una de las Cámaras. Si no hay acuerdo, comisión paritaria; en su defecto, mayoría absoluta del Senado y dos tercios del Congreso.
+@ CE art. 167
+
+? En el procedimiento ordinario de reforma, ¿quién puede solicitar que se someta a referéndum para su ratificación?
+a) El Rey
+b) Una décima parte de los miembros de cualquiera de las Cámaras, dentro de los quince días siguientes a su aprobación
+c) Una quinta parte de los miembros del Congreso
+d) El Defensor del Pueblo
+= b
+> Art. 167.3. El referéndum es facultativo en este procedimiento.
+@ CE art. 167.3
+
+? ¿Qué mayoría exige el principio de la revisión total de la Constitución o de las partes especialmente protegidas del artículo 168?
+a) Tres quintos de cada Cámara
+b) Mayoría absoluta del Congreso
+c) Dos tercios de cada Cámara y disolución inmediata de las Cortes
+d) Mayoría simple del Congreso y absoluta del Senado
+= c
+> Art. 168.1: aprobación del principio por mayoría de dos tercios de cada Cámara y disolución inmediata de las Cortes; las nuevas Cámaras ratifican y aprueban el texto por 2/3; referéndum obligatorio.
+@ CE art. 168
+
+? ¿Cuál de las siguientes partes de la CE está especialmente protegida y exige el procedimiento agravado de reforma?
+a) El Título IV (Gobierno y Administración)
+b) El Título II (De la Corona)
+c) El Título VIII (Organización territorial)
+d) El Capítulo III del Título I
+= b
+> El art. 168 protege el Título Preliminar, la Sección 1.ª del Capítulo II del Título I y el Título II (Corona), además de la revisión total.
+@ CE art. 168
+
+? ¿Quiénes tienen la iniciativa de reforma constitucional según el artículo 166?
+a) Solo el Gobierno y las Cortes
+b) Las mismas entidades con iniciativa legislativa del art. 87.1 y 87.2 (Gobierno, Congreso, Senado y Asambleas de las CCAA)
+c) El Gobierno, el Congreso, el Senado y 500.000 ciudadanos
+d) Solo el Rey a propuesta del Gobierno
+= b
+> El art. 166 remite a los apartados 1 y 2 del art. 87, por lo que no cabe iniciativa popular.
+@ CE art. 166
+
+? ¿Cuántas veces se ha reformado la Constitución Española de 1978 hasta la fecha?
+a) Una
+b) Dos
+c) Tres
+d) Cuatro
+= c
+> 1992 (art. 13.2, sufragio pasivo en elecciones municipales de extranjeros), 2011 (art. 135, estabilidad presupuestaria) y 2024 (art. 49, personas con discapacidad).
+@ CE reformas
+
+? El artículo 56.3 de la Constitución establece que la persona del Rey:
+a) Es responsable ante las Cortes Generales
+b) Es inviolable y no está sujeta a responsabilidad
+c) Está sujeta a responsabilidad penal pero no civil
+d) Es responsable ante el Tribunal Supremo
+= b
+> «La persona del Rey es inviolable y no está sujeta a responsabilidad. Sus actos estarán siempre refrendados…».
+@ CE art. 56.3
+
+? Según el artículo 56.1, el Rey es:
+a) El Jefe del Gobierno
+b) El Jefe del Estado, símbolo de su unidad y permanencia
+c) El máximo representante del poder judicial
+d) El garante de la soberanía nacional
+= b
+> Además arbitra y modera el funcionamiento regular de las instituciones y asume la más alta representación del Estado en las relaciones internacionales.
+@ CE art. 56.1
+
+? ¿Quién resuelve las dudas de hecho o de derecho en el orden de sucesión a la Corona y las abdicaciones y renuncias?
+a) El Tribunal Constitucional
+b) Una ley orgánica
+c) El Consejo de Estado
+d) El Rey por decreto
+= b
+> Art. 57.5 CE. La abdicación de Juan Carlos I se formalizó mediante la Ley Orgánica 3/2014.
+@ CE art. 57.5
+
+? Según el orden de sucesión del artículo 57, a igualdad de línea y grado, la preferencia corresponde:
+a) A la persona de más edad, con independencia del sexo
+b) Al varón sobre la mujer y, a igualdad de sexo, a la persona de más edad
+c) A la mujer sobre el varón
+d) A la persona que designe el Rey
+= b
+> Art. 57.1: «…en la misma línea, el grado más próximo al más remoto; en el mismo grado, el varón a la mujer, y en el mismo sexo, la persona de más edad a la de menos».
+@ CE art. 57.1
+
+? ¿Ante quién es proclamado el Rey y presta juramento?
+a) Ante el Tribunal Constitucional
+b) Ante las Cortes Generales
+c) Ante el Consejo de Estado
+d) Ante el Presidente del Gobierno
+= b
+> Art. 61.1: ante las Cortes Generales; jura desempeñar fielmente sus funciones, guardar y hacer guardar la Constitución y las leyes y respetar los derechos de los ciudadanos y de las CCAA.
+@ CE art. 61.1
+
+? Si el Rey es menor de edad, la Regencia la ejerce:
+a) El Presidente del Gobierno
+b) El padre o la madre del Rey y, en su defecto, el pariente mayor de edad más próximo a suceder
+c) El Presidente del Congreso de los Diputados
+d) El Príncipe heredero siempre
+= b
+> Art. 59.1 CE.
+@ CE art. 59.1
+
+? ¿De cuántas personas puede componerse la Regencia nombrada por las Cortes Generales?
+a) De una, tres o cinco
+b) De una o tres
+c) De tres exclusivamente
+d) De una a siete
+= a
+> Art. 59.3: la Regencia nombrada por las Cortes Generales se compondrá de una, tres o cinco personas.
+@ CE art. 59.3
+
+? ¿Qué requisitos establece la CE para ejercer la Regencia?
+a) Ser español de nacimiento y mayor de 25 años
+b) Ser español y mayor de edad
+c) Ser miembro de la familia real
+d) Haber sido propuesto por el Gobierno
+= b
+> Art. 59.4: «Para ejercer la Regencia es preciso ser español y mayor de edad».
+@ CE art. 59.4
+
+? ¿Cuál de las siguientes funciones NO corresponde al Rey según el artículo 62 de la CE?
+a) Sancionar y promulgar las leyes
+b) Convocar y disolver las Cortes Generales
+c) Aprobar los Presupuestos Generales del Estado
+d) Ejercer el mando supremo de las Fuerzas Armadas
+= c
+> Los Presupuestos Generales del Estado los examinan, enmiendan y aprueban las Cortes Generales (art. 134.1). El Rey sanciona y promulga las leyes, convoca y disuelve las Cortes y tiene el mando supremo de las FFAA (art. 62).
+@ CE arts. 62 y 134
+
+? El Rey ejerce el derecho de gracia con arreglo a la ley, que no podrá autorizar:
+a) Indultos particulares
+b) Indultos generales
+c) Conmutaciones de pena
+d) Indultos de delitos políticos
+= b
+> Art. 62.i CE: «…que no podrá autorizar indultos generales».
+@ CE art. 62.i
+
+? ¿Qué función ejerce el Rey respecto de las Reales Academias?
+a) El mando supremo
+b) El Alto Patronazgo
+c) La presidencia efectiva
+d) La designación de sus miembros
+= b
+> Art. 62.j: el Alto Patronazgo de las Reales Academias.
+@ CE art. 62.j
+
+? Según el artículo 62.g, el Rey puede presidir las sesiones del Consejo de Ministros:
+a) Cuando lo estime oportuno, a petición del Presidente del Gobierno
+b) Siempre que lo acuerden las Cortes
+c) Solo en estados de excepción
+d) Cada vez que se apruebe un Real Decreto
+= a
+> Art. 62.g: ser informado de los asuntos de Estado y presidir, a estos efectos, las sesiones del Consejo de Ministros cuando lo estime oportuno, a petición del Presidente del Gobierno.
+@ CE art. 62.g
+
+? ¿Para declarar la guerra y hacer la paz, el Rey necesita:
+a) Refrendo del Presidente del Congreso únicamente
+b) Previa autorización de las Cortes Generales
+c) Informe del Consejo de Estado
+d) Acuerdo del Tribunal Constitucional
+= b
+> Art. 63.3: «Al Rey corresponde, previa autorización de las Cortes Generales, declarar la guerra y hacer la paz».
+@ CE art. 63.3
+
+? ¿Quién refrenda la propuesta y el nombramiento del Presidente del Gobierno y la disolución prevista en el artículo 99?
+a) El Presidente del Gobierno
+b) El Ministro de la Presidencia
+c) El Presidente del Congreso
+d) El Presidente del Senado
+= c
+> Art. 64.1 in fine. De los actos del Rey son responsables las personas que los refrenden (art. 64.2).
+@ CE art. 64.1
+
+? ¿Cuál es el único acto del Rey que no necesita refrendo?
+a) La sanción de las leyes
+b) El nombramiento y relevo libre de los miembros civiles y militares de su Casa
+c) El mando supremo de las Fuerzas Armadas
+d) La convocatoria de elecciones
+= b
+> Art. 56.3 exceptúa lo dispuesto en el art. 65.2: el Rey nombra y releva libremente a los miembros de su Casa.
+@ CE art. 65.2
+
+? ¿De dónde recibe el Rey la cantidad global para el sostenimiento de su Familia y Casa?
+a) Del patrimonio de la Corona
+b) De los Presupuestos Generales del Estado
+c) De los ingresos de Patrimonio Nacional
+d) De una dotación fijada por el Consejo de Ministros
+= b
+> Art. 65.1: «El Rey recibe de los Presupuestos del Estado una cantidad global para el sostenimiento de su Familia y Casa, y distribuye libremente la misma».
+@ CE art. 65.1
+
+? ¿Quién es, según el artículo 60 de la CE, el tutor del Rey menor?
+a) Siempre el Presidente del Gobierno
+b) La persona designada en el testamento del Rey difunto (mayor de edad y español de nacimiento) y, en su defecto, el padre o la madre mientras permanezcan viudos
+c) El Presidente del Tribunal Supremo
+d) El Defensor del Pueblo
+= b
+> Si no hay tutor designado ni padres viudos, lo nombrarán las Cortes Generales. No pueden acumularse Regente y tutor sino en el padre, madre o ascendientes directos.
+@ CE art. 60
+
+? ¿Qué órgano reconoce la inhabilitación del Rey para el ejercicio de su autoridad, dando lugar a la Regencia?
+a) El Gobierno
+b) El Tribunal Constitucional
+c) Las Cortes Generales
+d) El Consejo de Estado
+= c
+> Art. 59.2: la imposibilidad ha de ser reconocida por las Cortes Generales; entra a ejercer la Regencia el Príncipe heredero si es mayor de edad.
+@ CE art. 59.2
+
+? El estado de alarma, a diferencia del de excepción, para su declaración:
+a) Necesita autorización previa del Congreso
+b) Lo declara el Gobierno sin autorización previa, dando cuenta al Congreso
+c) Lo declara el Rey
+d) Solo puede acordarlo el Congreso por mayoría absoluta
+= b
+> El Gobierno declara el estado de alarma por decreto acordado en Consejo de Ministros, dando cuenta al Congreso; la autorización del Congreso solo es necesaria para prorrogarlo.
+@ CE art. 116.2
+
+? ¿Cuál es el procedimiento de reforma constitucional que exige referéndum obligatorio?
+a) El ordinario del artículo 167
+b) El agravado del artículo 168
+c) Ambos
+d) Ninguno, el referéndum nunca es obligatorio
+= b
+> En el art. 168 el referéndum de ratificación es obligatorio; en el 167 es facultativo (a solicitud de 1/10 de los miembros de cualquiera de las Cámaras).
+@ CE arts. 167-168

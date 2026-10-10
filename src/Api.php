@@ -86,7 +86,7 @@ final class Api
                 }
                 return State::gradeCard($c, (int)self::in('grade', 3));
             }],
-            ['GET', '#^/api/stats$#', fn() => Stats::overview() + ['topics' => Stats::topics()]],
+            ['GET', '#^/api/stats$#', fn() => Stats::overview(max(7, min(400, (int)($_GET['days'] ?? 120)))) + ['topics' => Stats::topics()]],
             ['GET', '#^/api/settings$#', fn() => State::settings()],
             ['POST', '#^/api/settings$#', fn() => State::saveSettings(self::$body)],
             ['GET', '#^/api/plan$#', fn() => Plan::build(State::settings())],

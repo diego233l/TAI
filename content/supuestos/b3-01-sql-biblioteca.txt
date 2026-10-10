@@ -1,0 +1,136 @@
+@title SQL: consultas sobre la base de datos de una biblioteca
+@block b3
+@topics b3t3,b3t1
+@enunciado
+Una biblioteca municipal gestiona sus préstamos con el siguiente modelo relacional (las claves primarias van subrayadas con *):
+
+```
+SOCIO(*id_socio, nombre, ciudad)
+EDITORIAL(*id_editorial, nombre, pais)
+LIBRO(*isbn, titulo, autor, anio, id_editorial)      -- id_editorial es clave ajena a EDITORIAL
+PRESTAMO(*id_prestamo, id_socio, isbn, fecha_prestamo, fecha_devolucion)
+                                                     -- id_socio e isbn son claves ajenas
+```
+
+Contenido actual de las tablas:
+
+| SOCIO | nombre | ciudad |
+|---|---|---|
+| 1 | Ana | Madrid |
+| 2 | Luis | Sevilla |
+| 3 | Marta | Madrid |
+| 4 | Pedro | Valencia |
+
+| LIBRO (isbn) | titulo | anio | id_editorial |
+|---|---|---|---|
+| L1 | Redes | 2011 | 1 |
+| L2 | Bases de datos | 2004 | 2 |
+| L3 | Sistemas operativos | 2014 | 1 |
+| L4 | Java | 2018 | 3 |
+
+| EDITORIAL | nombre |
+|---|---|
+| 1 | Pearson |
+| 2 | Addison |
+| 3 | McGraw |
+
+| PRESTAMO | id_socio | isbn | fecha_prestamo | fecha_devolucion |
+|---|---|---|---|---|
+| 1 | 1 | L1 | 2024-01-10 | 2024-01-20 |
+| 2 | 1 | L2 | 2024-02-01 | NULL |
+| 3 | 2 | L1 | 2024-02-05 | 2024-02-15 |
+| 4 | 3 | L3 | 2024-03-01 | NULL |
+| 5 | 3 | L1 | 2024-03-10 | NULL |
+
+Un préstamo con `fecha_devolucion` a `NULL` sigue pendiente de devolver.
+@fin
+
+? ¿Qué devuelve `SELECT COUNT(DISTINCT id_socio) FROM PRESTAMO WHERE fecha_devolucion IS NULL;`?
+a) 1
+b) 2
+c) 3
+d) 5
+= b
+> Los préstamos sin devolver son el 2 (socio 1), el 4 (socio 3) y el 5 (socio 3). Hay tres filas pero solo dos socios distintos: 1 y 3. Con `COUNT(*)` saldría 3.
+@ SQL: COUNT(DISTINCT)
+
+? ¿Qué devuelve `SELECT COUNT(fecha_devolucion) FROM PRESTAMO;`?
+a) 0
+b) 2
+c) 3
+d) 5
+= b
+> `COUNT(columna)` no cuenta los valores NULL. Solo los préstamos 1 y 3 tienen fecha de devolución, así que el resultado es 2 (`COUNT(*)` daría 5).
+@ SQL: COUNT y NULL
+
+? Se ejecuta `SELECT s.nombre FROM SOCIO s LEFT JOIN PRESTAMO p ON s.id_socio = p.id_socio WHERE p.id_prestamo IS NULL;`. ¿Qué socios devuelve?
+a) Ana
+b) Luis
+c) Marta
+d) Pedro
+= d
+> El LEFT JOIN conserva todos los socios; los que no tienen ningún préstamo salen con las columnas de PRESTAMO a NULL. Solo Pedro (4) no tiene préstamos.
+@ SQL: LEFT JOIN anti-join
+
+? ¿Qué devuelve `SELECT isbn, COUNT(*) FROM PRESTAMO GROUP BY isbn HAVING COUNT(*) > 1;`?
+a) Una fila: (L1, 3)
+b) Dos filas: (L1, 3) y (L2, 1)
+c) Cuatro filas, una por libro
+d) Error: HAVING no puede usarse con COUNT
+= a
+> Se agrupa por isbn: L1 aparece 3 veces (préstamos 1, 3 y 5), L2 una y L3 una. HAVING filtra los grupos con más de un préstamo, así que solo queda L1.
+@ SQL: GROUP BY / HAVING
+
+? ¿Qué títulos devuelve y en qué orden `SELECT titulo FROM LIBRO WHERE anio BETWEEN 2004 AND 2014 ORDER BY anio DESC;`?
+a) Sistemas operativos, Redes, Bases de datos
+b) Bases de datos, Redes, Sistemas operativos
+c) Redes, Bases de datos
+d) Java, Sistemas operativos, Redes, Bases de datos
+= a
+> BETWEEN es inclusivo en ambos extremos: entran 2004, 2011 y 2014 (no 2018). El orden descendente por año es 2014, 2011, 2004.
+@ SQL: BETWEEN, ORDER BY
+
+? ¿Qué socios devuelve `SELECT nombre FROM SOCIO WHERE id_socio IN (SELECT id_socio FROM PRESTAMO WHERE isbn = 'L1');`?
+a) Solo Ana
+b) Ana y Luis
+c) Ana, Luis y Marta
+d) Todos los socios
+= c
+> La subconsulta devuelve los socios 1, 2 y 3 (préstamos 1, 3 y 5 del libro L1). Pedro no ha sacado L1.
+@ SQL: subconsulta con IN
+
+? Se ejecuta `SELECT s.nombre, COUNT(p.id_prestamo) AS n FROM SOCIO s LEFT JOIN PRESTAMO p ON s.id_socio = p.id_socio GROUP BY s.nombre;`. ¿Qué valor de n aparece en la fila de Pedro?
+a) 0
+b) 1
+c) NULL
+d) No aparece la fila de Pedro
+= a
+> El LEFT JOIN genera una fila para Pedro con id_prestamo NULL y `COUNT(p.id_prestamo)` ignora los NULL, por lo que vale 0. Con `COUNT(*)` valdría 1.
+@ SQL: LEFT JOIN y COUNT
+
+? ¿Qué sentencia registra correctamente que el préstamo 2 se devolvió el 20 de febrero de 2024?
+a) `INSERT INTO PRESTAMO SET fecha_devolucion = '2024-02-20' WHERE id_prestamo = 2;`
+b) `UPDATE PRESTAMO SET fecha_devolucion = '2024-02-20' WHERE id_prestamo = 2;`
+c) `UPDATE PRESTAMO SET fecha_devolucion = '2024-02-20';`
+d) `ALTER TABLE PRESTAMO ADD fecha_devolucion = '2024-02-20' WHERE id_prestamo = 2;`
+= b
+> Hay que modificar una fila existente: UPDATE con WHERE. La opción c actualizaría todos los préstamos; INSERT crea filas nuevas y ALTER TABLE modifica la estructura, no los datos.
+@ SQL: UPDATE
+
+? Si PRESTAMO tiene una clave ajena sobre LIBRO(isbn) sin acciones referenciales en cascada, ¿qué ocurre al ejecutar `DELETE FROM LIBRO WHERE isbn = 'L1';`?
+a) Se borra el libro y también sus tres préstamos
+b) Se borra el libro y los préstamos quedan con isbn NULL
+c) El SGBD rechaza la sentencia por violar la integridad referencial
+d) Se borra el libro y el SGBD crea un libro ficticio para los préstamos
+= c
+> Con la acción por defecto (NO ACTION / RESTRICT) no se puede borrar una fila referenciada. Para el borrado en cascada habría que declarar `ON DELETE CASCADE`, o `ON DELETE SET NULL` para el caso b.
+@ Integridad referencial
+
+? En el modelo, ¿qué papel desempeña la tabla PRESTAMO entre SOCIO y LIBRO?
+a) Implementa una relación N:M mediante dos relaciones 1:N
+b) Implementa una relación 1:1
+c) Es una tabla redundante que puede eliminarse
+d) Implementa una jerarquía de generalización
+= a
+> Un socio puede tomar muchos libros y un libro puede ser prestado a muchos socios: relación muchos a muchos. En el modelo relacional se resuelve con una tabla intermedia cuya clave ajena apunta a cada lado.
+@ Modelo E/R → relacional
