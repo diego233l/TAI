@@ -16,11 +16,11 @@ Los routers usan la **primera dirección utilizable** de cada subred como puerta
 @fin
 
 ? ¿Qué prefijo y máscara tiene cada una de las 8 subredes?
-a) /18 y 255.255.192.0
-b) /19 y 255.255.224.0
+a) /19 y 255.255.224.0
+b) /18 y 255.255.192.0
 c) /20 y 255.255.240.0
 d) /19 y 255.255.248.0
-= b
+= a
 > Para 8 subredes se necesitan 3 bits (2³ = 8), por lo que /16 + 3 = /19. La máscara es 255.255.224.0 (tercer octeto: 11100000 = 224).
 @ Subnetting
 
@@ -34,56 +34,56 @@ d) 16 382
 @ Subnetting
 
 ? ¿A qué subred pertenece el equipo con la dirección 172.16.100.7?
-a) 172.16.64.0/19
-b) 172.16.96.0/19
+a) 172.16.96.0/19
+b) 172.16.64.0/19
 c) 172.16.100.0/19
 d) 172.16.128.0/19
-= b
+= a
 > Se hace un AND con la máscara: 100 = 01100100 y 224 = 11100000 → 01100000 = 96. La red es 172.16.96.0/19.
 @ Subnetting
 
 ? ¿Cuál es la dirección de broadcast de la subred 3 (172.16.96.0/19)?
 a) 172.16.96.255
-b) 172.16.127.255
-c) 172.16.128.255
+b) 172.16.128.255
+c) 172.16.127.255
 d) 172.16.111.255
-= b
+= c
 > El bloque es de 2⁵ = 32 en el tercer octeto: de 96 a 127. El broadcast tiene todos los bits de host a 1: 172.16.127.255.
 @ Subnetting
 
 ? ¿Cuál es la última dirección utilizable de la subred 3?
 a) 172.16.127.255
-b) 172.16.127.254
-c) 172.16.127.253
-d) 172.16.96.254
-= b
+b) 172.16.127.253
+c) 172.16.96.254
+d) 172.16.127.254
+= d
 > La última utilizable es la anterior al broadcast: 172.16.127.254.
 @ Subnetting
 
 ? ¿Qué dirección debe configurarse como puerta de enlace en la subred 2 (172.16.64.0/19)?
 a) 172.16.64.0
-b) 172.16.64.1
-c) 172.16.95.254
+b) 172.16.95.254
+c) 172.16.64.1
 d) 172.16.95.255
-= b
+= c
 > La primera dirección utilizable es la que sigue a la de red: 172.16.64.1.
 @ Subnetting
 
 ? Los equipos 172.16.95.250 y 172.16.96.3 usan la máscara 255.255.224.0. ¿Pueden comunicarse sin pasar por un router?
 a) Sí, porque pertenecen a la misma red
 b) Sí, porque ambos son de la red 172.16.0.0/16
-c) No, pertenecen a subredes distintas (172.16.64.0/19 y 172.16.96.0/19)
-d) No, porque la máscara es incorrecta
-= c
+c) No, porque la máscara es incorrecta
+d) No, pertenecen a subredes distintas (172.16.64.0/19 y 172.16.96.0/19)
+= d
 > 95 = 01011111 → AND 224 = 64 (subred 172.16.64.0/19); 96 → subred 172.16.96.0/19. Subredes distintas: el tráfico entre ambas necesita un dispositivo de capa 3.
 @ Subnetting
 
 ? ¿Cuál es la máscara wildcard (inversa) de una red /19?
-a) 0.0.31.255
-b) 0.0.15.255
-c) 0.0.63.255
+a) 0.0.15.255
+b) 0.0.63.255
+c) 0.0.31.255
 d) 255.255.31.0
-= a
+= c
 > La wildcard es la inversa de la máscara 255.255.224.0: 0.0.31.255 (usada, por ejemplo, en ACL de Cisco).
 @ Subnetting
 

@@ -47,19 +47,19 @@ Un préstamo con `fecha_devolucion` a `NULL` sigue pendiente de devolver.
 
 ? ¿Qué devuelve `SELECT COUNT(DISTINCT id_socio) FROM PRESTAMO WHERE fecha_devolucion IS NULL;`?
 a) 1
-b) 2
-c) 3
-d) 5
-= b
+b) 3
+c) 5
+d) 2
+= d
 > Los préstamos sin devolver son el 2 (socio 1), el 4 (socio 3) y el 5 (socio 3). Hay tres filas pero solo dos socios distintos: 1 y 3. Con `COUNT(*)` saldría 3.
 @ SQL: COUNT(DISTINCT)
 
 ? ¿Qué devuelve `SELECT COUNT(fecha_devolucion) FROM PRESTAMO;`?
-a) 0
-b) 2
+a) 2
+b) 0
 c) 3
 d) 5
-= b
+= a
 > `COUNT(columna)` no cuenta los valores NULL. Solo los préstamos 1 y 3 tienen fecha de devolución, así que el resultado es 2 (`COUNT(*)` daría 5).
 @ SQL: COUNT y NULL
 
@@ -82,20 +82,20 @@ d) Error: HAVING no puede usarse con COUNT
 @ SQL: GROUP BY / HAVING
 
 ? ¿Qué títulos devuelve y en qué orden `SELECT titulo FROM LIBRO WHERE anio BETWEEN 2004 AND 2014 ORDER BY anio DESC;`?
-a) Sistemas operativos, Redes, Bases de datos
-b) Bases de datos, Redes, Sistemas operativos
-c) Redes, Bases de datos
+a) Bases de datos, Redes, Sistemas operativos
+b) Redes, Bases de datos
+c) Sistemas operativos, Redes, Bases de datos
 d) Java, Sistemas operativos, Redes, Bases de datos
-= a
+= c
 > BETWEEN es inclusivo en ambos extremos: entran 2004, 2011 y 2014 (no 2018). El orden descendente por año es 2014, 2011, 2004.
 @ SQL: BETWEEN, ORDER BY
 
 ? ¿Qué socios devuelve `SELECT nombre FROM SOCIO WHERE id_socio IN (SELECT id_socio FROM PRESTAMO WHERE isbn = 'L1');`?
 a) Solo Ana
 b) Ana y Luis
-c) Ana, Luis y Marta
-d) Todos los socios
-= c
+c) Todos los socios
+d) Ana, Luis y Marta
+= d
 > La subconsulta devuelve los socios 1, 2 y 3 (préstamos 1, 3 y 5 del libro L1). Pedro no ha sacado L1.
 @ SQL: subconsulta con IN
 
@@ -109,28 +109,28 @@ d) No aparece la fila de Pedro
 @ SQL: LEFT JOIN y COUNT
 
 ? ¿Qué sentencia registra correctamente que el préstamo 2 se devolvió el 20 de febrero de 2024?
-a) `INSERT INTO PRESTAMO SET fecha_devolucion = '2024-02-20' WHERE id_prestamo = 2;`
-b) `UPDATE PRESTAMO SET fecha_devolucion = '2024-02-20' WHERE id_prestamo = 2;`
+a) `UPDATE PRESTAMO SET fecha_devolucion = '2024-02-20' WHERE id_prestamo = 2;`
+b) `INSERT INTO PRESTAMO SET fecha_devolucion = '2024-02-20' WHERE id_prestamo = 2;`
 c) `UPDATE PRESTAMO SET fecha_devolucion = '2024-02-20';`
 d) `ALTER TABLE PRESTAMO ADD fecha_devolucion = '2024-02-20' WHERE id_prestamo = 2;`
-= b
+= a
 > Hay que modificar una fila existente: UPDATE con WHERE. La opción c actualizaría todos los préstamos; INSERT crea filas nuevas y ALTER TABLE modifica la estructura, no los datos.
 @ SQL: UPDATE
 
 ? Si PRESTAMO tiene una clave ajena sobre LIBRO(isbn) sin acciones referenciales en cascada, ¿qué ocurre al ejecutar `DELETE FROM LIBRO WHERE isbn = 'L1';`?
 a) Se borra el libro y también sus tres préstamos
 b) Se borra el libro y los préstamos quedan con isbn NULL
-c) El SGBD rechaza la sentencia por violar la integridad referencial
-d) Se borra el libro y el SGBD crea un libro ficticio para los préstamos
-= c
+c) Se borra el libro y el SGBD crea un libro ficticio para los préstamos
+d) El SGBD rechaza la sentencia por violar la integridad referencial
+= d
 > Con la acción por defecto (NO ACTION / RESTRICT) no se puede borrar una fila referenciada. Para el borrado en cascada habría que declarar `ON DELETE CASCADE`, o `ON DELETE SET NULL` para el caso b.
 @ Integridad referencial
 
 ? En el modelo, ¿qué papel desempeña la tabla PRESTAMO entre SOCIO y LIBRO?
-a) Implementa una relación N:M mediante dos relaciones 1:N
-b) Implementa una relación 1:1
-c) Es una tabla redundante que puede eliminarse
-d) Implementa una jerarquía de generalización
-= a
+a) Implementa una relación 1:1
+b) Es una tabla redundante que puede eliminarse
+c) Implementa una jerarquía de generalización
+d) Implementa una relación N:M mediante dos relaciones 1:N
+= d
 > Un socio puede tomar muchos libros y un libro puede ser prestado a muchos socios: relación muchos a muchos. En el modelo relacional se resuelve con una tabla intermedia cuya clave ajena apunta a cada lado.
 @ Modelo E/R → relacional

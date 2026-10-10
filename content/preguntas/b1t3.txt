@@ -1,0 +1,469 @@
+// Tema 3 · El Gobierno: composición, nombramiento y cese; funciones; relaciones con las Cortes Generales
+
+? Según el artículo 97 de la Constitución, el Gobierno dirige:
+a) La política interior y exterior, la Administración civil y militar y la defensa del Estado
+b) Solo la política exterior y la defensa
+c) La Administración civil y la potestad legislativa
+d) El poder judicial y la política exterior
+= a
+> Art. 97 CE. Además ejerce la función ejecutiva y la potestad reglamentaria de acuerdo con la Constitución y las leyes.
+@ CE art. 97
+
+? ¿Cómo se compone el Gobierno según el artículo 98 de la CE?
+a) Presidente y Ministros exclusivamente
+b) Presidente, Ministros y Secretarios de Estado
+c) Presidente, Vicepresidentes en su caso, Ministros y los demás miembros que establezca la ley
+d) Presidente, Ministros y Subsecretarios
+= c
+> Art. 98.1 CE. Los Secretarios de Estado no son miembros del Gobierno (son órganos superiores de la AGE).
+@ CE art. 98.1
+
+? Los miembros del Gobierno no podrán ejercer:
+a) Funciones representativas propias del mandato parlamentario
+b) Otras funciones representativas que las propias del mandato parlamentario, ni cualquier otra función pública que no derive de su cargo, ni actividad profesional o mercantil alguna
+c) Ninguna función docente
+d) Actividades privadas gratuitas
+= b
+> Art. 98.3 CE.
+@ CE art. 98.3
+
+? ¿Quién propone al candidato a la Presidencia del Gobierno?
+a) El Presidente del Congreso
+b) El Consejo de Estado
+c) El Grupo Parlamentario mayoritario
+d) El Rey, previa consulta con los representantes de los grupos políticos con representación parlamentaria y a través del Presidente del Congreso
+= d
+> Art. 99.1 CE.
+@ CE art. 99.1
+
+? ¿Qué mayoría necesita el candidato en la primera votación de investidura?
+a) Mayoría absoluta de los miembros del Congreso
+b) Mayoría simple
+c) Tres quintos del Congreso
+d) Dos tercios del Congreso
+= a
+> Art. 99.3: si el Congreso, por el voto de la mayoría absoluta de sus miembros, otorga su confianza, el Rey lo nombra Presidente.
+@ CE art. 99.3
+
+? Si el candidato no alcanza la mayoría absoluta en la primera votación, ¿qué ocurre?
+a) Se somete la misma propuesta a nueva votación 48 horas después y se otorga la confianza con mayoría simple
+b) Queda definitivamente rechazado
+c) Se disuelve el Congreso
+d) El Rey nombra al candidato más votado
+= a
+> Art. 99.3 CE.
+@ CE art. 99.3
+
+? ¿Cuánto tiempo, desde la primera votación de investidura, puede transcurrir sin que ningún candidato obtenga la confianza antes de que el Rey disuelva las Cámaras?
+a) 2 meses
+b) 1 mes
+c) 3 meses
+d) 6 meses
+= a
+> Art. 99.5: transcurrido el plazo de dos meses desde la primera votación, el Rey disolverá ambas Cámaras y convocará nuevas elecciones con el refrendo del Presidente del Congreso.
+@ CE art. 99.5
+
+? ¿Quién refrenda el decreto de disolución de las Cámaras en el supuesto del artículo 99.5 (fracaso de la investidura)?
+a) El Presidente del Gobierno
+b) El Presidente del Senado
+c) El Ministro de la Presidencia
+d) El Presidente del Congreso
+= d
+> Art. 99.5 CE in fine.
+@ CE art. 99.5
+
+? ¿Quién nombra y separa a los demás miembros del Gobierno?
+a) El Presidente del Gobierno directamente
+b) El Congreso de los Diputados
+c) El Rey, a propuesta del Presidente del Gobierno
+d) El Consejo de Ministros
+= c
+> Art. 100 CE.
+@ CE art. 100
+
+? ¿En cuál de estos casos cesa el Gobierno según el artículo 101?
+a) Cuando lo decida el Rey
+b) Cuando se aprueban los Presupuestos
+c) Cuando el Senado vota en contra
+d) Tras la celebración de elecciones generales
+= d
+> Art. 101.1: cesa tras la celebración de elecciones generales, en los casos de pérdida de la confianza parlamentaria previstos en la Constitución, o por dimisión o fallecimiento de su Presidente.
+@ CE art. 101.1
+
+? El Gobierno cesante:
+a) Deja de ejercer inmediatamente sus funciones
+b) Se sustituye por el Consejo de Estado
+c) Continúa en funciones hasta la toma de posesión del nuevo Gobierno
+d) Solo puede aprobar decretos-ley
+= c
+> Art. 101.2 CE; y art. 21 Ley 50/1997.
+@ CE art. 101.2
+
+? ¿Ante qué órgano se exige la responsabilidad criminal del Presidente y de los demás miembros del Gobierno?
+a) Sala de lo Penal del Tribunal Supremo
+b) Audiencia Nacional
+c) Tribunal Constitucional
+d) Tribunal Superior de Justicia
+= a
+> Art. 102.1 CE.
+@ CE art. 102
+
+? Si la acusación contra un miembro del Gobierno es por traición o por cualquier delito contra la seguridad del Estado, solo podrá plantearse por iniciativa de:
+a) La cuarta parte de los miembros del Congreso y con la aprobación de la mayoría absoluta del mismo
+b) Una décima parte del Congreso
+c) Una quinta parte del Senado
+d) El Ministerio Fiscal
+= a
+> Art. 102.2 CE.
+@ CE art. 102.2
+
+? ¿Es aplicable la prerrogativa real de gracia a los delitos de los miembros del Gobierno contemplados en el artículo 102?
+a) Sí, siempre
+b) Sí, pero solo para delitos leves
+c) No, no será aplicable a ninguno de los supuestos del artículo
+d) Solo si lo autoriza el Congreso
+= c
+> Art. 102.3 CE.
+@ CE art. 102.3
+
+? ¿Cuál de los siguientes NO es un principio de actuación de la Administración Pública recogido en el art. 103 de la CE?
+a) Eficacia
+b) Jerarquía
+c) Descentralización, desconcentración y coordinación
+d) Rentabilidad económica
+= d
+> Art. 103.1: eficacia, jerarquía, descentralización, desconcentración y coordinación, con sometimiento pleno a la ley y al Derecho.
+@ CE art. 103.1
+
+? ¿A qué principios se refiere el artículo 103.3 de la CE respecto del acceso a la función pública?
+a) Igualdad y publicidad
+b) Mérito y capacidad
+c) Antigüedad y jerarquía
+d) Eficacia y economía
+= b
+> Art. 103.3: la ley regulará el estatuto de los funcionarios públicos, el acceso a la función pública de acuerdo con los principios de mérito y capacidad.
+@ CE art. 103.3
+
+? ¿Qué órgano es, según la CE, el supremo órgano consultivo del Gobierno?
+a) El Tribunal de Cuentas
+b) El Consejo General del Poder Judicial
+c) El Consejo de Estado
+d) La Abogacía General del Estado
+= c
+> Art. 107 CE. Su organización y competencia se regulan por la Ley Orgánica 3/1980, del Consejo de Estado.
+@ CE art. 107
+
+? ¿Quién controla la potestad reglamentaria y la legalidad de la actuación administrativa?
+a) El Consejo de Estado
+b) El Defensor del Pueblo
+c) El Tribunal de Cuentas
+d) Los Tribunales
+= d
+> Art. 106.1 CE: los Tribunales controlan la potestad reglamentaria y la legalidad de la actuación administrativa, así como el sometimiento de ésta a los fines que la justifican.
+@ CE art. 106.1
+
+? Los particulares tienen derecho a ser indemnizados por toda lesión que sufran en sus bienes y derechos, salvo en los casos de:
+a) Culpa del particular
+b) Fuerza mayor
+c) Caso fortuito
+d) Cualquier circunstancia imprevisible
+= b
+> Art. 106.2 CE: salvo en los casos de fuerza mayor, siempre que la lesión sea consecuencia del funcionamiento de los servicios públicos.
+@ CE art. 106.2
+
+? ¿Qué regula el artículo 105 de la CE?
+a) El Consejo de Estado
+b) La audiencia de los ciudadanos, el acceso a archivos y registros administrativos y el procedimiento administrativo
+c) El control parlamentario
+d) La responsabilidad penal de los ministros
+= b
+> Art. 105: audiencia de los ciudadanos en la elaboración de disposiciones, acceso a archivos y registros (salvo seguridad y defensa del Estado, averiguación de delitos e intimidad) y procedimiento administrativo.
+@ CE art. 105
+
+? ¿Ante qué órgano responde solidariamente el Gobierno en su gestión política?
+a) Ante el Rey
+b) Ante el Senado
+c) Ante las Cortes Generales en sesión conjunta
+d) Ante el Congreso de los Diputados
+= d
+> Art. 108 CE: el Gobierno responde solidariamente en su gestión política ante el Congreso de los Diputados.
+@ CE art. 108
+
+? ¿Qué puede reclamar el Congreso o el Senado y sus Comisiones a los miembros del Gobierno según el artículo 110?
+a) Su presencia
+b) Su dimisión inmediata
+c) Su dictamen vinculante
+d) La ratificación de sus decretos
+= a
+> Art. 110.1 CE: las Cámaras y sus Comisiones pueden reclamar la presencia de los miembros del Gobierno. Éstos tienen acceso a las sesiones y pueden pedir ser oídos.
+@ CE art. 110
+
+? ¿Quién puede plantear la cuestión de confianza ante el Congreso?
+a) Cualquier ministro
+b) El Rey
+c) Un grupo parlamentario
+d) El Presidente del Gobierno, previa deliberación del Consejo de Ministros
+= d
+> Art. 112 CE.
+@ CE art. 112
+
+? ¿Qué mayoría se necesita para que se entienda otorgada la confianza en la cuestión de confianza?
+a) Mayoría absoluta
+b) Tres quintos
+c) Dos tercios
+d) Mayoría simple de los diputados
+= d
+> Art. 112 in fine: la confianza se entenderá otorgada cuando vote a favor de la misma la mayoría simple de los Diputados.
+@ CE art. 112
+
+? ¿Qué mayoría se requiere para aprobar una moción de censura?
+a) Mayoría absoluta del Congreso
+b) Mayoría simple
+c) Tres quintos del Congreso
+d) Mayoría absoluta de las Cortes Generales
+= a
+> Art. 113.1 CE.
+@ CE art. 113.1
+
+? ¿Qué característica distingue a la moción de censura española?
+a) Es constructiva: debe incluir un candidato a la Presidencia del Gobierno
+b) Es destructiva: basta con rechazar al Gobierno
+c) Requiere referéndum
+d) Se vota en el Senado
+= a
+> Art. 113.2: debe ser propuesta al menos por la décima parte de los Diputados e incluir un candidato a la Presidencia del Gobierno.
+@ CE art. 113.2
+
+? ¿Cuántos diputados como mínimo deben proponer una moción de censura?
+a) Una vigésima parte
+b) Una quinta parte
+c) Una cuarta parte
+d) Una décima parte
+= d
+> Art. 113.2 CE (1/10 de los diputados, es decir, 35 de 350).
+@ CE art. 113.2
+
+? ¿Cuánto tiempo debe transcurrir desde la presentación de una moción de censura hasta su votación?
+a) 24 horas
+b) 3 días
+c) 5 días
+d) 10 días
+= c
+> Art. 113.3: no podrá ser votada hasta que transcurran cinco días desde su presentación; en los dos primeros días podrán presentarse mociones alternativas.
+@ CE art. 113.3
+
+? Si una moción de censura no es aprobada por el Congreso, sus signatarios:
+a) No pueden presentar otra durante el mismo período de sesiones
+b) No pueden volver a presentarla nunca
+c) Pierden su acta de diputado
+d) Deben esperar un año
+= a
+> Art. 113.4 CE.
+@ CE art. 113.4
+
+? Si el Congreso aprueba una moción de censura, ¿qué ocurre?
+a) El Gobierno presenta su dimisión al Rey y el candidato incluido en la moción se entiende investido; el Rey le nombra Presidente
+b) Se disuelven las Cortes
+c) El Rey convoca nuevas elecciones
+d) Se abre un proceso de investidura ordinario
+= a
+> Art. 114.2 CE.
+@ CE art. 114.2
+
+? ¿Quién propone la disolución del Congreso, del Senado o de las Cortes Generales y quién la decreta?
+a) La propone el Rey y la decreta el Presidente del Gobierno
+b) La propone el Presidente del Congreso y la decreta el Rey
+c) La propone el Consejo de Estado y la decreta el Presidente del Gobierno
+d) La propone el Presidente del Gobierno y la decreta el Rey
+= d
+> Art. 115.1: el Presidente del Gobierno, bajo su exclusiva responsabilidad, previa deliberación del Consejo de Ministros, podrá proponer la disolución, que será decretada por el Rey.
+@ CE art. 115
+
+? ¿Cuándo no puede proponerse la disolución de las Cámaras?
+a) Durante el primer periodo de sesiones
+b) Cuando haya Presupuestos aprobados
+c) Cuando el Senado lo prohíba
+d) Cuando esté en trámite una moción de censura
+= d
+> Art. 115.2: no podrá presentarse la propuesta de disolución cuando esté en trámite una moción de censura. Tampoco procede nueva disolución antes de que transcurra un año desde la anterior, salvo lo dispuesto en el art. 99.5.
+@ CE art. 115.2 y 115.3
+
+? Los Presupuestos Generales del Estado deben presentarse al Congreso:
+a) Antes del 31 de marzo
+b) Al menos un mes antes de la expiración de los del año anterior
+c) Dentro de los primeros 15 días del ejercicio
+d) Al menos tres meses antes de la expiración de los del año anterior
+= d
+> Art. 134.3 CE. Si no se aprueban antes del primer día del ejercicio, se consideran automáticamente prorrogados los del ejercicio anterior hasta la aprobación de los nuevos.
+@ CE art. 134.3
+
+? ¿Qué puede hacer la Ley de Presupuestos respecto de los tributos?
+a) Crearlos libremente
+b) Suprimirlos sin límite
+c) No puede crear tributos; solo modificarlos cuando una ley tributaria sustantiva así lo prevea
+d) Fijar su tipo sin ley
+= c
+> Art. 134.7 CE.
+@ CE art. 134.7
+
+? ¿Qué órgano crea, modifica y suprime por Real Decreto los Departamentos ministeriales y las Secretarías de Estado?
+a) El Presidente del Gobierno
+b) El Consejo de Ministros
+c) El Congreso
+d) El Ministro de Hacienda
+= a
+> Art. 2.2.j Ley 50/1997: corresponde al Presidente del Gobierno crear, modificar y suprimir, por Real Decreto, los Departamentos Ministeriales, así como las Secretarías de Estado.
+@ Ley 50/1997 art. 2.2.j
+
+? ¿Cuál de las siguientes facultades corresponde al Presidente del Gobierno según la Ley 50/1997?
+a) Convocar, presidir y fijar el orden del día de las reuniones del Consejo de Ministros
+b) Aprobar los reales decretos-leyes
+c) Aprobar el Proyecto de Ley de Presupuestos
+d) Declarar el estado de alarma
+= a
+> Art. 2.2.g Ley 50/1997 (sin perjuicio del art. 62.g CE). Los demás son competencias del Consejo de Ministros (art. 5).
+@ Ley 50/1997 art. 2.2.g
+
+? ¿Quién interpone el recurso de inconstitucionalidad por parte del Gobierno?
+a) El Consejo de Ministros por unanimidad
+b) El Ministro de Justicia
+c) El Abogado General del Estado
+d) El Presidente del Gobierno
+= d
+> Art. 162.1.a CE: el Presidente del Gobierno está legitimado; art. 2.2.i Ley 50/1997.
+@ CE art. 162.1.a; Ley 50/1997 art. 2.2.i
+
+? Según el artículo 5 de la Ley 50/1997, ¿qué función corresponde al Consejo de Ministros?
+a) Declarar el estado de sitio
+b) Nombrar a los Secretarios de Estado
+c) Aprobar los Presupuestos de las Cortes
+d) Declarar los estados de alarma y de excepción
+= d
+> Art. 5.1.f: declara los estados de alarma y de excepción y propone al Congreso la declaración del estado de sitio (que declara el Congreso).
+@ Ley 50/1997 art. 5.1.f
+
+? Las deliberaciones del Consejo de Ministros son:
+a) Secretas
+b) Públicas
+c) Reservadas
+d) Públicas salvo decisión del Presidente
+= a
+> Art. 5.3 Ley 50/1997: las deliberaciones del Consejo de Ministros serán secretas. Las de la Comisión General de Secretarios de Estado y Subsecretarios son reservadas (art. 8.4).
+@ Ley 50/1997 art. 5.3
+
+? ¿Quién preside la Comisión General de Secretarios de Estado y Subsecretarios?
+a) El Presidente del Gobierno
+b) El Secretario de Estado más antiguo
+c) Un Vicepresidente del Gobierno o, en su defecto, el Ministro de la Presidencia
+d) El Subsecretario de Hacienda
+= c
+> Art. 8.2 Ley 50/1997.
+@ Ley 50/1997 art. 8
+
+? ¿Cómo se crean las Comisiones Delegadas del Gobierno?
+a) Por ley
+b) Por acuerdo del Consejo de Ministros mediante Real Decreto, a propuesta del Presidente del Gobierno
+c) Por Orden Ministerial
+d) Por decisión del Presidente del Congreso
+= b
+> Art. 6.1 Ley 50/1997.
+@ Ley 50/1997 art. 6
+
+? Los Secretarios de Estado son, según la Ley 50/1997:
+a) Miembros del Gobierno
+b) Órganos directivos
+c) Miembros de las Comisiones Delegadas por derecho propio
+d) Órganos superiores de la Administración General del Estado
+= d
+> Art. 7.1 Ley 50/1997: órganos superiores de la AGE, directamente responsables de la ejecución de la acción del Gobierno en un sector de actividad específica de un Departamento.
+@ Ley 50/1997 art. 7
+
+? ¿Qué forma revisten las decisiones del Presidente del Gobierno cuya adopción le atribuye el ordenamiento?
+a) Real Decreto del Presidente del Gobierno
+b) Orden Ministerial
+c) Acuerdo del Consejo de Ministros
+d) Resolución de la Presidencia
+= a
+> Art. 24.1.b Ley 50/1997.
+@ Ley 50/1997 art. 24
+
+? ¿Qué jerarquía tienen los reglamentos del Gobierno según el artículo 24.2 de la Ley 50/1997?
+a) Primero las Órdenes Ministeriales y después los Reales Decretos
+b) Ambos tienen el mismo rango
+c) Las Órdenes Ministeriales prevalecen siempre
+d) Primero los Reales Decretos (del Presidente o del Consejo de Ministros) y después las Órdenes Ministeriales
+= d
+> Art. 24.2 Ley 50/1997.
+@ Ley 50/1997 art. 24.2
+
+? ¿Qué facultad NO puede ejercer el Presidente del Gobierno en funciones, según el artículo 21 de la Ley 50/1997?
+a) Convocar el Consejo de Ministros
+b) Plantear la cuestión de confianza
+c) Dirigir la política de defensa
+d) Representar al Gobierno
+= b
+> Art. 21.4: no puede proponer la disolución, plantear la cuestión de confianza ni proponer un referéndum consultivo.
+@ Ley 50/1997 art. 21.4
+
+? Un Gobierno en funciones no podrá:
+a) Despachar asuntos ordinarios
+b) Aprobar el Proyecto de Ley de Presupuestos Generales del Estado ni presentar proyectos de ley a las Cortes
+c) Aprobar reales decretos de urgencia debidamente acreditada
+d) Facilitar el traspaso de poderes
+= b
+> Art. 21.5 Ley 50/1997.
+@ Ley 50/1997 art. 21.5
+
+? ¿A qué se limita la gestión de un Gobierno en funciones, según el artículo 21.3 de la Ley 50/1997?
+a) Al despacho ordinario de los asuntos públicos, salvo urgencia debidamente acreditada o interés general
+b) A la ejecución de los Presupuestos
+c) A la política exterior
+d) A los asuntos que le encomiende el Congreso
+= a
+> Art. 21.3 Ley 50/1997.
+@ Ley 50/1997 art. 21.3
+
+? ¿Qué ocurre con las delegaciones legislativas otorgadas por las Cortes mientras el Gobierno está en funciones tras unas elecciones generales?
+a) Se mantienen
+b) Quedan revocadas definitivamente
+c) Pasan a la Diputación Permanente
+d) Quedan en suspenso
+= d
+> Art. 21.6 Ley 50/1997.
+@ Ley 50/1997 art. 21.6
+
+? ¿Qué decisiones del Gobierno revisten la forma de «Acuerdos del Consejo de Ministros»?
+a) Las decisiones del Consejo que no deban adoptar la forma de Real Decreto
+b) Las normas reglamentarias de su competencia
+c) Las decisiones de los Ministros
+d) Las leyes de bases
+= a
+> Art. 24.1.d Ley 50/1997.
+@ Ley 50/1997 art. 24.1.d
+
+? ¿Cuándo es preceptivo el dictamen del Consejo de Estado, según la Ley 50/1997, en la aprobación de reglamentos?
+a) En todos los reglamentos
+b) Solo en las Órdenes Ministeriales
+c) Nunca, es siempre facultativo
+d) En los reglamentos para el desarrollo y ejecución de las leyes
+= d
+> Art. 5.1.h Ley 50/1997: el Consejo de Ministros aprueba los reglamentos para el desarrollo y la ejecución de las leyes, previo dictamen del Consejo de Estado.
+@ Ley 50/1997 art. 5.1.h
+
+? ¿Cuál de las siguientes funciones es del Presidente del Gobierno y NO del Rey?
+a) Decretar la disolución de las Cortes
+b) Proponer la disolución de las Cortes
+c) Sancionar las leyes
+d) Expedir los decretos acordados en el Consejo de Ministros
+= b
+> El Presidente del Gobierno propone la disolución (art. 115) y el Rey la decreta (art. 62.b). El Rey sanciona las leyes (62.a) y expide los decretos (62.f).
+@ CE arts. 62 y 115
+
+? Con arreglo al artículo 104 de la CE, las Fuerzas y Cuerpos de Seguridad actúan:
+a) Bajo la dependencia de las Cortes Generales
+b) Bajo la dependencia del Gobierno
+c) Bajo la dependencia del Poder Judicial
+d) De forma autónoma
+= b
+> Art. 104.1: bajo la dependencia del Gobierno, tendrán como misión proteger el libre ejercicio de los derechos y libertades y garantizar la seguridad ciudadana.
+@ CE art. 104

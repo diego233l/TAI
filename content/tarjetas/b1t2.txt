@@ -1,0 +1,31 @@
+Composición del Congreso (art. 68) :: 300 a 400 diputados (LOREG: 350). Mandato 4 años. Circunscripción provincial.
+Elecciones generales: plazos (art. 68.6) :: Entre 30 y 60 días desde el fin del mandato; el Congreso se constituye en 25 días.
+Senado (art. 69) :: Cámara de representación territorial. 4 senadores por provincia; 3 en Gran Canaria, Mallorca y Tenerife; 2 en Ceuta y Melilla; CCAA: 1 + 1 por millón de habitantes.
+Islas con 1 senador (art. 69.3) :: Ibiza, Formentera, Menorca, Fuerteventura, La Gomera, El Hierro, Lanzarote y La Palma.
+Inviolabilidad de los parlamentarios (art. 71.1) :: No responden por las opiniones manifestadas en el ejercicio de sus funciones.
+Inmunidad de los parlamentarios (art. 71.2) :: Solo detención por flagrante delito; para inculparlos o procesarlos se necesita autorización de la Cámara.
+Aforamiento de parlamentarios (art. 71.3) :: Sala de lo Penal del Tribunal Supremo.
+Periodos de sesiones (art. 73) :: Septiembre-diciembre y febrero-junio.
+Diputación Permanente (art. 78) :: Mínimo 21 miembros; actúa con las Cámaras disueltas o expirado su mandato.
+Iniciativa legislativa popular (art. 87.3) :: 500.000 firmas; no en LO, tributarias, internacionales ni prerrogativa de gracia.
+Ley orgánica (art. 81) :: Derechos fundamentales, Estatutos de Autonomía y régimen electoral general; mayoría absoluta del Congreso en votación final sobre el conjunto.
+Decreto-ley (art. 86) :: Extraordinaria y urgente necesidad; no afecta a instituciones básicas, Título I, CCAA ni Derecho electoral general; convalidación en 30 días.
+Decreto legislativo (arts. 82-85) :: Delegación de las Cortes: ley de bases (texto articulado) o ley ordinaria (texto refundido).
+Senado: plazos (art. 90) :: 2 meses para aprobar, vetar o enmendar (20 días si es urgente). El veto exige mayoría absoluta.
+Levantar el veto del Senado :: Mayoría absoluta del Congreso, o mayoría simple tras 2 meses.
+Sanción del Rey (art. 91) :: 15 días.
+Referéndum consultivo (art. 92) :: Lo convoca el Rey, a propuesta del Presidente del Gobierno autorizada por el Congreso.
+Art. 94 CE :: Tratados con autorización previa de las Cortes: políticos, militares, integridad territorial, derechos del Título I, obligaciones financieras, modifican leyes.
+Art. 95 CE :: Si un tratado contradice la CE se exige previa revisión constitucional; el TC declara la contradicción.
+Tribunal Constitucional: composición (art. 159) :: 12 miembros nombrados por el Rey: 4 Congreso (3/5), 4 Senado (3/5), 2 Gobierno, 2 CGPJ.
+Tribunal Constitucional: mandato :: 9 años, renovación por tercios cada 3 años; más de 15 años de ejercicio profesional.
+Presidente del TC (art. 160) :: Nombrado por el Rey a propuesta del Pleno por 3 años.
+Recurso de inconstitucionalidad: legitimados (art. 162) :: Presidente del Gobierno, Defensor del Pueblo, 50 diputados, 50 senadores, ejecutivos y Asambleas de CCAA. Plazo: 3 meses.
+Recurso de amparo: legitimados (art. 162) :: Persona natural o jurídica con interés legítimo, Defensor del Pueblo y Ministerio Fiscal.
+Recurso de amparo: plazos (LOTC) :: 30 días hábiles contra resoluciones judiciales (art. 44.2), 20 días contra actos del Ejecutivo (art. 43.2), 3 meses contra actos parlamentarios (art. 42).
+Cuestión de inconstitucionalidad (art. 163) :: La plantea un órgano judicial ante una norma con rango de ley aplicable al caso.
+Impugnación del Gobierno (art. 161.2) :: Suspensión automática de la disposición autonómica; el TC la ratifica o levanta en 5 meses.
+Sentencias del TC (art. 164) :: BOE con votos particulares; efectos frente a todos; cosa juzgada; sin recurso.
+Defensor del Pueblo (art. 54) :: Alto comisionado de las Cortes Generales; 5 años; 3/5 de cada Cámara; 2 adjuntos; puede interponer inconstitucionalidad y amparo; informe anual.
+Legitimación ante el Defensor del Pueblo :: Cualquier persona natural o jurídica con interés legítimo, sin restricción alguna. No actúa si hay proceso judicial pendiente.
+Tribunal de Cuentas (art. 136) :: Supremo órgano fiscalizador de las cuentas y gestión económica del Estado; depende de las Cortes; 12 consejeros, 9 años.

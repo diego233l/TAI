@@ -1,0 +1,550 @@
+// Tema 2 · Cortes Generales, Tribunal Constitucional y Defensor del Pueblo
+
+? ¿Cuál es la composición del Congreso de los Diputados según el artículo 68 de la CE?
+a) Exactamente 350 diputados
+b) Un mínimo de 250 y un máximo de 350 diputados
+c) Un diputado por cada 100.000 habitantes
+d) Un mínimo de 300 y un máximo de 400 diputados
+= d
+> El art. 68.1 fija entre 300 y 400 diputados; la LOREG concreta el número en 350.
+@ CE art. 68.1
+
+? ¿Qué duración tiene el mandato de los diputados y senadores?
+a) 3 años
+b) 5 años
+c) 4 años
+d) 6 años
+= c
+> Art. 68.4 (Congreso) y art. 69.6 (Senado): cuatro años; el mandato termina cuatro años después de su elección o el día de la disolución de la Cámara.
+@ CE arts. 68.4 y 69.6
+
+? Las elecciones generales deben celebrarse entre los:
+a) 15 y 30 días desde la terminación del mandato
+b) 30 y 60 días desde la terminación del mandato
+c) 60 y 90 días desde la terminación del mandato
+d) 45 y 75 días desde la terminación del mandato
+= b
+> Art. 68.6: las elecciones tendrán lugar entre los treinta días y sesenta desde la terminación del mandato; el Congreso electo debe ser convocado dentro de los veinticinco días siguientes a la celebración de las elecciones.
+@ CE art. 68.6
+
+? ¿En qué plazo debe ser convocado el Congreso electo tras la celebración de las elecciones?
+a) 15 días
+b) 20 días
+c) 25 días
+d) 30 días
+= c
+> Art. 68.6 in fine: dentro de los veinticinco días siguientes a la celebración de las elecciones.
+@ CE art. 68.6
+
+? ¿Cuántos senadores se eligen en cada provincia peninsular?
+a) 2
+b) 3
+c) 4
+d) 5
+= c
+> Art. 69.2: en cada provincia se elegirán cuatro senadores por sufragio universal, libre, igual, directo y secreto.
+@ CE art. 69.2
+
+? ¿Qué islas eligen cada una tres senadores, según el artículo 69.3?
+a) Mallorca, Gran Canaria y Tenerife
+b) Menorca, Lanzarote y La Palma
+c) Ibiza, Fuerteventura y La Gomera
+d) Todas las islas del archipiélago canario
+= a
+> Las «islas mayores» (Gran Canaria, Mallorca y Tenerife) eligen 3 senadores cada una; Ibiza, Formentera, Menorca, Fuerteventura, La Gomera, El Hierro, Lanzarote y La Palma eligen uno cada una.
+@ CE art. 69.3
+
+? ¿Cuántos senadores corresponden a cada una de las ciudades de Ceuta y Melilla?
+a) 2
+b) 1
+c) 3
+d) 4
+= a
+> Art. 69.4: cada una de las poblaciones de Ceuta y Melilla elegirá dos senadores.
+@ CE art. 69.4
+
+? ¿Cuántos senadores designan las Comunidades Autónomas, además de los elegidos en las provincias?
+a) Uno por cada Comunidad Autónoma
+b) Uno por cada Comunidad y otro más por cada millón de habitantes de su territorio
+c) Dos por cada Comunidad
+d) Uno por cada provincia de la Comunidad
+= b
+> Art. 69.5: las Comunidades Autónomas designarán además un Senador y otro más por cada millón de habitantes de su respectivo territorio.
+@ CE art. 69.5
+
+? Según el artículo 69.1 de la CE, el Senado es:
+a) La Cámara de representación política
+b) La Cámara de segunda lectura sin funciones propias
+c) La Cámara de representación territorial
+d) La Cámara de los Presidentes autonómicos
+= c
+> Art. 69.1: «El Senado es la Cámara de representación territorial».
+@ CE art. 69.1
+
+? ¿Qué impide el principio de «no mandato imperativo» del artículo 67.2?
+a) Que los parlamentarios cambien de partido
+b) Que los miembros de las Cortes estén ligados por mandato imperativo
+c) Que se elijan senadores por provincias
+d) Que los diputados se agrupen en grupos parlamentarios
+= b
+> Art. 67.2: «Los miembros de las Cortes Generales no estarán ligados por mandato imperativo».
+@ CE art. 67.2
+
+? ¿Qué prerrogativa protege a los parlamentarios por las opiniones manifestadas en el ejercicio de sus funciones?
+a) Inmunidad
+b) Inviolabilidad
+c) Aforamiento
+d) Suplicatorio
+= b
+> Art. 71.1: Diputados y Senadores gozarán de inviolabilidad por las opiniones manifestadas en el ejercicio de sus funciones. La inmunidad (71.2) protege frente a detención y procesamiento.
+@ CE art. 71.1
+
+? ¿Ante qué órgano se exige la responsabilidad penal de los diputados y senadores?
+a) Sala de lo Penal del Tribunal Supremo
+b) Audiencia Nacional
+c) Tribunal Constitucional
+d) Tribunal Superior de Justicia de Madrid
+= a
+> Art. 71.3: en las causas contra Diputados y Senadores será competente la Sala de lo Penal del Tribunal Supremo.
+@ CE art. 71.3
+
+? Los Reglamentos de las Cámaras se aprueban por:
+a) Mayoría simple
+b) Mayoría de dos tercios
+c) Mayoría absoluta de sus miembros
+d) Tres quintos de sus miembros
+= c
+> Art. 72.1: las Cámaras establecen sus propios Reglamentos, aprueban autónomamente sus presupuestos y, de común acuerdo, regulan el Estatuto del Personal de las Cortes Generales. Los Reglamentos y su reforma serán sometidos a una votación final sobre su totalidad, que requerirá la mayoría absoluta.
+@ CE art. 72.1
+
+? ¿Cuáles son los periodos ordinarios de sesiones de las Cámaras?
+a) Septiembre–diciembre y febrero–junio
+b) Enero–abril y septiembre–diciembre
+c) Octubre–enero y marzo–julio
+d) Septiembre–noviembre y enero–junio
+= a
+> Art. 73.1: las Cámaras se reunirán anualmente en dos períodos ordinarios de sesiones: el primero, de septiembre a diciembre, y el segundo, de febrero a junio.
+@ CE art. 73.1
+
+? ¿A petición de quién pueden celebrarse sesiones extraordinarias?
+a) Del Gobierno, de la Diputación Permanente o de la mayoría absoluta de los miembros de cualquiera de las Cámaras
+b) Solo del Gobierno
+c) Solo del Presidente del Congreso
+d) Del Rey a propuesta del Gobierno
+= a
+> Art. 73.2 CE.
+@ CE art. 73.2
+
+? ¿Cuántos miembros como mínimo tiene la Diputación Permanente de cada Cámara?
+a) 15
+b) 21
+c) 25
+d) 35
+= b
+> Art. 78.1: en cada Cámara habrá una Diputación Permanente compuesta por un mínimo de veintiún miembros, que representarán a los grupos parlamentarios.
+@ CE art. 78.1
+
+? Las comisiones de investigación de las Cámaras:
+a) Dictan sentencias vinculantes para los tribunales
+b) Solo pueden crearse por mayoría de dos tercios
+c) Tienen conclusiones que no serán vinculantes para los Tribunales ni afectarán a las resoluciones judiciales
+d) No pueden requerir la comparecencia de ciudadanos
+= c
+> Art. 76: la comparecencia ante las comisiones de investigación será obligatoria, pero sus conclusiones no serán vinculantes para los Tribunales; podrán ser comunicadas al Ministerio Fiscal.
+@ CE art. 76
+
+? ¿Cómo debe emitirse el voto de los miembros de las Cortes Generales, según el artículo 79.3?
+a) Por delegación en el portavoz del grupo
+b) Delegable en casos justificados
+c) Por correo en todos los casos
+d) Es personal e indelegable
+= d
+> Art. 79.3: el voto de Senadores y Diputados es personal e indelegable.
+@ CE art. 79.3
+
+? ¿Cuántas firmas se exigen para una iniciativa legislativa popular?
+a) 100.000
+b) 250.000
+c) 500.000
+d) 1.000.000
+= c
+> Art. 87.3: se exigirán no menos de 500.000 firmas acreditadas; no procede en materias propias de ley orgánica, tributarias o de carácter internacional, ni en lo relativo a la prerrogativa de gracia.
+@ CE art. 87.3
+
+? ¿En cuál de estas materias NO procede la iniciativa legislativa popular?
+a) Educación
+b) Medio ambiente
+c) Organización de los municipios
+d) Materias propias de ley orgánica
+= d
+> Art. 87.3 CE excluye la ley orgánica, las materias tributarias, las de carácter internacional y la prerrogativa de gracia.
+@ CE art. 87.3
+
+? Son leyes orgánicas, según el artículo 81 de la CE:
+a) Las que regulan los Presupuestos Generales del Estado
+b) Las relativas al desarrollo de los derechos fundamentales y libertades públicas, las que aprueben los Estatutos de Autonomía y el régimen electoral general, entre otras
+c) Todas las que apruebe el Senado
+d) Las que desarrollen el Título VII
+= b
+> Art. 81.1. La aprobación, modificación o derogación exige mayoría absoluta del Congreso en una votación final sobre el conjunto del proyecto.
+@ CE art. 81
+
+? ¿Qué mayoría exige la aprobación de una ley orgánica?
+a) Mayoría simple del Congreso
+b) Mayoría absoluta del Congreso en una votación final sobre el conjunto del proyecto
+c) Mayoría de dos tercios de ambas Cámaras
+d) Tres quintos del Congreso
+= b
+> Art. 81.2 CE.
+@ CE art. 81.2
+
+? Un decreto-ley puede dictarse en caso de:
+a) Cualquier necesidad administrativa del Gobierno
+b) Estado de guerra únicamente
+c) Delegación expresa de las Cortes
+d) Extraordinaria y urgente necesidad
+= d
+> Art. 86.1: en caso de extraordinaria y urgente necesidad, el Gobierno podrá dictar disposiciones legislativas provisionales que tomarán la forma de Decretos-leyes.
+@ CE art. 86.1
+
+? ¿Qué materia NO puede regular un decreto-ley?
+a) El régimen de las Comunidades Autónomas
+b) La política económica
+c) Los plazos de tramitación administrativa
+d) Las medidas urgentes en materia de transportes
+= a
+> Art. 86.1: no pueden afectar al ordenamiento de las instituciones básicas del Estado, a los derechos, deberes y libertades de los ciudadanos regulados en el Título I, al régimen de las Comunidades Autónomas ni al Derecho electoral general.
+@ CE art. 86.1
+
+? ¿En qué plazo debe el Congreso convalidar un decreto-ley?
+a) 15 días
+b) 2 meses
+c) 30 días siguientes a su promulgación
+d) 3 meses
+= c
+> Art. 86.2: en el plazo de los treinta días siguientes a su promulgación; el Congreso debe pronunciarse expresamente dentro de ese plazo.
+@ CE art. 86.2
+
+? ¿Qué plazo tiene el Senado para vetar o enmendar un proyecto de ley del Congreso?
+a) 2 meses a partir de la recepción del texto (20 días naturales si el proyecto es urgente)
+b) 15 días, ampliables
+c) 1 mes
+d) 3 meses
+= a
+> Art. 90.2 y 90.3: dos meses desde la recepción del texto; el Gobierno o el Congreso pueden declarar urgente un proyecto y reducir el plazo a veinte días naturales.
+@ CE art. 90
+
+? ¿Qué mayoría necesita el Senado para vetar un proyecto de ley?
+a) Mayoría simple
+b) Dos tercios
+c) Mayoría absoluta
+d) Tres quintos
+= c
+> Art. 90.2: el veto debe ser aprobado por mayoría absoluta del Senado.
+@ CE art. 90.2
+
+? Para levantar el veto del Senado, el Congreso necesita:
+a) Mayoría de dos tercios
+b) Siempre mayoría absoluta
+c) Mayoría absoluta, o mayoría simple una vez transcurridos dos meses desde la interposición del veto
+d) Mayoría simple inmediata
+= c
+> Art. 90.2: el Congreso puede ratificar el texto por mayoría absoluta o por mayoría simple una vez transcurridos dos meses desde la interposición.
+@ CE art. 90.2
+
+? ¿En qué plazo sanciona el Rey las leyes aprobadas por las Cortes?
+a) 15 días
+b) 7 días
+c) 30 días
+d) 3 meses
+= a
+> Art. 91: el Rey sancionará en el plazo de quince días las leyes aprobadas por las Cortes Generales, y las promulgará y ordenará su inmediata publicación.
+@ CE art. 91
+
+? El referéndum consultivo sobre decisiones políticas de especial trascendencia (art. 92) es convocado por:
+a) El Rey, mediante propuesta del Presidente del Gobierno previamente autorizada por el Congreso
+b) El Presidente del Gobierno directamente
+c) El Congreso por mayoría absoluta
+d) El Senado a propuesta de las CCAA
+= a
+> Art. 92.2: el referéndum será convocado por el Rey, mediante propuesta del Presidente del Gobierno, previamente autorizada por el Congreso de los Diputados.
+@ CE art. 92
+
+? ¿Qué tratados requieren autorización previa de las Cortes Generales según el artículo 94.1?
+a) Los de carácter político o militar, los que afecten a la integridad territorial o a derechos del Título I, los que impliquen obligaciones financieras para la Hacienda Pública o modifiquen leyes
+b) Todos los tratados internacionales
+c) Solo los tratados comerciales
+d) Solo los celebrados con la Unión Europea
+= a
+> Art. 94.1 CE. En los demás casos, el Gobierno informa inmediatamente a las Cortes (art. 94.2).
+@ CE art. 94
+
+? ¿Qué órgano declara si existe contradicción entre un tratado internacional y la Constitución (art. 95)?
+a) El Tribunal Supremo
+b) El Tribunal Constitucional
+c) El Consejo de Estado
+d) Las Cortes Generales
+= b
+> Art. 95.2: el Gobierno o cualquiera de las Cámaras pueden requerir al TC para que declare si existe o no esa contradicción. Si la hay, es necesaria la previa revisión constitucional.
+@ CE art. 95
+
+? ¿Cuántos miembros componen el Tribunal Constitucional?
+a) 9
+b) 15
+c) 20
+d) 12
+= d
+> Art. 159.1: el TC se compone de doce miembros nombrados por el Rey.
+@ CE art. 159.1
+
+? ¿Quién propone a los magistrados del Tribunal Constitucional?
+a) Seis el Congreso y seis el Senado
+b) Cuatro el Gobierno, cuatro el Congreso y cuatro el CGPJ
+c) Cuatro el Congreso, cuatro el Senado, dos el Gobierno y dos el CGPJ
+d) Todos ellos los propone el Rey
+= c
+> Art. 159.1: cuatro a propuesta del Congreso (3/5), cuatro del Senado (3/5), dos del Gobierno y dos del CGPJ.
+@ CE art. 159.1
+
+? ¿Qué mayoría se exige en el Congreso y el Senado para proponer magistrados del Tribunal Constitucional?
+a) Mayoría simple
+b) Tres quintos
+c) Mayoría absoluta
+d) Dos tercios
+= b
+> Art. 159.1: los cuatro magistrados del Congreso y los cuatro del Senado se eligen por mayoría de tres quintos de sus miembros.
+@ CE art. 159.1
+
+? ¿Cuál es la duración del mandato de los magistrados del Tribunal Constitucional?
+a) 9 años, renovándose por terceras partes cada tres
+b) 6 años
+c) 12 años, renovándose cada seis
+d) Vitalicio
+= a
+> Art. 159.3: se designan por un período de nueve años y se renovarán por terceras partes cada tres.
+@ CE art. 159.3
+
+? ¿Cuántos años de ejercicio profesional deben acreditar los magistrados del Tribunal Constitucional?
+a) 10
+b) 20
+c) 15
+d) 25
+= c
+> Art. 159.2: todos juristas de reconocida competencia con más de quince años de ejercicio profesional.
+@ CE art. 159.2
+
+? ¿Por cuánto tiempo es nombrado el Presidente del Tribunal Constitucional?
+a) 3 años
+b) 5 años
+c) 9 años
+d) Hasta el fin de su mandato como magistrado
+= a
+> Art. 160: el Presidente es nombrado entre sus miembros por el Rey, a propuesta del Pleno, por un período de tres años.
+@ CE art. 160
+
+? ¿Contra qué normas cabe el recurso de inconstitucionalidad?
+a) Contra reglamentos y órdenes ministeriales
+b) Contra cualquier sentencia firme
+c) Contra leyes y disposiciones normativas con fuerza de ley
+d) Solo contra leyes orgánicas
+= c
+> Art. 161.1.a CE. Los reglamentos se controlan por la jurisdicción contencioso-administrativa.
+@ CE art. 161.1.a
+
+? ¿Cuál de los siguientes sujetos NO está legitimado para interponer recurso de inconstitucionalidad?
+a) El Presidente del Gobierno
+b) El Defensor del Pueblo
+c) 50 diputados
+d) El Ministerio Fiscal
+= d
+> Art. 162.1.a: Presidente del Gobierno, Defensor del Pueblo, 50 diputados, 50 senadores, órganos colegiados ejecutivos de las CCAA y, en su caso, sus Asambleas. El Ministerio Fiscal sí puede pedir amparo.
+@ CE art. 162.1.a
+
+? ¿Cuántos diputados o senadores como mínimo pueden interponer recurso de inconstitucionalidad?
+a) 35
+b) 100
+c) 1/10 de cada Cámara
+d) 50
+= d
+> Art. 162.1.a: cincuenta Diputados o cincuenta Senadores.
+@ CE art. 162.1.a
+
+? ¿Cuál es el plazo para interponer recurso de inconstitucionalidad contra una ley estatal?
+a) 20 días
+b) 1 mes
+c) 6 meses
+d) 3 meses desde su publicación
+= d
+> Art. 33 LOTC: el plazo es de tres meses a partir de la publicación de la ley, disposición o acto con fuerza de ley.
+@ LO 2/1979 art. 33
+
+? ¿Quiénes están legitimados para interponer recurso de amparo?
+a) Cualquier persona natural o jurídica que invoque un interés legítimo, el Defensor del Pueblo y el Ministerio Fiscal
+b) Solo los ciudadanos españoles
+c) Solo el Defensor del Pueblo
+d) Las Cortes Generales
+= a
+> Art. 162.1.b CE.
+@ CE art. 162.1.b
+
+? ¿Qué es la cuestión de inconstitucionalidad (art. 163 CE)?
+a) La que plantea el Gobierno contra leyes autonómicas
+b) La que plantea el Defensor del Pueblo
+c) La que plantean 50 diputados
+d) La que plantea un órgano judicial cuando considera que una norma con rango de ley aplicable al caso y de cuya validez dependa el fallo pueda ser contraria a la Constitución
+= d
+> Art. 163 CE. Los órganos judiciales no pueden anular leyes: deben plantear la cuestión al TC.
+@ CE art. 163
+
+? ¿Qué efecto tiene la impugnación por el Gobierno de una disposición autonómica ante el TC (art. 161.2)?
+a) Ninguno hasta la sentencia
+b) La suspensión automática de la disposición impugnada, que el Tribunal debe ratificar o levantar en un plazo no superior a cinco meses
+c) La anulación inmediata
+d) La remisión al Tribunal Supremo
+= b
+> Art. 161.2 CE: la impugnación produce la suspensión de la disposición o resolución recurrida, pero el TC, en su caso, deberá ratificarla o levantarla en un plazo no superior a cinco meses.
+@ CE art. 161.2
+
+? ¿Qué efectos tienen las sentencias del Tribunal Constitucional?
+a) Plenos efectos frente a todos desde el día siguiente a su publicación en el BOE; no cabe recurso contra ellas
+b) Solo entre las partes
+c) Son recurribles ante el Tribunal Supremo
+d) Solo vinculan a los poderes públicos
+= a
+> Art. 164.1 CE: se publicarán en el BOE con los votos particulares, si los hubiere; tienen el valor de cosa juzgada a partir del día siguiente de su publicación y no cabe recurso alguno contra ellas.
+@ CE art. 164
+
+? ¿Quién elige al Defensor del Pueblo?
+a) El Gobierno
+b) Las Cortes Generales
+c) El Rey
+d) El Consejo General del Poder Judicial
+= b
+> LO 3/1981 art. 2: elegido por las Cortes Generales para un período de cinco años, con mayoría de tres quintos en cada Cámara.
+@ LO 3/1981 art. 2
+
+? ¿Qué duración tiene el mandato del Defensor del Pueblo?
+a) 3 años
+b) 5 años
+c) 4 años
+d) 9 años
+= b
+> LO 3/1981 art. 2.1: período de cinco años.
+@ LO 3/1981 art. 2
+
+? ¿Cuántos Adjuntos tiene el Defensor del Pueblo?
+a) Uno
+b) Dos
+c) Tres
+d) Cuatro
+= b
+> LO 3/1981 art. 8: el Defensor del Pueblo está auxiliado por un Adjunto primero y un Adjunto segundo.
+@ LO 3/1981 art. 8
+
+? ¿Quién puede dirigirse al Defensor del Pueblo?
+a) Toda persona natural o jurídica que invoque un interés legítimo, sin restricción alguna
+b) Solo los ciudadanos españoles
+c) Solo quien haya agotado la vía contencioso-administrativa
+d) Solo las asociaciones
+= a
+> LO 3/1981 art. 10: toda persona natural o jurídica que invoque un interés legítimo, sin restricción alguna; no pueden limitar su ejercicio la nacionalidad, residencia, sexo, minoría de edad, incapacidad legal, internamiento…
+@ LO 3/1981 art. 10
+
+? ¿Qué ocurre si se interpone demanda o recurso ante los tribunales sobre el asunto que investiga el Defensor del Pueblo?
+a) Continúa investigando en paralelo
+b) Sustituye al juez
+c) Suspende su intervención
+d) Informa al Tribunal Constitucional
+= c
+> LO 3/1981 art. 17.2: el Defensor del Pueblo no entrará en el examen individual de quejas sobre las que esté pendiente resolución judicial y lo suspenderá si, iniciada su actuación, se interpusiera demanda o recurso ante los Tribunales.
+@ LO 3/1981 art. 17
+
+? ¿Ante qué órgano rinde cuentas el Defensor del Pueblo mediante un informe anual?
+a) Las Cortes Generales
+b) El Gobierno
+c) El Tribunal Constitucional
+d) El Consejo de Estado
+= a
+> LO 3/1981 art. 32: da cuenta anualmente a las Cortes Generales de la gestión realizada en un informe.
+@ LO 3/1981 art. 32
+
+? ¿Cuál es la naturaleza del Tribunal de Cuentas según el artículo 136 de la CE?
+a) Órgano jurisdiccional del Poder Judicial
+b) Órgano consultivo del Gobierno
+c) Supremo órgano fiscalizador de las cuentas y de la gestión económica del Estado y del sector público, dependiente directamente de las Cortes Generales
+d) Órgano de control del Banco de España
+= c
+> Art. 136.1 CE. Sin perjuicio de su propia jurisdicción en materia de responsabilidad contable.
+@ CE art. 136
+
+? ¿Qué órgano ejerce las funciones de las Cámaras cuando éstas están disueltas o ha expirado su mandato?
+a) El Gobierno
+b) El Consejo de Estado
+c) La Diputación Permanente
+d) El Rey
+= c
+> Art. 78.2 CE: la Diputación Permanente asume las facultades que correspondan a las Cámaras, de acuerdo con los arts. 86 y 116, en caso de que éstas hubieren sido disueltas o hubiere expirado su mandato.
+@ CE art. 78.2
+
+? ¿Cuál es el efecto jurídico del veto del Senado a un proyecto de ley?
+a) Anula definitivamente el proyecto
+b) Obliga al Congreso a ratificar el texto por mayoría absoluta o por mayoría simple tras dos meses
+c) Requiere nueva iniciativa del Gobierno
+d) Remite el texto al Tribunal Constitucional
+= b
+> El veto no es definitivo: el Congreso tiene la última palabra, lo que demuestra la preponderancia del Congreso sobre el Senado.
+@ CE art. 90
+
+? ¿Qué decisiones se adoptan por mayoría de cada una de las Cámaras en sesión conjunta, iniciando el procedimiento el Senado?
+a) Autorización de tratados (art. 94.1)
+b) Los convenios entre CCAA (art. 145.2) y el Fondo de Compensación Interterritorial (art. 158.2)
+c) La declaración de guerra
+d) Los Presupuestos
+= b
+> Art. 74.2: en el caso de los tratados (94.1) el procedimiento se inicia por el Congreso; en los otros dos (145.2 y 158.2), por el Senado.
+@ CE art. 74.2
+
+? ¿Qué materias exige la CE que se regulen mediante ley orgánica entre las siguientes?
+a) El Estatuto de los Trabajadores
+b) La Ley General Tributaria
+c) El régimen electoral general
+d) El Código Civil
+= c
+> Art. 81.1: desarrollo de los derechos fundamentales y libertades públicas, Estatutos de Autonomía, régimen electoral general y demás previstas en la CE.
+@ CE art. 81.1
+
+? En el procedimiento legislativo ordinario, ¿qué Cámara conoce en primer lugar de los proyectos de ley presentados por el Gobierno?
+a) El Senado
+b) El Congreso de los Diputados
+c) Ambas simultáneamente
+d) La Cámara que elija el Gobierno
+= b
+> Art. 88 CE: los proyectos de ley serán aprobados en Consejo de Ministros, que los someterá al Congreso.
+@ CE art. 88
+
+? En la delegación legislativa de las Cortes en el Gobierno, para refundir varios textos legales en uno solo, se utiliza:
+a) Una ley de bases
+b) Una ley orgánica
+c) Un decreto-ley
+d) Una ley ordinaria
+= d
+> Art. 82.5: la autorización para refundir textos legales determinará el ámbito normativo y los criterios; se otorga mediante ley ordinaria. La ley de bases se usa para textos articulados.
+@ CE art. 82
+
+? ¿Qué dice la CE sobre la subdelegación de la potestad legislativa delegada?
+a) Es libre
+b) Está prohibida salvo autorización expresa en la ley de delegación
+c) Puede subdelegarse en las Comunidades Autónomas
+d) Solo puede subdelegarse en el Presidente del Gobierno
+= b
+> Art. 82.3: la delegación legislativa habrá de otorgarse al Gobierno de forma expresa para materia concreta y con fijación del plazo; no podrá entenderse concedida por tiempo indeterminado ni subdelegarse a autoridades distintas del propio Gobierno.
+@ CE art. 82.3
+
+? ¿Qué plazo establece la LOTC para interponer recurso de amparo cuando la violación proviene de una resolución judicial?
+a) 10 días hábiles
+b) 20 días naturales
+c) 30 días hábiles desde la notificación de la resolución recaída en el proceso judicial
+d) 3 meses
+= c
+> Art. 44.2 LOTC: treinta días a partir de la notificación de la resolución recaída en el proceso judicial. Contra actos del Ejecutivo el plazo es de 20 días (art. 43.2) y contra actos parlamentarios, de 3 meses (art. 42).
+@ LO 2/1979 arts. 42-44

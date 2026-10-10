@@ -1,0 +1,26 @@
+Composición del Gobierno (art. 98) :: Presidente, Vicepresidentes (en su caso), Ministros y los demás miembros que establezca la ley.
+Incompatibilidades de los miembros del Gobierno (art. 98.3) :: Ninguna otra función representativa salvo el mandato parlamentario, ni función pública ajena a su cargo, ni actividad profesional o mercantil.
+Investidura: quién propone al candidato (art. 99) :: El Rey, previa consulta con los grupos con representación parlamentaria y a través del Presidente del Congreso.
+Investidura: mayorías (art. 99) :: Primera votación: mayoría absoluta. Si no, nueva votación 48 horas después: mayoría simple.
+Fracaso de la investidura (art. 99.5) :: A los 2 meses de la primera votación sin candidato investido, el Rey disuelve las Cámaras con refrendo del Presidente del Congreso.
+Nombramiento de ministros (art. 100) :: Los nombra y separa el Rey a propuesta del Presidente del Gobierno.
+Cese del Gobierno (art. 101) :: Tras elecciones generales, pérdida de confianza parlamentaria, dimisión o fallecimiento del Presidente. Continúa en funciones.
+Responsabilidad criminal del Gobierno (art. 102) :: Sala de lo Penal del Supremo. Traición/seguridad del Estado: iniciativa de 1/4 del Congreso y mayoría absoluta. No hay indulto.
+Principios de la Administración (art. 103) :: Eficacia, jerarquía, descentralización, desconcentración y coordinación; sometimiento pleno a la ley y al Derecho.
+Art. 105 CE :: Audiencia ciudadana, acceso a archivos y registros, procedimiento administrativo.
+Art. 106 CE :: Control judicial de la potestad reglamentaria y de la legalidad; indemnización por funcionamiento de servicios públicos salvo fuerza mayor.
+Consejo de Estado (art. 107) :: Supremo órgano consultivo del Gobierno (LO 3/1980).
+Responsabilidad política (art. 108) :: El Gobierno responde solidariamente ante el Congreso de los Diputados.
+Cuestión de confianza (art. 112) :: La plantea el Presidente del Gobierno previa deliberación del Consejo de Ministros; se otorga con mayoría simple.
+Moción de censura (art. 113) :: Mayoría absoluta del Congreso; constructiva (incluye candidato); propuesta por 1/10 de los diputados; no se vota hasta 5 días; si fracasa, no otra en el mismo periodo de sesiones.
+Disolución (art. 115) :: La propone el Presidente del Gobierno (previa deliberación del Consejo de Ministros); la decreta el Rey. No con moción de censura en trámite ni antes de un año de la anterior.
+Presupuestos (art. 134) :: El Gobierno los presenta al Congreso al menos 3 meses antes del fin de los anteriores; prórroga automática si no se aprueban; la Ley de Presupuestos no crea tributos.
+Funciones del Presidente (Ley 50/1997, art. 2) :: Representar al Gobierno, programa político, proponer disolución, cuestión de confianza, referéndum, presidir el Consejo de Ministros, refrendar actos del Rey, recurso de inconstitucionalidad, crear/suprimir ministerios y Secretarías de Estado por Real Decreto.
+Consejo de Ministros (Ley 50/1997, art. 5) :: Órgano colegiado. Aprueba proyectos de ley, Presupuestos, RDL y RD Legislativos, tratados; declara alarma y excepción; propone el sitio; reglamentos con dictamen del Consejo de Estado.
+Carácter de las deliberaciones :: Consejo de Ministros: secretas. Comisión General de Secretarios de Estado y Subsecretarios: reservadas.
+Comisiones Delegadas del Gobierno (art. 6) :: Se crean por Real Decreto acordado en Consejo de Ministros a propuesta del Presidente.
+Secretarios de Estado (art. 7) :: Órganos superiores de la AGE; no son miembros del Gobierno.
+Formas de las decisiones (art. 24) :: RDL y RD Legislativo; RD del Presidente; RD acordado en Consejo de Ministros; Acuerdo del Consejo; Órdenes (de Comisiones Delegadas y Ministeriales).
+Jerarquía de reglamentos (art. 24.2) :: 1.º Real Decreto (Presidente o Consejo de Ministros); 2.º Orden Ministerial.
+Gobierno en funciones: límites (art. 21) :: Solo despacho ordinario. No aprueba Presupuestos ni presenta proyectos de ley. Su Presidente no propone disolución, ni cuestión de confianza, ni referéndum.
+Interpelaciones y preguntas (art. 111) :: El Gobierno y sus miembros están sometidos a ellas; cada Cámara destina un tiempo mínimo semanal.

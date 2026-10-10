@@ -1,0 +1,39 @@
+Norma del EBEP vigente :: Real Decreto Legislativo 5/2015, de 30 de octubre (texto refundido del Estatuto Básico del Empleado Público).
+Clases de empleados públicos (art. 8) :: Funcionarios de carrera, funcionarios interinos, personal laboral (fijo, indefinido o temporal) y personal eventual.
+Funciones solo para funcionarios (art. 9.2) :: Las que implican participación directa o indirecta en el ejercicio de potestades públicas o en la salvaguardia de los intereses generales.
+Funcionario interino: casos (art. 10) :: Vacante (máx. 3 años), sustitución transitoria, programa temporal (3 años + 12 meses), exceso o acumulación de tareas (9 meses dentro de 18).
+Personal eventual (art. 12) :: Confianza o asesoramiento especial; nombramiento y cese libres; no es mérito para acceder a la función pública.
+Grupos de clasificación (art. 76) :: A1/A2: Grado. B: Técnico Superior. C1: Bachiller o Técnico. C2: Graduado en ESO.
+Personal excluido de aplicación directa (art. 4) :: Cortes y órganos constitucionales, jueces/fiscales, militares, Fuerzas y Cuerpos de Seguridad, CNI, Banco de España.
+Principios de acceso (art. 55) :: Igualdad, mérito y capacidad; publicidad; transparencia; imparcialidad y profesionalidad; independencia y discrecionalidad técnica; adecuación; agilidad.
+Requisitos para participar en procesos selectivos (art. 56) :: Nacionalidad española (con excepciones), capacidad funcional, 16 años, no separado ni inhabilitado, titulación.
+Órganos de selección (art. 60) :: Colegiados; imparcialidad; paridad; no pueden ser miembros el personal político, los interinos ni el personal eventual; título individual.
+Adquirir la condición de funcionario de carrera (art. 62) :: 1) Superar el proceso selectivo; 2) nombramiento publicado; 3) acatamiento de la Constitución; 4) toma de posesión.
+Pérdida de la condición de funcionario (art. 63) :: Renuncia, pérdida de nacionalidad, jubilación total, separación del servicio firme, inhabilitación firme.
+Carrera profesional (art. 16) :: Horizontal (sin cambiar de puesto), vertical (ascenso de puestos), promoción interna vertical y horizontal.
+Promoción interna (art. 18) :: Requisitos de ingreso + 2 años de servicio activo en el Subgrupo inferior + pruebas selectivas.
+Retribuciones básicas (art. 23) :: Solo sueldo y trienios.
+Vacaciones (art. 50) :: 22 días hábiles por año natural (sábados no hábiles); hasta 4 días adicionales por antigüedad según la Administración.
+Permiso por fallecimiento (art. 48) :: 1.er grado: 3 días hábiles (misma localidad) o 5 (otra). 2.º grado: 2 o 4 días.
+Permiso por nacimiento (art. 49) :: 19 semanas (32 si monoparental); 6 semanas obligatorias tras el parto.
+Situaciones administrativas (art. 85) :: Servicio activo, servicios especiales, servicio en otras AAPP, excedencia, suspensión de funciones.
+Excedencia voluntaria por interés particular (art. 89.2) :: 5 años previos de servicios en cualquier AAPP; sin retribuciones ni cómputo para trienios y ascensos.
+Suspensión de funciones (art. 90) :: Pierde el puesto si excede de 6 meses; la firme por sanción disciplinaria, máximo 6 años.
+Sanciones disciplinarias (art. 96) :: Separación del servicio (solo muy graves), despido disciplinario (laborales), suspensión firme (máx. 6 años), traslado forzoso, demérito, apercibimiento.
+Prescripción de faltas (art. 97) :: Muy graves 3 años, graves 2 años, leves 6 meses.
+Prescripción de sanciones (art. 97) :: Muy graves 3 años, graves 2 años, leves 1 año.
+Ley de incompatibilidades :: Ley 53/1984, de 26 de diciembre. Principio de dedicación a un solo puesto en el sector público.
+Ley de transparencia :: Ley 19/2013, de 9 de diciembre: publicidad activa, derecho de acceso a la información pública y buen gobierno.
+Entidades privadas obligadas (art. 3 Ley 19/2013) :: Partidos, sindicatos y organizaciones empresariales; entidades con más de 100.000 € de ayudas o el 40 % de sus ingresos (mínimo 5.000 €).
+Sociedades mercantiles sujetas (art. 2 Ley 19/2013) :: Aquellas con participación pública superior al 50 %.
+Solicitud de acceso a la información (art. 17) :: Cualquier medio con constancia de identidad, información solicitada y contacto; no hay que motivarla.
+Plazo de resolución del acceso (art. 20) :: 1 mes desde la recepción por el órgano competente, ampliable 1 mes. Silencio negativo.
+Reclamación ante el CTBG (art. 24) :: Potestativa y previa a lo contencioso; 1 mes para interponerla; 3 meses para resolver (silencio negativo).
+Presidente del CTBG (art. 37) :: Real Decreto; 5 años no renovables; refrendo del Congreso por mayoría absoluta.
+Comisión de Transparencia y Buen Gobierno (art. 36) :: Presidente, un Diputado, un Senador y representantes del Tribunal de Cuentas, Defensor del Pueblo, AEPD, Secretaría de Estado de AAPP y AIReF.
+Sanciones por infracciones muy graves de buen gobierno (art. 30) :: Declaración de incumplimiento en el BOE, pérdida de indemnización por cese, destitución y no ser alto cargo de 5 a 10 años.
+Agenda 2030 :: Aprobada por la ONU el 25-sep-2015; 17 ODS y 169 metas; cinco P: Personas, Planeta, Prosperidad, Paz y Alianzas.
+ODS 1 a 6 :: 1 Fin de la pobreza; 2 Hambre cero; 3 Salud y bienestar; 4 Educación de calidad; 5 Igualdad de género; 6 Agua limpia y saneamiento.
+ODS 7 a 12 :: 7 Energía asequible y no contaminante; 8 Trabajo decente y crecimiento económico; 9 Industria, innovación e infraestructura; 10 Reducción de las desigualdades; 11 Ciudades y comunidades sostenibles; 12 Producción y consumo responsables.
+ODS 13 a 17 :: 13 Acción por el clima; 14 Vida submarina; 15 Vida de ecosistemas terrestres; 16 Paz, justicia e instituciones sólidas; 17 Alianzas para lograr los objetivos.
+Estrategia de Desarrollo Sostenible 2030 :: Aprobada por el Gobierno de España en 2021; desarrolla el Plan de Acción para la Agenda 2030 (2018).

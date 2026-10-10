@@ -1,0 +1,523 @@
+// Tema 4 · TREBEP, Ley 19/2013 de transparencia y Agenda 2030
+
+? ¿Qué norma contiene el texto refundido del Estatuto Básico del Empleado Público?
+a) Ley 7/2007, de 12 de abril
+b) Ley 30/1984, de 2 de agosto
+c) Real Decreto 364/1995, de 10 de marzo
+d) Real Decreto Legislativo 5/2015, de 30 de octubre
+= d
+> El TREBEP se aprobó por RDL 5/2015, de 30 de octubre, refundiendo la Ley 7/2007 (EBEP) y sus modificaciones.
+@ RDL 5/2015
+
+? Según el artículo 8 del TREBEP, los empleados públicos se clasifican en:
+a) Funcionarios de carrera, funcionarios interinos, personal laboral y personal eventual
+b) Funcionarios y personal laboral únicamente
+c) Funcionarios de carrera y personal contratado
+d) Altos cargos, funcionarios y laborales
+= a
+> Art. 8.2 TREBEP: a) funcionarios de carrera; b) funcionarios interinos; c) personal laboral, fijo, por tiempo indefinido o temporal; d) personal eventual.
+@ TREBEP art. 8
+
+? ¿Cuál de los siguientes colectivos queda fuera de la aplicación directa del TREBEP por tener legislación específica propia (art. 4)?
+a) Jueces, magistrados y fiscales
+b) Personal de la Agencia Tributaria
+c) Personal de las Universidades públicas
+d) Personal de las Entidades Locales
+= a
+> Art. 4: Cortes Generales, demás órganos constitucionales, jueces, magistrados y fiscales y personal de la Administración de Justicia, militares, Fuerzas y Cuerpos de Seguridad, personal retribuido por arancel, CNI, Banco de España y FGD.
+@ TREBEP art. 4
+
+? ¿Cuál es la duración máxima del nombramiento de un funcionario interino para cubrir una plaza vacante cuando no es posible su cobertura por un funcionario de carrera?
+a) 3 años
+b) 1 año
+c) 2 años
+d) 5 años
+= a
+> Art. 10.1.a: por un máximo de tres años, en los términos del apartado 4.
+@ TREBEP art. 10.1.a
+
+? ¿Por qué plazo máximo puede nombrarse a un funcionario interino por exceso o acumulación de tareas?
+a) 6 meses dentro de un período de 12
+b) 9 meses dentro de un período de 18
+c) 1 año dentro de un período de 2
+d) 3 meses dentro de un período de 6
+= b
+> Art. 10.1.d (según la redacción vigente): nueve meses, dentro de un periodo de dieciocho meses.
+@ TREBEP art. 10.1.d
+
+? ¿Da lugar el nombramiento de un funcionario interino al reconocimiento de la condición de funcionario de carrera?
+a) No, en ningún caso el nombramiento derivado de estos procedimientos de selección da lugar a ello
+b) Sí, tras tres años de servicio
+c) Sí, tras superar un proceso de estabilización
+d) Sí, si la plaza no se cubre
+= a
+> Art. 10.2 TREBEP.
+@ TREBEP art. 10.2
+
+? ¿Qué caracteriza al personal eventual?
+a) Realiza funciones permanentes de carácter técnico
+b) Realiza solo funciones de confianza o asesoramiento especial y su cese es libre
+c) Accede mediante oposición
+d) Puede ocupar plazas de funcionarios de carrera
+= b
+> Art. 12: nombramiento y cese libres; cesa cuando cesa la autoridad a la que presta la función; su condición no podrá constituir mérito para el acceso a la función pública o la promoción interna.
+@ TREBEP art. 12
+
+? ¿Cuál es la titulación exigida para el acceso a cuerpos del Subgrupo C1?
+a) Graduado en Educación Secundaria Obligatoria
+b) Bachiller o Técnico
+c) Técnico Superior
+d) Grado universitario
+= b
+> Art. 76: C1: Título de Bachiller o Técnico; C2: Graduado en ESO; Grupo B: Técnico Superior; Grupo A (A1 y A2): Grado.
+@ TREBEP art. 76
+
+? ¿Qué titulación se exige para el acceso al Grupo B de clasificación profesional?
+a) Bachiller
+b) Grado universitario
+c) Técnico Superior
+d) Graduado en ESO
+= c
+> Art. 76 TREBEP.
+@ TREBEP art. 76
+
+? ¿Cuál de los siguientes derechos individuales de los empleados públicos aparece en el artículo 14 del TREBEP?
+a) A la libre designación de su puesto
+b) A elegir su horario
+c) A ser retribuido según su antigüedad exclusivamente
+d) A la inamovilidad en la condición de funcionario de carrera
+= d
+> Art. 14.a. Otros: desempeño efectivo de funciones, progresión en la carrera, retribuciones, participar en los objetivos, defensa jurídica, formación continua, respeto a su intimidad, no discriminación…
+@ TREBEP art. 14
+
+? ¿Cuál de los siguientes NO es un principio ético o de conducta del Código de Conducta de los empleados públicos (art. 52)?
+a) Objetividad
+b) Ejemplaridad
+c) Austeridad
+d) Competitividad
+= d
+> Art. 52: objetividad, integridad, neutralidad, responsabilidad, imparcialidad, confidencialidad, dedicación al servicio público, transparencia, ejemplaridad, austeridad, accesibilidad, eficacia, honradez, promoción del entorno cultural y medioambiental y respeto a la igualdad entre mujeres y hombres.
+@ TREBEP art. 52
+
+? Según el artículo 54 del TREBEP, los empleados públicos obedecerán las instrucciones y órdenes profesionales de los superiores, salvo que:
+a) Sean contrarias a sus intereses personales
+b) Procedan de un superior no directo
+c) Se emitan verbalmente
+d) Constituyan una infracción manifiesta del ordenamiento jurídico
+= d
+> Art. 54.3: en ese caso las pondrán inmediatamente en conocimiento de los órganos de inspección procedentes.
+@ TREBEP art. 54.3
+
+? ¿Cuál de estos principios rige el acceso al empleo público según el art. 55 del TREBEP?
+a) Antigüedad y experiencia
+b) Igualdad, mérito y capacidad
+c) Libre designación
+d) Confianza y jerarquía
+= b
+> Art. 55.1: acceso de acuerdo con los principios constitucionales de igualdad, mérito y capacidad, además de publicidad, transparencia, imparcialidad, independencia, adecuación y agilidad.
+@ TREBEP art. 55
+
+? ¿Qué edad mínima se exige para participar en los procesos selectivos de empleo público según el art. 56 del TREBEP?
+a) 18 años
+b) 20 años
+c) 21 años
+d) 16 años
+= d
+> Art. 56.1.c: tener cumplidos dieciséis años y no exceder, en su caso, de la edad máxima de jubilación forzosa.
+@ TREBEP art. 56.1.c
+
+? ¿Quién NO puede formar parte de los órganos de selección según el artículo 60 del TREBEP?
+a) Personal de elección o designación política, funcionarios interinos y personal eventual
+b) Funcionarios de carrera
+c) Personal laboral fijo
+d) Catedráticos de universidad
+= a
+> Art. 60.2. Además, la pertenencia a los órganos de selección es siempre a título individual, sin representación de nadie (60.3).
+@ TREBEP art. 60
+
+? ¿Cuál es el orden de requisitos para adquirir la condición de funcionario de carrera (art. 62)?
+a) Nombramiento, superación del proceso selectivo, juramento y toma de posesión
+b) Toma de posesión, nombramiento y superación del proceso
+c) Superación del proceso, toma de posesión y nombramiento
+d) Superación del proceso selectivo, nombramiento, acto de acatamiento de la Constitución y toma de posesión
+= d
+> Art. 62.1: requisitos sucesivos: a) superación del proceso selectivo; b) nombramiento publicado en el diario oficial; c) acatamiento de la Constitución; d) toma de posesión en el plazo establecido.
+@ TREBEP art. 62.1
+
+? ¿Cuál de las siguientes NO es causa de pérdida de la condición de funcionario de carrera (art. 63)?
+a) La renuncia
+b) La jubilación total
+c) La excedencia voluntaria por interés particular
+d) La pérdida de la nacionalidad
+= c
+> Art. 63: renuncia, pérdida de la nacionalidad, jubilación total, sanción de separación del servicio firme y pena de inhabilitación absoluta o especial firme. La excedencia es una situación administrativa.
+@ TREBEP art. 63
+
+? ¿Cuándo no puede aceptarse la renuncia a la condición de funcionario?
+a) Si el funcionario tiene menos de cinco años de servicio
+b) Cuando el funcionario esté sujeto a expediente disciplinario o haya auto de procesamiento o apertura de juicio oral por algún delito
+c) Si no hay quien le sustituya
+d) Cuando se solicite verbalmente
+= b
+> Art. 64.2 TREBEP. La renuncia debe manifestarse por escrito (64.1) y no inhabilita para volver a ingresar (64.3).
+@ TREBEP art. 64
+
+? ¿Qué es la carrera horizontal (art. 16)?
+a) El cambio de cuerpo mediante oposición
+b) La progresión de grado, categoría, escalón u otros conceptos análogos sin necesidad de cambiar de puesto de trabajo
+c) El ascenso mediante libre designación
+d) El traslado a otra Administración
+= b
+> Art. 16.3.a. La carrera vertical es el ascenso en la estructura de puestos por los procedimientos de provisión.
+@ TREBEP art. 16
+
+? ¿Qué antigüedad mínima se exige para la promoción interna según el artículo 18 del TREBEP?
+a) 1 año de servicio activo en el Subgrupo inferior
+b) 2 años de servicio activo en el Subgrupo inferior
+c) 3 años de servicio activo
+d) 5 años de servicio activo
+= b
+> Art. 18.2: poseer los requisitos de ingreso, tener una antigüedad de, al menos, dos años de servicio activo en el inferior Subgrupo, y superar las correspondientes pruebas selectivas.
+@ TREBEP art. 18.2
+
+? Las retribuciones básicas de los funcionarios están integradas, según el art. 23, por:
+a) Sueldo, trienios y complemento de destino
+b) Únicamente el sueldo y los trienios
+c) Sueldo y complemento específico
+d) Sueldo, trienios y productividad
+= b
+> Art. 23: «única y exclusivamente» por el sueldo asignado a cada Subgrupo y los trienios (por cada tres años de servicio).
+@ TREBEP art. 23
+
+? ¿Cuántos días hábiles de vacaciones retribuidas corresponden por año natural a los funcionarios públicos (art. 50)?
+a) 20
+b) 24
+c) 30
+d) 22
+= d
+> Art. 50.1: veintidós días hábiles (o los que correspondan proporcionalmente); los sábados no se consideran días hábiles.
+@ TREBEP art. 50.1
+
+? ¿Cuántos días adicionales de vacaciones por antigüedad puede establecer como máximo cada Administración (DA 14.ª)?
+a) Dos
+b) Tres
+c) Seis
+d) Cuatro
+= d
+> Disposición adicional decimocuarta TREBEP: hasta un máximo de cuatro días adicionales en función del tiempo de servicios prestados.
+@ TREBEP DA 14.ª
+
+? ¿Qué duración tiene el permiso por fallecimiento de un familiar de primer grado si el suceso se produce en la misma localidad?
+a) 1 día hábil
+b) 2 días hábiles
+c) 5 días hábiles
+d) 3 días hábiles
+= d
+> Art. 48.a: tres días hábiles en la misma localidad y cinco en distinta localidad (cónyuge, pareja de hecho o familiar de primer grado). Para el segundo grado: dos y cuatro días.
+@ TREBEP art. 48.a
+
+? ¿Qué duración tiene el permiso por nacimiento de la madre biológica según el art. 49 del TREBEP?
+a) 16 semanas
+b) 19 semanas
+c) 17 semanas
+d) 26 semanas
+= b
+> Art. 49.a: diecinueve semanas (treinta y dos en el supuesto de monoparentalidad). Las seis primeras semanas posteriores al parto son obligatorias y a jornada completa.
+@ TREBEP art. 49.a
+
+? ¿Cuántas semanas de ese permiso por nacimiento son obligatorias, ininterrumpidas y se disfrutan inmediatamente después del parto?
+a) 6
+b) 4
+c) 8
+d) 10
+= a
+> Art. 49.a: seis semanas ininterrumpidas inmediatamente posteriores al parto, obligatorias y a jornada completa.
+@ TREBEP art. 49
+
+? ¿Cuál no es una situación administrativa de los funcionarios de carrera según el art. 85 del TREBEP?
+a) Comisión de servicios
+b) Servicio activo
+c) Servicios especiales
+d) Excedencia
+= a
+> Art. 85.1: servicio activo, servicios especiales, servicio en otras AAPP, excedencia y suspensión de funciones. La comisión de servicios es una forma de provisión temporal de puestos.
+@ TREBEP art. 85
+
+? Para obtener la excedencia voluntaria por interés particular, los funcionarios deben haber prestado servicios efectivos en cualquier Administración durante:
+a) 2 años inmediatamente anteriores
+b) 3 años
+c) 5 años
+d) 10 años
+= c
+> Art. 89.2: un periodo mínimo de cinco años inmediatamente anteriores (las leyes de desarrollo pueden reducirlo). En esa situación no se devengan retribuciones ni se computa el tiempo para trienios y ascensos.
+@ TREBEP art. 89.2
+
+? La suspensión de funciones determina la pérdida del puesto de trabajo cuando exceda de:
+a) 3 meses
+b) 6 meses
+c) 1 año
+d) 2 años
+= b
+> Art. 90.1: la suspensión determinará la pérdida del puesto de trabajo cuando exceda de seis meses.
+@ TREBEP art. 90.1
+
+? ¿Cuál es la duración máxima de la suspensión firme de funciones impuesta por sanción disciplinaria?
+a) 6 años
+b) 1 año
+c) 3 años
+d) 10 años
+= a
+> Art. 90.2: la suspensión firme por sanción disciplinaria no podrá exceder de seis años.
+@ TREBEP art. 90.2
+
+? ¿Qué sanción solo puede imponerse por la comisión de faltas muy graves?
+a) La separación del servicio de los funcionarios
+b) El apercibimiento
+c) El traslado forzoso
+d) El demérito
+= a
+> Art. 96.1.a: la separación del servicio (que en los interinos revoca el nombramiento) solo puede sancionar la comisión de faltas muy graves.
+@ TREBEP art. 96.1.a
+
+? ¿En qué plazo prescriben las faltas disciplinarias graves?
+a) 6 meses
+b) 1 año
+c) 3 años
+d) 2 años
+= d
+> Art. 97.1: faltas muy graves 3 años, graves 2 años y leves 6 meses.
+@ TREBEP art. 97
+
+? ¿En cuánto tiempo prescriben las sanciones impuestas por faltas leves?
+a) 6 meses
+b) 1 año
+c) 2 años
+d) 3 años
+= b
+> Art. 97.1: las sanciones por faltas muy graves prescriben a los 3 años, las graves a los 2 años y las leves al año.
+@ TREBEP art. 97
+
+? ¿Cuál de las siguientes conductas es una falta muy grave del art. 95.2 TREBEP?
+a) La falta de asistencia injustificada de un día
+b) La incorrección con el público
+c) El retraso en el cumplimiento de plazos
+d) La desobediencia abierta a las órdenes de un superior, salvo que constituyan infracción manifiesta del ordenamiento
+= d
+> Art. 95.2.i. Entre las muy graves figuran también el abandono del servicio, el acoso laboral, la discriminación, la publicación indebida de información reservada y el incumplimiento de normas de incompatibilidades.
+@ TREBEP art. 95.2
+
+? Según el artículo 98 del TREBEP, las faltas leves se sancionan mediante:
+a) Expediente contradictorio con instructor y secretario
+b) Resolución verbal del superior
+c) Procedimiento sumario con audiencia al interesado
+d) Procedimiento judicial
+= c
+> Art. 98.1: no se puede sancionar por faltas graves o muy graves sino mediante el procedimiento previamente establecido; las leves se sancionan por procedimiento sumario con audiencia al interesado.
+@ TREBEP art. 98.1
+
+? ¿Qué ley regula las incompatibilidades del personal al servicio de las Administraciones Públicas?
+a) Ley 19/2013, de 9 de diciembre
+b) Ley 3/2015, de 30 de marzo
+c) Ley 53/1984, de 26 de diciembre
+d) Ley 7/2007, de 12 de abril
+= c
+> La Ley 53/1984 es la ley de incompatibilidades del personal al servicio de las AAPP. La Ley 3/2015 regula el ejercicio del alto cargo de la AGE.
+@ Ley 53/1984
+
+? ¿Cuáles son los tres ejes de la Ley 19/2013?
+a) Publicidad pasiva, reutilización y archivo
+b) Transparencia, protección de datos y administración electrónica
+c) Publicidad activa, derecho de acceso a la información pública y buen gobierno
+d) Acceso, rendición de cuentas y control judicial
+= c
+> La ley regula la publicidad activa (Título I, cap. II), el derecho de acceso (cap. III) y el buen gobierno (Título II), y crea el Consejo de Transparencia y Buen Gobierno.
+@ Ley 19/2013
+
+? ¿A qué ayudas públicas se refiere el art. 3 de la Ley 19/2013 para extender las obligaciones de publicidad activa a entidades privadas?
+a) Más de 100.000 € al año o el 40 % de sus ingresos, siempre que alcancen 5.000 €
+b) Más de 10.000 € al año
+c) Más de 1 millón de euros
+d) Cualquier subvención
+= a
+> Art. 3.b: entidades privadas que perciban en un año ayudas o subvenciones públicas superiores a 100.000 euros o cuando al menos el 40 % de sus ingresos anuales tengan carácter de ayuda pública, siempre que alcancen un mínimo de 5.000 euros.
+@ Ley 19/2013 art. 3
+
+? ¿Qué sociedades mercantiles están sujetas a la Ley 19/2013 conforme a su artículo 2?
+a) Las que reciban cualquier subvención
+b) Las cotizadas
+c) Las constituidas por más de dos Administraciones
+d) Las que tengan participación pública superior al 50 %
+= d
+> Art. 2.1.g: sociedades mercantiles en cuyo capital social la participación, directa o indirecta, de las entidades del artículo sea superior al 50 por 100.
+@ Ley 19/2013 art. 2.1.g
+
+? Según el artículo 13 de la Ley 19/2013, ¿qué es información pública?
+a) Solo los documentos publicados en el BOE
+b) Los contenidos o documentos, cualquiera que sea su formato o soporte, que obren en poder de los sujetos obligados y hayan sido elaborados o adquiridos en el ejercicio de sus funciones
+c) La información que los ciudadanos soliciten por escrito
+d) La publicada en la sede electrónica
+= b
+> Art. 13 Ley 19/2013.
+@ Ley 19/2013 art. 13
+
+? ¿Quién tiene derecho a acceder a la información pública según el artículo 12 de la Ley 19/2013?
+a) Solo los ciudadanos españoles
+b) Solo los interesados en un procedimiento
+c) Todas las personas
+d) Solo los residentes en España
+= c
+> Art. 12: todas las personas tienen derecho a acceder a la información pública, en los términos previstos en el artículo 105.b) CE.
+@ Ley 19/2013 art. 12
+
+? ¿Cuál de los siguientes NO es un límite al derecho de acceso del artículo 14 de la Ley 19/2013?
+a) El derecho a la intimidad de los empleados públicos en todo caso
+b) La seguridad nacional
+c) La política económica y monetaria
+d) La protección del medio ambiente
+= a
+> El art. 14 enumera doce límites (seguridad nacional, defensa, relaciones exteriores, seguridad pública, ilícitos, igualdad de partes y tutela judicial, vigilancia/inspección/control, intereses económicos y comerciales, política económica y monetaria, secreto profesional y propiedad intelectual, confidencialidad en la toma de decisiones y medio ambiente). Los datos personales se regulan aparte (art. 15).
+@ Ley 19/2013 art. 14
+
+? ¿Es necesario motivar la solicitud de acceso a la información pública?
+a) Sí, siempre
+b) Solo si la información es sensible
+c) No, el solicitante no está obligado a motivarla
+d) Solo las personas jurídicas
+= c
+> Art. 17.3: el solicitante no está obligado a motivar su solicitud de acceso a la información, aunque podrá exponer los motivos.
+@ Ley 19/2013 art. 17.3
+
+? ¿Cuál de las siguientes es una causa de inadmisión de la solicitud de acceso (art. 18)?
+a) Que la solicitud sea por escrito
+b) Que el solicitante sea extranjero
+c) Que la información esté en curso de elaboración o de publicación general
+d) Que se solicite por vía electrónica
+= c
+> Art. 18.1.a. Otras: información auxiliar o de apoyo, que requiera reelaboración, órgano que no la posee, solicitudes manifiestamente repetitivas o abusivas.
+@ Ley 19/2013 art. 18
+
+? ¿Cuál es el plazo máximo para resolver una solicitud de acceso a la información pública?
+a) 10 días hábiles
+b) 15 días
+c) Un mes desde la recepción por el órgano competente, ampliable por otro mes
+d) Tres meses
+= c
+> Art. 20.1: un mes desde la recepción de la solicitud por el órgano competente, ampliable por otro mes por volumen o complejidad. Transcurrido el plazo sin resolución, la solicitud se entiende desestimada (silencio negativo, art. 20.4).
+@ Ley 19/2013 art. 20
+
+? ¿Qué sentido tiene el silencio administrativo en el procedimiento de acceso a la información pública?
+a) Positivo
+b) Depende de la Administración
+c) Negativo (se entiende desestimada)
+d) No existe silencio en este procedimiento
+= c
+> Art. 20.4 Ley 19/2013.
+@ Ley 19/2013 art. 20.4
+
+? La reclamación ante el Consejo de Transparencia y Buen Gobierno contra una resolución en materia de acceso es:
+a) Obligatoria y previa a la vía judicial
+b) Potestativa y previa a su impugnación en vía contencioso-administrativa
+c) Posterior a la vía contencioso-administrativa
+d) Solo para personas jurídicas
+= b
+> Art. 24.1: con carácter potestativo y previo a la impugnación contencioso-administrativa; se interpone en el plazo de un mes (24.2) y se resuelve en tres meses (24.4).
+@ Ley 19/2013 art. 24
+
+? ¿En qué plazo debe resolver el Consejo de Transparencia y Buen Gobierno una reclamación?
+a) 1 mes
+b) 2 meses
+c) 3 meses
+d) 6 meses
+= c
+> Art. 24.4: tres meses, transcurridos los cuales la reclamación se entiende desestimada.
+@ Ley 19/2013 art. 24.4
+
+? ¿Por cuánto tiempo es nombrado el Presidente del Consejo de Transparencia y Buen Gobierno?
+a) 5 años no renovables
+b) 3 años renovables
+c) 6 años renovables
+d) 9 años
+= a
+> Art. 37.1: período no renovable de cinco años, mediante Real Decreto, previa comparecencia ante la Comisión del Congreso, que debe refrendar el nombramiento por mayoría absoluta.
+@ Ley 19/2013 art. 37
+
+? ¿Cuál de los siguientes NO forma parte de la Comisión de Transparencia y Buen Gobierno?
+a) Un Diputado
+b) Un Senador
+c) Un representante de la Agencia Española de Protección de Datos
+d) Un representante del Consejo General del Poder Judicial
+= d
+> Art. 36.2: Presidente, un Diputado, un Senador, y representantes del Tribunal de Cuentas, del Defensor del Pueblo, de la AEPD, de la Secretaría de Estado de Administraciones Públicas y de la AIReF.
+@ Ley 19/2013 art. 36
+
+? ¿Qué sanción se impone en todo caso a quienes cometen una infracción muy grave de buen gobierno?
+a) Destitución del cargo y prohibición de ser nombrado alto cargo durante 5 a 10 años, además de las sanciones de las graves
+b) Solo amonestación
+c) Multa de 6.000 euros
+d) Suspensión de 6 meses
+= a
+> Art. 30.3 y 30.4 Ley 19/2013. Las leves se sancionan con amonestación; las graves, con la declaración del incumplimiento (publicada en el BOE) y la no percepción de indemnización por cese.
+@ Ley 19/2013 art. 30
+
+? ¿Cuándo fue aprobada la Agenda 2030 para el Desarrollo Sostenible por la Asamblea General de la ONU?
+a) Septiembre de 2000
+b) Septiembre de 2015
+c) Diciembre de 2012
+d) Junio de 2020
+= b
+> Se aprobó el 25 de septiembre de 2015 (Resolución 70/1). En septiembre de 2000 se aprobaron los Objetivos de Desarrollo del Milenio (ODM).
+@ ONU, Resolución 70/1
+
+? ¿Cuántos Objetivos de Desarrollo Sostenible (ODS) y cuántas metas contiene la Agenda 2030?
+a) 8 objetivos y 21 metas
+b) 17 objetivos y 169 metas
+c) 15 objetivos y 100 metas
+d) 20 objetivos y 200 metas
+= b
+> La Agenda 2030 consta de 17 ODS y 169 metas. Los ODM (2000-2015) eran 8 objetivos.
+@ Agenda 2030
+
+? ¿Qué «cinco P» articulan la Agenda 2030?
+a) Personas, Planeta, Prosperidad, Paz y Alianzas (Partnerships)
+b) Población, Producción, Política, Paz y Progreso
+c) Personas, Productividad, Participación, Planificación y Paz
+d) Planeta, Prosperidad, Presupuesto, Protección y Paz
+= a
+> Las cinco esferas de la Agenda 2030: Personas, Planeta, Prosperidad, Paz y Alianzas (en inglés, People, Planet, Prosperity, Peace, Partnership).
+@ Agenda 2030
+
+? ¿Qué número tiene el ODS «Igualdad de género»?
+a) 3
+b) 4
+c) 10
+d) 5
+= d
+> ODS 5: Igualdad de género. ODS 3: Salud y bienestar; ODS 4: Educación de calidad; ODS 10: Reducción de las desigualdades.
+@ Agenda 2030
+
+? ¿Cuál es el ODS 16?
+a) Acción por el clima
+b) Alianzas para lograr los objetivos
+c) Ciudades y comunidades sostenibles
+d) Paz, justicia e instituciones sólidas
+= d
+> ODS 13: Acción por el clima; ODS 16: Paz, justicia e instituciones sólidas; ODS 17: Alianzas para lograr los objetivos; ODS 11: Ciudades y comunidades sostenibles.
+@ Agenda 2030
+
+? ¿A qué se dedica el ODS 9?
+a) Hambre cero
+b) Energía asequible y no contaminante
+c) Industria, innovación e infraestructura
+d) Producción y consumo responsables
+= c
+> ODS 9: Industria, innovación e infraestructura. ODS 2: Hambre cero; ODS 7: Energía asequible y no contaminante; ODS 12: Producción y consumo responsables.
+@ Agenda 2030
+
+? ¿Qué instrumento aprobó el Gobierno de España en 2021 para implementar la Agenda 2030 hasta ese año?
+a) El Plan de Recuperación, Transformación y Resiliencia
+b) La Estrategia de Desarrollo Sostenible 2030
+c) La Agenda Digital 2025
+d) El Pacto de Estado contra el Cambio Climático
+= b
+> La Estrategia de Desarrollo Sostenible 2030 (Consejo de Ministros, 8 de junio de 2021) desarrolla el Plan de Acción para la implementación de la Agenda 2030 (2018).
+@ Estrategia de Desarrollo Sostenible 2030
