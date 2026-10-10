@@ -20,15 +20,22 @@ solas la primera vez que se accede tras una actualización.
 
 ## Instalación (una sola vez)
 
-Requisitos: nginx, PHP 8.3-FPM con `php8.3-sqlite3` (y `php8.3-mbstring`), y git.
+Requisitos: nginx, PHP-FPM y git. Con el instalador:
 
 ```sh
 git clone -b <rama> https://github.com/diego233l/TAI.git /opt/apps/tai
+sudo /opt/apps/tai/install.sh              # puerto 8082; otro: sudo PORT=8090 /opt/apps/tai/install.sh
+```
 
-# Datos fuera del repositorio, propiedad de www-data
+`install.sh` detecta el socket de PHP-FPM, instala `phpX.Y-sqlite3` si falta, crea
+`/var/lib/tai` (propiedad de `www-data`), añade su propio `conf.d/tai.conf`, valida con
+`nginx -t` y recarga. Es idempotente, rechaza un puerto ocupado y, si la configuración
+no es válida, deshace su cambio: no toca las demás webs del servidor.
+
+A mano, equivale a:
+
+```sh
 install -d -o www-data -g www-data -m 750 /var/lib/tai
-
-# Sitio nginx propio en el puerto 8082 (no toca otros sitios)
 ln -s /opt/apps/tai/nginx/tai.conf /etc/nginx/conf.d/tai.conf
 nginx -t && systemctl reload nginx
 ```
