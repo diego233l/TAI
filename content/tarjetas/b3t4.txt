@@ -1,0 +1,33 @@
+Objeto y clase :: Objeto: identidad, estado y comportamiento. Clase: plantilla de la que se instancian objetos.
+Pilares de la POO :: Abstracción, encapsulamiento, herencia y polimorfismo.
+Encapsulamiento :: Ocultar el estado y exponer una interfaz; modificadores public, protected, private; getters/setters.
+Herencia :: Simple (Java, C#) o múltiple (C++, Python). En Java, una clase solo extiende una clase pero implementa varias interfaces.
+Sobrecarga y sobrescritura :: Sobrecarga: mismo nombre, distinta firma; compilación. Sobrescritura: redefinir en la subclase con la misma firma; ejecución (enlace dinámico).
+Clase abstracta e interfaz :: Abstracta: no se instancia; puede tener métodos concretos y estado. Interfaz: contrato de métodos que implementan las clases.
+Agregación y composición :: Agregación: las partes viven sin el todo. Composición: las partes mueren con el todo.
+Herencia frente a composición :: «Es un» → herencia; «tiene un» → composición/agregación; se recomienda favorecer la composición.
+Acoplamiento y cohesión :: Buscar bajo acoplamiento y alta cohesión.
+SOLID :: S Single Responsibility; O Open/Closed; L Liskov; I Interface Segregation; D Dependency Inversion.
+Otros principios :: DRY (no repetirse), KISS, YAGNI, Ley de Demeter; inyección de dependencias e inversión de control.
+Ventajas e inconvenientes de la POO :: Reutilización, modularidad y mantenibilidad frente a curva de aprendizaje y riesgo de sobrediseño.
+Patrones GoF :: Gamma, Helm, Johnson y Vlissides (1994); 23 patrones: creacionales, estructurales y de comportamiento.
+Patrones creacionales :: Singleton, Factory Method, Abstract Factory, Builder, Prototype.
+Patrones estructurales :: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy.
+Patrones de comportamiento :: Observer, Strategy, Command, Iterator, Template Method, State, Chain of Responsibility, Mediator, Memento, Visitor, Interpreter.
+Singleton, Factory y Builder :: Singleton: una sola instancia global. Factory Method: delega la creación en subclases. Builder: construye objetos complejos paso a paso.
+Adapter, Facade, Decorator y Proxy :: Adapter: compatibiliza interfaces. Facade: interfaz simplificada. Decorator: añade responsabilidades dinámicamente. Proxy: sustituto que controla el acceso.
+Observer, Strategy, Command, Iterator :: Observer: notifica cambios (publicación/suscripción). Strategy: algoritmos intercambiables. Command: petición como objeto. Iterator: recorrido de colecciones.
+MVC :: Modelo (datos y lógica), Vista (presentación) y Controlador (gestiona la interacción).
+DAO y DTO :: DAO: encapsula el acceso a datos. DTO: transporta datos entre capas.
+UML :: Lenguaje de modelado (no metodología) del OMG; ISO/IEC 19505; UML 2.x tiene 14 diagramas.
+Diagramas estructurales UML :: Clases, objetos, componentes, despliegue, paquetes, estructura compuesta y perfiles.
+Diagramas de comportamiento UML :: Casos de uso, actividad, máquina de estados, secuencia, comunicación, temporización y vista de interacción.
+Visibilidad en UML :: + público; − privado; # protegido; ~ paquete.
+Relaciones en UML :: Asociación (línea), agregación (rombo vacío), composición (rombo relleno), generalización (triángulo vacío), realización (discontinua con triángulo vacío), dependencia (flecha discontinua).
+Multiplicidades :: 1, 0..1, * (0..*), 1..*, n..m.
+Casos de uso :: Actores y casos de uso dentro del límite del sistema; «include» siempre, «extend» opcional.
+Diagrama de secuencia :: Mensajes ordenados en el tiempo entre líneas de vida; fragmentos alt, opt, loop, par.
+Diagrama de actividad :: Flujo de trabajo: decisión/fusión, fork/join, calles (swimlanes).
+Diagrama de estados :: Transiciones con evento [guarda] / acción.
+Diagrama de despliegue :: Nodos físicos y artefactos desplegados en ellos.
+PlantUML :: Genera diagramas UML a partir de texto.

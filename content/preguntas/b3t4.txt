@@ -1,0 +1,478 @@
+// Tema 18 (B3·T4) · Diseño y programación orientada a objetos. Patrones de diseño y UML
+
+? ¿Cuál de los siguientes NO es uno de los cuatro pilares de la programación orientada a objetos?
+a) Normalización
+b) Abstracción
+c) Encapsulamiento
+d) Polimorfismo
+= a
+> Los pilares son abstracción, encapsulamiento, herencia y polimorfismo. La normalización pertenece al diseño de bases de datos.
+@ POO
+
+? ¿Qué es una clase en POO?
+a) Una instancia concreta de un objeto
+b) Una plantilla que define atributos y métodos de un conjunto de objetos
+c) Un método especial
+d) Una variable global
+= b
+> Un objeto es una instancia de una clase.
+@ POO
+
+? ¿Qué es el encapsulamiento?
+a) Heredar atributos de otra clase
+b) Sobrecargar un método
+c) Crear instancias de una clase
+d) Ocultar el estado interno de un objeto y exponer una interfaz pública controlada
+= d
+> Se implementa con modificadores de acceso (private, protected, public) y métodos de acceso.
+@ POO
+
+? ¿Qué modificador de acceso impide que una subclase acceda directamente a un atributo de la superclase, pero lo permite dentro de la propia clase?
+a) public
+b) protected
+c) static
+d) private
+= d
+> private limita el acceso a la propia clase; protected lo extiende a subclases (y al paquete en Java).
+@ POO
+
+? La sobrecarga (overloading) de métodos consiste en:
+a) Definir varios métodos con el mismo nombre y distinta lista de parámetros
+b) Redefinir en la subclase un método heredado con la misma firma
+c) Heredar de varias clases
+d) Declarar un método como estático
+= a
+> Se resuelve en tiempo de compilación.
+@ Polimorfismo
+
+? La sobrescritura (overriding) de métodos consiste en:
+a) Definir métodos con el mismo nombre y distinto número de parámetros
+b) Eliminar un método heredado
+c) Declarar métodos privados
+d) Redefinir en la subclase un método de la superclase con la misma firma
+= d
+> Se resuelve en tiempo de ejecución mediante enlace dinámico.
+@ Polimorfismo
+
+? ¿Cuándo se resuelve el polimorfismo por sobrescritura?
+a) En tiempo de compilación
+b) En el enlazado
+c) En el diseño
+d) En tiempo de ejecución (enlace dinámico)
+= d
+> La máquina virtual selecciona la implementación según la clase real del objeto.
+@ Polimorfismo
+
+? ¿Puede una clase en Java heredar de dos clases?
+a) No, Java solo permite herencia simple de clases (aunque puede implementar varias interfaces)
+b) Sí, siempre
+c) Sí, pero solo si son abstractas
+d) Solo en Java 8
+= a
+> C++ y Python sí admiten herencia múltiple de clases.
+@ Herencia
+
+? ¿Qué característica tiene una clase abstracta?
+a) Debe tener todos sus métodos abstractos
+b) No puede tener atributos
+c) No puede instanciarse directamente
+d) No puede ser heredada
+= c
+> Puede combinar métodos abstractos y concretos.
+@ Clases abstractas
+
+? ¿Qué diferencia fundamental hay entre una interfaz y una clase abstracta (clásicamente)?
+a) No hay diferencia
+b) La interfaz puede instanciarse
+c) La interfaz define un contrato de métodos sin estado de instancia; una clase abstracta puede tener atributos y código
+d) La clase abstracta no admite métodos
+= c
+> Una clase puede implementar varias interfaces, pero heredar de una sola clase abstracta (en Java).
+@ Interfaces
+
+? La relación «un coche tiene un motor, y el motor no existe sin el coche» es una:
+a) Agregación
+b) Herencia
+c) Dependencia
+d) Composición
+= d
+> En la composición las partes dependen del ciclo de vida del todo.
+@ Relaciones
+
+? En una relación de agregación:
+a) Las partes no pueden existir independientemente del todo
+b) No hay relación todo-parte
+c) Es lo mismo que herencia
+d) Las partes pueden existir de forma independiente del todo
+= d
+> Ejemplo: un departamento agrega empleados; los empleados siguen existiendo si el departamento desaparece.
+@ Relaciones
+
+? ¿Qué pregunta ayuda a decidir entre herencia y composición?
+a) ¿Es un? (herencia) frente a ¿tiene un? (composición)
+b) ¿Es rápido?
+c) ¿Es privado?
+d) ¿Es estático?
+= a
+> Un perro «es un» animal; un coche «tiene un» motor.
+@ Relaciones
+
+? ¿Qué se persigue con «bajo acoplamiento y alta cohesión»?
+a) Módulos muy dependientes entre sí
+b) Clases grandes con muchas responsabilidades
+c) Eliminar las interfaces
+d) Módulos independientes entre sí y con una única responsabilidad bien definida
+= d
+> Facilita el mantenimiento y la reutilización.
+@ Diseño
+
+? ¿Qué principio SOLID afirma que una clase debe tener una única razón para cambiar?
+a) Single Responsibility
+b) Open/Closed
+c) Liskov Substitution
+d) Dependency Inversion
+= a
+> S: una clase, una responsabilidad.
+@ SOLID
+
+? ¿Qué enuncia el principio abierto/cerrado (Open/Closed)?
+a) Las entidades software deben estar abiertas a la extensión y cerradas a la modificación
+b) Las clases deben estar siempre abiertas
+c) Los ficheros deben cerrarse siempre
+d) No se pueden extender las clases
+= a
+> Se consigue con abstracciones y polimorfismo.
+@ SOLID
+
+? El principio de sustitución de Liskov establece que:
+a) Las clases deben tener un solo método
+b) Debe usarse siempre herencia múltiple
+c) Los métodos deben ser estáticos
+d) Los objetos de un subtipo deben poder reemplazar a los de su tipo base sin alterar el correcto funcionamiento
+= d
+> Un cuadrado que hereda de rectángulo y rompe el comportamiento esperado viola LSP.
+@ SOLID
+
+? ¿A qué letra de SOLID corresponde «depender de abstracciones y no de concreciones»?
+a) D
+b) S
+c) O
+d) I
+= a
+> Dependency Inversion Principle.
+@ SOLID
+
+? ¿Qué mide el término «cohesión» en un módulo?
+a) El grado de dependencia con otros módulos
+b) El tamaño en líneas de código
+c) El tiempo de ejecución
+d) El grado en que los elementos del módulo están relacionados entre sí y con su propósito
+= d
+> Una alta cohesión es deseable; el acoplamiento debe ser bajo.
+@ Diseño
+
+? ¿Quiénes son los autores del libro «Design Patterns» (GoF)?
+a) Booch, Rumbaugh y Jacobson
+b) Kernighan y Ritchie
+c) Knuth y Dijkstra
+d) Gamma, Helm, Johnson y Vlissides
+= d
+> La «Banda de los Cuatro» publicó en 1994 el catálogo de 23 patrones.
+@ Patrones
+
+? ¿Cuántos patrones de diseño recoge el catálogo clásico GoF?
+a) 12
+b) 23
+c) 30
+d) 14
+= b
+> Se agrupan en creacionales, estructurales y de comportamiento.
+@ Patrones
+
+? ¿Cuál de los siguientes es un patrón creacional?
+a) Observer
+b) Singleton
+c) Adapter
+d) Strategy
+= b
+> Los creacionales son: Singleton, Factory Method, Abstract Factory, Builder y Prototype.
+@ Patrones
+
+? ¿Cuál de los siguientes es un patrón estructural?
+a) Observer
+b) Singleton
+c) Iterator
+d) Decorator
+= d
+> Estructurales: Adapter, Bridge, Composite, Decorator, Facade, Flyweight y Proxy.
+@ Patrones
+
+? ¿Cuál de los siguientes es un patrón de comportamiento?
+a) Facade
+b) Builder
+c) Proxy
+d) Strategy
+= d
+> De comportamiento: Observer, Strategy, Command, Iterator, Template Method, State, etc.
+@ Patrones
+
+? El patrón Singleton garantiza que:
+a) Una clase pueda tener varias instancias
+b) Se cree un objeto copiando otro
+c) Una clase tenga una única instancia con un punto de acceso global
+d) Se notifiquen los cambios a varios objetos
+= c
+> Se usa en configuraciones o pools; su abuso puede dificultar las pruebas.
+@ Patrones
+
+? El patrón Observer sirve para:
+a) Crear objetos complejos paso a paso
+b) Notificar automáticamente a varios objetos cuando cambia el estado de otro
+c) Adaptar interfaces incompatibles
+d) Simplificar un subsistema
+= b
+> También se conoce como publicación/suscripción.
+@ Patrones
+
+? ¿Qué patrón proporciona una interfaz simplificada a un conjunto de interfaces de un subsistema?
+a) Facade
+b) Adapter
+c) Decorator
+d) Composite
+= a
+> Facade reduce la complejidad de uso de un subsistema.
+@ Patrones
+
+? ¿Qué patrón permite que dos interfaces incompatibles trabajen juntas?
+a) Facade
+b) Observer
+c) Adapter
+d) Prototype
+= c
+> Adapter convierte la interfaz de una clase en la que espera el cliente.
+@ Patrones
+
+? ¿Qué patrón encapsula una familia de algoritmos intercambiables?
+a) Strategy
+b) Singleton
+c) Composite
+d) Prototype
+= a
+> Permite variar el algoritmo independientemente del cliente.
+@ Patrones
+
+? ¿Qué patrón añade responsabilidades a un objeto dinámicamente, como alternativa a la herencia?
+a) Flyweight
+b) Mediator
+c) Memento
+d) Decorator
+= d
+> Un decorador envuelve al objeto y mantiene su misma interfaz.
+@ Patrones
+
+? ¿Qué patrón se utiliza para construir objetos complejos paso a paso?
+a) Proxy
+b) State
+c) Builder
+d) Visitor
+= c
+> Separa la construcción de la representación.
+@ Patrones
+
+? En el patrón MVC, ¿qué componente contiene los datos y la lógica de negocio?
+a) Vista
+b) Controlador
+c) Servicio de presentación
+d) Modelo
+= d
+> La Vista presenta la información; el Controlador gestiona la interacción.
+@ MVC
+
+? ¿Qué patrón de acceso a datos encapsula la lógica de acceso a una fuente de datos persistente?
+a) DTO
+b) Singleton
+c) Facade
+d) DAO (Data Access Object)
+= d
+> DTO es un objeto que transporta datos entre capas sin lógica.
+@ Patrones arquitectónicos
+
+? ¿Qué es la inyección de dependencias?
+a) Entregar a un objeto sus dependencias desde fuera en lugar de que las cree él mismo
+b) Insertar código malicioso
+c) Heredar de varias clases
+d) Un tipo de bucle
+= a
+> Implementa la inversión de control y facilita las pruebas.
+@ Diseño
+
+? ¿Qué organización mantiene el estándar UML?
+a) W3C
+b) IETF
+c) OMG (Object Management Group)
+d) ISO exclusivamente sin OMG
+= c
+> UML está estandarizado también como ISO/IEC 19505.
+@ UML
+
+? ¿Cuántos tipos de diagramas define UML 2.x?
+a) 9
+b) 14
+c) 20
+d) 7
+= b
+> 7 estructurales y 7 de comportamiento.
+@ UML
+
+? ¿Cuál de los siguientes es un diagrama de comportamiento en UML?
+a) Diagrama de secuencia
+b) Diagrama de clases
+c) Diagrama de despliegue
+d) Diagrama de componentes
+= a
+> Los de clases, objetos, componentes y despliegue son estructurales.
+@ UML
+
+? ¿Cuál de los siguientes es un diagrama estructural en UML?
+a) Diagrama de clases
+b) Diagrama de actividad
+c) Diagrama de casos de uso
+d) Diagrama de estados
+= a
+> Casos de uso, actividad, estados y secuencia son de comportamiento.
+@ UML
+
+? En un diagrama de clases, ¿qué símbolo indica visibilidad privada?
+a) +
+b) #
+c) ~
+d) −
+= d
+> + público; − privado; # protegido; ~ paquete.
+@ UML
+
+? ¿Qué notación UML representa la composición?
+a) Línea con rombo vacío
+b) Flecha discontinua
+c) Línea con triángulo vacío
+d) Línea con rombo relleno en el extremo del todo
+= d
+> El rombo vacío es la agregación; el triángulo vacío, la generalización.
+@ UML
+
+? ¿Cómo se representa la herencia (generalización) en un diagrama de clases UML?
+a) Línea discontinua con rombo
+b) Flecha discontinua simple
+c) Línea con rombo relleno
+d) Línea continua con triángulo vacío hacia la superclase
+= d
+> La realización de una interfaz usa línea discontinua con triángulo vacío.
+@ UML
+
+? ¿Qué notación indica la realización (implementación) de una interfaz?
+a) Línea continua con rombo vacío
+b) Línea discontinua con triángulo vacío
+c) Flecha continua simple
+d) Línea continua con rombo relleno
+= b
+> Es la relación entre una clase y la interfaz que implementa.
+@ UML
+
+? ¿Qué multiplicidad UML equivale a «uno o más»?
+a) 0..1
+b) 0..*
+c) 1..*
+d) 1
+= c
+> * o 0..* significa cero o más.
+@ UML
+
+? En un diagrama de casos de uso, la relación «include» indica que:
+a) El comportamiento es opcional
+b) Un actor hereda de otro
+c) El caso de uso base incorpora siempre el comportamiento del caso incluido
+d) El sistema se despliega en otro nodo
+= c
+> «extend» representa comportamiento opcional o condicional.
+@ UML
+
+? ¿Cuál es la relación que modela comportamiento opcional entre casos de uso?
+a) «include»
+b) Agregación
+c) «extend»
+d) Composición
+= c
+> La flecha va del caso que extiende hacia el caso base.
+@ UML
+
+? En un diagrama de casos de uso, los actores:
+a) Son clases internas del sistema
+b) Son funciones del sistema
+c) Son tablas de la base de datos
+d) Son entidades externas que interactúan con el sistema
+= d
+> Pueden ser personas u otros sistemas.
+@ UML
+
+? ¿Qué muestra un diagrama de secuencia?
+a) La estructura de clases del sistema
+b) Los nodos físicos de despliegue
+c) Los estados internos de un objeto
+d) La interacción ordenada en el tiempo de mensajes entre objetos
+= d
+> Se dibuja con líneas de vida verticales y mensajes horizontales.
+@ UML
+
+? ¿Qué fragmento combinado de un diagrama de secuencia representa una alternativa «si… si no»?
+a) alt
+b) loop
+c) par
+d) opt solo
+= a
+> opt es opcional (un solo caso); loop, repetición; par, ejecución en paralelo.
+@ UML
+
+? ¿Qué elementos se utilizan en un diagrama de actividad para representar paralelismo?
+a) Rombos de decisión únicamente
+b) Calles
+c) Estados
+d) Barras de bifurcación y unión (fork/join)
+= d
+> Los rombos representan decisión/fusión; las calles (swimlanes) asignan responsables.
+@ UML
+
+? En un diagrama de estados, una transición se etiqueta con:
+a) evento [guarda] / acción
+b) nombre de clase
+c) multiplicidad
+d) visibilidad
+= a
+> La guarda es una condición booleana que debe cumplirse para que la transición se dispare.
+@ UML
+
+? ¿Qué muestra un diagrama de despliegue?
+a) La asignación de artefactos software a nodos físicos o de ejecución
+b) La secuencia de mensajes
+c) Los casos de uso
+d) Las transiciones de estado
+= a
+> Es un diagrama estructural que describe la arquitectura física.
+@ UML
+
+? ¿Qué herramienta permite generar diagramas UML a partir de descripciones en texto?
+a) Wireshark
+b) PlantUML
+c) GIMP
+d) Jenkins
+= b
+> Facilita el control de versiones de los diagramas.
+@ UML
+
+? UML es:
+a) Una metodología de desarrollo
+b) Un lenguaje de programación
+c) Un lenguaje de modelado, no una metodología
+d) Un sistema operativo
+= c
+> Especifica una notación; el proceso lo definen metodologías como RUP o Scrum.
+@ UML
