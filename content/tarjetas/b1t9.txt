@@ -1,0 +1,63 @@
+Canales de asistencia (art. 4 RD 203/2021) :: Presencial, portales y sedes electrónicas, redes sociales, telefónico, correo electrónico y otros que se establezcan.
+Portal de internet (art. 39 Ley 40/2015) :: Punto de acceso electrónico de una Administración a la información y, en su caso, a la sede. Dominio .gob.es en el ámbito estatal.
+Creación de portales estatales (art. 6 RD 203/2021) :: Orden del ministro o resolución del órgano superior; informe favorable de la CMAD; referenciados en el PAGe de la AGE.
+PAGe (art. 7 RD 203/2021) :: Punto de Acceso General electrónico: cada Administración tiene uno; su sede da acceso a todas las sedes y sedes asociadas y puede tener área personalizada.
+PAGe de la AGE :: administracion.gob.es. Aloja la DEHú; permite comprobar documentos por CSV; puede interoperar con portales de la UE.
+Carpeta Ciudadana (art. 8 RD 203/2021) :: Área personalizada del interesado ante el sector público estatal. Acceden interesado, representantes legales y apoderado general inscrito en el REA.
+Funciones de la Carpeta Ciudadana :: Seguimiento de procedimientos, comunicaciones y notificaciones, qué datos suyos tiene el sector público estatal y certificaciones administrativas.
+Sede electrónica (art. 38 Ley 40/2015) :: Dirección electrónica cuya titularidad es de una Administración u organismo público; el titular responde de integridad, veracidad y actualización.
+Sede electrónica asociada (art. 10 RD 203/2021) :: Se crea por razones técnicas y organizativas; tiene la consideración de sede electrónica a todos los efectos.
+Publicidad del acto de creación de una sede :: Boletín oficial de la Administración titular (provincial en las entidades locales) y directorio del PAGe.
+Creación de sedes estatales (art. 10.3) :: Orden del titular del Departamento (o resolución del organismo) con informe previo favorable de los ministerios de Función Pública y Transformación Digital y memoria justificativa y económica.
+Identificación de sedes (art. 18) :: Certificado cualificado de autenticación de sitio web; en el ámbito estatal, dominio .gob.es.
+Principios de las sedes (art. 38.3 Ley 40/2015) :: Transparencia, publicidad, responsabilidad, calidad, seguridad, disponibilidad, accesibilidad, neutralidad e interoperabilidad.
+Contenido mínimo de la sede (art. 11.1) :: Identificación y acto de creación, información de uso, sistemas de identificación y firma, normativa del registro, fecha y hora oficial, días inhábiles, incidencias y ampliación de plazos, trámites y actuaciones automatizadas.
+Servicios mínimos de la sede (art. 11.2) :: Acceso a trámites con plazos máximos, sugerencias y quejas, accesibilidad, verificación de certificados y sellos, comprobación con CSV, modelos y presentación masiva, directorio de oficinas de registro.
+Códigos de identificación de órganos (art. 11.3) :: Cada sede mantiene el listado actualizado de códigos de órganos, centros y unidades (DIR3).
+Sello electrónico de la Administración (art. 40 Ley 40/2015) :: Certificado cualificado con NIF y denominación del órgano; la relación de sellos debe ser pública y accesible por medios electrónicos.
+Firma en la actuación automatizada (art. 42) :: Sello electrónico del órgano o código seguro de verificación (CSV).
+CSV (art. 21 RD 203/2021) :: Código único por documento, vinculado al órgano y al firmante; verificable en la sede de forma directa y gratuita; cualquier cambio genera un nuevo CSV.
+CSV en el ámbito estatal :: Resolución de la Subsecretaría o de la Presidencia/Dirección del organismo, con informe previo del CCN y de la SGAD; verificación disponible al menos 5 años.
+Firma del personal (art. 43 Ley 40/2015) :: Firma del titular del órgano o del empleado público con certificado cualificado de empleado público; el NIP se usa por seguridad pública, defensa o información clasificada.
+Entornos cerrados de comunicación (art. 44) :: Documentos válidos a efectos de autenticación de emisores y receptores; si son Administraciones distintas, mediante convenio.
+Sello superpuesto (art. 45.2) :: Sello cualificado añadido a firmas no basadas en certificado cualificado para facilitar la interoperabilidad.
+Política de firma y certificados estatal (art. 17) :: Aprobada por resolución de la Secretaría de Estado competente en digitalización; publicada en el BOE y en la sede del PAGe.
+Plataforma de verificación de certificados (art. 16) :: De la AGE; comprueba vigencia y contenido de certificados cualificados; gratuita para el sector público (@firma).
+Identificación de interesados (art. 9.2 LPAC; art. 26 RD) :: Certificado cualificado de firma, certificado cualificado de sello y clave concertada u otros sistemas con registro previo.
+Autorización de claves concertadas (art. 28) :: SGAD (hoy la Agencia). Solo puede denegarse por seguridad pública, previo informe vinculante de la Secretaría de Estado de Seguridad.
+Certificados siempre disponibles (art. 26.2) :: Aunque se admita clave concertada, debe poder usarse un certificado cualificado de firma o de sello en todo procedimiento.
+Atributos mínimos del certificado de persona física (art. 27) :: Nombre y apellidos y número de DNI, NIE, NIC o NIF.
+Funcionario habilitado (art. 30 RD 203/2021) :: Identifica o firma por el interesado no obligado; requiere identificación y consentimiento expreso por escrito; entrega copia del consentimiento.
+Registro de Funcionarios Habilitados (art. 31) :: Funcionarios habilitados para identificar y firmar por interesados, para expedir copias auténticas y los de las oficinas de asistencia en materia de registros.
+REA de la AGE (art. 33) :: Inscribe apoderamientos generales apud acta y poderes del art. 6.4.b y c; consta el bastanteo; no es público; los registros particulares no admiten poderes generales.
+Registro Electrónico General (art. 37) :: Uno por Administración; asiento de todo documento presentado o recibido; organismos con registro propio interoperable.
+Registro Electrónico General de la AGE (art. 38) :: Conjunto agregado de asientos; plena eficacia y validez para todas las Administraciones.
+Oficinas de asistencia en materia de registros (art. 40) :: Órgano administrativo; digitalizan, anotan, dan recibo, expiden copias electrónicas auténticas, identifican y firman por el interesado no obligado y notifican por comparecencia espontánea.
+Documentos presentados en papel (art. 39.5) :: Se devuelven al interesado inmediatamente tras su digitalización.
+Documentos que exceden la capacidad del SIR :: Se pone a disposición en un repositorio de intercambio de ficheros público (art. 39.4).
+SIR :: Sistema de Interconexión de Registros: intercambio de asientos registrales entre Administraciones (SICRES 3.0).
+GEISER y ORVE :: GEISER: aplicación común de registro de la AGE conectada a SIR. ORVE: Oficina de Registro Virtual para enviar asientos digitalizados a otra Administración.
+Transmisiones de datos (art. 61 RD 203/2021) :: Las consultas a plataformas de intermediación son certificados administrativos; se identifican datos, titulares y finalidad; responde el cesionario.
+PID :: Plataforma de Intermediación de Datos de la AGE; conecta con el sistema técnico europeo del Reglamento (UE) 2018/1724.
+Remisión de expedientes (art. 63) :: Basta poner a disposición el localizador del expediente electrónico a través de un nodo de interoperabilidad.
+Comunicaciones en la AGE (art. 57) :: Obligatoriamente por medios electrónicos, a través del Registro Electrónico General o con constancia de recepción.
+Adhesión a plataformas de la AGE (art. 65) :: Mediante instrumento de adhesión; no cambia la titularidad de las actuaciones; en CCAA y entidades locales es voluntaria pero la no adhesión se justifica por eficiencia.
+Reutilización (arts. 157-158 Ley 40/2015) :: Ceder aplicaciones a quien las solicite; directorios de aplicaciones; consultar el directorio general de la AGE antes de adquirir, desarrollar o mantener.
+Cl@ve :: Plataforma común del sector público estatal de identificación, autenticación y firma con claves concertadas. Acuerdo de 19-9-2014 publicado por la Orden PRE/1838/2014.
+Modalidades de Cl@ve :: Cl@ve ocasional (validez muy limitada), Cl@ve permanente (validez duradera no ilimitada) y Cl@ve Firma (certificados centralizados en la nube).
+Participantes en Cl@ve :: AEAT, órgano TIC de la AGE, Gerencia de Informática de la Seguridad Social, Dirección General de la Policía y FNMT-RCM.
+@firma, VALIDe y AutoFirma :: Plataforma de validación de firmas y certificados, su servicio web y la aplicación de firma de la AGE.
+Port@firmas :: Gestión de circuitos de firma de documentos en la AGE.
+INSIDE :: Infraestructura y Sistemas de Documentos Electrónicos: documentos y expedientes electrónicos.
+FACe :: Punto General de Entrada de Facturas Electrónicas de la AGE (Ley 25/2013); formato Facturae con firma avanzada.
+Obligados a factura electrónica (art. 4 Ley 25/2013) :: S.A., S.L., no residentes sin nacionalidad española, establecimientos permanentes, UTE, AIE y determinados fondos; se pueden excluir facturas de hasta 5.000 euros.
+Red SARA :: Red de comunicaciones de las Administraciones Públicas españolas (conecta con la red europea sTESTA).
+RD 1125/2024 :: Gobernanza TIC de la Administración del Estado; deroga el RD 806/2014. CETIC, AEAD, CMAD, Comité de Dirección TIC y unidades TIC.
+CETIC :: Comisión de Estrategia TIC: líneas estratégicas, propuesta de Estrategia TIC, servicios transversales y proyectos de interés prioritario; se reúne al menos trimestralmente.
+AEAD :: Agencia Estatal de Administración Digital (Estatuto RD 1118/2024): coordina funcionalmente las unidades TIC y gestiona el Catálogo de Medios y Servicios Comunes.
+CMAD :: Comisión Ministerial de Administración Digital: una por ministerio, presidida por el Subsecretario.
+Servicios transversales (art. 9 RD 1125/2024) :: Declarados por la CETIC; uso obligatorio y sustitutivo de los medios particulares.
+RD 1112/2018 :: Accesibilidad de webs y apps del sector público (Directiva (UE) 2016/2102): contenidos perceptibles, operables, comprensibles y robustos.
+Quejas de accesibilidad (art. 12 RD 1112/2018) :: Respuesta en 20 días hábiles; reclamación ante la Unidad responsable de accesibilidad.
+Declaración de accesibilidad (art. 15) :: Se actualiza al menos una vez al año; enlace «Accesibilidad» desde todas las páginas.
+Plan de Digitalización de las AAPP 2021-2025 :: Tres ejes: transformación digital de la AGE, proyectos de alto impacto y modernización del Ministerio de Política Territorial y Función Pública con apoyo a CCAA y entidades locales.

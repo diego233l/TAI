@@ -5,7 +5,7 @@ Obligados a relacionarse electrónicamente (art. 14.2 LPAC) :: Personas jurídic
 Personas físicas (art. 14.1) :: Eligen en todo momento medio electrónico o no (salvo obligadas).
 Identificación electrónica (art. 9.2) :: Certificados cualificados de firma y de sello, firma avanzada y cualquier otro sistema válido (clave concertada, p. ej. Cl@ve).
 Firma obligatoria (art. 11.2) :: Solicitudes, declaraciones responsables y comunicaciones, recursos, desistimientos y renuncias.
-Registro Electrónico de Apoderamientos (REA) :: Apoderamientos generales «apud acta» (art. 6.4.a) y poderes especiales (6.4.b).
+Registro Electrónico de Apoderamientos (REA) :: Poderes inscribibles (art. 6.4): a) general, b) ante una Administración u organismo concreto, c) para trámites determinados. Validez máxima 5 años.
 Registro Electrónico General (art. 16.1) :: Uno por Administración; asiento de todo documento presentado o recibido.
 Lugares de presentación (art. 16.4) :: Registro electrónico, Correos, representaciones diplomáticas/consulares, oficinas de asistencia en materia de registros y otros que establezcan las normas.
 Digitalización (art. 16.5) :: Los documentos presentados en papel se digitalizan en la oficina de asistencia y se devuelven los originales.

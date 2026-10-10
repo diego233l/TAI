@@ -1,0 +1,766 @@
+// Tema 9 · Sedes, canales, puntos de acceso, identificación y autenticación. Infraestructuras y servicios comunes
+
+? Según el artículo 4 del Real Decreto 203/2021, ¿cuál de los siguientes es un canal de asistencia para el acceso a los servicios electrónicos expresamente previsto?
+a) Redes sociales
+b) Burofax certificado
+c) Telegrama oficial
+d) Fax con acuse de recibo
+= a
+> El art. 4 enumera: presencial (oficinas de asistencia), portales de internet y sedes electrónicas, redes sociales, telefónico, correo electrónico y cualquier otro que se establezca conforme al art. 12 LPAC.
+@ RD 203/2021 art. 4
+
+? Según el artículo 39 de la Ley 40/2015, un portal de internet es:
+a) El conjunto de aplicaciones de gestión interna de una Administración
+b) La dirección electrónica en la que se realizan todos los trámites con firma electrónica
+c) El registro electrónico de apoderamientos de una Administración
+d) El punto de acceso electrónico cuya titularidad corresponde a una Administración u organismo y que permite el acceso por internet a la información y, en su caso, a la sede electrónica
+= d
+> Art. 39 Ley 40/2015 y art. 5 RD 203/2021. Los trámites con identificación o firma se realizan en la sede electrónica, no en el portal.
+@ Ley 40/2015 art. 39
+
+? En el ámbito estatal, la dirección electrónica de un portal de internet incluirá el nombre de dominio de segundo nivel:
+a) .gob.es
+b) .es
+c) .admin.es
+d) .gov.es
+= a
+> Art. 6.2 RD 203/2021. Las sedes electrónicas estatales también usan el dominio .gob.es (art. 18.2).
+@ RD 203/2021 art. 6
+
+? La creación de un portal de internet en la Administración General del Estado requiere, según el RD 203/2021:
+a) Informe favorable de la Comisión Ministerial de Administración Digital respectiva
+b) Acuerdo del Consejo de Ministros en todo caso
+c) Autorización del Defensor del Pueblo
+d) Informe de la Agencia Española de Protección de Datos
+= a
+> Art. 6.1: orden del ministro o resolución del órgano superior, con informe favorable de la CMAD y comunicación posterior a los ministerios competentes en Función Pública y Transformación Digital.
+@ RD 203/2021 art. 6
+
+? ¿Qué Administraciones deben contar con un Punto de Acceso General electrónico (PAGe) según el artículo 7 del RD 203/2021?
+a) Solo la Administración General del Estado
+b) La Administración General del Estado y las Comunidades Autónomas
+c) Únicamente las Administraciones con más de 20.000 habitantes
+d) Todas las Administraciones Públicas
+= d
+> Art. 7.1: «Las Administraciones Públicas contarán con un Punto de Acceso General electrónico (PAGe)». Cada una tiene el suyo.
+@ RD 203/2021 art. 7
+
+? El PAGe dispondrá de una sede electrónica a través de la cual se podrá acceder a:
+a) Solo a las sedes de los organismos públicos
+b) Todas las sedes electrónicas y sedes asociadas de la Administración Pública correspondiente
+c) Únicamente a las sedes de otras Administraciones
+d) Exclusivamente a los portales de internet de la AGE
+= b
+> Art. 7.3. Además puede incluir un área personalizada para cada interesado.
+@ RD 203/2021 art. 7.3
+
+? ¿En la sede electrónica de qué punto de acceso está alojada la Dirección Electrónica Habilitada única (DEHú)?
+a) En la sede del PAGe de la Administración General del Estado
+b) En la sede de la Agencia Tributaria
+c) En la sede del Registro Civil
+d) En la Carpeta Ciudadana de cada Comunidad Autónoma
+= a
+> Art. 7.4 RD 203/2021: en la sede electrónica del PAGe de la AGE está alojada la DEHú a la que se refiere el art. 43 LPAC.
+@ RD 203/2021 art. 7.4
+
+? A través de la sede del PAGe de la AGE se puede comprobar la autenticidad e integridad de documentos del sector público estatal mediante:
+a) El número de registro de salida
+b) Solo el sello de tiempo
+c) La huella dactilar del firmante
+d) El código seguro de verificación o el sistema de firma o sello basado en certificado cualificado usado en su generación
+= d
+> Art. 7.4 RD 203/2021. Permite además, en su caso, la recuperación del documento.
+@ RD 203/2021 art. 7.4
+
+? ¿Qué es la Carpeta Ciudadana del sector público estatal?
+a) El archivo electrónico único de documentos de procedimientos finalizados
+b) El registro de funcionarios habilitados de la AGE
+c) El sistema de notificación electrónica obligatoria
+d) El área personalizada de las personas interesadas en su relación con el sector público estatal
+= d
+> Art. 8.1 RD 203/2021. Es accesible a través de la sede electrónica del PAGe de la AGE.
+@ RD 203/2021 art. 8
+
+? Además del interesado, ¿quién puede acceder a la Carpeta Ciudadana?
+a) Cualquier familiar hasta el cuarto grado
+b) Cualquier empleado público que tramite un procedimiento del interesado
+c) Sus representantes legales y quien ostente un poder general (art. 6.4.a LPAC) inscrito en el Registro Electrónico de Apoderamientos
+d) Cualquier persona con certificado electrónico de persona jurídica
+= c
+> Art. 8.1 RD 203/2021: representantes legales y apoderado general inscrito en el REA.
+@ RD 203/2021 art. 8.1
+
+? ¿Cuál de las siguientes NO es una funcionalidad de la Carpeta Ciudadana prevista en el artículo 8 del RD 203/2021?
+a) Seguimiento del estado de tramitación de los procedimientos del interesado
+b) Acceso a sus comunicaciones y notificaciones
+c) Modificar directamente el contenido de los expedientes que le afectan
+d) Conocer qué datos suyos obran en poder del sector público estatal
+= c
+> El art. 8.2 recoge seguimiento, acceso a comunicaciones y notificaciones, conocer los datos que obran en el sector público estatal y facilitar la obtención de certificaciones administrativas.
+@ RD 203/2021 art. 8.2
+
+? Según el artículo 38 de la Ley 40/2015, la sede electrónica es:
+a) El conjunto de equipos informáticos del órgano que tramita el procedimiento
+b) La aplicación mediante la cual se firman electrónicamente los actos administrativos
+c) El portal de transparencia de la Administración
+d) Una dirección electrónica, disponible para los ciudadanos a través de redes de telecomunicaciones, cuya titularidad corresponde a una Administración Pública u organismos públicos en el ejercicio de sus competencias
+= d
+> Art. 38.1 Ley 40/2015 y art. 9 RD 203/2021.
+@ Ley 40/2015 art. 38.1
+
+? ¿De qué responde el titular de una sede electrónica según el artículo 38.2 de la Ley 40/2015?
+a) De la integridad, veracidad y actualización de la información y los servicios a los que pueda accederse a través de la sede
+b) De la rapidez de tramitación de los procedimientos
+c) De la confidencialidad de los datos de los usuarios únicamente
+d) De la disponibilidad ininterrumpida del servicio, sin excepciones
+= a
+> Art. 38.2 Ley 40/2015 y art. 12 RD 203/2021.
+@ Ley 40/2015 art. 38.2
+
+? Si una sede electrónica contiene un enlace a otra sede, ¿quién responde de la integridad, veracidad y actualización de la información de esta última?
+a) El titular de la sede enlazada, sin perjuicio de la debida diligencia del titular de la primera al incorporar los contenidos
+b) El titular de la primera sede
+c) El Ministerio competente en Administración Digital
+d) Ambos titulares solidariamente en todo caso
+= a
+> Art. 12.2 RD 203/2021.
+@ RD 203/2021 art. 12.2
+
+? Las sedes electrónicas asociadas:
+a) Carecen de efectos jurídicos propios
+b) Solo pueden crearse en el ámbito de la AGE
+c) Se crean por razones técnicas y organizativas y tienen la consideración de sede electrónica a todos los efectos
+d) Son siempre de titularidad distinta a la de la sede principal
+= c
+> Art. 10.1 RD 203/2021.
+@ RD 203/2021 art. 10.1
+
+? El acto de creación o supresión de una sede electrónica se publica:
+a) Únicamente en la propia sede
+b) Solo en el Boletín Oficial del Estado
+c) En el boletín oficial correspondiente a la Administración titular y en el directorio del PAGe que corresponda
+d) En el portal de transparencia exclusivamente
+= c
+> Art. 10.2 RD 203/2021. En las entidades locales el boletín oficial será el de la provincia.
+@ RD 203/2021 art. 10.2
+
+? ¿Cuál de los siguientes elementos debe determinar, al menos, el acto de creación de una sede electrónica?
+a) El presupuesto de mantenimiento del primer año
+b) El nombre del proveedor tecnológico
+c) La identificación de su titular, su ámbito de aplicación y los órganos encargados de su gestión
+d) El número de empleados que la atenderán
+= c
+> Art. 10.2 RD 203/2021: ámbito, dirección electrónica de referencia, titular y órganos de gestión y servicios.
+@ RD 203/2021 art. 10.2
+
+? En el ámbito estatal, la creación de una sede electrónica asociada a la del PAGe de la AGE se hace mediante:
+a) Real decreto aprobado en Consejo de Ministros
+b) Orden del titular del Departamento competente, con informe previo favorable de los ministerios competentes en Función Pública y Transformación Digital
+c) Ley ordinaria
+d) Resolución del Defensor del Pueblo
+= b
+> Art. 10.3 RD 203/2021. Se justifica en términos de eficiencia con una memoria justificativa y económica (art. 10.4).
+@ RD 203/2021 art. 10.3
+
+? Las sedes electrónicas del ámbito estatal se identifican mediante:
+a) Un certificado cualificado de autenticación de sitio web
+b) Clave concertada
+c) Un código seguro de verificación
+d) Un sello de tiempo
+= a
+> Art. 18.2 RD 203/2021 (y art. 18.1: certificados cualificados de autenticación de sitio web o medio equivalente). Además usan el dominio .gob.es.
+@ RD 203/2021 art. 18
+
+? ¿Cuál de los siguientes NO figura entre los principios a los que se sujeta la creación de las sedes electrónicas según el artículo 38.3 de la Ley 40/2015?
+a) Gratuidad
+b) Neutralidad
+c) Interoperabilidad
+d) Accesibilidad
+= a
+> Art. 38.3: transparencia, publicidad, responsabilidad, calidad, seguridad, disponibilidad, accesibilidad, neutralidad e interoperabilidad.
+@ Ley 40/2015 art. 38.3
+
+? ¿Cuál de las siguientes informaciones forma parte del contenido mínimo de toda sede electrónica (art. 11.1 RD 203/2021)?
+a) La fecha y hora oficial y el calendario de días inhábiles a efectos del cómputo de plazos
+b) La plantilla de personal del organismo titular
+c) El código fuente de todas las aplicaciones
+d) El importe de los contratos adjudicados cada año
+= a
+> Art. 11.1.f. También: identificación de la sede y su titular, acto de creación, información de uso (accesibilidad, protección de datos), sistemas de identificación y firma admitidos, normativa del registro, incidencias técnicas, servicios y trámites, actuaciones automatizadas.
+@ RD 203/2021 art. 11.1
+
+? Entre los contenidos mínimos de la sede electrónica debe figurar información sobre incidencias técnicas que impidan el funcionamiento ordinario y:
+a) El listado de recursos presentados contra la sede
+b) Las sanciones impuestas a los proveedores
+c) El horario de apertura de las oficinas de asistencia
+d) La ampliación del plazo no vencido que, en su caso, haya acordado el órgano competente
+= d
+> Art. 11.1.g RD 203/2021, en relación con la ampliación de plazos del art. 32.4 LPAC.
+@ RD 203/2021 art. 11.1.g
+
+? ¿Cuál de los siguientes es un servicio que toda sede electrónica debe ofrecer según el artículo 11.2 del RD 203/2021?
+a) Un servicio de traducción automática a todas las lenguas de la UE
+b) Un foro público de discusión de los procedimientos
+c) Un servicio de videoconferencia con los empleados públicos
+d) Un enlace para la formulación de sugerencias y quejas ante los órganos competentes
+= d
+> Art. 11.2.b. También: acceso a servicios y trámites con plazos máximos, mecanismos de accesibilidad, verificación de certificados y sellos, comprobación de documentos con CSV, modelos normalizados y presentación masiva, directorio geográfico de oficinas.
+@ RD 203/2021 art. 11.2
+
+? Cada Administración debe mantener en su sede electrónica un listado con:
+a) Los datos personales de todos los interesados
+b) El texto íntegro de todos los expedientes finalizados
+c) Los códigos de identificación vigentes de sus órganos, centros o unidades administrativas
+d) Las contraseñas de acceso de sus empleados
+= c
+> Art. 11.3 RD 203/2021 (en relación con el art. 66.1 LPAC). Son los códigos DIR3.
+@ RD 203/2021 art. 11.3
+
+? De acuerdo con el artículo 40 de la Ley 40/2015, el certificado electrónico en el que se basa el sello electrónico de una Administración incluirá:
+a) El DNI del titular del órgano en todo caso
+b) El número de identificación fiscal y la denominación correspondiente
+c) Únicamente la dirección IP del servidor
+d) La clave privada del órgano
+= b
+> Art. 40.1 Ley 40/2015 y art. 19.1 RD 203/2021. En sellos de órganos administrativos se incluye, en su caso, la identidad de la persona titular.
+@ Ley 40/2015 art. 40
+
+? Según el artículo 42 de la Ley 40/2015, ¿qué sistemas de firma pueden utilizarse en la actuación administrativa automatizada?
+a) Sello electrónico de Administración Pública, órgano u organismo, y código seguro de verificación
+b) Únicamente firma manuscrita digitalizada
+c) Solo certificados de empleado público
+d) Clave concertada de los interesados
+= a
+> Art. 42 Ley 40/2015 y art. 20 RD 203/2021.
+@ Ley 40/2015 art. 42
+
+? ¿Qué debe garantizar, en todo caso, un sistema de código seguro de verificación (CSV)?
+a) Que el documento sea ilegible sin el código
+b) Que el código sea idéntico para todos los documentos de un mismo órgano
+c) Que el documento se cifre con la clave pública del interesado
+d) El carácter único del código para cada documento y su vinculación con el documento y, en su caso, el firmante
+= d
+> Art. 21.2 RD 203/2021: origen e integridad mediante acceso a la sede, carácter único, vinculación con el documento, posibilidad de verificación durante el plazo fijado y acceso restringido a quien tenga el código.
+@ RD 203/2021 art. 21.2
+
+? En el ámbito estatal, el plazo de disponibilidad para la verificación en sede de un documento con CSV será, al menos, de:
+a) Un año
+b) Dos años
+c) Diez años en todo caso
+d) Cinco años, salvo que la normativa especial prevea un plazo superior
+= d
+> Art. 21.4.e RD 203/2021. Pasado ese tiempo, hay que solicitarlo al órgano que emitió el documento.
+@ RD 203/2021 art. 21.4
+
+? La utilización del CSV en el ámbito estatal requiere resolución de la Subsecretaría del Ministerio (o de la Presidencia/Dirección del organismo), previo informe del:
+a) Consejo de Estado y del Tribunal de Cuentas
+b) Consejo General del Poder Judicial
+c) Instituto Nacional de Estadística
+d) Centro Criptológico Nacional y de la Secretaría General de Administración Digital
+= d
+> Art. 21.4 RD 203/2021. La resolución incluye las actuaciones a las que se aplica, los órganos responsables, la sede de verificación y el plazo de disponibilidad.
+@ RD 203/2021 art. 21.4
+
+? Si un documento firmado con CSV se modifica, ¿qué ocurre?
+a) Conserva su CSV original
+b) La sede lo invalida y lo elimina
+c) El CSV se renueva automáticamente de forma gratuita
+d) Da lugar a un nuevo documento con un CSV diferente
+= d
+> Art. 21.2.c RD 203/2021: cualquier modificación genera un nuevo documento con distinto CSV.
+@ RD 203/2021 art. 21.2.c
+
+? Los certificados electrónicos de empleado público con número de identificación profesional (NIP) se emiten:
+a) Para todos los empleados públicos sin excepción
+b) A petición de la Administración, cuando vayan a usarse en actuaciones que afecten a información clasificada, seguridad pública, defensa nacional u otras en que esté justificado el anonimato
+c) Solo a petición del propio empleado
+d) Únicamente para funcionarios de la Administración Local
+= b
+> Art. 43.2 Ley 40/2015 y art. 23 RD 203/2021. Las autoridades y los órganos judiciales pueden solicitar la revelación de la identidad del titular.
+@ RD 203/2021 art. 23
+
+? Los certificados electrónicos de empleado público deben ser:
+a) De cualquier prestador, aunque no sea cualificado
+b) Exclusivamente emitidos por la FNMT
+c) De uso exclusivo para relacionarse con los ciudadanos
+d) Cualificados y ajustarse al Esquema Nacional de Interoperabilidad y a la legislación sobre identidad y firma electrónica
+= d
+> Art. 22.3 RD 203/2021.
+@ RD 203/2021 art. 22.3
+
+? Cuando los participantes en un entorno cerrado de comunicaciones pertenecen a distintas Administraciones, las condiciones y garantías de intercambio se establecen mediante:
+a) Resolución unilateral del Ministerio de Hacienda
+b) Convenio suscrito entre ellas
+c) Instrucción de la Agencia Española de Protección de Datos
+d) Acuerdo verbal de los responsables técnicos
+= b
+> Art. 44.3 Ley 40/2015 y art. 25.3 RD 203/2021.
+@ Ley 40/2015 art. 44
+
+? Para favorecer la interoperabilidad, cuando una Administración use sistemas de firma distintos de los basados en certificado cualificado, puede:
+a) Reenviar el documento por correo ordinario
+b) Superponer un sello electrónico basado en certificado reconocido o cualificado
+c) Imprimir el documento y sellarlo en papel
+d) Cifrar el documento con clave simétrica
+= b
+> Art. 45.2 Ley 40/2015.
+@ Ley 40/2015 art. 45.2
+
+? La política de firma electrónica y de certificados en el ámbito estatal se aprueba mediante resolución y se publica:
+a) Solo en la web del Ministerio de Hacienda
+b) En el Diario Oficial de la Unión Europea
+c) No requiere publicación
+d) En el Boletín Oficial del Estado y en la sede electrónica del PAGe de la AGE
+= d
+> Art. 17.3 RD 203/2021.
+@ RD 203/2021 art. 17
+
+? La plataforma de verificación de certificados cualificados de la AGE (art. 16 RD 203/2021) permite comprobar:
+a) La solvencia económica de los titulares
+b) El historial de notificaciones recibidas
+c) La vigencia y el contenido de los certificados cualificados admitidos en el sector público
+d) La identidad civil mediante huellas dactilares
+= c
+> Debe permitir la verificación de forma libre y gratuita para el sector público. Los prestadores cualificados deben facilitar el acceso gratuito.
+@ RD 203/2021 art. 16
+
+? ¿Cuál de los siguientes NO es un sistema de identificación de las personas interesadas (art. 9.2 LPAC)?
+a) Código seguro de verificación
+b) Certificado electrónico cualificado de firma electrónica
+c) Certificado electrónico cualificado de sello electrónico
+d) Sistemas de clave concertada
+= a
+> El CSV es un sistema de firma de la Administración en la actuación automatizada, no un sistema de identificación del ciudadano.
+@ Ley 39/2015 art. 9.2
+
+? Los sistemas de clave concertada que se admitan para identificar a los interesados requieren autorización previa de la Secretaría General de Administración Digital (hoy, la Agencia), que solo puede denegarse:
+a) Por motivos de oportunidad política
+b) Por razones presupuestarias
+c) Por motivos de seguridad pública, previo informe vinculante de la Secretaría de Estado de Seguridad
+d) Nunca puede denegarse
+= c
+> Arts. 15.3.a, 26.2.c y 28.2 RD 203/2021.
+@ RD 203/2021 art. 28
+
+? Si una Administración admite un sistema de clave concertada para un procedimiento, ¿qué debe garantizar además?
+a) Que los certificados cualificados queden excluidos
+b) Que el uso de certificados cualificados de firma o de sello sea posible en todo procedimiento
+c) Que el trámite solo pueda hacerse de forma presencial
+d) Que el interesado tenga además un certificado de empleado público
+= b
+> Art. 26.2 RD 203/2021: las Administraciones deben garantizar que se pueda utilizar alguno de los sistemas a) y b) en todo procedimiento, aunque admitan también el c).
+@ RD 203/2021 art. 26.2
+
+? ¿Qué atributos mínimos deben contener los certificados cualificados de firma electrónica de persona física admitidos para identificar a los interesados (art. 27 RD 203/2021)?
+a) Su nombre y apellidos y su número de DNI, NIE, NIC o NIF
+b) Su domicilio y número de teléfono
+c) Solo su dirección de correo electrónico
+d) Su fecha de nacimiento y estado civil
+= a
+> Art. 27.1 (redacción dada por el RD 255/2025).
+@ RD 203/2021 art. 27.1
+
+? La identificación o firma electrónica de un interesado por un funcionario habilitado exige, entre otros requisitos:
+a) Que el interesado sea persona jurídica
+b) Que el funcionario actúe sin que el interesado lo sepa
+c) Solo la autorización del superior jerárquico
+d) Que el interesado se identifique ante el funcionario y preste su consentimiento expreso, del que debe quedar constancia por escrito
+= d
+> Art. 30.1 RD 203/2021 (y art. 12.2 LPAC). El funcionario entrega la documentación del trámite y copia del consentimiento. El interesado no debe estar obligado a relacionarse electrónicamente.
+@ RD 203/2021 art. 30
+
+? ¿Qué personal consta inscrito en el Registro de Funcionarios Habilitados de la AGE?
+a) Solo el personal de las oficinas de asistencia en materia de registros
+b) Únicamente el personal de la Agencia Estatal de Administración Digital
+c) El habilitado para identificar y firmar por los interesados, para expedir copias auténticas y el que presta servicio en las oficinas de asistencia en materia de registros
+d) Cualquier empleado público, sin necesidad de habilitación
+= c
+> Art. 31.1 RD 203/2021.
+@ RD 203/2021 art. 31
+
+? Respecto a los registros electrónicos de apoderamientos, es cierto que:
+a) Son públicos y cualquiera puede consultar los poderes inscritos
+b) Solo existe uno en toda España
+c) No necesitan ser interoperables
+d) El interesado solo puede acceder a la información de los apoderamientos de los que sea poderdante o apoderado
+= d
+> Art. 33.4 RD 203/2021: son interoperables y no tienen carácter público.
+@ RD 203/2021 art. 33.4
+
+? En los registros particulares de apoderamientos de los organismos de la AGE:
+a) Se inscriben los poderes generales del art. 6.4.a) LPAC
+b) Solo se inscriben poderes de personas jurídicas
+c) No pueden inscribirse los poderes previstos en el artículo 6.4.a) de la Ley 39/2015
+d) Solo se inscriben poderes de más de cinco años
+= c
+> Art. 33.3 RD 203/2021: allí se inscriben los poderes para los trámites específicos de su competencia.
+@ RD 203/2021 art. 33.3
+
+? ¿Qué se hace en el Registro Electrónico General de cada Administración según el art. 37 del RD 203/2021?
+a) Solo se anotan los documentos que se presentan en papel
+b) El asiento de todo documento que sea presentado o que se reciba en cualquier órgano, organismo o entidad vinculada o dependiente
+c) Únicamente se registran los escritos de las personas jurídicas
+d) Solo se anotan las notificaciones
+= b
+> Art. 37.2 RD 203/2021 (art. 16.1 LPAC). Los organismos pueden tener su propio registro, interoperable e interconectado con el general.
+@ RD 203/2021 art. 37.2
+
+? Las anotaciones en el Registro Electrónico General de la AGE tienen:
+a) Plena eficacia y validez para todas las Administraciones Públicas
+b) Eficacia únicamente en la AGE
+c) Valor meramente informativo
+d) Validez solo en el organismo que las practica
+= a
+> Art. 38.2 RD 203/2021.
+@ RD 203/2021 art. 38.2
+
+? Las oficinas de asistencia en materia de registros de la AGE tienen naturaleza de:
+a) Entidad de Derecho privado
+b) Organismo autónomo
+c) Servicio de información sin competencias
+d) Órgano administrativo
+= d
+> Art. 40.1 RD 203/2021.
+@ RD 203/2021 art. 40.1
+
+? ¿Cuál de las siguientes NO es función de las oficinas de asistencia en materia de registros (art. 40.3 RD 203/2021)?
+a) Resolver los recursos de alzada contra los actos del organismo destinatario
+b) Digitalizar las solicitudes en papel y anotarlas en el registro electrónico
+c) Emitir el recibo que acredite la fecha y hora de presentación
+d) Expedir copias electrónicas auténticas tras la digitalización
+= a
+> Las funciones incluyen además la información en materia de identificación y firma, la identificación o firma del interesado no obligado, notificaciones por comparecencia espontánea y el inicio del apoderamiento apud acta presencial.
+@ RD 203/2021 art. 40.3
+
+? Los documentos presentados en las oficinas de asistencia en materia de registros serán devueltos a las personas interesadas:
+a) A los treinta días de su presentación
+b) Cuando finalice el procedimiento
+c) Inmediatamente tras su digitalización
+d) Nunca, quedan siempre depositados en la oficina
+= c
+> Art. 39.5 RD 203/2021 (y art. 16.5 LPAC). En otro caso se aplicaría el art. 53 sobre conservación y destrucción de documentos.
+@ RD 203/2021 art. 39.5
+
+? Cuando el tamaño de los documentos registrados excede la capacidad establecida para el SIR, su remisión puede sustituirse por:
+a) El envío por correo postal
+b) La puesta a disposición de los documentos depositados previamente en un repositorio de intercambio de ficheros
+c) La eliminación de los documentos adjuntos
+d) La presentación obligatoria en papel
+= b
+> Art. 39.4 RD 203/2021. En la AGE, el repositorio es de titularidad pública y los datos no pueden usarse para fines distintos.
+@ RD 203/2021 art. 39.4
+
+? El Sistema de Interconexión de Registros (SIR) permite:
+a) Interconectar las bases de datos de la Seguridad Social y la AEAT
+b) Firmar documentos con certificados en la nube
+c) Verificar la vigencia de los certificados cualificados
+d) Intercambiar asientos registrales entre los registros de las Administraciones Públicas conforme al ENI y su norma técnica
+= d
+> Art. 60 RD 203/2021. El intercambio se realiza con el formato SICRES 3.0.
+@ RD 203/2021 art. 60
+
+? ¿Qué es GEISER?
+a) El sistema de notificaciones electrónicas
+b) La plataforma de facturación electrónica
+c) La aplicación común de registro de entrada y salida de la AGE, conectada al SIR
+d) La plataforma de verificación de certificados
+= c
+> GEISER es la aplicación común de registro de entrada y salida de la AGE, conectada al SIR. ORVE es la Oficina de Registro Virtual, que permite a las oficinas de asistencia digitalizar y enviar el asiento a la Administración destinataria.
+@ GEISER / ORVE
+
+? Las transmisiones de datos efectuadas mediante consulta a plataformas de intermediación tienen la consideración de:
+a) Simples comunicaciones internas sin valor
+b) Notificaciones al interesado
+c) Documentos privados
+d) Certificados administrativos necesarios para el procedimiento o actuación administrativa
+= d
+> Art. 61.1 RD 203/2021, en relación con el art. 155 Ley 40/2015.
+@ RD 203/2021 art. 61
+
+? Toda transmisión de datos entre Administraciones debe identificar:
+a) Solo el nombre del empleado público
+b) El número de registro del interesado únicamente
+c) El dispositivo desde el que se consulta
+d) Los datos requeridos y sus titulares, la finalidad para la que se requieren y, si interviene un empleado público, su identificación
+= d
+> Art. 61.3 RD 203/2021.
+@ RD 203/2021 art. 61.3
+
+? El órgano cesionario (el que accede a datos de otro órgano) es responsable de:
+a) Solo de la custodia del servidor
+b) Solo de eliminar los datos al terminar el procedimiento
+c) El correcto acceso electrónico a los datos y su utilización y, cuando haga falta, de requerir el consentimiento del interesado
+d) Únicamente de informar al órgano cedente
+= c
+> Art. 61.4 RD 203/2021.
+@ RD 203/2021 art. 61.4
+
+? La Plataforma de Intermediación de Datos de la AGE actúa además como punto de conexión con:
+a) El sistema técnico europeo previsto en el Reglamento (UE) 2018/1724 (pasarela digital única)
+b) El sistema de pago SEPA
+c) El Registro Civil Europeo
+d) El sistema de alerta temprana de Schengen
+= a
+> Art. 62.3 RD 203/2021, para el intercambio automático de datos o documentos a nivel europeo.
+@ RD 203/2021 art. 62
+
+? Para comunicarse entre sí, los órganos de la AGE y sus organismos públicos deben utilizar:
+a) El correo postal certificado
+b) Cualquier medio, a su elección
+c) Medios electrónicos, a través del Registro Electrónico General u otro medio que deje constancia de la recepción
+d) Únicamente el intercambio presencial de documentos
+= c
+> Art. 57 RD 203/2021. La obligación alcanza a las entidades de Derecho privado vinculadas o dependientes cuando ejerzan potestades administrativas.
+@ RD 203/2021 art. 57
+
+? La adhesión de las Comunidades Autónomas y entidades locales a las plataformas estatales previstas en la disposición adicional segunda de la Ley 39/2015 es:
+a) Obligatoria en todo caso
+b) Prohibida
+c) Voluntaria, pero la no adhesión debe justificarse en términos de eficiencia (art. 7 LO 2/2012)
+d) Obligatoria solo para los municipios de más de 50.000 habitantes
+= c
+> Art. 65.4 RD 203/2021: debe enviarse un informe al ministerio competente en Transformación Digital, con la justificación del cumplimiento del ENI y el ENS.
+@ RD 203/2021 art. 65.4
+
+? La adhesión a una plataforma o registro electrónico de la AGE supone:
+a) Que no hay cambio de titularidad sobre las actuaciones administrativas, que corresponde a la Administración competente para tramitar
+b) Un cambio de titularidad de las actuaciones administrativas hacia la AGE
+c) La cesión del procedimiento a la AGE
+d) La pérdida de competencias del órgano que se adhiere
+= a
+> Art. 65.2 RD 203/2021.
+@ RD 203/2021 art. 65.2
+
+? Antes de adquirir, desarrollar o mantener una aplicación, las Administraciones deben:
+a) Consultar el directorio general de aplicaciones de la AGE para ver si hay soluciones reutilizables
+b) Solicitar autorización al Consejo de Ministros
+c) Publicar un anuncio en el DOUE
+d) Pedir informe a la Agencia Española de Protección de Datos
+= a
+> Art. 157.3 Ley 40/2015 y art. 64.5 RD 203/2021. La no reutilización se justifica en términos de eficiencia.
+@ Ley 40/2015 art. 157
+
+? ¿Qué norma publicó el Acuerdo del Consejo de Ministros por el que se aprobó Cl@ve?
+a) Real Decreto 4/2010
+b) Real Decreto 311/2022
+c) Ley 11/2007
+d) Orden PRE/1838/2014, de 8 de octubre
+= d
+> El Acuerdo es del Consejo de Ministros de 19 de septiembre de 2014 y se publicó como anexo de la Orden PRE/1838/2014.
+@ Orden PRE/1838/2014
+
+? Cl@ve es:
+a) La plataforma de facturación electrónica del Estado
+b) El sistema de notificaciones electrónicas
+c) El registro de apoderamientos de la AGE
+d) La plataforma común del Sector Público Administrativo Estatal para la identificación, autenticación y firma electrónica mediante claves concertadas
+= d
+> Es el sistema de clave concertada de la AGE, que además permite firma en la nube con certificados centralizados (Cl@ve Firma).
+@ Orden PRE/1838/2014
+
+? ¿Cuál de los siguientes organismos NO participa como garante del funcionamiento de Cl@ve según la Orden PRE/1838/2014?
+a) La Agencia Estatal de Administración Tributaria
+b) La Dirección General de la Policía
+c) El Instituto Nacional de Estadística
+d) La FNMT-RCM
+= c
+> Participan la AEAT, el órgano responsable de las TIC de la AGE, la Gerencia de Informática de la Seguridad Social, la Dirección General de la Policía y la FNMT-RCM.
+@ Orden PRE/1838/2014
+
+? Los dos tipos de sistemas de identificación de Cl@ve definidos en el Acuerdo de 2014 son:
+a) Cl@ve básica y Cl@ve avanzada
+b) Cl@ve ocasional (contraseña de validez muy limitada) y Cl@ve permanente (contraseña de validez duradera pero no ilimitada)
+c) Cl@ve pública y Cl@ve privada
+d) Cl@ve PIN y Cl@ve certificado
+= b
+> Cl@ve ocasional se orienta a usuarios esporádicos y Cl@ve permanente a usuarios habituales. Cl@ve Firma permite firmar con certificados centralizados.
+@ Orden PRE/1838/2014
+
+? ¿Qué aplicación de la AGE gestiona los circuitos de firma de documentos?
+a) DEHú
+b) INSIDE
+c) Port@firmas
+d) FACe
+= c
+> Port@firmas es la herramienta de flujos de firma. INSIDE gestiona documentos y expedientes electrónicos; FACe, las facturas; DEHú, las notificaciones.
+@ Port@firmas
+
+? ¿Cuál es la función de INSIDE?
+a) Gestionar notificaciones electrónicas
+b) Recibir facturas electrónicas
+c) Gestionar documentos y expedientes electrónicos (Infraestructura y Sistemas de Documentos Electrónicos)
+d) Validar certificados electrónicos
+= c
+> INSIDE implementa la gestión de documentos y expedientes electrónicos conforme a las NTI de documento y expediente electrónico.
+@ INSIDE
+
+? ¿Qué es @firma en el ámbito de la Administración electrónica?
+a) Un sistema de correo electrónico seguro
+b) El registro de apoderamientos
+c) Una plataforma de validación de certificados y de firmas electrónicas
+d) El buscador de la Sede del PAGe
+= c
+> @firma es la plataforma de validación de certificados y firmas de la AGE; VALIDe es su servicio web y AutoFirma, la aplicación de firma en equipos y móviles.
+@ @firma
+
+? El Punto General de Entrada de Facturas Electrónicas de la Administración General del Estado se denomina:
+a) GEISER
+b) FACe
+c) INSIDE
+d) DEHú
+= b
+> La Ley 25/2013 prevé un punto general de entrada de facturas electrónicas en el Estado, las CCAA y las entidades locales, que pueden adherirse al del Estado.
+@ Ley 25/2013 art. 6
+
+? Según el artículo 4 de la Ley 25/2013, ¿cuál de las siguientes entidades está obligada en todo caso al uso de la factura electrónica?
+a) Las personas físicas autónomas
+b) Las comunidades de propietarios
+c) Las sociedades de responsabilidad limitada
+d) Las asociaciones sin ánimo de lucro
+= c
+> Obligadas: S.A., S.L., personas jurídicas y entidades sin personalidad que carezcan de nacionalidad española, establecimientos permanentes de no residentes, UTE, AIE y determinados fondos.
+@ Ley 25/2013 art. 4
+
+? Las Administraciones Públicas podrán excluir reglamentariamente de la obligación de factura electrónica las facturas de importe de hasta:
+a) 500 euros
+b) 5.000 euros
+c) 3.000 euros
+d) 15.000 euros
+= b
+> Art. 4.1 Ley 25/2013: es una facultad de exclusión de cada Administración, no una exención general.
+@ Ley 25/2013 art. 4
+
+? Las facturas electrónicas que se remitan a las Administraciones deben tener formato estructurado y estar firmadas con:
+a) Firma manuscrita escaneada
+b) Una simple contraseña
+c) No requieren firma
+d) Firma electrónica avanzada basada en un certificado reconocido (o sello electrónico avanzado)
+= d
+> Art. 5 Ley 25/2013. El formato estructurado de la factura electrónica es Facturae.
+@ Ley 25/2013 art. 5
+
+? ¿Qué produce la presentación de una factura electrónica en el punto general de entrada de facturas electrónicas?
+a) Una entrada automática en un registro contable de facturas
+b) La paralización del procedimiento de pago
+c) El archivo inmediato de la factura sin registro
+d) La anulación de la factura anterior
+= a
+> Art. 6.4 Ley 25/2013. El proveedor puede consultar el estado de tramitación de la factura.
+@ Ley 25/2013 art. 6
+
+? La Red SARA es:
+a) La red de comunicaciones de las Administraciones Públicas españolas
+b) La red social de los empleados públicos
+c) El sistema de nóminas del Estado
+d) El sistema de reconocimiento facial del DNI
+= a
+> Es la Red de comunicaciones de las AAPP españolas (art. 13 ENI) y conecta con la red europea sTESTA.
+@ RD 4/2010 art. 13
+
+? ¿Qué Real Decreto regula actualmente la organización y los instrumentos operativos de la Administración Digital de la Administración del Estado y derogó al RD 806/2014?
+a) Real Decreto 203/2021
+b) Real Decreto 311/2022
+c) Real Decreto 1112/2018
+d) Real Decreto 1125/2024, de 5 de noviembre
+= d
+> El RD 1125/2024 establece el modelo común de gobernanza TIC y deroga el RD 806/2014. El Estatuto de la Agencia Estatal de Administración Digital se aprobó por RD 1118/2024.
+@ RD 1125/2024
+
+? Según el RD 1125/2024, ¿qué órgano aprueba la propuesta de Estrategia TIC para su elevación al Consejo de Ministros?
+a) La Comisión de Estrategia sobre Tecnologías de la Información y las Comunicaciones (CETIC)
+b) El Tribunal de Cuentas
+c) La Comisión Ministerial de Administración Digital
+d) El Comité de Dirección de las TIC
+= a
+> Art. 3.3.b. La CETIC también declara transversales determinados medios o servicios comunes y los proyectos de interés prioritario.
+@ RD 1125/2024 art. 3
+
+? La Comisión Ministerial de Administración Digital (CMAD) de cada ministerio está presidida por:
+a) El Ministro
+b) El director de la Agencia Estatal de Administración Digital
+c) El Secretario General Técnico en todo caso
+d) El Subsecretario del departamento (o el titular del órgano superior con competencias TIC y de transformación digital)
+= d
+> Art. 5.3 RD 1125/2024, con posibilidad de delegar en una persona de rango mínimo de director general.
+@ RD 1125/2024 art. 5
+
+? La utilización de los medios y servicios digitales declarados transversales es:
+a) Voluntaria y complementaria
+b) Obligatoria solo para la Administración local
+c) Obligatoria y sustitutiva respecto de los medios y servicios particulares de las unidades
+d) Prohibida para los organismos públicos
+= c
+> Art. 9.2 RD 1125/2024. Los declara la CETIC a propuesta del Consejo Rector de la Agencia.
+@ RD 1125/2024 art. 9
+
+? ¿Qué entidad coordina funcionalmente las unidades TIC de la Administración del Estado y elabora el Catálogo de Medios y Servicios Comunes?
+a) El Centro Criptológico Nacional
+b) El Instituto Nacional de Administración Pública
+c) La Agencia Estatal de Administración Digital
+d) La Agencia Española de Protección de Datos
+= c
+> Arts. 4 y 9.4 RD 1125/2024. La Agencia es una entidad de Derecho público adscrita al ministerio competente en Transformación Digital y Función Pública.
+@ RD 1125/2024 art. 4
+
+? El Real Decreto 1112/2018 sobre accesibilidad de los sitios web y aplicaciones móviles del sector público incorpora al ordenamiento español:
+a) La Directiva (UE) 2016/2102
+b) El Reglamento eIDAS
+c) La Directiva (UE) 2019/882 (Acta Europea de Accesibilidad)
+d) El Reglamento (UE) 2016/679
+= a
+> Disposición final tercera del RD 1112/2018.
+@ RD 1112/2018
+
+? Los contenidos de los sitios web y aplicaciones móviles del sector público deben ser, según el RD 1112/2018:
+a) Gratuitos, globales, abiertos y reutilizables
+b) Perceptibles, operables, comprensibles y robustos
+c) Rápidos, ligeros, legibles y seguros
+d) Públicos, accesibles, plurilingües y estables
+= b
+> Art. 5.1 RD 1112/2018: son los cuatro principios de accesibilidad (POUR) de las pautas WCAG.
+@ RD 1112/2018 art. 5
+
+? ¿En qué plazo debe responder la entidad obligada a una solicitud de información accesible o queja sobre accesibilidad?
+a) Veinte días hábiles
+b) Diez días naturales
+c) Quince días naturales
+d) Un mes
+= a
+> Art. 12.3 RD 1112/2018. Puede suspenderse para pedir aclaraciones al interesado (10 días hábiles).
+@ RD 1112/2018 art. 12
+
+? ¿Con qué periodicidad mínima debe actualizarse la declaración de accesibilidad?
+a) Cada seis meses
+b) Cada dos años
+c) Al menos una vez al año o cada vez que se realice una revisión de accesibilidad
+d) Solo cuando se cree el sitio web
+= c
+> Art. 15.1 RD 1112/2018. En los sitios web se enlaza desde todas las páginas con un enlace llamado «Accesibilidad».
+@ RD 1112/2018 art. 15
+
+? Las disposiciones del RD 1112/2018 relativas a aplicaciones para dispositivos móviles son aplicables desde el:
+a) 1 de enero de 2019
+b) 23 de junio de 2021
+c) 23 de septiembre de 2019
+d) 23 de septiembre de 2020
+= b
+> Disposición final quinta del RD 1112/2018.
+@ RD 1112/2018 disp. final 5.ª
+
+? En la Administración General del Estado, las Unidades responsables de accesibilidad se designan en el ámbito de:
+a) Las Subsecretarías de cada Departamento
+b) Las Secretarías de Estado
+c) La Presidencia del Gobierno
+d) Las Delegaciones del Gobierno
+= a
+> Art. 16.1 RD 1112/2018.
+@ RD 1112/2018 art. 16
+
+? El Plan de Digitalización de las Administraciones Públicas 2021-2025 se estructura en:
+a) Un único eje, la identidad digital
+b) Cinco ejes, uno por cada Comunidad Autónoma pluriprovincial
+c) Dos ejes: ciudadanía y empresas
+d) Tres ejes: transformación digital de la AGE, proyectos de alto impacto y modernización del Ministerio de Política Territorial y Función Pública con apoyo a CCAA y entidades locales
+= d
+> El plan se enmarca en el componente 11 del Plan de Recuperación, Transformación y Resiliencia y en la agenda España Digital.
+@ Plan de Digitalización 2021-2025
