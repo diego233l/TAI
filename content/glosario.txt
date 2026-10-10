@@ -1,0 +1,259 @@
+// Glosario TAI. Formato: «## Categoría» y «término :: definición». Una línea por término.
+
+## Administración electrónica y normativa
+AEAD :: Agencia Estatal de Administración Digital: entidad de Derecho público (Estatuto aprobado por RD 1118/2024) que coordina funcionalmente las unidades TIC de la Administración del Estado.
+Actuación administrativa automatizada :: Acto realizado íntegramente por medios electrónicos sin intervención directa de un empleado público (art. 41 Ley 40/2015). Se firma con sello electrónico o CSV.
+Apoderamiento apud acta :: Poder general otorgado por comparecencia electrónica en sede o presencial en una oficina de asistencia en materia de registros, e inscrito en el REA.
+Carpeta Ciudadana :: Área personalizada del interesado ante el sector público estatal, accesible desde la sede del PAGe.
+CETIC :: Comisión de Estrategia TIC de la Administración del Estado (RD 1125/2024).
+Cl@ve :: Plataforma común del sector público estatal para identificación, autenticación y firma electrónica con claves concertadas (Orden PRE/1838/2014).
+CMAD :: Comisión Ministerial de Administración Digital: órgano colegiado de cada ministerio para el impulso de la Administración digital.
+Código seguro de verificación (CSV) :: Código único que vincula un documento con el órgano emisor y permite verificar su integridad en la sede electrónica.
+DEHú :: Dirección Electrónica Habilitada única: sistema de notificaciones electrónicas alojado en la sede del PAGe de la AGE.
+DIR3 :: Directorio Común de unidades orgánicas y oficinas de las Administraciones Públicas.
+ENI :: Esquema Nacional de Interoperabilidad (RD 4/2010).
+ENS :: Esquema Nacional de Seguridad (RD 311/2022). Dimensiones D-A-I-C-T; categorías BÁSICA, MEDIA y ALTA.
+FACe :: Punto General de Entrada de Facturas Electrónicas de la AGE (Ley 25/2013).
+Funcionario habilitado :: Empleado público que identifica o firma electrónicamente por un interesado no obligado a relacionarse por medios electrónicos, con su consentimiento expreso.
+GEISER :: Aplicación común de registro de entrada y salida de la AGE, conectada al SIR.
+INSIDE :: Infraestructura y Sistemas de Documentos Electrónicos: gestión de documentos y expedientes electrónicos de la AGE.
+Interesado :: Persona que promueve el procedimiento administrativo como titular de derechos o intereses legítimos (art. 4 Ley 39/2015).
+LPAC :: Ley 39/2015, del Procedimiento Administrativo Común de las Administraciones Públicas.
+LRJSP :: Ley 40/2015, de Régimen Jurídico del Sector Público.
+NTI :: Norma Técnica de Interoperabilidad: desarrolla el ENI y es de obligado cumplimiento.
+ORVE :: Oficina de Registro Virtual: permite a las oficinas de asistencia digitalizar y enviar asientos a otras Administraciones.
+PAGe :: Punto de Acceso General electrónico: portal y sede electrónica de acceso a los servicios de cada Administración.
+PID :: Plataforma de Intermediación de Datos de la AGE para consultar datos entre Administraciones sin pedir documentos al ciudadano.
+Port@firmas :: Aplicación de la AGE para gestionar circuitos de firma de documentos.
+REA :: Registro Electrónico de Apoderamientos.
+Red SARA :: Red de comunicaciones de las Administraciones Públicas españolas.
+Sede electrónica :: Dirección electrónica cuya titularidad corresponde a una Administración, con la que se realizan los trámites que requieren identificación de la Administración.
+Sello electrónico :: Sistema de identificación y firma de una Administración basado en un certificado cualificado con NIF y denominación del órgano.
+SIA :: Sistema de Información Administrativa: inventario de procedimientos y servicios.
+SICRES 3.0 :: Formato de intercambio de asientos registrales entre registros.
+SIR :: Sistema de Interconexión de Registros.
+TREBEP :: Texto refundido del Estatuto Básico del Empleado Público (RDL 5/2015).
+
+## Informática básica y hardware
+ALU :: Unidad aritmético-lógica de la CPU.
+BIOS :: Firmware clásico de arranque que ejecuta el POST; sustituido por UEFI.
+Bus :: Conjunto de líneas que transportan datos, direcciones o señales de control.
+Caché :: Memoria rápida (SRAM) entre la CPU y la RAM que aprovecha la localidad de referencias.
+CISC :: Arquitectura con instrucciones complejas y de longitud variable (x86).
+Complemento a 2 :: Representación de enteros con signo: invertir bits y sumar 1; rango −2ⁿ⁻¹ a 2ⁿ⁻¹−1.
+CPU :: Unidad central de proceso: unidad de control, ALU y registros.
+DMA :: Acceso directo a memoria: transferencia entre periférico y memoria sin intervención continua de la CPU.
+DRAM :: Memoria dinámica que necesita refresco; base de la memoria principal.
+EEPROM :: Memoria de solo lectura borrable eléctricamente.
+Firmware :: Software grabado en memoria no volátil que controla el hardware.
+Flash :: Memoria no volátil NAND/NOR; base de SSD, USB y tarjetas SD.
+GPT :: Tabla de particiones moderna asociada a UEFI: 128 particiones por defecto y discos de gran tamaño.
+Harvard :: Arquitectura con memorias separadas de datos e instrucciones.
+Hexadecimal :: Sistema de numeración en base 16; un dígito equivale a 4 bits.
+IEEE 754 :: Estándar de coma flotante: simple precisión 32 bits y doble precisión 64 bits.
+MBR :: Registro de arranque maestro: 4 particiones primarias y discos de hasta 2 TiB.
+Memoria virtual :: Técnica que permite ejecutar procesos mayores que la RAM mediante paginación.
+MMU :: Unidad de gestión de memoria: traduce direcciones virtuales a físicas.
+NVMe :: Protocolo de acceso a SSD sobre PCIe.
+Pipeline :: Segmentación de la ejecución de instrucciones en etapas solapadas.
+PCIe :: Bus de expansión serie punto a punto con carriles x1, x4, x8 y x16.
+POST :: Autodiagnóstico al encender el equipo.
+RAID :: Conjunto redundante de discos independientes (niveles 0, 1, 5, 6, 10).
+RISC :: Arquitectura con instrucciones simples y de longitud fija (ARM, RISC-V).
+SATA :: Interfaz serie de discos; SATA III a 6 Gbit/s.
+SRAM :: Memoria estática, más rápida y cara; usada en caché.
+SSD :: Unidad de estado sólido basada en memoria flash.
+TPM :: Módulo de plataforma segura para claves y arranque verificado.
+UEFI :: Firmware moderno que sustituye a la BIOS: Secure Boot, GPT y arranque rápido.
+UTF-8 :: Codificación Unicode de longitud variable de 1 a 4 bytes, compatible con ASCII.
+Von Neumann :: Arquitectura con una memoria única para datos e instrucciones.
+
+## Sistemas operativos
+Active Directory :: Servicio de directorio de Microsoft con autenticación Kerberos y LDAP.
+Chmod :: Comando de Linux que cambia los permisos de un fichero.
+cgroups :: Mecanismo del núcleo Linux que limita y mide recursos de grupos de procesos.
+Cron :: Planificador de tareas periódicas en Unix/Linux.
+Deadlock :: Interbloqueo: procesos bloqueados esperando recursos que mantienen los demás.
+ext4 :: Sistema de ficheros por defecto de muchas distribuciones Linux, con journaling.
+FHS :: Filesystem Hierarchy Standard: estructura estándar de directorios de Linux.
+GPO :: Directiva de grupo: configuración centralizada en dominios de Windows.
+Hilo :: Unidad de ejecución dentro de un proceso que comparte su memoria.
+Inodo :: Estructura de datos que describe un fichero en sistemas de ficheros de tipo Unix.
+Journaling :: Registro previo de operaciones para recuperar la consistencia tras un fallo.
+Kernel :: Núcleo del sistema operativo.
+LVM :: Gestor de volúmenes lógicos de Linux (PV, VG y LV).
+NTFS :: Sistema de ficheros de Windows con ACL, cifrado EFS, compresión y journaling.
+PowerShell :: Intérprete y lenguaje de scripting orientado a objetos de Microsoft.
+Proceso :: Programa en ejecución con su espacio de direcciones y su bloque de control.
+Registro de Windows :: Base de datos jerárquica de configuración (HKLM, HKCU…).
+Round Robin :: Planificación por turnos con un quantum de tiempo.
+Semáforo :: Mecanismo de sincronización con operaciones P y V.
+SUID :: Permiso especial que ejecuta un fichero con los privilegios de su propietario.
+Swap :: Área de intercambio de memoria en disco.
+systemd :: Sistema de inicio y gestor de servicios de Linux (PID 1).
+Thrashing :: Hiperpaginación: exceso de fallos de página que paraliza el sistema.
+umask :: Máscara que resta permisos por defecto a los ficheros nuevos.
+WSL :: Subsistema de Windows para ejecutar Linux.
+
+## Bases de datos y SQL
+ACID :: Atomicidad, consistencia, aislamiento y durabilidad de las transacciones.
+Álgebra relacional :: Lenguaje formal de operaciones sobre relaciones: selección, proyección, unión, join, etc.
+BASE :: Basically Available, Soft state, Eventual consistency; alternativa a ACID en NoSQL.
+Cardinalidad :: En E/R, número de ocurrencias de una entidad que se relacionan con otra; en relacional, número de tuplas.
+CAP :: Teorema de Brewer: consistencia, disponibilidad y tolerancia a particiones; solo dos a la vez.
+Clave candidata :: Conjunto mínimo de atributos que identifica unívocamente una tupla.
+Clave foránea :: Atributo que referencia la clave primaria de otra relación.
+CTE :: Expresión de tabla común (WITH): consulta con nombre reutilizable, admite recursividad.
+DBA :: Administrador de bases de datos.
+DCL :: Lenguaje de control de datos: GRANT y REVOKE.
+DDL :: Lenguaje de definición de datos: CREATE, ALTER, DROP.
+Dependencia funcional :: X → Y: X determina un único valor de Y.
+DML :: Lenguaje de manipulación de datos: SELECT, INSERT, UPDATE, DELETE.
+ETL :: Extracción, transformación y carga de datos hacia un almacén de datos.
+FNBC :: Forma normal de Boyce-Codd: todo determinante es clave candidata.
+Índice :: Estructura auxiliar que acelera las búsquedas a costa de las escrituras.
+JOIN :: Reunión de tablas: INNER, LEFT, RIGHT, FULL y CROSS.
+MVCC :: Control de concurrencia multiversión.
+NoSQL :: Bases de datos no relacionales: clave-valor, documentales, columnares y de grafos.
+Normalización :: Descomposición de relaciones para eliminar redundancias y anomalías.
+OLAP :: Procesamiento analítico en línea.
+OLTP :: Procesamiento de transacciones en línea.
+ORM :: Mapeo objeto-relacional.
+PITR :: Recuperación a un punto en el tiempo.
+Procedimiento almacenado :: Subprograma guardado en el servidor de base de datos.
+RPO :: Máxima pérdida de datos tolerable, medida en tiempo.
+RTO :: Tiempo máximo para restablecer el servicio.
+Sharding :: Reparto horizontal de datos entre servidores.
+Trigger :: Disparador que se ejecuta automáticamente ante INSERT, UPDATE o DELETE.
+Vista :: Consulta almacenada con nombre.
+WAL :: Write-Ahead Logging: el log se escribe antes que los datos.
+
+## Desarrollo de software
+API :: Interfaz de programación de aplicaciones.
+BDD :: Desarrollo guiado por el comportamiento (Given-When-Then).
+Bytecode :: Código intermedio de Java que ejecuta la JVM.
+CI/CD :: Integración y entrega/despliegue continuos.
+CLR :: Entorno de ejecución de .NET.
+Composición :: Relación todo-parte fuerte en la que las partes mueren con el todo.
+DAO :: Objeto de acceso a datos.
+Encapsulamiento :: Ocultar el estado interno de un objeto y exponer una interfaz.
+Git :: Sistema de control de versiones distribuido.
+Herencia :: Mecanismo por el que una clase hereda atributos y métodos de otra.
+JPA :: Jakarta Persistence: API de ORM para Java.
+JVM :: Máquina virtual de Java.
+Kanban :: Método ágil basado en un tablero con límites de trabajo en curso.
+MDA :: Arquitectura dirigida por modelos (OMG).
+MÉTRICA v3 :: Metodología de planificación, desarrollo y mantenimiento de sistemas de información de la Administración española.
+MVC :: Modelo-Vista-Controlador.
+Overloading :: Sobrecarga: mismo nombre de método con distinta firma.
+Overriding :: Sobrescritura: redefinir en la subclase un método heredado.
+Pull request :: Propuesta de integración de cambios con revisión de código.
+REST :: Estilo arquitectónico de servicios web basado en recursos y HTTP.
+Scrum :: Marco ágil con Product Owner, Scrum Master, Developers y sprints de hasta un mes.
+SemVer :: Versionado semántico MAJOR.MINOR.PATCH.
+SOAP :: Protocolo de servicios web basado en XML.
+SOLID :: Cinco principios de diseño orientado a objetos.
+Sprint :: Iteración de duración fija (máximo un mes) en Scrum.
+TDD :: Desarrollo guiado por pruebas: rojo, verde, refactorizar.
+UML :: Lenguaje de modelado unificado (14 diagramas en UML 2.x).
+WSDL :: Lenguaje de descripción de servicios web en XML.
+
+## Web y aplicaciones
+AJAX :: Peticiones asíncronas desde el navegador sin recargar la página.
+CORS :: Mecanismo que permite excepciones controladas a la política del mismo origen.
+CSS :: Hojas de estilo en cascada.
+DOM :: Modelo de objetos del documento: árbol de nodos manipulable por scripts.
+HTML5 :: Versión actual del lenguaje de marcado de la web.
+JSON :: Formato ligero de intercambio de datos (RFC 8259).
+JWT :: JSON Web Token: cabecera.carga.firma en Base64URL.
+PWA :: Aplicación web progresiva.
+SPA :: Aplicación de una sola página.
+SVG :: Formato de gráficos vectoriales basado en XML.
+WCAG :: Pautas de accesibilidad para el contenido web del W3C.
+XML :: Metalenguaje de marcas extensible.
+XPath :: Lenguaje para seleccionar nodos de un documento XML.
+XSD :: Esquema XML para validar documentos.
+XSLT :: Lenguaje de transformación de documentos XML.
+
+## Redes y comunicaciones
+ARP :: Protocolo que resuelve direcciones IP en direcciones MAC.
+BGP :: Protocolo de encaminamiento entre sistemas autónomos (TCP 179).
+CIDR :: Direccionamiento sin clases con prefijo /n.
+CSMA/CD :: Acceso al medio con detección de colisiones (Ethernet half-dúplex).
+CSMA/CA :: Acceso al medio con evitación de colisiones (Wi-Fi).
+DHCP :: Protocolo de asignación dinámica de configuración IP (DORA).
+DNS :: Sistema de nombres de dominio.
+DSCP :: Campo de 6 bits de la cabecera IP para marcar la calidad de servicio.
+Ethernet :: Familia de tecnologías LAN definidas por IEEE 802.3.
+FTTH :: Fibra hasta el hogar.
+HTTP/3 :: Versión de HTTP sobre QUIC (UDP).
+ICMP :: Protocolo de mensajes de control de IP (ping, traceroute).
+IPsec :: Conjunto de protocolos para cifrar y autenticar a nivel IP (AH, ESP, IKE).
+IPv6 :: Protocolo de red de 128 bits.
+LACP :: Protocolo de agregación de enlaces (802.3ad).
+LTE :: Tecnología 4G.
+MAC :: Dirección física de 48 bits de una interfaz.
+MPLS :: Conmutación por etiquetas.
+MTU :: Unidad máxima de transmisión (1500 bytes en Ethernet).
+NAT :: Traducción de direcciones de red.
+NDP :: Protocolo de descubrimiento de vecinos de IPv6.
+OSI :: Modelo de referencia de siete capas.
+OSPF :: Protocolo de encaminamiento de estado de enlace.
+PoE :: Alimentación a través del cable Ethernet.
+QoS :: Calidad de servicio.
+QUIC :: Protocolo de transporte sobre UDP con TLS 1.3 integrado.
+RADIUS :: Protocolo de autenticación, autorización y contabilidad.
+SDH :: Jerarquía digital síncrona (STM-1 155,52 Mbit/s).
+SNMP :: Protocolo de gestión y monitorización de red.
+STP :: Protocolo de árbol de expansión que evita bucles en capa 2.
+TCP :: Protocolo de transporte fiable y orientado a conexión.
+TLS :: Seguridad de la capa de transporte.
+UDP :: Protocolo de transporte sin conexión.
+VLAN :: Red local virtual (802.1Q).
+VLSM :: Máscaras de subred de longitud variable.
+VPN :: Red privada virtual.
+WPA3 :: Protocolo de seguridad Wi-Fi con SAE.
+
+## Seguridad
+AES :: Cifrado simétrico de bloques de 128 bits con claves de 128, 192 o 256 bits.
+APT :: Amenaza persistente avanzada.
+CVE :: Identificador común de vulnerabilidades.
+CVSS :: Puntuación de gravedad de vulnerabilidades de 0 a 10.
+DLP :: Prevención de fuga de datos.
+DMARC :: Política de autenticación de correo basada en SPF y DKIM.
+DKIM :: Firma criptográfica de mensajes de correo.
+DMZ :: Zona desmilitarizada para servidores accesibles desde Internet.
+EDR :: Detección y respuesta en el endpoint.
+HMAC :: Código de autenticación de mensajes con hash y clave.
+HSM :: Módulo de seguridad hardware para claves criptográficas.
+IDS :: Sistema de detección de intrusiones.
+IPS :: Sistema de prevención de intrusiones.
+MAGERIT :: Metodología de análisis y gestión de riesgos de los sistemas de información.
+MFA :: Autenticación multifactor.
+NGFW :: Cortafuegos de nueva generación.
+OCSP :: Protocolo de consulta en línea del estado de un certificado.
+PFS :: Perfect Forward Secrecy: el compromiso de claves a largo plazo no descifra sesiones pasadas.
+PKI :: Infraestructura de clave pública.
+Ransomware :: Malware que cifra datos y exige un rescate.
+RSA :: Algoritmo asimétrico basado en la factorización de enteros.
+SIEM :: Sistema de correlación de eventos de seguridad.
+SOC :: Centro de operaciones de seguridad.
+SPF :: Registro DNS que lista las IP autorizadas para enviar correo de un dominio.
+Zero Trust :: Modelo de seguridad de «nunca confiar, siempre verificar».
+
+## Sistemas, almacenamiento y virtualización
+Contenedor :: Unidad de empaquetado que comparte el núcleo del anfitrión.
+CPD :: Centro de proceso de datos.
+Docker :: Plataforma de contenedores.
+HCI :: Infraestructura hiperconvergente.
+Hipervisor :: Software que ejecuta máquinas virtuales (tipo 1 bare-metal, tipo 2 hosted).
+iSCSI :: Acceso a almacenamiento por bloques sobre IP.
+Kubernetes :: Orquestador de contenedores.
+LUN :: Volumen lógico presentado por una cabina de almacenamiento.
+NAS :: Almacenamiento conectado a la red a nivel de fichero.
+PUE :: Eficiencia energética del CPD: energía total entre energía de equipos TI.
+SAI :: Sistema de alimentación ininterrumpida.
+SAN :: Red de almacenamiento a nivel de bloque.
+Snapshot :: Instantánea del estado de un volumen o VM; no sustituye a una copia de seguridad.
+VDI :: Infraestructura de escritorios virtuales.
+vMotion :: Migración en caliente de una VM entre hosts.
