@@ -1,0 +1,28 @@
+JVM, JRE y JDK :: JVM ejecuta bytecode; JRE = JVM + bibliotecas; JDK = JRE + compilador y herramientas.
+Versiones LTS de Java :: 8, 11, 17, 21 y 25.
+Java EE → Jakarta EE :: Oracle cedió Java EE a la Eclipse Foundation; Jakarta EE 8 usa javax.*; desde Jakarta EE 9 se usa jakarta.*.
+Perfiles de Jakarta EE :: Web Profile, Platform y Core Profile (Jakarta EE 10).
+Servidores Jakarta EE :: GlassFish, WildFly/JBoss, Payara, Open Liberty, TomEE, WebLogic, WebSphere. Tomcat y Jetty son contenedores web.
+Capas de una aplicación Jakarta EE :: Cliente → web (Servlet, JSP, Faces) → negocio (EJB, CDI) → persistencia (JPA, JDBC, JMS) → EIS.
+Servlet :: Ciclo init() → service() (doGet/doPost) → destroy(); una instancia, varios hilos; sesión con HttpSession.
+JSP :: Se compila a servlet; usar EL y JSTL mejor que scriptlets.
+Jakarta Faces (JSF) :: Marco de componentes de interfaz en servidor con Facelets (XHTML).
+EJB :: Session (stateless, stateful, singleton) y Message-Driven Beans; transacciones declarativas.
+CDI :: Inyección de dependencias y contextos: @Inject, @RequestScoped, @SessionScoped, @ApplicationScoped.
+JPA :: ORM: @Entity, @Id, @GeneratedValue, @OneToMany, @ManyToOne, @ManyToMany; EntityManager; JPQL; Hibernate y EclipseLink.
+JDBC :: Connection, PreparedStatement (evita inyección SQL), ResultSet; DataSource y pool de conexiones.
+JTA y JMS :: JTA: transacciones. JMS: mensajería con colas (punto a punto) y temas (publicación/suscripción).
+JAX-RS y JAX-WS :: JAX-RS: servicios REST (@Path, @GET, @Produces). JAX-WS: servicios SOAP.
+Bean Validation :: Validación declarativa: @NotNull, @Size, @Email.
+Spring Boot :: Framework no EE con autoconfiguración y servidor embebido; Spring MVC, Data y Security.
+Seguridad Jakarta EE :: Autenticación BASIC, FORM, DIGEST y CLIENT-CERT; autorización por roles (@RolesAllowed, @PermitAll, @DenyAll) declarativa o programática.
+.NET Framework y .NET :: Framework: solo Windows, última 4.8. .NET Core (2016) → .NET 5+ unificado; versiones pares LTS.
+Arquitectura .NET :: CLR (ejecución), CIL (código intermedio), CTS, CLS, BCL; ensamblados .dll/.exe.
+Lenguajes .NET :: C#, VB.NET y F#.
+ASP.NET Core :: Servidor Kestrel, middleware, DI integrada, appsettings.json; MVC, Razor Pages, Web API, Blazor y SignalR.
+Acceso a datos en .NET :: ADO.NET (SqlConnection, SqlCommand, DataReader) y Entity Framework Core (DbContext, DbSet, migraciones, Code First/Database First) con LINQ.
+Seguridad .NET :: ASP.NET Core Identity, cookies, JWT, OAuth2/OIDC, Windows Authentication; [Authorize] con roles y políticas; antiforgery y HTTPS/HSTS.
+Interfaces de escritorio .NET :: Windows Forms, WPF (XAML y MVVM), WinUI y .NET MAUI (multiplataforma, sucesor de Xamarin).
+Interfaces de escritorio Java :: AWT, Swing y JavaFX.
+Equivalencias Java/.NET :: JVM ↔ CLR; bytecode ↔ CIL; JPA/Hibernate ↔ Entity Framework; Maven/Gradle ↔ NuGet; JAX-RS ↔ Web API.
+Programación dirigida por eventos :: Listeners/handlers asociados a eventos del usuario; layouts; patrones MVC, MVP y MVVM.

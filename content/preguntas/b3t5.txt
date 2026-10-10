@@ -1,0 +1,361 @@
+// Tema 19 (B3·T5) · Java EE / Jakarta EE y .NET: componentes, persistencia, seguridad e interfaces
+
+? ¿Qué componente de la plataforma Java incluye el compilador javac y las herramientas de desarrollo?
+a) JRE
+b) JVM
+c) JIT
+d) JDK
+= d
+> JDK = JRE + compilador y herramientas. El JRE incluye la JVM y las bibliotecas.
+@ Java
+
+? ¿Qué código genera el compilador javac?
+a) Bytecode (.class) que ejecuta la JVM
+b) Código máquina específico del procesador
+c) CIL para el CLR
+d) Código fuente intermedio en texto
+= a
+> El bytecode es independiente de la plataforma.
+@ Java
+
+? ¿Qué organización se hizo cargo de Java EE y lo rebautizó como Jakarta EE?
+a) Apache Software Foundation
+b) Linux Foundation
+c) Eclipse Foundation
+d) W3C
+= c
+> Oracle cedió la tecnología a la Eclipse Foundation; Oracle conservó la marca «Java», por lo que el nombre cambió a Jakarta EE.
+@ Jakarta EE
+
+? ¿Qué cambio de espacio de nombres introdujo Jakarta EE 9 respecto a Java EE?
+a) De java.* a jee.*
+b) De javax.* a jakarta.*
+c) De org.* a com.*
+d) Ninguno
+= b
+> Jakarta EE 8 conserva javax.*; desde Jakarta EE 9 se usa jakarta.*.
+@ Jakarta EE
+
+? ¿Cuál de los siguientes es un contenedor web (servlets/JSP) pero no un servidor de aplicaciones Jakarta EE completo?
+a) Apache Tomcat
+b) WildFly
+c) GlassFish
+d) WebLogic
+= a
+> Tomcat y Jetty implementan servlets, JSP y WebSocket, pero no EJB ni JTA completos.
+@ Jakarta EE
+
+? ¿Cuál es el ciclo de vida de un servlet?
+a) start(), run() y stop()
+b) open(), read() y close()
+c) create(), update() y delete()
+d) init(), service() (doGet/doPost) y destroy()
+= d
+> El contenedor crea una instancia, la inicializa una vez y atiende las peticiones con hilos hasta destruirla.
+@ Servlets
+
+? ¿Cuántas instancias de un servlet suele crear el contenedor y cómo atiende las peticiones concurrentes?
+a) Una instancia por petición
+b) Una instancia por usuario
+c) Una instancia por sesión
+d) Una única instancia atendida por varios hilos
+= d
+> Por eso los atributos de instancia de un servlet no son seguros para hilos.
+@ Servlets
+
+? ¿Qué objeto permite mantener estado entre peticiones HTTP de un mismo usuario en un servlet?
+a) HttpSession
+b) ServletConfig
+c) RequestDispatcher
+d) ServletContext únicamente
+= a
+> ServletContext es compartido por toda la aplicación; HttpSession es por usuario.
+@ Servlets
+
+? ¿En qué se transforma una página JSP en tiempo de ejecución?
+a) En un applet
+b) En un EJB
+c) En un servlet
+d) En un fichero estático
+= c
+> El contenedor traduce y compila la JSP a un servlet la primera vez que se solicita.
+@ JSP
+
+? ¿Qué tecnología Jakarta EE proporciona un modelo de componentes de interfaz de usuario en el servidor con Facelets?
+a) JAX-RS
+b) JMS
+c) JTA
+d) Jakarta Faces (JSF)
+= d
+> JSF usa un árbol de componentes y beans gestionados.
+@ JSF
+
+? ¿Qué tipo de EJB mantiene estado conversacional con un cliente concreto?
+a) Stateless session bean
+b) Stateful session bean
+c) Singleton session bean
+d) Message-driven bean
+= b
+> Los stateless no guardan estado entre invocaciones; los singleton tienen una única instancia.
+@ EJB
+
+? ¿Para qué se usan los Message-Driven Beans?
+a) Para consumir mensajes de forma asíncrona desde JMS
+b) Para definir entidades persistentes
+c) Para atender peticiones HTTP
+d) Para ejecutar consultas SQL
+= a
+> Se activan por la llegada de mensajes a una cola o tema.
+@ EJB
+
+? En JMS, la mensajería punto a punto se basa en:
+a) Temas (topic): cada mensaje lo reciben todos los suscriptores
+b) Servlets
+c) Sesiones HTTP
+d) Colas (queue): cada mensaje lo consume un solo receptor
+= d
+> El modelo publicación/suscripción usa topics.
+@ JMS
+
+? ¿Qué es JPA?
+a) Una API de persistencia (ORM) para mapear objetos Java a tablas relacionales
+b) Un servidor de aplicaciones
+c) Un protocolo de red
+d) Un lenguaje de plantillas
+= a
+> Es la especificación; Hibernate y EclipseLink son implementaciones.
+@ JPA
+
+? ¿Qué anotación JPA marca una clase como entidad persistente?
+a) @Table únicamente
+b) @Entity
+c) @Component
+d) @Bean
+= b
+> Se complementa con @Id para la clave primaria y @GeneratedValue para su generación.
+@ JPA
+
+? ¿Qué componente de JPA gestiona el ciclo de vida de las entidades (persist, find, remove)?
+a) EntityManager
+b) DataSource
+c) HttpSession
+d) ResultSet
+= a
+> Se obtiene de la unidad de persistencia definida en persistence.xml.
+@ JPA
+
+? ¿Qué lenguaje de consulta orientado a objetos define JPA?
+a) JPQL
+b) SQL nativo
+c) OQL
+d) XQuery
+= a
+> JPQL consulta entidades y atributos, no tablas y columnas.
+@ JPA
+
+? ¿Qué anotación JPA modela una relación muchos a muchos?
+a) @OneToOne
+b) @OneToMany
+c) @ManyToMany
+d) @Embedded
+= c
+> En el modelo relacional se materializa con una tabla intermedia.
+@ JPA
+
+? ¿Qué interfaz JDBC permite ejecutar sentencias SQL parametrizadas, evitando la inyección SQL?
+a) Statement
+b) PreparedStatement
+c) ResultSet
+d) DriverManager
+= b
+> PreparedStatement precompila la sentencia y separa los parámetros.
+@ JDBC
+
+? ¿Para qué sirve un pool de conexiones?
+a) Cifrar conexiones
+b) Reutilizar conexiones a la base de datos para evitar el coste de abrir una nueva en cada petición
+c) Ejecutar consultas en paralelo siempre
+d) Almacenar copias de seguridad
+= b
+> En Jakarta EE se obtiene un DataSource del contenedor mediante JNDI.
+@ JDBC
+
+? ¿Qué especificación Jakarta EE se usa para crear servicios web REST?
+a) JAX-WS
+b) JAX-RS
+c) JMS
+d) JNDI
+= b
+> JAX-RS usa anotaciones como @Path, @GET, @POST y @Produces. JAX-WS es SOAP.
+@ Servicios web
+
+? ¿Qué anotación Jakarta EE restringe un método a determinados roles?
+a) @RolesAllowed
+b) @Inject
+c) @Transactional
+d) @Entity
+= a
+> Otras: @PermitAll, @DenyAll y @DeclareRoles.
+@ Seguridad
+
+? ¿Qué mecanismo de autenticación HTTP de Jakarta EE usa un certificado presentado por el cliente sobre TLS?
+a) BASIC
+b) FORM
+c) DIGEST
+d) CLIENT-CERT
+= d
+> CLIENT-CERT autentica por certificado X.509 de cliente.
+@ Seguridad
+
+? ¿Qué diferencia hay entre seguridad declarativa y programática en Jakarta EE?
+a) La declarativa se configura con descriptores/anotaciones; la programática se hace en el código (isUserInRole)
+b) La declarativa se hace solo en el código
+c) La programática se hace solo en web.xml
+d) Son idénticas
+= a
+> La declarativa es preferible por su claridad y mantenibilidad.
+@ Seguridad
+
+? ¿Qué es Spring Boot?
+a) Un servidor de aplicaciones Jakarta EE
+b) Un sistema de control de versiones
+c) Un framework que simplifica la creación de aplicaciones Spring autocontenidas con servidor embebido y autoconfiguración
+d) Un sistema operativo
+= c
+> Es muy utilizado en microservicios; no es parte de la especificación Jakarta EE.
+@ Spring
+
+? ¿Qué herramienta de construcción de Java se basa en un fichero pom.xml?
+a) Gradle
+b) Ant
+c) Make
+d) Maven
+= d
+> Gradle usa build.gradle; Ant usa build.xml.
+@ Java
+
+? ¿Qué es el CLR en .NET?
+a) Un lenguaje de programación
+b) El entorno de ejecución (Common Language Runtime) que ejecuta el código intermedio CIL
+c) Un ORM
+d) Un servidor web
+= b
+> Proporciona JIT, recolección de basura, seguridad y gestión de excepciones.
+@ .NET
+
+? ¿Qué lenguaje intermedio genera el compilador de C#?
+a) Bytecode Java
+b) Código ensamblador x86
+c) CIL (MSIL)
+d) LLVM IR siempre
+= c
+> Se compila a CIL, que el CLR convierte a código nativo mediante JIT.
+@ .NET
+
+? ¿Qué es un ensamblado (assembly) en .NET?
+a) Un lenguaje ensamblador
+b) La unidad de despliegue (.dll o .exe) que contiene código CIL y metadatos
+c) Un tipo de base de datos
+d) Un patrón de diseño
+= b
+> Puede estar firmado con nombre seguro.
+@ .NET
+
+? ¿Qué diferencia principal hay entre .NET Framework y .NET (Core)?
+a) .NET Framework es solo para Windows; .NET es multiplataforma y de código abierto
+b) .NET Framework es multiplataforma
+c) No hay diferencia
+d) .NET Core es solo para Linux
+= a
+> .NET Framework alcanzó la versión 4.8 y está en mantenimiento.
+@ .NET
+
+? ¿Qué servidor web multiplataforma incluido en ASP.NET Core atiende las peticiones HTTP?
+a) IIS
+b) Tomcat
+c) Apache HTTPD
+d) Kestrel
+= d
+> IIS puede actuar como proxy inverso delante de Kestrel en Windows.
+@ ASP.NET
+
+? ¿Qué es Blazor?
+a) Un ORM
+b) Un framework para crear interfaces web interactivas con C# en lugar de JavaScript
+c) Un servidor de colas
+d) Un lenguaje de consulta
+= b
+> Se ejecuta en servidor (Blazor Server) o en el navegador mediante WebAssembly.
+@ ASP.NET
+
+? ¿Qué es Entity Framework?
+a) Un servidor web
+b) Un lenguaje de maquetación
+c) Un sistema de logs
+d) Un ORM de .NET que mapea objetos C# a tablas
+= d
+> Se basa en DbContext, DbSet y migraciones, con consultas LINQ.
+@ Entity Framework
+
+? ¿Qué es LINQ?
+a) Un conjunto de capacidades del lenguaje para consultar colecciones y orígenes de datos con una sintaxis integrada en C#
+b) Un protocolo de red
+c) Un motor de base de datos
+d) Un sistema de ficheros
+= a
+> LINQ to Objects, LINQ to Entities (EF), etc.
+@ .NET
+
+? ¿Qué atributo restringe el acceso a acciones o controladores en ASP.NET Core?
+a) [Authorize]
+b) [Route] únicamente
+c) [HttpGet]
+d) [Serializable]
+= a
+> Admite roles y políticas de autorización.
+@ Seguridad .NET
+
+? ¿Qué tecnología de interfaz de escritorio de .NET utiliza XAML y suele combinarse con el patrón MVVM?
+a) Windows Forms
+b) ASP.NET Web Forms
+c) WPF
+d) Console
+= c
+> WPF (Windows Presentation Foundation) soporta enlace de datos y plantillas.
+@ Interfaces
+
+? ¿Qué tecnología permite crear aplicaciones .NET multiplataforma (Android, iOS, Windows, macOS) con una sola base de código?
+a) .NET MAUI
+b) WCF
+c) Windows Forms
+d) ADO.NET
+= a
+> MAUI es el sucesor de Xamarin.Forms.
+@ Interfaces
+
+? ¿Cuál es la biblioteca gráfica moderna de Java para interfaces de escritorio, con FXML y CSS?
+a) JavaFX
+b) AWT
+c) Swing
+d) JSP
+= a
+> Swing y AWT son anteriores; JavaFX es el sucesor recomendado.
+@ Interfaces
+
+? ¿Qué patrón separa la presentación de la lógica en interfaces de WPF y Angular mediante enlace de datos?
+a) Singleton
+b) Factory
+c) DAO
+d) MVVM
+= d
+> Model-View-ViewModel.
+@ Interfaces
+
+? ¿Qué modelo de programación domina el desarrollo de interfaces gráficas?
+a) Dirigido por eventos
+b) Por lotes
+c) Declarativo SQL
+d) Funcional puro exclusivamente
+= a
+> Se asocian manejadores (listeners/handlers) a los eventos del usuario.
+@ Interfaces
