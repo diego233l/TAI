@@ -1,0 +1,424 @@
+// Tema 24 (B4·T1) · Administración del sistema operativo y software de base. Actualización, mantenimiento y reparación
+
+? ¿Qué se entiende por software de base?
+a) El que permite funcionar al hardware y soporta a las aplicaciones: sistema operativo, controladores, firmware, hipervisores…
+b) Solo las aplicaciones ofimáticas
+c) Solo los juegos
+d) Las bases de datos de usuarios
+= a
+> El software de aplicación se apoya en el software de base.
+@ Conceptos
+
+? ¿Qué tecnología permite arrancar un equipo para instalar un sistema operativo a través de la red?
+a) SMTP
+b) LDAP
+c) RDP
+d) PXE
+= d
+> Preboot eXecution Environment, con DHCP y TFTP.
+@ Instalación
+
+? ¿Qué mecanismo se usa para automatizar instalaciones de Red Hat/Fedora?
+a) Kickstart
+b) Preseed
+c) AutoYaST
+d) Sysprep
+= a
+> Preseed es de Debian, AutoYaST de SUSE y Sysprep generaliza imágenes de Windows.
+@ Instalación
+
+? ¿Para qué sirve Sysprep en Windows?
+a) Para reparar el arranque
+b) Para generalizar una instalación de referencia antes de capturar una imagen y desplegarla en otros equipos
+c) Para actualizar los controladores
+d) Para activar licencias por volumen
+= b
+> Elimina identificadores únicos (SID, nombre de equipo) para el despliegue masivo.
+@ Instalación
+
+? ¿Qué es una golden image?
+a) Una imagen de referencia ya configurada y bastionada que sirve de plantilla para desplegar equipos
+b) Una copia de seguridad cifrada
+c) Una imagen ISO sin configurar
+d) Un volcado de memoria
+= a
+> Se mantiene actualizada y se despliega con WDS, MDT o plantillas de virtualización.
+@ Instalación
+
+? En LVM, ¿cuál es la jerarquía correcta?
+a) PV → VG → LV
+b) LV → PV → VG
+c) VG → PV → LV
+d) PV → LV → VG
+= a
+> Los volúmenes físicos se agrupan en un grupo de volúmenes, del que se crean volúmenes lógicos.
+@ LVM
+
+? ¿Qué comando LVM amplía un volumen lógico y su sistema de ficheros en una sola orden?
+a) lvcreate
+b) pvcreate
+c) vgremove
+d) lvextend -r
+= d
+> La opción -r (--resizefs) redimensiona también el sistema de ficheros.
+@ LVM
+
+? ¿Qué limitación tiene el sistema de ficheros XFS respecto al redimensionado?
+a) Puede reducirse pero no ampliarse
+b) No puede redimensionarse
+c) Puede ampliarse pero no reducirse
+d) Solo puede redimensionarse desmontado
+= c
+> ext4 puede ampliarse y reducirse (esto último desmontado).
+@ LVM
+
+? ¿Qué ventaja ofrece la instalación Server Core de Windows Server?
+a) Menor superficie de ataque y menos parches al no tener interfaz gráfica completa
+b) Incluye más herramientas gráficas
+c) Es incompatible con PowerShell
+d) Es solo para equipos cliente
+= a
+> Se administra con PowerShell, Windows Admin Center o herramientas remotas.
+@ Windows Server
+
+? ¿En qué puerto escucha por defecto el Escritorio remoto (RDP)?
+a) TCP 22
+b) TCP 5985
+c) TCP 3389
+d) TCP 443
+= c
+> SSH usa el 22; WinRM, 5985 (HTTP) y 5986 (HTTPS).
+@ Windows Server
+
+? ¿Qué protocolo utiliza PowerShell Remoting?
+a) SNMP
+b) Telnet
+c) NFS
+d) WinRM
+= d
+> Puertos 5985 (HTTP) y 5986 (HTTPS).
+@ Windows Server
+
+? ¿Qué orden de aplicación tienen las directivas de grupo (GPO)?
+a) LSDOU: Local, Sitio, Dominio y Unidad organizativa
+b) OUDSL: Unidad organizativa, Dominio, Sitio, Local
+c) Alfabético
+d) Aleatorio
+= a
+> Cada nivel sobrescribe al anterior; la última aplicada (OU) prevalece salvo «Exigido».
+@ GPO
+
+? ¿Qué comando fuerza la aplicación inmediata de las directivas de grupo?
+a) gpresult /r
+b) ipconfig /renew
+c) sfc /scannow
+d) gpupdate /force
+= d
+> gpresult /r muestra qué directivas se han aplicado.
+@ GPO
+
+? ¿Qué herramienta de Windows muestra los registros de Aplicación, Seguridad y Sistema?
+a) Monitor de recursos
+b) Administrador de tareas
+c) Visor de eventos
+d) Programador de tareas
+= c
+> eventvwr.msc; los eventos de seguridad (inicios de sesión) se almacenan en el registro Seguridad.
+@ Windows Server
+
+? ¿Qué sistema de licenciamiento por volumen activa los equipos contra un servidor de la organización?
+a) MAK individual por internet siempre
+b) KMS
+c) OEM
+d) Retail
+= b
+> MAK usa claves con número limitado de activaciones contra Microsoft.
+@ Windows Server
+
+? ¿Cuándo publica Microsoft habitualmente sus actualizaciones de seguridad (Patch Tuesday)?
+a) El primer lunes de cada mes
+b) El último viernes de cada mes
+c) Cada semana
+d) El segundo martes de cada mes
+= d
+> Permite planificar las ventanas de pruebas y despliegue.
+@ Actualizaciones
+
+? ¿Qué servicio permite aprobar y distribuir actualizaciones de Microsoft dentro de una red corporativa?
+a) WDS
+b) DFS
+c) FSRM
+d) WSUS
+= d
+> WDS despliega sistemas operativos; DFS comparte espacios de nombres de archivos.
+@ Actualizaciones
+
+? ¿Qué comando de Windows repara la imagen del sistema para que SFC pueda funcionar correctamente?
+a) chkdsk /f
+b) DISM /Online /Cleanup-Image /RestoreHealth
+c) bootrec /fixmbr
+d) gpupdate
+= b
+> sfc /scannow comprueba los ficheros del sistema contra la imagen.
+@ Reparación
+
+? ¿Qué comando reconstruye el almacén de configuración de arranque (BCD) en Windows desde WinRE?
+a) netsh winsock reset
+b) bootrec /rebuildbcd
+c) diskpart clean
+d) sfc /scannow
+= b
+> También se usan bootrec /fixmbr y /fixboot.
+@ Reparación
+
+? ¿Qué entorno de Windows permite reparar un equipo que no arranca?
+a) Hyper-V
+b) WinRE (Entorno de recuperación de Windows)
+c) WSL
+d) Sandbox
+= b
+> Incluye reparación de inicio, restauración del sistema y símbolo del sistema.
+@ Reparación
+
+? ¿Dónde se guardan las unit files de systemd creadas por el administrador?
+a) /var/log/systemd
+b) /usr/bin/systemd
+c) /proc/systemd
+d) /etc/systemd/system
+= d
+> Las instaladas por paquetes están en /usr/lib/systemd/system.
+@ systemd
+
+? ¿Qué comando debe ejecutarse tras editar una unit file de systemd?
+a) systemctl reboot
+b) systemctl daemon-reload
+c) systemctl mask
+d) journalctl --vacuum
+= b
+> Vuelve a leer la configuración de las unidades.
+@ systemd
+
+? ¿Qué comando muestra los registros de un servicio concreto y sigue los nuevos mensajes?
+a) systemctl status -v
+b) dmesg -c
+c) journalctl -u servicio -f
+d) tail /etc/service
+= c
+> journalctl -b muestra el arranque actual.
+@ systemd
+
+? ¿Qué se utiliza para reparar un cargador GRUB dañado?
+a) Reinstalar el hardware
+b) Ejecutar fsck sobre /boot siempre
+c) Borrar /etc
+d) Arrancar desde un medio live, hacer chroot y ejecutar grub-install / update-grub
+= d
+> También puede usarse el modo de rescate de la distribución.
+@ Reparación Linux
+
+? ¿Con qué estado debe estar el sistema de ficheros para ejecutar fsck con seguridad?
+a) Montado en lectura/escritura con tráfico activo
+b) Cifrado
+c) Desmontado (o montado en solo lectura)
+d) Dañado por completo
+= c
+> Ejecutarlo sobre un sistema montado y activo puede corromper los datos.
+@ Reparación Linux
+
+? ¿Qué herramienta informa del estado SMART de un disco en Linux?
+a) lsblk
+b) mkfs
+c) smartctl
+d) iostat
+= c
+> Forma parte del paquete smartmontools.
+@ Diagnóstico
+
+? ¿Qué herramienta se usa para comprobar defectos en la memoria RAM arrancando fuera del sistema operativo?
+a) memtest86+
+b) sfc
+c) chkdsk
+d) top
+= a
+> Los fallos de memoria provocan cuelgues y pantallazos aleatorios.
+@ Diagnóstico
+
+? En un servidor con 4 núcleos, un load average de 4,0 indica que:
+a) El servidor está apagado
+b) Los núcleos están, de media, plenamente ocupados
+c) El 400 % de memoria está en uso
+d) Hay 4 usuarios conectados
+= b
+> Valores superiores a los núcleos señalan saturación (cola de procesos).
+@ Rendimiento
+
+? ¿Qué comando muestra el uso de memoria libre y usada en formato legible en Linux?
+a) df -h
+b) free -h
+c) du -sh
+d) lsblk
+= b
+> df -h informa del espacio en disco por sistema de ficheros.
+@ Rendimiento
+
+? Para endurecer SSH, ¿qué configuración es recomendable en sshd_config?
+a) PermitRootLogin yes
+b) PasswordAuthentication yes para todos
+c) PermitRootLogin no y autenticación por clave pública, deshabilitando la contraseña
+d) PermitEmptyPasswords yes
+= c
+> También se recomienda restringir usuarios (AllowUsers), usar fail2ban y limitar el acceso por cortafuegos.
+@ Seguridad Linux
+
+? ¿Qué hace fail2ban?
+a) Acelera el arranque
+b) Cifra los discos
+c) Bloquea direcciones IP que generan demasiados intentos de autenticación fallidos
+d) Actualiza el kernel
+= c
+> Analiza logs y añade reglas temporales al cortafuegos.
+@ Seguridad Linux
+
+? ¿Qué herramienta rota, comprime y elimina periódicamente los ficheros de log en Linux?
+a) rsyslog
+b) cron
+c) logrotate
+d) auditd
+= c
+> Evita que los registros llenen el disco.
+@ Registros
+
+? ¿Qué herramienta es adecuada para realizar copias de seguridad incrementales sincronizando directorios en Linux?
+a) mkfs
+b) fdisk
+c) passwd
+d) rsync
+= d
+> Transfiere solo las diferencias y puede funcionar sobre SSH.
+@ Copias
+
+? ¿Qué tipo de mantenimiento de software corrige errores detectados en producción?
+a) Adaptativo
+b) Perfectivo
+c) Correctivo
+d) Preventivo
+= c
+> Adaptativo: cambios del entorno; perfectivo/evolutivo: mejoras; preventivo: evitar fallos futuros.
+@ Mantenimiento
+
+? ¿Qué tipo de mantenimiento adapta una aplicación a una nueva versión del sistema operativo o a un cambio normativo?
+a) Correctivo
+b) Adaptativo
+c) Preventivo
+d) De emergencia
+= b
+> El perfectivo añade funcionalidades o mejora el rendimiento.
+@ Mantenimiento
+
+? ¿Qué debe hacerse antes de aplicar un parche a servidores críticos en producción?
+a) Aplicarlo directamente sin pruebas
+b) Desactivar las copias de seguridad
+c) Probarlo en un entorno de preproducción y preparar un plan de marcha atrás
+d) Esperar a que haya un incidente
+= c
+> Se despliega por oleadas, en una ventana de mantenimiento aprobada.
+@ Gestión de parches
+
+? En ITIL, ¿qué es una RFC?
+a) Un documento de resolución de incidentes
+b) Un protocolo de red
+c) Un tipo de servidor
+d) Solicitud de cambio (Request for Change)
+= d
+> La RFC se evalúa por el CAB y se autoriza antes del cambio.
+@ ITIL
+
+? En ITIL, el CAB es:
+a) El equipo de soporte nivel 1
+b) La base de conocimiento
+c) El comité asesor de cambios (Change Advisory Board)
+d) El catálogo de servicios
+= c
+> Evalúa y prioriza los cambios.
+@ ITIL
+
+? ¿Qué tipo de cambio ITIL está preaprobado, es de bajo riesgo y se realiza con un procedimiento conocido?
+a) Cambio normal
+b) Cambio estándar
+c) Cambio de emergencia
+d) Cambio mayor
+= b
+> El de emergencia se tramita con urgencia para resolver un incidente grave.
+@ ITIL
+
+? ¿Qué es una CMDB?
+a) Base de datos de gestión de la configuración con los elementos de configuración y sus relaciones
+b) Una base de datos de clientes
+c) Un tipo de copia de seguridad
+d) Un servidor de correo
+= a
+> Es un pilar de la gestión de la configuración y del cambio.
+@ ITIL
+
+? ¿Qué medida del ENS regula el mantenimiento y las actualizaciones de seguridad?
+a) [op.exp.4]
+b) [op.exp.8]
+c) [mp.eq.1]
+d) [op.acc.1]
+= a
+> [op.exp.2] regula la configuración de seguridad y [op.exp.5] la gestión de cambios.
+@ ENS
+
+? ¿Qué es un sistema sin soporte (end of life)?
+a) Un sistema recién instalado
+b) Un sistema apagado
+c) Un sistema con licencia gratuita
+d) Un sistema para el que el fabricante ya no publica actualizaciones de seguridad
+= d
+> Debe sustituirse o aislarse y compensarse con otras medidas.
+@ Ciclo de vida
+
+? ¿Qué ventaja tiene migrar a un sistema nuevo frente a la actualización in situ (in-place)?
+a) No requiere planificación
+b) No exige copias de seguridad
+c) Es siempre más rápida
+d) Se parte de una instalación limpia, reduciendo la acumulación de configuraciones heredadas
+= d
+> La actualización in situ conserva el sistema, pero puede arrastrar problemas anteriores.
+@ Ciclo de vida
+
+? ¿Qué son las guías CIS Benchmarks?
+a) Buenas prácticas de configuración segura (hardening) de sistemas y aplicaciones
+b) Un fabricante de servidores
+c) Un protocolo de cifrado
+d) Una certificación de empleados
+= a
+> En España, el CCN publica las guías CCN-STIC alineadas con el ENS.
+@ Bastionado
+
+? ¿Qué es el bastionado (hardening) de un sistema?
+a) Aumentar la velocidad de la CPU
+b) Reducir su superficie de ataque eliminando servicios, cuentas y configuraciones innecesarias
+c) Instalar más aplicaciones
+d) Eliminar las copias de seguridad
+= b
+> Es una de las primeras tareas tras la instalación.
+@ Bastionado
+
+? ¿Qué es un archivo volcado de memoria (memory dump) generado tras un BSOD?
+a) Una copia de seguridad de los datos del usuario
+b) Una copia del contenido de la memoria en el momento del fallo para su análisis
+c) Un fichero de configuración
+d) Un registro de red
+= b
+> Se analiza con depuradores como WinDbg.
+@ Reparación
+
+? ¿Qué debe hacerse al resolver una incidencia para evitar su repetición?
+a) Eliminar los registros
+b) Reiniciar siempre el servidor
+c) No comunicarlo
+d) Documentar la causa raíz y la solución en la base de conocimiento
+= d
+> Es parte de la gestión de problemas en ITIL.
+@ Gestión de incidencias

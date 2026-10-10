@@ -1,0 +1,31 @@
+Software de base :: SO, firmware, controladores, hipervisores, middleware, compiladores y herramientas del sistema.
+Instalación por red y desatendida :: PXE (DHCP + TFTP). Kickstart (Red Hat), Preseed (Debian), Autoinstall/cloud-init (Ubuntu), AutoYaST (SUSE), autounattend.xml, WDS/MDT.
+Sysprep y golden image :: Sysprep generaliza una instalación de Windows; la golden image es la plantilla de referencia bastionada.
+Particionado Linux :: /boot (/boot/efi en UEFI), /, swap, /home y /var separados en servidores.
+LVM :: PV → VG → LV. pvcreate, vgcreate, lvcreate, lvextend -r. XFS solo crece; ext4 crece y se reduce (desmontado).
+Tareas posteriores a la instalación :: Nombre, red, hora/NTP, repositorios, actualizaciones, usuarios y sudo, cortafuegos, servicios mínimos, antivirus, logs, copias, inventario.
+Server Core y Desktop Experience :: Server Core: sin GUI completa, menor superficie de ataque y menos parches.
+Puertos de administración remota :: RDP 3389; WinRM 5985 (HTTP) y 5986 (HTTPS); SSH 22.
+GPO :: Orden LSDOU (Local, Sitio, Dominio, OU); gpupdate /force; gpresult /r.
+Visor de eventos :: Registros Aplicación, Seguridad, Sistema, Instalación y Eventos reenviados.
+KMS y MAK :: KMS: activación contra un servidor interno. MAK: clave con número limitado de activaciones. CAL: licencia de acceso de cliente.
+Reparación en Windows :: sfc /scannow, DISM /RestoreHealth, chkdsk, modo seguro, WinRE, bootrec (/fixmbr /fixboot /rebuildbcd), restauración del sistema.
+Patch Tuesday :: Segundo martes de cada mes; se despliega con WSUS, MECM, Windows Update for Business o Intune.
+Administración de usuarios en Linux :: useradd, usermod, userdel, passwd, chage; /etc/passwd, /etc/shadow, /etc/group.
+Actualizaciones en Linux :: apt update/upgrade (Debian), dnf upgrade (RHEL), zypper (SUSE); unattended-upgrades y dnf-automatic.
+systemd :: Unit files en /usr/lib/systemd/system y /etc/systemd/system; systemctl daemon-reload; journalctl -u servicio -f; timers.
+Rescate en Linux :: rescue.target, emergency.target; medio live + chroot para grub-install; fsck solo con el sistema de ficheros desmontado.
+Discos en Linux :: lsblk, blkid, fdisk/parted, mkfs, mount, /etc/fstab con UUID, smartctl, mdadm (RAID software).
+Red en Linux :: ip addr/route, ss -tulpn, nmcli, netplan, /etc/hosts, hostnamectl, timedatectl, chrony.
+Bastionado SSH :: PermitRootLogin no, PasswordAuthentication no, clave pública, AllowUsers, fail2ban.
+Logs y logrotate :: /var/log, rsyslog, journald; logrotate rota y comprime.
+Rendimiento Linux :: top/htop, vmstat, iostat, free -h, df -h, du, sar; load average a 1, 5 y 15 min; igual al número de núcleos = plena ocupación.
+Copias en Linux :: rsync (incremental), tar, dd, instantáneas LVM/Btrfs/ZFS, Bacula, Borg, Restic.
+Tipos de mantenimiento :: Correctivo (errores), adaptativo (cambios de entorno), perfectivo/evolutivo (mejoras) y preventivo.
+Gestión de parches :: Inventario, CVE/CVSS, priorización, pruebas en preproducción, oleadas, rollback y ventana de mantenimiento.
+Gestión de cambios ITIL :: RFC evaluada por el CAB; cambios estándar (preaprobado), normal y de emergencia; CMDB.
+Medidas ENS de explotación :: op.exp.2 configuración de seguridad; op.exp.3 gestión de la configuración; op.exp.4 mantenimiento y actualizaciones; op.exp.5 gestión de cambios.
+Fin de vida (EOL) :: Sin parches de seguridad. Windows 10: 14-10-2025; Server 2012/R2: 10-10-2023; CentOS 7: 30-06-2024; Ubuntu LTS: 5 años.
+In-place frente a migración :: In-place actualiza el sistema existente; migración parte de una instalación limpia y traslada datos y roles.
+CIS Benchmarks y CCN-STIC :: Guías de bastionado (hardening) de configuración segura.
+Diagnóstico y reparación :: Logs (journalctl -xe, dmesg, Visor de eventos), modo seguro/rescate, memtest86+, SMART, volcado de memoria tras BSOD, restaurar y documentar la causa raíz.
