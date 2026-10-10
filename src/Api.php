@@ -53,7 +53,7 @@ final class Api
     private static function routes(): array
     {
         return [
-            ['GET', '#^/api/health$#', fn() => ['ok' => true, 'php' => PHP_VERSION, 'data' => TAI_DATA, 'db' => (int)Db::val('PRAGMA user_version')]],
+            ['GET', '#^/api/health$#', fn() => ['ok' => true, 'rev' => Version::rev(), 'php' => PHP_VERSION, 'data' => TAI_DATA, 'db' => (int)Db::val('PRAGMA user_version')]],
             ['GET', '#^/api/bootstrap$#', [self::class, 'bootstrap']],
             ['GET', '#^/api/topic/(b\dt\d+)$#', [self::class, 'topic']],
             ['POST', '#^/api/topic/(b\dt\d+)$#', [self::class, 'topicSave']],
