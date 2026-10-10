@@ -1,0 +1,40 @@
+Versiones de SQL :: SQL-92 (SQL2); SQL:1999 (triggers, recursividad, OO); SQL:2003 (XML, ventana, MERGE); SQL:2011 (temporal); SQL:2016 (JSON); SQL:2023 (grafos).
+Categorías de SQL :: DDL (CREATE, ALTER, DROP, TRUNCATE), DML (INSERT, UPDATE, DELETE, MERGE), DQL (SELECT), DCL (GRANT, REVOKE), TCL (COMMIT, ROLLBACK, SAVEPOINT).
+DELETE, TRUNCATE y DROP :: DELETE: borra filas con WHERE y se registra. TRUNCATE: vacía la tabla. DROP: elimina tabla y estructura.
+UPDATE/DELETE sin WHERE :: Afectan a todas las filas.
+Restricciones :: NOT NULL, UNIQUE, PRIMARY KEY (UNIQUE + NOT NULL), FOREIGN KEY, CHECK, DEFAULT.
+Acciones referenciales :: CASCADE, SET NULL, SET DEFAULT, RESTRICT/NO ACTION.
+Tipos exactos y aproximados :: NUMERIC/DECIMAL(p,s) exactos (dinero); FLOAT/REAL/DOUBLE aproximados.
+CHAR y VARCHAR :: CHAR: longitud fija. VARCHAR: longitud variable.
+Orden de escritura del SELECT :: SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT/FETCH.
+Orden lógico del SELECT :: FROM, WHERE, GROUP BY, HAVING, SELECT, DISTINCT, ORDER BY, LIMIT. Por eso los alias del SELECT no valen en WHERE.
+WHERE y HAVING :: WHERE filtra filas antes de agrupar. HAVING filtra grupos y admite agregaciones.
+Agregaciones y NULL :: COUNT(*) cuenta todas las filas; COUNT(col), SUM, AVG, MIN y MAX ignoran NULL.
+NULL :: Comparar con = NULL es desconocido; usar IS NULL. NULL + 1 = NULL.
+BETWEEN, IN y LIKE :: BETWEEN es inclusivo. LIKE: % cualquier cadena, _ un carácter.
+JOINs :: INNER: coincidencias. LEFT/RIGHT: conserva todas las filas de un lado. FULL: ambos. CROSS: producto cartesiano. NATURAL: columnas de igual nombre.
+Clientes sin pedidos :: LEFT JOIN + WHERE p.id IS NULL, o NOT EXISTS. NOT IN con NULL en la subconsulta no devuelve filas.
+Producto cartesiano :: n × m filas; ocurre con CROSS JOIN o al omitir la condición de reunión.
+Subconsultas :: Escalar, de fila, de tabla (derivada) y correlacionada (depende de la consulta externa).
+UNION, INTERSECT y EXCEPT :: UNION elimina duplicados; UNION ALL los conserva; INTERSECT: comunes; EXCEPT/MINUS: diferencia.
+CTE :: WITH nombre AS (…); admite recursividad (WITH RECURSIVE).
+COALESCE y NULLIF :: COALESCE: primer valor no nulo. NULLIF(a,b): NULL si a = b.
+CASE :: CASE WHEN cond THEN v ELSE w END.
+Funciones de ventana :: ROW_NUMBER (único), RANK (huecos tras empates), DENSE_RANK (sin huecos), SUM() OVER (PARTITION BY … ORDER BY …), LAG/LEAD.
+Vistas :: Consulta almacenada; seguridad, simplicidad e independencia lógica; WITH CHECK OPTION; materializadas guardan resultado.
+GRANT y REVOKE :: Conceden y retiran privilegios; WITH GRANT OPTION permite reconceder.
+TCL :: BEGIN/START TRANSACTION, COMMIT, ROLLBACK, SAVEPOINT, ROLLBACK TO. DDL puede provocar commit implícito en algunos SGBD.
+Inyección SQL :: Prevenir con consultas parametrizadas (prepared statements), validación y mínimo privilegio.
+Procedimiento y función almacenados :: Procedimiento: CALL/EXEC, parámetros IN/OUT/INOUT. Función: devuelve valor y se usa en SELECT.
+Ventajas e inconvenientes de la lógica en BD :: Menos tráfico, reutilización y seguridad frente a menor portabilidad y difícil depuración.
+Lenguajes procedimentales :: PL/SQL (Oracle), T-SQL (SQL Server), PL/pgSQL (PostgreSQL), SQL/PSM (estándar; MySQL).
+Cursor :: Recorre fila a fila un resultado: DECLARE, OPEN, FETCH, CLOSE; mejor operar por conjuntos.
+Excepciones en procedimientos :: PL/SQL: EXCEPTION WHEN. T-SQL: TRY…CATCH.
+Trigger :: Se ejecuta automáticamente ante INSERT, UPDATE o DELETE; no se invoca ni recibe parámetros.
+Momento y nivel del trigger :: BEFORE, AFTER, INSTEAD OF (vistas). FOR EACH ROW (por fila) o FOR EACH STATEMENT (por sentencia).
+OLD y NEW :: En INSERT solo NEW; en DELETE solo OLD; en UPDATE ambos. SQL Server usa inserted y deleted.
+Usos y riesgos de los triggers :: Auditoría, integridad compleja y derivados; riesgo de cascada, recursión y bajo rendimiento.
+Evento programado :: Tarea temporal en el servidor: CREATE EVENT (MySQL), DBMS_SCHEDULER (Oracle), SQL Server Agent.
+Consultas no sargables :: Una función sobre la columna indexada en WHERE impide usar el índice; usar rangos.
+Limitar filas :: Estándar: FETCH FIRST n ROWS ONLY. LIMIT (MySQL/PostgreSQL), TOP (SQL Server).
+MERGE :: Insertar o actualizar según exista la clave (SQL:2003).

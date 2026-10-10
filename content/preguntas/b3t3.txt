@@ -1,0 +1,559 @@
+// Tema 17 (B3·T3) · SQL, procedimientos almacenados, eventos y disparadores
+
+? ¿Qué versión del estándar SQL introdujo los disparadores (triggers), la recursividad y los tipos estructurados?
+a) SQL-92
+b) SQL:2016
+c) SQL:1999
+d) SQL-86
+= c
+> SQL:1999 (SQL3) incorporó la orientación a objetos, los triggers y las consultas recursivas. SQL:2016 añadió soporte de JSON.
+@ Estándar SQL
+
+? ¿A qué categoría de sentencias SQL pertenece TRUNCATE TABLE?
+a) DML
+b) DDL
+c) DCL
+d) TCL
+= b
+> TRUNCATE es una sentencia de definición de datos que vacía la tabla; se diferencia de DELETE, que es DML.
+@ DDL
+
+? ¿Cuál de las siguientes sentencias elimina la tabla y también su estructura?
+a) DELETE FROM empleado
+b) TRUNCATE TABLE empleado
+c) UPDATE empleado SET id = NULL
+d) DROP TABLE empleado
+= d
+> DROP elimina el objeto. DELETE borra filas y TRUNCATE las vacía conservando la estructura.
+@ DDL
+
+? ¿Qué ocurre al ejecutar «DELETE FROM empleado;» sin cláusula WHERE?
+a) Se produce un error de sintaxis
+b) Se eliminan todas las filas de la tabla
+c) Se elimina la tabla
+d) No se elimina nada
+= b
+> UPDATE o DELETE sin WHERE afectan a todas las filas.
+@ DML
+
+? ¿Qué restricción impide que una columna admita valores duplicados pero sí permite valores NULL (en la mayoría de SGBD)?
+a) UNIQUE
+b) PRIMARY KEY
+c) CHECK
+d) FOREIGN KEY
+= a
+> La clave primaria combina UNIQUE y NOT NULL.
+@ DDL
+
+? ¿Qué acción referencial se aplica si una FK se define con «ON DELETE SET NULL» y se borra la fila padre?
+a) Se borran las filas hijas
+b) Se rechaza el borrado
+c) Se pone a NULL la clave foránea de las filas hijas
+d) Se ignora la integridad
+= c
+> CASCADE borraría las hijas; RESTRICT/NO ACTION rechazaría el borrado.
+@ Integridad
+
+? En SQL, ¿cuál es la diferencia entre CHAR(10) y VARCHAR(10)?
+a) CHAR es de longitud fija y VARCHAR de longitud variable
+b) CHAR solo guarda números
+c) VARCHAR siempre ocupa 10 bytes
+d) No hay diferencia
+= a
+> CHAR rellena con espacios hasta la longitud definida (según el SGBD).
+@ Tipos
+
+? ¿Qué tipo de dato es más apropiado para importes monetarios que requieren exactitud decimal?
+a) FLOAT
+b) REAL
+c) DOUBLE PRECISION
+d) NUMERIC(10,2) / DECIMAL
+= d
+> Los tipos de coma flotante son aproximados y pueden producir errores de redondeo.
+@ Tipos
+
+? ¿Cuál es el orden correcto de escritura de las cláusulas de una consulta SELECT?
+a) SELECT, WHERE, FROM, GROUP BY, ORDER BY, HAVING
+b) SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY
+c) FROM, SELECT, WHERE, ORDER BY, GROUP BY
+d) SELECT, FROM, GROUP BY, WHERE, HAVING, ORDER BY
+= b
+> Es el orden de escritura; el de evaluación lógica empieza en FROM.
+@ SELECT
+
+? ¿Cuál es el orden lógico de evaluación de una consulta SELECT?
+a) SELECT, FROM, WHERE, GROUP BY, HAVING
+b) FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY
+c) WHERE, FROM, HAVING, GROUP BY, SELECT
+d) FROM, SELECT, WHERE, ORDER BY, GROUP BY
+= b
+> Por eso los alias del SELECT no pueden usarse en WHERE.
+@ SELECT
+
+? ¿Qué diferencia hay entre WHERE y HAVING?
+a) HAVING filtra filas antes de agrupar
+b) WHERE filtra filas antes de agrupar; HAVING filtra grupos después de agrupar
+c) Son equivalentes
+d) WHERE solo admite funciones de agregación
+= b
+> HAVING puede usar funciones de agregación; WHERE no.
+@ SELECT
+
+? ¿Qué devuelve COUNT(columna) si algunas filas tienen NULL en esa columna?
+a) Cuenta todas las filas
+b) Cuenta solo las filas en las que la columna no es NULL
+c) Devuelve NULL
+d) Produce un error
+= b
+> COUNT(*) cuenta todas las filas; COUNT(col) ignora los NULL.
+@ Agregación
+
+? En una tabla con las notas 5, 7, NULL y 8, ¿cuánto vale AVG(nota)?
+a) 5
+b) 6,67
+c) 6,5
+d) NULL
+= b
+> AVG ignora el NULL: (5 + 7 + 8) / 3 ≈ 6,67.
+@ Agregación
+
+? ¿Qué cláusula permite restringir las columnas de una consulta con GROUP BY?
+a) Solo pueden aparecer en el SELECT las columnas del GROUP BY y funciones de agregación
+b) Pueden aparecer todas las columnas de la tabla
+c) Solo pueden aparecer funciones de agregación
+d) No hay restricción
+= a
+> Es una regla del estándar SQL; algunos SGBD (MySQL con ciertos modos) la relajan.
+@ GROUP BY
+
+? ¿Cuál es el resultado de «WHERE nota = NULL»?
+a) Selecciona las filas con nota nula
+b) No selecciona ninguna fila, porque la comparación con NULL es desconocida
+c) Selecciona todas las filas
+d) Error de sintaxis
+= b
+> Hay que usar IS NULL.
+@ NULL
+
+? ¿Qué filas devuelve «WHERE nombre LIKE 'A_a%'»?
+a) Nombres que contienen A, _ y a
+b) Nombres de exactamente tres letras
+c) Nombres que terminan en a
+d) Nombres que empiezan por A, con cualquier segundo carácter, tercer carácter a y cualquier resto
+= d
+> % representa cualquier secuencia de caracteres y _ exactamente un carácter.
+@ LIKE
+
+? ¿Es inclusivo el rango del operador BETWEEN 10 AND 20?
+a) Sí, incluye 10 y 20
+b) No, excluye ambos extremos
+c) Incluye 10 pero no 20
+d) Depende de ORDER BY
+= a
+> x BETWEEN a AND b equivale a x >= a AND x <= b.
+@ Predicados
+
+? ¿Qué devuelve un INNER JOIN?
+a) Solo las filas con coincidencia en ambas tablas
+b) Todas las filas de la tabla izquierda
+c) El producto cartesiano
+d) Las filas sin coincidencia
+= a
+> LEFT JOIN conserva todas las de la izquierda; FULL JOIN todas las de ambas.
+@ JOIN
+
+? ¿Qué devuelve un LEFT JOIN entre CLIENTE y PEDIDO?
+a) Solo los clientes con pedidos
+b) Solo los pedidos sin cliente
+c) El producto cartesiano
+d) Todos los clientes, con los datos del pedido o NULL si no tienen
+= d
+> Es la base de consultas del tipo «clientes sin pedidos» filtrando por IS NULL.
+@ JOIN
+
+? ¿Cómo se obtienen los clientes que NO tienen ningún pedido?
+a) INNER JOIN y WHERE p.id IS NULL
+b) LEFT JOIN y WHERE p.id IS NULL, o NOT EXISTS
+c) RIGHT JOIN y GROUP BY
+d) UNION de ambas tablas
+= b
+> Los clientes sin pedidos generan filas con NULL en las columnas del pedido.
+@ JOIN
+
+? ¿Qué ocurre si se escribe «FROM a, b» sin condición de reunión en el WHERE?
+a) Error de sintaxis
+b) Se obtiene el producto cartesiano de las dos tablas
+c) Se obtiene un INNER JOIN por claves
+d) Se obtiene el vacío
+= b
+> Si a tiene 10 filas y b tiene 5, el resultado tiene 50.
+@ JOIN
+
+? Si la tabla A tiene 4 filas y la tabla B tiene 3 filas, ¿cuántas filas devuelve A CROSS JOIN B?
+a) 7
+b) 12
+c) 3
+d) 4
+= b
+> Producto cartesiano: 4 × 3 = 12.
+@ JOIN
+
+? ¿Qué es una autorreunión (self join)?
+a) Una unión entre vistas
+b) La unión de una tabla consigo misma usando alias distintos
+c) Una unión sin condiciones
+d) Una unión entre bases de datos
+= b
+> Se usa, por ejemplo, para relacionar empleados con sus jefes (ambos en la misma tabla).
+@ JOIN
+
+? ¿Cuál es la diferencia entre UNION y UNION ALL?
+a) UNION ALL elimina los duplicados
+b) UNION solo admite una columna
+c) No hay diferencia
+d) UNION elimina los duplicados; UNION ALL los conserva
+= d
+> UNION ALL es más rápido porque no necesita ordenar para eliminar duplicados.
+@ Conjuntos
+
+? ¿Qué operador devuelve las filas de la primera consulta que no aparecen en la segunda?
+a) INTERSECT
+b) UNION
+c) EXCEPT (MINUS en Oracle)
+d) JOIN
+= c
+> INTERSECT devuelve las filas comunes.
+@ Conjuntos
+
+? ¿Qué es una subconsulta correlacionada?
+a) Una subconsulta que referencia columnas de la consulta externa y se evalúa para cada fila
+b) Una subconsulta que se ejecuta una sola vez
+c) Una subconsulta que usa UNION
+d) Una subconsulta en la cláusula ORDER BY
+= a
+> Suelen implementarse con EXISTS.
+@ Subconsultas
+
+? ¿Qué problema puede producir «WHERE id NOT IN (subconsulta)» si la subconsulta devuelve algún NULL?
+a) Devuelve todas las filas
+b) No devuelve ninguna fila
+c) Genera un error en tiempo de compilación
+d) Duplica los resultados
+= b
+> x NOT IN (…, NULL) nunca es verdadero. Es preferible NOT EXISTS.
+@ Subconsultas
+
+? ¿Cuál es el resultado de «SELECT COALESCE(NULL, NULL, 5, 7)»?
+a) NULL
+b) 7
+c) 5
+d) 12
+= c
+> COALESCE devuelve el primer argumento no nulo.
+@ Funciones
+
+? ¿Qué devuelve NULLIF(a, b)?
+a) El mayor de ambos
+b) b si a es NULL
+c) Siempre NULL
+d) NULL si a es igual a b; en caso contrario, a
+= d
+> Suele usarse para evitar divisiones por cero: x / NULLIF(y, 0).
+@ Funciones
+
+? ¿Qué hace la expresión CASE en SQL?
+a) Evalúa condiciones y devuelve un valor según la primera que se cumpla
+b) Convierte tipos de datos
+c) Cambia el nombre de la tabla
+d) Crea un índice
+= a
+> CASE WHEN … THEN … ELSE … END es la estructura condicional de SQL.
+@ Funciones
+
+? Si tres empleados empatan en el primer puesto de salario, ¿qué devuelve DENSE_RANK() para el siguiente empleado con salario inferior?
+a) 4
+b) 2
+c) 3
+d) 1
+= b
+> DENSE_RANK no deja huecos; RANK() devolvería 4.
+@ Funciones de ventana
+
+? ¿Qué diferencia hay entre RANK() y ROW_NUMBER()?
+a) ROW_NUMBER asigna números únicos consecutivos; RANK asigna el mismo número a empates y deja huecos
+b) No hay diferencia
+c) RANK solo funciona con GROUP BY
+d) ROW_NUMBER asigna el mismo número a empates
+= a
+> Ambas son funciones de ventana con OVER (ORDER BY …).
+@ Funciones de ventana
+
+? ¿Qué ventaja tienen las funciones de ventana frente a GROUP BY?
+a) Son más antiguas
+b) Eliminan los índices
+c) Solo funcionan con tablas pequeñas
+d) Calculan agregados sin colapsar las filas del resultado
+= d
+> Permiten, por ejemplo, mostrar cada empleado junto con la media de su departamento.
+@ Funciones de ventana
+
+? ¿Qué es una CTE (Common Table Expression)?
+a) Un tipo de índice
+b) Una restricción de integridad
+c) Un procedimiento almacenado
+d) Un conjunto de resultados temporal con nombre definido con WITH, utilizable en la consulta siguiente
+= d
+> Mejora la legibilidad y permite recursividad con WITH RECURSIVE.
+@ CTE
+
+? ¿Qué finalidad tiene la cláusula WITH CHECK OPTION en una vista?
+a) Evitar modificaciones que dejen filas fuera de la definición de la vista
+b) Comprobar la sintaxis
+c) Cifrar los datos
+d) Materializar la vista
+= a
+> Garantiza que las filas insertadas o actualizadas a través de la vista cumplan su condición.
+@ Vistas
+
+? ¿Cuál es una ventaja de las vistas?
+a) Siempre mejoran el rendimiento
+b) Permiten ocultar columnas y filas a ciertos usuarios, simplificando y protegiendo el acceso
+c) Almacenan los datos duplicados siempre
+d) Eliminan la necesidad de permisos
+= b
+> Son un mecanismo de seguridad e independencia lógica.
+@ Vistas
+
+? ¿Qué sentencia concede a un usuario permiso de lectura sobre una tabla?
+a) ALLOW SELECT tabla usuario
+b) GRANT SELECT ON tabla TO usuario
+c) PERMIT READ tabla TO usuario
+d) INSERT PRIVILEGE usuario
+= b
+> GRANT/REVOKE son sentencias DCL.
+@ DCL
+
+? ¿Qué permite la cláusula WITH GRANT OPTION?
+a) Que el privilegio sea temporal
+b) Cifrar el privilegio
+c) Que el receptor de un privilegio pueda concederlo a otros usuarios
+d) Que el privilegio no pueda revocarse
+= c
+> Debe usarse con cautela para no perder el control de los privilegios.
+@ DCL
+
+? ¿Qué sentencia deshace los cambios hasta un punto de guardado intermedio dentro de una transacción?
+a) COMMIT nombre
+b) ROLLBACK TO SAVEPOINT nombre
+c) UNDO nombre
+d) REVERT TO nombre
+= b
+> SAVEPOINT define puntos intermedios a los que volver sin cancelar toda la transacción.
+@ TCL
+
+? ¿Qué técnica previene eficazmente la inyección SQL?
+a) Concatenar la entrada del usuario con comillas escapadas manualmente
+b) Ocultar el código fuente
+c) Usar consultas parametrizadas (prepared statements)
+d) Cifrar la base de datos
+= c
+> Los parámetros se envían separados del código SQL, por lo que no pueden alterar su estructura.
+@ Seguridad
+
+? ¿Qué es un procedimiento almacenado?
+a) Un fichero de copia de seguridad
+b) Una vista materializada
+c) Un subprograma guardado en el servidor de BD que se invoca por su nombre
+d) Un tipo de índice
+= c
+> Se ejecuta en el servidor con CALL o EXEC.
+@ Procedimientos
+
+? ¿Cuál es una diferencia entre un procedimiento almacenado y una función almacenada?
+a) El procedimiento siempre devuelve un valor
+b) La función devuelve un valor y puede utilizarse dentro de una sentencia SELECT
+c) Las funciones no admiten parámetros
+d) No hay ninguna diferencia
+= b
+> Los procedimientos se invocan con CALL y pueden devolver valores mediante parámetros OUT.
+@ Procedimientos
+
+? ¿Qué tipos de parámetros admite un procedimiento almacenado?
+a) Solo IN
+b) Solo OUT
+c) READ y WRITE
+d) IN, OUT e INOUT
+= d
+> IN: entrada; OUT: salida; INOUT: ambos.
+@ Procedimientos
+
+? ¿Cuál es una ventaja de los procedimientos almacenados?
+a) Mejoran siempre la portabilidad entre SGBD
+b) Eliminan la necesidad de índices
+c) Evitan cualquier error de lógica
+d) Reducen el tráfico de red y permiten reutilizar lógica y conceder permisos de ejecución sin acceso directo a las tablas
+= d
+> Su principal inconveniente es la dependencia del dialecto del SGBD.
+@ Procedimientos
+
+? ¿Qué lenguaje procedimental usa PostgreSQL?
+a) PL/SQL
+b) T-SQL
+c) SQL/PSM únicamente
+d) PL/pgSQL
+= d
+> Oracle: PL/SQL; SQL Server: T-SQL.
+@ Procedimientos
+
+? ¿Qué es un cursor en un procedimiento almacenado?
+a) Un mecanismo para recorrer fila a fila el resultado de una consulta
+b) Un tipo de índice
+c) Una variable de entrada
+d) Un permiso de ejecución
+= a
+> Se declara, se abre, se lee con FETCH y se cierra. Suele ser menos eficiente que operar por conjuntos.
+@ Procedimientos
+
+? ¿Qué mecanismo captura errores en T-SQL de SQL Server?
+a) EXCEPTION WHEN
+b) ON ERROR RESUME NEXT
+c) TRY … CATCH
+d) HANDLER
+= c
+> En PL/SQL se usa EXCEPTION WHEN … THEN.
+@ Procedimientos
+
+? ¿Qué es un disparador (trigger)?
+a) Un procedimiento que se ejecuta automáticamente ante un evento de modificación de datos en una tabla
+b) Una consulta que se ejecuta manualmente
+c) Un tipo de índice
+d) Una copia de seguridad programada
+= a
+> Se asocia a eventos INSERT, UPDATE o DELETE y no se invoca directamente.
+@ Disparadores
+
+? ¿Qué momentos de ejecución admite un trigger?
+a) ONLY, FIRST y LAST
+b) START y END
+c) BEFORE, AFTER e INSTEAD OF
+d) READ y WRITE
+= c
+> INSTEAD OF se utiliza típicamente en vistas.
+@ Disparadores
+
+? ¿Qué diferencia hay entre un trigger FOR EACH ROW y uno FOR EACH STATEMENT?
+a) El primero se ejecuta una vez por cada fila afectada; el segundo una sola vez por sentencia
+b) El primero se ejecuta una vez por sentencia
+c) No hay diferencia
+d) FOR EACH STATEMENT solo funciona con DELETE
+= a
+> Los de nivel de fila pueden acceder a OLD y NEW.
+@ Disparadores
+
+? En un trigger de tipo AFTER INSERT, ¿qué valores están disponibles?
+a) Solo OLD
+b) Solo NEW
+c) OLD y NEW con valores válidos
+d) Ninguno
+= b
+> En INSERT no existe fila anterior; en DELETE no existe fila nueva; en UPDATE existen ambas.
+@ Disparadores
+
+? ¿Qué tablas especiales ofrece SQL Server dentro de un trigger?
+a) inserted y deleted
+b) OLD y NEW
+c) before y after
+d) new_rows y old_rows
+= a
+> En SQL Server, un UPDATE llena inserted con los valores nuevos y deleted con los antiguos.
+@ Disparadores
+
+? ¿Cuál es un uso típico de un trigger?
+a) Auditar los cambios realizados en una tabla
+b) Crear una copia de seguridad completa de la BD
+c) Instalar el SGBD
+d) Cifrar el disco
+= a
+> También se emplean para mantener datos derivados o aplicar reglas complejas.
+@ Disparadores
+
+? ¿Qué riesgo es característico de abusar de los triggers?
+a) Imposibilidad de usar índices
+b) Efectos en cascada o recursivos difíciles de depurar y degradación del rendimiento
+c) Pérdida de las claves primarias
+d) Desactivación de transacciones
+= b
+> Hacen que parte de la lógica sea implícita y menos visible.
+@ Disparadores
+
+? ¿Qué es un evento programado (scheduled event) en una base de datos?
+a) Un trigger de tipo BEFORE
+b) Un registro del log
+c) Un permiso temporal
+d) Una tarea que se ejecuta en momentos o intervalos de tiempo definidos
+= d
+> Ejemplos: CREATE EVENT en MySQL, DBMS_SCHEDULER en Oracle, SQL Server Agent.
+@ Eventos
+
+? Dadas las tablas EMPLEADO(id, nombre, id_dpto) y DEPARTAMENTO(id, nombre), ¿qué consulta lista el nombre de cada departamento con el número de empleados, incluyendo departamentos sin empleados?
+a) SELECT d.nombre, COUNT(*) FROM departamento d INNER JOIN empleado e ON e.id_dpto = d.id GROUP BY d.nombre
+b) SELECT d.nombre, COUNT(e.id) FROM departamento d LEFT JOIN empleado e ON e.id_dpto = d.id GROUP BY d.nombre
+c) SELECT d.nombre, COUNT(e.id) FROM departamento d, empleado e GROUP BY d.nombre
+d) SELECT nombre, COUNT(*) FROM departamento
+= b
+> El LEFT JOIN conserva los departamentos sin empleados y COUNT(e.id) cuenta 0 en ellos (COUNT(*) contaría 1).
+@ Consultas
+
+? ¿Qué consulta devuelve los empleados con un salario superior a la media de todos?
+a) SELECT * FROM empleado WHERE salario > (SELECT AVG(salario) FROM empleado)
+b) SELECT * FROM empleado WHERE salario > AVG(salario)
+c) SELECT * FROM empleado HAVING salario > AVG(salario)
+d) SELECT * FROM empleado GROUP BY salario > AVG(salario)
+= a
+> No se pueden usar funciones de agregación directamente en WHERE; se emplea una subconsulta escalar.
+@ Consultas
+
+? ¿Qué devuelve «SELECT dpto, COUNT(*) FROM empleado GROUP BY dpto HAVING COUNT(*) > 5»?
+a) Todos los departamentos
+b) Los empleados cuyo departamento es 5
+c) Error de sintaxis
+d) Los departamentos con más de 5 empleados y su número de empleados
+= d
+> HAVING filtra los grupos tras la agrupación.
+@ Consultas
+
+? ¿Qué cláusula permite limitar el número de filas devueltas en SQL estándar (SQL:2008)?
+a) TOP n siempre
+b) FETCH FIRST n ROWS ONLY
+c) LIMIT n en todos los SGBD
+d) ROWNUM en todos los SGBD
+= b
+> LIMIT es de MySQL/PostgreSQL, TOP de SQL Server y ROWNUM de Oracle clásico; FETCH FIRST es el estándar.
+@ Consultas
+
+? Si la columna fecha está indexada, ¿por qué «WHERE YEAR(fecha) = 2025» puede ser ineficiente?
+a) Porque YEAR no existe
+b) Porque el índice se borra
+c) Porque obliga a usar GROUP BY
+d) Porque aplicar una función a la columna impide usar el índice (condición no sargable)
+= d
+> Es preferible un rango: WHERE fecha >= '2025-01-01' AND fecha < '2026-01-01'.
+@ Rendimiento
+
+? ¿Qué sentencia permite insertar o actualizar según exista o no la clave (upsert) en SQL estándar?
+a) UPSERT
+b) REPLACE
+c) MERGE
+d) JOIN
+= c
+> MERGE se introdujo en SQL:2003. Algunos SGBD ofrecen INSERT … ON CONFLICT (PostgreSQL) o ON DUPLICATE KEY UPDATE (MySQL).
+@ DML
+
+? ¿Qué hace la sentencia «INSERT INTO historico SELECT * FROM empleado WHERE salario > 3000»?
+a) Crea la tabla histórico
+b) Inserta en histórico las filas de empleado con salario superior a 3000
+c) Elimina de empleado las filas seleccionadas
+d) Produce un error siempre
+= b
+> Las columnas deben ser compatibles en número y tipo.
+@ DML
