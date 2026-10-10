@@ -1,0 +1,48 @@
+Clasificación de periféricos :: Entrada, salida, mixtos (E/S) y de almacenamiento.
+USB :: Bus serie en árbol con hubs; hasta 127 dispositivos por controlador; USB-C reversible; USB OTG permite actuar como host.
+USB Power Delivery :: Hasta 240 W (EPR) sobre USB-C.
+Thunderbolt 3/4 :: Conector USB-C; 40 Gbit/s; transporta PCIe, DisplayPort y USB.
+Bluetooth :: Banda ISM de 2,4 GHz, redes PAN. Clase 1 ≈ 100 m, Clase 2 ≈ 10 m, Clase 3 ≈ 1 m. BLE: bajo consumo.
+NFC :: 13,56 MHz, alcance de pocos centímetros.
+Hot-plug y hot-swap :: Hot-plug: conectar/desconectar con el sistema en marcha. Hot-swap: sustituir un componente sin detener el servicio.
+Plug and Play :: Detección y configuración automática de dispositivos mediante controladores (drivers).
+Herramientas de administración :: Windows: Administrador de dispositivos y GPO (p. ej. restringir USB). Linux: udev, lsusb, lspci, CUPS.
+Seguridad de periféricos :: Bloquear puertos USB, cifrar unidades extraíbles (BitLocker To Go), protegerse de BadUSB.
+RD 488/1997 :: Disposiciones mínimas de seguridad y salud en el trabajo con pantallas de visualización (PVD).
+Impresora de matriz de puntos :: Impacto con 9 o 24 agujas; papel continuo y copias.
+Impresora de inyección de tinta :: Gotas por calor (térmica) o cristal piezoeléctrico; riesgo de obstrucción.
+Impresora láser :: Tambor OPC, tóner y fusor. Fases: carga, exposición, revelado, transferencia, fusión, limpieza.
+Impresión 3D :: FDM (filamento fundido), SLA (resina fotopolimerizable), SLS (sinterizado láser de polvo).
+Parámetros de impresión :: dpi (resolución), ppm (velocidad), ciclo de trabajo, coste por página.
+Lenguajes de impresión :: PCL (HP), PostScript (Adobe, independiente del dispositivo), GDI (host-based).
+Protocolos de impresión en red :: IPP (631), LPD/LPR (515), RAW/JetDirect (9100), SMB. SNMP con Printer MIB (RFC 3805) para monitorizar.
+CUPS :: Sistema de impresión de Unix/Linux; interfaz web en el puerto 631; usa PPD.
+Pull printing :: Impresión segura: el trabajo se retiene hasta que el usuario se autentica en el equipo.
+HDD :: Platos, cabezales, pistas, cilindros y sectores (512 B o 4 KiB). 5400, 7200, 10 000 y 15 000 rpm.
+Tiempo de acceso de un HDD :: Búsqueda (seek) + latencia rotacional + transferencia. Latencia media a 7200 rpm ≈ 4,17 ms (30/rpm).
+Tipos de celda NAND :: SLC 1 bit, MLC 2, TLC 3, QLC 4 bits por celda; más bits = más capacidad y menos resistencia.
+Mantenimiento de un SSD :: Wear leveling (reparto del desgaste), TRIM, garbage collection, over-provisioning; resistencia en TBW/DWPD.
+NVMe :: Protocolo para SSD sobre PCIe; formato M.2 2280, U.2, E1.S.
+RAID 0 :: Striping sin tolerancia a fallos.
+RAID 1 :: Espejo; tolera el fallo de un disco del par.
+RAID 5 :: Paridad distribuida, mínimo 3 discos, tolera 1 fallo. Capacidad = (N − 1) × disco.
+RAID 6 :: Doble paridad, mínimo 4 discos, tolera 2 fallos.
+RAID 10 :: Espejos con striping, mínimo 4 discos.
+Discos ópticos :: CD ≈ 700 MB (780 nm). DVD 4,7/8,5 GB (650 nm). Blu-ray 25/50 GB (405 nm).
+Cinta LTO :: Acceso secuencial, copias de seguridad y archivo; cifrado y WORM; LTO-9 18 TB nativos; LTFS.
+Tarjetas SD :: SDSC ≤ 2 GB; SDHC hasta 32 GB (FAT32); SDXC hasta 2 TB (exFAT); SDUC hasta 128 TB.
+DAS, NAS y SAN :: DAS: conectado directo. NAS: nivel de fichero (NFS, SMB). SAN: nivel de bloque (Fibre Channel, iSCSI).
+Paneles LCD :: TN (rápidos), IPS (color y ángulos), VA (contraste). LED = retroiluminación LED.
+OLED :: Píxeles autoemisivos; negro puro; riesgo de burn-in.
+Resoluciones :: HD 1280×720; Full HD 1920×1080; QHD 2560×1440; 4K UHD 3840×2160; 8K 7680×4320.
+Conectores de vídeo :: VGA analógico; DVI-D digital sin audio; HDMI vídeo+audio; DisplayPort con MST.
+Ancho de banda de HDMI :: 1.4: 10,2 Gbit/s; 2.0: 18 Gbit/s (4K60); 2.1: 48 Gbit/s (4K120, 8K60).
+DisplayPort :: 1.4: 32,4 Gbit/s; 2.x hasta 80 Gbit/s; MST para encadenar monitores.
+Pantallas táctiles :: Resistivas (presión) y capacitivas (contacto eléctrico, multitáctil).
+Proyectores :: DLP, LCD, LCoS; brillo en lúmenes ANSI.
+Escáner :: CCD o CIS; resolución óptica frente a interpolada; ADF para lotes.
+Interfaces de escaneo :: TWAIN y WIA (Windows), SANE (Linux), ISIS (producción).
+OCR, ICR, OMR :: Texto impreso, escritura manuscrita y marcas, respectivamente.
+NTI de Digitalización :: Resolución mínima de 200 píxeles por pulgada (B/N, color o grises); imagen fiel; formato del Catálogo de estándares.
+Formatos de imagen :: JPEG con pérdida; PNG sin pérdida con transparencia; GIF 256 colores; TIFF archivo; SVG vectorial.
+PDF/A :: Perfil de PDF (ISO 19005) para archivo a largo plazo.

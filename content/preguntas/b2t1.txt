@@ -1,0 +1,577 @@
+// Tema 10 (B2·T1) · Informática básica. Representación de la información. Arquitectura de ordenadores
+
+? ¿Cuál es la relación correcta entre dato, información y conocimiento?
+a) El dato es la información interpretada y asimilada
+b) El conocimiento es un dato sin procesar
+c) La información son datos procesados con significado y utilidad para quien los recibe
+d) Dato e información son siempre equivalentes
+= c
+> El dato es una representación simbólica sin significado por sí misma; la información son datos procesados con significado; el conocimiento es información interpretada y asimilada.
+@ Fundamentos
+
+? ¿Qué elementos constituyen un sistema de información?
+a) Solo el hardware y el software
+b) Exclusivamente las bases de datos
+c) Datos, hardware, software, personas y procedimientos
+d) El sistema operativo y las aplicaciones ofimáticas
+= c
+> Un SI integra datos, hardware, software, personal y procedimientos, y realiza funciones de entrada, proceso, almacenamiento y salida con retroalimentación.
+@ Fundamentos
+
+? Un programa grabado en una memoria no volátil de un dispositivo para controlar su funcionamiento básico se denomina:
+a) Middleware
+b) Freeware
+c) Shareware
+d) Firmware
+= d
+> El firmware reside en memoria no volátil (ROM, EEPROM, flash) y controla el hardware (por ejemplo, la BIOS/UEFI).
+@ Fundamentos
+
+? ¿Cuántos bits de cada dígito hexadecimal representa?
+a) 2
+b) 3
+c) 8
+d) 4
+= d
+> 16 = 2⁴, por lo que cada dígito hexadecimal equivale a 4 bits (un nibble). Un dígito octal equivale a 3 bits.
+@ Sistemas de numeración
+
+? ¿Cuál es el valor decimal del número hexadecimal FF?
+a) 15
+b) 127
+c) 255
+d) 256
+= c
+> FF₁₆ = 15·16 + 15 = 255.
+@ Sistemas de numeración
+
+? El número binario 1011 0110 en hexadecimal es:
+a) A6
+b) B9
+c) 6B
+d) B6
+= d
+> 1011 = B y 0110 = 6, luego B6₁₆ (= 182 decimal).
+@ Sistemas de numeración
+
+? Según los prefijos binarios de la norma IEC, 1 KiB equivale a:
+a) 1000 bytes
+b) 1024 bits
+c) 8192 bytes
+d) 1024 bytes
+= d
+> Kibibyte = 2¹⁰ = 1024 bytes. El kilobyte (kB) del Sistema Internacional son 1000 bytes.
+@ Unidades
+
+? Un disco duro etiquetado como «1 TB» por el fabricante aparece en el sistema operativo con unos 931 GiB porque:
+a) El sistema operativo reserva el 7 % para particionado
+b) El disco pierde capacidad al formatearse siempre
+c) El fabricante usa prefijos decimales (10¹² bytes) y el sistema muestra GiB (2³⁰ bytes)
+d) Los discos usan sectores de 4 KiB
+= c
+> 10¹² bytes / 2³⁰ ≈ 931,3 GiB. No es pérdida real de capacidad sino diferencia de unidades.
+@ Unidades
+
+? ¿Cuántos caracteres puede representar el código ASCII estándar?
+a) 64
+b) 256
+c) 65.536
+d) 128
+= d
+> ASCII usa 7 bits (2⁷ = 128 caracteres). El ASCII extendido usa 8 bits (256).
+@ Códigos
+
+? ¿Qué característica tiene la codificación UTF-8?
+a) Longitud variable de 1 a 4 bytes y compatibilidad con ASCII para los 128 primeros caracteres
+b) Longitud fija de 2 bytes por carácter
+c) Longitud fija de 4 bytes por carácter
+d) Solo permite caracteres latinos
+= a
+> UTF-8 codifica los caracteres ASCII en 1 byte y el resto de caracteres Unicode en 2, 3 o 4 bytes.
+@ Unicode
+
+? ¿Cuántos bytes ocupa el símbolo «€» en UTF-8?
+a) 1
+b) 2
+c) 3
+d) 4
+= c
+> El punto de código U+20AC se codifica en tres bytes en UTF-8 (E2 82 AC).
+@ Unicode
+
+? ¿Qué codificación Unicode utiliza siempre 4 bytes por carácter?
+a) UTF-8
+b) UTF-32
+c) UTF-16
+d) UTF-7
+= b
+> UTF-32 es de longitud fija (32 bits). UTF-16 usa 2 o 4 bytes (pares sustitutos).
+@ Unicode
+
+? ¿Cuál es el rango de valores enteros representables con 8 bits en complemento a 2?
+a) 0 a 255
+b) −127 a +127
+c) −128 a +127
+d) −256 a +255
+= c
+> El rango en complemento a 2 con n bits es −2ⁿ⁻¹ … 2ⁿ⁻¹ − 1; para 8 bits, −128 … +127.
+@ Representación de enteros
+
+? ¿Cuál es la representación del número −5 en complemento a 2 con 8 bits?
+a) 1000 0101
+b) 1111 1011
+c) 1111 1010
+d) 0000 0101
+= b
+> +5 = 0000 0101; se invierte (1111 1010) y se suma 1 → 1111 1011.
+@ Representación de enteros
+
+? ¿Qué sistema de representación de enteros con signo tiene dos representaciones del cero?
+a) Signo-magnitud
+b) Complemento a 2
+c) Exceso 2ⁿ⁻¹ solamente
+d) Binario sin signo
+= a
+> Signo-magnitud y complemento a 1 tienen +0 y −0. Complemento a 2 solo tiene un cero.
+@ Representación de enteros
+
+? Sumando en complemento a 2 con 8 bits 0111 1111 + 0000 0001 se produce:
+a) 1000 0000, resultado correcto = +128
+b) 0000 0000 sin acarreo
+c) 1000 0000, desbordamiento (overflow): el resultado se interpreta como −128
+d) 1111 1111
+= c
+> 127 + 1 supera el máximo representable (+127), por lo que el resultado 1000 0000 se interpreta como −128: hay desbordamiento.
+@ Representación de enteros
+
+? En el estándar IEEE 754 de simple precisión (32 bits), ¿cómo se reparten los bits?
+a) 1 de signo, 8 de exponente y 23 de mantisa
+b) 1 de signo, 11 de exponente y 20 de mantisa
+c) 1 de signo, 11 de exponente y 52 de mantisa
+d) 2 de signo, 6 de exponente y 24 de mantisa
+= a
+> Binary32: 1+8+23 con sesgo 127. Binary64 (doble precisión): 1+11+52 con sesgo 1023.
+@ IEEE 754
+
+? El sesgo (exceso) del exponente en la doble precisión IEEE 754 es:
+a) 127
+b) 1023
+c) 255
+d) 2047
+= b
+> El exponente de 11 bits usa un exceso de 1023.
+@ IEEE 754
+
+? ¿Qué código tiene la propiedad de que dos valores consecutivos difieren solo en un bit?
+a) BCD
+b) ASCII
+c) EBCDIC
+d) Gray
+= d
+> El código Gray evita estados intermedios erróneos en codificadores y se usa en minimización de funciones lógicas (mapas de Karnaugh).
+@ Códigos
+
+? ¿Qué puertas lógicas se consideran universales?
+a) AND y OR
+b) NAND y NOR
+c) XOR y XNOR
+d) NOT y AND
+= b
+> Con solo NAND (o solo NOR) puede construirse cualquier función booleana.
+@ Lógica
+
+? Según una de las leyes de De Morgan, ¬(A · B) equivale a:
+a) ¬A · ¬B
+b) A + B
+c) A · ¬B
+d) ¬A + ¬B
+= d
+> La negación de un producto es la suma de las negaciones: ¬(A·B) = ¬A + ¬B; y ¬(A+B) = ¬A·¬B.
+@ Lógica
+
+? En un semisumador, la salida de acarreo se obtiene con la puerta:
+a) XOR
+b) OR
+c) NOR
+d) AND
+= d
+> En el semisumador, suma = A XOR B y acarreo = A AND B.
+@ Lógica
+
+? ¿Qué puede hacer un único bit de paridad?
+a) Detectar y corregir un error de un bit
+b) Detectar un número impar de bits erróneos, sin poder corregirlos
+c) Corregir cualquier número de errores
+d) Comprimir los datos
+= b
+> La paridad detecta errores de un número impar de bits, pero no los corrige ni detecta los de número par.
+@ Detección de errores
+
+? ¿Qué código permite corregir errores de un solo bit?
+a) Paridad simple
+b) Código de Hamming
+c) Checksum
+d) BCD
+= b
+> Hamming corrige 1 bit; con un bit de paridad global (SECDED) detecta además errores dobles.
+@ Detección de errores
+
+? ¿Cuál de los siguientes formatos usa compresión con pérdida?
+a) PNG
+b) FLAC
+c) ZIP
+d) JPEG
+= d
+> JPEG, MP3 y MPEG descartan información; PNG, FLAC y ZIP son sin pérdida.
+@ Compresión
+
+? ¿Cuál es la fórmula de la capacidad de un canal con ruido según Shannon-Hartley?
+a) C = 2B·log₂M
+b) C = B/S
+c) C = B·log₂(1 + S/N)
+d) C = N·log₂B
+= c
+> C es la capacidad en bit/s, B el ancho de banda en Hz y S/N la relación señal-ruido (lineal). Nyquist (sin ruido) es C = 2B·log₂M.
+@ Teoría de la comunicación
+
+? En una comunicación dúplex (full-duplex):
+a) La transmisión solo puede ir en un sentido
+b) Se puede transmitir en ambos sentidos, pero no a la vez
+c) Solo se transmite por un canal paralelo
+d) Se puede transmitir en ambos sentidos simultáneamente
+= d
+> Símplex: un sentido. Semidúplex: ambos sentidos alternativamente. Dúplex: simultáneamente.
+@ Modos de comunicación
+
+? Un ordenador con arquitectura Von Neumann se caracteriza por:
+a) Una memoria única para datos e instrucciones
+b) Memorias separadas para datos e instrucciones
+c) Disponer solo de memoria ROM
+d) No tener unidad de control
+= a
+> En la arquitectura Von Neumann, datos e instrucciones comparten memoria y bus, lo que origina el «cuello de botella de Von Neumann». La arquitectura Harvard los separa.
+@ Arquitectura
+
+? ¿Dónde se utiliza típicamente la arquitectura Harvard pura?
+a) Únicamente en los mainframes
+b) Solo en los discos duros
+c) En las memorias caché L3
+d) En los microcontroladores y procesadores de señal (DSP)
+= d
+> Los microcontroladores y DSP separan memoria de programa y de datos. Las CPU de propósito general usan una Harvard modificada en las cachés L1.
+@ Arquitectura
+
+? ¿Qué registro de la CPU contiene la dirección de la siguiente instrucción que se va a ejecutar?
+a) IR
+b) MAR
+c) SP
+d) PC (contador de programa)
+= d
+> El PC apunta a la siguiente instrucción; el IR contiene la instrucción actual; el MAR la dirección de memoria a acceder; el SP el tope de la pila.
+@ CPU
+
+? ¿Cuál es el orden de las fases básicas del ciclo de instrucción?
+a) Ejecución, captación, decodificación
+b) Decodificación, ejecución, captación
+c) Captación, ejecución, decodificación
+d) Captación (fetch), decodificación, ejecución
+= d
+> Se obtiene la instrucción de memoria, se decodifica en la UC y se ejecuta, tras lo cual pueden darse el acceso a memoria y la escritura de resultados.
+@ CPU
+
+? ¿Qué mejora introduce la segmentación (pipeline) en una CPU?
+a) Reduce a cero el tiempo de ejecución de cada instrucción
+b) Elimina la necesidad de memoria caché
+c) Solapa la ejecución de varias instrucciones en distintas etapas, aumentando el rendimiento (throughput)
+d) Convierte el procesador en CISC
+= c
+> No reduce la latencia de una instrucción, pero incrementa el número de instrucciones completadas por unidad de tiempo. Los riesgos de datos, control y estructurales la limitan.
+@ CPU
+
+? ¿Cuál de las siguientes es una característica de las arquitecturas RISC?
+a) Instrucciones simples, de longitud fija, y arquitectura load/store
+b) Instrucciones complejas y de longitud muy variable
+c) Escasos registros de propósito general
+d) Gran cantidad de modos de direccionamiento
+= a
+> RISC (ARM, RISC-V, MIPS) usa instrucciones sencillas y regulares y accede a memoria solo con load/store. x86 es CISC.
+@ CPU
+
+? En la taxonomía de Flynn, un procesador gráfico (GPU) que aplica la misma instrucción a muchos datos se clasifica como:
+a) SISD
+b) SIMD
+c) MISD
+d) MIMD puro
+= b
+> SIMD: una instrucción, múltiples datos (vectorial). SISD es el monoprocesador clásico; MIMD, los multiprocesadores.
+@ Taxonomía de Flynn
+
+? La ley de Amdahl se utiliza para calcular:
+a) La aceleración máxima obtenida al mejorar una parte de un sistema
+b) La capacidad de un canal de comunicaciones
+c) El tamaño de una memoria caché
+d) La velocidad de conmutación de una puerta
+= a
+> Aceleración = 1 / ((1 − p) + p/s), siendo p la fracción que se mejora y s el factor de mejora de esa fracción.
+@ Rendimiento
+
+? ¿Cuál es el orden correcto de la jerarquía de memoria, de más rápida a más lenta?
+a) RAM, registros, caché, disco
+b) Caché, registros, disco, RAM
+c) Registros, RAM, caché, disco
+d) Registros, caché, RAM, disco
+= d
+> Registros → caché L1/L2/L3 → memoria principal → almacenamiento secundario (SSD/HDD) → cinta.
+@ Memoria
+
+? ¿Qué tecnología de memoria necesita ser refrescada periódicamente?
+a) SRAM
+b) DRAM
+c) ROM
+d) EEPROM
+= b
+> La DRAM almacena bits en condensadores que pierden carga; la SRAM usa biestables y no requiere refresco.
+@ Memoria
+
+? ¿Qué tipo de memoria se utiliza normalmente para la memoria caché de la CPU?
+a) DRAM
+b) Flash NAND
+c) PROM
+d) SRAM
+= d
+> La SRAM es más rápida y cara que la DRAM, apropiada para la caché.
+@ Memoria
+
+? En una caché con política de escritura write-back:
+a) Cada escritura se propaga inmediatamente a la memoria principal
+b) No se permiten escrituras
+c) Se escribe solo en caché y se actualiza la memoria principal cuando el bloque es reemplazado
+d) La caché se vacía en cada escritura
+= c
+> Write-back marca el bloque como «sucio» y lo vuelca al reemplazarlo. Write-through escribe en caché y en memoria a la vez.
+@ Memoria caché
+
+? ¿Qué memoria permite borrado eléctrico y reprogramación, sin necesidad de luz ultravioleta?
+a) EEPROM
+b) PROM
+c) EPROM
+d) ROM de máscara
+= a
+> EEPROM se borra eléctricamente; EPROM se borra con luz UV; PROM se programa una sola vez.
+@ Memoria
+
+? Un bus de direcciones de 32 bits permite direccionar directamente:
+a) 32 MiB
+b) 1 GiB
+c) 64 GiB
+d) 4 GiB
+= d
+> 2³² posiciones = 4.294.967.296 bytes = 4 GiB, si cada dirección referencia un byte.
+@ Memoria
+
+? ¿Cuál es la función de la MMU en un procesador?
+a) Traducir direcciones virtuales a físicas y gestionar la protección de memoria
+b) Realizar operaciones de coma flotante
+c) Refrigerar el procesador
+d) Gestionar las interrupciones externas
+= a
+> La unidad de gestión de memoria implementa memoria virtual (paginación/segmentación), apoyada por la TLB.
+@ Memoria virtual
+
+? ¿Qué es el DMA?
+a) Un mecanismo por el que un controlador transfiere datos entre un periférico y la memoria sin intervención continua de la CPU
+b) Un tipo de memoria caché
+c) Un protocolo de red
+d) Un formato de fichero
+= a
+> El acceso directo a memoria libera a la CPU de copiar cada dato; la CPU solo inicia y recibe la interrupción final.
+@ Entrada/salida
+
+? ¿Qué característica es propia de PCI Express?
+a) Es un bus paralelo compartido de 32 bits
+b) Está formado por enlaces serie punto a punto con carriles (x1, x4, x8, x16)
+c) Solo se usa para teclado y ratón
+d) Es un bus exclusivo de memoria RAM
+= b
+> PCIe sustituyó a PCI/AGP; el ancho de banda depende de la generación y del número de carriles.
+@ Buses
+
+? ¿Cuál es el factor de forma de placa base de mayor tamaño de entre los siguientes?
+a) ATX
+b) Mini-ITX
+c) microATX
+d) Todos tienen el mismo tamaño
+= a
+> ATX mide 305 × 244 mm; microATX, 244 × 244 mm; Mini-ITX, 170 × 170 mm.
+@ Placa base
+
+? ¿Qué ventaja ofrece UEFI sobre la BIOS tradicional?
+a) Permite arrancar desde discos GPT de gran tamaño y ofrece Secure Boot
+b) Funciona solo con discos MBR
+c) Elimina la necesidad de firmware
+d) Solo funciona en procesadores de 16 bits
+= a
+> UEFI proporciona arrancar con GPT, interfaz gráfica, drivers y Secure Boot (verificación de la firma del cargador).
+@ Firmware
+
+? ¿Qué limitación de capacidad presenta el esquema de particiones MBR con sectores de 512 bytes?
+a) 128 GiB
+b) 512 GiB
+c) 2 TiB
+d) 16 TiB
+= c
+> MBR usa direcciones de 32 bits para sectores: 2³² × 512 B = 2 TiB, y admite 4 particiones primarias. GPT elimina esas limitaciones.
+@ Particionado
+
+? ¿Cuántas particiones admite por defecto una tabla GPT?
+a) 4
+b) 128
+c) 16
+d) 1024
+= b
+> GPT reserva por defecto 128 entradas de partición.
+@ Particionado
+
+? ¿Cuál es la velocidad nominal de USB 2.0 de alta velocidad?
+a) 480 Mbit/s
+b) 12 Mbit/s
+c) 5 Gbit/s
+d) 10 Gbit/s
+= a
+> USB 1.1: 12 Mbit/s; USB 2.0: 480 Mbit/s; USB 3.0 (3.2 Gen 1): 5 Gbit/s; 3.2 Gen 2: 10 Gbit/s; USB4: 40 Gbit/s.
+@ Puertos
+
+? ¿Qué velocidad máxima nominal tiene USB4 (primera versión)?
+a) 5 Gbit/s
+b) 10 Gbit/s
+c) 20 Gbit/s
+d) 40 Gbit/s
+= d
+> USB4 utiliza el protocolo de Thunderbolt 3 con hasta 40 Gbit/s. La versión 2.0 llega a 80 Gbit/s.
+@ Puertos
+
+? El interfaz SATA III proporciona una velocidad de transferencia de:
+a) 1,5 Gbit/s
+b) 3 Gbit/s
+c) 12 Gbit/s
+d) 6 Gbit/s
+= d
+> SATA I: 1,5 Gbit/s; SATA II: 3 Gbit/s; SATA III: 6 Gbit/s (≈ 600 MB/s útiles).
+@ Almacenamiento
+
+? ¿Qué diferencia hay entre los módulos de memoria DDR4 y DDR5 en cuanto a compatibilidad física?
+a) La muesca está en distinta posición y no son intercambiables
+b) Son intercambiables en el mismo zócalo
+c) DDR5 solo existe en formato SO-DIMM
+d) DDR4 tiene 240 pines y DDR5 288
+= a
+> Ambos son DIMM de 288 pines, pero con la muesca en distinta posición y tensión distinta (1,2 V frente a 1,1 V). DDR3 tiene 240 pines.
+@ Memoria RAM
+
+? ¿Qué certificación indica la eficiencia energética de una fuente de alimentación?
+a) ISO 9001
+b) CE
+c) 80 PLUS
+d) USB-IF
+= c
+> 80 PLUS (Bronze, Silver, Gold, Platinum, Titanium) garantiza una eficiencia mínima del 80 % a diferentes cargas.
+@ Fuente de alimentación
+
+? ¿Cuál es la altura de una unidad de rack (1U) en un armario de 19 pulgadas?
+a) 25,4 mm
+b) 44,45 mm
+c) 88,9 mm
+d) 100 mm
+= b
+> 1U = 1,75 pulgadas = 44,45 mm.
+@ Servidores
+
+? ¿Qué es un cliente ligero (thin client)?
+a) Un equipo que ejecuta localmente todas las aplicaciones y almacena todos los datos
+b) Un equipo con pocos recursos que depende de un servidor para ejecutar aplicaciones o escritorios
+c) Un portátil sin pantalla
+d) Un servidor blade
+= b
+> Los clientes ligeros se conectan a escritorios virtuales o aplicaciones alojadas en servidores (VDI, terminal server).
+@ Tipos de equipos
+
+? ¿Qué directiva europea regula la gestión de los residuos de aparatos eléctricos y electrónicos (RAEE)?
+a) La Directiva 95/46/CE
+b) La Directiva 2012/19/UE
+c) La Directiva 2016/2102
+d) La Directiva eIDAS
+= b
+> Es la Directiva 2012/19/UE sobre RAEE, transpuesta al ordenamiento español por el Real Decreto 110/2015.
+@ Sostenibilidad
+
+? ¿Cuál es la representación binaria de 13 decimal?
+a) 1011
+b) 1110
+c) 1101
+d) 0111
+= c
+> 13 = 8 + 4 + 1 = 1101₂. Se obtiene dividiendo sucesivamente entre 2 y leyendo los restos de abajo arriba.
+@ Conversión
+
+? Desplazar a la izquierda dos posiciones un número binario sin signo equivale a:
+a) Dividirlo entre 4
+b) Multiplicarlo por 2
+c) Calcular su complemento a 2
+d) Multiplicarlo por 4
+= d
+> Cada desplazamiento a la izquierda multiplica por 2; dos desplazamientos, por 2² = 4 (si no hay desbordamiento).
+@ Operaciones con bits
+
+? ¿Qué resultado produce A XOR A para cualquier valor A?
+a) A
+b) 1
+c) 0
+d) El complemento de A
+= c
+> XOR da 1 solo cuando los bits son distintos; un valor con sí mismo siempre da 0 (truco para poner a cero un registro).
+@ Operaciones con bits
+
+? ¿Qué modo de direccionamiento incluye el operando dentro de la propia instrucción?
+a) Directo
+b) Indirecto
+c) Inmediato
+d) Indexado
+= c
+> En el inmediato el operando es un valor constante en la instrucción; en el directo, la instrucción contiene la dirección del operando.
+@ Direccionamiento
+
+? ¿Qué programa traduce el código fuente completo de un lenguaje de alto nivel a código máquina antes de su ejecución?
+a) Un intérprete
+b) Un cargador
+c) Un compilador
+d) Un depurador
+= c
+> El compilador genera el código objeto; el intérprete traduce y ejecuta instrucción a instrucción. El ensamblador traduce del lenguaje ensamblador.
+@ Traductores
+
+? ¿Qué tecnología de la CPU facilita la ejecución de máquinas virtuales por hipervisores?
+a) Hyper-Threading exclusivamente
+b) Secure Boot
+c) Intel VT-x y AMD-V
+d) ECC
+= c
+> VT-x y AMD-V son extensiones de virtualización por hardware.
+@ Virtualización
+
+? Los supercomputadores se miden habitualmente en:
+a) IOPS
+b) dpi
+c) Lúmenes
+d) FLOPS
+= d
+> FLOPS (operaciones de coma flotante por segundo), p. ej. petaFLOPS o exaFLOPS. IOPS mide operaciones de E/S de almacenamiento.
+@ Tipos de ordenadores
+
+? ¿Qué tecnología introdujo la tercera generación de ordenadores?
+a) Los circuitos integrados
+b) Las válvulas de vacío
+c) Los transistores
+d) Los microprocesadores
+= a
+> 1.ª válvulas; 2.ª transistores; 3.ª circuitos integrados; 4.ª microprocesadores.
+@ Historia

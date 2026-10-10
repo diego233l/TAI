@@ -1,0 +1,514 @@
+// Tema 11 (B2·T2) · Periféricos: conectividad y administración. Impresión, almacenamiento, visualización y digitalización
+
+? ¿Cuál de los siguientes dispositivos es un periférico de entrada?
+a) Plotter
+b) Proyector
+c) Escáner
+d) Altavoz
+= c
+> El escáner introduce información en el sistema. Plotter, proyector y altavoz son de salida.
+@ Periféricos
+
+? ¿Qué tipo de periférico es una pantalla táctil?
+a) Solo de entrada
+b) Mixto (entrada/salida)
+c) Solo de salida
+d) De almacenamiento
+= b
+> Muestra información (salida) y capta el contacto (entrada).
+@ Periféricos
+
+? ¿Cuál es el número máximo de dispositivos que puede direccionar un controlador USB?
+a) 7
+b) 63
+c) 256
+d) 127
+= d
+> USB usa direcciones de 7 bits: hasta 127 dispositivos (incluidos los hubs) por controlador host.
+@ USB
+
+? ¿Qué conector USB es reversible (no tiene orientación)?
+a) USB-C
+b) USB-A
+c) USB-B
+d) Micro-B
+= a
+> USB-C es simétrico; además permite Power Delivery, DisplayPort Alt Mode y Thunderbolt/USB4.
+@ USB
+
+? La función USB OTG permite:
+a) Que un dispositivo móvil actúe como anfitrión (host) de otros periféricos USB
+b) Cifrar las unidades USB
+c) Alimentar al equipo con 240 W
+d) Multiplicar por dos la velocidad de transferencia
+= a
+> USB On-The-Go permite conectar teclados, ratones o memorias USB directamente a un teléfono o tableta.
+@ USB
+
+? ¿En qué banda de frecuencia trabaja Bluetooth clásico?
+a) 900 MHz
+b) 5 GHz
+c) 2,4 GHz
+d) 60 GHz
+= c
+> Bluetooth usa la banda ISM de 2,4 GHz con salto de frecuencia (FHSS). BLE es la variante de bajo consumo.
+@ Bluetooth
+
+? ¿Cuál es el alcance aproximado de un dispositivo Bluetooth de Clase 2?
+a) 1 m
+b) 100 m
+c) 1 km
+d) 10 m
+= d
+> Clase 1 ≈ 100 m; Clase 2 ≈ 10 m (la más común en móviles y auriculares); Clase 3 ≈ 1 m.
+@ Bluetooth
+
+? La frecuencia de funcionamiento de NFC es:
+a) 125 kHz
+b) 13,56 MHz
+c) 2,4 GHz
+d) 868 MHz
+= b
+> NFC trabaja a 13,56 MHz con alcance de pocos centímetros. Las tarjetas de proximidad de baja frecuencia usan 125 kHz.
+@ NFC
+
+? ¿Qué es el «hot-swap» (sustitución en caliente)?
+a) Cambiar un dispositivo sin apagar el sistema y sin interrumpir su funcionamiento
+b) Actualizar la BIOS
+c) Sobrecalentar un componente
+d) Clonar un disco
+= a
+> Se utiliza en discos de servidores y fuentes redundantes. El hot-plug es conectar/desconectar con el sistema en marcha.
+@ Administración
+
+? En Windows, ¿qué herramienta permite ver y administrar los controladores de los dispositivos de hardware?
+a) El Visor de eventos
+b) El Monitor de recursos
+c) El Programador de tareas
+d) El Administrador de dispositivos
+= d
+> El Administrador de dispositivos (devmgmt.msc) lista el hardware, permite actualizar, deshabilitar o revertir controladores.
+@ Administración
+
+? ¿Qué sistema se usa habitualmente en Linux para gestionar la impresión?
+a) SANE
+b) udev
+c) GRUB
+d) CUPS
+= d
+> CUPS (Common UNIX Printing System) gestiona colas e impresoras; su interfaz web escucha en el puerto 631. SANE es para escáneres; udev para dispositivos.
+@ Administración
+
+? ¿Qué RD regula las disposiciones mínimas de seguridad y salud en el trabajo con equipos que incluyen pantallas de visualización?
+a) Real Decreto 486/1997
+b) Real Decreto 487/1997
+c) Real Decreto 773/1997
+d) Real Decreto 488/1997
+= d
+> El RD 488/1997 regula los puestos con pantallas de visualización de datos (PVD). Los RD 486 y 487/1997 se refieren a lugares de trabajo y a manipulación de cargas.
+@ RD 488/1997
+
+? ¿Qué tecnología de impresión utiliza una cinta entintada y permite imprimir en papel continuo con copias?
+a) Láser
+b) Matriz de puntos
+c) Inyección de tinta
+d) Sublimación
+= b
+> Las impresoras de impacto de matriz de puntos golpean la cinta con agujas (9 o 24) y permiten copias con papel autocopiativo.
+@ Impresión
+
+? ¿Qué componente de una impresora láser fija el tóner al papel mediante calor y presión?
+a) El tambor
+b) El cabezal
+c) El rodillo de arrastre
+d) El fusor
+= d
+> El fusor funde el tóner. El tambor fotosensible (OPC) recibe la imagen latente.
+@ Impresión láser
+
+? ¿Cuál es el orden correcto de las fases del proceso de impresión láser?
+a) Carga, exposición, revelado, transferencia, fusión, limpieza
+b) Fusión, carga, exposición, revelado, transferencia
+c) Exposición, carga, fusión, transferencia, revelado
+d) Revelado, carga, transferencia, exposición, fusión
+= a
+> Se carga el tambor, se escribe la imagen con el láser, se revela con tóner, se transfiere al papel, se funde con el fusor y se limpia el tambor.
+@ Impresión láser
+
+? ¿Qué impresoras utilizan cristales piezoeléctricos o calor para proyectar gotas?
+a) Láser
+b) De matriz de puntos
+c) De inyección de tinta
+d) Térmicas directas
+= c
+> La inyección de tinta puede ser térmica (burbuja) o piezoeléctrica.
+@ Impresión
+
+? ¿Qué tecnología de impresión 3D deposita capas de filamento termoplástico fundido?
+a) SLA
+b) SLS
+c) DLP
+d) FDM
+= d
+> FDM (Fused Deposition Modeling) utiliza filamentos como PLA o ABS. SLA usa resina fotopolimerizable y SLS sinteriza polvo con láser.
+@ Impresión 3D
+
+? ¿Qué mide la unidad dpi en una impresora?
+a) Páginas por minuto
+b) Puntos por pulgada, es decir, la resolución
+c) Datos por impresión
+d) La capacidad del tóner
+= b
+> dpi (dots per inch) mide la resolución; ppm, la velocidad en páginas por minuto.
+@ Impresión
+
+? ¿Cuál es el puerto estándar del protocolo IPP (Internet Printing Protocol)?
+a) 515
+b) 9100
+c) 3389
+d) 631
+= d
+> IPP usa el puerto 631 (también CUPS). LPD usa el 515 y RAW/JetDirect el 9100.
+@ Impresión en red
+
+? ¿Qué puerto TCP utiliza habitualmente la impresión directa RAW (JetDirect)?
+a) 515
+b) 9100
+c) 631
+d) 161
+= b
+> El puerto 9100 envía el trabajo directamente a la impresora sin cola de impresión intermedia.
+@ Impresión en red
+
+? ¿Qué lenguaje de descripción de página de Adobe es independiente del dispositivo?
+a) PCL
+b) PostScript
+c) GDI
+d) ESC/P
+= b
+> PostScript (Adobe) es un lenguaje de descripción de página independiente del dispositivo. PCL es de HP y ESC/P de Epson.
+@ Impresión
+
+? ¿Qué protocolo permite monitorizar el estado de una impresora de red (niveles de tóner, atascos)?
+a) SNMP
+b) SMTP
+c) NTP
+d) DHCP
+= a
+> SNMP con la Printer MIB (RFC 3805) permite consultar contadores y alertas.
+@ Impresión en red
+
+? La impresión segura «pull printing» consiste en:
+a) Imprimir siempre en la impresora más cercana
+b) Retener el trabajo hasta que el usuario se autentica en el dispositivo
+c) Enviar los documentos por correo
+d) Imprimir solo en blanco y negro
+= b
+> Evita que los documentos queden olvidados en la bandeja y permite auditar el uso.
+@ Impresión
+
+? En un disco duro, ¿qué compone el tiempo de acceso?
+a) Tiempo de búsqueda + latencia rotacional + tiempo de transferencia
+b) Solo el tiempo de transferencia
+c) Solo la latencia rotacional
+d) La velocidad del bus SATA
+= a
+> El cabezal debe posicionarse en la pista (seek), esperar a que gire el sector (latencia) y leer los datos.
+@ HDD
+
+? ¿Cuál es la latencia rotacional media de un disco de 7200 rpm?
+a) ≈ 2,08 ms
+b) ≈ 4,17 ms
+c) ≈ 8,33 ms
+d) ≈ 16,7 ms
+= b
+> Media vuelta: (60 s / 7200) / 2 ≈ 4,17 ms.
+@ HDD
+
+? ¿Cuál es la unidad mínima de lectura en un disco duro tradicional (formato clásico)?
+a) El bit
+b) El sector de 512 bytes
+c) La pista
+d) El cilindro
+= b
+> El sector clásico es de 512 bytes; los discos modernos «Advanced Format» usan sectores de 4 KiB.
+@ HDD
+
+? ¿Qué tipo de celda NAND almacena 3 bits por celda?
+a) SLC
+b) TLC
+c) MLC
+d) QLC
+= b
+> SLC: 1 bit; MLC: 2; TLC: 3; QLC: 4. A más bits por celda, más capacidad y menos resistencia.
+@ SSD
+
+? ¿Qué función cumple el comando TRIM en un SSD?
+a) Comprime los datos
+b) Formatea el disco
+c) Cifra el contenido
+d) Informa al SSD de los bloques que el sistema de ficheros ya no usa para mantener el rendimiento
+= d
+> TRIM permite al SSD borrar previamente los bloques libres y gestionar mejor la recolección de basura.
+@ SSD
+
+? La técnica «wear leveling» en los SSD sirve para:
+a) Aumentar la frecuencia del bus
+b) Repartir uniformemente los ciclos de escritura entre las celdas
+c) Eliminar la necesidad de controlador
+d) Disminuir la capacidad útil a la mitad
+= b
+> La nivelación de desgaste evita que unas celdas se agoten antes que otras.
+@ SSD
+
+? ¿Qué indica el parámetro TBW de un SSD?
+a) La velocidad máxima de lectura
+b) El volumen total de datos que se pueden escribir durante la vida útil garantizada
+c) El tiempo de acceso
+d) La temperatura de trabajo
+= b
+> Terabytes Written: resistencia del SSD. DWPD expresa escrituras completas del disco por día durante la garantía.
+@ SSD
+
+? ¿Qué factor de forma y bus se usa habitualmente en un SSD NVMe de ordenador personal?
+a) 3,5" sobre IDE
+b) CompactFlash sobre PATA
+c) M.2 sobre PCIe
+d) PCMCIA
+= c
+> NVMe es un protocolo de acceso a SSD sobre PCIe; el formato más extendido es M.2 2280.
+@ SSD
+
+? ¿Qué nivel de RAID reparte los datos en bandas (striping) sin ofrecer tolerancia a fallos?
+a) RAID 1
+b) RAID 0
+c) RAID 5
+d) RAID 6
+= b
+> RAID 0 mejora rendimiento y capacidad pero la pérdida de un solo disco hace perder todos los datos.
+@ RAID
+
+? ¿Cuál es el número mínimo de discos de un RAID 5?
+a) 2
+b) 3
+c) 4
+d) 5
+= b
+> RAID 5 usa bandas con paridad distribuida y tolera el fallo de un disco; necesita al menos 3.
+@ RAID
+
+? ¿Cuántos fallos de disco tolera un RAID 6?
+a) Dos
+b) Ninguno
+c) Uno
+d) Tres
+= a
+> RAID 6 calcula doble paridad distribuida; requiere al menos 4 discos.
+@ RAID
+
+? ¿Qué capacidad útil tiene un RAID 5 formado por 4 discos de 2 TB?
+a) 6 TB
+b) 2 TB
+c) 4 TB
+d) 8 TB
+= a
+> Capacidad útil = (N − 1) × tamaño = 3 × 2 TB = 6 TB.
+@ RAID
+
+? ¿Qué RAID combina espejos y reparto en bandas?
+a) RAID 0
+b) RAID 5
+c) JBOD
+d) RAID 10 (1+0)
+= d
+> RAID 10 reparte (stripe) sobre conjuntos de espejos; necesita al menos 4 discos y tolera un fallo por espejo.
+@ RAID
+
+? ¿Qué longitud de onda utiliza el láser de un Blu-ray?
+a) 780 nm
+b) 405 nm
+c) 650 nm
+d) 1550 nm
+= b
+> CD: 780 nm (infrarrojo); DVD: 650 nm (rojo); Blu-ray: 405 nm (violeta-azul), lo que permite más densidad.
+@ Ópticos
+
+? ¿Qué capacidad tiene un DVD de una capa?
+a) 700 MB
+b) 4,7 GB
+c) 8,5 GB
+d) 25 GB
+= b
+> DVD-5: 4,7 GB. Doble capa: 8,5 GB. Blu-ray de una capa: 25 GB.
+@ Ópticos
+
+? ¿Cuál es el medio de almacenamiento más habitual para copias de seguridad de gran volumen y archivado de bajo coste?
+a) Tarjetas SD
+b) Cintas magnéticas LTO
+c) Disquetes
+d) Memorias RAM
+= b
+> Las cintas LTO ofrecen gran capacidad, bajo coste por TB, cifrado y WORM, con acceso secuencial.
+@ Cintas
+
+? ¿Qué sistema de ficheros usan normalmente las tarjetas SDXC?
+a) FAT16
+b) FAT32
+c) exFAT
+d) ext2
+= c
+> SDHC (hasta 32 GB) usa FAT32; SDXC (de 64 GB a 2 TB) usa exFAT.
+@ Flash
+
+? En una arquitectura NAS el acceso a los datos se realiza:
+a) A nivel de bloque con Fibre Channel
+b) A nivel de registro de base de datos
+c) A nivel de fichero mediante protocolos como NFS o SMB/CIFS
+d) Solo mediante conexión SCSI directa
+= c
+> NAS comparte ficheros por red. SAN ofrece volúmenes a nivel de bloque (Fibre Channel, iSCSI). DAS es conexión directa.
+@ NAS/SAN/DAS
+
+? ¿Qué protocolos son típicos de una SAN?
+a) Fibre Channel e iSCSI
+b) SMB y NFS
+c) HTTP y FTP
+d) SMTP e IMAP
+= a
+> Una SAN presenta LUN a nivel de bloque mediante Fibre Channel (FC), FCoE o iSCSI.
+@ NAS/SAN/DAS
+
+? Una pantalla que presenta negros perfectos porque cada píxel emite su propia luz es de tecnología:
+a) OLED
+b) LCD con retroiluminación LED
+c) TN
+d) CRT con máscara de sombra
+= a
+> En OLED cada píxel es autoemisivo; los LCD necesitan retroiluminación. Riesgo de burn-in.
+@ Pantallas
+
+? ¿Qué tipo de panel LCD ofrece mejor reproducción del color y ángulos de visión?
+a) TN
+b) STN
+c) CRT
+d) IPS
+= d
+> IPS destaca en color y ángulos; TN en velocidad y bajo coste; VA en contraste.
+@ Pantallas
+
+? ¿Cuál es la resolución de 4K UHD?
+a) 1920 × 1080
+b) 3840 × 2160
+c) 2560 × 1440
+d) 7680 × 4320
+= b
+> Full HD: 1920×1080; QHD: 2560×1440; 4K UHD: 3840×2160; 8K: 7680×4320.
+@ Pantallas
+
+? ¿Qué conector de vídeo es analógico?
+a) HDMI
+b) DisplayPort
+c) VGA
+d) DVI-D
+= c
+> VGA (D-sub de 15 pines) transmite señal analógica. DVI-I admite ambos; DVI-D es solo digital.
+@ Conectores
+
+? ¿Qué diferencia fundamental existe entre HDMI y DVI-D?
+a) DVI-D es analógico
+b) HDMI transporta además audio digital
+c) HDMI no admite alta definición
+d) DVI-D transporta audio de 7.1 canales
+= b
+> HDMI integra vídeo y audio en un mismo cable. DVI-D es digital pero no transporta audio.
+@ Conectores
+
+? ¿Qué ancho de banda nominal ofrece HDMI 2.1?
+a) 4,95 Gbit/s
+b) 48 Gbit/s
+c) 10,2 Gbit/s
+d) 18 Gbit/s
+= b
+> HDMI 1.4: 10,2 Gbit/s; HDMI 2.0: 18 Gbit/s (4K a 60 Hz); HDMI 2.1: 48 Gbit/s (4K/120, 8K/60).
+@ Conectores
+
+? ¿Qué característica distingue a DisplayPort frente a HDMI?
+a) Solo transporta vídeo
+b) Es analógico
+c) Permite encadenar monitores mediante MST
+d) Utiliza conector USB-A
+= c
+> DisplayPort soporta Multi-Stream Transport; también puede transportarse sobre USB-C (DP Alt Mode).
+@ Conectores
+
+? ¿Cuál es el principal tipo de pantalla táctil usada en móviles y tabletas?
+a) Resistiva
+b) De onda acústica
+c) De rayos catódicos
+d) Capacitiva
+= d
+> Las capacitivas detectan la variación del campo eléctrico por el contacto del dedo y permiten multitáctil. Las resistivas dependen de presión.
+@ Pantallas
+
+? ¿Cuál es la unidad de medida de la luminosidad de un proyector?
+a) dpi
+b) Candela por pulgada
+c) Lúmenes ANSI
+d) Hercios
+= c
+> Se mide en lúmenes ANSI. El brillo de monitores se expresa en cd/m² (nits).
+@ Proyectores
+
+? ¿Qué resolución mínima exige la NTI de Digitalización de Documentos para las imágenes electrónicas?
+a) 72 ppp
+b) 100 ppp
+c) 200 ppp
+d) 600 ppp
+= c
+> La NTI establece una resolución mínima de 200 píxeles por pulgada, tanto en blanco y negro como en color o escala de grises.
+@ NTI Digitalización
+
+? ¿Qué significa OCR?
+a) Registro óptico de copias
+b) Resolución óptica de color
+c) Reconocimiento óptico de caracteres
+d) Organización de contenidos y recursos
+= c
+> El OCR convierte imágenes de texto impreso en texto editable. ICR reconoce escritura a mano; OMR, marcas.
+@ Digitalización
+
+? ¿Qué API de captura de imágenes es la estándar en entorno Linux para escáneres?
+a) TWAIN
+b) WIA
+c) SANE
+d) ISIS
+= c
+> SANE (Scanner Access Now Easy). TWAIN y WIA son de Windows; ISIS es de escáneres de producción.
+@ Digitalización
+
+? Un escáner con ADF puede:
+a) Escanear solo originales encuadernados
+b) Imprimir y copiar a la vez sin PC
+c) Digitalizar automáticamente lotes de hojas
+d) Convertir PDF a Word
+= c
+> El Automatic Document Feeder alimenta los originales sucesivamente, ideal para digitalización masiva.
+@ Digitalización
+
+? ¿Cuál es el formato de imagen sin pérdida que admite transparencia y es habitual en la web?
+a) JPEG
+b) PNG
+c) BMP de 1 bit
+d) MPEG
+= b
+> PNG: compresión sin pérdida con canal alfa. JPEG es con pérdida; GIF limita a 256 colores.
+@ Formatos de imagen
+
+? ¿Para qué se utiliza el formato PDF/A?
+a) Para formularios interactivos con JavaScript
+b) Para vídeo en streaming
+c) Para correo cifrado
+d) Para el archivo y conservación a largo plazo de documentos
+= d
+> PDF/A (ISO 19005) es un subconjunto de PDF autocontenido (fuentes incrustadas, sin JavaScript ni cifrado) pensado para la preservación.
+@ Formatos
