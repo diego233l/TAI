@@ -1,0 +1,43 @@
+Leyes de Administración electrónica vigentes :: Ley 39/2015 (procedimiento común) y Ley 40/2015 (régimen jurídico del sector público); Ley 11/2007 derogada.
+Reglamento de la Administración electrónica :: Real Decreto 203/2021, de 30 de marzo.
+Derechos de las personas (art. 13 LPAC) :: PAGe, asistencia en medios electrónicos, lenguas oficiales, acceso a información pública, respeto, exigir responsabilidades, identificación y firma, protección de datos.
+Obligados a relacionarse electrónicamente (art. 14.2 LPAC) :: Personas jurídicas, entidades sin personalidad, profesionales con colegiación obligatoria (notarios y registradores), representantes de obligados y empleados públicos.
+Personas físicas (art. 14.1) :: Eligen en todo momento medio electrónico o no (salvo obligadas).
+Identificación electrónica (art. 9.2) :: Certificados cualificados de firma y de sello, firma avanzada y cualquier otro sistema válido (clave concertada, p. ej. Cl@ve).
+Firma obligatoria (art. 11.2) :: Solicitudes, declaraciones responsables y comunicaciones, recursos, desistimientos y renuncias.
+Registro Electrónico de Apoderamientos (REA) :: Apoderamientos generales «apud acta» (art. 6.4.a) y poderes especiales (6.4.b).
+Registro Electrónico General (art. 16.1) :: Uno por Administración; asiento de todo documento presentado o recibido.
+Lugares de presentación (art. 16.4) :: Registro electrónico, Correos, representaciones diplomáticas/consulares, oficinas de asistencia en materia de registros y otros que establezcan las normas.
+Digitalización (art. 16.5) :: Los documentos presentados en papel se digitalizan en la oficina de asistencia y se devuelven los originales.
+Registro electrónico: reglas (art. 31) :: 24 horas, todos los días del año; hora oficial de la sede; día inhábil = primer día hábil siguiente.
+Cómputo de plazos (art. 30) :: Por días: hábiles (sin sábados, domingos ni festivos); desde el día siguiente a la notificación o publicación.
+Notificación electrónica: forma (art. 43.1) :: Comparecencia en sede electrónica, DEHú o ambos.
+Notificación rechazada (art. 43.2) :: 10 días naturales desde la puesta a disposición sin acceso (obligatoria o elegida).
+Aviso de puesta a disposición :: Meramente informativo; su falta no afecta a la validez de la notificación.
+Notificación infructuosa (art. 44) :: Anuncio en el BOE.
+DEHú :: Dirección Electrónica Habilitada única: sistema de notificación electrónica en la sede del PAGe de la AGE (sustituye a Notific@).
+Archivo (art. 17 LPAC) :: Archivo electrónico único de documentos de procedimientos finalizados.
+Documento administrativo electrónico válido (art. 26) :: Formato determinado, datos de identificación, referencia temporal, metadatos mínimos y firmas electrónicas.
+Derecho a no aportar documentos (art. 28.2) :: Los que ya estén en poder de la Administración o los elaborados por otra; no cabe oposición en sancionador o inspección.
+Expediente (art. 70) :: Conjunto ordenado de documentos y actuaciones; formato electrónico; índice; copia electrónica certificada de la resolución.
+Sede electrónica (art. 38 Ley 40/2015) :: Dirección electrónica cuya titularidad corresponde a una Administración; el titular responde de la integridad, veracidad y actualización.
+Portal de internet (art. 39 Ley 40/2015) :: Punto de acceso a la información publicada y, en su caso, a la sede.
+Actuación administrativa automatizada (art. 41) :: Acto íntegramente electrónico sin intervención directa de un empleado público; se fija el órgano responsable (incluido código fuente).
+Firma en la actuación automatizada (art. 42) :: Sello electrónico y código seguro de verificación (CSV).
+ENS vigente :: Real Decreto 311/2022, de 3 de mayo (deroga el RD 3/2010).
+ENS: principios básicos (arts. 5-11) :: Proceso integral; gestión basada en riesgos; prevención, detección, respuesta y conservación; líneas de defensa; vigilancia continua y reevaluación periódica; diferenciación de responsabilidades.
+ENS: roles (art. 11) :: Responsable de la información, del servicio, de la seguridad y del sistema.
+ENS: dimensiones (art. 40) :: Disponibilidad, Autenticidad, Integridad, Confidencialidad y Trazabilidad (D-A-I-C-T).
+ENS: categorías y niveles :: Sistemas: BÁSICA, MEDIA, ALTA. Dimensiones: BAJO, MEDIO, ALTO.
+ENS: auditoría (art. 31) :: Ordinaria al menos cada 2 años; extraordinaria ante modificaciones sustanciales.
+ENS: conformidad (art. 38) :: BÁSICA: autoevaluación y declaración de conformidad. MEDIA/ALTA: auditoría de certificación.
+CCN-CERT :: Capacidad de respuesta a incidentes del Centro Criptológico Nacional; notificación de incidentes significativos.
+Herramientas del CCN :: PILAR (riesgos), INES (informe del estado de seguridad), LUCIA (ciberincidentes), CLARA, REYES.
+ENI vigente :: Real Decreto 4/2010, de 8 de enero.
+ENI: dimensiones :: Organizativa, semántica y técnica (y temporal).
+ENI: principios básicos (arts. 5-7) :: Interoperabilidad como cualidad integral, carácter multidimensional y enfoque de soluciones multilaterales.
+Red SARA :: Red de comunicaciones de las AAPP españolas (art. 13 ENI).
+SIA y DIR3 :: SIA: inventario de procedimientos y servicios. DIR3: directorio común de unidades orgánicas y oficinas.
+NTI :: Normas Técnicas de Interoperabilidad, de obligado cumplimiento (DA 1.ª ENI): catálogo de estándares, documento electrónico, digitalización, expediente electrónico, política de firma, intermediación de datos, modelos de datos, gestión de documentos, conexión a la red, copiado auténtico, SICRES 3.0, reutilización…
+SIR :: Sistema de Interconexión de Registros; intercambia asientos registrales con SICRES 3.0.
+PAGe y Carpeta Ciudadana :: PAGe: punto de acceso general electrónico. Carpeta Ciudadana: área personalizada del interesado en el sector público estatal.
